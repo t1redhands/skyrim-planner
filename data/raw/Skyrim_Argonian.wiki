@@ -1,0 +1,53 @@
+{{Trail|Races}}__NOTOC__
+[[File:SR-race-Argonian.jpg|thumb|left|A compilation of the preset Argonian faces available in Skyrim]][[File:SR-concept-6877468519.jpg|right|thumb|Male concept art]][[File:SR-concept-6877468391.jpg|right|thumb|Female concept art]]
+'''Argonians''' are the reptilian natives of [[Lore:Black Marsh|Black Marsh]], a vast swampland province in southeastern [[Lore:Tamriel|Tamriel]]. Argonians are a hardy race with scaled skin, sharp claws, horns and raspy voices. Their scales can appear in a variety of hues, including (but not limited to) green, brown, black, red, blue and white. They are known for their resilience, which is embodied by their resistance to disease. In addition to this resistance, they possess the ability to breathe underwater and a penchant for stealth. Large bodies of water are no obstacle for an Argonian. 
+
+They sometimes face prejudice in the land of Skyrim, as they look vastly different from the other humanoid races of Tamriel. The term "lizard" is often used as an insult towards Argonians.
+
+There is also a community of Argonians who work at the docks in [[Skyrim:Windhelm|Windhelm]]. They have their own [[Skyrim:Argonian Assemblage|living quarters]] there.
+
+A list of all the Argonians in Skyrim can be found [[:Category:Skyrim-Argonian|here]].
+{{FMI}}
+{{NewLeft}}
+==In-Game Description==
+''This reptilian race, well-suited for the treacherous swamps of their [[Lore:Black Marsh|Black Marsh]] homeland, has developed a natural resistance to diseases and the ability to breathe underwater. They can call upon the Histskin to regenerate health very quickly.''
+
+==Traits==
+* ''{{Anchor|Resist Disease}}'' ability (FormID <code>00104acf</code>): Your Argonian blood is 50% [[Skyrim:Resist Disease|resistant to disease]], constant.
+* ''{{Anchor|Waterbreathing}}'' ability (FormID <code>000aa01b</code>): Your Argonian lungs can [[Skyrim:Waterbreathing (effect)|breathe underwater]], constant.
+* ''{{Anchor|Histskin}}'' greater power (FormID <code>000e40d5</code>): Invoke the power of the [[Lore:Hist|Hist]] to [[Skyrim:Regenerate Health|recover health]] ten times faster for 60 seconds, once per day. †
+* ''{{Anchor|Raw Diet}}''{{CC|Survival Mode}} (FormID: <code>xx00088d</code>): Your Argonian blood allows you to eat raw meat without risk of disease.
+* ''{{Anchor|Weakness to Cold}}''{{CC|Survival Mode}} (FormID <code>xx000875</code>): Argonians become [[Skyrim:cold|cold]]er 25% faster in cold environments.
+* Height: 1.01 (M), 1 (F)
+* In addition, their claws do +6 damage in unarmed combat
+†Histskin adds 10 to the 0.7 base HealRate, resulting in 10.7% regen per second or a ~15.29x multiplier, not 10x.
+==Skills==
+* +10 [[Skyrim:Lockpicking|Lockpicking]]
+* +5 [[Skyrim:Alteration|Alteration]], [[Skyrim:Light Armor|Light Armor]], [[Skyrim:Pickpocket|Pickpocket]], [[Skyrim:Restoration|Restoration]], [[Skyrim:Sneak|Sneak]]
+
+==Gameplay==
+Argonians make good thieves, as they have the right stat boosts. The underwater breathing makes them good underwater treasure hunters and fishers; it also provides them with a good way to escape enemies by swimming. A +5 boost to Alteration and Restoration gives them good magical potential. Their claw bonus also helps them win brawls. 
+
+Their Histskin power plays a vital role (particularly in early gameplay), saving players from near death against more powerful opponents by making them essentially invincible for a minute.
+
+==Shared combat dialogue==
+{|class=wikitable
+!Situation!!Dialogue
+|-
+|Being taunted (by another race)||"''You'll make a fine pair of boots, lizard!''" <br /> ''"I'll wear that tail as a belt!"''
+|-
+|When happening upon a dead body || "''Hss! Dead. Who did this?''"
+
+|-
+|Detected pickpocketing (by another race)||"''You dirty filching lizard!''"
+|}
+
+==Notes==
+* Argonians are no longer [[Skyrim:Resist Poison|resistant to Poison]] as they were in previous games.
+
+==Bugs==
+{{Bug|If you put on a [[Skyrim:Shrouded Cowl|Shrouded Cowl]] (with the mask) and the character has horns, the horns disappear, with no head gear shown.|USKP|1.2}}
+{{Bug|Argonians can be heard gasping for air when resurfacing, even though they can breathe underwater by default.|USKP|1.0}}
+{{Bug|Argonians are unable to use [[Skyrim:Disarming Bash|Disarming Bash]] unless they're a vampire.|USKP|1.0}}
+{{Bug|Decapitating a male Argonian will cause the skin texture on his head to disappear with the eyes, mouth, and horns still remaining.|USKP|2.0.5}}
+{{Skyrim Races}}

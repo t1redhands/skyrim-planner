@@ -1,0 +1,37 @@
+{{Trail|Races}}{{Old Lore Transclusion}}__NOTOC__
+[[File:SR-race-Imperial.jpg|thumb|left|A compilation of the preset Imperial faces available in Skyrim.]][[File:SR-concept-6877533751.jpg|right|thumb|Male concept art]][[File:SR-concept-6877533649.jpg|right|thumb|Female concept art]]
+Also known as '''Cyrodiils''', '''Cyrodilics''', '''Cyro-Nordics''' and '''Imperial Cyrods''', the well-educated and well-spoken '''Imperials''' are the natives of the civilized, cosmopolitan province of [[Lore:Cyrodiil|Cyrodiil]]. Imperials are also known for the discipline and training of their citizen armies, and their respect for the rule of law. Though physically less imposing than the other races, the Imperials have proved to be shrewd diplomats and traders, and these traits, along with their remarkable skill and training as light infantry, have enabled them to subdue all the other nations and races and erect the monument to peace and prosperity that comprises the Glorious Empire. Their hegemony has waxed and waned throughout the eras, and most historians refer to three distinct Empires, the ends of which each mark a new epoch in [[Lore:Tamriel|Tamriel]]ic history.
+
+A list of all the Imperials in Skyrim can be found [[:Category:Skyrim-Imperial|here]].
+
+{{FMI}}
+
+{{NewLeft}}
+==In-Game Description==
+''Natives of Cyrodiil, they have proved to be shrewd diplomats and traders. They are skilled with combat and magic. Anywhere gold coins might be found, Imperials always seem to find a few more. They can call upon the Voice of the Emperor to calm an enemy.''
+
+==Traits==
+* ''{{Anchor|Imperial Luck}}'' ability (FormID <code>000eb7eb</code>): Anywhere gold coins might be found, Imperials always seem to find a few more, constant
+** 100% chance of 2-10 extra gold in all chests that normally contain gold, as well as to the corpses of various gold-dropping enemies, such as bandits, dragons, draugr, Falmer, Forsworn,  giants, and rieklings{{DB}}.
+* ''{{Anchor|Voice of the Emperor}}'' greater power (FormID <code>000e40ca</code>): [[Skyrim:Pacify (effect)|Calms]] nearby people for 60 seconds, once per day
+** ''Pacify'', 99 pts in 75 ft for 60 secs on Self
+** The power only affects [[Skyrim:NPCs|NPCs]], and despite being similar to the [[Skyrim:Illusion|Illusion]] Pacify effect, does not benefit from any Illusion perks.
+* Height: 1.00
+
+==Skills==
+* +10 [[Skyrim:Restoration|Restoration]]
+* +5 [[Skyrim:Block|Block]], [[Skyrim:Destruction|Destruction]], [[Skyrim:Enchanting|Enchanting]], [[Skyrim:Heavy Armor|Heavy Armor]],  [[Skyrim:One-handed|One-handed]]
+
+==Gameplay==
+Imperials' skill bonuses are perfectly balanced between a mage type character and a warrior type. They have lesser bonuses to the [[Skyrim:Heavy_Armor|Heavy Armor]] and [[Skyrim:One-handed|One-handed]] skills, but also have bonuses to their [[Skyrim:Destruction|Destruction]] and [[Skyrim:Restoration|Restoration]] skills, making either path, or a combination of the two, equally attractive. Despite the Imperials' reputation as diplomats and businessmen, they receive no bonuses to [[Skyrim:Speech|Speech]] in Skyrim. This is a departure from other titles where Imperials are heavily favored toward speech and bartering.
+
+The ''Voice of the Emperor'' greater power is useful at most levels.  The magnitude is high enough to affect everyone in the vanilla game until level 81+. The calmed enemies can also enable you to use the wait feature to fully restore your health, magic, and stamina (you may consider waiting a full 24 hours, so you can use the Voice power again if needed).
+
+==Notes==
+* Unlike the other races that have a +10 bonus in a school of magic, Imperials do not start with an extra spell associated with that school.
+
+==Bugs==
+{{Bug|At the very beginning of [[Skyrim:Before the Storm|Before the Storm]] (just after exiting the cave under Helgen Keep), all races get the ''Imperial Luck'' ability, the only difference being that Imperials can see it among active effects.|USKP|1.3.1|It will only be properly fixed on a new game, and cannot reliably safeguard against fixing it if the player is a [[Skyrim:Lycanthropy|werewolf]] or [[Skyrim:Vampire_Lord|Vampire Lord]].}}
+**{{Pc22}} This bug can be manually fixed for non-Imperial characters by using the console command <code>set ImperialLuck to 100</code> to disable the perk, which persists between saves.
+
+{{Skyrim Races}}

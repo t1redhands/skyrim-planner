@@ -1,0 +1,27 @@
+{{Trail|Races}}{{Old Lore Transclusion}}{{Protection|semi}}__NOTOC__
+[[File:SR-race-Redguard.jpg|thumb|left|A montage of preset Redguard faces available in Skyrim.]][[File:SR-concept-6877547601.jpg|right|thumb|Male concept art]][[File:SR-concept-6877547537.jpg|thumb|right|Female concept art]]
+'''Redguards''' are the most naturally talented warriors in [[Lore:Tamriel|Tamriel]]. The dark-skinned, wiry-haired people of [[Lore:Hammerfell|Hammerfell]] seem born to battle, though their pride and fierce independence of spirit makes them more suitable as scouts or skirmishers, or as free-ranging heroes and adventurers, than as rank-and-file soldiers. In addition to their cultural affinities for many armor styles and weapons (particularly swords), Redguards are also physically blessed with hardy constitutions, resistance to poison, and quickness of foot. Unlike most other [[Lore:Men|human]] races, they are not believed to have any connection with the ancestral [[Skyrim:Nord|Nord]]ic homeland of [[Lore:Atmora|Atmora]].
+
+A list of all the Redguards in Skyrim can be found [[:Category:Skyrim-Redguard|here]].
+
+{{FMI}}
+
+{{NewLeft}}
+==In-Game Description==
+''The most naturally talented warriors in Tamriel, the Redguards of Hammerfell have a hardy constitution and a natural resistance to poison. They can call upon an Adrenaline Rush in combat.''
+
+==Traits==
+* ''{{Anchor|Resist Poison}}'' ability (FormID <code>000aa023</code>): Your Redguard blood gives you 50% [[Skyrim:Resist Poison|resistance to poison]], constant
+* ''{{Anchor|Adrenaline Rush}}'' greater power (FormID <code>000e40ce</code>): [[Skyrim:Regenerate Stamina|Stamina regenerates]] 10x faster for 60 seconds, once per day †
+* Height: 1.005 (M), 1 (F)
+†Adrenaline Rush adds 50 to the 5 base StaminaRate, resulting in 55% regen per second or an 11x multiplier, not 10x.
+==Skills==
+* +10 [[Skyrim:One-handed|One-Handed]]
+* +5 [[Skyrim:Alteration|Alteration]], [[Skyrim:Archery|Archery]], [[Skyrim:Block|Block]], [[Skyrim:Destruction|Destruction]], [[Skyrim:Smithing|Smithing]]
+
+==Gameplay==
+Redguards, for the first time, have received bonuses to not only combat skills, but magic skills.  They can easily become battlemages or spellswords early on with a strong bonus to one-handed weapons, as well as bonuses to destruction and alteration.  Players can also take advantage of the Redguard's bonus to archery, making Redguards one of the most versatile races in the game.
+
+Their Adrenaline Rush power allows the player to use all-out power attacks in succession without draining their Stamina, helping them survive at earlier levels through incredible offense against tougher opponents.
+
+{{Skyrim Races}}

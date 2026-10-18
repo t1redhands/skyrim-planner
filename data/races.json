@@ -1,0 +1,116 @@
+{
+  "license": "CC BY-SA 2.5, text from UESP (https://en.uesp.net)",
+  "fetched": "2026-10-18",
+  "races": {
+    "argonian": {
+      "p10": "lockpicking",
+      "p5": [
+        "alteration",
+        "lightArmor",
+        "pickpocket",
+        "restoration",
+        "sneak"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Argonian"
+    },
+    "breton": {
+      "p10": "conjuration",
+      "p5": [
+        "alchemy",
+        "alteration",
+        "illusion",
+        "restoration",
+        "speech"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Breton"
+    },
+    "darkElf": {
+      "p10": "destruction",
+      "p5": [
+        "alchemy",
+        "alteration",
+        "illusion",
+        "lightArmor",
+        "sneak"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Dark_Elf"
+    },
+    "highElf": {
+      "p10": "illusion",
+      "p5": [
+        "alteration",
+        "conjuration",
+        "destruction",
+        "enchanting",
+        "restoration"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:High_Elf"
+    },
+    "imperial": {
+      "p10": "restoration",
+      "p5": [
+        "block",
+        "destruction",
+        "enchanting",
+        "heavyArmor",
+        "oneHanded"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Imperial"
+    },
+    "khajiit": {
+      "p10": "sneak",
+      "p5": [
+        "alchemy",
+        "archery",
+        "lockpicking",
+        "oneHanded",
+        "pickpocket"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Khajiit"
+    },
+    "nord": {
+      "p10": "twoHanded",
+      "p5": [
+        "block",
+        "lightArmor",
+        "oneHanded",
+        "smithing",
+        "speech"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Nord"
+    },
+    "orc": {
+      "p10": "heavyArmor",
+      "p5": [
+        "block",
+        "enchanting",
+        "oneHanded",
+        "smithing",
+        "twoHanded"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Orc"
+    },
+    "redguard": {
+      "p10": "oneHanded",
+      "p5": [
+        "alteration",
+        "archery",
+        "block",
+        "destruction",
+        "smithing"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Redguard"
+    },
+    "woodElf": {
+      "p10": "archery",
+      "p5": [
+        "alchemy",
+        "lightArmor",
+        "lockpicking",
+        "pickpocket",
+        "sneak"
+      ],
+      "source": "https://en.uesp.net/wiki/Skyrim:Wood_Elf"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{{Trail|Races}}__NOTOC__
+[[File:SR-race-Breton.jpg|thumb|left|A compilation of the preset Breton faces available in Skyrim]]
+[[File:SR-concept-6877474891.jpg|thumb|right|Female concept art]][[File:SR-concept-6877475005.jpg|thumb|right|Male concept art]]
+'''Bretons''' are the human descendants of the [[Lore:Merethic Era|Merethic Era]] Aldmeri and Nedes that are now the inhabitants of the province of [[Lore:High Rock|High Rock]]. Bretons feel an instinctive bond with the mercurial forces of magic and the supernatural. Many great sorcerers have come from their home province of High Rock. In addition to their quick and perceptive grasp of spellcraft, enchantment, and alchemy, all Bretons boast a resistance to spells.
+
+Bretons are fantastic at taking on other mages; both Dragonskin and Magic Resistance support this and are strong abilities even in the late game.
+
+Magic Resistance significantly increases your survivability against enemy casters, while Dragonskin is great at keeping your Magicka up; this helps you maintain the Ward spells that are your first line of defense.
+
+A list of all the Bretons in Skyrim can be found [[:Category:Skyrim-Breton|here]].
+
+{{FMI}}
+
+{{NewLeft}}
+==In-Game Description==
+''In addition to their quick and perceptive grasp of spellcraft, even the humblest of High Rock's Bretons can boast a resistance to magic. Bretons can call upon the Dragonskin power to absorb spells.''
+
+==Traits==
+* ''{{Anchor|Magic Resistance}}'' ability (FormID <code>000aa01f</code>): Breton blood grants a 25% [[Skyrim:Resist Magic|resistance to magic]], constant
+* ''{{Anchor|Dragonskin}}'' greater power (FormID <code>000aa022</code>): [[Skyrim:Spell Absorption|Absorb]] 50% of the magicka from hostile spells for 60 seconds, once per day
+* Height: 1 (M), 0.95 (F)
+* In addition to [[Skyrim:Flames|Flames]], Bretons start with the spell [[Skyrim:Conjure Familiar|Conjure Familiar]].
+
+==Skills==
+* +10 [[Skyrim:Conjuration|Conjuration]]
+* +5 [[Skyrim:Alchemy|Alchemy]], [[Skyrim:Alteration|Alteration]], [[Skyrim:Illusion|Illusion]], [[Skyrim:Restoration|Restoration]], [[Skyrim:Speech|Speech]]
+
+==Gameplay==
+Bretons are particularly skilled in Conjuration; they can summon creatures and weapons to aid them in battle. They are resistant to magic, making them exceptionally useful against other magic users. However, they do not have any bonuses to Destruction magic, giving the player a fairer choice between using offensive magic or weapons. Breton skill bonuses are well suited for support magic.
+
+Many Court Wizards are Bretons. Numerous members of the [[Skyrim:College of Winterhold (faction)|College of Winterhold]] are also Bretons. Bretons are especially common throughout [[Skyrim:The Reach|The Reach]]. They frequently make appearances in a variety of roles, from traders to battlemages.
+
+==Notes==
+* There is a loading screen hint that incorrectly claims Bretons have 50% Magic Resistance, as was the case in Morrowind and Oblivion, but they have only 25% Magic Resistance in Skyrim.
+* Between [[Skyrim:Agent of Mara|Agent of Mara]], the [[Skyrim:Alteration|Alteration]] perk [[Skyrim:Magic Resistance|Magic Resistance]], and [[Skyrim:The Lord Stone|The Lord Stone]], it's possible for a Breton to passively have the maximum effective Magic Resistance of 85%, while this would leave any other race 15% short. By using Vampirism and the Necromage perk from Restoration, this can also be achieved without The Lord Stone, giving 87.5% magic resistance and thereby capping out. However, it cannot be achieved with most versions of The Unofficial Patches, as they patch it out, considering it an exploit. There are, however, other mods which restore its function, even with The Unofficial Patches on. 
+* Bretons are capable of reaching 100% [[Skyrim:Spell Absorption|Spell Absorption]] in the base game by activating their racial power and having the [[Skyrim:The Atronach Stone|Atronach Stone]].
+* While game dialogue sometimes distinguishes between the natives of the Reach and Bretons, in-game data does not and all Reach natives (including [[Skyrim:Forsworn|Forsworn]]) are classified as Bretons.
+{{Skyrim Races}}

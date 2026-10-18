@@ -1,0 +1,79 @@
+{{Trail|Races}}{{Old Lore Transclusion}}__NOTOC__
+[[File:SR-race-Nord.jpg|thumb|left|A compilation of the preset Nord faces available in Skyrim]][[File:SR-concept-6877541105.jpg|right|thumb|Female concept art]][[File:SR-concept-6877541355.jpg|right|thumb|Male concept art]]
+The '''Nords''' are the children of the sky, a race of tall and fair-haired humans from [[Skyrim:Skyrim|Skyrim]] who are known for their incredible resistance to cold and magical frost. They are fierce, strong and enthusiastic warriors, and many become renowned warriors, soldiers and mercenaries all over [[Lore:Tamriel|Tamriel]]. Eager to augment their martial skills beyond the traditional methods of Skyrim, they excel in all manner of warfare, and are known as a militant people by their neighbors. Nords were known for a time for their nautical prowess when they migrated from [[Lore:Atmora|Atmora]]. {{FMI}}
+
+Nords are the most common race encountered in Skyrim's  cities, and can be encountered in nearly every aspect - among others, guards, merchants, bandits and Jarls.  [[Skyrim:Stormcloaks|Stormcloaks]] encountered consist almost entirely of Nords, with the Nords also making up the majority in the [[Skyrim:Imperial Legion|Imperial Legion]] as both officers and soldiers. A complete list can be found [[:Category:Skyrim-Nord|here]].
+{{NewLeft}}
+
+==In-Game Description==
+''Citizens of Skyrim, they are a tall and fair-haired people. Strong and hardy, Nords are famous for their resistance to cold and their talent as warriors. They can use a Battlecry to make opponents flee.''
+
+==Traits==
+* ''{{Anchor|Resist Frost}}'' ability (FormID <code>000aa020</code>): Your Nord blood gives you 50% [[Skyrim:Resist Frost|resistance to Frost]], constant. 
+* ''{{Anchor|Battle Cry}}'' greater power (FormID <code>000e40c3</code>): Targets flee for 30 seconds, once per day. 
+** The power consists of the following effects:
+*** ''Battle Cry'', 99 pts in 60 ft for 30 secs on Self
+*** ''[[Skyrim:Stagger|Stagger Push]]'', 0.05 pts in 40 ft on Self
+** Be warned that this power treats everyone in range as a target, and is considered an attack, so you may want to avoid using it in situations where you have non-follower allies or in the presence of civilians.
+** Despite its similarity to the [[Skyrim:Illusion|Illusion]] [[Skyrim:Fear (effect)|Fear]] effect, it does not benefit from any Illusion perks. It also does not affect undead, Daedra, or machines.
+* [[Skyrim:Fortify Warmth|''{{Anchor|Fortify Warmth}}'']]{{CC|Survival Mode}} (FormID <code>xx00088b</code>): Your Nord blood improves your [[Skyrim:Warmth|resistance to cold environments]] by 25 points. 
+* Height: 1.03.
+
+==Skills==
+* + 10 [[Skyrim:Two-handed|Two-Handed]]
+* + 5 [[Skyrim:Block|Block]], [[Skyrim:Light Armor|Light Armor]], [[Skyrim:One-handed|One-handed]], [[Skyrim:Smithing|Smithing]], [[Skyrim:Speech|Speech]]
+
+==Gameplay==
+Nord skill bonuses lean toward a more combat-oriented style of play. With both one and two-handed weapons receiving boosts, players are able to choose their favorite weapon(s) with a bit more ease, and boosts to both light armor and blocking provides players both mobility and defense.
+
+The Nord [[#Battle Cry|Battle Cry]] power can be vital at earlier levels, causing enemies to flee long enough for the player to potentially recover.
+
+Their innate resistance to Frost provides them a significant advantage against foes such as the draugr, frost dragons, ice wraiths, and mages who employ Frost magic. If a Nord player decides to [[Skyrim:Vampirism|become a vampire]], they will reach the maximum frost resistance possible. (85%)
+
+==Shared Combat Dialogue==
+{|class=wikitable 
+!Situation!!Dialogue
+|-
+|rowspan=2|Nord opponent||''"You're a disgrace to your own kind!"''
+|-
+|''"You call yourself a Nord!?"''
+|-
+|Non-Nord opponent||''"Skyrim belongs to the Nords!"'' {{intnote|Imperial Legion|†}}
+|-
+|Non-Human opponent||''"Your kind has no place here!"'' {{intnote|Imperial Legion|†}}
+|-
+|Bosmer opponent||''"You should've stayed in your precious forests, elf!"''
+|-
+|Orc opponent||''"Die, you Orc filth!"''
+|-
+|Khajiit opponent||''"You'll make a fine rug, cat!"''
+|-
+|Argonian opponent||''"I'll use that tail as a belt!"''
+|-
+|rowspan=2|Stormcloak fighting Imperials||''"Imperial dogs!"''
+|-
+|''"A pox on the Empire!"''
+|-
+|Sighting a dragon||''"Talos save us! It's a dragon!''
+|-
+|Taking damage||''"By Ysmir, you'll pay for that!"''
+|-
+|Fighting in a snowy area||''"I'll paint the snow with your blood!"''
+|-
+|rowspan=7|General||''"I'll mount your head on my wall!"''
+|-
+|''"I'll water the ground with your blood!"''
+|-
+|''"I love a good fight!"''
+|-
+|''"Ha! I love a challenge!"''
+|-
+|''"I'll carve you into pieces!"''
+|-
+|''"By Ysmir, you won't leave here alive!"''
+|-
+|''"You won't leave Skyrim alive!"''
+|}
+{{Note|Imperial Legion|†|Members of the [[Skyrim:Imperial Legion|Imperial Legion]] faction will not use this line.}}
+
+{{Skyrim Races}}

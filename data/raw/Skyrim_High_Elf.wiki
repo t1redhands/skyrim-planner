@@ -1,0 +1,41 @@
+{{Trail|Races}}{{Old Lore Transclusion}}__NOTOC__
+[[File:SR-race-High Elf.jpg|thumb|left|A compilation of the preset High Elf faces available in Skyrim]][[File:SR-concept-6877527077.jpg|right|thumb|Male concept art]][[File:SR-concept-6877526985.jpg|thumb|right|Female concept art]]
+The '''High Elves''', or self-titled "Cultured People", are a tall, golden-skinned race, hailing from [[Lore:Summerset Isles|Summerset Isles]]. They are also known as '''Altmer''' by the denizens of [[Lore:Tamriel|Tamriel]]. In the Empire, "High" is often understood to mean proud or snobbish, and as the Altmer generally personify these characteristics, the "lesser races" generally resent them. High Elves live two to three times as long as humans; with a 200-year-old High Elves being old and a 300-year-old Altmer being very, very old. Altmer consider themselves to be the most civilized culture of Tamriel; the common tongue of the continent is based on High Elf speech and writing, and most of the Empire's arts, crafts, laws, and sciences are derived from High Elf traditions.
+
+The High Elves are the most strongly gifted in the arcane arts of all the races. They are among the longest living and most intelligent races of Tamriel, and they often become powerful magic users due to both their magical affinity and the many years they may devote to their studies. 
+
+A list of all the High Elves in Skyrim can be found [[:Category:Skyrim-High Elf|here]].
+
+{{FMI}}
+
+{{NewLeft}}
+== In-Game Description ==
+''Also known as "Altmer" in their homeland of [[Lore:Summerset Isle|Summerset Isle]], the high elves are the most strongly gifted in the arcane arts of all the races. They can call upon their Highborn power to regenerate Magicka quickly.''
+
+==Traits==
+* ''{{Anchor|Highborn}}'' ability (FormID <code>00105f16</code>): High Elves are born with 50 extra [[Skyrim:magicka|magicka]], constant. 
+* ''{{Anchor|Highborn}}'' greater power (FormID <code>000e40c8</code>): [[Skyrim:Regenerate Magicka|Regenerate magicka]] faster for 60 seconds, once per day.
+** Base Magicka Regeneration is increased from 3% per second to 28% per second.
+* ''{{Anchor|Resist Fatigue}}''{{CC|Survival Mode}} (FormID <code>xx000874</code>): Your High Elf blood gives you 25% resistance to [[Skyrim:fatigue|fatigue]].
+* Height: 1.08. 
+* In addition to [[Skyrim:Flames|Flames]], High Elves start with the spell [[Skyrim:Fury|Fury]].
+
+==Skills==
+* +10 [[Skyrim:Illusion|Illusion]]
+* +5 [[Skyrim:Alteration|Alteration]], [[Skyrim:Conjuration|Conjuration]], [[Skyrim:Destruction|Destruction]], [[Skyrim:Enchanting|Enchanting]], [[Skyrim:Restoration|Restoration]]
+
+==Gameplay==
+High Elves are an ideal choice for a pure mage character or any character intending to invest in magicka. The largest advantage is the additional 50 magicka as this essentially gives you 5 levels worth of magicka, which either makes your large pool even larger or allows you to put those 50 points into other stats. They also no longer have the additional weakness to magic that they have traditionally had in previous Elder Scrolls games, meaning they can now effectively fill a front-line combat role if desired.
+
+With small bonuses to all the magical skills and a larger bonus to Illusion, they can reach the cost-reduction perks much faster at the start of the game. They also have access to the [[Skyrim:Fury|Fury]] spell which is very powerful at early levels. Their racial power, Highborn, can be incredibly helpful in large, extended fights against a tough opponent(s). [[Skyrim:The Atronach Stone|The Atronach Stone]] has perfect synergy with a High Elf as it adds even more magicka to their pool, and the reduced regeneration can be bypassed with the Highborn power.
+
+Even though many factions in Skyrim show disdain for the Altmer, the Dragonborn will be spoken to in the same manner as any other of the Elven races (i.e. interactions with guards may prompt them to address you with, "Speak, Elf"). Few others will ever notice your race or mention it to your face. There are many Altmer in the Empire who are loyal citizens or refugees from the [[Skyrim:Thalmor|Thalmor]]  oppression. They can even be found holding high positions in the Imperial forces, such as [[Skyrim:Legate Fasendil|Legate Fasendil.]] Despite the Thalmor being comprised almost entirely of High Elves, being a High Elf makes almost no difference in their interactions with the player.
+
+== Notes ==
+* Unlike all other races, there are no High Elf [[Skyrim:Bandit|bandits]] in Skyrim. 
+* The High Elves are the only race to have a natural [[Skyrim:Attributes|attribute]] bonus.
+* Unlike previous Elder Scrolls games, in Skyrim, High Elves are not vulnerable to magic, nor are they resistant to disease.
+* They have the greatest run speed and jump height due to their increased height relative to the other races (1.08).
+* There are no High Elves in the game, including any official add-ons, that will be your [[Skyrim:Followers|follower]].
+* While female High Elves have access to unique warpaints of the High Elf race, male High Elves only have access to the basic designs shared with the other races.
+{{Skyrim Races}}
