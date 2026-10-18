@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Skyrim Character Planner</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -326,18 +325,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const SK = Object.fromEntries(SKILLS.map(s => [s.id, s]));
   const GROUPS = ['Combat', 'Magic', 'Stealth'];
 
-  // verified: true = bonuses checked directly on UESP this session
+  // verified: true = bonuses confirmed against UESP by uesp_ingest.py (2026-10-18)
   const RACES = [
-    { id:'argonian', name:'Argonian', p10:'lockpicking', p5:['alteration','lightArmor','pickpocket','restoration','sneak'], magicka:100, power:'Histskin: recover health 10x faster for 60 seconds, once a day', page:'Skyrim:Argonian', verified:false },
-    { id:'breton', name:'Breton', p10:'conjuration', p5:['alchemy','alteration','illusion','restoration','speech'], magicka:100, power:'Dragonskin: absorb 50% of the magicka from hostile spells for 60 seconds, once a day. Constant 25% magic resistance.', page:'Skyrim:Breton', verified:false },
-    { id:'darkElf', name:'Dark Elf', p10:'destruction', p5:['alchemy','alteration','illusion','lightArmor','sneak'], magicka:100, power:"Ancestor's Wrath: nearby opponents take 8 fire damage per second for 60 seconds, once a day", page:'Skyrim:Dark_Elf', verified:false },
-    { id:'highElf', name:'High Elf', p10:'illusion', p5:['alteration','conjuration','destruction','enchanting','restoration'], magicka:150, power:'Highborn: regenerate magicka 25x faster for 60 seconds, once a day. Starts with 50 extra Magicka.', page:'Skyrim:High_Elf', verified:false },
+    { id:'argonian', name:'Argonian', p10:'lockpicking', p5:['alteration','lightArmor','pickpocket','restoration','sneak'], magicka:100, power:'Histskin: recover health 10x faster for 60 seconds, once a day', page:'Skyrim:Argonian', verified:true },
+    { id:'breton', name:'Breton', p10:'conjuration', p5:['alchemy','alteration','illusion','restoration','speech'], magicka:100, power:'Dragonskin: absorb 50% of the magicka from hostile spells for 60 seconds, once a day. Constant 25% magic resistance.', page:'Skyrim:Breton', verified:true },
+    { id:'darkElf', name:'Dark Elf', p10:'destruction', p5:['alchemy','alteration','illusion','lightArmor','sneak'], magicka:100, power:"Ancestor's Wrath: nearby opponents take 8 fire damage per second for 60 seconds, once a day", page:'Skyrim:Dark_Elf', verified:true },
+    { id:'highElf', name:'High Elf', p10:'illusion', p5:['alteration','conjuration','destruction','enchanting','restoration'], magicka:150, power:'Highborn: regenerate magicka 25x faster for 60 seconds, once a day. Starts with 50 extra Magicka.', page:'Skyrim:High_Elf', verified:true },
     { id:'imperial', name:'Imperial', p10:'restoration', p5:['block','destruction','enchanting','heavyArmor','oneHanded'], magicka:100, power:'Voice of the Emperor: calms nearby people for 60 seconds, once a day. Imperial Luck finds extra gold.', page:'Skyrim:Imperial', verified:true },
-    { id:'khajiit', name:'Khajiit', p10:'sneak', p5:['alchemy','archery','lockpicking','oneHanded','pickpocket'], magicka:100, power:'Night Eye: improved night vision for 60 seconds, usable any number of times. Claws do 12 damage.', page:'Skyrim:Khajiit', verified:false },
-    { id:'nord', name:'Nord', p10:'twoHanded', p5:['block','lightArmor','oneHanded','smithing','speech'], magicka:100, power:'Battle Cry: targets flee for 30 seconds, once a day', page:'Skyrim:Nord', verified:false },
-    { id:'orc', name:'Orc', p10:'heavyArmor', p5:['block','enchanting','oneHanded','smithing','twoHanded'], magicka:100, power:'Berserker Rage: take half damage and deal double damage for 60 seconds, once a day', page:'Skyrim:Orc', verified:false },
-    { id:'redguard', name:'Redguard', p10:'oneHanded', p5:['alteration','archery','block','destruction','smithing'], magicka:100, power:'Adrenaline Rush: Stamina regenerates 10x faster for 60 seconds, once a day', page:'Skyrim:Redguard', verified:false },
-    { id:'woodElf', name:'Wood Elf', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:false }
+    { id:'khajiit', name:'Khajiit', p10:'sneak', p5:['alchemy','archery','lockpicking','oneHanded','pickpocket'], magicka:100, power:'Night Eye: improved night vision for 60 seconds, usable any number of times. Claws do 12 damage.', page:'Skyrim:Khajiit', verified:true },
+    { id:'nord', name:'Nord', p10:'twoHanded', p5:['block','lightArmor','oneHanded','smithing','speech'], magicka:100, power:'Battle Cry: targets flee for 30 seconds, once a day', page:'Skyrim:Nord', verified:true },
+    { id:'orc', name:'Orc', p10:'heavyArmor', p5:['block','enchanting','oneHanded','smithing','twoHanded'], magicka:100, power:'Berserker Rage: take half damage and deal double damage for 60 seconds, once a day', page:'Skyrim:Orc', verified:true },
+    { id:'redguard', name:'Redguard', p10:'oneHanded', p5:['alteration','archery','block','destruction','smithing'], magicka:100, power:'Adrenaline Rush: Stamina regenerates 10x faster for 60 seconds, once a day', page:'Skyrim:Redguard', verified:true },
+    { id:'woodElf', name:'Wood Elf', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:true }
   ];
   const RC = Object.fromEntries(RACES.map(r => [r.id, r]));
 
@@ -665,5 +664,3 @@ footer p { margin: 4px 0; max-width: 80ch; }
   showStep(['identity','skills','attributes','summary'].includes(step) ? step : 'identity');
 })();
 </script>
-
-</body></html>
