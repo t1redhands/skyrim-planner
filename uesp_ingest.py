@@ -1,0 +1,157 @@
+#!/usr/bin/env python3
+"""
+Skyrim Character Planner - UESP ingest, Phase 1 starter.
+
+Pulls race pages from UESP through the MediaWiki API, caches the raw
+wikitext, extracts each race's starting skill bonuses, writes
+data/races.json (with source URLs for attribution), and checks the
+results against the values hand-entered in the planner.
+
+Run on your own machine:
+    pip install requests mwparserfromhell
+    python uesp_ingest.py            # fetch (or reuse cache) and check
+    python uesp_ingest.py --refresh  # ignore the cache and refetch
+
+UESP text is CC BY-SA 2.5. Keep the source URLs this script records and
+credit UESP wherever the data appears.
+"""
+import argparse
+import json
+import re
+import sys
+import time
+from pathlib import Path
+
+import mwparserfromhell
+import requests
+
+API = "https://en.uesp.net/w/api.php"   # confirm the endpoint if requests fail
+WIKI = "https://en.uesp.net/wiki/"
+USER_AGENT = "SkyrimCharacterPlanner/0.1 (private fan tool; contact: you@example.com)"  # put your email here
+DELAY_SECONDS = 3      # be gentle: UESP is volunteer-run and blocks aggressive bots
+OUT = Path("data")
+RAW = OUT / "raw"
+
+RACE_PAGES = {
+    "argonian": "Skyrim:Argonian", "breton": "Skyrim:Breton", "darkElf": "Skyrim:Dark Elf",
+    "highElf": "Skyrim:High Elf", "imperial": "Skyrim:Imperial", "khajiit": "Skyrim:Khajiit",
+    "nord": "Skyrim:Nord", "orc": "Skyrim:Orc", "redguard": "Skyrim:Redguard", "woodElf": "Skyrim:Wood Elf",
+}
+
+SKILL_IDS = {
+    "one-handed": "oneHanded", "two-handed": "twoHanded", "archery": "archery", "marksman": "archery",
+    "block": "block", "heavy armor": "heavyArmor", "smithing": "smithing", "alteration": "alteration",
+    "conjuration": "conjuration", "destruction": "destruction", "illusion": "illusion",
+    "restoration": "restoration", "enchanting": "enchanting", "light armor": "lightArmor",
+    "sneak": "sneak", "lockpicking": "lockpicking", "pickpocket": "pickpocket", "speech": "speech",
+    "alchemy": "alchemy",
+}
+
+# Values currently hand-entered in the planner (keep in sync with the page's RACES table)
+PLANNER = {
+    "argonian": ("lockpicking", ["alteration", "lightArmor", "pickpocket", "restoration", "sneak"]),
+    "breton": ("conjuration", ["alchemy", "alteration", "illusion", "restoration", "speech"]),
+    "darkElf": ("destruction", ["alchemy", "alteration", "illusion", "lightArmor", "sneak"]),
+    "highElf": ("illusion", ["alteration", "conjuration", "destruction", "enchanting", "restoration"]),
+    "imperial": ("restoration", ["block", "destruction", "enchanting", "heavyArmor", "oneHanded"]),
+    "khajiit": ("sneak", ["alchemy", "archery", "lockpicking", "oneHanded", "pickpocket"]),
+    "nord": ("twoHanded", ["block", "lightArmor", "oneHanded", "smithing", "speech"]),
+    "orc": ("heavyArmor", ["block", "enchanting", "oneHanded", "smithing", "twoHanded"]),
+    "redguard": ("oneHanded", ["alteration", "archery", "block", "destruction", "smithing"]),
+    "woodElf": ("archery", ["alchemy", "lightArmor", "lockpicking", "pickpocket", "sneak"]),
+}
+
+
+def fetch_wikitext(session, title, refresh):
+    cache = RAW / (title.replace(":", "_").replace(" ", "_") + ".wiki")
+    if cache.exists() and not refresh:
+        return cache.read_text(encoding="utf-8")
+    resp = session.get(API, params={
+        "action": "parse", "page": title, "prop": "wikitext", "format": "json", "formatversion": 2,
+    }, timeout=30)
+    resp.raise_for_status()
+    data = resp.json()
+    if "error" in data:
+        raise RuntimeError(f"{title}: {data['error'].get('info')}")
+    text = data["parse"]["wikitext"]
+    cache.parent.mkdir(parents=True, exist_ok=True)
+    cache.write_text(text, encoding="utf-8")
+    time.sleep(DELAY_SECONDS)
+    return text
+
+
+def skill_ids(fragment):
+    found = []
+    for name in re.split(r",|\band\b", fragment.lower()):
+        key = name.strip(" .*'")
+        if key in SKILL_IDS:
+            found.append(SKILL_IDS[key])
+    return found
+
+
+def parse_race(wikitext):
+    """Find '+10 Skill' and '+5 A, B, C, D, E' lines in the race page's Skills section."""
+    plain = mwparserfromhell.parse(wikitext).strip_code()
+
+    def first_with_skills(pattern):
+        # pages also mention things like "+10 Warmth", so take the first match that names skills
+        for m in re.finditer(pattern, plain):
+            ids = skill_ids(m.group(1))
+            if ids:
+                return ids
+        return []
+
+    return {
+        "p10": first_with_skills(r"\+\s*10\s+([A-Za-z\- ]+)")[:1],
+        "p5": first_with_skills(r"\+\s*5\s+([A-Za-z\-, ]+)"),
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--refresh", action="store_true", help="refetch pages instead of using the cache")
+    args = ap.parse_args()
+
+    session = requests.Session()
+    session.headers["User-Agent"] = USER_AGENT
+    races, problems = {}, []
+
+    for race_id, title in RACE_PAGES.items():
+        try:
+            parsed = parse_race(fetch_wikitext(session, title, args.refresh))
+        except Exception as exc:  # keep going; report at the end
+            problems.append(f"{race_id}: fetch/parse failed ({exc})")
+            continue
+        p10 = parsed["p10"][0] if parsed["p10"] else None
+        races[race_id] = {"p10": p10, "p5": sorted(parsed["p5"]),
+                          "source": WIKI + title.replace(" ", "_")}
+
+        # validation
+        if not p10 or len(parsed["p5"]) != 5:
+            problems.append(f"{race_id}: could not read all bonuses (got +10={p10}, +5={parsed['p5']})")
+            continue
+        want10, want5 = PLANNER[race_id]
+        if p10 != want10 or sorted(want5) != sorted(parsed["p5"]):
+            problems.append(f"{race_id}: UESP says +10 {p10}, +5 {sorted(parsed['p5'])}; "
+                            f"planner has +10 {want10}, +5 {sorted(want5)}")
+        else:
+            print(f"OK  {race_id}")
+
+    OUT.mkdir(exist_ok=True)
+    (OUT / "races.json").write_text(json.dumps({
+        "license": "CC BY-SA 2.5, text from UESP (https://en.uesp.net)",
+        "fetched": time.strftime("%Y-%m-%d"),
+        "races": races,
+    }, indent=2), encoding="utf-8")
+    print(f"\nWrote {OUT / 'races.json'} ({len(races)} races)")
+
+    if problems:
+        print("\nNeeds attention:")
+        for p in problems:
+            print("  -", p)
+        sys.exit(1)
+    print("All race bonuses match the planner.")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,669 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Skyrim Character Planner</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field ledger — sticky step bar on top, one working panel per step, milestone columns 20 / 40 / 60 read left to right like a character's progress */
+:root {
+  --bg: #e9edf0;          /* frost-grey ground */
+  --panel: #f7f9fa;
+  --ink: #1b2228;
+  --ink-2: #4c5862;
+  --rule: #c9d1d7;
+  --accent: #7d5d22;      /* dwarven brass */
+  --accent-soft: #e9dcc0;
+  --health: #b3352d;
+  --magicka: #2f5fa8;
+  --stamina: #3c7d3a;
+  --good: #2f7a45;
+  --warn: #9a6a12;
+  --bad: #b3352d;
+  --display: "Marcellus SC", "Trajan Pro", Georgia, serif;
+  --body: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14191d; --panel: #1c2328; --ink: #e3e8eb; --ink-2: #9aa7b0; --rule: #33404a;
+    --accent: #d2ad66; --accent-soft: #3a3222;
+    --health: #e0675e; --magicka: #6f9be0; --stamina: #74b46f;
+    --good: #6cc08a; --warn: #e0ac4c; --bad: #e0675e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14191d; --panel: #1c2328; --ink: #e3e8eb; --ink-2: #9aa7b0; --rule: #33404a;
+  --accent: #d2ad66; --accent-soft: #3a3222;
+  --health: #e0675e; --magicka: #6f9be0; --stamina: #74b46f;
+  --good: #6cc08a; --warn: #e0ac4c; --bad: #e0675e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.5; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; margin: 0; letter-spacing: .02em; }
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.35rem; }
+h3 { font-size: 1.05rem; }
+.mono, .num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.label { font-size: .75rem; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-2); font-weight: 500; }
+.muted { color: var(--ink-2); }
+a { color: var(--accent); }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Header + steps */
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--rule); }
+.top-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; padding-block: 12px; }
+.top-row h1 { flex: 1 1 auto; min-width: 0; }
+.build-tag { font-size: .9rem; color: var(--ink-2); }
+.build-tag strong { color: var(--ink); font-weight: 500; }
+nav.steps { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 10px; }
+nav.steps button { flex: 0 0 auto; border: 1px solid transparent; background: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; color: var(--ink-2); display: flex; gap: 8px; align-items: baseline; }
+nav.steps button .n { font-family: var(--mono); font-size: .8rem; }
+nav.steps button[aria-selected="true"] { color: var(--ink); border-color: var(--rule); background: var(--bg); }
+nav.steps button:hover { color: var(--ink); }
+
+main { padding-block: 24px 48px; display: grid; gap: 24px; }
+section.panel { display: grid; gap: 20px; }
+.intro { max-width: 68ch; }
+.intro p { margin: 6px 0 0; }
+.example-note { display: inline-flex; gap: 8px; align-items: center; background: var(--accent-soft); color: var(--ink); padding: 4px 10px; border-radius: 4px; font-size: .9rem; }
+
+.box { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 18px; display: grid; gap: 14px; min-width: 0; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+/* Identity */
+.field { display: grid; gap: 6px; }
+.field input[type=text] { padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); max-width: 420px; width: 100%; }
+.races { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.race { border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; background: var(--bg); cursor: pointer; text-align: left; display: grid; gap: 2px; }
+.race .rn { font-family: var(--display); font-size: 1.02rem; }
+.race .rb { font-size: .82rem; color: var(--ink-2); }
+.race[aria-checked="true"] { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); background: var(--accent-soft); }
+.race-detail { font-size: .95rem; display: grid; gap: 4px; }
+.race-detail .flag { font-size: .82rem; color: var(--warn); }
+.align-grid { display: grid; grid-template-columns: auto repeat(3, 1fr); gap: 6px; max-width: 460px; align-items: stretch; }
+.align-grid .ax { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-2); display: flex; align-items: center; justify-content: center; text-align: center; }
+.align-grid .ax.row { justify-content: flex-end; padding-right: 6px; }
+.align-cell { border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; padding: 10px 4px; cursor: pointer; font-size: .9rem; line-height: 1.2; }
+.align-cell[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+.styles { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { border: 1px solid var(--rule); background: var(--bg); padding: 5px 12px; border-radius: 999px; cursor: pointer; font-size: .92rem; }
+.chip[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.btn { border: 1px solid var(--accent); background: var(--accent); color: var(--panel); padding: 8px 14px; border-radius: 6px; cursor: pointer; font-weight: 500; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn.quiet { border-color: var(--rule); background: transparent; color: var(--ink); font-weight: 400; }
+.btn:disabled { opacity: .5; cursor: default; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.confirm { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 12px; border: 1px dashed var(--accent); border-radius: 6px; }
+
+/* Milestone status */
+.milestones { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .milestones { grid-template-columns: 1fr; } }
+.ms { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 8px; border-top: 3px solid var(--rule); }
+.ms.ok { border-top-color: var(--good); }
+.ms.over { border-top-color: var(--warn); }
+.ms.under { border-top-color: var(--bad); }
+.ms-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.ms-level { font-family: var(--display); font-size: 1.25rem; }
+.pill { font-size: .75rem; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.ok { color: var(--good); } .pill.over { color: var(--warn); } .pill.under { color: var(--bad); }
+.xpbar { height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.xpbar i { display: block; height: 100%; background: var(--accent); }
+.ms-stats { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .9rem; }
+.ms-note { font-size: .88rem; color: var(--ink-2); }
+
+/* Skill table */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: 8px; background: var(--panel); }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { padding: 6px 10px; text-align: left; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+thead th { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-2); font-weight: 500; position: sticky; top: 0; background: var(--panel); }
+th.c, td.c { text-align: center; }
+tr.grp th { font-family: var(--display); font-size: .98rem; text-transform: none; letter-spacing: .03em; color: var(--accent); background: var(--bg); padding-top: 10px; }
+tbody tr:last-child td { border-bottom: 0; }
+.tag { font-family: var(--mono); font-size: .72rem; padding: 1px 5px; border-radius: 3px; background: var(--accent-soft); color: var(--accent); margin-left: 6px; }
+.skin { width: 4.2rem; padding: 4px 6px; border: 1px solid var(--rule); border-radius: 4px; background: var(--bg); text-align: center; font-family: var(--mono); }
+.skin.raised { border-color: var(--accent); }
+.ms-switch { display: none; gap: 6px; }
+@media (max-width: 640px) {
+  .ms-switch { display: flex; }
+  table.only-20 .m40, table.only-20 .m60,
+  table.only-40 .m20, table.only-40 .m60,
+  table.only-60 .m20, table.only-60 .m40 { display: none; }
+}
+
+/* Attributes */
+.bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
+.band { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 10px; }
+.band-head { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.stepper { display: grid; grid-template-columns: 1fr auto auto auto; gap: 6px; align-items: center; }
+.stepper .an { display: flex; align-items: center; gap: 8px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot.h { background: var(--health); } .dot.m { background: var(--magicka); } .dot.s { background: var(--stamina); }
+.sb { width: 30px; height: 30px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; cursor: pointer; font-family: var(--mono); }
+.sv { min-width: 2.2rem; text-align: center; font-family: var(--mono); }
+.remain { font-size: .88rem; }
+.remain.done { color: var(--good); } .remain.left { color: var(--warn); }
+.ratio { display: grid; gap: 10px; }
+.ratio-row { display: grid; grid-template-columns: 70px 1fr; gap: 12px; align-items: center; }
+.ratio-bar { display: flex; height: 22px; border-radius: 4px; overflow: hidden; background: var(--rule); }
+.ratio-bar span { display: block; height: 100%; }
+.ratio-bar .h { background: var(--health); } .ratio-bar .m { background: var(--magicka); } .ratio-bar .s { background: var(--stamina); }
+.ratio-nums { grid-column: 2; display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: .88rem; }
+
+/* Summary */
+.sheet { display: grid; gap: 16px; }
+.sheet dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; }
+.sheet dt { color: var(--ink-2); }
+.sheet dd { margin: 0; }
+textarea.code { width: 100%; min-height: 84px; padding: 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); font-family: var(--mono); font-size: .8rem; word-break: break-all; }
+.saved { display: grid; gap: 6px; }
+.saved-item { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); }
+.status { font-size: .9rem; min-height: 1.4em; }
+.status.ok { color: var(--good); } .status.bad { color: var(--bad); }
+
+footer { border-top: 1px solid var(--rule); padding-block: 18px 32px; font-size: .88rem; color: var(--ink-2); }
+footer p { margin: 4px 0; max-width: 80ch; }
+@media (prefers-reduced-motion: no-preference) { .xpbar i, .ratio-bar span { transition: width .25s ease; } }
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <h1>Skyrim Character Planner</h1>
+      <div class="build-tag" id="buildTag"></div>
+    </div>
+    <nav class="steps" role="tablist" aria-label="Planner steps">
+      <button role="tab" id="tab-identity" aria-controls="p-identity" aria-selected="true" data-step="identity"><span class="n">1</span> Identity</button>
+      <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Skill plan</button>
+      <button role="tab" id="tab-attributes" aria-controls="p-attributes" aria-selected="false" data-step="attributes"><span class="n">3</span> Attributes</button>
+      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">4</span> Summary</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- 1. Identity -->
+  <section class="panel" id="p-identity" role="tabpanel" aria-labelledby="tab-identity">
+    <div class="intro">
+      <h2>Who is this character?</h2>
+      <p class="muted">Race sets your starting skills. Combat style can fill in a starting plan for you, which you can then adjust skill by skill.</p>
+      <p id="exampleNote" hidden><span class="example-note">Example build loaded. Change anything to make it yours.</span></p>
+    </div>
+    <div class="box">
+      <div class="field">
+        <label class="label" for="buildName">Build name</label>
+        <input type="text" id="buildName" maxlength="60" autocomplete="off">
+      </div>
+    </div>
+    <div class="box">
+      <div class="row" style="justify-content:space-between">
+        <h3>Race</h3>
+        <span class="label">+10 skill shown</span>
+      </div>
+      <div class="races" id="races" role="radiogroup" aria-label="Race"></div>
+      <div class="race-detail" id="raceDetail"></div>
+    </div>
+    <div class="grid-2">
+      <div class="box">
+        <h3>Alignment</h3>
+        <div class="align-grid" id="alignGrid" role="radiogroup" aria-label="Alignment"></div>
+        <p class="muted" style="margin:0;font-size:.9rem">Alignment will filter the quest list when quest planning arrives. It has no effect on the numbers here.</p>
+      </div>
+      <div class="box">
+        <h3>Combat style</h3>
+        <div class="styles" id="styles" role="radiogroup" aria-label="Combat style"></div>
+        <p class="muted" id="styleDesc" style="margin:0;font-size:.95rem"></p>
+        <div class="row">
+          <button class="btn" id="suggestBtn">Suggest a plan for this style</button>
+        </div>
+        <div class="confirm" id="suggestConfirm" hidden>
+          <span>This replaces your current skill targets and attribute split.</span>
+          <button class="btn" id="suggestYes">Replace plan</button>
+          <button class="btn quiet" id="suggestNo">Keep current plan</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Skills -->
+  <section class="panel" id="p-skills" role="tabpanel" aria-labelledby="tab-skills" hidden>
+    <div class="intro">
+      <h2>Skill plan at levels 20, 40 and 60</h2>
+      <p class="muted">Set where each skill should be at each milestone. Your character level comes only from skill increases: each increase earns XP equal to the new skill level. The cards check whether your targets actually reach each milestone.</p>
+    </div>
+    <div class="milestones" id="milestones"></div>
+    <div class="row" style="justify-content:space-between">
+      <div class="ms-switch" id="msSwitch" role="radiogroup" aria-label="Milestone shown">
+        <button class="chip" data-m="20" aria-checked="true">Level 20</button>
+        <button class="chip" data-m="40" aria-checked="false">Level 40</button>
+        <button class="chip" data-m="60" aria-checked="false">Level 60</button>
+      </div>
+      <button class="btn quiet" id="resetSkills">Reset all to starting values</button>
+    </div>
+    <div class="tbl-wrap">
+      <table id="skillTable" class="only-20">
+        <thead><tr><th>Skill</th><th class="c">Start</th><th class="c m20">Lv 20</th><th class="c m40">Lv 40</th><th class="c m60">Lv 60</th></tr></thead>
+        <tbody id="skillBody"></tbody>
+      </table>
+    </div>
+    <p class="muted" style="margin:0;font-size:.9rem">Raising a skill at an earlier milestone also raises it at later ones. Perk picking per skill tree arrives with the full perk data.</p>
+  </section>
+
+  <!-- 3. Attributes -->
+  <section class="panel" id="p-attributes" role="tabpanel" aria-labelledby="tab-attributes" hidden>
+    <div class="intro">
+      <h2>Health, Magicka and Stamina</h2>
+      <p class="muted">Every level-up adds 10 to one attribute. Split the level-ups in each stretch of play; each point of Stamina also adds 5 carry weight.</p>
+    </div>
+    <div class="row">
+      <button class="btn ghost" id="applyRatio">Use the combat style's split</button>
+      <button class="btn quiet" id="evenRatio">Split evenly</button>
+    </div>
+    <div class="bands" id="bands"></div>
+    <div class="box">
+      <h3>Totals at each milestone</h3>
+      <div class="ratio" id="ratio"></div>
+    </div>
+  </section>
+
+  <!-- 4. Summary -->
+  <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
+    <div class="intro">
+      <h2>Build sheet</h2>
+      <p class="muted">Everything about this build on one page. Copy the build code to keep it or share it, and paste a code to load one.</p>
+    </div>
+    <div class="grid-2">
+      <div class="box sheet" id="sheet"></div>
+      <div class="box" style="align-content:start">
+        <h3>Save and share</h3>
+        <div class="row">
+          <button class="btn" id="saveBtn">Save in this browser</button>
+          <button class="btn ghost" id="copyBtn">Copy build code</button>
+        </div>
+        <div class="status" id="saveStatus" role="status"></div>
+        <label class="label" for="codeOut">Build code</label>
+        <textarea class="code" id="codeOut" readonly></textarea>
+        <label class="label" for="codeIn">Load from a build code</label>
+        <textarea class="code" id="codeIn" placeholder="Paste a build code here"></textarea>
+        <div class="row"><button class="btn quiet" id="loadCode">Load this build</button><button class="btn quiet" id="newBuild">Start a blank build</button></div>
+        <h3 style="margin-top:6px">Saved builds</h3>
+        <div class="saved" id="savedList"></div>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Skill</th><th class="c">Start</th><th class="c">Lv 20</th><th class="c">Lv 40</th><th class="c">Lv 60</th></tr></thead>
+        <tbody id="sheetSkills"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
+    <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
+  </div>
+</footer>
+
+<script>
+(() => {
+  // ---------- Game data ----------
+  const SKILLS = [
+    ['oneHanded','One-Handed','Combat'],['twoHanded','Two-Handed','Combat'],['archery','Archery','Combat'],
+    ['block','Block','Combat'],['heavyArmor','Heavy Armor','Combat'],['smithing','Smithing','Combat'],
+    ['alteration','Alteration','Magic'],['conjuration','Conjuration','Magic'],['destruction','Destruction','Magic'],
+    ['illusion','Illusion','Magic'],['restoration','Restoration','Magic'],['enchanting','Enchanting','Magic'],
+    ['lightArmor','Light Armor','Stealth'],['sneak','Sneak','Stealth'],['lockpicking','Lockpicking','Stealth'],
+    ['pickpocket','Pickpocket','Stealth'],['speech','Speech','Stealth'],['alchemy','Alchemy','Stealth']
+  ].map(([id, name, group]) => ({ id, name, group }));
+  const SK = Object.fromEntries(SKILLS.map(s => [s.id, s]));
+  const GROUPS = ['Combat', 'Magic', 'Stealth'];
+
+  // verified: true = bonuses checked directly on UESP this session
+  const RACES = [
+    { id:'argonian', name:'Argonian', p10:'lockpicking', p5:['alteration','lightArmor','pickpocket','restoration','sneak'], magicka:100, power:'Histskin: recover health 10x faster for 60 seconds, once a day', page:'Skyrim:Argonian', verified:false },
+    { id:'breton', name:'Breton', p10:'conjuration', p5:['alchemy','alteration','illusion','restoration','speech'], magicka:100, power:'Dragonskin: absorb 50% of the magicka from hostile spells for 60 seconds, once a day. Constant 25% magic resistance.', page:'Skyrim:Breton', verified:false },
+    { id:'darkElf', name:'Dark Elf', p10:'destruction', p5:['alchemy','alteration','illusion','lightArmor','sneak'], magicka:100, power:"Ancestor's Wrath: nearby opponents take 8 fire damage per second for 60 seconds, once a day", page:'Skyrim:Dark_Elf', verified:false },
+    { id:'highElf', name:'High Elf', p10:'illusion', p5:['alteration','conjuration','destruction','enchanting','restoration'], magicka:150, power:'Highborn: regenerate magicka 25x faster for 60 seconds, once a day. Starts with 50 extra Magicka.', page:'Skyrim:High_Elf', verified:false },
+    { id:'imperial', name:'Imperial', p10:'restoration', p5:['block','destruction','enchanting','heavyArmor','oneHanded'], magicka:100, power:'Voice of the Emperor: calms nearby people for 60 seconds, once a day. Imperial Luck finds extra gold.', page:'Skyrim:Imperial', verified:true },
+    { id:'khajiit', name:'Khajiit', p10:'sneak', p5:['alchemy','archery','lockpicking','oneHanded','pickpocket'], magicka:100, power:'Night Eye: improved night vision for 60 seconds, usable any number of times. Claws do 12 damage.', page:'Skyrim:Khajiit', verified:false },
+    { id:'nord', name:'Nord', p10:'twoHanded', p5:['block','lightArmor','oneHanded','smithing','speech'], magicka:100, power:'Battle Cry: targets flee for 30 seconds, once a day', page:'Skyrim:Nord', verified:false },
+    { id:'orc', name:'Orc', p10:'heavyArmor', p5:['block','enchanting','oneHanded','smithing','twoHanded'], magicka:100, power:'Berserker Rage: take half damage and deal double damage for 60 seconds, once a day', page:'Skyrim:Orc', verified:false },
+    { id:'redguard', name:'Redguard', p10:'oneHanded', p5:['alteration','archery','block','destruction','smithing'], magicka:100, power:'Adrenaline Rush: Stamina regenerates 10x faster for 60 seconds, once a day', page:'Skyrim:Redguard', verified:false },
+    { id:'woodElf', name:'Wood Elf', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:false }
+  ];
+  const RC = Object.fromEntries(RACES.map(r => [r.id, r]));
+
+  const ALIGN_ROWS = ['Lawful', 'Neutral', 'Chaotic'];
+  const ALIGN_COLS = ['Good', 'Neutral', 'Evil'];
+
+  // weights steer the plan suggester; ratio = Health : Magicka : Stamina
+  const STYLES = [
+    { id:'warrior', name:'Warrior', desc:'Sword and shield in heavy armor, forging your own gear.', w:{ oneHanded:3, block:2, heavyArmor:3, smithing:2 }, ratio:[2,0,1] },
+    { id:'barbarian', name:'Barbarian', desc:'Big two-handed weapons, heavy armor, and a lot of Health.', w:{ twoHanded:3, heavyArmor:3, smithing:2, block:1 }, ratio:[2,0,1] },
+    { id:'archer', name:'Archer', desc:'Bows from range and from the shadows, light armor.', w:{ archery:3, sneak:2, lightArmor:2, alchemy:1 }, ratio:[1,0,1] },
+    { id:'assassin', name:'Assassin', desc:'Sneak attacks with daggers and bows, poisons from alchemy.', w:{ sneak:3, oneHanded:2, archery:2, lightArmor:1, alchemy:1 }, ratio:[1,0,1] },
+    { id:'mage', name:'Mage', desc:'Destruction spells, healing, wards and enchanted robes.', w:{ destruction:3, restoration:2, alteration:2, enchanting:1, conjuration:1 }, ratio:[1,3,0] },
+    { id:'conjurer', name:'Conjurer', desc:'Summoned atronachs and bound weapons do the fighting.', w:{ conjuration:3, alteration:2, restoration:1, enchanting:1, illusion:1 }, ratio:[1,3,0] },
+    { id:'spellsword', name:'Spellsword', desc:'A blade in one hand, a spell in the other.', w:{ oneHanded:3, destruction:2, restoration:2, lightArmor:2 }, ratio:[1,1,1] },
+    { id:'battlemage', name:'Battlemage', desc:'Destruction spells cast from inside heavy armor.', w:{ destruction:3, heavyArmor:2, alteration:1, restoration:1, smithing:1 }, ratio:[1,1,0] },
+    { id:'paladin', name:'Paladin', desc:'Sword, shield and healing magic.', w:{ oneHanded:3, block:2, heavyArmor:2, restoration:2, smithing:1 }, ratio:[2,1,0] },
+    { id:'thief', name:'Thief', desc:'Locks, pockets and silver tongues; fights only when cornered.', w:{ sneak:3, lockpicking:2, pickpocket:2, speech:1, lightArmor:1, archery:1 }, ratio:[1,0,1] }
+  ];
+  const ST = Object.fromEntries(STYLES.map(s => [s.id, s]));
+  const MS = [20, 40, 60];
+  const BANDS = [[20, 1, 20, 19], [40, 21, 40, 20], [60, 41, 60, 20]]; // [milestone, from, to, level-ups]
+
+  // ---------- Engine (UESP: Skyrim:Leveling) ----------
+  const startOf = (race, id) => { const r = RC[race]; return 15 + (r.p10 === id ? 10 : r.p5.includes(id) ? 5 : 0); };
+  const xpForSkill = (from, to) => to > from ? (to * (to + 1) - from * (from + 1)) / 2 : 0; // each increase earns the new level in XP
+  const xpToReach = n => 12.5 * n * n + 62.5 * n - 75;             // total XP from level 1 to level n
+  const levelFromXp = xp => Math.floor(-2.5 + Math.sqrt(8 * xp + 1225) / 10);
+  const xpOf = (race, t) => SKILLS.reduce((sum, s) => sum + xpForSkill(startOf(race, s.id), t[s.id]), 0);
+
+  function milestoneInfo(m) {
+    const t = state.targets[m];
+    const xp = xpOf(state.race, t);
+    const lvl = levelFromXp(xp);
+    const need = xpToReach(m);
+    const increases = SKILLS.reduce((n, s) => n + (t[s.id] - startOf(state.race, s.id)), 0);
+    let status = lvl < m ? 'under' : lvl <= m + 2 ? 'ok' : 'over';
+    let hint = '';
+    if (status === 'under') {
+      // points needed in the highest planned skill still under 100
+      const top = SKILLS.filter(s => t[s.id] < 100).sort((a, b) => t[b.id] - t[a.id])[0];
+      if (top) {
+        let v = t[top.id], gained = 0;
+        while (v < 100 && xp + gained < need) { v++; gained += v; }
+        hint = xp + gained >= need
+          ? `Short ${fmt(need - xp)} XP. Raising ${top.name} from ${t[top.id]} to ${v} would cover it.`
+          : `Short ${fmt(need - xp)} XP. You'll need to raise several more skills.`;
+      }
+    } else if (status === 'over') {
+      hint = `You'll pass level ${m} before these skills are done; these are really level ${lvl} targets.`;
+    } else {
+      hint = `These skills land you on level ${m}.`;
+    }
+    return { xp, lvl, need, increases, status, hint, perks: Math.max(0, lvl - 1) };
+  }
+
+  function suggestTargets(race, style) {
+    const w = { ...ST[style].w };
+    const cur = Object.fromEntries(SKILLS.map(s => [s.id, startOf(race, s.id)]));
+    const start = { ...cur };
+    let xp = 0;
+    const out = {};
+    for (const m of MS) {
+      const need = xpToReach(m);
+      while (xp < need) {
+        let pool = SKILLS.filter(s => w[s.id] && cur[s.id] < 100);
+        if (!pool.length) { // style skills maxed: branch out into the rest at low weight
+          SKILLS.forEach(s => { if (!w[s.id]) w[s.id] = 0.6; });
+          pool = SKILLS.filter(s => cur[s.id] < 100);
+          if (!pool.length) break;
+        }
+        let best = pool[0], bestKey = Infinity;
+        for (const s of pool) { const k = (cur[s.id] - start[s.id] + 1) / w[s.id]; if (k < bestKey) { bestKey = k; best = s; } }
+        cur[best.id]++; xp += cur[best.id];
+      }
+      out[m] = { ...cur };
+    }
+    return out;
+  }
+
+  function splitByRatio(n, ratio) {
+    const tot = ratio.reduce((a, b) => a + b, 0) || 3;
+    const r = tot === 3 && ratio.every(x => x === 0) ? [1,1,1] : ratio;
+    const raw = r.map(x => n * x / (r.reduce((a, b) => a + b, 0)));
+    const out = raw.map(Math.floor);
+    let left = n - out.reduce((a, b) => a + b, 0);
+    const order = raw.map((v, i) => [v - Math.floor(v), i]).sort((a, b) => b[0] - a[0]);
+    for (let k = 0; left > 0; k++, left--) out[order[k % 3][1]]++;
+    return out;
+  }
+
+  // ---------- State ----------
+  function blankState(race = 'nord') {
+    const base = Object.fromEntries(SKILLS.map(s => [s.id, startOf(race, s.id)]));
+    return { v: 1, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior',
+      targets: { 20: { ...base }, 40: { ...base }, 60: { ...base } },
+      bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
+  }
+  function exampleState() {
+    const s = blankState('nord');
+    s.name = 'Example: Nord paladin'; s.style = 'paladin'; s.alignment = 'Lawful Good'; s.example = true;
+    s.targets = suggestTargets('nord', 'paladin');
+    BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
+    return s;
+  }
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } }
+  };
+  function valid(s) {
+    return s && RC[s.race] && s.targets && MS.every(m => s.targets[m] && SKILLS.every(k => Number.isFinite(s.targets[m][k.id])))
+      && s.bands && MS.every(m => Array.isArray(s.bands[m]) && s.bands[m].length === 3);
+  }
+  let state = store.get('skp.current');
+  if (!valid(state)) state = exampleState();
+
+  const fmt = n => Math.round(n).toLocaleString('en-US');
+  const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  const $ = id => document.getElementById(id);
+
+  function touch() { if (state.example) { state.example = false; } store.set('skp.current', state); renderHeader(); }
+
+  // ---------- Header & steps ----------
+  function renderHeader() {
+    $('buildTag').innerHTML = `<strong>${esc(state.name)}</strong> · ${RC[state.race].name} ${ST[state.style].name}`;
+    $('exampleNote').hidden = !state.example;
+  }
+  document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
+  function showStep(step) {
+    document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
+    ['identity','skills','attributes','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    if (step === 'skills') renderSkills();
+    if (step === 'attributes') renderAttributes();
+    if (step === 'summary') renderSummary();
+    try { localStorage.setItem('skp.step', step); } catch {}
+    window.scrollTo({ top: 0 });
+  }
+
+  // ---------- Identity ----------
+  function renderIdentity() {
+    $('buildName').value = state.name;
+    $('races').innerHTML = RACES.map(r => `<button class="race" role="radio" aria-checked="${r.id === state.race}" data-race="${r.id}"><span class="rn">${r.name}</span><span class="rb">+10 ${SK[r.p10].name}</span></button>`).join('');
+    const r = RC[state.race];
+    $('raceDetail').innerHTML = `<div><span class="label">Starting bonuses</span> +10 ${SK[r.p10].name}; +5 ${r.p5.map(id => SK[id].name).join(', ')}${r.magicka > 100 ? `; Magicka starts at ${r.magicka}` : ''}</div>
+      <div><span class="label">Power</span> ${esc(r.power)}</div>
+      <div class="flag">${r.verified ? '' : `Skill bonuses entered by hand; confirm on <a href="https://en.uesp.net/wiki/${r.page}" target="_blank" rel="noopener">UESP</a> after the data pull.`}</div>`;
+    let g = '<span></span>' + ALIGN_COLS.map(c => `<span class="ax">${c}</span>`).join('');
+    ALIGN_ROWS.forEach(row => {
+      g += `<span class="ax row">${row}</span>`;
+      ALIGN_COLS.forEach(col => {
+        const key = `${row} ${col}`, label = row === 'Neutral' && col === 'Neutral' ? 'True Neutral' : key;
+        g += `<button class="align-cell" role="radio" aria-checked="${state.alignment === key}" data-align="${key}">${label}</button>`;
+      });
+    });
+    $('alignGrid').innerHTML = g;
+    $('styles').innerHTML = STYLES.map(s => `<button class="chip" role="radio" aria-checked="${s.id === state.style}" data-style="${s.id}">${s.name}</button>`).join('');
+    $('styleDesc').textContent = ST[state.style].desc + ' Focus: ' + Object.keys(ST[state.style].w).map(id => SK[id].name).join(', ') + '.';
+  }
+  $('buildName').addEventListener('input', e => { state.name = e.target.value.trim() || 'Unnamed build'; touch(); });
+  $('races').addEventListener('click', e => {
+    const b = e.target.closest('[data-race]'); if (!b || b.dataset.race === state.race) return;
+    const old = state.race; state.race = b.dataset.race;
+    // keep planned gains, shift starting floor to the new race
+    MS.forEach(m => SKILLS.forEach(s => {
+      const gain = state.targets[m][s.id] - startOf(old, s.id);
+      state.targets[m][s.id] = Math.min(100, Math.max(startOf(state.race, s.id), startOf(state.race, s.id) + gain));
+    }));
+    touch(); renderIdentity();
+  });
+  $('alignGrid').addEventListener('click', e => { const b = e.target.closest('[data-align]'); if (!b) return; state.alignment = b.dataset.align; touch(); renderIdentity(); });
+  $('styles').addEventListener('click', e => { const b = e.target.closest('[data-style]'); if (!b) return; state.style = b.dataset.style; touch(); renderIdentity(); });
+  $('suggestBtn').addEventListener('click', () => { $('suggestConfirm').hidden = false; $('suggestYes').focus(); });
+  $('suggestNo').addEventListener('click', () => { $('suggestConfirm').hidden = true; });
+  $('suggestYes').addEventListener('click', () => {
+    state.targets = suggestTargets(state.race, state.style);
+    BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio));
+    $('suggestConfirm').hidden = true; touch(); showStep('skills');
+  });
+
+  // ---------- Skills ----------
+  let shownM = 20;
+  function renderMilestones() {
+    $('milestones').innerHTML = MS.map(m => {
+      const i = milestoneInfo(m);
+      const label = { ok: 'On target', over: 'Ahead of plan', under: 'Not enough XP' }[i.status];
+      return `<div class="ms ${i.status}">
+        <div class="ms-head"><span class="ms-level">Level ${m}</span><span class="pill ${i.status}">${label}</span></div>
+        <div class="xpbar" aria-hidden="true"><i style="width:${Math.min(100, i.xp / i.need * 100).toFixed(1)}%"></i></div>
+        <div class="ms-stats"><span>Reaches <strong class="num">level ${i.lvl}</strong></span><span class="num">${fmt(i.xp)} / ${fmt(i.need)} XP</span></div>
+        <div class="ms-stats"><span><span class="num">${i.increases}</span> skill increases</span><span><span class="num">${i.perks}</span> perk points</span></div>
+        <div class="ms-note">${esc(i.hint)}</div>
+      </div>`;
+    }).join('');
+  }
+  function renderSkills() {
+    renderMilestones();
+    const r = RC[state.race];
+    let html = '';
+    GROUPS.forEach(g => {
+      html += `<tr class="grp"><th colspan="5">${g}</th></tr>`;
+      SKILLS.filter(s => s.group === g).forEach(s => {
+        const st = startOf(state.race, s.id);
+        const tag = r.p10 === s.id ? '<span class="tag">+10</span>' : r.p5.includes(s.id) ? '<span class="tag">+5</span>' : '';
+        html += `<tr><td>${s.name}${tag}</td><td class="c num">${st}</td>` + MS.map(m => {
+          const v = state.targets[m][s.id];
+          return `<td class="c m${m}"><input class="skin${v > st ? ' raised' : ''}" type="number" inputmode="numeric" min="${st}" max="100" step="1" id="sk-${m}-${s.id}" data-m="${m}" data-s="${s.id}" value="${v}" aria-label="${s.name} at level ${m}"></td>`;
+        }).join('') + '</tr>';
+      });
+    });
+    $('skillBody').innerHTML = html;
+    $('skillTable').className = 'only-' + shownM;
+  }
+  function applySkill(m, id, raw) {
+    const st = startOf(state.race, id);
+    let v = Math.round(Number(raw));
+    if (!Number.isFinite(v)) return;
+    v = Math.min(100, Math.max(st, v));
+    state.targets[m][id] = v;
+    MS.forEach(o => {
+      if (o > m && state.targets[o][id] < v) state.targets[o][id] = v;   // later milestones can't be lower
+      if (o < m && state.targets[o][id] > v) state.targets[o][id] = v;   // earlier milestones can't be higher
+    });
+    MS.forEach(o => { const el = $(`sk-${o}-${id}`); if (el) { if (o !== m || document.activeElement !== el) el.value = state.targets[o][id]; el.classList.toggle('raised', state.targets[o][id] > st); } });
+    touch(); renderMilestones();
+  }
+  $('skillBody').addEventListener('input', e => { const el = e.target; if (el.dataset.s && el.value !== '') applySkill(+el.dataset.m, el.dataset.s, el.value); });
+  $('skillBody').addEventListener('change', e => { const el = e.target; if (el.dataset.s) { applySkill(+el.dataset.m, el.dataset.s, el.value === '' ? startOf(state.race, el.dataset.s) : el.value); el.value = state.targets[+el.dataset.m][el.dataset.s]; } });
+  $('msSwitch').addEventListener('click', e => {
+    const b = e.target.closest('[data-m]'); if (!b) return; shownM = +b.dataset.m;
+    $('msSwitch').querySelectorAll('[data-m]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    $('skillTable').className = 'only-' + shownM;
+  });
+  $('resetSkills').addEventListener('click', () => {
+    MS.forEach(m => SKILLS.forEach(s => state.targets[m][s.id] = startOf(state.race, s.id)));
+    touch(); renderSkills();
+  });
+
+  // ---------- Attributes ----------
+  const ATTR = [['h','Health'],['m','Magicka'],['s','Stamina']];
+  function totals(m) {
+    const pts = [0, 0, 0];
+    BANDS.forEach(([bm]) => { if (bm <= m) state.bands[bm].forEach((v, i) => pts[i] += v); });
+    return { pts, h: 100 + 10 * pts[0], m: RC[state.race].magicka + 10 * pts[1], s: 100 + 10 * pts[2], carry: 300 + 5 * pts[2] };
+  }
+  function renderAttributes() {
+    $('bands').innerHTML = BANDS.map(([m, from, to, n]) => {
+      const b = state.bands[m], used = b.reduce((x, y) => x + y, 0), left = n - used;
+      return `<div class="band"><div class="band-head"><h3>Levels ${from === 1 ? 2 : from}–${to}</h3><span class="label">${n} level-ups</span></div>
+        ${ATTR.map(([k, name], i) => `<div class="stepper"><span class="an"><span class="dot ${k}"></span>${name}</span>
+          <button class="sb" data-b="${m}" data-i="${i}" data-d="-1" aria-label="One fewer ${name} level-up, levels ${from}–${to}" ${b[i] <= 0 ? 'disabled' : ''}>−</button>
+          <span class="sv" aria-live="polite">${b[i]}</span>
+          <button class="sb" data-b="${m}" data-i="${i}" data-d="1" aria-label="One more ${name} level-up, levels ${from}–${to}" ${left <= 0 ? 'disabled' : ''}>+</button></div>`).join('')}
+        <div class="remain ${left === 0 ? 'done' : 'left'}">${left === 0 ? 'All level-ups assigned' : `${left} level-up${left === 1 ? '' : 's'} left to assign`}</div></div>`;
+    }).join('');
+    $('ratio').innerHTML = MS.map(m => {
+      const t = totals(m), sum = t.h + t.m + t.s;
+      return `<div class="ratio-row"><span class="label">Level ${m}</span>
+        <div class="ratio-bar" role="img" aria-label="Level ${m}: Health ${t.h}, Magicka ${t.m}, Stamina ${t.s}"><span class="h" style="width:${t.h / sum * 100}%"></span><span class="m" style="width:${t.m / sum * 100}%"></span><span class="s" style="width:${t.s / sum * 100}%"></span></div>
+        <div class="ratio-nums"><span><span class="dot h"></span> Health <strong class="num">${t.h}</strong></span><span><span class="dot m"></span> Magicka <strong class="num">${t.m}</strong></span><span><span class="dot s"></span> Stamina <strong class="num">${t.s}</strong></span><span class="muted">Carry weight <span class="num">${t.carry}</span></span></div></div>`;
+    }).join('');
+  }
+  $('bands').addEventListener('click', e => {
+    const b = e.target.closest('[data-b]'); if (!b || b.disabled) return;
+    const m = +b.dataset.b, i = +b.dataset.i, d = +b.dataset.d, n = BANDS.find(x => x[0] === m)[3];
+    const arr = state.bands[m], used = arr.reduce((x, y) => x + y, 0);
+    if (d > 0 && used >= n) return; if (d < 0 && arr[i] <= 0) return;
+    arr[i] += d; touch(); renderAttributes();
+    const again = document.querySelector(`[data-b="${m}"][data-i="${i}"][data-d="${d}"]`); if (again && !again.disabled) again.focus();
+  });
+  $('applyRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio)); touch(); renderAttributes(); });
+  $('evenRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, [1,1,1])); touch(); renderAttributes(); });
+
+  // ---------- Summary ----------
+  const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
+  const decode = c => JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
+  function renderSummary() {
+    const r = RC[state.race];
+    const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
+      const top = SKILLS.filter(s => state.targets[m][s.id] > startOf(state.race, s.id)).sort((a, b) => state.targets[m][b.id] - state.targets[m][a.id]).slice(0, 4).map(s => `${s.name} ${state.targets[m][s.id]}`).join(', ') || 'No skills raised';
+      return `<div><h3>Level ${m}</h3><dl><dt>Skills reach</dt><dd>Level ${i.lvl} <span class="pill ${i.status}">${{ ok:'On target', over:'Ahead', under:'Short' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Perk points</dt><dd class="num">${i.perks}</dd></dl></div>`; }).join('');
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd></dl></div>${rows}`;
+    $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
+      `<tr><td>${s.name}</td><td class="c num">${startOf(state.race, s.id)}</td>${MS.map(m => `<td class="c num">${state.targets[m][s.id]}</td>`).join('')}</tr>`).join('')).join('');
+    $('codeOut').value = encode(state);
+    renderSaved();
+  }
+  function setStatus(msg, ok = true) { const el = $('saveStatus'); el.textContent = msg; el.className = 'status ' + (ok ? 'ok' : 'bad'); }
+  function renderSaved() {
+    const list = store.get('skp.saved') || [];
+    $('savedList').innerHTML = list.length ? list.map((b, i) => `<div class="saved-item"><span><strong>${esc(b.name)}</strong> <span class="muted">· ${RC[b.race]?.name || ''} ${ST[b.style]?.name || ''}</span></span>
+      <span class="row"><button class="btn quiet" data-load="${i}">Load</button><button class="btn quiet" data-del="${i}">Delete</button></span></div>`).join('')
+      : '<p class="muted" style="margin:0">No saved builds yet.</p>';
+  }
+  $('saveBtn').addEventListener('click', () => {
+    const list = store.get('skp.saved') || [];
+    const copy = JSON.parse(JSON.stringify({ ...state, example: false }));
+    const at = list.findIndex(b => b.name === copy.name);
+    if (at >= 0) list[at] = copy; else list.push(copy);
+    setStatus(store.set('skp.saved', list) ? `Saved "${state.name}" in this browser.` : 'This browser blocked saving. Copy the build code instead.', true);
+    renderSaved();
+  });
+  $('copyBtn').addEventListener('click', () => {
+    const t = $('codeOut');
+    navigator.clipboard?.writeText(t.value).then(() => setStatus('Build code copied.'), () => { t.focus(); t.select(); setStatus('Build code selected. Copy it with your keyboard.'); })
+      ?? (t.focus(), t.select(), setStatus('Build code selected. Copy it with your keyboard.'));
+  });
+  $('loadCode').addEventListener('click', () => {
+    try { const s = decode($('codeIn').value); if (!valid(s)) throw 0; state = s; state.example = false; touch(); renderAll(); $('codeIn').value = ''; setStatus(`Loaded "${state.name}".`); }
+    catch { setStatus("That code didn't load. Check that you copied the whole code.", false); }
+  });
+  $('newBuild').addEventListener('click', () => { state = blankState(state.race); touch(); renderAll(); showStep('identity'); });
+  $('savedList').addEventListener('click', e => {
+    const list = store.get('skp.saved') || [];
+    const l = e.target.closest('[data-load]'), d = e.target.closest('[data-del]');
+    if (l) { const s = list[+l.dataset.load]; if (valid(s)) { state = JSON.parse(JSON.stringify(s)); touch(); renderAll(); setStatus(`Loaded "${state.name}".`); } }
+    if (d) {
+      if (d.dataset.armed) { const name = list[+d.dataset.del].name; list.splice(+d.dataset.del, 1); store.set('skp.saved', list); renderSaved(); setStatus(`Deleted "${name}".`); }
+      else { d.dataset.armed = '1'; d.textContent = 'Confirm delete'; }
+    }
+  });
+
+  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderSummary(); }
+  renderAll();
+  let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
+  showStep(['identity','skills','attributes','summary'].includes(step) ? step : 'identity');
+})();
+</script>
+
+</body></html>
