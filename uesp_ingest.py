@@ -27,7 +27,7 @@ import requests
 
 API = "https://en.uesp.net/w/api.php"   # confirm the endpoint if requests fail
 WIKI = "https://en.uesp.net/wiki/"
-USER_AGENT = "SkyrimCharacterPlanner/0.1 (private fan tool; contact: you@example.com)"  # put your email here
+USER_AGENT = "SkyrimCharacterPlanner/0.1 (private fan tool; contact: d.ehren.russell@gmail.com)"  # put your email here
 DELAY_SECONDS = 3      # be gentle: UESP is volunteer-run and blocks aggressive bots
 OUT = Path("data")
 RAW = OUT / "raw"
