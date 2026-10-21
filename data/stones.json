@@ -1,0 +1,127 @@
+{
+ "license": "CC BY-SA 2.5; stone effects and locations from UESP (https://en.uesp.net/wiki/Skyrim:Standing_Stones), summarized.",
+ "asOf": "2026-10-21",
+ "stones": [
+  {
+   "id": "apprentice",
+   "name": "The Apprentice Stone",
+   "kind": "ability",
+   "effect": "Recover Magicka faster, but take more damage from magic.",
+   "location": "Island in the Hjaalmarch marsh, north of Fort Snowhawk, west-northwest of Morthal"
+  },
+  {
+   "id": "atronach",
+   "name": "The Atronach Stone",
+   "kind": "ability",
+   "effect": "Absorb part of the spell damage that hits you and have a larger Magicka pool, but recover Magicka more slowly.",
+   "location": "Southern end of the Eastmarch hot springs, northwest of Mistwatch"
+  },
+  {
+   "id": "lady",
+   "name": "The Lady Stone",
+   "kind": "ability",
+   "effect": "Health and Stamina regenerate faster.",
+   "location": "Island in Lake Ilinalta, directly north of Falkreath"
+  },
+  {
+   "id": "lord",
+   "name": "The Lord Stone",
+   "kind": "ability",
+   "effect": "More resistant to both magic and physical damage.",
+   "location": "Mountain east of Morthal, northeast of the Shrine of Mehrunes Dagon"
+  },
+  {
+   "id": "lover",
+   "name": "The Lover Stone",
+   "kind": "skills",
+   "effect": "All skills improve 15% faster.",
+   "location": "North of Kolskeggr Mine, on the road north from Markarth",
+   "skillRate": 0.15,
+   "skills": "all"
+  },
+  {
+   "id": "mage",
+   "name": "The Mage Stone",
+   "kind": "skills",
+   "effect": "Magic skills improve 20% faster.",
+   "location": "Guardian Stones, by the road southwest of Riverwood",
+   "skillRate": 0.2,
+   "skills": [
+    "alteration",
+    "conjuration",
+    "destruction",
+    "illusion",
+    "restoration",
+    "enchanting"
+   ]
+  },
+  {
+   "id": "ritual",
+   "name": "The Ritual Stone",
+   "kind": "power",
+   "effect": "Once a day, raise nearby corpses to fight for you.",
+   "location": "Above the entrance to Graywinter Watch, east of Whiterun"
+  },
+  {
+   "id": "serpent",
+   "name": "The Serpent Stone",
+   "kind": "power",
+   "effect": "Once a day, paralyze an opponent with a ranged poison.",
+   "location": "Icy island in the Sea of Ghosts, east of the College of Winterhold"
+  },
+  {
+   "id": "shadow",
+   "name": "The Shadow Stone",
+   "kind": "power",
+   "effect": "Once a day, become invisible for an extended time.",
+   "location": "South of Riften, near Nightingale Hall"
+  },
+  {
+   "id": "steed",
+   "name": "The Steed Stone",
+   "kind": "ability",
+   "effect": "Carry 100 more, and worn armor weighs nothing and doesn't slow you down.",
+   "location": "Near Ironback Hideout, northwest of Solitude",
+   "carryWeight": 100
+  },
+  {
+   "id": "thief",
+   "name": "The Thief Stone",
+   "kind": "skills",
+   "effect": "Stealth skills and Archery improve 20% faster.",
+   "location": "Guardian Stones, by the road southwest of Riverwood",
+   "skillRate": 0.2,
+   "skills": [
+    "archery",
+    "lightArmor",
+    "sneak",
+    "lockpicking",
+    "pickpocket",
+    "speech",
+    "alchemy"
+   ]
+  },
+  {
+   "id": "tower",
+   "name": "The Tower Stone",
+   "kind": "power",
+   "effect": "Once a day, open any lock up to Expert difficulty.",
+   "location": "High cliff about halfway between Dawnstar and Winterhold"
+  },
+  {
+   "id": "warrior",
+   "name": "The Warrior Stone",
+   "kind": "skills",
+   "effect": "Combat skills except Archery improve 20% faster.",
+   "location": "Guardian Stones, by the road southwest of Riverwood",
+   "skillRate": 0.2,
+   "skills": [
+    "oneHanded",
+    "twoHanded",
+    "block",
+    "heavyArmor",
+    "smithing"
+   ]
+  }
+ ]
+}
