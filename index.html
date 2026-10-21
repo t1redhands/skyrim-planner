@@ -169,6 +169,23 @@ tbody tr:last-child td { border-bottom: 0; }
 .perk-list { display: grid; gap: 4px; font-size: .92rem; }
 .perk-list p { margin: 0; }
 
+/* Stones */
+.stretch select { width: 100%; padding: 7px 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); }
+.stretch .tip { font-size: .88rem; display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.stretch .tip .btn { padding: 3px 10px; font-size: .85rem; }
+.speed { height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; }
+.speed i { display: block; height: 100%; background: var(--accent); }
+.stone-groups { display: grid; gap: 20px; }
+.stone-group { display: grid; gap: 10px; }
+.stones { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.stone { background: var(--panel); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+.stone.used { border-color: var(--accent); }
+.stone .sn { font-family: var(--display); font-size: 1.08rem; }
+.stone .kind { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-2); }
+.stone .se { font-size: .95rem; }
+.stone .sl { font-size: .85rem; color: var(--ink-2); }
+.stone .su { font-size: .82rem; color: var(--accent); font-weight: 500; }
+
 /* Attributes */
 .bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
@@ -215,7 +232,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button role="tab" id="tab-identity" aria-controls="p-identity" aria-selected="true" data-step="identity"><span class="n">1</span> Identity</button>
       <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perk plan</button>
       <button role="tab" id="tab-attributes" aria-controls="p-attributes" aria-selected="false" data-step="attributes"><span class="n">3</span> Attributes</button>
-      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">4</span> Summary</button>
+      <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">4</span> Loadout</button>
+      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">5</span> Summary</button>
     </nav>
   </div>
 </header>
@@ -256,7 +274,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <button class="btn" id="suggestBtn">Suggest a plan for this style</button>
         </div>
         <div class="confirm" id="suggestConfirm" hidden>
-          <span>This replaces your current perk plan and attribute split.</span>
+          <span>This replaces your current perk plan, attribute split and Standing Stones.</span>
           <button class="btn" id="suggestYes">Replace plan</button>
           <button class="btn quiet" id="suggestNo">Keep current plan</button>
         </div>
@@ -307,7 +325,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
-  <!-- 4. Summary -->
+  <!-- 4. Loadout -->
+  <section class="panel" id="p-loadout" role="tabpanel" aria-labelledby="tab-loadout" hidden>
+    <div class="intro">
+      <h2>Standing Stones</h2>
+      <p class="muted">Only one stone is active at a time, but you can switch whenever you reach another stone. Pick one for each stretch of play. The Warrior, Mage, Thief and Lover stones make skills improve faster, so they get you to each milestone sooner. The others give a lasting ability or a once-a-day power.</p>
+    </div>
+    <div class="milestones" id="stoneStretches"></div>
+    <div class="stone-groups" id="stoneList"></div>
+    <p class="muted" style="margin:0;font-size:.9rem">Shouts, gear, potions and recipes will join this screen next.</p>
+  </section>
+
+  <!-- 5. Summary -->
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
     <div class="intro">
       <h2>Build sheet</h2>
@@ -346,7 +375,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
 <footer>
   <div class="wrap">
-    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
+    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
     <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
   </div>
 </footer>
@@ -405,15 +434,16 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA;
+  let PERKDATA, STONEDATA;
   try {
-    const res = await fetch('data/perks.json', { cache: 'no-cache' });
-    if (!res.ok) throw new Error(res.status);
-    PERKDATA = await res.json();
+    const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
+    [PERKDATA, STONEDATA] = await Promise.all([get('perks.json'), get('stones.json')]);
   } catch (e) {
-    document.querySelector('main').innerHTML = `<div class="box"><h2>The perk data didn't load</h2><p>The planner reads its perk trees from <code>data/perks.json</code>, next to this page. Check that the file is in the <code>data</code> folder and reload the page.</p></div>`;
+    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads <code>perks.json</code> and <code>stones.json</code> from the <code>data</code> folder next to this page. Check that both files are there and reload the page.</p></div>`;
     return;
   }
+  const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
+  const STRETCH = { 20: 'Levels 1–20', 40: 'Levels 21–40', 60: 'Levels 41–60' };
   const TREES = PERKDATA.trees;
   const PERKS = {};                       // id -> perk (with .skill)
   for (const s of SKILLS) for (const p of TREES[s.id].perks) PERKS[p.id] = { ...p, skill: s.id };
@@ -503,15 +533,34 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return out;
   }
 
+  // Standing Stones: share of a stretch's planned skill increases a stone speeds up
+  function stretchIncreases(picks, race, m) {
+    const prevM = MS[MS.indexOf(m) - 1];
+    const now = skillLevels(picks, race, m);
+    const before = prevM ? skillLevels(picks, race, prevM) : Object.fromEntries(SKILLS.map(s => [s.id, startOf(race, s.id)]));
+    return Object.fromEntries(SKILLS.map(s => [s.id, now[s.id] - before[s.id]]));
+  }
+  function stoneSpeed(stoneId, inc) {
+    const st = STN[stoneId], total = Object.values(inc).reduce((a, b) => a + b, 0);
+    if (!st || !st.skillRate || !total) return { covered: 0, total, gain: 0 };
+    const covered = SKILLS.reduce((n, s) => n + (st.skills === 'all' || st.skills.includes(s.id) ? inc[s.id] : 0), 0);
+    return { covered, total, gain: st.skillRate * covered / total };
+  }
+  function fastestStone(inc) {
+    return STONES.filter(s => s.skillRate).map(s => ({ s, ...stoneSpeed(s.id, inc) })).sort((a, b) => b.gain - a.gain)[0];
+  }
+  const suggestStones = (picks, race) => Object.fromEntries(MS.map(m => { const f = fastestStone(stretchIncreases(picks, race, m)); return [m, f && f.gain > 0 ? f.s.id : null]; }));
+
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null },
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
     const s = blankState('nord');
     s.name = 'Example: Nord paladin'; s.style = 'paladin'; s.alignment = 'Lawful Good'; s.example = true;
     s.picks = suggestPicks('nord', 'paladin');
+    s.stones = suggestStones(s.picks, 'nord');
     BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
     return s;
   }
@@ -522,7 +571,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // accepts current builds and builds saved before perk planning (v1 kept skill targets; those become an empty perk plan)
   function normalize(s) {
     if (!s || !RC[s.race] || !ST[s.style] || !s.bands || !MS.every(m => Array.isArray(s.bands[m]) && s.bands[m].length === 3)) return null;
-    const out = { v: 2, name: String(s.name || 'Unnamed build'), race: s.race, alignment: s.alignment || 'Neutral Neutral', style: s.style, bands: s.bands, picks: {}, example: false };
+    const out = { v: 2, name: String(s.name || 'Unnamed build'), race: s.race, alignment: s.alignment || 'Neutral Neutral', style: s.style, bands: s.bands, picks: {}, stones: { 20: null, 40: null, 60: null }, example: false };
+    if (s.stones) MS.forEach(m => { if (STN[s.stones[m]]) out.stones[m] = s.stones[m]; });
     if (s.picks && typeof s.picks === 'object') for (const [k, v] of Object.entries(s.picks)) {
       const [id, i] = k.split('#');
       if (PERKS[id] && PERKS[id].ranks[+i] != null && MS.includes(v)) out.picks[k] = v;
@@ -542,8 +592,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
-    ['identity','skills','attributes','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    ['identity','skills','attributes','loadout','summary'].forEach(p => $('p-' + p).hidden = p !== step);
     if (step === 'skills') renderSkills();
+    if (step === 'loadout') renderLoadout();
     if (step === 'attributes') renderAttributes();
     if (step === 'summary') renderSummary();
     try { localStorage.setItem('skp.step', step); } catch {}
@@ -577,6 +628,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('suggestNo').addEventListener('click', () => { $('suggestConfirm').hidden = true; });
   $('suggestYes').addEventListener('click', () => {
     state.picks = suggestPicks(state.race, state.style);
+    state.stones = suggestStones(state.picks, state.race);
     BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio));
     const firstStyleSkill = Object.keys(ST[state.style].w)[0]; if (firstStyleSkill) shownTree = firstStyleSkill;
     $('suggestConfirm').hidden = true; touch(); showStep('skills');
@@ -669,7 +721,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function totals(m) {
     const pts = [0, 0, 0];
     BANDS.forEach(([bm]) => { if (bm <= m) state.bands[bm].forEach((v, i) => pts[i] += v); });
-    return { pts, h: 100 + 10 * pts[0], m: RC[state.race].magicka + 10 * pts[1], s: 100 + 10 * pts[2], carry: 300 + 5 * pts[2] };
+    const steed = STN[state.stones[m]]?.carryWeight || 0;
+    return { pts, h: 100 + 10 * pts[0], m: RC[state.race].magicka + 10 * pts[1], s: 100 + 10 * pts[2], carry: 300 + 5 * pts[2] + steed, steed };
   }
   function renderAttributes() {
     $('bands').innerHTML = BANDS.map(([m, from, to, n]) => {
@@ -685,7 +738,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const t = totals(m), sum = t.h + t.m + t.s;
       return `<div class="ratio-row"><span class="label">Level ${m}</span>
         <div class="ratio-bar" role="img" aria-label="Level ${m}: Health ${t.h}, Magicka ${t.m}, Stamina ${t.s}"><span class="h" style="width:${t.h / sum * 100}%"></span><span class="m" style="width:${t.m / sum * 100}%"></span><span class="s" style="width:${t.s / sum * 100}%"></span></div>
-        <div class="ratio-nums"><span><span class="dot h"></span> Health <strong class="num">${t.h}</strong></span><span><span class="dot m"></span> Magicka <strong class="num">${t.m}</strong></span><span><span class="dot s"></span> Stamina <strong class="num">${t.s}</strong></span><span class="muted">Carry weight <span class="num">${t.carry}</span></span></div></div>`;
+        <div class="ratio-nums"><span><span class="dot h"></span> Health <strong class="num">${t.h}</strong></span><span><span class="dot m"></span> Magicka <strong class="num">${t.m}</strong></span><span><span class="dot s"></span> Stamina <strong class="num">${t.s}</strong></span><span class="muted">Carry weight <span class="num">${t.carry}</span>${t.steed ? ' with the Steed Stone' : ''}</span></div></div>`;
     }).join('');
   }
   $('bands').addEventListener('click', e => {
@@ -698,6 +751,38 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
   $('applyRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio)); touch(); renderAttributes(); });
   $('evenRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, [1,1,1])); touch(); renderAttributes(); });
+
+  // ---------- Loadout: Standing Stones ----------
+  const kindLabel = { skills: 'Faster skills', ability: 'Lasting ability', power: 'Once-a-day power' };
+  function renderLoadout() {
+    $('stoneStretches').innerHTML = MS.map(m => {
+      const inc = stretchIncreases(state.picks, state.race, m), cur = state.stones[m], sp = stoneSpeed(cur, inc), best = fastestStone(inc);
+      let line;
+      if (!sp.total) line = 'No skill increases are planned for this stretch yet.';
+      else if (STN[cur]?.skillRate) line = `Speeds up ${sp.covered} of ${sp.total} planned skill increases, by ${Math.round(STN[cur].skillRate * 100)}% each.`;
+      else if (cur) line = `Doesn't speed up skills. ${sp.total} skill increases are planned here.`;
+      else line = `${sp.total} skill increases are planned here.`;
+      const tip = best && best.gain > 0 && best.s.id !== cur && sp.gain < best.gain - 0.001
+        ? `<div class="tip"><span>Fastest leveling here: <strong>${best.s.name}</strong> (${best.covered} of ${best.total} increases)</span><button class="btn ghost" data-use="${best.s.id}" data-m="${m}">Use it</button></div>` : '';
+      return `<div class="ms stretch"><div class="ms-head"><span class="ms-level">${STRETCH[m]}</span></div>
+        <label class="label" for="stone-${m}">Active stone</label>
+        <select id="stone-${m}" data-m="${m}"><option value="">No stone</option>${STONES.map(s => `<option value="${s.id}"${s.id === cur ? ' selected' : ''}>${s.name}</option>`).join('')}</select>
+        <div class="speed" aria-hidden="true"><i style="width:${sp.total ? (sp.covered / sp.total * 100).toFixed(1) : 0}%"></i></div>
+        <div class="ms-note">${line}</div>${tip}</div>`;
+    }).join('');
+    $('stoneList').innerHTML = ['skills', 'ability', 'power'].map(kind => `<div class="stone-group"><h3>${kindLabel[kind]}</h3><div class="stones">${STONES.filter(s => s.kind === kind).map(s => {
+      const used = MS.filter(m => state.stones[m] === s.id).map(m => STRETCH[m]);
+      return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}</span><span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
+    }).join('')}</div></div>`).join('');
+  }
+  $('stoneStretches').addEventListener('change', e => {
+    const el = e.target.closest('select[data-m]'); if (!el) return;
+    state.stones[+el.dataset.m] = el.value || null; touch(); renderLoadout(); $(el.id)?.focus();
+  });
+  $('stoneStretches').addEventListener('click', e => {
+    const b = e.target.closest('[data-use]'); if (!b) return;
+    state.stones[+b.dataset.m] = b.dataset.use; touch(); renderLoadout(); $('stone-' + b.dataset.m)?.focus();
+  });
 
   // ---------- Summary ----------
   const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
@@ -715,7 +800,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd></dl></div>`; }).join('');
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd></dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
@@ -762,9 +847,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
   });
 
-  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderSummary(); }
+  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderSummary(); }
   renderAll();
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
-  showStep(['identity','skills','attributes','summary'].includes(step) ? step : 'identity');
+  showStep(['identity','skills','attributes','loadout','summary'].includes(step) ? step : 'identity');
 })();
 </script>
