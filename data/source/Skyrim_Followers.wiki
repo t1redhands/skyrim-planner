@@ -1,0 +1,790 @@
+{{Trail|NPCs|nocat=1}}[[Category:Skyrim-NPCs| Followers]]{{TOCright}}
+[[File:SR-npc-Lydia.jpg|thumb|left|[[SR:Lydia|Lydia]], a typical follower]]Throughout the game there are many opportunities to become allies with various creatures and NPCs. These '''followers''' will fight by your side, carry your equipment and perform other tasks you ask of them. Followers can be sorted into those who follow you indefinitely (until they die or are dismissed), and those who follow you temporarily (for example, during certain quests).
+
+'''Permanent followers''' usually become available after you complete certain [[SR:Quests|quest]]s. You can also find mercenaries for hire in some cities and recruit certain [[#Creatures|creatures]]. At any time, you are able to have at most one permanent NPC follower, one combat-capable creature follower, and two non-combat creature followers.
+
+Some NPCs follow you '''temporarily''' for the duration of certain quests. If you avoid completing the quest, they may follow you around indefinitely. Because many of these NPC followers are unkillable, and there is no limit to the number of temporary followers that you can have at one time, you can use them to fight difficult enemies in different questlines. 
+
+Most quest followers will follow you along with your permanent follower. There are, however a few exceptions: The followers in the [[SR:Companions|Companions]] questline will automatically dismiss your current follower, and [[SR:Serana|Serana]] will require you to dismiss them in order for her to join you on a quest (except for her first). In these cases, potential permanent followers will state that you already have a follower and are unable to join you, as the quest follower is occupying the follower slot. The slot can be opened again simply by completing the quest so that your temporary quest follower leaves your service.
+{{NewLeft}}
+
+===Commands===
+You can interact with permanent followers by talking with them (outside of combat). You will then be able to exchange items with them, or give a command, depending on their abilities. You can also start commanding your follower quickly, even from some distance away, by pointing at them and ''holding'' the activate/use control.
+
+'''Orders that can be given to followers:'''
+
+* Attack another NPC or creature
+* Wait at a given location
+* Resume following
+* Activate an object, such as a lever or a chair
+* Activate a [[SR:Shrines|Shrine]] for its [[SR:Blessings|blessing]], but not a [[SR:Standing Stone|Standing Stone]]
+* [[SR:Lockpicking|Open]] a locked door or container
+* Pick up items
+* Search and loot containers
+* Sleep in a bed (useful for [[SR:Vampirism|Vampires]])
+* Use staves and scrolls
+* Fill [[SR:Soul Gems|soul gems]] including [[SR:The Black Star|The Black Star]] and [[SR:Azura's Star|Azura's Star]] (if a [[SR:Soul Trap (effect)|Soul Trap]] or [[SR:Fiery Soul Trap|Fiery Soul Trap]] weapon is equipped)
+* Chop wood. This can be used to earn passive gold while performing other tasks (see: [[Skyrim:Chop Wood|Chop Wood]]). Followers do not require a woodcutter's axe to perform this.
+* Leave your service (the follower will return to their normal home and routine)
+
+Two of these commands have secondary benefits in certain situations:
+* Followers do not need lockpicks to open containers.
+* A follower can pick up a "placed" skill book, which you can then take from their inventory without having to read it first, allowing you to save it for later.
+
+Also, followers can use a [[SR:Torch|torch]] (only one is needed, it will never deplete). In addition, some followers have a torch in their inventory by default.
+
+Temporary, quest-specific followers usually do not take orders; if they do, they will only take limited orders, like the "wait" command.
+
+If your follower is left to wait for 72 hours, a message will appear that the follower has grown tired of waiting and will start walking to their original location.
+
+You can trade items with some of your followers to equip them with better items or store excess loot. Sometimes, they will refuse to equip the items you give them. Pickpocketing the items you wish them to replace with the improved items can help fix this. It can also allow you to do this with NPCs who will not trade their equipped items with you. However, it requires the Misdirection (for weapons) and Perfect Touch (for armor) perks to achieve this.
+
+Giving a non-essential follower any of your custom enchanted weapons or shields, letting them die, and then looting directly from their corpse is the only way to remove those enchantments on the given items. This only works with weapons and shields that you have enchanted yourself- it will not remove the enchantment on artifacts or generic enchanted gear found or bought.
+
+===Morality===
+Morality determines whether or not an NPC will commit various crimes, and controls whether or not a follower will agree to do certain requested actions. There are four possible values for morality:
+* '''0''': Any Crime. NPC is willing to commit any requested crime.
+* '''1''': Violence Against Enemies. NPC is willing to commit violence against enemies, as well as property crimes. NPC is not willing to attack innocent people.
+* '''2''': Property Crime Only. The only crimes the NPC will commit are property crimes (e.g., theft).
+* '''3''': No Crime. NPC is not willing to commit any crimes. Followers with this morality will still not report crimes that they witness you committing (with the exception of crimes against them, such as stealing items they own).
+
+However, nearly all followers have a morality of either 0 or 3, the only exception being [[SR:Sven|Sven]], who has a morality of 2.
+
+If you ask a follower with sufficient morality to perform an illegal activity, you may be held responsible for the [[SR:Crime|crime]], and your bounty will increase accordingly. If you are [[SR:Sneak|hidden]], most crimes you command your follower to commit will go unnoticed.
+
+If you ask a follower with a morality value of 3 to perform an illegal activity, they will refuse to do so, and may instead simply say things like ''"Forget it. I don't do that kind of work."''
+
+Most followers will not interact in any way with you while you are trespassing (regardless of their morality); your follower will simply say, ''"You're not supposed to be in here."''
+
+Almost all followers will not ride horses or sleep in owned beds (regardless of their morality); your follower will simply stay put and wait for your next order.
+
+==Follower Stats==
+A follower levels up according to your level, up to the follower's maximum level (which varies for each). Each follower, except [[SR:J'zargo|J'zargo]], [[SR:Celann|Celann]]{{DG}}, [[SR:Durak|Durak]]{{DG}}, [[SR:Ingjard|Ingjard]]{{DG}} and [[SR:Frea|Frea]]{{DB}}, has a maximum level and a specific set of primary skills, which are dictated by their [[SR:Classes|class]]. This leveling occurs regardless if they are actively following you.
+
+Prior to patch 1.6, a follower's skills, health, and other stats were set when they were first spawned (which is typically when you enter their starting cell, become a Thane, and so on) and would not increase as their level increased. Prior to the fixing of this failure of stats to update with patch 1.6, players could update a non-essential follower's stats so they would increase based on their current level by using the [[SR:Wabbajack|Wabbajack]] to polymorph them into another creature, after which their stats would update upon recovering their original form. Players of the PC version could also use certain console commands to fix any follower's inability to update their stats with each level the player gains.
+
+==Follower Death==
+All permanent followers become [[SR:Protected NPCs|protected NPCs]] while they are actively following you. When your follower would die due to an enemy attack or a trap, they will be incapacitated for some time and begin to recover their [[SR:Health|health]], just like essential NPCs; enemies will stop attacking or targeting them during this time. However, if they lose all their health again during this period, they will die for good. Thus, you should try to move the fight away from them, so that they are not hit by a stray arrow or area-effect spell. They can die from a damage-over-time effect that is stronger than their health recovery; most commonly those are caused by poisons.
+
+If you strike your follower dead, on the other hand, there is no recovery. Attack carefully when your follower is low on health. If your follower's death is caused by you, even accidentally, it will count as a murder on your [[SR:Statistics#Crime|crimes list]]. However, it is possible to mitigate damage to your follower with the [[SR:Companion's Insight|Companions Insight]]{{DB}} ability if you have read the Black Book ''[[SR:Black Book: The Winds of Change (book)|The Winds of Change]]''. Casting [[SR:Ash Shell|Ash Shell]]{{DB}} on them works as well.
+
+Many temporary followers are "essential", so they cannot be killed, only incapacitated for a while. Non-essential ones will die immediately when struck down, just as ordinary NPCs. Seven permanent followers are essential as well: [[SR:Derkeethus|Derkeethus]] (due to a [[SR:Derkeethus#Bugs|bug]]), [[SR:Mjoll the Lioness|Mjoll]], two [[SR:Dark Brotherhood Initiate|Dark Brotherhood Initiates]], [[SR:Cicero|Cicero]], [[SR:Serana|Serana]]{{DG}} and [[SR:Frea|Frea]]{{DB}} are essential.
+
+It is also possible to heal damage and quickly return the follower into the fight by having traded to them some [[SR:potions|standard healing potions]] (e.g. Potion of Extreme Healing) but not potions you made by alchemy. They will consume the standard potion, heal, and quickly rejoin the battle. Otherwise you may have to wait until all enemies in the area are removed before they recover. You may also use a restoration spell like [[SR:Spells#Healing_Hands|Healing Hands]], [[SR:Spells#Heal_Other|Heal Other]] or [[SR:Spells#Grand Healing|Grand Healing]] on your follower, which is beneficial to you as well since you will gain experience in Restoration. However, followers will not always drink healing potions if they have any in their inventory, even if they are kneeling and recovering health, so the best bet would be to have Healing Hands ready for use.
+
+Followers do not take Water Damage, and cannot drown. However, they do not have infinite breath (with the exception of Derkeethus, the only Argonian follower) unless you give them a waterbreathing enchantment to wear (see '''Follower Equipment''' below). If they run out of air, they will abandon their post by your side and swim to the surface.
+
+To avoid near death experiences, followers should be traded better armor in the skill type they prefer (either heavy or light armor.) The DamageResist variable can be increased by tempering the armor and shield. In addition, wearing armor pieces or shield awards a hidden 25 bonus points per item. The 125 possible hidden points are not reflected in the DamageResist variable, but are counted in combat. Providing equipment with magic resistance enchantments (ring, necklace, and shield) increases their MagicResist variable. The follower is less likely to be incapacitated if provided all of these enhancements.
+
+Should your follower be slain, their body should disappear in about three days. A coffin with their belongings will most likely be found in the Hall of the Dead in or near their home town. A [[Skyrim:Courier|courier]] will also give you an [[Skyrim:Letter of Inheritance|inheritance letter]] and a small amount of gold.
+
+==Follower Equipment==
+Permanent followers have the ability to trade money and goods. This gives you free access to anything the follower is carrying, with the exception of certain default items that are hidden from you, and allows you to manage the follower's inventory. There is no penalty for taking anything the follower has, including gold, jewels, and enchanted items.
+
+In addition to any other equipment they may have, followers will automatically receive a [[SR:Hunting Bow|hunting bow]] and 12 [[SR:Iron Arrow|iron arrows]] when they start following you. These are specially modified variants of the regular ones which do not appear in the follower's inventory. This can cause the [[SR:Followers#Bugs|bow and arrow usage bugs]] noted below. The bow and arrows will be removed when the follower leaves your service.
+
+Followers will make their own decision however about which equipment they use, given the choices that they have in their inventory. If they have multiple items of the same type (e.g. an Iron Sword and a Steel Sword), they will try to choose the "best" item from their choices (Steel Sword). Sometimes this doesn't work as expected and inferior equipment gets used instead. This normally happens with different grades of the same item that have been improved through Smithing or Enchantment (e.g. a Steel Sword being used instead of a Flawless Steel Sword). You cannot force a follower to use the "right" item other than by removing all the wrong ones that they prefer from their inventory. The item must also be "better" than the default item the follower started with. Giving a follower who started with Steel Armor a set of Banded Iron Armor will have no effect because it isn't as "good" as the Steel. 
+*'''''Note:''' since all the different types of mage robes are classified as clothing with no armor value, giving a mage follower who starts with apprentice robes a new set of master robes has no effect because it's not seen as an improvement on the class of armor (exception: the [[SR:Archmage's Robes|Archmage's Robes]]{{vn|section=Followers Equipping Archmage's Robes}}). They normally can, however, be given actual armor (such as leather, elven, glass, etc.) with improved enchantments on it, which many will equip due to the higher armor value.'' The exception is mage followers who begin with hooded robes; if you give them an item which fills the head slot (a hood or a circlet), they will equip it in preference to the hooded robes, which then causes them to have an empty torso slot, and they will equip torso items (like robes) in preference to nothing at all. If you give them (non-armor) torso slot items without giving them a head slot item, they will keep their hooded robes equipped.
+
+Normally, you cannot take a follower's default apparel through "I need to trade some things with you..." dialogue. If they are killed in battle, then you can search their body, removing anything they were carrying, including their default items. You can also take their default equipment if you have the [[SR:Pickpocket|pickpocket]] perk ''Perfect Touch'' if they aren't currently following you, or even without that perk if you gave them better equipment to wear, dismissed them and started pickpocketing right away, without giving them time to go into another cell (since they would put on their default equipment when travelling between cells). There is one other exception to this rule: your spouse. After you get married, your follower spouse will open up a general goods store, in which your spouse will sell whatever items are not equipped in addition to what's in your spouse's merchant chest (if you're at home). If you get your spouse to wear something that isn't default apparel (normally you do this by giving your spouse an improved piece of armor) then the default apparel that isn't being worn will become available for sale. You can then purchase it, and then give your spouse anything to wear in that slot and your spouse will wear it while following you. There are two caveats with this approach: one, if you purchase all of your spouse's default apparel (or steal all default apparel from any follower, or, actually, steal all default apparel from any NPC), your spouse (or newly-naked follower or NPC) will respawn new default apparel, so you must leave at least one piece of default apparel in your spouse's inventory, and two, if your spouse is not following you, your spouse will not wear any custom apparel, but will only wear whatever default apparel is left in your spouse's inventory.
+
+===Enchanted Follower Equipment===
+[[SR:Enchanting Effects|Enchantments]] on weapons work normally, but followers will only benefit from the following enchantment effects on their apparel and armor:
+*[[SR:Fortify Health|Fortify Health]]
+*[[SR:Regenerate_Health|Fortify Health Regeneration]]—only works during recovery phase/out of combat
+*[[SR:Fortify Heavy Armor|Fortify Heavy Armor]]
+*[[SR:Fortify Light Armor|Fortify Light Armor]]
+*[[SR:Fortify Magicka|Fortify Magicka]]
+*[[SR:Regenerate_Magicka|Fortify Magicka Regeneration]]
+*[[SR:Fortify Stamina|Fortify Stamina]]
+*[[SR:Regenerate_Stamina|Fortify Stamina Regeneration]]
+*[[SR:Fortify Unarmed Damage|Fortify Unarmed Damage]]
+*[[SR:Muffle (effect)|Muffle]]
+*[[SR:Resist Fire|Resist Fire]]
+*[[SR:Resist Frost|Resist Frost]]
+*[[SR:Resist Magic|Resist Magic]]—followers do not have their resistances capped, meaning they can become completely immune to magic, as well as other elements and poison
+*[[SR:Resist Poison|Resist Poison]]
+*[[SR:Resist Shock|Resist Shock]]
+*[[SR:Waterbreathing (effect)|Waterbreathing]]—followers can't drown, but this stops them surfacing for air
+*[[SR:Waterwalking|Waterwalking]]—however, there is only [[SR:Ahzidal's Boots of Waterwalking|one]] Waterwalking enchanted item in the game, which cannot be disenchanted
+
+
+*[[SR:Fortify Carry Weight|Fortify Carry Weight]] does work but has limited/partially broken functionality and is also a bit tedious to utilize.
+**Your follower's carry weight will check for enchantments boosting it when you open their inventory, but as soon as you place anything into their inventory (even weightless items) the boosts disappear. When you close then reopen their inventory menu, the carry weight will be boosted again until you place an item. This forces you to place one item at a time if you are over their natural carry weight but under their boosted carry weight. If the item you are placing is a stack of 6+, you can place them all in one go and save time, although you still cannot go beyond the boosted carry weight.
+***This seems to only fully work on Weapons and Apparel. If an item from any other category is placed in the inventory, the boosted carry weight won't reappear until a cell reload, sometimes many cell reloads.
+
+Because followers choose which items to equip, verify that your follower equips the enchanted item(s).
+
+All other enchantments on apparel and armor do not actually have an effect for followers, even if they should. Notably, this means:
+*Fortify <Combat Skill> does not increase the amount of damage they do.
+*Fortify <Magic School> does not reduce enchanted weapon usage cost at all, or remove it at values of 100%.
+**There are reports that this effect does work for some followers, but very few. See [[Skyrim_talk:Followers/Archive_7#Fortify_Destruction_.28and_probably_all_other_schools.29|one of the archived discussion pages]] for more information.
+**Weapon enchantments usage costs follow the equipment of the avatar, not that of the follower (perks so far not tested).
+*There are reports that damage enchantments on bows do work for followers with the [[SR:Dawnguard|Dawnguard]] add-on. Some report it only works for them with add-on bows, though others have reported it with vanilla bows as well.
+
+==Trainer Followers==
+{{Bug|Followers who are also [[SR:Trainers|trainers]] can train you for "free". They will still charge you, but leave profit from training in their inventory. Simply request to see their inventory while they are an active follower, and take your gold back from any training sessions. The follower's gold will reset to a low amount when you fast travel (possibly change zone), so get your money back from them quickly.|USKP|1.2.6|The exploit is no longer possible.|nobullet=1}}
+
+
+This can be done with the following NPCs:
+
+*[[SR:Companions|Companions]] members
+**[[SR:Aela_the_Huntress|Aela the Huntress]] (Archery - up to 75)
+**[[SR:Athis|Athis]] (One-handed - up to 75)
+**[[SR:Farkas|Farkas]] (Heavy Armor - up to 90)
+**[[SR:Njada_Stonearm|Njada Stonearm]] (Block - up to 75)
+**[[SR:Vilkas|Vilkas]] (Two-handed - up to 90)
+*Other NPCs
+**[[SR:Faendal|Faendal]] (Archery - up to 50)
+**[[SR:Talvas Fathryon|Talvas Fathryon]]{{DB}} (Conjuration - up to 90)
+
+==Permanent Followers==
+The tables below list the permanent followers available in Skyrim.
+
+
+===College of Winterhold Followers===
+Once enrolled as a member of the [[SR:College of Winterhold (faction)|College of Winterhold]], you may recruit your fellow students to join you in your travels, if you have completed their personal quests. Simply talk to them and they'll tell you what you must do.
+
+These followers wear robes as their default apparel, so they will accept any armor given to them; however, they are picky about what robes they'll wear, and may not equip any that you give them. They will accept weapons and shields, but they will immediately switch back to dual-wielding spells when an enemy is encountered. Once their Magicka runs out, they will resort to using their bare hands until it recharges.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Brelyna Maryon|Brelyna Maryon]]
+||A female Dunmer [[SR:CombatMystic|Mystic]].
+||[[SR:Brelyna's_Practice|Brelyna's Practice]]
+||'''[[SR:Alteration|Alteration]]''', '''[[SR:Illusion|Illusion]]''', [[SR:Conjuration|Conjuration]], [[SR:Sneak|Sneak]]||style="text-align:center"|30||style="text-align:center"|0||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:J'zargo|J'zargo]]
+||A male Khajiit [[SR:CombatSorcerer|Sorcerer]].
+||[[SR:J'zargo's_Experiment|J'zargo's Experiment]]
+||'''[[SR:Destruction|Destruction]]''', '''[[SR:Illusion|Illusion]]''', [[SR:Heavy Armor|Heavy Armor]], [[SR:One-handed|One-handed]]||style="text-align:center"|None{{Intnote|J'zargo}}||style="text-align:center"|0||||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Onmund|Onmund]]
+||A male Nord [[SR:CombatSorcerer|Sorcerer]].
+||[[SR:Onmund's_Request|Onmund's Request]]
+||'''[[SR:Destruction|Destruction]]''', '''[[SR:Illusion|Illusion]]''', [[SR:Heavy Armor|Heavy Armor]], [[SR:One-handed|One-handed]]||style="text-align:center"|30||style="text-align:center"|0||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|}
+{{Note|J'zargo||Version 1.0 of the [[SR:USKP|Unofficial Skyrim Patch]] caps J'zargo's level at 30.}}
+
+
+===Companions Followers===
+All of these followers can be located at [[SR:Jorrvaskr|Jorrvaskr]], the [[SR:Companions|Companions]] faction headquarters in Whiterun. You must join the Companions and complete the quest line before they can be recruited as followers.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Aela the Huntress|Aela the Huntress]]||A female Nord [[SR:TrainerMarksmanExpert|Thief]] and expert [[SR:archery|Archery]] trainer.||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', '''[[SR:Sneak|Sneak]]''', [[SR:One-handed|One-handed]], [[SR:Speech|Speech]]||style="text-align:center"|50||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Athis|Athis]]||A male Dunmer [[SR:TrainerOneHandedExpert|Warrior]] (1H) and expert [[SR:one-handed|One-handed]] trainer.||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|25||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{Yes}}||
+|-
+|[[SR:Farkas|Farkas]]||A male Nord of the [[SR:TrainerHeavyArmorMaster|Blacksmith]] class, and master [[SR:Heavy Armor|Heavy Armor]] trainer.||'''[[SR:Smithing|Smithing]]''', '''[[SR:Speech|Speech]]''', [[SR:One-handed|One-handed]], [[SR:Pickpocket|Pickpocket]]||style="text-align:center"|50||style="text-align:center"|3||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}||
+|-
+|[[SR:Njada Stonearm|Njada Stonearm]]||A female Nord [[SR:TrainerBlockExpert|Warrior]] (1H) and expert [[SR:block|Block]] trainer.||'''[[SR:Block|Block]]''', '''[[SR:One-handed|One-handed]]''', '''[[SR:Speech|Speech]]''', [[SR:Pickpocket|Pickpocket]]||style="text-align:center"|25||style="text-align:center"|3||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Ria|Ria]]||A female Imperial [[SR:CombatWarrior1H|Warrior]] (1H).||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|25||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Torvar|Torvar]]||A male Nord [[SR:CombatWarrior1H|Warrior]] (1H).||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|25||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Vilkas|Vilkas]]||A male Nord [[SR:TrainerTwoHandedMaster|Warrior]] (2H) and master [[SR:two-handed|Two-handed]] trainer.||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|50||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|}
+
+
+===Dark Brotherhood Followers===
+Complete all the quests for the [[Skyrim:Dark Brotherhood|Dark Brotherhood]] to allow these followers to join you. Cicero must be spared in [[Skyrim:The Cure for Madness|The Cure for Madness]] if you want him as a companion. All of these followers can be located at [[Skyrim:Dawnstar Sanctuary|Dawnstar Sanctuary]], the new Dark Brotherhood faction headquarters north of Dawnstar.
+*None of these followers will be available if you finish [[Skyrim:Destroy the Dark Brotherhood!|Destroy the Dark Brotherhood!]] instead, as the organization will be wiped out.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Cicero|Cicero]]||A male Imperial Assassin found at the [[SR:Dawnstar_Sanctuary|Dawnstar Sanctuary]].||'''[[SR:One-handed|One-handed]]''', '''[[SR:Sneak|Sneak]]''', [[SR:Archery|Archery]], [[SR:Light Armor|Light Armor]]||style="text-align:center"|50||style="text-align:center" |0||||||
+|-
+|[[SR:Dark_Brotherhood_Initiate|Dark Brotherhood Initiate]] (female)||A Nord Assassin found at the Dawnstar Sanctuary.||'''[[SR:One-handed|One-handed]]''', '''[[SR:Sneak|Sneak]]''', [[SR:Archery|Archery]], [[SR:Light Armor|Light Armor]]||style="text-align:center"|100||style="text-align:center" |0||||||
+|-
+|[[SR:Dark_Brotherhood_Initiate|Dark Brotherhood Initiate]] (male)||A Nord Assassin found at the Dawnstar Sanctuary.||'''[[SR:One-handed|One-handed]]''', '''[[SR:Sneak|Sneak]]''', [[SR:Archery|Archery]], [[SR:Light Armor|Light Armor]]||style="text-align:center"|100||style="text-align:center" |0||||||
+|}
+
+
+===Dawnguard Followers===
+These NPCs are added by the [[SR:Dawnguard|Dawnguard add-on]]. They become available after completing [[SR:Prophet (Dawnguard)|Prophet]] (only by siding with the Dawnguard), except for Serana, who becomes available during [[SR:Prophet|Prophet]] (both sides).
+
+For creature followers added by Dawnguard, see [[#Creatures|this section]].
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Agmaer|Agmaer]]||A male Nord found in [[SR:Fort_Dawnguard|Fort Dawnguard]]. ([[SR:Classes#Bandit|Bandit]] class) ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Block|Block]], [[SR:Light Armor|Light Armor]]||style="text-align:center"|25||style="text-align:center" |0||style="text-align:center"|''||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Beleval|Beleval]]||A female Bosmer found in Fort Dawnguard. ([[SR:Classes#Bandit|Bandit]] class)||'''[[SR:One-handed|One-handed]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Block|Block]], [[SR:Light Armor|Light Armor]]||style="text-align:center"|25||style="text-align:center" |0||style="text-align:center"|''||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Celann|Celann]]||A male Breton found in Fort Dawnguard. ([[SR:Warrior_(class)|Warrior(1H)]] class)||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|None||style="text-align:center" |3||style="text-align:center"|''||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Durak|Durak]]||A male Orc found in Fort Dawnguard. ([[SR:Ranger (class)|Ranger]] class)||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]]||style="text-align:center"|None||style="text-align:center" |3||style="text-align:center"|''||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Ingjard|Ingjard]]||A female Nord in Fort Dawnguard. ([[SR:Warrior_(class)|Warrior(2H)]] class)||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|None||style="text-align:center" |3||style="text-align:center"|''||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Serana|Serana]]||A female Nord [[SR:Vampire|vampire]] found during the quest [[SR:Awakening|Awakening]]. Forced follower during [[SR:Bloodline|Bloodline]], [[SR:Chasing Echoes|Chasing Echoes]], [[SR:Beyond Death|Beyond Death]], [[SR:Unseen Visions|Unseen Visions]], [[SR:Touching the Sky|Touching the Sky]], [[SR:Kindred Judgment|Kindred Judgment]]. ([[SR:Classes#Vampire|Vampire class]])||'''[[SR:Sneak|Sneak]]''', [[SR:Conjuration|Conjuration]], [[SR:Light Armor|Light Armor]], [[SR:One-handed|One-handed]]||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|''||||
+|}
+
+
+===Dragonborn Followers===
+These NPCs are added by [[SR:Dragonborn|Dragonborn]].
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Frea|Frea]] || A female [[SR:Nord|Nord]] [[SR:Frea Combat Style|warrior]] from [[SR:Skaal Village|Skaal Village]].<br> Temporary follower during [[SR:The Temple of Miraak|The Temple of Miraak]]. ||[[SR:The Fate of the Skaal|The Fate of the Skaal]] ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Alteration|Alteration]]''', [[SR:Light Armor|Light Armor]], [[SR:Restoration|Restoration]] || None || style="text-align:center"|3 || || style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Talvas Fathryon|Talvas Fathryon]] || A male [[SR:Dark Elf|Dunmer]] [[SR:TrainerConjurationMaster|conjurer]], [[SR:Merchants|spell merchant]], and master [[SR:Conjuration|Conjuration]] trainer found in [[SR:Tel Mithryn (tower)|Tel Mithryn]]. ||[[SR:From the Ashes|From the Ashes]] ||'''[[SR:Conjuration|Conjuration]]''', '''[[SR:Restoration|Restoration]]''', '''[[SR:Destruction|Destruction]]''', '''[[SR:Alteration|Alteration]]''', [[SR:Sneak|Sneak]] ||style="text-align:center"|25 || style="text-align:center"|3 || || style="text-align:center"|{{yes}} || style="text-align:center"|{{yes}}
+|-
+|[[SR:Teldryn Sero|Teldryn Sero]] ||A male [[SR:Dark Elf|Dunmer]] [[SR:Classes#DLC2NPCClassTeldryn|Spellsword]] found in [[SR:The Retching Netch|the Retching Netch]] in [[SR:Raven Rock|Raven Rock]]. Can be hired for 500 gold. ||None ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Light Armor|Light Armor]]''', '''[[SR:Destruction|Destruction]]''', [[SR:Conjuration|Conjuration]] ||style="text-align:center"|60 ||style="text-align:center"|0 || || style="text-align:center"|{{yes}} || style="text-align:center"|
+
+|-
+|[[SR:Ralis Sedarys|Ralis Sedarys]] ||A male [[SR:Dark Elf|Dunmer]] miner initially found at [[SR:Kolbjorn Barrow|Kolbjorn Barrow]]. ||[[SR:Unearthed|Unearthed]] (in his favor) ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:Sneak|Sneak]] ||style="text-align:center"|60 ||style="text-align:center"|3 || ||style="text-align:center"|{{yes}} ||style="text-align:center"|
+|}
+
+===Dungeon Followers===
+You will have to complete the quest associated with each follower in order for them to join you.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Golldir|Golldir]]||A male Nord [[SR:CombatWarrior1H|Warrior]] (1H) found in [[SR:Hillgrund's Tomb|Hillgrund's Tomb]].||[[SR:Ancestral_Worship|Ancestral Worship]]||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|30||style="text-align:center" |3||||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Illia|Illia]]||A female Imperial [[SR:CombatMageElemental|Mage]] found in [[SR:Darklight Tower|Darklight Tower]].||[[SR:Repentance|Repentance]]||'''[[SR:Destruction|Destruction]]''', '''[[SR:Restoration|Restoration]]''', [[SR:Alteration|Alteration]], [[SR:Conjuration|Conjuration]]||style="text-align:center"|40||style="text-align:center"|3||||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|}
+
+
+===Hirelings===
+Hirelings are mercenaries; you'll need to hire them for a set price of 500 gold. They are usually found in taverns. They'll stick around until they're dismissed, at which point they'll return to their starting location and you'll need to pay the fee again to get them back unless they were married, enlisted to be a Steward or are a Blades recruit. If they're particularly fond of you or you only dismissed them a short time ago, they may rejoin your service free of charge.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Belrand|Belrand]]|| A male Nord [[SR:NPCclassBelrand|Spellsword]] found in the [[SR:The Winking Skeever|Winking Skeever]] in [[SR:Solitude|Solitude]].||'''[[SR:Destruction|Destruction]]''', '''[[SR:Light Armor|Light Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Restoration|Restoration]]||style="text-align:center"|40||style="text-align:center"|0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Erik the Slayer|Erik the Slayer]]|| A male Nord [[SR:Barbarian|Barbarian]] found in [[SR:Rorikstead|Rorikstead]] at the [[SR:Frostfruit Inn|Frostfruit Inn]] after completing [[SR:Erik_the_Slayer_(quest)|his quest]].||'''[[SR:Light Armor|Light Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|40||style="text-align:center"|0|| ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Jenassa|Jenassa]]|| A female Dunmer [[SR:CombatRanger|Ranger]] found inside the [[SR:The Drunken Huntsman|Drunken Huntsman]] in [[SR:Whiterun|Whiterun]]. ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]]||style="text-align:center"|40||style="text-align:center"|0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Marcurio|Marcurio]]||A male Imperial [[SR:CombatMageDestruction|Destruction Mage]] found at [[SR: The Bee and Barb|The Bee and Barb]] in [[SR: Riften|Riften]].|| '''[[SR:Destruction|Destruction]]''', '''[[SR:Restoration|Restoration]]''', [[SR:Alteration|Alteration]], [[SR:Sneak|Sneak]]||style="text-align:center"|40||style="text-align:center"|0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Stenvar|Stenvar]]|| A male Nord [[SR:CombatWarrior2H|Warrior]] (2H) in [[SR:Windhelm|Windhelm]] (usually on the second floor of [[SR:Candlehearth Hall|Candlehearth Hall]]). ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|40||style="text-align:center"|0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Vorstag|Vorstag]]||A male Nord [[SR:CombatWarrior1H|Warrior]] (1H) found at the [[SR:Silver-Blood Inn|Silver-Blood Inn]] in [[SR:Markarth|Markarth]].||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]]||style="text-align:center"|40||style="text-align:center"|0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|}
+
+
+===Housecarls===
+[[SR:Housecarl|Housecarls]] are bodyguards of noblemen. After completing a quest for the jarl of each major hold, they will proclaim you a thane of their land and give you a personal housecarl. These housecarls won't exist in the game until you become a thane; however if you lose your thane status in their original hold, they will remain and will continue to be available as a follower, and will also continue to address you as thane. Three new housecarls are available after installing the [[SR:Hearthfire|Hearthfire]] add-on.
+*All player personal housecarls are [[SR:CombatWarrior1H|warriors]] who specialize in [[SR:One-handed|One-handed]] weapons (except [[SR:Valdimar|Valdimar]]{{HF}}, who is primarily a sorcerer and will resort to melee only when he runs out of magicka). [[SR:Rayya|Rayya]]{{HF}} may prefer to dual-wield than use shields but can do either.
+*Their primary skills are: '''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] (again except Valdimar, who has magicka skills but not block or archery: and his preference for Heavy or Light armor depends on whether the Unofficial Patch is installed or not, though his default armor is Light).
+*All housecarls have the highest possible confidence, '''Foolhardy''' - they will never run away from a fight.
+*[[SR:Winterhold|Winterhold]] is the only Hold that doesn't give you a housecarl upon becoming [[SR:Thane of Winterhold|thane]]. Whether you have the Hearthfire add-on or not is irrelevant.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Argis the Bulwark|Argis the Bulwark]]||A male Nord found in [[SR:Markarth|Markarth]]. ||[[SR:Thane_of_the_Reach|Become Thane of the Reach]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}} ||
+|-
+|[[SR:Calder|Calder]]||A male Nord found in [[SR:Windhelm|Windhelm]]. ||[[SR:Thane_of_Eastmarch|Become Thane of Eastmarch]]||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Gregor|Gregor]]{{HF}}||A male Nord found in [[SR:Dawnstar|Dawnstar]]. ||[[SR:Thane_of_the_Pale|Become Thane of the Pale]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Iona|Iona]]||A female Nord found in [[SR:Riften|Riften]]. ||[[SR:I Done Got Thaned!|Become Thane of the Rift]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"| {{yes}} ||style="text-align:center"| {{Yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Jordis the Sword-Maiden|Jordis the Sword-Maiden]]||A female Nord found in [[SR:Solitude|Solitude]]. ||[[SR:Thane_of_Haafingar|Become Thane of Haafingar]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Lydia|Lydia]]||A female Nord found in [[SR:Whiterun|Whiterun]]. ||[[SR:Dragon Rising|Dragon Rising]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{Yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Rayya|Rayya]]{{HF}}||A female Redguard found in [[SR:Falkreath|Falkreath]]. ||[[SR:Thane_of_Falkreath|Become Thane of Falkreath]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Valdimar|Valdimar]]{{HF}}||A male Nord found in [[SR:Morthal|Morthal]]. ||[[SR:Thane_of_Hjaalmarch|Become Thane of Hjaalmarch]] ||[[SR:Heavy Armor|Heavy Armor]]{{Intnote|Valdimar}}, [[SR:One-handed|One-handed]], [[SR:Alteration|Alteration]], [[SR:Destruction|Destruction]], [[SR:Restoration|Restoration]] ||style="text-align:center"|50 ||style="text-align:center"|0 ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|}
+{{Note|Valdimar||Version 1.1.0 of the [[SR:USKP|Unofficial Skyrim Patch]] makes Valdimar more proficient in Light Armor.}}
+
+
+===Orc Stronghold Followers===
+These Orcs are available from their respective [[SR:Orc Strongholds|strongholds]], and each require the relevant quests to be completed in order to be recruited.
+*All Orc stronghold followers require you to be [[Skyrim:Blood-Kin|Blood-Kin]] before you can recruit them.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Borgakh the Steel Heart|Borgakh the Steel Heart]]||A female Orc Warrior found in [[SR:Mor_Khazgur|Mor Khazgur]]. ||Pay her dowry or pass a persuade check. ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Sneak|Sneak]] ||style="text-align:center"|30 ||style="text-align:center"|3 ||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Ghorbash the Iron Hand|Ghorbash the Iron Hand]]||A male Orc Ranger found in [[SR:Dushnikh_Yal|Dushnikh Yal]]. ||Convince him (via brawl, persuade check, or bribe). ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]] ||style="text-align:center"|30 ||style="text-align:center"|3 ||style="text-align:center"| {{Yes}}||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Lob|Lob]]||A male Orc Ranger found in [[SR:Largashbur|Largashbur]]. ||[[SR:The_Cursed_Tribe|The Cursed Tribe]] ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]] ||style="text-align:center"|30 ||style="text-align:center"|3 || ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Ogol|Ogol]]||A male Orc Warrior found in Largashbur. ||[[SR:The_Cursed_Tribe|The Cursed Tribe]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Sneak|Sneak]] ||style="text-align:center"|30 ||style="text-align:center"|3 || ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Ugor|Ugor]]||A female Orc Ranger in Largashbur. ||[[SR:The_Cursed_Tribe|The Cursed Tribe]] ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]] ||style="text-align:center"|30 ||style="text-align:center"|3 || ||style="text-align:center"|{{yes}} ||
+|}
+
+
+===Miscellaneous Followers===
+To convince these followers to join you, you'll need to complete their quests.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR: Adelaisa_Vendicci|Adelaisa Vendicci]]||A female Imperial who works for the [[SR:East_Empire_Company_(place)|East Empire Company]]. ||[[SR:Rise in the East|Rise in the East]] ||'''[[SR:Alchemy|Alchemy]]''', '''[[SR:Enchanting|Enchanting]]''', '''[[SR:Smithing|Smithing]]''', [[SR:Archery|Archery]], [[SR:Light Armor|Light Armor]], [[SR:One-handed|One-handed]], [[SR:Sneak|Sneak]], [[SR:Speech|Speech]] ||style="text-align:center"|25||style="text-align:center" |3|| ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Ahtar|Ahtar]]||A male Redguard Warrior who is found in [[SR:Solitude|Solitude]]. ||[[SR:Kill_the_Bandit_Leader|Kill the Bandit Leader]]<sup>†</sup> ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|30||style="text-align:center" |3|| ||style="text-align:center"|{{yes}} ||style="text-align:center"|
+|-
+|[[SR:Annekke Crag-Jumper|Annekke Crag-Jumper]]||A female Nord Ranger found in [[SR:Darkwater_Crossing|Darkwater Crossing]]. ||[[SR:Kill_the_Bandit_Leader|Kill the Bandit Leader]]<sup>†</sup> ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]]||style="text-align:center"|30||style="text-align:center" |3 || ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Aranea Ienith|Aranea Ienith]]||A female Dunmer Conjuration Mage found at the [[SR:Shrine_of_Azura|Shrine of Azura]]. ||[[SR:The Black Star|The Black Star]] (in her favor) ||'''[[SR:Destruction|Destruction]]''', '''[[SR:Restoration|Restoration]]''', [[SR:Alteration|Alteration]], [[SR:Conjuration|Conjuration]] ||style="text-align:center"|30||style="text-align:center" |0|| ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Benor|Benor]]|| A male Nord Warrior found in [[SR:Morthal|Morthal]]. ||[[SR:Fight!_Fight!|Fight! Fight!]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|30||style="text-align:center" |0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Cosnach|Cosnach]]||An alcoholic male Breton Warrior (1H) found in [[SR:Markarth|Markarth]]. ||[[SR:Quest_all_Drunks_Have|Quest all Drunks Have]] (''or'') [[SR:Fight!_Fight!|Fight! Fight!]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|30||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Derkeethus|Derkeethus]]||A male Argonian Ranger found in [[SR:Darkwater_Pass|Darkwater Pass]]. ||[[SR:Extracting_an_Argonian|Extracting an Argonian]] ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', [[SR:Block|Block]], [[SR:One-handed|One-handed]] ||style="text-align:center"|30||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Eola|Eola]]||A female Breton Nightblade found in Markarth's [[SR:Hall_of_the_Dead_(Markarth)|Hall of the Dead]]. ||[[SR:The Taste of Death|The Taste of Death]] ||'''[[SR:Destruction|Destruction]]''', '''[[SR:Sneak|Sneak]]''', [[SR:Alteration|Alteration]], [[SR:One-handed|One-handed]] ||style="text-align:center"|30||style="text-align:center" |0|| ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Erandur|Erandur]]||A male Dunmer [[SR:Priest|Priest]] found in [[SR:Dawnstar|Dawnstar]]. ||[[SR:Waking_Nightmare|Waking Nightmare]] (in his favor) ||'''[[SR:Restoration|Restoration]]''', '''[[SR:Speech|Speech]]''', [[SR:Alchemy|Alchemy]], [[SR:Conjuration|Conjuration]], [[SR:Smithing|Smithing]] ||style="text-align:center"|50||style="text-align:center" |3||||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Faendal|Faendal]]||A male Bosmer Thief found in [[SR:Riverwood|Riverwood]]. He is a common Archery trainer. ||[[SR:A_Lovely_Letter|A Lovely Letter]] (in his favor) ||'''[[SR:Archery|Archery]]''', '''[[SR:Light Armor|Light Armor]]''', '''[[SR:Sneak|Sneak]]''', [[SR:One-handed|One-handed]], [[SR:Speech|Speech]] ||style="text-align:center"|30||style="text-align:center" |3|| ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Kharjo|Kharjo]]||A male Khajiit Warrior traveling between cities in [[SR:Ahkari|Ahkari]]'s [[SR:Khajiit Traders|Khajiit caravan]]. ||[[SR:Amulet_of_the_Moon|Amulet of the Moon]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|30||style="text-align:center" |3|| ||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Mjoll the Lioness|Mjoll the Lioness]]||A female Nord Warrior found in [[SR:Riften|Riften]]. ||[[SR:Grimsever's_Return|Grimsever's Return]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|40||style="text-align:center" |0||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"|
+|-
+|[[SR:Roggi Knot-Beard|Roggi Knot-Beard]]||A male Nord Miner found in [[SR:Kynesgrove|Kynesgrove]]. ||[[SR:Dungeon_Delving_(Caves)|Dungeon Delving (Caves)]]<sup>†</sup> ||'''[[SR:Alchemy|Alchemy]]''', '''[[SR:Enchanting|Enchanting]]''', '''[[SR:Smithing|Smithing]]''', [[SR:Archery|Archery]], [[SR:One-handed|One-handed]], [[SR:Two-handed|Two-handed]] ||style="text-align:center"|20||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Sven|Sven]]|| A male Nord Bard found in Riverwood. ||[[SR:A_Lovely_Letter|A Lovely Letter]] (in his favor) ||'''[[SR:Alchemy|Alchemy]]''', '''[[SR:Enchanting|Enchanting]]''', '''[[SR:Smithing|Smithing]]''', [[SR:Archery|Archery]], [[SR:One-handed|One-handed]], [[SR:Two-handed|Two-handed]] ||style="text-align:center"|20||style="text-align:center" |2|| ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Uthgerd the Unbroken|Uthgerd the Unbroken]]||A female Nord Warrior found in [[SR:The_Bannered_Mare|The Bannered Mare]] in [[SR:Whiterun|Whiterun]]. ||[[SR:Fight!_Fight!|Fight! Fight!]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]] ||style="text-align:center"|30||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}} ||style="text-align:center"| {{Yes}}
+|}
+<sup>†</sup>Only one quest of this type can be active at a time.
+
+
+===Creatures===
+In addition to NPC followers, certain [[SR:Creatures|creatures]] are also recruitable. You can have at most one permanent NPC follower and one creature follower at any time.
+*If kept as a pet{{HF}}, they will return to your home when dismissed, and be available whenever you want them.
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Recruitment
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Can Become a Pet|Pet}}{{HF}}
+|-
+|[[SR:Armored Troll|Armored Troll]]{{DG}}||Can be purchased from [[SR:Gunmar|Gunmar]] in [[SR:Fort_Dawnguard|Fort Dawnguard]] for 500 gold. You may be given an Armored Frost Troll instead.||style="text-align:center"|14 ||
+|-
+|[[SR:Armored Frost Troll|Armored Frost Troll]]{{DG}}||Can be purchased from [[SR:Gunmar|Gunmar]] in [[SR:Fort_Dawnguard|Fort Dawnguard]] for 500 gold. You may be given an Armored Troll instead.||style="text-align:center"|22 ||
+|-
+|[[SR:Bran|Bran]]{{DG}}||An armored [[SR:Husky|husky]] in Fort Dawnguard.||style="text-align:center"|25 ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:CuSith|CuSith]]{{DG}}||A [[SR:Death_Hound|Death Hound]] in [[SR:Volkihar_Keep|Volkihar Keep]].||style="text-align:center"|5 ||
+|-
+|[[SR:Garmr|Garmr]]{{DG}}||A Death Hound in Volkihar Keep.||style="text-align:center"|5 ||
+|-
+|[[SR:Meeko|Meeko]]||A [[SR:Dog|dog]] that can be found at [[SR:Meeko's Shack|Meeko's Shack]].||style="text-align:center"|25 ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Sceolang|Sceolang]]{{DG}}||An armored husky in Fort Dawnguard.||style="text-align:center"|25 ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Stray Dog|Stray Dog]]||These can be found in a [[SR:World Interactions|random encounter]] in the wilderness. If you talk to one, it will become your follower. Note: Is prone to disappearing on changing cells, being told to wait, or being told to go home unless already claimed as a pet by an adopted child.||style="text-align:center"|25 ||style="text-align:center"| {{Yes}}
+|-
+|[[SR:Vigilance|Vigilance]]||A dog which can be purchased from [[SR:Banning|Banning]] at the Markarth stables for 500 gold. As with the hirelings, if you dismiss Vigilance, he will return to Banning and you must pay the 500 gold again to get him back.||style="text-align:center"|50 ||style="text-align:center"| {{Yes}}
+|}
+{{Anchor||Dragonborn Creatures}}
+
+====Dragonborn====
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Can Become a Pet|Pet}}{{HF}}
+|-
+|[[SR:Riekling|Riekling]],  [[SR:Riekling Hunter|Riekling Hunter]], [[SR:Riekling Scout|Riekling Scout]] or [[SR:Riekling Warrior|Riekling Warrior]] || A Riekling which can be recruited at [[SR:Thirsk Mead Hall|Thirsk Mead Hall]] after completing [[SR:The Chief of Thirsk Hall|The Chief of Thirsk Hall]]. || style="text-align:center"|23 ||
+|-
+|[[SR:Steadfast Dwarven Sphere|Steadfast Dwarven Sphere]] ||rowspan=2| Friendly Dwarven automatons found in [[SR:Kagrumez|Kagrumez]] during [[SR:The Kagrumez Gauntlet|The Kagrumez Gauntlet]]. || style="text-align:center"|30 ||
+|-
+|[[SR:Steadfast Dwarven Spider|Steadfast Dwarven Spider]] || style="text-align:center"|16 ||
+|}
+
+
+===Creation Club===
+These followers are available from the [[SR:Creation Club|Creation Club]] exclusively for [[SR:Special Edition|Skyrim Special Edition]].
+
+====People====
+Four of these followers are added by the [[SR:Ghosts of the Tribunal|Ghosts of the Tribunal]] [[SR:Creation Club|Creation]] and can only be recruited if you side with the [[SR:Tribunal Temple|Tribunal Temple]] during the [[SR:Ghosts of the Tribunal (quest)|Ghosts of the Tribunal]] quest. The other follower is added by the [[SR:Bittercup|Bittercup]] [[SR:Creation Club|Creation]] and can only be recruited if you choose the Altar of Nothing during the quest [[SR:A Dying Wish|A Dying Wish]].
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Description
+!style="width:300px"|Prerequisite Quest
+!style="width:500px"|Primary Skills
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|{{hover|Marriageable|[[SR:Marriage|Marry]]}}
+!style="width:1px"|{{hover|Can Join Blades|[[SR:Rebuilding_the_Blades|Blades]]}}
+!style="width:1px"|{{hover|Can Become a Steward|[[SR:Personal Steward|Steward]]}}{{HF}}
+|-
+|[[SR:Hand Ethra Mavandas|Hand Ethra Mavandas]]{{CC|Ghosts of the Tribunal}}||A female Dunmer "[[SR:Dremora (class)|dremora]]", found in [[SR:Ashfall's Tear|Ashfall's Tear]]. ||[[SR:Ashen Heart|Ashen Heart]] ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Block|Block]], [[SR:Heavy Armor|Heavy Armor]] ||style="text-align:center"|100||style="text-align:center"|3|| ||style="text-align:center"|{{Yes}}||
+|-
+|[[SR:Hand Kydren Indobar|Hand Kydren Indobar]]{{CC|Ghosts of the Tribunal}}||A male Dunmer "[[SR:Dremora (class)|dremora]]", found in [[SR:Ashfall's Tear|Ashfall's Tear]]. ||[[SR:Ashen Heart|Ashen Heart]] ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Two-handed|Two-handed]]''', [[SR:Block|Block]], [[SR:Heavy Armor|Heavy Armor]] ||style="text-align:center"|100||style="text-align:center"|3|| ||style="text-align:center"|{{Yes}}||
+|-
+|[[SR:Rulnik Wind-Strider|Rulnik Wind-Strider]]{{CC|Bittercup}}||A male Nord [[SR:CombatSorcerer|Sorcerer]], found in the [[SR:Temple of Kynareth|Temple of Kynareth]]. ||[[SR:A Dying Wish|A Dying Wish]] ||'''[[SR:Destruction|Destruction]]''', '''[[SR:Illusion|Illusion]]''', [[SR:Heavy Armor|Heavy Armor]], [[SR:One-handed|One-handed]] ||style="text-align:center"|75||style="text-align:center"|3||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Vesparth the Toe|Vesparth the Toe]]{{CC|Ghosts of the Tribunal}}||A female Dunmer [[SR:CombatWarrior1H|Warrior]], found in [[SR:Ashfall's Tear|Ashfall's Tear]]. || [[SR:Ashen Heart|Ashen Heart]] ||'''[[SR:Heavy Armor|Heavy Armor]]''', '''[[SR:One-handed|One-handed]]''', [[SR:Archery|Archery]], [[SR:Block|Block]], [[SR:Two-handed|Two-handed]] ||style="text-align:center"|100||style="text-align:center"|3|| ||style="text-align:center"|{{Yes}}||style="text-align:center"|{{Yes}}
+|-
+|[[SR:Watchman Sindras|Watchman Sindras]]{{CC|Ghosts of the Tribunal}}||A male Dunmer [[SR:Classes#ccASVSSE001_BladeBinder|"blade binder" warrior]], found in [[SR:Ashfall's Tear|Ashfall's Tear]]. ||[[SR:Ashen Heart|Ashen Heart]] ||'''[[SR:One-handed|One-handed]]''', '''[[SR:Conjuration|Conjuration]]''', [[SR:Destruction|Destruction]], [[SR:Sneak|Sneak]], [[SR:Light Armor|Light Armor]] ||style="text-align:center"|100||style="text-align:center"|3|| ||style="text-align:center"|{{Yes}}||
+|}
+
+====Creatures====
+These creatures are [[SR:Muffle (effect)|muffled]] and come with a unique spell to teleport them to your current location. They will not attack, and although they can sometimes be targeted by enemies, they don't take damage. Besides Gogh, all creatures can follow you at the same time, as they have separate slots from permanent followers and combat-capable creatures. [[SR:Gogh|Gogh]] is the only one who can attack and take damage.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!Recruitment
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Can Become a Pet|Pet}}{{HF}}
+|-
+|[[SR:Arachnia|Arachnia]]{{CC|Pets of Skyrim}}||Can be found in [[SR:Cronvangr Cave|Cronvangr Cave]] with the [[SR:Pets of Skyrim|Pets of Skyrim]] Creation.||style="text-align:center"|1 ||
+|-
+|[[SR:Bone Wolf (creature)|Bone Wolf]]{{CC|Bone Wolf}}||Can be found at a camp northwest of [[SR:Folgunthur|Folgunthur]] with the [[SR:Bone Wolf|Bone Wolf]] Creation. It can be tamed with a [[SR:Totem Bone|Totem Bone]].||style="text-align:center"| ||
+|-
+|[[SR:Elytra Nymph|Demented Elytra Nymph]]{{CC|Saints & Seducers}}||Can be found at the Seducers Bandit camp northwest of [[SR:Windhelm|Windhelm]] with the [[SR:Saints & Seducers|Saints & Seducers]] Creation.||style="text-align:center"| ||
+|-
+|[[SR:Dwarven Armored Mudcrab (creature)|Dwarven Armored Mudcrab]]{{CC|Dwarven Armored Mudcrab}}||Can be purchased from [[SR:Calcelmo|Calcelmo]] in the [[SR:Understone Keep|Understone Keep]] in [[SR:Markarth|Markarth]] with [[SR:Dwarven Armored Mudcrab|Dwarven Armored Mudcrab]] Creation.||style="text-align:center"|5 ||
+|-
+|[[SR:Hilda|Hilda]]{{CC|Pets of Skyrim}}||Can be purchased from [[SR:Halvar|Halvar]] in [[SR:Rorikstead|Rorikstead]] with the [[SR:Pets of Skyrim|Pets of Skyrim]] Creation.||style="text-align:center"|1 ||
+|-
+|[[SR:Elytra Nymph|Manic Elytra Nymph]]{{CC|Saints & Seducers}}||Can be found at the Saints Bandit camp just west of [[SR:North Brittleshin Pass|North Brittleshin Pass]] entrance with the [[SR:Saints & Seducers|Saints & Seducers]] Creation.||style="text-align:center"| ||
+|-
+|[[SR:Nix-Hound (creature)|Nix-Hound]]{{CC|Nix-Hound}}||Can be found purchased from [[SR:Revus Sarvani|Revus Sarvani]] or [[SR:Geldis Sadri|Geldis Sadri]] with the [[SR:Nix-Hound|Nix-Hound]] Creation.||style="text-align:center"| ||
+|-
+|[[SR:Skritch|Skritch]]{{CC|Pets of Skyrim}}||Can be found in [[SR:The Ratway|The Ratway]] below [[SR:Riften|Riften]] with the [[SR:Pets of Skyrim|Pets of Skyrim]] Creation.||style="text-align:center"|1 ||
+|-
+|[[SR:Sweet Roll (creature)|Sweet Roll]]{{CC|Pets of Skyrim}}||Can be found in a forest southwest of [[SR:Half-Moon Mill|Half-Moon Mill]]  with the [[SR:Pets of Skyrim|Pets of Skyrim]] Creation. It can be tamed with a [[SR:Sweet Roll|Sweet Roll]].||style="text-align:center"|2 ||
+|-
+|[[SR:Thistle (creature)|Thistle]]{{CC|Pets of Skyrim}}||Can be found at the [[SR:Alchemist's Shack|Alchemist's Shack]] with the [[SR:Pets of Skyrim|Pets of Skyrim]] Creation. It can be tamed with a [[SR:Carrot|Carrot]].||style="text-align:center"|1 ||
+|-
+|[[SR:Gogh|Gogh]]{{CC|Goblins}}||Can be found in the [[SR:Gromm's Pass|Gromm's Pass]] with the [[SR:Goblins|Goblins]] Creation. If the [[SR:Blue God|Blue God]] is slain and he is freed from the pit, he can be recruited as a follower.||style="text-align:center"|6 ||
+|}
+
+==Quest Followers==
+Some NPCs follow you until a quest is completed or an event occurs. Quest followers will not give you access to their inventory. They are often marked as essential so they cannot die, which may make them useful to have around before finishing their related quest.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!style="width:140px"|Quest(s)
+!Notes
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|[[SR:Essential NPCs#Dragonborn|Essential]]
+!style="width:80px" | Usable in Other Quests
+|-
+|[[SR:Aela the Huntress|Aela the Huntress]]||[[SR:The Silver Hand|The Silver Hand]], [[SR:Totems of Hircine|Totems of Hircine]] ||Will replace your permanent follower, however your follower can be recruited later.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Anska|Anska]]||[[SR:A Scroll For Anska|A Scroll For Anska]]||Follows you through [[SR:High Gate Ruins|High Gate Ruins]].||style="text-align:center"|25||style="text-align:center"|3|| ||
+|-
+|[[SR:Avulstein_Gray-Mane|Avulstein Gray-Mane]]||[[SR:Missing_In_Action|Missing in Action]]|| If asked to join the jailbreak at [[SR:Northwatch Keep|Northwatch Keep]], he will follow you alongside Vidrald and Geirlund until you reach his brother Thorald and leave the fort.||style="text-align:center"|100||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Babette|Babette]]||[[SR:Death Incarnate|Death Incarnate]]||She and Nazir will briefly follow you until you reach Astrid.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||
+|-
+||Blades Recruits||[[SR:Dragon Hunting|Dragon Hunting]]||The three NPCs whom you [[SR:Rebuilding the Blades|chose to join the Blades]] will accompany you to kill a dragon.||style="text-align:center"|50||style="text-align:center" |3|| ||
+|-
+|[[SR:Brother Verulus|Brother Verulus]]||[[SR:The Taste of Death|The Taste of Death]]||In order to recruit him, you must first pass a [[SR:The_Taste_of_Death#Champion_of_Namira|speech check]].||style="text-align:center"|6||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Brynjolf|Brynjolf]]||[[SR:Trinity Restored|Trinity Restored]], [[SR:Blindsighted|Blindsighted]]||After talking to [[SR:Karliah|Karliah]] outside [[SR:Nightingale Hall|Nightingale Hall]], he starts following you. He will also follow you during Blindsighted.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Chief Yamarz|Chief Yamarz]]||[[SR:The Cursed Tribe|The Cursed Tribe]]||If he survives after slaying the giant, calming him down will have him follow you. However the effect will only last a minute. Using console commands can allow him to permanently follow you.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Delphine|Delphine]]||[[SR:Alduin's_Wall|Alduin's Wall]]|| She will accompany you and Esbern up to [[SR:Sky Haven Temple|Sky Haven Temple]] if you choose to travel with them during Alduin's Wall. ||style="text-align:center"|30||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Derkeethus|Derkeethus]]||[[SR:Extracting an Argonian|Extracting an Argonian]]||Once you free him, he will follow you until you exit [[SR:Darkwater Pass|Darkwater Pass]].||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Durian|Durian]]{{CC|Bloodchill Manor}}||[[SR:Guests for Dinner|Guests for Dinner]]{{CC|Bloodchill Manor}}|| Will follow you if leave the cave without finishing the quest.||style="text-align:center"|15||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Enmon|Enmon]]||[[SR:The Heart of Dibella|The Heart of Dibella]]|| Enmon may join you when you offer to liberate [[SR:Fjotra|Fjotra]] from her Forsworn captors.||style="text-align:center"|15||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Eola|Eola]]||[[SR:The Taste of Death|The Taste of Death]]||Follows you through [[SR:Reachcliff Cave|Reachcliff Cave]] until you reach the Namira shrine (if allowed to accompany you). ||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Esbern|Esbern]]||[[SR:A Cornered Rat|A Cornered Rat]], [[SR:Alduin's_Wall|Alduin's Wall]]|| Esbern will follow you wherever you go in A Cornered Rat, but when he joins up with Delphine in Alduin's Wall he will only stay with you as long as you are heading toward the wall, which then prevents him from being used in most other quests. He will accompany you and Delphine up to Sky Haven Temple if you choose to travel with them during Alduin's Wall. ||style="text-align:center"|30||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Farkas|Farkas]]||[[SR:Proving Honor|Proving Honor]], [[SR:Purity|Purity]], [[SR:Dragon Seekers|Dragon Seekers]]||Will replace your permanent follower, even while he is waiting for you at [[SR:Dustman's Cairn|Dustman's Cairn]], you can recruit a follower for the latter two. Once you meet up with him, he will follow you everywhere.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Fenrig|Fenrig]]||[[SR:The Book of Love|The Book of Love]]||He will appear once you get near [[SR:Gjukar's Monument|Gjukar's Monument]], but you will need to fast travel as quickly as possible for him to follow you.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Fjotra|Fjotra]]||[[SR:The Heart of Dibella|The Heart of Dibella]]|| Fjotra will follow you once you rescue her from her captives.||style="text-align:center"|3||style="text-align:center"|3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Galmar Stone-Fist|Galmar Stone-Fist]]||[[SR:Battle for Whiterun (Stormcloaks)|Battle for Whiterun (Stormcloaks)]]||Once you enter [[SR:Whiterun|Whiterun]], he and Ralof will follow you until you enter [[SR:Dragonsreach|Dragonsreach]].||style="text-align:center"|50||style="text-align:center" |3|| ||
+|-
+|[[SR:Geirlund|Geirlund]]||[[SR:Missing_In_Action|Missing in Action]]||He meets up with you alongside Vidrald when you meet Avulstein Gray-Mane outside of Northwatch Keep (if you agreed to have him along to help you).||style="text-align:center"|100||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Golldir|Golldir]]||[[SR:Ancestral Worship|Ancestral Worship]]||Agree to accompany him to kill [[SR:Vals Veran|Vals Veran]].||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Hadvar|Hadvar]]||[[SR:Unbound|Unbound]], [[SR:Rescue from Fort Kastav|Rescue from Fort Kastav]]||Accompanies you if you chose him during the opening sequence in [[SR:Helgen|Helgen]]. If you side with the Imperials in the [[SR:Civil War|Civil War]], he will also follow you during [[SR:Rescue from Fort Kastav|Rescue from Fort Kastav]]. ||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Imperial Soldier|Imperial Soldiers]]||[[SR:Rescue from Fort Kastav|Rescue from Fort Kastav]]||4 Imperial Soldiers will follow you once you rescue them, once you reach the courtyard they will stop following you.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Karliah|Karliah]]||[[SR:Blindsighted|Blindsighted]]||After talking to her in [[SR:Irkngthand|Irkngthand]], she starts following you.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Katria|Katria]]{{DG}}||[[SR:Lost to the Ages|Lost to the Ages]]{{DG}}||Katria can be used for other quests, but only by breaking her own quest, which is fixable but not advisable. ||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||
+|-
+|[[SR:Malborn|Malborn]]||[[SR:Diplomatic Immunity|Diplomatic Immunity]]||If you save him, he will follow you around the [[SR:Thalmor Embassy|Thalmor Embassy]] up until you escape.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|
+|-
+|[[SR:Maurice_Jondrelle|Maurice Jondrelle]]||[[SR:The_Blessings_of_Nature|The Blessings of Nature]]||After retrieving [[SR:Nettlebane|Nettlebane]] and talking to [[SR:Danica_Pure-Spring|Danica Pure-Spring]], he will engage you in conversation and ask to come with you.||style="text-align:center"|15||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Mercer_Frey|Mercer Frey]]||[[SR:Speaking_With_Silence|Speaking With Silence]]||Follows after helping you break into [[SR:Snow Veil Sanctum|Snow Veil Sanctum]].||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Nazir|Nazir]]||[[SR:Death Incarnate|Death Incarnate]]||He and Babette will briefly follow you until you find Astrid.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Orthorn|Orthorn]]||[[SR:Hitting the Books|Hitting the Books]]||Free him from his cell, and talk to him.||style="text-align:center"|10||style="text-align:center" |3||style="text-align:center"| ||style="text-align:center"|
+|-
+|[[SR:Ralof|Ralof]]||[[SR:Unbound|Unbound]], [[SR:Rescue from Fort Neugrad|Rescue from Fort Neugrad]], [[SR:Battle for Whiterun (Stormcloaks)|Battle for Whiterun (Stormcloaks)]] ||Accompanies you if you chose him during the opening sequence in Helgen. If you side with the Stormcloaks in the Civil War, he will follow you during [[SR:Rescue from Fort Neugrad|Rescue from Fort Neugrad]].||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||
+|-
+|Rescued NPC (random)||[[SR:Rescue Mission|Rescue Mission]]||An NPC that has been rescued will follow you until you reach their destination.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Serana|Serana]]{{DG}}||[[SR:Bloodline|Bloodline]]{{DG}}, [[SR:Chasing Echoes|Chasing Echoes]]{{DG}}, [[SR:Beyond Death|Beyond Death]]{{DG}}, [[SR:Unseen Visions|Unseen Visions]]{{DG}}, [[SR:Touching the Sky|Touching the Sky]]{{DG}}, [[SR:Kindred Judgment|Kindred Judgment]]{{DG}}||In Bloodline, she is a regular quest follower. In later quests, she will take orders and trade items like a permanent follower and takes up the follower slot, but cannot be dismissed. Between certain quests, she may be dismissed and told to walk ahead to the next location.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Sinding|Sinding]]||[[SR:Ill_Met_By_Moonlight|Ill Met By Moonlight]]||Briefly follows you for the duration of the quest, if you choose to spare him and turn the tables on the hunters. He will be in [[SR:Werewolf|werewolf]] form, and is capable of flinging opponents across distances much like a player werewolf, although his throw attack is not fatal.||style="text-align:center"|1||style="text-align:center" |3|| ||
+|-
+|[[SR:Stormcloak Soldier|Stormcloak Soldiers]]||[[SR:Rescue from Fort Neugrad|Resucue from Fort Neugrad]]||4 Stormcloak Soldiers will follow you once you rescue them, they will stop following you once you reach the courtyard.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Stormcloak Soldier|Stormcloak Soldier]]||[[SR:Sovngarde (quest)|Sovngarde (quest)]]||Agree to have him follow you to reach to the Hall of Valor.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Tolfdir|Tolfdir]]||[[SR:Under Saarthal|Under Saarthal]], [[SR:The Eye of Magnus|The Eye of Magnus]]||Will follow you in [[SR:Saarthal|Saarthal]] and to help defeat [[SR:Ancano|Ancano]].||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}} ||
+|-
+|[[SR:Thonnir|Thonnir]]||[[SR:Laid_to_Rest|Laid to Rest]]||He will follow you alongside other residents of Morthal through [[SR:Movarth's Lair|Movarth's Lair]], if allowed.||style="text-align:center"|3||style="text-align:center" |3||style="text-align:center"|{{yes}} ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Thorald_Gray-Mane|Thorald Gray-Mane]]||[[SR:Missing_In_Action|Missing in Action]]||If he dies, you will fail the quest. Avulstein Gray-Mane, Geirlund, and Vidrald will also stop following you.||style="text-align:center"|50||style="text-align:center" |3|| ||style="text-align:center"|{{yes}}
+|-
+|[[SR:Traveling Bard|Traveling Bard]], [[SR:Traveling Merchant|Traveling Merchant]] or [[SR:Traveling Pilgrim|Traveling Pilgrim]]||[[SR:The Hunt|The Hunt]]||Persuade the Dawnguard member to follow you.||style="text-align:center"|50||style="text-align:center" |3|| ||
+|-
+|[[SR:Traveling Bard|Traveling Bard]], [[SR:Traveling Pilgrim|Traveling Pilgrim]], or [[SR:Visiting Advisor|Visiting Advisor]]||[[SR:Hide and Seek (quest)|Hide and Seek]]||Persuade the vampire to follow you.||style="text-align:center"|50||style="text-align:center" |3|| ||
+|-
+|[[SR:Valdr|Valdr]]||[[SR:Moss Mother Cavern (quest)|Moss Mother Cavern]]||After healing him, you can opt for him to accompany you into the cavern.||style="text-align:center"|25||style="text-align:center"|3|| ||
+|-
+|[[SR:Veezara|Veezara]]||[[SR:Bound Until Death|Bound Until Death]]||He will briefly follow you before telling you to escape.||style="text-align:center"|25||style="text-align:center"|3|| ||
+|-
+|[[SR:Vidrald|Vidrald]]||[[SR:Missing_In_Action|Missing in Action]]||He meets up with you alongside Geirlund when you meet Avulstein Gray-Mane outside of Northwatch Keep (if you agreed to have him along to help you).||style="text-align:center"|None||style="text-align:center"|3|| ||
+|-
+|[[SR:Vilkas|Vilkas]]||[[SR:Purity of Revenge|Purity of Revenge]], [[SR:Purity|Purity]], [[SR:Dragon Seekers|Dragon Seekers]]||Will replace your permanent follower but you can recruit your follower again for the latter two.||style="text-align:center"|50||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+!colspan=7|Animal Followers
+|-
+|[[SR:Barbas|Barbas]]||[[SR:A Daedra's Best Friend|A Daedra's Best Friend]]||Barbas is the only ''temporary'' dog follower in the game. He can tag along for however long you wish if you start the quest but don't complete it. He frequently barks, whines, and pushes you, however he is invincible and will continue to follow and fight for you no matter where you bring him.||style="text-align:center"|45||style="text-align:center" |3 ||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Gleda the Goat|Gleda the Goat]]||[[SR:A Night To Remember|A Night To Remember]]||Gleda will not fight, and cannot be spoken to. She will follow you until you return her to [[SR:Ennis|Ennis]].||style="text-align:center"|3||style="text-align:center" |3 ||||
+|}
+{{Anchor||Dragonborn Quest Followers}}
+===Dragonborn===
+These followers are only present during certain [[SR:Dragonborn|Dragonborn]] quests.
+
+{| class="wikitable" style="width:100%"
+!style="width:160px"|Name
+!style="width:140px"|Quest(s)
+!Notes
+!style="width:1px"|Max Level
+!style="width:1px"|{{hover|Morality Value|[[SR:Morality|Moral]]}}
+!style="width:1px"|[[SR:Essential NPCs#Dragonborn|Essential]]
+!style="width:80px" | Usable in Other Quests
+|-
+|[[SR:Bujold the Unworthy|Bujold the Unworthy]]||[[SR:Retaking Thirsk|Retaking Thirsk]]||She will follow you inside [[SR:Hrothmund's Barrow|Hrothmund's Barrow]]. ||style="text-align:center"|50||style="text-align:center" |3|| ||
+|-
+|[[SR:Frea|Frea]] || [[SR:The Temple of Miraak|The Temple of Miraak]] || Accompanies you through the majority of the [[SR:Temple of Miraak|Temple of Miraak]]. ||style="text-align:center"|None||style="text-align:center" |3||style="text-align:center"|{{yes}}||style="text-align:center"|{{yes}}
+|-
+|[[SR:Neloth|Neloth]] || [[SR:The Path of Knowledge|The Path of Knowledge]] ||Neloth will only follow you in [[SR:Nchardak|Nchardak]] Aqueduct.|| style="text-align:center"|60 || style="text-align:center"|3 || style="text-align:center"|{{V}} ||
+|-
+|[[SR:Tharstan|Tharstan]] || [[SR:Lost Legacy|Lost Legacy]] || Follows you through [[SR:Vahlok's Tomb|Vahlok's Tomb]]. Will not fight. || style="text-align:center"|1 || style="text-align:center"|3 || style="text-align:center"|{{V}} ||
+|-
+!colspan=7|Animal Followers
+|-
+|[[SR:Bilgemuck|Bilgemuck]] || [[SR:The Chief of Thirsk Hall|The Chief of Thirsk Hall]] || He will briefly follow you until he reaches the riekling pen next to the forge. || style="text-align:center"|7 || style="text-align:center"|3 || style="text-align:center"| ||
+|}
+
+==Notes==
+* Followers are not affected by [[SR:Disease|diseases]].
+* [[Skyrim:Torch|Torches]] you give to followers will never burn out.
+* Followers can be made to [[Skyrim:Chop Wood|chop wood]], but they cannot [[Skyrim:Mining|mine ore]].
+* It can be quite easy to outpace most followers and lose track of them (e.g. light armor wearers with heavy armor followers).
+* If your [[SR:Marriage|spouse]] was available as a follower before the two of you got married, they'll still follow you if requested, and you'll still be able to trade with them and upgrade their equipment. In addition, your spousal follower will be considered [[SR:Protected NPCs|protected]] at all times as well.
+* Followers will also use [[SR:Scrolls|scrolls]] if they are placed in their inventories, though this is limited to the conjure fire/frost/storm atronach scrolls and the Destruction scrolls.
+* Pathfinding can make followers difficult to manage. They cannot jump up or across anything, though they will jump down if there is no other path. If you jump up a small hill, be prepared to see your follower take an extremely long path around. Quite often a follower will get stuck with no path to you. In these circumstances, it appears they are supposed to simply teleport near you, but this can take a very long time to trigger if it triggers at all. The only known guaranteed ways to get them to appear are to fast-travel, change zones (loading screen), use the <code>moveto player</code> console command, or to wait.
+* You can pickpocket your follower's starting items with the [[SR:Misdirection|Misdirection]] and [[SR:Perfect_Touch|Perfect Touch]] perks if they are not following you, although they may reappear afterwards.
+* Followers can become hostile:
+** Followers can and will attack your [[SR:Horse|horse]], summons, thralls and other temporary followers if hit by them enough. This is common when escorting a temporary mage follower, or summoning an Atronach that uses projectile spells. (See [[#Bugs|bugs]] for a workaround on horses.)
+** When damaged badly enough by rockfalls or traps that are triggered by you, or if you attack them repeatedly, a follower may leave your service and attack.
+*** This can usually be corrected by yielding at which time the follower can be rehired.
+*** Casting a [[SR:Pacify (effect)|Pacify]] spell on them and rehiring will cause the follower to remain friendly to you even after the spell expires. However, initiating dialogue with your follower will immediately make them hostile again.
+*** Running away, then fast travelling to a distant location and waiting 24 hours may make them friendly again when you return.
+** It is possible for a follower to enter combat mode when a random brawl is started or when an NPC carries out an act that could be seen as aggressive toward you (as with the [[SR:Magic Student|Magic Student]] random encounter). When anticipating a brawl or "initiation" fight it is best to ask your follower to wait somewhere else out of sight.
+** Canine followers can be possessed by [[SR:Spriggan|Spriggans]]. To fix this, kill the Spriggan and have the dog be downed by something other than your weapon; when it gets back up, the problem should be resolved.
+*** This will not be a problem for [[SR:Barbas|Barbas]] during [[SR:A Daedra's Best Friend|A Daedra's Best Friend]], as he is immune to possession.
+* Be aware of your follower being behind you, especially if you have equipped them with magical staves and are in tight areas. They will have no qualms about targeting the enemy right through your character.
+* If you give your follower the [[SR:Sanguine Rose|Sanguine Rose]], they may use it to summon [[SR:Dremora|Dremora]] to assist you in combat. Don't attack the summoned Dremora, or it will retaliate unless you sheathe your weapon.
+* With the [[SR:Hearthfire|Hearthfire]] add-on installed it is possible to turn some followers into a steward of one of your [[SR:Construction|player-built properties]]. Animal followers can be kept as pets at the request of your [[SR:Adoption|adopted children]].
+** With the [[SR:Farming|Farming]] Creation, you can also assign them to [[SR:Goldenhills Plantation|Goldenhills Plantation]].
+* Once a steward has been chosen for a particular homestead, the choice is permanent; you cannot replace that steward with someone else later, though you can still ask them to follow you.
+** The steward at Goldenhills Plantation can be fired and rehired as many times as you like, but an active steward there cannot be asked to follow you (as opposed to Hearthfire stewards), so they must be fired to do so. The same is true with the guard pet.
+*** [[SR:Armored Troll|Armored Trolls]] that are told to guard the farm cannot be taken as followers again. Once dismissed as a guard, you cannot ask it to follow and you will have to hire a new one.
+* If you become [[SR:Blood-Kin|Blood-Kin]] and later bring your follower to one of the [[SR:Orc Strongholds|Orc strongholds]], the residents will treat your follower as an extra ally as long as you and your follower are together.
+* [[SR:Vigilant of Stendarr|Vigilants of Stendarr]] will attack [[SR:Barbas|Barbas]] on sight if they see him following you during [[SR:A Daedra's Best Friend|A Daedra's Best Friend]]. Unfortunately, since Barbas is invulnerable, they will perish.
+* Followers using weapons enchanted with [[SR:Soul Trap (effect)|Soul Trap]] or [[SR:Fiery Soul Trap|Fiery Soul Trap]] may fill all of their empty soul gems of the type used by the trapped soul after only trapping one soul. (For instance, a follower killing a soul trapped Frost Troll while carrying 17 Common Soul Gems fills them all, instead of just one.)
+* If you wish to easily find your follower, have them pick up any quest item that is needed for a quest you do not want to complete. Leaving the quest active will always point to your follower, as they are holding the quest item. If your follower is a member of the [[SR:The Circle|Circle]], then the minor objective Talk to the Companions leaders for work will always point to your follower (along with the other members of The Circle) as well.
+* Followers will not follow you into the [[SR:Dark Brotherhood Sanctuary|Dark Brotherhood Sanctuary]] and various other quest areas. They will wait outside. In some cases, followers will not follow you into an area during a portion of a quest, but will come with you into that area when that part of the quest is over.
+* If a mage who is capable of reanimating dead bodies like [[SR:Serana|Serana]] is present during [[SR:Civil War|Civil War]] battles, they may reanimate enemy Imperial or Stormcloak soldiers that have already fallen, who must then be killed again to finish the battle.
+* If you are a [[SR:Lycanthropy|werewolf]], it can be challenging to use Beast Form and have the Savage Feeding perk if a powerful blood mage like [[SR:Serana|Serana]] is your follower as they tend to raise corpses in battle. This can prevent you from feeding unless you manage to feed on raised corpses after they die again but before they turn into a pile of ash.
+* If you spare your follower at the [[SR:Sacellum of Boethiah|Sacellum of Boethiah]] via an alternative method during [[SR:Boethiah's Calling|Boethiah's Calling]], they will revert to their original equipment, and anything you gave them may be lost. Be sure to remove everything from their inventory except their original weapons and armor beforehand.
+* Based on unused dialogue, the hunters seen during [[Skyrim:Ill Met By Moonlight|Ill Met By Moonlight]] might've also been once meant to follow you during the quest. This also goes for a [[Skyrim:Cow|Painted Cow]] during the removed [[Skyrim:Unfinished Quests|CivilWarMission08]], [[Skyrim:Legate Rikke|Legate Rikke]] during one of the removed [[Skyrim:Civil War|Civil War]] quests Battle for Riften, one [[Skyrim:Imperial Soldier|Imperial Soldier]] and one [[Skyrim:Stormcloak Soldier|Stormcloak Soldier]] who were imprisoned and needs to be rescued and a [[Skyrim:Solitude Guard|Solitude Guard]] who would follow you around during the unfinished quest [[Skyrim:Unfinished Quests|Boethiah's Bidding]], your spouse during [[Skyrim:Bandit Attack|Bandit Attack]] and [[Skyrim:Saadia|Saadia]], who was meant to follow you during [[Skyrim:In My Time Of Need|In My Time Of Need]], according to unused scripting.
+* During [[SR:Rescue from Fort Neugrad|Rescue from Fort Neugrad]] (for the Stormcloaks) and [[SR:Rescue from Fort Kastav|Rescue from Fort Kastav]] (for the Empire), the prisoners you are sent to rescue will ignore your order if you tell them to wait. This is due to the script that handles them equipping their gear overriding the follow state variable that controls whether they're waiting or following.
+* [[Skyrim:Tsun|Tsun]] follows you around if you wander around Sovngarde after defeating Alduin. There is also [[Skyrim:Pumpkin|Pumpkin]], a fox found in Southfringe Sanctum, who has an AI package to follow you around the cave and a bandit marauder found in [[Skyrim:Ravenscar Hollow|Ravenscar Hollow]], who will follow you in the cave if you free him from the cage.
+
+==Bugs==
+{{Bug|Essential followers may not recover properly if you fast travel away.|OSP|1.1}}
+{{Bug|Followers who have the archery skill and come with a starter set bow and arrows will use a single better arrow indefinitely, without using it up. Their misses and kills still show up on the ground and in the loot window and can be picked up. The single arrow may eventually disappear after an unspecified number of shots. In some instances, their standard bow may be required, but generally the follower can use any bow you choose to give. The unlimited arrow "bug" occurs with any single arrow given to the follower.|USKP|1.0}}
+{{Bug|Followers may always use their default hunting bow in favor of better ones given to them.|USKP|1.0}}
+**Archer followers will only use a bow and arrow combination where the base bow damage (before upgrading with smithing or enchanting) plus arrow damage falls within the range of 15-22.[https://web.archive.org/web/20200223102747/http://forums.bethsoft.com/topic/1378689-bows-and-followers/#entry20885061] Otherwise they revert to their starter bow and/or iron arrows when in battle.
+**With the [[SR:Dawnguard|Dawnguard]] add-on followers will use upgraded bows of higher quality such as crossbows and dragonbone bows with higher level bolts/arrows.{{VN|section=Followers using higher quality bows with Dawnguard}}
+{{Bug|If you place items in a container and then command the follower to "take all items" the items they take from the container may now carry the "Stolen" tag.|confirmed=1}}
+**Make sure the container isn't owned (red rollover text), or ''everything'' inside may be marked as stolen if you order your follower to loot it.
+**You can remove the "Stolen" tag from any item by placing in an unowned container and then telling your follower to "take all items". This must be done without NPCs seeing the follower taking the items or else it is considered a crime.{{vn}}
+**You can also remove the "Stolen" tag from any item by placing it in the cupboard behind [[Skyrim:Lucan Valerius|Lucan Valerius]] at the [[Skyrim:Riverwood Trader|Riverwood Trader]], and buying it from Lucan.
+{{Bug|If you command followers to pick items up off the ground, they can carry an infinite amount of weight and their movement speed does not appear to be affected but there are several issues associated with doing this.|confirmed=1}}
+**Drop items to be picked up in stacks of 5 or less. If they are dropped in stacks of 6 or more they will only pick up one of the item, and the rest will be lost. They can pick up multiple stacks of 5 or less.
+**You may not be able to take back a piece of armor you have ordered your follower to pick up if it is identical to the follower's starting armor or the armor they are currently wearing. Trying to remove it from their inventory will give the message, ''"You cannot take your follower's starting items."'' Killing your follower will allow you to get the items back, but they will be marked as stolen. Putting them on a mannequin in your home will result in the same bug as with the follower, leaving you unable to get your armor back.
+**Often, when you retrieve the items picked up by your follower through the inventory exchange dialogue, those items will be marked with a "[[SR:Crime#Stolen_Items|Stolen]]" tag, even when they are not stolen.
+*** This can be avoided if you first pick up all items, then drop them on the ground one by one (or stacks of 5 or less) before asking the follower to pick them up. Finally, after getting the items back again, you should drop them on the ground and pick them up one last time.
+*** The [[SR:console|console]] can be used on PCs. Enter <code>setownership</code> on any container and all items placed in the container (before or after the command) can safely be picked up by the follower. However, as it also removes the stolen flag on actual stolen items, it should be used with care so as not to spoil the gaming experience.
+** When encumbered past their limit by using the exploit, there have been instances where the follower is incapable of drawing their weapon in battle. They will still attempt to attack the enemy but will be incapable of doing anything except take a beating. This issue can sometimes be resolved by entering a new area that requires loading.
+** Sometimes when using the exploit, giving your follower the same armor as starting armor, then taking this armor will result in the follower being unclothed.{{vn|plain}}
+{{Bug|Followers with both a morality value of 3 and a behavior value of "Aggressive" may attack you on sight if you have a bounty and remain hostile until the bounty is clear.}}
+{{Bug|Uthgerd is in the CombatWarrior1H class, even though she is initially equipped with a two-handed weapon and her combat style is two-handed.|USKP|1.2|It changes her class to CombatWarrior2H to match her equipment and combat style.}}
+{{Bug|None of the housecarls are able to sandbox throughout the whole house they're assigned to protect.|USKP|1.3.2|New packages to allow them to do this throughout the whole building instead of with a defined radius have been generated for each.}}
+{{Bug|If interrupted, Cicero and/or the other Dark Brotherhood Initiates may not execute commands to wait or be dismissed due to their scripts being set to fire at the end of the dialogue instead of the beginning.|USKP|1.3.3}}
+{{Bug|A follower may not leave the recovery state even when their health is fully replenished but instead continue crawling around on the floor.|confirmed=1}}
+** This can be fixed by entering combat again with a new enemy, attacking them, fast-traveling to a new area, reloading a save, or healing them with a [[SR:Restoration|Restoration]] spell. The [[SR:Unrelenting Force|Unrelenting Force]] [[SR:Shout|Shout]] or casting [[SR:Paralyze (spell)|Paralyze]] on them sometimes works as well.
+{{Bug|Sometimes after a fight, the follower will be partially disabled, i.e., will not regenerate health, will not move or follow, will not sheath weapon when you do, will not have conversation menu, but will verbally respond to being healed. Using the console kill command seems to fix his or her state without actually killing him or her.|confirmed=1}}
+** This has the same fixes as not leaving the recovery state, above.
+{{Bug|The [[Skyrim:Champion of Boethiah|Champion of Boethiah]] will re-equip his [[Skyrim:Ebony Mail|Ebony Mail]] if he is killed and revived with [[Skyrim:Dead Thrall|Dead Thrall]], which can be exploited for infinite gold and powerful armor for your followers.|OSP|1.5}}
+{{Bug|Followers may not sneak properly when you enter sneak mode.|OSP|1.5}}
+{{Bug|Followers may disappear if you pay off a bounty after committing a crime.|OSP|1.6}}
+{{Bug|Followers may fail to equip better weapons and armor you give them.|OSP|1.9}}
+{{Bug|Followers may lose carry weight after being dismissed and then rehired. This is due to them receiving extra copies of hidden equipment upon rehiring, which can be removed with the console.|OSP|1.9.26.0.8}}
+{{Bug|Having the Deep Freeze, Intense Flames, or Disintegrate perks can cause your cloak spells to kill followers who are in bleedout.|USKP|1.2.3}}
+{{Bug|Mjoll is a powerful two-handed warrior, but her favorite sword, Grimsever, is a one-handed glass sword.|USKP|1.2.3|Grimsever is now a two-handed glass greatsword to match her skills better.}}
+{{Bug|Ghorbash is in the Ranger class even though his default equipment is governed by the Heavy Armor skill.|USKP|1.2.4|It changes his class to CombatWarrior1H to match his equipment.}}
+{{Bug|The Dark Brotherhood Initiates and Cicero can annoy the player by repeating their hello lines over and over again.|USKP|1.2.4}}
+{{Bug|The Dark Brotherhood Initiates and Cicero all follow the player too closely.|USKP|2.0.0}}
+{{Bug|If your character is a [[Skyrim:Vampirism|vampire]] and a follower is present, the follower may use anti-vampire taunts while in combat even if you're the only vampire around.|USKP|2.0.1}}
+{{Bug|Offering a follower up to sacrifice to Boethiah before the appropriate stage of [[Skyrim:Boethiah's Calling|Boethiah's Calling]] can leave the quest in a jammed state.|USKP|2.0.4}}
+{{Bug|Cosnach's and Vorstag's default gear is governed by the Light Armor skill, though they are more proficient in Heavy Armor.|USKP|2.0.4|Their combat classes have been changed to CombatBarbarian to reflect this.}}
+{{Bug|Adelaisa's and Erik's default gear is governed by the Heavy Armor skill, though they are more proficient in Light Armor.|USKP|2.0.4|Their combat classes have been changed to CombatWarrior1H to reflect this.}}
+{{Bug|If asked to wait somewhere, Dark Brotherhood followers never time out and return to the Dawnstar Sanctuary. This can be problematic because you'll be unable to pick up a new follower and may have forgotten where the Dark Brotherhood follower was left behind.|USKP|2.0.4}}
+{{Bug|After the magical explosion that ends [[Skyrim:Revealing the Unseen|Revealing the Unseen]] and starts [[Skyrim:Containment|Containment]], your follower may automatically teleport to the [[Skyrim:Hall of the Elements|Hall of the Elements]], even if you told them to wait somewhere else.|USKP|2.0.5}}
+{{Bug|Followers may attack your [[Skyrim:Horses|horse]] even though your horse is your ally.|USKP|2.0.7|This was due to incomplete faction relationships.}}
+{{Bug|Both of the death hound followers have the same stats and level as a normal death hound instead of the usual 10-25 level range on other dog followers and are therefore quite weak in comparison.|UDGP|1.1.4}}
+{{Bug|Frea's default gear is governed by the Heavy Armor skill, but Frea is actually more proficient in light armor.|UDBP|1.0.2|Frea's class now favors heavy armor, and her perks have been adjusted accordingly.}}
+{{Bug|Installing the Dragonborn add-on may cause Onmund, Sven, Erik, and Agmaer to use the same recruitment dialogue as Talvas when you hire them.|UDBP|1.0.2}}
+{{Bug|As a trainer and a follower, it is possible to receive 'free' Conjuration training from Talvas by taking the gold you paid from his inventory.|UDBP|1.0.2}}
+{{Bug|When hiring a steward, BYOHHouseBuildingScript may fail to check to make sure they were your current follower before simply dismissing one. This would result in any follower you DID have getting dismissed instead.|UHFP|1.0.3}}
+{{Bug|When a follower offers to become your steward, the offer is set up to be a one-time decision that cannot be revisited, but the DLC dialogue does not properly reflect the finality of this decision.|UHFP|1.1.2}}
+{{Bug|Whenever hirelings are subsequently "hired" for adventuring, they will lose their steward dialogue upon being released from service.|UHFP|2.0.3|dlc=HF}}
+{{Bug|Followers may not give the option to become stewards if Dragonborn is enabled.|confirmed=1|dlc=HF}}
+**Followers that have to be paid to follow may not present the choice for Stewardship, but Followers that call you friend and follow upon request will present the choice upon arrival to the home.
+{{Bug|If you decline a follower's offer to become a steward (with the option "Let me think about it" or something similar), you will not get the option later on to tell them that you want them to become steward and take them up on their earlier offer.|confirmed=1}}
+{{Bug|Celann and Ingjard have skill configurations for heavy armor but are incorrectly set to use light armor.|USLEEP|3.0.1}}
+{{Bug|Belrand wears a heavy iron cuirass, despite being proficient in light armor instead. In addition, despite having a high [[Skyrim:Destruction|Destruction]] skill and a perk for it, he knows no Destruction spells.|USLEEP|3.0.8|Belrand is now fully clad in hide armor, and has the ability to cast [[Skyrim:Ice Spike|Ice Spike]].}}
+{{Bug|The inventories of Dark Brotherhood Initiates may reset, causing items they are carrying to be permanently lost.|USLEEP|3.0.10}}
+{{Bug|Agmaer and Beleval don't regenerate after entering bleedout because both of them inherited stats from the bandit templates where the bleedout override checkbox was enabled.|USSEP|4.0.8}}
+{{Bug|When Talvas is your follower, the option to ask “What is this place?” may be available in places like Raven Rock as well as the mainland, though he still responds that it's Master Neloth's Tower, which clearly doesn't make sense and would be incorrect under those circumstances.|USSEP|4.0.8|A condition check has been added to the dialogue topic to prevent this from happening.}}
+{{Bug|If you instruct a follower to pick up a giant's club, they will equip the club they picked up and use it in combat. Unfortunately, it will be impossible to remove the club from their inventory afterwards.|USSEP|4.1.1}}
+{{Bug|Borgakh the Steel Heart is initially placed in the game clipping into a table, which can potentially cause her to get flung out of playable space and thus disappear from the game.|USSEP|4.1.5}}
+{{Bug|Animal followers may not be properly unmarked as a player teammate when dismissed.|USSEP|4.2.9}}
+{{Bug|Transferring a large number of arrows to a follower can cause the game to crash.|OSSEP|1.6.1130}}
+{{Bug|Followers consider the [[Skyrim:Fire Wyrm|Fire Wyrm]]{{DB}} an enemy and attack it. You will not be able to interact with them until the wyrm is gone.}}
+{{Bug|If your character is a vampire and you give a [[Skyrim:Potion of Blood|Potion of Blood]] to a follower, if the follower drinks the potion, your character will revert to stage 1 of vampirism.}}
+{{Bug|You can move distant objects by holding the ''Use'' button while giving orders to a follower.|confirmed=1}}
+{{Bug|You can have more than one follower at a time with the [[SR:Dawnguard|Dawnguard]] add-on. If you have the Dark Brotherhood Initiate as a follower when you recruit Serana you may keep both followers. You may then be able to have a Housecarl follow you as a third follower unless you have Cicero and Serana.|confirmed=1}}
+{{Bug|If you drop an item and move it around in the game world and then ask your follower to pick it up, they will go to the place it was initially dropped and pick it up there.|confirmed=1}}
+{{Bug|Your followers might sometimes enter buildings via a different door than you.|confirmed=1}}
+{{Bug|Followers may become stuck on terrain when returning to their original locations after being dismissed.}}
+**{{pc22}}Use the console command <code>prid (RefID)</code> to target a lost follower and then use the command <code>moveto player</code> to place them at your current location.
+{{Bug|{{Xbox22}} Sometimes, you are able to get more than one follower.{{vn|Does this work on other platforms?}} To do this, have your original follower and your potential second follower stand next to each other. Next, dismiss your follower, then immediately re-hire them. Exit out of their text, then quickly open conversation with your potential follower. If done correctly, you will be able to hire them. Do this as many times as you like by repeating the steps with your original follower. First bring your usual follower into the Dark Brotherhood sanctuary and tell him/her to stand next to the two initiates. Dismiss your follower, then immediately recruit him/her. Quickly chat with the first initiate and then the second. Rinse and repeat with Cicero.}}
+**Your additional followers may not wait when commanded, and often get in the way. If you also have a dog with you, they may get stuck in doors.
+{{Bug|{{Xbox22}} With the [[SR:Dawnguard|Dawnguard]] add-on, crossbows may randomly disappear from a follower's inventory when loading a game.}}
+**This is not an issue for the 5 [[SR:Dawnguard (faction)|Dawnguard]] member followers, as they have access to crossbows by default.
+{{Bug|The hitbox of dog followers is larger than the dog as a visual object; thus, if a dog follower is between you and an intended target, you may hit the dog even when it appears to be peripheral to your line of sight.|confirmed=1}}
+{{Bug|If you quicksave at the same time as you order a follower to interact with something, you will interact with that object yourself instead, even if you were too far away to use it normally.}}
+{{Bug|Trading two or more exact copies of items to a follower can cause all but one copy to disappear when you try to retrieve them. This bug particularly affects staves.}}
+{{Bug|Giving a follower more than 500 gold will result in the amount eventually being reduced to 500.|confirmed=1}}.
+{{Bug|When changing dungeons, followers may run in place. This behavior can be stopped by sheathing and unsheathing your weapons or spells (by default, the R key on PC).|confirmed=1}}
+{{Bug|Spellsword followers (such as Erandur) are vulnerable to a bug where after they've been downed, they will not enter combat properly and only block with their weapon (even bows) and not heal themselves (or consume healing potions), nor will they regenerate their health normally.
+**This bug will occur in any area where there is a trigger box (or similar arrangement) that turns off NPC aggression that is not disabled after it's used and a follower enters it.  With aggression set to zero, they will only block.  The final area of Hobbs Fall Cave, for example, where the necromancers have their aggression turned off the moment they spawn - followers will very often have their own aggression disabled if they walk into the same area they are.  It can be fixed on PC by selecting the bugged follower in the console, and resetting their aggression to it's original value (usually 3) by typing "setav aggression 3"|confirmed=1}}
+
+==See Also==
+* A [[SR:Followers/Table|sortable table]] of all followers' maximum stats.

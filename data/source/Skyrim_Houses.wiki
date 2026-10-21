@@ -1,0 +1,299 @@
+{{Trail|Services}}{{TOCright}}
+'''Houses''' in [[Skyrim:Skyrim|Skyrim]] are buildings in which you may sleep and safely store items in [[Skyrim:Containers#Safe_Containers|non-respawning containers]]. Several [[Skyrim:Cities|major cities]] have houses available for purchase of varying size, quality, and cost. There is no limit to how many homes you may own, only a limit on how many houses are available. If you get [[Skyrim:Marriage|married]], you have the option of having your spouse move in with you.
+
+[[Skyrim:Sleeping|Sleeping]] in your house provides the [[Skyrim:Well Rested|Well Rested]] bonus, a 10% boost to skill increases for 8 in-game hours. Sleeping in your house with your spouse provides the [[Skyrim:Lover's Comfort|Lover's Comfort]] bonus, a 15% boost to skill increases for 8 hours. It also rejuvenates your Health and Magicka. You will not gain any rested bonus if you have the Beast Blood effect from becoming a [[Skyrim:Lycanthropy|werewolf]] or have [[Skyrim:The Lover Stone|the Lover Stone]] activated.
+== City Houses ==
+{| class="wikitable sortable" style="text-align: center;"
+!Location!!Name!!Housecarl!!{{Value Icon}}!!Full Upgrade Cost!!Total Cost!!Bookshelves!!Shield Plaques!!Weapon Plaques!!Display Cases!!Mannequins!!width="75px"|Weapon Racks!!Storage Spaces!!width="130px"|Features
+|-
+|style="text-align: left;"|[[Skyrim:Whiterun|Whiterun]]||style="text-align: left;"|[[Skyrim:Breezehome|Breezehome]]||[[Skyrim:Lydia|Lydia]]||5,000||1,550 to 1,800||6,550 to 6,800||4||1||2||0||0||1 (2 slots)||18||Alchemy Lab
+|-
+|style="text-align: left;"|[[Skyrim:Riften|Riften]]||style="text-align: left;"|[[Skyrim:Honeyside|Honeyside]]||[[Skyrim:Iona|Iona]]||5,000 to 8,000{{Intnote|houses}}||3,850 to 4,300||8,850 to 12,300||4||1||4||0||2||1 (4 slots)||12||Alchemy Lab<br>Arcane Enchanter<br>Tanning Rack
+|-
+|style="text-align: left;"|[[Skyrim:Markarth|Markarth]]||style="text-align: left;"|[[Skyrim:Vlindrel Hall|Vlindrel Hall]]||[[Skyrim:Argis the Bulwark|Argis]]||8,000||3,900 to 4,200||11,900 to 12,200||9||3||2||4||1||2 (2 slots)||28||Alchemy Lab<br>Arcane Enchanter
+|-
+|style="text-align: left;"|[[Skyrim:Windhelm|Windhelm]]||style="text-align: left;"|[[Skyrim:Hjerim|Hjerim]]||[[Skyrim:Calder|Calder]]||8,000 to 12,000{{Intnote|houses}}||9,000 to 10,250||17,000 to 22,250||12||2||7||7||3||1 (5 slots)||29||Alchemy Lab<br>Arcane Enchanter
+|-
+|style="text-align: left;"|[[Skyrim:Solitude|Solitude]]||style="text-align: left;"|[[Skyrim:Proudspire Manor|Proudspire Manor]]||[[Skyrim:Jordis the Sword-Maiden|Jordis]]||25,000||11,000 to 14,000||36,000 to 39,000||10||2||2||0||2||2 (5 slots and 2 slots)||15||Alchemy Lab<br>Arcane Enchanter
+|}
+{{Note|houses||Steward will take your full gold amount at the time of purchase, within the minimum and maximum price range.}}
+
+===Breezehome===
+{| class="vtop"
+| [[File:SR-place-Breezehome.jpg|right|thumb|Breezehome, in Whiterun]]Located in [[Skyrim:Whiterun|Whiterun]], right next to [[Skyrim:Warmaiden's|Warmaiden's]] and near the main gate, is [[Skyrim:Breezehome|Breezehome]]. The house has two stories, but is very small. However, Breezehome is the cheapest of all purchasable houses in the game and makes for an excellent starter home. The home's proximity to a blacksmith is very convenient for players who need [[Skyrim:Smithing|Smithing]] amenities nearby. It features more storage space than [[#Honeyside|Honeyside]] and [[#Proudspire Manor|Proudspire Manor]], but doesn't have any mannequins. The house can be upgraded with an [[Skyrim:Alchemy Lab|alchemy lab]], but it is the only house that cannot contain an [[Skyrim:Arcane Enchanter|arcane enchanter]].
+|-
+| {{Skyrim:Breezehome}}
+|}
+
+===Honeyside===
+{| class="vtop"
+| [[File:SR-place-Honeyside.jpg|thumb|Honeyside, in Riften]][[Skyrim:Honeyside|Honeyside]] is a two-story house located in the northwest corner of [[Skyrim:Riften|Riften]]. The house is small, but slightly larger than Breezehome. One unique feature is that it has access from both within the city, and from a dock outside the city walls. This makes Honeyside a useful home for players who wish to avoid loading screens or players who are [[Skyrim:Vampirism|vampires]] as the house can be entered without attracting any attention or even venturing into the city. Another unique feature of Honeyside is that it can be upgraded to have a large garden, with many harvestable plants. Coupled with the home's close proximity to [[Skyrim:Elgrim's Elixirs|Elgrim's Elixirs]], this makes Honeyside an especially useful house for alchemists. However, the house has the least amount of storage of any of the properties. The house can be upgraded to feature an [[Skyrim:Alchemy Lab|alchemy lab]], [[Skyrim:Arcane Enchanter|arcane enchanter]] and a [[Skyrim:Tanning Rack|tanning rack]].
+|-
+| {{Skyrim:Honeyside}}
+|}
+
+===Vlindrel Hall===
+{| class="vtop"
+| [[File:SR-place-Vlindrel Hall.jpg|thumb|Vlindrel Hall, in Markarth]]
+[[Skyrim:Vlindrel Hall|Vlindrel Hall]] is located high above [[Skyrim:Markarth|Markarth]], in the northeast corner of the city. The house is spacious and, like the rest of the city, features [[Lore:Dwemer|Dwemer]] architecture. It can be upgraded to contain harvestable plants, display cases, three weapon racks, one mannequin, an [[Skyrim:Alchemy Lab|alchemy lab]], and an [[Skyrim:Arcane Enchanter|arcane enchanter]]. It has the largest amount of bookshelf space of any purchasable home, which is great for displaying your collection of books.
+|-
+| {{Skyrim:Vlindrel Hall}}
+|}
+
+===Hjerim===
+{| class="vtop"
+| [[File:SR-place-Hjerim.jpg|thumb|Hjerim, in Windhelm]]
+In its most basic state, [[Skyrim:Hjerim|Hjerim]] in Windhelm features little more than a wardrobe, bed, and a chest. However the upgrades available for Hjerim make it arguably one of the most desirable houses in the game, featuring the largest amount of storage space, a large armory with several display cases, plaques and mannequins, and a large amount of bookshelf space. Hjerim also features a secret chamber, which can be turned into an Alchemy and Enchanting room. You must complete [[Skyrim:Blood on the Ice|Blood on the Ice]] before you can decorate Hjerim. Hjerim is also the only house whose purchase depends on taking part in Skyrim's Civil War: Ulfric Stormcloak will not grant the right to purchase property in the city, nor offer the prospect of becoming Thane of Eastmarch, until you've proved your loyalty to him by capturing Falkreath Hold from the Imperials - and the only alternative is to depose him, which means winning the war for the Imperials and installing Brunwulf Free-Winter as Jarl.
+|-
+| {{Skyrim:Hjerim}}
+|}
+
+===Proudspire Manor===
+{| class="vtop"
+| [[File:SR-place-Proudspire Manor.jpg|thumb|Proudspire Manor, in Solitude]]
+Next to the [[Skyrim:Bards College|Bards College]] in [[Skyrim:Solitude|Solitude]] stands [[Skyrim:Proudspire Manor|Proudspire Manor]]. Featuring three stories, it is by far the most expensive house in the game. The closest fast travel point is not Solitude itself but the [[Skyrim:Blue Palace|Blue Palace]]. Despite its mammoth cost and grand design, the house is in many ways inferior to the other houses, featuring little storage space and no display cases. However, it is situated close to merchants and other important buildings in Solitude, and also comes with its own safe. There is an [[Skyrim:Unusual_Gem|unusual gem]] in the Bedroom.
+|-
+| {{Skyrim:Proudspire Manor}}
+|}
+
+==Hearthfire Houses{{HF}}==
+With the [[Skyrim:Hearthfire|Hearthfire]] add-on, it is possible to [[Skyrim:Construction|construct]] and [[:Category:Skyrim-Hearthfire-Furnishing Options|furnish]] your very own house. Three unique plots of land in minor holds are available on which to build a house, and the layout and rooms of each house may be customized, with the houses potentially becoming larger than any of the city houses. As with the five major holds, completing tasks to become a [[Skyrim:Thane|Thane]] of the hold in question is a prerequisite to purchase the land, and that title comes with a Housecarl that will move into the dwelling once built. [[Skyrim:Personal Steward|Personal stewards]] for these houses were introduced by the DLC, and may be recruited from most followers to buy supplies and livestock, hire additional staff, and furnish the homes. [[Skyrim:Bard|Bards]] and private [[Skyrim:Transport#Carriage|carriage drivers]] may also be hired. The purchase of land for the Hearthfire houses does not add to the "Houses Owned" number in the game statistics.
+
+===Heljarchen Hall===
+{| class="vtop"
+| [[File:SR-place-Heljarchen Hall.jpg|thumb|Heljarchen Hall, in The Pale, with the [[Skyrim:Bedrooms|bedroom]] and [[Skyrim:Kitchen|kitchen]] wings]]
+The land for [[Skyrim:Heljarchen Hall|Heljarchen Hall]] lies north of [[Skyrim:Loreius Farm|Loreius Farm]] and west of [[Skyrim:Blizzard Rest|Blizzard Rest]]. The land can be purchased from the [[Skyrim:Jarl|Jarl]] of [[Skyrim:Dawnstar|Dawnstar]] who resides in [[Skyrim:The White Hall|The White Hall]]. A unique aspect of this property is that you have the option of constructing a [[Skyrim:Grain Mill|grain mill]], allowing [[Skyrim:Wheat|wheat]] to be converted into [[Skyrim:Sack of Flour|flour]]. This plot of land becomes available after you finish [[Skyrim:Waking Nightmare|Waking Nightmare]] and [[Skyrim:Kill the Giant (Jarl)|Kill the Giant]].
+|-
+| {{Skyrim:Heljarchen Hall}}
+|}
+
+===Lakeview Manor===
+{| class="vtop"
+| [[File:SR-place-Lakeview Manor 13.jpg|thumb|Lakeview Manor, in Falkreath Hold, with the [[Skyrim:Bedrooms|bedroom]], [[Skyrim:Storage_Room|storage room]], and [[Skyrim:Armory|armory]] wings]]
+South of [[Skyrim:Lake Ilinalta|Lake Ilinalta]], between [[Skyrim:Falkreath|Falkreath]] and [[Skyrim:Riverwood|Riverwood]] lies the plot for [[Skyrim:Lakeview Manor|Lakeview Manor]]. The land can be purchased from the [[Skyrim:Steward|steward]] at the [[Skyrim:Jarl's_Longhouse (Falkreath)|Jarl's Longhouse]] in Falkreath. A unique aspect of this property is that you have the option of constructing an [[Skyrim:Apiary|apiary]], from which honeycombs and [[Skyrim:Bee|bees]] can be harvested. This plot of land becomes available after you [[Skyrim:Kill the Bandit Leader (Jarl)|kill some bandits]].
+|-
+| {{Skyrim:Lakeview Manor}}
+|}
+
+===Windstad Manor===
+{| class="vtop"
+| {{{style1}}} | [[File:SR-place-Windstad Manor.jpg|thumb|Windstad Manor, in Hjaalmarch, with the [[Skyrim:Enchanter%27s_Tower|enchanter's tower]], [[Skyrim:Alchemy_Laboratory|alchemy laboratory]], and [[Skyrim:Library|library]] wings]]
+The potential location for [[Skyrim:Windstad Manor|Windstad Manor]] is between the [[Skyrim:Abandoned Shack|Abandoned Shack]] and [[Skyrim:High Gate Ruins|High Gate Ruins]]. The land can be purchased from the steward at [[Skyrim:Highmoon Hall|Highmoon Hall]] in [[Skyrim:Morthal|Morthal]]. A unique aspect of Windstad Manor is that a [[Skyrim:Fish Hatchery|fish hatchery]] can be built to the north of the property, allowing you to breed and harvest varieties of [[Skyrim:Fish|fish]]. This plot of land becomes available after you finish [[Skyrim:Laid to Rest|Laid to Rest]].
+|-
+| {{Skyrim:Windstad Manor}}
+|}
+
+==Dragonborn Houses{{DB}}==
+===Severin Manor===
+{| class="vtop"
+| {{{style1}}} | [[File:SR-place-Severin Manor.jpg|thumb|Severin Manor, in Raven Rock]]
+[[Skyrim:Severin Manor|Severin Manor]] is located in the settlement of [[Skyrim:Raven Rock|Raven Rock]] on [[Skyrim:Solstheim|Solstheim]], and initially is occupied by [[Skyrim:Mirri Severin|Mirri]], [[Skyrim:Tilisu Severin|Tilisu]], and [[Skyrim:Vendil Severin|Vendil Severin]]. It can be later awarded to you by [[Skyrim:Lleril Morvayn|Councilor Morvayn]] as a quest reward for [[Skyrim:Served Cold|Served Cold]]. Severin Manor is the only house you can own on Solstheim, and it features a number of differences from other houses in the game. Like many dwellings on Solstheim, it is mainly decorated with [[Skyrim:Dunmer|Dunmer]]-style furnishings. It is not possible for [[Skyrim:Spouse|spouses]], [[Skyrim:Personal Steward|stewards]], or [[Skyrim:Adoption|adopted children]] to live here, it does not come with a housecarl, and it does not have any available upgrades.
+
+However, Severin Manor does come complete with fully stocked [[Skyrim:Enchanting|enchanting]], [[Skyrim:Alchemy|alchemy]], [[Skyrim:Smithing|smithing]] and [[Skyrim:Cooking#Player-Owned_Houses|cooking]] areas. The house has two bedrooms: one with a double bed, and the other with a single bed. It boasts plentiful storage, as well as weapon plaques, display cases, and mannequins. In addition, this is the only house you can get for free that doesn't require [[Skyrim:Creation Club|Creation Club]] content. A downside is that ownership doesn't change the eerie ambient music of [[Skyrim:Apocrypha|Apocrypha]] that plays inside (see [[Skyrim:Severin Manor#Bugs|bugs]]).
+|-
+| 
+|}
+
+==Creation Club Houses{{CC}}==
+===Bloodchill Cavern{{CC|Bloodchill Manor}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-place-Bloodchill Cavern.jpg|thumb|Bloodchill Manor]]
+[[SR:Bloodchill Cavern|Bloodchill Cavern]] is added by the [[SR:Bloodchill Manor|Bloodchill Manor]] [[SR:Creation Club|Creation]]. It is a vampire's mansion found inside a cave to the east of [[SR:Snowpoint Beacon|Snowpoint Beacon]]. It can be earned by completing the [[Skyrim:Guests for Dinner|related quest]] and comes fully furnished. It has 26 mannequins.
+|}
+
+===Dead Man's Dread{{CC|Dead Man's Dread}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-interior-Blackbone Isle Grotto.jpg|thumb|''Dead Man's Dread'']]
+''[[SR:Dead Man's Dread (place)|Dead Man's Dread]]'' is a ship added by the [[SR:Dead Man's Dread|Dead Man's Dread]] [[SR:Creation Club|Creation]]. It can be found in an [[Skyrim:Blackbone Isle Grotto|underground grotto]] on the secluded [[SR:Blackbone Isle|Blackbone Isle]] and can be converted into a player home after completing the quest [[Skyrim:The Restless|The Restless]]. It comes fully furnished.
+|}
+
+===Gallows Hall{{CC|Gallows Hall}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-place-Gallows Hall.jpg|thumb|Gallows Hall]]
+[[SR:Gallows Hall (place)|Gallows Hall]] is added by the [[SR:Gallows Hall|Gallows Hall]] [[SR:Creation Club|Creation]]. It is a necromancer's hideout found on the north side of [[SR:Mara's Eye Pond|Mara's Eye Pond]]. It can be earned by completing the [[Skyrim:Dreams of the Dead|related quest]] and comes fully furnished. It has [[SR:Altar of the Revenant|Altar of the Revenant]] to turn 4 greater or grand soul gems to 4 black soul gems. It also has [[SR:Bone Forge|Bone Forge]] to allow you to have a 3rd (or second without twin souls) permanent summon, with 4 possible summons who will stay with you until they die.
+|}
+
+===Goldenhills Plantation{{CC|Farming}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-place-Goldenhills Plantation.jpg|thumb|Goldenhills Plantation]]
+[[SR:Goldenhills Plantation|Goldenhills Plantation]] is added by the [[SR:Farming|Farming]] [[SR:Creation Club|Creation]]. It is an abandoned farmstead found to the east of [[SR:Rorikstead|Rorikstead]]. It can be earned by completing the [[Skyrim:The Unquiet Dead|related quest]]. A unique feature of Goldenhills Plantation is that it can be [[SR:Farming Construction|expanded]] to grow crops and raise livestock. It has 38 fertile soil plots(44 after upgrading), and a consistent profit can be charged from the steward, and a respawning Pantry Cupboard producing products of the farm and paddock.
+|-
+| {{Skyrim:Goldenhills Plantation}}
+|}
+
+===Hendraheim{{CC|Hendraheim}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-place-Hendraheim.jpg|thumb|Hendraheim]]
+[[SR:Hendraheim (place)|Hendraheim]] is added by the [[SR:Hendraheim|Hendraheim]] [[SR:Creation Club|Creation]]. It is an ancient Nordic hall found nestled in the mountains south of [[SR:Fort Sungard|Fort Sungard]]. It can be earned by completing the [[Skyrim:Hendraheim (quest)|related quest]] and comes fully furnished. Your [[Skyrim:Spouse|spouse]] and [[Skyrim:Adoption|adopted children]] can also be moved into the property. It has 17 mannequins.
+|}
+
+===Myrwatch{{CC|Myrwatch}}===
+{| class="vtop"
+| {{{style1}}} | [[File:SR-place-Myrwatch.jpg|thumb|Myrwatch outside Morthal]]
+[[SR:Myrwatch (place)|Myrwatch]] is added by the [[SR:Myrwatch|Myrwatch]] [[SR:Creation Club|Creation]]. It is an abandoned wizard's tower found out in the marsh east of [[SR:Morthal|Morthal]]. It can be earned by completing the [[Skyrim:Myrwatch (quest)|related quest]] and comes fully furnished. The tower has two levels, with extensive storage space as well as many crafting stations: a [[Skyrim:Smelting Pot|smelting pot]], [[Skyrim:Grindstone|grindstone]], [[Skyrim:Tanning Rack|tanning rack]], [[Skyrim:Workbench|workbench]], [[Skyrim:Alchemy Labs|alchemy lab]], [[Skyrim:Arcane Enchanter|arcane enchanter]], [[Skyrim:Cooking Pot|cooking pot]], [[Skyrim:Staff Enchanter|staff enchanter]], and a unique anvil known as the [[SR:All Forge|All Forge]] which can be used to craft items that are usually only craftable elsewhere. Your [[Skyrim:Spouse|spouse]] and [[Skyrim:Adoption|adopted children]] can also be moved into the property. It has 13 mannequins.
+|}
+
+===Nchuanthumz{{CC|Nchuanthumz: Dwarven Home}}===
+{| class="vtop" width="100%"
+| {{{style1}}} | [[File:SR-place-Nchuanthumz.jpg|thumb|Nchuanthumz]]
+[[SR:Nchuanthumz|Nchuanthumz]] is added by the [[SR:Nchuanthumz: Dwarven Home|Nchuanthumz: Dwarven Home]] [[SR:Creation Club|Creation]]. It is a Dwarven ruin found in [[SR:Frostroot Cave|Frostroot Cave]] to the north of [[SR:Kagrenzel|Kagrenzel]]. It can be earned by completing the [[Skyrim:The Sanctuary and the Manufactory|related quest]].
+|}
+
+===Shadowfoot Sanctum{{CC|Shadowfoot Sanctum}}===
+{| class="vtop"
+| {{{style1}}} | [[File:SR-interior-Shadowfoot Sanctum.jpg|thumb|Shadowfoot Sanctum]]
+[[SR:Shadowfoot Sanctum (place)|Shadowfoot Sanctum]] is added by the [[SR:Shadowfoot Sanctum|Shadowfoot Sanctum]] [[SR:Creation Club|Creation]]. It is a small underground player home found in [[SR:the Ratway|the Ratway]] beneath [[SR:Riften|Riften]]. It can be purchased from [[SR:Vekel the Man|Vekel the Man]] for 7,500 gold. It comes fully furnished and has extensive storage facilities, shrines to several Divines, as well as many different crafting stations: a [[Skyrim:Smelter|smelter]], [[Skyrim:Anvil|anvil]], [[Skyrim:Grindstone|grindstone]], [[Skyrim:Tanning Rack|tanning rack]], [[Skyrim:Workbench|workbench]], [[Skyrim:Alchemy Labs|alchemy lab]], [[Skyrim:Arcane Enchanter|arcane enchanter]], [[Skyrim:Cooking Pot|cooking pot]], and [[SR:Oven|oven]]. Your [[Skyrim:Spouse|spouse]] and [[Skyrim:Adoption|adopted children]] can also be moved into the property. It has 19 mannequins.
+|-
+| {{Skyrim:Shadowfoot Sanctum (place)}}
+|}
+
+===Tundra Homestead{{CC|Tundra Homestead}}===
+{| class="vtop"
+| {{{style1}}} | [[File:SR-place-Tundra Homestead.jpg|thumb|Tundra Homestead outside Whiterun]]
+[[SR:Tundra Homestead (place)|Tundra Homestead]] is added by the [[SR:Tundra Homestead|Tundra Homestead]] [[SR:Creation Club|Creation]]. It is a small cottage found just east of [[SR:Whiterun|Whiterun]] and can be purchased from the city steward for 7,500 gold. It comes fully furnished and has extensive storage facilities in the basement, shrines to several Divines, as well as many different crafting stations: a [[Skyrim:Smelter|smelter]], [[Skyrim:Anvil|anvil]], [[Skyrim:Grindstone|grindstone]], [[Skyrim:Tanning Rack|tanning rack]], [[Skyrim:Workbench|workbench]], [[Skyrim:Alchemy Labs|alchemy lab]], [[Skyrim:Arcane Enchanter|arcane enchanter]], [[Skyrim:Cooking Pot|cooking pot]], and a [[SR:Baking Surface|baking surface]]. Your [[Skyrim:Spouse|spouse]] and [[Skyrim:Adoption|adopted children]] can also be moved into the property. It has 10 mannequins.
+|-
+| {{Skyrim:Tundra Homestead (place)}}
+|}
+
+== Faction Residences ==
+Joining a faction will usually confer the benefit of allowing use of their facilities, and many will offer a place to sleep and store items. Rising through the ranks of some factions will result in additional or improved lodgings, and becoming leader of the faction will bestow full command of their headquarters.
+
+{| class="wikitable sortable"
+!Faction!!Residence!!Location!!Details
+|-
+|[[Skyrim:Blades|Blades]]||[[Skyrim:Sky Haven Temple|Sky Haven Temple]]||[[Skyrim:The Reach|The Reach]]||Temple available upon completing [[Skyrim:Alduin's Wall|Alduin's Wall]], during the [[Skyrim:Main Quest|main quest]]. Not available if you side against the [[Skyrim:Blades|Blades]] over the [[Skyrim:Paarthurnax (quest)|Paarthurnax]] issue.
+|-
+|rowspan=2|[[Skyrim:College of Winterhold (faction)|College of Winterhold]]||[[Skyrim:Hall of Attainment|Hall of Attainment]]||rowspan=2|[[Skyrim:Winterhold|Winterhold]]||Room available upon completing [[Skyrim:First Lessons|First Lessons]], to join the [[Skyrim:College of Winterhold (faction)|College of Winterhold]].
+|-
+|[[Skyrim:Arch-Mage's Quarters|Arch-Mage's Quarters]]||Quarters available upon completing [[Skyrim:The Eye of Magnus|The Eye of Magnus]], and becoming Arch-Mage.
+|-
+|rowspan=2|[[Skyrim:Companions|Companions]]||[[Skyrim:Jorrvaskr Living Quarters|Jorrvaskr Living Quarters]]||rowspan=2|[[Skyrim:Whiterun|Whiterun]]||Bed available upon completing [[Skyrim:Take Up Arms|Take Up Arms]], to join the [[Skyrim:Companions|Companions]].
+|-
+|[[Skyrim:Jorrvaskr#Harbingers Bedroom|Harbingers Room]]||Room available upon completing [[Skyrim:Glory of the Dead|Glory of the Dead]], and becoming Harbinger
+|-
+|rowspan=2|[[Skyrim:Dark Brotherhood|Dark Brotherhood]]||[[Skyrim:Dark Brotherhood Sanctuary|Dark Brotherhood Sanctuary]]||[[Skyrim:Falkreath Hold|Falkreath Hold]]||Bed available after completing [[Skyrim:Sanctuary|Sanctuary]] for the Dark Brotherhood or completing [[Skyrim:Destroy the Dark Brotherhood!|Destroy the Dark Brotherhood!]]
+|-
+|[[Skyrim:Dawnstar Sanctuary|Dawnstar Sanctuary]]||[[Skyrim:Dawnstar|Dawnstar]]||Sanctuary available after completing [[Skyrim:Hail Sithis!|Hail Sithis!]] and becoming Listener. Sanctuary can be upgraded during [[Skyrim:Where You Hang Your Enemy's Head...|Where You Hang Your Enemy's Head...]]
+|-
+|rowspan=2|[[Skyrim:Thieves Guild (faction)|Thieves Guild]]||[[Skyrim:The Ragged Flagon|The Ragged Flagon Cistern]]||[[Skyrim:Riften|Riften]]||Bed and chest available upon completing [[Skyrim:Taking Care of Business|Taking Care of Business]], to join the Thieves Guild. Furniture upgraded after becoming Guildmaster.
+|-
+|[[Skyrim:Nightingale Hall|Nightingale Hall]]||rowspan=2|[[Skyrim:The Rift|The Rift]]||Hall available upon completing [[Skyrim:Darkness Returns|Darkness Returns]], and joining the [[Skyrim:Nightingales|Nightingales]].
+|-
+|[[Skyrim:Dawnguard (faction)|Dawnguard]]{{DG}}||[[Skyrim:Fort Dawnguard|Fort Dawnguard]]{{DG}}||Fort available after Bloodline if you reject [[Skyrim:Lord_Harkon|Lord Harkon]]'s gift, and side with the Dawnguard.
+|-
+|[[Skyrim:Volkihar Vampire Clan|Volkihar Vampire Clan]]{{DG}}||[[Skyrim:Volkihar_Keep|Volkihar Keep]]{{DG}}||[[Skyrim:Haafingar|Haafingar]]||Keep available after [[Skyrim:Bloodline|Bloodline]] if you accept [[Skyrim:Lord_Harkon|Lord Harkon]]'s gift, and side with the Volkihar vampire clan.
+|-
+|}
+
+<gallery>
+File:SR-place-Sky Haven Temple Exterior.jpg|Sky Haven Temple, in The Reach
+File:SR-interior-Hall of Attainment.jpg|Hall of Attainment, at the College of Winterhold
+File:SR-interior-Arch Mage's Quarters.jpg|Arch-Mages Quarters, at the College of Winterhold
+File:SR-place-Jorrvaskr.jpg|Jorrvaskr, in Whiterun
+File:SR-place-Dark Brotherhood Sanctuary.jpg|Dark Brotherhood Sanctuary, near Falkreath
+File:SR-place-Dawnstar Sanctuary.jpg|Dawnstar Sanctuary
+File:SR-interior-The Ragged Flagon - Cistern.jpg|The Ragged Flagon - Cistern, below Riften
+File:SR-place-Nightingale Hall.jpg|Nightingale Hall, in The Rift
+File:SR-place-Fort Dawnguard.jpg|Fort Dawnguard, in [[Skyrim:Dayspring Canyon|Dayspring Canyon]]
+File:SR-place-Castle Volkihar.jpg|Castle Volkihar, in Haafingar
+</gallery>
+
+== Spouse Houses==
+
+In addition, if you [[Skyrim:Marriage|get married]], certain NPC spouses have homes you can live, sleep and store items in. Please see the [[Skyrim:Marriage|Marriage]] page for more details.
+
+{|
+|{{AL|T}}|
+'''Female property owners:'''
+
+* [[Skyrim:Aeri|Aeri]]
+* [[Skyrim:Avrusa Sarethi|Avrusa Sarethi]]
+* [[Skyrim:Borgakh the Steel Heart|Borgakh the Steel Heart]]
+* [[Skyrim:Camilla Valerius|Camilla Valerius]]
+* [[Skyrim:Dravynea the Stoneweaver|Dravynea the Stoneweaver]]
+* [[Skyrim:Gilfre|Gilfre]]
+* [[Skyrim:Mjoll the Lioness|Mjoll the Lioness]]
+* [[Skyrim:Morwen|Morwen]]
+* [[Skyrim:Muiri|Muiri]]
+* [[Skyrim:Sylgja|Sylgja]]
+* [[Skyrim:Uthgerd the Unbroken|Uthgerd the Unbroken]]
+* [[Skyrim:Viola Giordano|Viola Giordano]]
+* [[Skyrim:Ysolda|Ysolda]]
+
+|
+'''Male property owners:'''
+
+* [[Skyrim:Ainethach|Ainethach]]
+* [[Skyrim:Balimund|Balimund]]
+* [[Skyrim:Filnjar|Filnjar]]
+* [[Skyrim:Moth gro-Bagol|Moth gro-Bagol]]
+* [[Skyrim:Octieve San|Octieve San]]
+* [[Skyrim:Odfel|Odfel]]
+* [[Skyrim:Pavo Attius|Pavo Attius]]
+* [[Skyrim:Perth|Perth]]
+* [[Skyrim:Quintus Navale|Quintus Navale]]
+* [[Skyrim:Revyn Sadri|Revyn Sadri]]
+* [[Skyrim:Romlyn Dreth|Romlyn Dreth]]
+* [[Skyrim:Sorex Vinius|Sorex Vinius]]
+* [[Skyrim:Wilhelm|Wilhelm]]
+|}
+
+==Free Shacks==
+There are several empty shacks around Skyrim, many of which contain a bed and at least one [[Skyrim:Containers#Safe_Containers|non-respawning container]], making them useful as a home until you are able to purchase one:
+* [[Skyrim:Alchemist's Shack|Alchemist's Shack]], near [[Skyrim:Ivarstead|Ivarstead]], has an end table that is safe for storage. It also has the benefit of an alchemy lab.
+* [[Skyrim:Meeko's Shack|Meeko's Shack]], west-northwest of [[Skyrim:Morthal|Morthal]], has an end table that is safe for storage. The barrel and shelves respawn, however, regularly filling the house with junk.
+* [[Skyrim:Riverside Shack|Riverside Shack]], southwest of [[Skyrim:Windhelm|Windhelm]] along the [[Skyrim:White River|White River]], has one safe wardrobe and a bed.
+* [[Skyrim:Abandoned Shack|Abandoned Shack]], east of [[Skyrim:Solitude|Solitude]], will remain accessible after you complete either of its associated quests. It contains an unowned bed, but no safe containers.
+* [[Skyrim:Abandoned Lodge|Abandoned Lodge]], northeast of [[Skyrim:Raven Rock|Raven Rock]], will remain accessible after you complete its associated quest. It contains two unowned beds, and all containers inside are safe.
+* [[Skyrim:Traitor's Post|Traitor's Post]], east of [[Skyrim:Windhelm|Windhelm]], has two wardrobes and a cupboard that you can store items in. The chest there respawns along with the bandits.
+* [[Skyrim:Lund's Hut|Lund's Hut]], north-northwest of [[Skyrim:Rorikstead|Rorikstead]], is a farmhouse with a non-functioning bed. Only the chest and end table are safe containers.
+* [[Skyrim:Anise's Cabin|Anise's Cabin]], southwest of [[Skyrim:Riverwood|Riverwood]], can become a good early-game base of operations, although it is initially occupied. See the article for details.
+
+==Other Shelters==
+
+These properties generally possess safe containers that do not respawn, making them just as great as a normal house until you have enough money to purchase a property.
+
+*'''[[Skyrim:Abandoned House|Abandoned House]]:''' The Abandoned House in Markarth can be lived in after killing the Vigilant in [[Skyrim:The House of Horrors|The House of Horrors]], as it is set to never respawn and therefore none of the containers automatically reset. There is a usable bed and 62 containers within the house.
+*'''[[Skyrim:Altar of Thrond|The Altar of Thrond]]:''' This cave makes a useful beginning home on the island of [[skyrim:Solstheim|Solstheim]]. You first have to kill three [[skyrim:hagraven|hagravens]], but once disposed of you will have 9 safe storage containers (an alchemist's corpse, 3 apothecary satchels, 2 barrels and 3 chests.) There are 3 beds, a cooking spit, and an Alchemy Lab and Arcane Enchanter. Furthermore, sleeping there before completing the quest [[Skyrim:Dragonborn Quests#Cleansing the Stones|Cleansing the Stones]] will not result in being transported to a random [[Skyrim:All-Maker Stones|All-Maker Stone]].
+*'''[[Skyrim:Cracked Tusk Keep|Cracked Tusk Keep]]:''' Every container in the Keep is safe and once the bandits are killed, they never respawn. It comes with an Alchemy Lab, Tanning Rack, Forge, Grindstone and Workbench, as well as seven beds (six bedrolls and a large bed in the chief's room).
+*'''[[Skyrim:Drelas' Cottage|Drelas' Cottage]]:''' This house with both an alchemy station and an arcane enchanter becomes available as soon as the hostile [[Skyrim:Drelas|owner Drelas]] is dealt with. However the location is far from most other facilities. It is also rather close to a dragon lair and followers will refuse to interact, the only exceptions being Cicero and Serana. Also note that you cannot sleep there, as you will still be "trespassing" even after Drelas is killed.
+*'''[[Skyrim:Faendal's House|Faendal's House]]:''' A house located in Riverwood has a bed and a cooking spit. It becomes available if you choose to side with him in the quest [[skyrim:A Lovely Letter|A Lovely Letter]]. All containers except the chest at the head of the bed and the barrel are safe. Surface items do respawn. An alchemy station is immediately available in the nearby Sleeping Giant Inn.
+*'''[[Skyrim:Helgen|Helgen Inn]]:''' The ruined inn in Helgen features a wardrobe and an end table that can be used for storage, neither of which reset. The inn also features a perfectly preserved and functional bed. This makes for a very useful shelter at the beginning of the game, although the fort will spawn bandits if not visited for some time.
+*'''[[Skyrim:Inns|Inns]]:''' While most inns do not provide any safe storage, their beds generally give the [[Skyrim:Well Rested|Well Rested]] bonus, same as an owned house, and if the innkeeper is befriended, then most inns have a bed that can be slept in for free.
+**'''[[Skyrim:Sleeping Giant Inn|Sleeping Giant Inn]]:''' This inn is of special note, due to the [[Skyrim:Alchemy Lab|alchemy lab]], [[Skyrim:Arcane Enchanter|arcane enchanter]], and two safe chests in the secret [[Skyrim:Blades|Blades]] room, which make this an excellent player home after you have gained access to it during [[Skyrim:A Blade in the Dark|A Blade in the Dark]].
+*'''[[Skyrim:Nilheim|Nilheim Tower]]:''' This ancient Nordic tower is occupied by unique, non-respawning bandits. Its treasure chest and other containers in the tower are safe, and the top level contains some bedrolls, so it has all the basic amenities. It also has a wood chopping block but no crafting stations.
+*'''[[Skyrim:Sinderion%27s_Field_Laboratory|Sinderion's Field Laboratory]]:''' This labratory in [[Skyrim:Blackreach|Blackreach]] can be used as a player home due to having safe storage, a bed and having both an [[Skyrim:Alchemy Lab|alchemy lab]] and [[Skyrim:Arcane Enchanter|arcane enchanter]]. It also houses a [[Skyrim:Cooking|cooking pot]] which makes this location useful for [[Skyrim:Survival_Mode|survival mode]] players.
+*'''[[Skyrim:Volkihar Keep|Volkihar Keep]]:''' All but three of the containers in this location are safe, it has several coffins to sleep in, and it has all regular crafting stations except for a cooking pot and a smelter. You'll gain ownership if you finish the ''Dawnguard'' questline on the vampire side.
+
+== Achievements ==
+* {{Achievement|Citizen}}
+
+== Notes ==
+*The exteriors of the homes you can own respawn, regardless of whether their interiors do or not. It is unknown if this is normal or a bug.
+
+== Bugs ==
+{{Bug|The weapon racks and bookshelves in Breezehome, Hjerim, Vlindrel Hall, and Proudspire Manor may not work.|OSP|1.4}}
+{{Bug|Placing items on mannequins may make that part of the mannequin become invisible.|OSP|1.4}}
+{{Bug|When reading the [[Skyrim:Oghma Infinium|Oghma Infinium]] from a bookshelf, the number of books that can be stored in that shelf increases by one each time the book is read.|OSP|1.9.26.0.8}}
+{{Bug|Mannequins may "move" around the house.|OSSEP|1.6.629}}
+**Giving or taking things from the mannequin will reset it to its normal position.
+{{Bug|Several guard greetings that should play after buying a house may only refer to the initial purchase stage and not play once you enter the home.|USKP|1.2}}
+{{Bug|Housecarls may greet you as if you don't own the home when entering.|USKP|1.2|The Homeowner alias in WIGreeting lacked a check to see if the player owns the home.}}
+{{Bug|Armor removed from a mannequin may end up duplicated back onto it. See [[Skyrim:Glitches#Armor Duplication Glitch|Glitches]].|USKP|1.2.4}}
+{{Bug|None of the housecarls are able to sandbox throughout the whole house they're assigned to protect.|USKP|1.3.2|New packages to allow them to do this throughout the whole building instead of with a defined radius have been generated for each.}}
+{{Bug|Items placed on weapon racks may become inaccessible, fall out, not display properly, or otherwise glitch.|USKP|2.0.4}}
+{{Bug|When purchasing upgrades for the houses, the alchemy lab upgrade option will not disappear and will not be included in the house; the dialogue will remain indefinitely and will continue to be available for purchase.|dlc=DG|UDGP|1.0}}
+{{Bug|Armor placed on mannequins may be unequipped when re-entering the cell.}}
+{{Bug|Mannequins in Severin Manor {{DB}} may replace enchanted clothing with un-enchanted versions after exiting the cell.|confirmed=0}}
+{{Bug|The [[Skyrim:Hearthfire|Hearthfire]] add-on removes the cooking pot at Proudspire Manor.|UHFP|1.0.1}}
+{{Bug|With Hearthfire installed, interior house zones (in particular, the child's bedroom) may have large gaps between textures, and entering these gaps may cause you to fall outside the playable area and respawn in a random house wing.|confirmed=1|dlc=HF}}
+**Leaving and reentering the house will fix this.
+{{Bug|When in the interior of the Main Hall or Main Hall backroom (kitchen/storage room), if the player looks up at the ceiling they will see the skybox instead of the roof of the house.|confirmed=0|dlc=HF}}
+{{Bug|Houses may sometimes not be available for purchase, or the steward will say "Here's the key to your new home" but no gold is taken, no key is given and no quest updates are shown.}}
+**{{pc22}} The console can be used to bypass this; type <code>setstage HousePurchase 10</code> to own the home of the city you're currently in, resulting in a key and book being added to your inventory, and a quest update, as well as purchasing upgrades becoming available from the steward.
+{{Bug|All 5 original purchasable homes and their upgrades can be acquired for free. Make sure to have the required gold amount in your inventory to purchase the homes legitimately in the fist place. The trick involves removing the gold from your inventory before it is automatically removed in the buying process. You need to talk to the Steward responsible for selling the home when they are near a container. When you agree to purchase the home, there is a small delay before the money is removed. During this delay, you can remove the gold from your inventory by placing it into a nearby container, then retrieve it from there after you get the on-screen notification of the purchase. Remember to save before you start in case you can't get to a container fast enough.|USKP|2.0.5|The delay has been removed, and the gold is now taken immediately once the sale is agreed to.}}
+{{Bug|Although the purchase price for Honeyside is officially 8,000 gold, the minimum gold requirement is set to the price for Breezehome, so the jarl's steward will accept as little as 5,000 gold. If you have between 5,000 and 8,000 gold, the steward takes whatever your gold amount is.|USLEEP|3.0.13}}
+{{Bug|Although the purchase price for Hjerim is officially 12,000 gold, the minimum gold requirement is set to the price for Vlindrel Hall, so the jarl's steward will accept as little as 8,000 gold. If you have between 8,000 and 12,000 gold, the steward takes whatever your gold amount is.|USLEEP|3.0.13}}
+{{Bug|When buying one of the 3 Hearthfire houses, the "Houses Owned" stat is not increased.}}
+
+{{Skyrim Houses}}
