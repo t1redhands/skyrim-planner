@@ -1,0 +1,243 @@
+{
+ "license": "CC BY-SA; artifact quests from The Elder Scrolls Wiki (https://elderscrolls.fandom.com/wiki/Daedric_Artifacts_(Skyrim)); quest minimum levels from UESP (https://en.uesp.net/wiki/Skyrim:Daedric_Quests). Effects summarized.",
+ "asOf": "2026-10-21",
+ "sets": {
+  "daedric": "Daedric artifacts"
+ },
+ "choiceGroups": {
+  "black-star": "Azura gives one star or the other.",
+  "vile": "You keep the axe or give it back for the Masque, not both.",
+  "hircine": "Killing Sinding gives the Hide; sparing him gives the Ring."
+ },
+ "items": [
+  {
+   "id": "azuras-star",
+   "name": "Azura's Star",
+   "set": "daedric",
+   "type": "Soul gem",
+   "category": "other",
+   "prince": "Azura",
+   "quest": "The Black Star",
+   "minLevel": 1,
+   "effect": "A reusable grand soul gem for the souls of creatures.",
+   "choiceGroup": "black-star"
+  },
+  {
+   "id": "the-black-star",
+   "name": "The Black Star",
+   "set": "daedric",
+   "type": "Soul gem",
+   "category": "other",
+   "prince": "Azura",
+   "quest": "The Black Star",
+   "minLevel": 1,
+   "effect": "A reusable black soul gem that can hold the souls of people as well as creatures.",
+   "choiceGroup": "black-star"
+  },
+  {
+   "id": "dawnbreaker",
+   "name": "Dawnbreaker",
+   "set": "daedric",
+   "type": "One-handed sword",
+   "category": "weapon",
+   "prince": "Meridia",
+   "quest": "The Break of Dawn",
+   "minLevel": 12,
+   "effect": "Adds fire damage, deals extra damage to undead, and can make undead burst into flames.",
+   "skill": "oneHanded"
+  },
+  {
+   "id": "ebony-blade",
+   "name": "Ebony Blade",
+   "set": "daedric",
+   "type": "Two-handed sword",
+   "category": "weapon",
+   "prince": "Mephala",
+   "quest": "The Whispering Door",
+   "minLevel": 20,
+   "effect": "Absorbs health with each hit and grows stronger as you kill people who trust you.",
+   "skill": "twoHanded"
+  },
+  {
+   "id": "ebony-mail",
+   "name": "Ebony Mail",
+   "set": "daedric",
+   "type": "Heavy armor cuirass",
+   "category": "armor",
+   "prince": "Boethiah",
+   "quest": "Boethiah's Calling",
+   "minLevel": 30,
+   "effect": "Muffles your movement while sneaking and poisons nearby enemies.",
+   "skill": "heavyArmor"
+  },
+  {
+   "id": "mace-of-molag-bal",
+   "name": "Mace of Molag Bal",
+   "set": "daedric",
+   "type": "One-handed mace",
+   "category": "weapon",
+   "prince": "Molag Bal",
+   "quest": "The House of Horrors",
+   "minLevel": 1,
+   "effect": "Drains Magicka and Stamina with each hit and soul traps enemies killed soon after.",
+   "skill": "oneHanded"
+  },
+  {
+   "id": "rueful-axe",
+   "name": "Rueful Axe",
+   "set": "daedric",
+   "type": "Battleaxe",
+   "category": "weapon",
+   "prince": "Clavicus Vile",
+   "quest": "A Daedra's Best Friend",
+   "minLevel": 10,
+   "effect": "Drains Stamina with each hit. Yours only if you use it to kill Barbas. Not counted as a Daedric artifact.",
+   "skill": "twoHanded",
+   "choiceGroup": "vile"
+  },
+  {
+   "id": "masque-of-clavicus-vile",
+   "name": "Masque of Clavicus Vile",
+   "set": "daedric",
+   "type": "Heavy armor helmet",
+   "category": "armor",
+   "prince": "Clavicus Vile",
+   "quest": "A Daedra's Best Friend",
+   "minLevel": 10,
+   "effect": "Better prices, +10 Speech and faster Magicka regeneration.",
+   "skill": "heavyArmor",
+   "choiceGroup": "vile"
+  },
+  {
+   "id": "mehrunes-razor",
+   "name": "Mehrunes' Razor",
+   "set": "daedric",
+   "type": "Dagger",
+   "category": "weapon",
+   "prince": "Mehrunes Dagon",
+   "quest": "Pieces of the Past",
+   "minLevel": 20,
+   "effect": "A small chance to kill an opponent instantly.",
+   "skill": "oneHanded",
+   "note": "You can choose gold instead."
+  },
+  {
+   "id": "oghma-infinium",
+   "name": "Oghma Infinium",
+   "set": "daedric",
+   "type": "Book",
+   "category": "other",
+   "prince": "Hermaeus Mora",
+   "quest": "Discerning the Transmundane",
+   "minLevel": 15,
+   "effect": "Reading it permanently raises one group of skills by 5 each.",
+   "note": "The book disappears after one reading."
+  },
+  {
+   "id": "ring-of-namira",
+   "name": "Ring of Namira",
+   "set": "daedric",
+   "type": "Ring",
+   "category": "other",
+   "prince": "Namira",
+   "quest": "The Taste of Death",
+   "minLevel": 1,
+   "effect": "+50 Stamina, and feeding on corpses briefly boosts Health and its regeneration."
+  },
+  {
+   "id": "sanguine-rose",
+   "name": "Sanguine Rose",
+   "set": "daedric",
+   "type": "Staff",
+   "category": "weapon",
+   "prince": "Sanguine",
+   "quest": "A Night to Remember",
+   "minLevel": 14,
+   "effect": "Summons a Dremora to fight for you for a time."
+  },
+  {
+   "id": "saviors-hide",
+   "name": "Savior's Hide",
+   "set": "daedric",
+   "type": "Light armor cuirass",
+   "category": "armor",
+   "prince": "Hircine",
+   "quest": "Ill Met by Moonlight",
+   "minLevel": 1,
+   "effect": "Resist 15% of magic and 50% of poison.",
+   "skill": "lightArmor",
+   "choiceGroup": "hircine"
+  },
+  {
+   "id": "ring-of-hircine",
+   "name": "Ring of Hircine",
+   "set": "daedric",
+   "type": "Ring",
+   "category": "other",
+   "prince": "Hircine",
+   "quest": "Ill Met by Moonlight",
+   "minLevel": 1,
+   "effect": "Change into a werewolf any number of times a day.",
+   "choiceGroup": "hircine",
+   "note": "For werewolf characters."
+  },
+  {
+   "id": "skeleton-key",
+   "name": "Skeleton Key",
+   "set": "daedric",
+   "type": "Lockpick",
+   "category": "other",
+   "prince": "Nocturnal",
+   "quest": "Blindsighted",
+   "minLevel": 1,
+   "effect": "A lockpick that never breaks.",
+   "note": "Returned at the end of the Thieves Guild quests (Darkness Returns)."
+  },
+  {
+   "id": "skull-of-corruption",
+   "name": "Skull of Corruption",
+   "set": "daedric",
+   "type": "Staff",
+   "category": "weapon",
+   "prince": "Vaermina",
+   "quest": "Waking Nightmare",
+   "minLevel": 1,
+   "effect": "Deals more damage when charged with dreams taken from sleeping people."
+  },
+  {
+   "id": "spellbreaker",
+   "name": "Spellbreaker",
+   "set": "daedric",
+   "type": "Shield",
+   "category": "armor",
+   "prince": "Peryite",
+   "quest": "The Only Cure",
+   "minLevel": 12,
+   "effect": "Blocking raises a ward that absorbs up to 50 points of spell damage.",
+   "skill": "block"
+  },
+  {
+   "id": "volendrung",
+   "name": "Volendrung",
+   "set": "daedric",
+   "type": "Two-handed warhammer",
+   "category": "weapon",
+   "prince": "Malacath",
+   "quest": "The Cursed Tribe",
+   "minLevel": 9,
+   "effect": "Absorbs 50 Stamina with each hit.",
+   "skill": "twoHanded"
+  },
+  {
+   "id": "wabbajack",
+   "name": "Wabbajack",
+   "set": "daedric",
+   "type": "Staff",
+   "category": "weapon",
+   "prince": "Sheogorath",
+   "quest": "The Mind of Madness",
+   "minLevel": 1,
+   "effect": "Casts a random effect, from turning the target into a cheese wheel to healing it."
+  }
+ ]
+}
