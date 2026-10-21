@@ -176,15 +176,60 @@ def check_perks(session, refresh, only_unverified=True):
     return not problems
 
 
+SOURCE = OUT / "source"
+DUMP_PAGES = [
+    "Skyrim:Unique Weapons", "Skyrim:Unique Armor",
+    "Skyrim:Ingredients", "Skyrim:Alchemy Effects", "Skyrim:Food",
+]
+
+
+def dump_pages(session, titles):
+    """Save each page's wikitext and rendered HTML to data/source/ so they can be read from GitHub."""
+    SOURCE.mkdir(parents=True, exist_ok=True)
+    ok, failed = [], []
+    for title in titles:
+        name = title.replace(":", "_").replace(" ", "_")
+        try:
+            resp = session.get(API, params={
+                "action": "parse", "page": title, "prop": "wikitext|text", "redirects": 1,
+                "format": "json", "formatversion": 2,
+            }, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+            if "error" in data:
+                raise RuntimeError(data["error"].get("info"))
+            (SOURCE / f"{name}.wiki").write_text(data["parse"]["wikitext"], encoding="utf-8")
+            (SOURCE / f"{name}.html").write_text(data["parse"]["text"], encoding="utf-8")
+            size = len(data["parse"]["text"]) // 1024
+            print(f"OK  {title}  ({size} KB)")
+            ok.append(title)
+        except Exception as exc:
+            print(f"??  {title}: {exc}")
+            failed.append(title)
+        time.sleep(DELAY_SECONDS)
+    (SOURCE / "README.md").write_text(
+        "# UESP source pages\n\nRaw page text from the Unofficial Elder Scrolls Pages (https://en.uesp.net), "
+        "saved by `uesp_ingest.py --dump` for building the planner's data files.\n\n"
+        "UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/).\n\n"
+        + "\n".join(f"- [{t}]({WIKI}{t.replace(' ', '_')})" for t in ok) + "\n", encoding="utf-8")
+    print(f"\nSaved {len(ok)} pages to {SOURCE}/")
+    if failed:
+        print("Not saved:", ", ".join(failed))
+    return not failed
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="refetch pages instead of using the cache")
     ap.add_argument("--perks", action="store_true", help="check data/perks.json against UESP instead of races")
     ap.add_argument("--all", action="store_true", help="with --perks, also recheck trees already marked verified")
+    ap.add_argument("--dump", nargs="*", metavar="PAGE", help="save UESP pages to data/source/ (default: the planner's page list)")
     args = ap.parse_args()
 
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
+    if args.dump is not None:
+        sys.exit(0 if dump_pages(session, args.dump or DUMP_PAGES) else 1)
     if args.perks:
         sys.exit(0 if check_perks(session, args.refresh, only_unverified=not args.all) else 1)
     races, problems = {}, []
