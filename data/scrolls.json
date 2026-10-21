@@ -1,0 +1,378 @@
+{
+ "license": "CC BY-SA 2.5; scrolls and spider scrolls from UESP (https://en.uesp.net/wiki/Skyrim:Scrolls, https://en.uesp.net/wiki/Skyrim:Pack_Spider), summarized.",
+ "asOf": "2026-10-21",
+ "facts": {
+  "scrolls": [
+   "Casting a scroll uses no Magicka, and anyone can use one whatever their magic skill.",
+   "Scrolls give no skill experience, except the Scroll of Blizzard (Destruction).",
+   "Each scroll works once. You can't move while casting, and a hit interrupts the cast without using the scroll up.",
+   "Spell merchants sell a random selection. Many more are fixed loot, often tucked among rolls of paper."
+  ],
+  "spiders": [
+   "Dragonborn only. Spider scrolls are thrown, not cast, use no Magicka, and work once each.",
+   "Made at the Imbuing Chamber in White Ridge Barrow on Solstheim, from albino spider pods.",
+   "Albino spider pods come from a respawning albino spider egg just south of Bloodskal Barrow, near a shrine to Kynareth.",
+   "Elemental spider recipes that include a flawless gem make six scrolls instead of three. Up to nine spiders can be out at once."
+  ]
+ },
+ "scrolls": [
+  {
+   "id": "oakflesh",
+   "name": "Oakflesh",
+   "school": "Alteration"
+  },
+  {
+   "id": "stoneflesh",
+   "name": "Stoneflesh",
+   "school": "Alteration"
+  },
+  {
+   "id": "ironflesh",
+   "name": "Ironflesh",
+   "school": "Alteration"
+  },
+  {
+   "id": "ebonyflesh",
+   "name": "Ebonyflesh",
+   "school": "Alteration"
+  },
+  {
+   "id": "candlelight",
+   "name": "Candlelight",
+   "school": "Alteration"
+  },
+  {
+   "id": "magelight",
+   "name": "Magelight",
+   "school": "Alteration"
+  },
+  {
+   "id": "paralyze",
+   "name": "Paralyze",
+   "school": "Alteration"
+  },
+  {
+   "id": "mass-paralysis",
+   "name": "Mass Paralysis",
+   "school": "Alteration"
+  },
+  {
+   "id": "detect-life",
+   "name": "Detect Life",
+   "school": "Alteration"
+  },
+  {
+   "id": "banish-daedra",
+   "name": "Banish Daedra",
+   "school": "Conjuration"
+  },
+  {
+   "id": "conjure-familiar",
+   "name": "Conjure Familiar",
+   "school": "Conjuration"
+  },
+  {
+   "id": "conjure-flame-atronach",
+   "name": "Conjure Flame Atronach",
+   "school": "Conjuration"
+  },
+  {
+   "id": "conjure-frost-atronach",
+   "name": "Conjure Frost Atronach",
+   "school": "Conjuration"
+  },
+  {
+   "id": "conjure-storm-atronach",
+   "name": "Conjure Storm Atronach",
+   "school": "Conjuration"
+  },
+  {
+   "id": "frost-thrall",
+   "name": "Frost Thrall",
+   "school": "Conjuration"
+  },
+  {
+   "id": "storm-thrall",
+   "name": "Storm Thrall",
+   "school": "Conjuration"
+  },
+  {
+   "id": "raise-zombie",
+   "name": "Raise Zombie",
+   "school": "Conjuration"
+  },
+  {
+   "id": "dread-zombie",
+   "name": "Dread Zombie",
+   "school": "Conjuration"
+  },
+  {
+   "id": "dead-thrall",
+   "name": "Dead Thrall",
+   "school": "Conjuration"
+  },
+  {
+   "id": "soul-trap",
+   "name": "Soul Trap",
+   "school": "Conjuration"
+  },
+  {
+   "id": "firebolt",
+   "name": "Firebolt",
+   "school": "Destruction"
+  },
+  {
+   "id": "fireball",
+   "name": "Fireball",
+   "school": "Destruction"
+  },
+  {
+   "id": "fire-storm",
+   "name": "Fire Storm",
+   "school": "Destruction"
+  },
+  {
+   "id": "ice-spike",
+   "name": "Ice Spike",
+   "school": "Destruction"
+  },
+  {
+   "id": "ice-storm",
+   "name": "Ice Storm",
+   "school": "Destruction"
+  },
+  {
+   "id": "blizzard",
+   "name": "Blizzard",
+   "school": "Destruction",
+   "note": "The only scroll that gives skill experience (Destruction)."
+  },
+  {
+   "id": "chain-lightning",
+   "name": "Chain Lightning",
+   "school": "Destruction"
+  },
+  {
+   "id": "fear",
+   "name": "Fear",
+   "school": "Illusion"
+  },
+  {
+   "id": "hysteria",
+   "name": "Hysteria",
+   "school": "Illusion"
+  },
+  {
+   "id": "fury",
+   "name": "Fury",
+   "school": "Illusion"
+  },
+  {
+   "id": "frenzy",
+   "name": "Frenzy",
+   "school": "Illusion"
+  },
+  {
+   "id": "mayhem",
+   "name": "Mayhem",
+   "school": "Illusion"
+  },
+  {
+   "id": "calm",
+   "name": "Calm",
+   "school": "Illusion"
+  },
+  {
+   "id": "harmony",
+   "name": "Harmony",
+   "school": "Illusion"
+  },
+  {
+   "id": "courage",
+   "name": "Courage",
+   "school": "Illusion"
+  },
+  {
+   "id": "call-to-arms",
+   "name": "Call to Arms",
+   "school": "Illusion"
+  },
+  {
+   "id": "invisibility",
+   "name": "Invisibility",
+   "school": "Illusion"
+  },
+  {
+   "id": "muffle",
+   "name": "Muffle",
+   "school": "Illusion"
+  },
+  {
+   "id": "fast-healing",
+   "name": "Fast Healing",
+   "school": "Restoration"
+  },
+  {
+   "id": "cure-wounds",
+   "name": "Cure Wounds",
+   "school": "Restoration"
+  },
+  {
+   "id": "heal-other",
+   "name": "Heal Other",
+   "school": "Restoration"
+  },
+  {
+   "id": "grand-healing",
+   "name": "Grand Healing",
+   "school": "Restoration"
+  },
+  {
+   "id": "turn-lesser-undead",
+   "name": "Turn Lesser Undead",
+   "school": "Restoration"
+  },
+  {
+   "id": "turn-undead",
+   "name": "Turn Undead",
+   "school": "Restoration"
+  },
+  {
+   "id": "circle-of-protection",
+   "name": "Circle of Protection",
+   "school": "Restoration"
+  },
+  {
+   "id": "bane-of-the-undead",
+   "name": "Bane of the Undead",
+   "school": "Restoration"
+  },
+  {
+   "id": "guardian-circle",
+   "name": "Guardian Circle",
+   "school": "Restoration"
+  },
+  {
+   "id": "jzargos-flame-cloak",
+   "name": "J'zargo's Flame Cloak",
+   "school": "Special",
+   "note": "From the quest J'zargo's Experiment."
+  },
+  {
+   "id": "shalidors-insights-alteration",
+   "name": "Shalidor's Insights: Alteration",
+   "school": "Special",
+   "note": "Boosts your Alteration spells for 120 seconds."
+  },
+  {
+   "id": "shalidors-insights-conjuration",
+   "name": "Shalidor's Insights: Conjuration",
+   "school": "Special",
+   "note": "Boosts your Conjuration spells for 120 seconds."
+  },
+  {
+   "id": "shalidors-insights-destruction",
+   "name": "Shalidor's Insights: Destruction",
+   "school": "Special",
+   "note": "Boosts your Destruction spells for 120 seconds."
+  },
+  {
+   "id": "shalidors-insights-illusion",
+   "name": "Shalidor's Insights: Illusion",
+   "school": "Special",
+   "note": "Boosts your Illusion spells for 120 seconds."
+  },
+  {
+   "id": "shalidors-insights-restoration",
+   "name": "Shalidor's Insights: Restoration",
+   "school": "Special",
+   "note": "Boosts your Restoration spells for 120 seconds."
+  }
+ ],
+ "spiders": [
+  {
+   "id": "exploding-flame-spider",
+   "name": "Exploding Flame Spider",
+   "element": "Flame",
+   "effect": "Explodes when an enemy gets too close."
+  },
+  {
+   "id": "flame-cloaked-spider",
+   "name": "Flame Cloaked Spider",
+   "element": "Flame",
+   "effect": "Burns enemies that get too close."
+  },
+  {
+   "id": "jumping-flame-spider",
+   "name": "Jumping Flame Spider",
+   "element": "Flame",
+   "effect": "Leaps at nearby enemies and explodes if it lands near them."
+  },
+  {
+   "id": "exploding-frost-spider",
+   "name": "Exploding Frost Spider",
+   "element": "Frost",
+   "effect": "Explodes when an enemy gets too close."
+  },
+  {
+   "id": "frost-cloaked-spider",
+   "name": "Frost Cloaked Spider",
+   "element": "Frost",
+   "effect": "Freezes enemies that get too close."
+  },
+  {
+   "id": "jumping-frost-spider",
+   "name": "Jumping Frost Spider",
+   "element": "Frost",
+   "effect": "Leaps at nearby enemies and explodes if it lands near them."
+  },
+  {
+   "id": "exploding-poison-spider",
+   "name": "Exploding Poison Spider",
+   "element": "Poison",
+   "effect": "Explodes when an enemy gets too close."
+  },
+  {
+   "id": "poison-cloaked-spider",
+   "name": "Poison Cloaked Spider",
+   "element": "Poison",
+   "effect": "Poisons enemies that get too close."
+  },
+  {
+   "id": "jumping-poison-spider",
+   "name": "Jumping Poison Spider",
+   "element": "Poison",
+   "effect": "Leaps at nearby enemies and explodes if it lands near them."
+  },
+  {
+   "id": "exploding-shock-spider",
+   "name": "Exploding Shock Spider",
+   "element": "Shock",
+   "effect": "Explodes when an enemy gets too close."
+  },
+  {
+   "id": "shock-cloaked-spider",
+   "name": "Shock Cloaked Spider",
+   "element": "Shock",
+   "effect": "Shocks enemies that get too close."
+  },
+  {
+   "id": "jumping-shock-spider",
+   "name": "Jumping Shock Spider",
+   "element": "Shock",
+   "effect": "Leaps at enemies and explodes if it lands near them."
+  },
+  {
+   "id": "mind-control-spider",
+   "name": "Mind Control Spider",
+   "element": "Other",
+   "effect": "People and creatures it attaches to fight for you for 30 seconds. Thrown farther than other spiders."
+  },
+  {
+   "id": "oil-spider",
+   "name": "Oil Spider",
+   "element": "Other",
+   "effect": "Leaves a flammable oil slick when threatened."
+  }
+ ]
+}
