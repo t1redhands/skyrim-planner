@@ -29,7 +29,10 @@
     },
     {
      "place": "Ysgramor's Tomb",
-     "quest": "Glory of the Dead"
+     "quest": "Glory of the Dead",
+     "quests": [
+      "Glory of the Dead"
+     ]
     }
    ],
    "questOnly": false,
@@ -92,7 +95,10 @@
     },
     {
      "place": "Ustengrav",
-     "quest": "The Horn of Jurgen Windcaller"
+     "quest": "The Horn of Jurgen Windcaller",
+     "quests": [
+      "The Horn of Jurgen Windcaller"
+     ]
     }
    ],
    "questOnly": false,
@@ -125,7 +131,10 @@
     },
     {
      "place": "High Hrothgar",
-     "quest": "The Fallen"
+     "quest": "The Fallen",
+     "quests": [
+      "The Fallen"
+     ]
     }
    ],
    "questOnly": false,
@@ -158,7 +167,10 @@
     },
     {
      "place": "Sovngarde",
-     "quest": "Dragonslayer"
+     "quest": "Dragonslayer",
+     "quests": [
+      "Dragonslayer"
+     ]
     }
    ],
    "questOnly": false,
@@ -191,7 +203,10 @@
     },
     {
      "place": "Throat of the World",
-     "quest": "The Throat of the World"
+     "quest": "The Throat of the World",
+     "quests": [
+      "The Throat of the World"
+     ]
     }
    ],
    "questOnly": false,
@@ -227,7 +242,10 @@
     },
     {
      "place": "Snow Veil Sanctum",
-     "quest": "Speaking With Silence"
+     "quest": "Speaking With Silence",
+     "quests": [
+      "Speaking With Silence"
+     ]
     }
    ],
    "questOnly": false,
@@ -290,7 +308,10 @@
    "locations": [
     {
      "place": "Throat of the World",
-     "quest": "Alduin's Bane"
+     "quest": "Alduin's Bane",
+     "quests": [
+      "Alduin's Bane"
+     ]
     }
    ],
    "questOnly": true,
@@ -353,14 +374,20 @@
    "locations": [
     {
      "place": "Dustman's Cairn",
-     "quest": "Proving Honor"
+     "quest": "Proving Honor",
+     "quests": [
+      "Proving Honor"
+     ]
     },
     {
      "place": "Sunderstone Gorge"
     },
     {
      "place": "Throat of the World",
-     "quest": "The Throat of the World"
+     "quest": "The Throat of the World",
+     "quests": [
+      "The Throat of the World"
+     ]
     }
    ],
    "questOnly": false,
@@ -427,7 +454,10 @@
     },
     {
      "place": "Saarthal",
-     "quest": "Under Saarthal"
+     "quest": "Under Saarthal",
+     "quests": [
+      "Under Saarthal"
+     ]
     }
    ],
    "questOnly": false,
@@ -493,7 +523,11 @@
     },
     {
      "place": "Dark Brotherhood Sanctuary",
-     "quest": "With Friends Like These... or Destroy the Dark Brotherhood!"
+     "quest": "With Friends Like These... or Destroy the Dark Brotherhood!",
+     "quests": [
+      "With Friends Like These...",
+      "Destroy the Dark Brotherhood!"
+     ]
     },
     {
      "place": "Forsaken Cave"
@@ -502,7 +536,8 @@
    "questOnly": false,
    "effect": "Lowers a target's armor and drains its health over time.",
    "quests": [
-    "With Friends Like These... or Destroy the Dark Brotherhood!"
+    "Destroy the Dark Brotherhood!",
+    "With Friends Like These..."
    ]
   },
   {
@@ -529,17 +564,25 @@
     },
     {
      "place": "Korvanjund",
-     "quest": "The Jagged Crown"
+     "quest": "The Jagged Crown (Imperial) or The Jagged Crown (Stormcloaks)",
+     "quests": [
+      "The Jagged Crown (Imperial)",
+      "The Jagged Crown (Stormcloaks)"
+     ]
     },
     {
      "place": "Labyrinthian",
-     "quest": "The Staff of Magnus"
+     "quest": "The Staff of Magnus",
+     "quests": [
+      "The Staff of Magnus"
+     ]
     }
    ],
    "questOnly": false,
    "effect": "Briefly slows the world around you.",
    "quests": [
-    "The Jagged Crown",
+    "The Jagged Crown (Imperial)",
+    "The Jagged Crown (Stormcloaks)",
     "The Staff of Magnus"
    ]
   },
@@ -570,7 +613,10 @@
     },
     {
      "place": "Skuldafn",
-     "quest": "The World-Eater's Eyrie"
+     "quest": "The World-Eater's Eyrie",
+     "quests": [
+      "The World-Eater's Eyrie"
+     ]
     }
    ],
    "questOnly": false,
@@ -630,11 +676,17 @@
     },
     {
      "place": "High Hrothgar",
-     "quest": "The Way of the Voice"
+     "quest": "The Way of the Voice",
+     "quests": [
+      "The Way of the Voice"
+     ]
     },
     {
      "place": "High Hrothgar",
-     "quest": "The Horn of Jurgen Windcaller"
+     "quest": "The Horn of Jurgen Windcaller",
+     "quests": [
+      "The Horn of Jurgen Windcaller"
+     ]
     }
    ],
    "questOnly": false,
@@ -668,7 +720,10 @@
     },
     {
      "place": "High Hrothgar",
-     "quest": "The Way of the Voice"
+     "quest": "The Way of the Voice",
+     "quests": [
+      "The Way of the Voice"
+     ]
     }
    ],
    "questOnly": false,
@@ -701,11 +756,17 @@
     },
     {
      "place": "Dimhollow Crypt",
-     "quest": "Awakening"
+     "quest": "Awakening",
+     "quests": [
+      "Awakening"
+     ]
     },
     {
      "place": "Forgotten Vale",
-     "quest": "Touching the Sky"
+     "quest": "Touching the Sky",
+     "quests": [
+      "Touching the Sky"
+     ]
     }
    ],
    "questOnly": false,
@@ -736,13 +797,16 @@
    "locations": [
     {
      "place": "Soul Cairn",
-     "quest": "Soul Cairn quests with Durnehviir"
+     "quest": "Durnehviir",
+     "quests": [
+      "Durnehviir"
+     ]
     }
    ],
    "questOnly": true,
    "effect": "Tears at a target's soul; a target it kills rises to fight for you.",
    "quests": [
-    "Soul Cairn quests with Durnehviir"
+    "Durnehviir"
    ]
   },
   {
@@ -766,13 +830,16 @@
    "locations": [
     {
      "place": "Soul Cairn",
-     "quest": "Soul Cairn quests with Durnehviir"
+     "quest": "Durnehviir",
+     "quests": [
+      "Durnehviir"
+     ]
     }
    ],
    "questOnly": true,
    "effect": "Summons the dragon Durnehviir from the Soul Cairn.",
    "quests": [
-    "Soul Cairn quests with Durnehviir"
+    "Durnehviir"
    ]
   },
   {
@@ -799,7 +866,10 @@
     },
     {
      "place": "Vahlok's Tomb",
-     "quest": "Lost Legacy"
+     "quest": "Lost Legacy",
+     "quests": [
+      "Lost Legacy"
+     ]
     }
    ],
    "questOnly": false,
@@ -832,17 +902,24 @@
     },
     {
      "place": "Apocrypha",
-     "quest": "Dragonborn main quest"
+     "quest": "The Gardener of Men",
+     "quests": [
+      "The Gardener of Men"
+     ]
     },
     {
      "place": "Skaal Village",
-     "quest": "Dragonborn main quest"
+     "quest": "The Fate of the Skaal",
+     "quests": [
+      "The Fate of the Skaal"
+     ]
     }
    ],
    "questOnly": false,
    "effect": "Bends the will of people, animals and, at full strength, dragons.",
    "quests": [
-    "Dragonborn main quest"
+    "The Fate of the Skaal",
+    "The Gardener of Men"
    ]
   },
   {
