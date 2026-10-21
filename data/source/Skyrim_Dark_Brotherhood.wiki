@@ -1,0 +1,230 @@
+{{Trail|Factions}}
+[[File:SR-banner-Dark Brotherhood.png|100px|right]]
+The '''Dark Brotherhood''' is a guild of professional assassins which historically possessed considerable influence and power but has recently fallen on considerably harder times. It is similar to [[Morrowind:Morrowind|Morrowind's]] [[Morrowind:Morag Tong|Morag Tong]], but despite a common misconception, it is a completely separate organization; also, the legality of this organization is much more limited than that of its older cousin. The leader of the Dark Brotherhood was the [[Skyrim:Night Mother|Night Mother]], but now that role has fallen to [[Skyrim:Astrid|Astrid]]. The Dark Brotherhood also has a [[skyrim:Delvin Mallory|contact]] in the [[Skyrim:Riften|Riften]] [[Skyrim:Thieves Guild (place)|Thieves Guild]].
+In Skyrim, you can choose to either join the Dark Brotherhood and take on assassinations for hire, or destroy the Brotherhood's last remaining chapter.
+
+For historical information about the Dark Brotherhood, see the [[Lore:Dark Brotherhood|lore page]].
+
+==Joining==
+[[File:SR-quest-Sanctuary 02.jpg|thumb|right|Welcome to the Family]]
+Joining the Dark Brotherhood requires you to first complete the quest [[Skyrim:Innocence Lost|Innocence Lost]]. You can start that quest by overhearing a rumor that [[SR:Aventus Aretino|Aventus Aretino]] is performing a ritual called the Black Sacrament, speaking to Aventus yourself, or by talking to the orphans of [[Skyrim:Honorhall Orphanage|Honorhall Orphanage]] in [[Skyrim:Riften|Riften]] about Aventus Aretino.
+
+After completing Innocence Lost, you will be able to join the Dark Brotherhood in the quest [[Skyrim:With_Friends_Like_These...|With Friends Like These...]].
+
+==Destroying the Dark Brotherhood==
+To destroy the Dark Brotherhood, kill Astrid instead of a hostage when you arrive in the shack during the quest [[Skyrim:With Friends Like These...|With Friends Like These...]] You will then fail that quest, and the quest [[Skyrim:Destroy the Dark Brotherhood!|Destroy the Dark Brotherhood!]] will appear in its place. This will be your only opportunity to attack the Dark Brotherhood.
+
+==Advantages to Joining==
+[[File:SR-place-Dark Brotherhood Sanctuary.jpg|thumb|right|The Dark Brotherhood Sanctuary]]
+*Free access to the [[Skyrim:Dark_Brotherhood_Sanctuary|Sanctuary]], although it can also be accessed while destroying the Dark Brotherhood.
+**Inside the Sanctuary is a word wall for the [[Skyrim:Dragon Shouts|Dragon Shout]] [[Skyrim:Marked for Death|Marked for Death]] and an [[Skyrim:Unusual Gem|Unusual Gem]].
+*Access to the [[Skyrim:Dawnstar Sanctuary|Dawnstar Sanctuary]], which has some useful items when upgraded, also becomes available near the end of the questline.
+**This includes [[Skyrim:Dark_Brotherhood_Initiate|Dark Brotherhood Initiates]], who cannot be killed, and a space with attributes similar to a [[Skyrim:Houses|house]].
+**Cicero will offer to follow you during adventures if spared during [[Skyrim:The_Cure_for_Madness|The Cure for Madness]].
+*You receive your own set of [[Skyrim:Shrouded Armor|shrouded armor]], which boosts several of the skills most useful to an assassin. The only other source of this armor is named Dark Brotherhood members.
+**You may obtain [[Skyrim:Shrouded Robes|shrouded robes]], [[Skyrim:Shrouded Shoes|shoes]], [[Skyrim:Shrouded Hood|hood]], and [[Skyrim:Shrouded Hand Wraps|hand wraps]], which yield no armor rating but have other enchantments useful to assassins.
+**[[Skyrim:Ancient Shrouded Armor|Ancient Shrouded Armor]] is also attainable by completing optional questlines.
+*The [[Skyrim:Blade of Woe|Blade of Woe]], a dagger with higher base damage than all other daggers except the [[Skyrim:Dragonbone Dagger|dragonbone dagger]]{{DG|1}}, which has the same base damage.
+**Can also be looted from Astrid's body if you choose to destroy the Dark Brotherhood.
+*[[Skyrim:Windshear|Windshear]], a unique scimitar with a powerful stagger effect.
+*The unique [[Skyrim:Horses|horse]] [[Skyrim:Shadowmere|Shadowmere]], which has the highest health and stamina of any horse available to you.
+*The [[Skyrim:Summon_Spectral_Assassin|Summon Spectral Assassin]] power.
+*All Dark Brotherhood members are friendly to blood-starved [[Skyrim:Vampire|vampires]] (stage 4), and can be fed upon.
+**This is no longer a unique benefit if the [[Skyrim:Dawnguard|Dawnguard]] add-on is installed.
+*Access to [[Skyrim:Babette|Babette]], the Master Trainer for [[Skyrim:Alchemy|Alchemy]], and [[Skyrim:Nazir|Nazir]], the Master Trainer for [[Skyrim:Light Armor|Light Armor]].
+
+==Members==
+[[File:SR-npc-Astrid 03.jpg|thumb|right|Astrid, leader of the Dark Brotherhood]]
+{{People Table|
+{{People|title=Members|Arnbjorn||Astrid|(Leader)|Babette|{{Service Icon|Trainer|Alchemy|Master}}{{Service Icon|Apothecary}}|Cicero|{{Service Icon|Follower}}|Festus Krex||Gabriella||Nazir|{{Service Icon|Trainer|Light Armor|Master}}|Veezara||Dark Brotherhood Initiate|{{Service Icon|Follower}}}}
+{{People|title=Radiant|[[Skyrim:Assassin|Assassins]]}}
+|
+{{People|title=Non-Living Members|Night Mother||Spectral Assassin||Dark Brotherhood Assassin|}}
+{{People|title=Creatures|Lis||Shadowmere|}}
+}}
+
+==Quests==
+[[File:SR-qico-Dark Brotherhood.png|thumb|right|Dark Brotherhood knotwork as it appears in the [[SR:Quests|Journal]]]]
+===Primary Quests===
+The primary Dark Brotherhood [[Skyrim:Quests|questline]] consists of fourteen quests.  Three [[Skyrim:Achievements|achievements]] (50 points; 2 Bronze and 1 Silver) are unlocked by the guild's quests.
+{| class=wikitable
+! Quest !! [[Skyrim:Achievements|Achievement]]
+|-
+| {{Quest Link|Delayed Burial}} (Optional) ||
+|-
+| {{Quest Link|Innocence Lost}} ||
+|-
+| {{Quest Link|With Friends Like These...}} || [[File:SR-achievement-With Friends Like These....png|20px]] 10 pts/Bronze
+|-
+| {{Quest Link|Sanctuary}} ||
+|-
+| {{Quest Link|Mourning Never Comes}} ||
+|-
+| {{Quest Link|Whispers in the Dark}} ||
+|-
+| {{Quest Link|The Silence Has Been Broken}} ||
+|-
+| {{Quest Link|Bound Until Death}} || [[File:SR-achievement-Bound Until Death.png|20px]] 10 pts/Bronze
+|-
+| {{Quest Link|Breaching Security}} ||
+|-
+| {{Quest Link|The Cure for Madness}} ||
+|-
+| {{Quest Link|Recipe for Disaster}} ||
+|-
+| {{Quest Link|To Kill an Empire}} ||
+|-
+| {{Quest Link|Death Incarnate}} ||
+|-
+| {{Quest Link|Hail Sithis!}} || [[File:SR-achievement-Hail Sithis!.png|20px]] 30 pts/Silver
+|}
+
+===Contract Quests===
+*{{Quest Link|Kill Narfi}}
+*{{Quest Link|Kill Beitild}}
+*{{Quest Link|Kill Ennodius Papius}}
+*{{Quest Link|Kill Hern}}
+*{{Quest Link|Kill Lurbuk}}
+*{{Quest Link|Kill Deekus}}
+*{{Quest Link|Kill Ma'randru-jo}}
+*{{Quest Link|Kill Anoriath}}
+*{{Quest Link|Kill Agnis}}
+*{{Quest Link|Kill Maluril}}
+*{{Quest Link|Kill Helvard}}
+*{{Quest Link|Kill Safia}}
+
+===Other Quests===
+*{{Quest Link|Destroy the Dark Brotherhood!}}
+*{{Quest Link|Where You Hang Your Enemy's Head...}}
+
+===[[Skyrim:Radiant|Radiant]] Quests===
+*{{Quest Link|Honor Thy Family}}
+*{{Quest Link|The Dark Brotherhood Forever}}
+
+===[[Skyrim:Miscellaneous Quests|Miscellaneous Quests]]===
+These are miscellaneous quests (each quest's objective is listed in the "Miscellaneous" section of your journal) and will only activate if certain conditions are met.
+* {{Quest Link|Locate the Assassin of Old}} (This quest activates if you successfully completed [[Skyrim:Breaching Security|Breaching Security]] and received a bonus from [[Skyrim:Gabriella|Gabriella]].)
+* {{Quest Link|Take the Hidden Treasure}} (This quest activates after purchasing the torture room for the Dawnstar Sanctuary.)
+
+==Radiant Conversations== 
+There is a radiant dialogue system for the Dark Brotherhood members. The conversation starts with a random line from one participant. This is followed with a random line in response, and a further random question by the first speaker. The final line is still randomly selected, but each member of the Brotherhood has a choice of three unique lines and two generic lines to finish with. Some members have more than three unique lines, but they can only use three depending on the second participant. Other members in the vicinity may chip in with random generic phrases depending on the stage of the conversation. 
+
+{|class=wikitable
+!Speaker !!Speech
+|-
+|rowspan=5|Anyone||''"So, is it true?"''
+|-
+||''"I heard about what happened..."''
+|-
+||''"Tell me, brother/sister. Are the stories true?"''
+|-
+||''"Your latest exploit certainly has the Sanctuary talking..."''
+|-
+||''"Come now. What everyone else is saying. It can't possibly be true..."''
+|-
+|Astrid to Arnbjorn*||''"Tell me, husband. Is it true what I've heard?"''
+|-
+|Arnbjorn to Astrid*||''"Astrid, I've been hearing some, er... interesting things, from the others... about what you did when you left the Sanctuary last week..."''
+|-{{ThickLine}}
+|rowspan=7|Anyone||''"You're referring to that blacksmith contract?"''
+|-
+||''"You must be talking about the caravan job..."''
+|-
+||''"Word certainly travels fast, doesn't it?"''
+|-
+||''"The temple contract? Well, I certainly won't deny my involvement. He he he he he."''
+|-
+||''"The Redoran contract? Yes, you heard correctly. In and out of Vvardenfell in less than forty eight hours."''
+|-
+||''"Ah, you must mean my little adventure on the ship..."''
+|-
+||''"Oh, you mean in that manor house? During the thunderstorm? Heh. What can I say? It happened, just like you heard."''
+|-{{ThickLine}}
+|rowspan=7|Anyone||''"But to be outnumbered twenty to one..."''
+|-
+||''"You infiltrated the position, eliminated the target, and made it look like an accident. Impressive. I'd say you earned your bonus on that one!"''
+|-
+||''"To kill triplets, secretly, and then have the whole thing blamed on the mother. Remarkable."''
+|-
+||''"By Sithis, you slew everyone! Well, except for that one you kept alive, to serve as witness. Does your wickedness, or your skill, know no bounds?"''
+|-
+||''"But really. A horker, some twine, three wood elves, and a hatchet? Points for creativity, if nothing else."''
+|-
+||''"It's the part with the severed head I find most impressive. My compliments."''
+|-
+||''"I'm just trying to imagine you hiding inside the body of a mammoth. Bloody brilliant idea."''
+|-
+|Anyone but Astrid||''"It was a suicide mission! Astrid said as much. Yet here you stand, hale and hearty."''
+|-{{ThickLine}}
+|rowspan=3|Nazir||''"It's all thanks to a special technique I developed. I call it the "Razor-Winged Butterfly." I'd teach it to you... but then I'd have to kill you."''
+|-
+||''"Yeah, well, don't expect many more stories like that in my future. I'm getting old. Being that amazing takes too much damn effort."''
+|-
+||''"Hmph. Been awhile since I've actually cleaved someone in two. Forgot how hard it was to get the scimitar back out."''
+|-
+|rowspan=3|Festus Krex||''"Let that be a lesson to you young pups. There is no challenge that magic cannot overcome."''
+|-
+||''"Bah! A child could have accomplished it. Such is the power of the arcane. If you only knew of the spells I didn't use. He he he he he."''
+|-
+||''"What? You think me too old, too feeble? There is more knowledge in me than in two of you pups put together. And knowledge... knowledge is my weapon."''
+|-
+|Arnbjorn (not talking to Astrid)*||''"Once again, you have underestimated me. You see the man, brutish and hulking. But I am wolf as well. Deliberate. Cunning."''
+|-
+|Only between Arnbjorn and Astrid* ||''"Romantic, isn't? Like that time we first met. Remember that? Never seen so much blood. Ah, to be young again..."''
+|-
+|rowspan=2|Arnbjorn||''"When I am become wolf, I am treachery incarnate. And then, then... there is no one who can stand between the hunter and his prey."''
+|-
+||''"When I first received the blessing of the wolf, my creator gave me a valuable piece of advice. "Arnbjorn," he said. "Never lose!" And I never do."''
+|-
+|rowspan=3|Veezara||''"He he. Don't forget that I am Shadowscale. I was, quite literally, born to kill."''
+|-
+||''"It was a simple matter, really, when one has mastered the art of camouflage. Scale becomes stone, becomes shadow. Then... death."''
+|-
+||''"My greatest challenge was deciding which weapon to use, for I am prone to indecision. Bow, dagger... axe? In the end, I opted for my claws."''
+|-
+|rowspan=3|Babette||''"In truth? It was so easy, I feel a bit guilty. Once again, the sweet, innocent child earned more trust than was wise."''
+|-
+||''"You give me too much credit. For how could I fail? I am, after all, just a little girl. What threat could I possibly pose? He he he he he."''
+|-
+||''"I am the perfect weapon. My innocent, childish form grants me nearly unrestricted access. Poison or a good bite usually takes care of the rest."''
+|-
+|rowspan=3|Gabriella||''"I am but a humble instrument of Sithis. Our Dread Father guides me. Therefore, failure is an impossibility."''
+|-
+||''"In the end, I relied on a woman's natural weapons - beauty and seduction. The rest was a formality. Though, a rather wet, messy formality..."''
+|-
+||''"When one can divine the future, success may not be assured... but it can at least be anticipated. It helps that I've already foretold my own death."''
+|-
+|rowspan=2|Astrid talking to Arnbjorn*||''"Come now, dear husband. You above all people should know what I'm capable of."''
+|-
+||''"Unscrupulous daring. It's why you fell in love with me, my dear."''
+|-
+|rowspan=3|Astrid||''"Sometimes I just need to remind everyone why I'm the one in charge."''
+|-
+||''"I guess I got tired of handing out contracts to everyone else, while I stayed home playing den mother. It was good to get out, and have some fun."''
+|-
+||''"I'd be lying if I said I didn't enjoy myself. But more importantly, I made this Sanctuary some much needed gold. In the end, that's all that matters."''
+|-
+|rowspan=2|Anyone||''"Well, I just did what had to be done. Nothing more. Nothing less. I'm just glad I lived to tell the tale."''
+|-
+||''"Ah, contracts like that are few and far between, it seems. Makes me long for the old days..."''
+|-
+|}
+<nowiki>*</nowiki> These options are only available between these two NPCs, however they can still use other options when talking to each other.
+
+==Notes==
+* If you ask a follower with a morality value of 3 to kill any assassination targets, they will refuse to do so, and may instead simply say things like ''"Forget it. I don't do that kind of work."''
+* Joining the Brotherhood adds a few lines of NPC dialogue, like with other [[Skyrim:Factions|factions]]. Some [[Skyrim:Guards|guards]] will say ''"Psst, I know who you are.... Hail Sithis."''
+* Sometimes you may [[Skyrim:World Interactions#Dark Brotherhood Assassin Sent to Kill the Player|encounter]] a [[Skyrim:Assassin|Dark Brotherhood assassin]] who carries a [[Skyrim:Dark Brotherhood Assassin's Note|contract for your assassination]] as a [[Skyrim:World Interactions|random occurrence]]. This will only happen if you have not completed [[Skyrim:Innocence Lost|Innocence Lost]], and can happen multiple times.
+
+==Bugs==
+{{Bug|[[Skyrim:Deceiving the Herd|Deceiving the Herd]] can trigger its kill selection setup before you have been told to actually do anything. This can cause the quest to react to Dark Brotherhood kills inappropriately.|UDGP|1.2.1|Keep in mind though that using a Dark Brotherhood target for Deceiving the Herd is perfectly valid. All the fix does is prevent Deceiving the Herd from registering the kill until you're actually told to make one.}}
+{{Bug|Two assassination targets, Agnis and Maluril, incorrectly belong to the Dark Brotherhood faction, which can cause you to get expelled from the Dark Brotherhood if they get attacked at the wrong time.|USLEEP|3.0.7}}
+
+==Gallery==
+<gallery>
+File:SR-book-Mysterious note.jpg|A mysterious note
+File:SR-concept-Dark Brotherhood Female Armor.jpg|Female Dark Brotherhood Armor Concept Art
+File:SR-place-Dawnstar_Sanctuary_Tenets.jpg|Plaque of The Five Tenets within Dawnstar Sanctuary
+</gallery>
+
+{{Skyrim Factions}}

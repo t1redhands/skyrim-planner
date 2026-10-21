@@ -1,0 +1,23 @@
+<noinclude>{{Trail|Quests}}</noinclude> [[Category:Skyrim-Quests-Main Quest|*]]
+[[File:SR-qico-Dragonborn Knotwork.png|center|class=imageInvert]]
+Skyrim's '''main quest''' consists of seventeen required quests and two optional quests. During these quests you discover your heritage as the [[Skyrim:Dovahkiin|Dovahkiin]], learn why [[Skyrim:Dragon|dragons]] have returned to the world, and find a way to respond to the dragon threat. Completing the main quest will take approximately 15-30 hours depending on your character's level. Eight [[Skyrim:Achievements|achievements]] (170 points; 7 Bronze and 1 Gold) are directly tied to completing the main quest; in addition, several [[Skyrim:Dragon Shouts#Achievements|dragon shout]]-related achievements are inevitably unlocked during the quests. Quests belonging to the main quest are marked in your journal by the dragon head knotwork, which is pictured above.
+
+#{{Quest Link|Unbound}} ([[File:SR-achievement-Unbound.png|18px]] 10 pts/Bronze)
+#{{Quest Link|Before the Storm}}
+#{{Quest Link|Bleak Falls Barrow (quest)}} ([[File:SR-achievement-Bleak_Falls_Barrow.png|18px]] 10 pts/Bronze)
+#{{Quest Link|Dragon Rising}}
+#{{Quest Link|The Way of the Voice}} ([[File:SR-achievement-The_Way_of_the_Voice.png|18px]] 20 pts/Bronze)
+#{{Quest Link|The Horn of Jurgen Windcaller}}
+#{{Quest Link|A Blade in the Dark}}
+#{{Quest Link|Diplomatic Immunity}} ([[File:SR-achievement-Diplomatic Immunity.png|18px]] 20 pts/Bronze)
+#{{Quest Link|A Cornered Rat}}
+#{{Quest Link|Alduin's Wall}} ([[File:SR-achievement-Alduin's Wall.png|18px]] 20 pts/Bronze)
+#{{Quest Link|The Throat of the World}}
+#{{Quest Link|Elder Knowledge}} ([[File:SR-achievement-Elder Knowledge.png|18px]] 20 pts/Bronze)
+#{{Quest Link|Alduin's Bane}}
+#{{Quest Link|The Fallen}} ([[File:SR-achievement-The Fallen.png|18px]] 20 pts/Bronze)
+#*(optional) {{Quest Link|Season Unending}}
+#*(optional) {{Quest Link|Paarthurnax (quest)}}
+#{{Quest Link|The World-Eater's Eyrie}}
+#{{Quest Link|Sovngarde (quest)}}
+#{{Quest Link|Dragonslayer}} ([[File:SR-achievement-Dragonslayer.png|18px]] 50 pts/Gold)

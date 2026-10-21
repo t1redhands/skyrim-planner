@@ -1,0 +1,126 @@
+{{Trail|Quests}}[[Category:Skyrim-Quests-Daedric]]
+[[Category:Skyrim-Confirmed Bugs]]
+[[Category:Skyrim-Bugs Fixed by the Official Skyrim Special Edition Patch]]
+[[File:SR-qico-Daedric.png|Daedric Quests Knotwork|left]] '''Daedric quests''' are quests given by the [[Lore:Daedric Princes|Daedric Princes]], usually with a Daedric [[Skyrim:Artifacts|Artifact]] as a reward. Daedric quests are not considered [[Skyrim:Side Quests|side quests]].
+
+Most Daedric quests also have an associated "pointer quest", a miscellaneous quest objective that leads you to the actual Daedric quest. It is not always necessary to obtain the pointer quest before starting the Daedric quest; in some cases, you can start the Daedric quest by simply visiting the related shrine or other location where a Daedric worshipper can be found.
+
+Most Daedric quests can only be removed from your active quest list upon successful completion. However, a few of the quests can be failed, which usually occurs if you kill the quest giver. For example, you can kill [[Skyrim:Silus Vesuius|Silus Vesuius]] upon entering his home, resulting in the failure of [[Skyrim:Pieces of the Past|Pieces of the Past]].
+
+{|class="wikitable sortable"
+! Daedric Quest !! Prince !! Level Req. !! colspan=2| Reward
+!class="unsortable"|Pointer Quest and/or Shrine Location
+|-
+| [[Skyrim:The Black Star|The Black Star]] || [[lore:Azura|Azura]] || 1 
+|width=96 {{AL|C}} {{Sort|Azura's Star}}| [[File:SR-icon-misc-Azura'sStar.png|48px]][[File:SR-icon-misc-TheBlackStar.png|48px]]
+| [[Skyrim:Azura's Star|Azura's Star]] or [[Skyrim:The Black Star (item)|The Black Star]]
+|
+* [[Skyrim:Visit the Shrine of Azura|Visit the Shrine of Azura]]
+* [[Skyrim:Shrine of Azura|Shrine of Azura]], south of [[Skyrim:Winterhold|Winterhold]], east of [[Skyrim:Sightless Pit|Sightless Pit]], on the peak of a mountain
+|-
+| [[Skyrim:Boethiah's Calling|Boethiah's Calling]] || [[lore:Boethiah|Boethiah]] || 30
+|{{AL|C}} {{Sort|Ebony Mail}}| [[File:SR-icon-armor-EbonyMail.png|48px]]
+| [[Skyrim:Ebony Mail|Ebony Mail]]
+|
+* [[Skyrim:Investigate the Boethiah cultist|Investigate the Boethiah cultist]]
+* [[Skyrim:Sacellum of Boethiah|Sacellum of Boethiah]], east of [[Skyrim:Windhelm Stables|Windhelm Stables]]
+|-
+| [[Skyrim: A Daedra's Best Friend|A Daedra's Best Friend]] || [[lore:Clavicus Vile|Clavicus Vile]] || 10
+|{{AL|C}} {{Sort|Masque of Clavicus Vile}}| [[File:SR-icon-weapon-The Rueful Axe.png|48px]][[File:SR-icon-armor-MasqueOfClavicusVile.png|48px]]
+| [[Skyrim:The Rueful Axe|The Rueful Axe]] or [[Skyrim:Masque of Clavicus Vile|Masque of Clavicus Vile]]
+|
+* [[Skyrim:Speak to Lod|Speak to Lod]] in Falkreath
+* [[Skyrim:Haemar's Shame|Haemar's Shame]] (quest cannot be started at the shrine)
+|-
+| [[Skyrim:Discerning the Transmundane|Discerning the Transmundane]] || [[lore:Hermaeus Mora|Hermaeus Mora]] || 15
+|{{AL|C}} {{Sort|Oghma Infinium}}| [[File:SR-icon-book-OghmaInfinium.png|48px]]
+| [[Skyrim:Oghma Infinium|Oghma Infinium]]
+|
+*[[Skyrim:Elder Knowledge|Elder Knowledge]] or [[Skyrim:Scroll Scouting|Scroll Scouting]]{{DG}}
+*[[Skyrim:Septimus Signus's Outpost|Septimus Signus's Outpost]] far north of [[Skyrim:Winterhold|Winterhold]]
+|-
+| [[Skyrim:Ill Met By Moonlight|Ill Met By Moonlight]] || [[lore:Hircine|Hircine]] || 1
+|{{AL|C}} {{Sort|Savior's Hide}}| [[File:SR-icon-armor-Savior'sHide.png|48px]][[File:SR-icon-jewelry-RingOfHircine.png|48px]]
+| [[Skyrim:Savior's Hide|Savior's Hide]] and/or [[Skyrim:Ring of Hircine|Ring of Hircine]]
+| There is no pointer quest or shrine; speak to [[Skyrim:Mathies|Mathies]] in Falkreath about the death of his daughter or to [[Skyrim:Sinding|Sinding]] in Falkreath Jail to start this quest
+|-
+| [[Skyrim:The Cursed Tribe|The Cursed Tribe]] || [[lore:Malacath|Malacath]] || 9
+|{{AL|C}} {{Sort|Volendrung}}| [[File:SR-icon-weapon-Volendrung.png|48px]]
+| [[Skyrim:Volendrung|Volendrung]]
+| [[Skyrim:Largashbur|Largashbur]], an Orc stronghold west-southwest of [[Skyrim:Riften|Riften]]
+|-
+| [[Skyrim:Pieces of the Past|Pieces of the Past]] || [[lore:Mehrunes Dagon|Mehrunes Dagon]] || 20
+|{{AL|C}} {{Sort|Mehrunes' Razor}}| [[File:SR-icon-weapon-Mehrunes'Razor.png|48px]]
+| [[Skyrim:Mehrunes' Razor|Mehrunes' Razor]] or gold
+|
+* [[Skyrim:Visit the museum in Dawnstar|Visit the museum in Dawnstar]]
+* [[Skyrim:Shrine of Mehrunes Dagon|Shrine of Mehrunes Dagon]], far east of [[Skyrim:Morthal|Morthal]], stairway up the mountain just past [[Skyrim:Stonehills|Stonehills]]
+|-
+| [[Skyrim:The Whispering Door|The Whispering Door]] || [[lore:Mephala|Mephala]] || 20
+|{{AL|C}} {{Sort|Ebony Blade}}| [[File:SR-icon-weapon-EbonyBlade.png|48px]]
+| [[Skyrim:Ebony Blade|Ebony Blade]]
+| [[Skyrim:Ask about Balgruuf's strange children|Ask about Balgruuf's strange children]]
+|-
+| [[Skyrim:The Break of Dawn|The Break of Dawn]] || [[lore:Meridia|Meridia]] || 12
+|{{AL|C}} {{Sort|Dawnbreaker}}| [[File:SR-icon-weapon-Dawnbreaker.png|48px]]
+| [[Skyrim:Dawnbreaker|Dawnbreaker]]
+| [[Skyrim:Statue to Meridia|Statue to Meridia]], west of [[Skyrim:Solitude|Solitude]]
+|-
+| [[Skyrim:The House of Horrors|The House of Horrors]] || [[lore:Molag Bal|Molag Bal]] || 1
+|{{AL|C}} {{Sort|Mace of Molag Bal}}| [[File:SR-icon-weapon-MaceOfMolagBal.png|48px]]
+| [[Skyrim:Mace of Molag Bal|Mace of Molag Bal]] 
+|
+*[[Skyrim:Speak to the witchhunter about the abandoned house|Speak to the witchhunter about the abandoned house]]
+* [[Skyrim:Markarth|Markarth]], [[Skyrim:Abandoned House|Abandoned House]]
+|-
+| [[Skyrim:The Taste of Death|The Taste of Death]] || [[lore:Namira|Namira]] || 1
+|{{AL|C}} {{Sort|Ring of Namira}}| [[File:SR-icon-jewelry-RingOfNamira.png|48px]]
+| [[Skyrim:Ring of Namira|Ring of Namira]] or gold
+| [[Skyrim:Investigate the Hall of the Dead|Investigate the Hall of the Dead]]
+|-
+| [[Skyrim:Trinity Restored|Trinity Restored]]<br/>[[Skyrim:Blindsighted|Blindsighted]]<br/>[[Skyrim:Darkness Returns|Darkness Returns]]<br/>(part of [[Skyrim:Thieves Guild (faction)|Thieves Guild]]) || [[Lore:Nocturnal|Nocturnal]] || 1
+|{{AL|C}} {{Sort|Skeleton Key}}| [[File:SR-icon-misc-SkeletonKey.png|48px]]
+| [[Skyrim:Skeleton Key|Skeleton Key]] during Darkness Returns,<br/>which is exchanged for Nightingale blessings at the end
+| [[Skyrim:Twilight Sepulcher|Twilight Sepulcher]]
+|-
+| [[Skyrim:The Only Cure|The Only Cure]] || [[lore:Peryite|Peryite]] || 12
+|{{AL|C}} {{Sort|Spellbreaker}}| [[File:SR-icon-armor-Spellbreaker.png|48px]]
+| [[Skyrim:Spellbreaker|Spellbreaker]]
+|
+* [[Skyrim:Find Kesh at the Peryite Shrine|Find Kesh at the Peryite Shrine]]
+* [[Skyrim:Shrine to Peryite|Shrine to Peryite]], northeast of [[Skyrim:Markarth|Markarth]], northwest of [[Skyrim:Karthwasten|Karthwasten]]
+|-
+| [[Skyrim:A Night To Remember|A Night To Remember]] || [[lore:Sanguine|Sanguine]] || 14
+|{{AL|C}} {{Sort|Sanguine Rose}}| [[File:SR-icon-weapon-SanguineRose.png|48px]]
+| [[Skyrim:Sanguine Rose|Sanguine Rose]]
+|
+* [[Skyrim:A Night To Remember|Participate in a drinking contest with Sam Guevenne]]
+|-
+| [[Skyrim:The Mind of Madness|The Mind of Madness]] || [[lore:Sheogorath|Sheogorath]] || 1
+|{{AL|C}} {{Sort|Wabbajack}}| [[File:SR-icon-weapon-Wabbajack.png|48px]]
+| [[Skyrim:Wabbajack|Wabbajack]]
+|
+* [[Skyrim:Investigate the man wandering the streets near the Bards College|Investigate the man wandering the streets near the Bards College]]
+* [[Skyrim:Solitude|Solitude]]
+|-
+| [[Skyrim:Waking Nightmare|Waking Nightmare]] || [[lore:Vaermina|Vaermina]] || 1
+|{{AL|C}} {{Sort|Skull of Corruption}}| [[File:SR-icon-weapon-SkullOfCorruption.png|48px]]
+| [[Skyrim:Skull of Corruption|Skull of Corruption]] or a [[Skyrim:Erandur|Follower]]
+| [[Skyrim:Dawnstar|Dawnstar]]
+|}
+
+==Achievements==
+[[Skyrim:Achievements|Achievements]] related to Daedric quests are:
+* {{achievement|Daedric Influence}}
+* {{achievement|Oblivion Walker}}
+** It is possible to miss the Oblivion Walker achievement. To receive it, you must not simply complete 15 Daedric quests, but must also choose the quest endings that give you Daedric Artifacts.
+** Quests which do not simply result in you receiving one artifact are:
+*** Those which can be completed without receiving an artifact: [[Skyrim:A Daedra's Best Friend|A Daedra's Best Friend]] ([[Skyrim:The Rueful Axe|The Rueful Axe]] does not count as a Daedric Artifact), [[Skyrim:Pieces of the Past|Pieces of the Past]], and [[Skyrim:Waking Nightmare|Waking Nightmare]].
+*** Those which can be failed: [[Skyrim:Discerning the Transmundane|Discerning the Transmundane]], [[Skyrim:Pieces of the Past|Pieces of the Past]], [[Skyrim:The House of Horrors|The House of Horrors]], and [[Skyrim:The Taste of Death|The Taste of Death]].
+*** Those where an NPC can die before giving you the quest: [[Skyrim:A Daedra's Best Friend|A Daedra's Best Friend]] and [[Skyrim:The Whispering Door|The Whispering Door]].
+**{{bug|[[Skyrim:Blindsighted|Blindsighted]]: the [[SR:Skeleton Key|Skeleton Key]] does not count as a Daedric Artifact for these achievements.|USSEP|4.3.2}}
+** [[Skyrim:Ill Met By Moonlight|Ill Met By Moonlight]]: both the [[Skyrim:Savior's Hide|Savior's Hide]] and the [[Skyrim:Ring of Hircine|Ring of Hircine]] count as Daedric Artifacts, and both can be obtained at the same time.
+** You do not need to possess the artifacts to increment the achievement counter; just choose the ending that results in the quest adding to your artifacts total. However, all but one of the quests have the increment scripted to taking possession of an artifact. The exception is [[Skyrim:The Cursed Tribe|The Cursed Tribe]], where the quest ends but the artifact is placed in front of you rather than in your inventory. You do not need to keep the artifacts once you have them, though they can be used to verify which quests have been completed "correctly". 
+** The game tracks the number of Daedric Artifacts and the number of completed Daedric quests separately. The only relevant statistic visible in-game is the number of "Daedric Quests Completed" (under "General Stats" in your journal). Since the quest statistic is incremented even if you complete a quest without receiving the artifact, it may not reliably indicate your progress toward the Oblivion Walker achievement.
+** Although [[Skyrim:Black Book|Black Books]]{{DB}} are artifacts associated with [[Lore:Hermaeus Mora|Hermaeus Mora]], they do not count toward these achievements.
+*{{bug|Daedric Artifacts added through the [[Skyrim:Creation Club|Creation Club]] do not count toward these achievements. These include the [[Skyrim:Bittercup (item)|Bittercup]]{{CC|Bittercup}}, the [[Skyrim:Bow of Shadows (item)|Bow of Shadows]]{{CC|Bow of Shadows}}, the [[Skyrim:Gray Cowl of Nocturnal|Gray Cowl of Nocturnal]]{{CC|The Gray Cowl Returns!}}, [[Skyrim:Goldbrand (item)|Goldbrand]]{{CC|Goldbrand}}, [[Skyrim:Nerveshatter|Nerveshatter]]{{CC|Saints & Seducers}}, the [[Skyrim:Ring of Khajiit|Ring of Khajiit]]{{CC|Fishing}}, [[Skyrim:Scourge|Scourge]]{{CC|The Cause}}, [[Skyrim:Shadowrend (item)|Shadowrend]]{{CC|Shadowrend}}, the [[Skyrim:Staff of Sheogorath (item)|Staff of Sheogorath]]{{CC|Staff of Sheogorath}}, the [[Skyrim:Sword of Jyggalag|Sword of Jyggalag]]{{CC|Saints & Seducers}}, and [[Skyrim:Umbra (item)|Umbra]]{{CC|Umbra}}.|USSEP|4.3.2|However, it is only fixed for content within the patch's purview (the three artifacts from free Creation Club content: [[SR:Nerveshatter|Nerveshatter]]{{CC|Saints & Seducers}}, the [[SR:Ring of Khajiit|Ring of Khajiit]]{{CC|Fishing}}, and the [[SR:Sword of Jyggalag|Sword of Jyggalag]]{{CC|Saints & Seducers}}).|dlc=CC}}

@@ -1,0 +1,116 @@
+<noinclude>{{Trail|Quests}}</noinclude> [[Category:Skyrim-Quests-Side Quests|*]]
+{{TOCright}}
+[[File:SR-qico-Miscellaneous.png|Side Quests Knotwork|left]] '''Side quests''' are standard-length quests that are not part of a questline and are not [[Skyrim:Daedric Quests|Daedric quests]]. Completing side quests generally increases the "Side Quests Completed" statistic in your journal and counts toward the [[#Achievements|Sideways]] [[Skyrim:Achievements|achievement]].
+
+Side quests are listed separately in your journal. Unlike [[Skyrim:Miscellaneous Quests|miscellaneous quests]], they are not subcategorized, and are logged in your journal after completion. Side quests can be identified by the side quest knotwork (pictured above left) displayed next to the quest title in your journal and on each quest's page on this wiki.
+
+Quests are sorted below by their usual starting location.
+
+==Cities==
+===[[Skyrim:Markarth|Markarth]]===
+* {{Quest Link|No One Escapes Cidhna Mine}}
+* {{Quest Link|The Forsworn Conspiracy}}
+* {{Quest Link|The Heart of Dibella}}
+* {{Quest Link|The Lost Expedition}}
+
+===[[Skyrim:Morthal|Morthal]]===
+* {{Quest Link|Laid to Rest}}
+* {{Quest Link|Rising at Dawn}}
+
+===[[Skyrim:Raven Rock|{{Anchor|Raven Rock}}]]{{DB|par=1}}===
+* {{Quest Link|A New Debt}}
+* {{Quest Link|Black Book: The Winds of Change (quest)}}
+* {{Quest Link|March of the Dead}}
+* {{Quest Link|Served Cold}}
+* {{Quest Link|The Final Descent}}
+
+===[[Skyrim:Riften|Riften]]===
+* {{Quest Link|Promises to Keep}}
+* {{Quest Link|The Book of Love}}
+* {{Quest Link|Unfathomable Depths}}
+
+===[[Skyrim:Solitude|Solitude]]===
+* {{Quest Link|Lights Out!}}
+* {{Quest Link|Tending the Flames}}
+* {{Quest Link|The Man Who Cried Wolf}}
+* {{Quest Link|The Wolf Queen Awakened}}
+
+===[[Skyrim:Whiterun|Whiterun]]===
+* {{Quest Link|In My Time Of Need}}
+* {{Quest Link|Missing In Action}}
+* {{Quest Link|The Blessings of Nature}}
+
+===[[Skyrim:Windhelm|Windhelm]]===
+* {{Quest Link|Blood on the Ice}}
+* {{Quest Link|Repairing the Phial}}
+* {{Quest Link|Rise in the East}}
+* {{Quest Link|The White Phial (quest)}}
+
+==Towns and Settlements==
+===[[Skyrim:Riverwood|Riverwood]]===
+* {{Quest Link|The Golden Claw}}
+
+===[[Skyrim:Skaal Village|{{Anchor|Skaal Village}}]]{{DB|par=1}}===
+* {{Quest Link|A New Source of Stalhrim}}
+* {{Quest Link|Filial Bonds}}
+* {{Quest Link|Lost Legacy}}
+
+===[[Skyrim:Tel Mithryn (settlement)|{{Anchor|Tel Mithryn}}]]{{DB|par=1}}===
+* {{Quest Link|Azra's Staffs}}
+* {{Quest Link|Black Book: The Hidden Twilight (quest)}}
+* {{Quest Link|Briarheart Necropsy}}
+* {{Quest Link|Experimental Subject (A)|Experimental Subject (A)}}
+* {{Quest Link|From the Ashes}}
+* {{Quest Link|Healing a House}}
+* {{Quest Link|Heart Stones}}
+* {{Quest Link|Lost Knowledge}}
+* {{Quest Link|Old Friends}}
+* {{Quest Link|Reluctant Steward}}
+* {{Quest Link|Telvanni Research}}
+* {{Quest Link|Wind and Sand (quest)}}
+
+===[[Skyrim:Thirsk Mead Hall|{{Anchor|Thirsk Mead Hall}}]]{{DB|par=1}}===
+* {{Quest Link|Retaking Thirsk}}
+* {{Quest Link|The Chief of Thirsk Hall}}
+
+===Other===
+* {{Quest Link|Delayed Burial}}
+** This quest is categorized as a Dark Brotherhood quest for most purposes; see details in the [[#Achievements|achievements]] section below.
+* {{Quest Link|Kyne's Sacred Trials}}
+
+==Dungeons==
+These quests generally start when you approach or explore the associated dungeons and progress to completion within each dungeon. Only dungeon quests that are counted as side quests are listed here. The [[Skyrim:Dungeon Quests|Dungeon Quests]] page provides a list of all dungeon quests, including both the below side quests and several additional miscellaneous quests.
+* {{Quest Link|A Scroll For Anska}}
+* {{Quest Link|Ancestral Worship}}
+* {{Quest Link|Evil in Waiting}}
+* {{Quest Link|Infiltration}}
+* {{Quest Link|Repentance}}
+* {{Quest Link|Siege on the Dragon Cult}}
+* {{Quest Link|Silenced Tongues}}
+* {{Quest Link|The Lost Expedition}}
+** This quest is also listed as a Markarth [[#Cities|city quest]] as the associated dungeon is within Markarth.
+* {{Quest Link|The Pale Lady}}
+
+==Other==
+* {{Quest Link|A Return To Your Roots}}
+* {{Quest Link|Black Book: Filament and Filigree (quest)}}
+* {{Quest Link|Black Book: The Sallow Regent (quest)}}
+* {{Quest Link|Black Book: Untold Legends (quest)}}
+* {{Quest Link|Deathbrand (quest)}}
+* {{Quest Link|Forbidden Legend}}
+** This quest is unique among side quests in that there are [[Skyrim:Forbidden Legend#A Key to the Past|multiple places]] from which it can be "normally started".
+* {{Quest Link|Impatience of a Saint}}
+* {{Quest Link|Lost to the Ages}}
+* {{Quest Link|The Ebony Warrior}}
+* {{Quest Link|Unearthed}}
+
+==Achievements==
+One [[Skyrim:Achievements|achievement]] is obtained by completing side quests:
+* {{achievement|Sideways}}
+** Completing any 10 qualifying side quests will unlock this achievement. Any quest that uses the side quest knotwork in your journal generally counts toward the achievement, but there are a few unusual cases:
+*** The Black Book side quests, [[Skyrim:Blood on the Ice|Blood on the Ice]], and [[Skyrim:Lost to the Ages|Lost to the Ages]] do not count toward the achievement, but are listed on this page and are treated as side quests in your journal.
+*** [[Skyrim:The Affairs of Hagravens|The Affairs of Hagravens]] counts toward the achievement, but is not listed on this page and is treated as a [[Skyrim:Miscellaneous Quests|miscellaneous quest]] in your journal.
+*** [[Skyrim:Delayed Burial|Delayed Burial]] is listed on this page and counts toward the achievement, but is otherwise categorized as a [[Skyrim:Dark Brotherhood|Dark Brotherhood]] quest and is marked in your journal with the Dark Brotherhood knotwork.
+*** [[Skyrim:Alteration Ritual Spell|Alteration Ritual Spell]] is not listed on this page and does not count toward the achievement, but is mistakenly marked in your journal with the side quest knotwork instead of the correct [[Skyrim:College of Winterhold (faction)|College of Winterhold]] knotwork.
+** In most cases where a quest has two possible conclusions, either ending will qualify toward the achievement. Exceptions include [[Skyrim:A Scroll For Anska|A Scroll For Anska]] and [[Skyrim:The Heart of Dibella|The Heart of Dibella]]. See the individual quest pages for details.
+** You can track your progress toward the achievement using the "Side Quests Completed" statistic on the "Quest" page of your journal's "General Stats".

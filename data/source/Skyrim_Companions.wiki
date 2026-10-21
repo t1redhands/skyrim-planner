@@ -1,0 +1,115 @@
+{{Trail|Factions}}
+{| style="float:right; padding-left:12px;"
+|-
+|[[File:SR-banner-Companions.png|80px]]
+|}
+{{About|the Companions faction|companions for the player|Followers}}
+The '''Companions''' are a group of warriors who take on private and public contracts for the people of Skyrim, and who purportedly carry on the tradition of the Five Hundred Companions of [[Skyrim:Ysgramor|Ysgramor]]. Although the two groups offer a similar service, the [[Lore:Fighters Guild|Fighters Guild]] historically had a strong presence in Skyrim until the Companions seemingly replaced it entirely in the [[Lore:Fourth Era|Fourth Era]]. They are based in the city of [[Skyrim:Whiterun|Whiterun]], within the mead hall Jorrvaskr. The most elite members are included in the Circle of Jorrvaskr, and the chief councilor and arbitrator is known as the Harbinger, after Ysgramor, the "harbinger of us all" and the only real recognized leader of the Companions. Each new Harbinger is chosen by the last.
+
+To learn more of the Companions and their history, see the [[Lore:Companions|lore article]].
+
+==[[Skyrim:Jorrvaskr|Jorrvaskr]]==
+The Companions' sanctuary is the Nordic longhouse just below [[Skyrim:Dragonsreach|Dragonsreach]], in the Winds District of [[Skyrim:Whiterun|Whiterun]]. This is an ancient and honored mead hall where generations of the Companions have met. According to local legend, Jorrvaskr is actually the oldest building in Whiterun. It existed alone on the mountain while the city was built up around it over the centuries. It features a main dining area, below which are the living quarters for the whelps and for the Circle and Harbinger.
+
+Outside, there is a training area, and close by is the [[SR:Skyforge|Skyforge]], where the Companions' weapons are formed. The forge itself is large, ancient, and built outside on a mountain, close to the sky. Below the Skyforge is a ceremonial area known as [[SR:The Underforge|The Underforge]], which is out of bounds except on rare occasions.
+
+==Membership==
+[[File:SR-npc-Companions.jpg|thumb|right|Members of The Circle at the initiation ceremony]]
+===Joining===
+*You may apply at their guild hall Jorrvaskr in Whiterun by speaking with [[Skyrim:Kodlak Whitemane|Kodlak Whitemane]].
+
+===Benefits===
+*Master level trainers in [[SR:Smithing|Smithing]], [[SR:Heavy Armor|Heavy Armor]], and [[SR:Two-handed|Two-handed]] 
+*Expert level trainers in [[SR:One-handed|One-handed]], [[SR:Block|Block]], and [[SR:Archery|Archery]] 
+*The ability to become a [[Skyrim:Lycanthropy|werewolf]]
+*[[Skyrim:Shield of Ysgramor|Shield of Ysgramor]] and [[Skyrim:Wuuthrad|Wuuthrad]]
+*Access to Skyforge Steel weapons and [[SR:Wolf Armor|Wolf Armor]]
+*Never-ending supply of [[SR:Radiant|Radiant]] quests
+*Improve the Skyforge to make [[SR:Ancient Nord|Ancient Nord]] armor and [[SR:Nord Hero (material)|Nord Hero]] weaponry after the quest line is completed.
+*Several members become possible [[SR:Followers|followers]] after the quest line is completed.
+*Followers who are also trainers can provide "free" training via an exploit: train with the follower, then trade the gold back. (Note: the Unofficial Skyrim Patch removes this exploit.)
+*The only way to learn all three words of the [[Skyrim:Fire Breath|Fire Breath]] [[Skyrim:Shouts|shout]] is to complete the first two primary quests.
+
+===Leadership===
+Once the Companions quest line has been finished, you are named Harbinger. This allows you to command most of the Companions to aid you in battle and to forge Ancient Nord Armor and Nord Hero weaponry at the Skyforge.
+
+==Quests==
+[[File:SR-qico-Companions.png|thumb|right|Companions knotwork as it appears in the [[SR:Quests|Journal]]]]
+=== Primary Quests ===
+The primary Companions quest line consists of six quests; multiple [[#Radiant Quests|radiant quests]] must also be completed over the course of the quest line.  Three [[Skyrim:Achievements|achievements]] (50 points; 2 Bronze and 1 Silver) are unlocked by the Companions quests.
+
+{| class=wikitable
+! Quest !! [[Skyrim:Achievements|Achievement]]
+|-
+| {{Quest Link|Take Up Arms}} || [[File:SR-achievement-Take Up Arms.png|20px|Take Up Arms]] 10 pts/Bronze
+|-
+|Complete 1 radiant quest.
+|-
+| {{Quest Link|Proving Honor}} ||
+|-
+|Complete 1 radiant quest.
+|-
+| {{Quest Link|The Silver Hand}} || [[File:SR-achievement-Blood Oath.png|20px|Blood Oath]] 10 pts/Bronze
+|-
+|Complete 2 radiant quests. First one from Aela the Huntress.
+|-
+| {{Quest Link|Blood's Honor}} ||
+|-
+| {{Quest Link|Purity of Revenge}} ||
+|-
+| {{Quest Link|Glory of the Dead}} || [[File:SR-achievement-Glory of the Dead.png|20px|Glory of the Dead]] 30 pts/Silver
+|}
+
+=== Radiant Quests===
+{{#define:radiantlinks|false}}
+''These quests are available after completing [[Skyrim:Take Up Arms|Take Up Arms]] and are repeatable:''
+*{{Quest Link|Animal Extermination (A)}} 
+*{{Quest Link|Animal Extermination (B)}}
+*{{Quest Link|Hired Muscle}} 
+*{{Quest Link|Trouble in Skyrim}} 
+*{{Quest Link|Family Heirloom}} 
+*{{Quest Link|Escaped Criminal}} 
+*{{Quest Link|Rescue Mission}} 
+''These quests are available after completing [[Skyrim:The Silver Hand|The Silver Hand]] and are repeatable. They become permanently unavailable after starting [[Skyrim:Blood's Honor|Blood's Honor]]'':
+*{{Quest Link|Striking the Heart}} 
+*{{Quest Link|Stealing Plans}} 
+*{{Quest Link|Retrieval}}
+''These quests are available after completing [[Skyrim:Glory of the Dead|Glory of the Dead]] and are repeatable:''
+*{{Quest Link|Totems of Hircine}} ''(This quest is only available while you are a [[Skyrim:Lycanthropy|werewolf]], and can only be done three times, after which all Totems will have been found. It counts as 1 for the '' "The Companions Quests Completed" ''[[Skyrim:Statistics#Quest|statistic]].)'' 
+*{{Quest Link|Purity}} ''(Only Vilkas and Farkas wish to be cleansed, so you can only do the quest twice. It counts as 1 for the '' "The Companions Quests Completed" ''[[Skyrim:Statistics#Quest|statistic]].)''
+*{{Quest Link|Dragon Seekers}} ''(This quest also requires you to have completed [[Skyrim:Dragon Rising|Dragon Rising]].)''
+
+=== Incomplete Quests===
+*Animal Pelt Collection - Your task for Aela would've been giving her a random number of pelts from a random animal.
+
+==People==
+{{People Table
+|{{People|title=The Circle|Kodlak Whitemane|(Harbinger)|Aela the Huntress|{{Service Icon|Follower}} {{Service Icon|Trainer|Archery|Expert}}|Farkas|{{Service Icon|Follower}} {{Service Icon|Trainer|Heavy Armor|Master}}|Skjor||Vilkas|{{Service Icon|Follower}} {{Service Icon|Trainer|Two-handed|Master}}}}
+|{{People|title=Members|Athis|{{Service Icon|Follower}} {{Service Icon|Trainer|One-handed|Expert}}|Njada Stonearm|{{Service Icon|Follower}} {{Service Icon|Trainer|Block|Expert}}|Ria|{{Service Icon|Follower}}|Torvar|{{Service Icon|Follower}}|Vignar Gray-Mane}}
+|{{People|title=Blacksmith|Eorlund Gray-Mane|{{Service Icon|Trainer|Smithing|Master}} {{Service Icon|Blacksmith}}}}
+{{People|title=Servants|Brill||Tilma the Haggard}}
+}}
+
+== Notes ==
+*Within the Companions exists [[Skyrim:The Circle|The Circle]], an inner sub-faction of the highest and most prominent members, all of whom are Werewolves.
+*When the game tells you to "Talk to the Companions leaders for work", this generally means Farkas, Vilkas, Aela and Skjor. However, not all of them will necessarily have jobs for you at this time, but at least two of them will.
+**If you finish the Companions questline and your [[Skyrim:Followers|follower]] is a member of the Circle, then the minor objective Talk to the Companions leaders for work will always point to your follower (along with the other members of The Circle) as well.
+*[[Skyrim:Arnbjorn|Arnbjorn]] and [[Skyrim:Hestla|Hestla]]{{DG}} are both former members of the Companions.
+*The Companions track [[Skyrim:Crime|crime]] separately from Whiterun and the rest of Skyrim, operating their own bounty system. Unlike a Whiterun bounty, your options for clearing it are more limited.{{vn|what can be done?}}
+*Between the primary quests, you are required to complete a defined number of radiant quests to progress and you can't do more until you complete the questline.
+**The first radiant quest after [[SR:Take Up Arms|Take Up Arms]] is determined when a new game starts. If the player wishes to switch it, they will have to start a new game.
+**Since The Silver Hand radiant quests are available for a short interval, it is possible to complete only 2 out of 3 per playthrough.
+
+== Bugs ==
+{{Bug|Paying off a crime against the Companions can prevent you from getting Companions quests properly.|OSP|1.9}}
+{{Bug|The reward amounts for radiant Companions quests do not progress as intended. Instead of progressing evenly from 100 gold for levels 1-9 up to 300 gold for levels 40 and above, the reward given is 100 for levels 1-9, 150 for levels 10-19, then 300 for levels 20 and above. The level is also based on when the player completed the previous quest (or level one for the first quest), not the player's level when receiving the quest or its reward.|USLEEP|3.0.3|trackerid=20007}}
+{{Bug|The Silver Hand radiant quests are available until the last stages of [[Skyrim:Purity of Revenge|Purity of Revenge]], in particular if you return to Whiterun before Vilkas and speak to Aela the Huntress to get a radiant quest. Note that you can't exploit this to get a third Silver Hand radiant quest, since Aela will offer such quest only if you previously completed just one radiant quest from the Silver Hand pool.|USKP|1.3.3|Those quests are no longer available once [[Skyrim:Purity of Revenge|Purity of Revenge]] begins.|trackerid=12948}}
+{{Bug|Radiant quests may be capable of generating save game bloat due to improperly handling the recycling of the quests whenever you visit Whiterun. In a long enough game, it could be possible to generate substantial amounts of dynamically created objects and NPCs which are never properly cleaned up, generating these potential bloat bombs.|USKP|2.0.0|In order to correct this, ALL of the CRxx quests now have an added stage 255 and the 4 capable of generating bloat now have a code to manually clean up their save bloat. The new stage 255 will be called by CycleRadiantQuests() in the Companions housekeeping script.}}
+**This bug occurs only while you joined the Companions, so it is best to join them as late as possible.
+{{Bug|Radiant [[Skyrim:World Interactions|world encounters]] for the Companions can cause the involved members to get pulled out of their normal crime factions which would then cause them to become permanently hostile to player werewolves even though they aren't supposed to be.|USLEEP|3.0.1}}
+{{Bug|The Silver Hand may respawn in their radiant locations after the Companions questline is finished.}}
+{{Bug|Skjor may appear alive and well after the Companions questline is finished, and may give you radiant quests as well.|confirmed=1}}
+{{Bug|Joining the Companions may allow you to take some of the display items in [[Skyrim:Belethor's General Goods|Belethor's General Goods]] for free.}}
+{{Bug|Sometimes the Companions' radiant quests remain completed after completion, instead of resetting, incorrectly increasing The Companions Quests Completed [[Skyrim:Statistics#Quest|statistic]].}}
+
+{{Skyrim Factions}}

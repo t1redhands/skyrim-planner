@@ -1,0 +1,124 @@
+[[fr:Skyrim:Quêtes]]{{Trail}} __NOTOC__
+[[File:SR-concept-WordWall.jpg|thumb|right|A [[Skyrim:Word Wall|Word Wall]] ([[Skyrim:Concept Art|concept art]])]]
+'''Quests''' are sorted below by their type or starting location.
+
+==Quests by Type==
+===Main Quest===
+{{Bullet Link|Main Quest|Walkthrough for all parts of the game's main quest}}
+
+===Faction Quests===
+{{Bullet Link|College of Winterhold (faction)#Quests|altname=College of Winterhold|All quests for the College of Winterhold}}
+{{Bullet Link|Companions#Quests|altname=Companions|All quests for the Companions}}
+{{Bullet Link|Dark Brotherhood#Quests|altname=Dark Brotherhood|All quests for the Dark Brotherhood}}
+{{Bullet Link|Imperial Legion#Quests|altname=Imperial Legion|All quests for the Imperial Legion}}
+{{Bullet Link|Stormcloaks#Quests|altname=Stormcloaks|All quests for the Stormcloaks}}
+{{Bullet Link|Thieves Guild (faction)#Quests|altname=Thieves Guild|All quests for the Thieves Guild}}
+
+===Other Quests===
+{{Bullet Link|Daedric Quests|All quests related to the [[Lore:Daedric Princes|Daedric Princes]]}}
+{{Bullet Link|Side Quests|All quests that are not part of a questline, including four [[Skyrim:Divine Quests|quests]] related to the [[Lore:Eight Divines|Eight Divines]], one quest for the [[Skyrim:Bards College#Quests|Bards College]], and nine [[Skyrim:Dungeon Quests|Dungeon Quests]]}}
+
+===Official Add-On and Creation Club Quests===
+{{Bullet Link|Dawnguard Quests|All quests added by the ''[[Skyrim:Dawnguard|Dawnguard]]'' add-on|mod=DG}}
+{{Bullet Link|[[:Category:Skyrim-Hearthfire-Quests|Hearthfire Quests]]|All quests added by the ''[[Skyrim:Hearthfire|Hearthfire]]'' add-on|mod=HF}}
+{{Bullet Link|Dragonborn Quests|All quests added by the ''[[Skyrim:Dragonborn|Dragonborn]]'' add-on|mod=DB}}
+{{Bullet Link|Creation Club Quests|All quests added by [[Skyrim:Creation Club|Creation Club]] Creations|mod=CC}}
+
+===Miscellaneous Quests===
+{{Bullet Link|Miscellaneous Quests|Most miscellaneous quests, i.e., short quests that are displayed in the "Miscellaneous" section of your journal}}
+{{Bullet Link|Thane Quests|Summary of miscellaneous quests related to becoming a Thane of the various holds of Skyrim, including relevant prerequisites and other information}}
+* Some additional varieties of miscellaneous quest not listed on the "Miscellaneous Quests" page above include:
+*{{Bullet Link|Bounty Quests|Miscellaneous quests involving hunting enemies for the Jarls for pay}}
+*{{Bullet Link|Dungeon Miscellaneous Quests|Miscellaneous quests related to specific dungeons}}
+*{{Bullet Link|Tutorials|Miscellaneous quests comprising lessons on the crafting skills}}
+
+==Quests by Location==
+===Cities===
+{{Bullet Link|Dawnstar#Quests Starting Here|altname=Dawnstar|All quests for the city of Dawnstar}}
+{{Bullet Link|Falkreath#Quests Starting Here|altname=Falkreath|All quests for the city of Falkreath}}
+{{Bullet Link|Markarth#Quests Starting Here|altname=Markarth|All quests for the city of Markarth}}
+{{Bullet Link|Morthal#Quests Starting Here|altname=Morthal|All quests for the city of Morthal}}
+{{Bullet Link|Raven Rock#Quests Starting Here|altname=Raven Rock|All quests for the city of Raven Rock|mod=DB}}
+{{Bullet Link|Riften#Quests Starting Here|altname=Riften|All quests for the city of Riften}}
+{{Bullet Link|Solitude#Quests Starting Here|altname=Solitude|All quests for the city of Solitude}}
+{{Bullet Link|Whiterun#Quests Starting Here|altname=Whiterun|All quests for the city of Whiterun}}
+{{Bullet Link|Windhelm#Quests Starting Here|altname=Windhelm|All quests for the city of Windhelm}}
+{{Bullet Link|Winterhold#Quests Starting Here|altname=Winterhold|All quests for the city of Winterhold}}
+
+===Towns===
+{{Bullet Link|Dragon Bridge#Quests Starting Here|altname=Dragon Bridge|Quests for the town of Dragon Bridge}}
+{{Bullet Link|Helgen#Related Quests|altname=Helgen|Quests for the town of Helgen}}
+{{Bullet Link|Ivarstead#Quests Starting Here|altname=Ivarstead|Quests for the town of Ivarstead}}
+{{Bullet Link|Karthwasten#Quests Starting Here|altname=Karthwasten|Quests for the town of Karthwasten}}
+{{Bullet Link|Riverwood#Quests Starting Here|altname=Riverwood|Quests for the town of Riverwood}}
+{{Bullet Link|Rorikstead#Quests Starting Here|altname=Rorikstead|Quests for the town of Rorikstead}}
+{{Bullet Link|Shor's Stone#Quests Starting Here|altname=Shor's Stone|Quests for the town of Shor's Stone}}
+{{Bullet Link|Skaal Village#Quests Starting Here|altname=Skaal Village|All quests for the town of Skaal Village|mod=DB}}
+
+===Settlements===
+{{Bullet Link|Darkwater Crossing#Quests Starting Here|altname=Darkwater Crossing|Quests for the settlement of Darkwater Crossing}}
+{{Bullet Link|Kynesgrove#Quests Starting Here|altname=Kynesgrove|Quests for the settlement of Kynesgrove}}
+{{Bullet Link|Old Hroldan Inn#Quests Starting Here|altname=Old Hroldan|Quests for the settlement of Old Hroldan}}
+{{Bullet Link|Stonehills#Quests Starting Here|altname=Stonehills|Quests for the settlement of Stonehills}}
+{{Bullet Link|Tel Mithryn (settlement)#Quests Starting Here|altname=Tel Mithryn|Quests for the settlement of Tel Mithryn|mod=DB}}
+{{Bullet Link|Thirsk Mead Hall#Quests Starting Here|altname=Thirsk Mead Hall|Quests for the settlement of Thirsk Mead Hall|mod=DB}}
+
+===Orc Strongholds===
+{{Bullet Link|Dushnikh Yal#Quests Starting Here|altname=Dushnikh Yal|Quests for the stronghold of Dushnikh Yal}}
+{{Bullet Link|Largashbur#Quests Starting Here|altname=Largashbur|Quests for the stronghold of Largashbur}}
+{{Bullet Link|Mor Khazgur#Quests Starting Here|altname=Mor Khazgur|Quests for the stronghold of Mor Khazgur}}
+{{Bullet Link|Narzulbur#Quests Starting Here|altname=Narzulbur|Quests for the stronghold of Narzulbur}}
+
+==Alphabetical List==
+{{Bullet Link|[[:Category:Skyrim-Quests|All Quests]]|An alphabetical list of all quests in the game}}
+
+==Quest Timing==
+{{Bullet Link|Quest Timing|The best times to perform certain quests}}
+{{Bullet Link|Leveled Item Quests|An alphabetical list of quests which are rewarded with a leveled item}}
+
+==Unfinished Quests==
+{{Bullet Link|Unfinished Quests|Quests that were not completed by Bethesda and are not available in the unmodded game}}
+
+==Achievements==
+[[Skyrim:Achievements|Achievements]] related to completing quests are:
+* 8 achievements are obtained by completing the [[Skyrim:Main Quest|main quest]]
+* 15 achievements are obtained by completing faction quests:
+** 3 for the [[Skyrim:College of Winterhold (faction)|College of Winterhold]]
+** 3 for the [[Skyrim:Companions|Companions]]
+** 3 for the [[Skyrim:Dark Brotherhood|Dark Brotherhood]]
+** 3 for the [[Skyrim:Thieves Guild (faction)|Thieves Guild]]
+** 3 can be obtained from either the [[Skyrim:Imperial Legion|Imperial Legion]] or the [[Skyrim:Stormcloaks|Stormcloaks]]
+* {{achievement|Sideways|link=1}}
+* {{achievement|Hero of the People|link=1}}
+
+==Knotwork==
+Some categories of quests can be distinguished by the decorative knotwork displayed alongside the quests' titles in your journal. Quests involving a choice between divergent factions (e.g., [[Skyrim:Bloodline|Bloodline]]) will display both knotworks, with one on the left (e.g., Volkihar Vampire) and the other on the right (e.g., Dawnguard).
+
+{| style="text-align:center"
+|+ '''Quest knotwork'''
+|[[File:SR-qico-College of Winterhold.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:College of Winterhold (faction)#Quests|College of Winterhold]] quests
+|[[File:SR-qico-Companions.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Companions#Quests|Companions]] quests
+|[[File:SR-qico-Daedric.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Daedric Quests|Daedric]] quests
+|-
+|[[File:SR-qico-Dark Brotherhood.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Dark Brotherhood#Quests|Dark Brotherhood]] quests
+|[[File:SR-qico-Dawnguard Dawnguard.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Dawnguard (faction)#Quests|Dawnguard]] quests
+|[[File:SR-qico-Main 2.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Dragonborn Quests|Dragonborn]] quests
+|-
+|[[File:SR-qico-Imperial Legion.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Imperial Legion#Quests|Imperial Legion]] quests
+|[[File:SR-qico-Main.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Main Quest|Main]] quests
+|[[File:SR-qico-Miscellaneous.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Side Quests|Side]] quests
+|-
+|[[File:SR-qico-Stormcloaks.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Stormcloaks#Quests|Stormcloaks]] quests
+|[[File:SR-qico-Thieves Guild.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Thieves Guild (faction)#Quests|Thieves Guild]] quests
+|[[File:SR-qico-Dawnguard Vampires.png|200x50px|frameless|class=imageInvert]]<br>[[Skyrim:Volkihar Vampire Clan#Quests|Volkihar Vampire]] quests
+|}
+
+==Bugs==
+{{Bug|Quests may disappear from the bottom of the list in your journal as other quests and objectives are added or completed. This affects both active and completed quests. Missing active quests are still active and may reappear if objectives are completed, but ''only'' the newly completed objectives will appear; old objectives, whether completed or not, won't be displayed. This typically occurs when your total quests (both active and complete) are well over 200.|confirmed=1|modnotes=Most likely, the limit is exactly 255 when you include completed miscellaneous quests. This is the maximum value that can be stored in a single byte.}}
+**It may be possible to mitigate this issue by completing the oldest active quests first. That way, only completed quests will disappear.
+**This bug can also be used to remove infinitely repeating quests such as [[Skyrim:The Dark Brotherhood Forever|The Dark Brotherhood Forever]] or "Talk to the Companions leaders for work" from your quest list. If you complete these quests early, they'll eventually disappear as you complete other quests.
+
+==See Also==
+{{Bullet Link|Activities|Gameplay activities, including certain favors for people, for which no information is displayed in your journal}}
+{{Bullet Link|World Interactions|Random events you may witness while exploring Skyrim, for which no information is displayed in your journal}}
+{{Bullet Link|[[Skyrim:Radiant|Radiant quests]]|About the Radiant quest system for dynamically generating quests}}
