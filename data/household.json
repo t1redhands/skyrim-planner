@@ -1,0 +1,2673 @@
+{
+ "license": "CC BY-SA 2.5; followers, marriage candidates and houses from UESP (https://en.uesp.net/wiki/Skyrim:Followers, https://en.uesp.net/wiki/Skyrim:Marriage, https://en.uesp.net/wiki/Skyrim:Houses), summarized.",
+ "asOf": "2026-10-21",
+ "followers": [
+  {
+   "id": "brelyna-maryon",
+   "name": "Brelyna Maryon",
+   "group": "College of Winterhold",
+   "dlc": "base",
+   "description": "A female Dunmer Mystic.",
+   "prereq": "Brelyna's Practice",
+   "skills": [
+    "alteration",
+    "illusion",
+    "conjuration",
+    "sneak"
+   ],
+   "skillsText": "Alteration, Illusion, Conjuration, Sneak",
+   "maxLevel": "30",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": [
+    "Brelyna's Practice"
+   ]
+  },
+  {
+   "id": "jzargo",
+   "name": "J'zargo",
+   "group": "College of Winterhold",
+   "dlc": "base",
+   "description": "A male Khajiit Sorcerer.",
+   "prereq": "J'zargo's Experiment",
+   "skills": [
+    "destruction",
+    "illusion",
+    "heavyArmor",
+    "oneHanded"
+   ],
+   "skillsText": "Destruction, Illusion, Heavy Armor, One-handed",
+   "maxLevel": "None",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "J'zargo's Experiment"
+   ]
+  },
+  {
+   "id": "onmund",
+   "name": "Onmund",
+   "group": "College of Winterhold",
+   "dlc": "base",
+   "description": "A male Nord Sorcerer.",
+   "prereq": "Onmund's Request",
+   "skills": [
+    "destruction",
+    "illusion",
+    "heavyArmor",
+    "oneHanded"
+   ],
+   "skillsText": "Destruction, Illusion, Heavy Armor, One-handed",
+   "maxLevel": "30",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": [
+    "Onmund's Request"
+   ]
+  },
+  {
+   "id": "aela-the-huntress",
+   "name": "Aela the Huntress",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A female Nord Thief and expert Archery trainer.",
+   "prereq": "",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "sneak",
+    "oneHanded",
+    "speech"
+   ],
+   "skillsText": "Archery, Light Armor, Sneak, One-handed, Speech",
+   "maxLevel": "50",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "athis",
+   "name": "Athis",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A male Dunmer Warrior (1H) and expert One-handed trainer.",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "farkas",
+   "name": "Farkas",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A male Nord of the Blacksmith class, and master Heavy Armor trainer.",
+   "prereq": "",
+   "skills": [
+    "smithing",
+    "speech",
+    "oneHanded",
+    "pickpocket"
+   ],
+   "skillsText": "Smithing, Speech, One-handed, Pickpocket",
+   "maxLevel": "50",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "njada-stonearm",
+   "name": "Njada Stonearm",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A female Nord Warrior (1H) and expert Block trainer.",
+   "prereq": "",
+   "skills": [
+    "block",
+    "oneHanded",
+    "speech",
+    "pickpocket"
+   ],
+   "skillsText": "Block, One-handed, Speech, Pickpocket",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "ria",
+   "name": "Ria",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A female Imperial Warrior (1H).",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "torvar",
+   "name": "Torvar",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A male Nord Warrior (1H).",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "vilkas",
+   "name": "Vilkas",
+   "group": "Companions",
+   "dlc": "base",
+   "description": "A male Nord Warrior (2H) and master Two-handed trainer.",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "cicero",
+   "name": "Cicero",
+   "group": "Dark Brotherhood",
+   "dlc": "base",
+   "description": "A male Imperial Assassin found at the Dawnstar Sanctuary.",
+   "prereq": "",
+   "skills": [
+    "oneHanded",
+    "sneak",
+    "archery",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Sneak, Archery, Light Armor",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "dark-brotherhood-initiate-female",
+   "name": "Dark Brotherhood Initiate (female)",
+   "group": "Dark Brotherhood",
+   "dlc": "base",
+   "description": "A Nord Assassin found at the Dawnstar Sanctuary.",
+   "prereq": "",
+   "skills": [
+    "oneHanded",
+    "sneak",
+    "archery",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Sneak, Archery, Light Armor",
+   "maxLevel": "100",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "dark-brotherhood-initiate-male",
+   "name": "Dark Brotherhood Initiate (male)",
+   "group": "Dark Brotherhood",
+   "dlc": "base",
+   "description": "A Nord Assassin found at the Dawnstar Sanctuary.",
+   "prereq": "",
+   "skills": [
+    "oneHanded",
+    "sneak",
+    "archery",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Sneak, Archery, Light Armor",
+   "maxLevel": "100",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "agmaer",
+   "name": "Agmaer",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A male Nord found in Fort Dawnguard. (Bandit class)",
+   "prereq": "",
+   "skills": [
+    "oneHanded",
+    "twoHanded",
+    "block",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Two-handed, Block, Light Armor",
+   "maxLevel": "25",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "beleval",
+   "name": "Beleval",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A female Bosmer found in Fort Dawnguard. (Bandit class)",
+   "prereq": "",
+   "skills": [
+    "oneHanded",
+    "twoHanded",
+    "block",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Two-handed, Block, Light Armor",
+   "maxLevel": "25",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "celann",
+   "name": "Celann",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A male Breton found in Fort Dawnguard. (Warrior(1H) class)",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "None",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "durak",
+   "name": "Durak",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A male Orc found in Fort Dawnguard. (Ranger class)",
+   "prereq": "",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "None",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "ingjard",
+   "name": "Ingjard",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A female Nord in Fort Dawnguard. (Warrior(2H) class)",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "None",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "serana",
+   "name": "Serana",
+   "group": "Dawnguard",
+   "dlc": "dawnguard",
+   "description": "A female Nord vampire found during the quest Awakening. Forced follower during Bloodline, Chasing Echoes, Beyond Death, Unseen Visions, Touching the Sky, Kindred Judgment. (Vampire class)",
+   "prereq": "",
+   "skills": [
+    "sneak",
+    "conjuration",
+    "lightArmor",
+    "oneHanded"
+   ],
+   "skillsText": "Sneak, Conjuration, Light Armor, One-handed",
+   "maxLevel": "50",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "frea",
+   "name": "Frea",
+   "group": "Dragonborn",
+   "dlc": "dragonborn",
+   "description": "A female Nord warrior from Skaal Village. Temporary follower during The Temple of Miraak.",
+   "prereq": "The Fate of the Skaal",
+   "skills": [
+    "oneHanded",
+    "alteration",
+    "lightArmor",
+    "restoration"
+   ],
+   "skillsText": "One-handed, Alteration, Light Armor, Restoration",
+   "maxLevel": "None",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "The Fate of the Skaal"
+   ]
+  },
+  {
+   "id": "talvas-fathryon",
+   "name": "Talvas Fathryon",
+   "group": "Dragonborn",
+   "dlc": "dragonborn",
+   "description": "A male Dunmer conjurer, spell merchant, and master Conjuration trainer found in Tel Mithryn.",
+   "prereq": "From the Ashes",
+   "skills": [
+    "conjuration",
+    "restoration",
+    "destruction",
+    "alteration",
+    "sneak"
+   ],
+   "skillsText": "Conjuration, Restoration, Destruction, Alteration, Sneak",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "From the Ashes"
+   ]
+  },
+  {
+   "id": "teldryn-sero",
+   "name": "Teldryn Sero",
+   "group": "Dragonborn",
+   "dlc": "dragonborn",
+   "description": "A male Dunmer Spellsword found in the Retching Netch in Raven Rock. Can be hired for 500 gold.",
+   "prereq": "None",
+   "skills": [
+    "oneHanded",
+    "lightArmor",
+    "destruction",
+    "conjuration"
+   ],
+   "skillsText": "One-handed, Light Armor, Destruction, Conjuration",
+   "maxLevel": "60",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "ralis-sedarys",
+   "name": "Ralis Sedarys",
+   "group": "Dragonborn",
+   "dlc": "dragonborn",
+   "description": "A male Dunmer miner initially found at Kolbjorn Barrow.",
+   "prereq": "Unearthed (in his favor)",
+   "skills": [
+    "oneHanded",
+    "lightArmor",
+    "block",
+    "sneak"
+   ],
+   "skillsText": "One-handed, Light Armor, Block, Sneak",
+   "maxLevel": "60",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "Unearthed"
+   ]
+  },
+  {
+   "id": "golldir",
+   "name": "Golldir",
+   "group": "Dungeon",
+   "dlc": "base",
+   "description": "A male Nord Warrior (1H) found in Hillgrund's Tomb.",
+   "prereq": "Ancestral Worship",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "Ancestral Worship"
+   ]
+  },
+  {
+   "id": "illia",
+   "name": "Illia",
+   "group": "Dungeon",
+   "dlc": "base",
+   "description": "A female Imperial Mage found in Darklight Tower.",
+   "prereq": "Repentance",
+   "skills": [
+    "destruction",
+    "restoration",
+    "alteration",
+    "conjuration"
+   ],
+   "skillsText": "Destruction, Restoration, Alteration, Conjuration",
+   "maxLevel": "40",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "Repentance"
+   ]
+  },
+  {
+   "id": "belrand",
+   "name": "Belrand",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A male Nord Spellsword found in the Winking Skeever in Solitude.",
+   "prereq": "",
+   "skills": [
+    "destruction",
+    "lightArmor",
+    "oneHanded",
+    "restoration"
+   ],
+   "skillsText": "Destruction, Light Armor, One-handed, Restoration",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "erik-the-slayer",
+   "name": "Erik the Slayer",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A male Nord Barbarian found in Rorikstead at the Frostfruit Inn after completing his quest.",
+   "prereq": "",
+   "skills": [
+    "lightArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Light Armor, Two-handed, Archery, Block",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "jenassa",
+   "name": "Jenassa",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A female Dunmer Ranger found inside the Drunken Huntsman in Whiterun.",
+   "prereq": "",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "marcurio",
+   "name": "Marcurio",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A male Imperial Destruction Mage found at The Bee and Barb in Riften.",
+   "prereq": "",
+   "skills": [
+    "destruction",
+    "restoration",
+    "alteration",
+    "sneak"
+   ],
+   "skillsText": "Destruction, Restoration, Alteration, Sneak",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "stenvar",
+   "name": "Stenvar",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A male Nord Warrior (2H) in Windhelm (usually on the second floor of Candlehearth Hall).",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "vorstag",
+   "name": "Vorstag",
+   "group": "Hirelings",
+   "dlc": "base",
+   "description": "A male Nord Warrior (1H) found at the Silver-Blood Inn in Markarth.",
+   "prereq": "",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "argis-the-bulwark",
+   "name": "Argis the Bulwark",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A male Nord found in Markarth.",
+   "prereq": "Become Thane of the Reach",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "calder",
+   "name": "Calder",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A male Nord found in Windhelm.",
+   "prereq": "Become Thane of Eastmarch",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "gregor",
+   "name": "Gregor",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A male Nord found in Dawnstar.",
+   "prereq": "Become Thane of the Pale",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "iona",
+   "name": "Iona",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A female Nord found in Riften.",
+   "prereq": "Become Thane of the Rift",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "jordis-the-sword-maiden",
+   "name": "Jordis the Sword-Maiden",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A female Nord found in Solitude.",
+   "prereq": "Become Thane of Haafingar",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "lydia",
+   "name": "Lydia",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A female Nord found in Whiterun.",
+   "prereq": "Dragon Rising",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": [
+    "Dragon Rising"
+   ]
+  },
+  {
+   "id": "rayya",
+   "name": "Rayya",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A female Redguard found in Falkreath.",
+   "prereq": "Become Thane of Falkreath",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "valdimar",
+   "name": "Valdimar",
+   "group": "Housecarls",
+   "dlc": "base",
+   "description": "A male Nord found in Morthal.",
+   "prereq": "Become Thane of Hjaalmarch",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "alteration",
+    "destruction",
+    "restoration"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Alteration, Destruction, Restoration",
+   "maxLevel": "50",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "borgakh-the-steel-heart",
+   "name": "Borgakh the Steel Heart",
+   "group": "Orc Stronghold",
+   "dlc": "base",
+   "description": "A female Orc Warrior found in Mor Khazgur.",
+   "prereq": "Pay her dowry or pass a persuade check.",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "sneak"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Sneak",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "ghorbash-the-iron-hand",
+   "name": "Ghorbash the Iron Hand",
+   "group": "Orc Stronghold",
+   "dlc": "base",
+   "description": "A male Orc Ranger found in Dushnikh Yal.",
+   "prereq": "Convince him (via brawl, persuade check, or bribe).",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "lob",
+   "name": "Lob",
+   "group": "Orc Stronghold",
+   "dlc": "base",
+   "description": "A male Orc Ranger found in Largashbur.",
+   "prereq": "The Cursed Tribe",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "The Cursed Tribe"
+   ]
+  },
+  {
+   "id": "ogol",
+   "name": "Ogol",
+   "group": "Orc Stronghold",
+   "dlc": "base",
+   "description": "A male Orc Warrior found in Largashbur.",
+   "prereq": "The Cursed Tribe",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "sneak"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Sneak",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "The Cursed Tribe"
+   ]
+  },
+  {
+   "id": "ugor",
+   "name": "Ugor",
+   "group": "Orc Stronghold",
+   "dlc": "base",
+   "description": "A female Orc Ranger in Largashbur.",
+   "prereq": "The Cursed Tribe",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "The Cursed Tribe"
+   ]
+  },
+  {
+   "id": "adelaisa-vendicci",
+   "name": "Adelaisa Vendicci",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Imperial who works for the East Empire Company.",
+   "prereq": "Rise in the East",
+   "skills": [
+    "alchemy",
+    "enchanting",
+    "smithing",
+    "archery",
+    "lightArmor",
+    "oneHanded",
+    "sneak",
+    "speech"
+   ],
+   "skillsText": "Alchemy, Enchanting, Smithing, Archery, Light Armor, One-handed, Sneak, Speech",
+   "maxLevel": "25",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "Rise in the East"
+   ]
+  },
+  {
+   "id": "ahtar",
+   "name": "Ahtar",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Redguard Warrior who is found in Solitude.",
+   "prereq": "Kill the Bandit Leader",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "annekke-crag-jumper",
+   "name": "Annekke Crag-Jumper",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Nord Ranger found in Darkwater Crossing.",
+   "prereq": "Kill the Bandit Leader",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "aranea-ienith",
+   "name": "Aranea Ienith",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Dunmer Conjuration Mage found at the Shrine of Azura.",
+   "prereq": "The Black Star (in her favor)",
+   "skills": [
+    "destruction",
+    "restoration",
+    "alteration",
+    "conjuration"
+   ],
+   "skillsText": "Destruction, Restoration, Alteration, Conjuration",
+   "maxLevel": "30",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "The Black Star"
+   ]
+  },
+  {
+   "id": "benor",
+   "name": "Benor",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Nord Warrior found in Morthal.",
+   "prereq": "Fight! Fight!",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "cosnach",
+   "name": "Cosnach",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "An alcoholic male Breton Warrior (1H) found in Markarth.",
+   "prereq": "Quest all Drunks Have (or) Fight! Fight!",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "derkeethus",
+   "name": "Derkeethus",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Argonian Ranger found in Darkwater Pass.",
+   "prereq": "Extracting an Argonian",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "block",
+    "oneHanded"
+   ],
+   "skillsText": "Archery, Light Armor, Block, One-handed",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": false,
+   "quests": [
+    "Extracting an Argonian"
+   ]
+  },
+  {
+   "id": "eola",
+   "name": "Eola",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Breton Nightblade found in Markarth's Hall of the Dead.",
+   "prereq": "The Taste of Death",
+   "skills": [
+    "destruction",
+    "sneak",
+    "alteration",
+    "oneHanded"
+   ],
+   "skillsText": "Destruction, Sneak, Alteration, One-handed",
+   "maxLevel": "30",
+   "moral": "Will commit any crime",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "The Taste of Death"
+   ]
+  },
+  {
+   "id": "erandur",
+   "name": "Erandur",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Dunmer Priest found in Dawnstar.",
+   "prereq": "Waking Nightmare (in his favor)",
+   "skills": [
+    "restoration",
+    "speech",
+    "alchemy",
+    "conjuration",
+    "smithing"
+   ],
+   "skillsText": "Restoration, Speech, Alchemy, Conjuration, Smithing",
+   "maxLevel": "50",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "Waking Nightmare"
+   ]
+  },
+  {
+   "id": "faendal",
+   "name": "Faendal",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Bosmer Thief found in Riverwood. He is a common Archery trainer.",
+   "prereq": "A Lovely Letter (in his favor)",
+   "skills": [
+    "archery",
+    "lightArmor",
+    "sneak",
+    "oneHanded",
+    "speech"
+   ],
+   "skillsText": "Archery, Light Armor, Sneak, One-handed, Speech",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "A Lovely Letter"
+   ]
+  },
+  {
+   "id": "kharjo",
+   "name": "Kharjo",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Khajiit Warrior traveling between cities in Ahkari's Khajiit caravan.",
+   "prereq": "Amulet of the Moon",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": []
+  },
+  {
+   "id": "mjoll-the-lioness",
+   "name": "Mjoll the Lioness",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Nord Warrior found in Riften.",
+   "prereq": "Grimsever's Return",
+   "skills": [
+    "heavyArmor",
+    "twoHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, Two-handed, Archery, Block",
+   "maxLevel": "40",
+   "moral": "Will commit any crime",
+   "marry": true,
+   "steward": false,
+   "quests": [
+    "Grimsever's Return"
+   ]
+  },
+  {
+   "id": "roggi-knot-beard",
+   "name": "Roggi Knot-Beard",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Nord Miner found in Kynesgrove.",
+   "prereq": "Dungeon Delving (Caves)",
+   "skills": [
+    "alchemy",
+    "enchanting",
+    "smithing",
+    "archery",
+    "oneHanded",
+    "twoHanded"
+   ],
+   "skillsText": "Alchemy, Enchanting, Smithing, Archery, One-handed, Two-handed",
+   "maxLevel": "20",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "sven",
+   "name": "Sven",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A male Nord Bard found in Riverwood.",
+   "prereq": "A Lovely Letter (in his favor)",
+   "skills": [
+    "alchemy",
+    "enchanting",
+    "smithing",
+    "archery",
+    "oneHanded",
+    "twoHanded"
+   ],
+   "skillsText": "Alchemy, Enchanting, Smithing, Archery, One-handed, Two-handed",
+   "maxLevel": "20",
+   "moral": "Will steal, but not attack people",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "A Lovely Letter"
+   ]
+  },
+  {
+   "id": "uthgerd-the-unbroken",
+   "name": "Uthgerd the Unbroken",
+   "group": "Miscellaneous",
+   "dlc": "base",
+   "description": "A female Nord Warrior found in The Bannered Mare in Whiterun.",
+   "prereq": "Fight! Fight!",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block",
+   "maxLevel": "30",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": []
+  },
+  {
+   "id": "hand-ethra-mavandas",
+   "name": "Hand Ethra Mavandas",
+   "group": "Creation Club",
+   "dlc": "cc",
+   "description": "A female Dunmer \"dremora\", found in Ashfall's Tear.",
+   "prereq": "Ashen Heart",
+   "skills": [
+    "oneHanded",
+    "twoHanded",
+    "block",
+    "heavyArmor"
+   ],
+   "skillsText": "One-handed, Two-handed, Block, Heavy Armor",
+   "maxLevel": "100",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "Ashen Heart"
+   ]
+  },
+  {
+   "id": "hand-kydren-indobar",
+   "name": "Hand Kydren Indobar",
+   "group": "Creation Club",
+   "dlc": "cc",
+   "description": "A male Dunmer \"dremora\", found in Ashfall's Tear.",
+   "prereq": "Ashen Heart",
+   "skills": [
+    "oneHanded",
+    "twoHanded",
+    "block",
+    "heavyArmor"
+   ],
+   "skillsText": "One-handed, Two-handed, Block, Heavy Armor",
+   "maxLevel": "100",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "Ashen Heart"
+   ]
+  },
+  {
+   "id": "rulnik-wind-strider",
+   "name": "Rulnik Wind-Strider",
+   "group": "Creation Club",
+   "dlc": "cc",
+   "description": "A male Nord Sorcerer, found in the Temple of Kynareth.",
+   "prereq": "A Dying Wish",
+   "skills": [
+    "destruction",
+    "illusion",
+    "heavyArmor",
+    "oneHanded"
+   ],
+   "skillsText": "Destruction, Illusion, Heavy Armor, One-handed",
+   "maxLevel": "75",
+   "moral": "Will not commit crimes",
+   "marry": true,
+   "steward": true,
+   "quests": [
+    "A Dying Wish"
+   ]
+  },
+  {
+   "id": "vesparth-the-toe",
+   "name": "Vesparth the Toe",
+   "group": "Creation Club",
+   "dlc": "cc",
+   "description": "A female Dunmer Warrior, found in Ashfall's Tear.",
+   "prereq": "Ashen Heart",
+   "skills": [
+    "heavyArmor",
+    "oneHanded",
+    "archery",
+    "block",
+    "twoHanded"
+   ],
+   "skillsText": "Heavy Armor, One-handed, Archery, Block, Two-handed",
+   "maxLevel": "100",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": true,
+   "quests": [
+    "Ashen Heart"
+   ]
+  },
+  {
+   "id": "watchman-sindras",
+   "name": "Watchman Sindras",
+   "group": "Creation Club",
+   "dlc": "cc",
+   "description": "A male Dunmer \"blade binder\" warrior, found in Ashfall's Tear.",
+   "prereq": "Ashen Heart",
+   "skills": [
+    "oneHanded",
+    "conjuration",
+    "destruction",
+    "sneak",
+    "lightArmor"
+   ],
+   "skillsText": "One-handed, Conjuration, Destruction, Sneak, Light Armor",
+   "maxLevel": "100",
+   "moral": "Will not commit crimes",
+   "marry": false,
+   "steward": false,
+   "quests": [
+    "Ashen Heart"
+   ]
+  }
+ ],
+ "spouses": [
+  {
+   "id": "aela-the-huntress",
+   "name": "Aela the Huntress",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "Bed (Jorrvaskr)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "Archery (Expert)",
+   "trainerSkills": [
+    "archery"
+   ],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "aeri",
+   "name": "Aeri",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Anga's Mill",
+   "home": "Aeri's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Chop Wood or Delivery",
+   "quests": []
+  },
+  {
+   "id": "anwen",
+   "name": "Anwen",
+   "role": "wife",
+   "race": "Redguard",
+   "location": "Markarth (Temple of Dibella)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete The Heart of Dibella",
+   "quests": [
+    "The Heart of Dibella"
+   ]
+  },
+  {
+   "id": "avrusa-sarethi",
+   "name": "Avrusa Sarethi",
+   "role": "wife",
+   "race": "Dark Elf",
+   "location": "Sarethi Farm",
+   "home": "Sarethi Farm",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Gather Wheat or Smooth Jazbay",
+   "quests": [
+    "Smooth Jazbay"
+   ]
+  },
+  {
+   "id": "borgakh-the-steel-heart",
+   "name": "Borgakh the Steel Heart",
+   "role": "wife",
+   "race": "Orc",
+   "location": "Mor Khazgur",
+   "home": "Larak's Longhouse",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Convince her to become a Follower",
+   "quests": []
+  },
+  {
+   "id": "brelyna-maryon",
+   "name": "Brelyna Maryon",
+   "role": "wife",
+   "race": "Dark Elf",
+   "location": "Winterhold (College of Winterhold)",
+   "home": "Bed (Hall of Attainment)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favors in Brelyna's Practice",
+   "quests": [
+    "Brelyna's Practice"
+   ]
+  },
+  {
+   "id": "camilla-valerius",
+   "name": "Camilla Valerius",
+   "role": "wife",
+   "race": "Imperial",
+   "location": "Riverwood (Riverwood Trader)",
+   "home": "Riverwood Trader",
+   "follower": false,
+   "merchant": "General*",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete The Golden Claw",
+   "quests": [
+    "The Golden Claw"
+   ]
+  },
+  {
+   "id": "dravynea-the-stoneweaver",
+   "name": "Dravynea the Stoneweaver",
+   "role": "wife",
+   "race": "Dark Elf",
+   "location": "Kynesgrove (Braidwood Inn)",
+   "home": "Bed (Braidwood Inn)",
+   "follower": false,
+   "merchant": "Spell",
+   "trainer": "Alteration (Expert)",
+   "trainerSkills": [
+    "alteration"
+   ],
+   "condition": "Complete her favor: Dravynea's Frost Salts",
+   "quests": [
+    "Dravynea's Frost Salts"
+   ]
+  },
+  {
+   "id": "ghorza-gra-bagol",
+   "name": "Ghorza gra-Bagol",
+   "role": "wife",
+   "race": "Orc",
+   "location": "Markarth (Blacksmith Shed)",
+   "home": "",
+   "follower": false,
+   "merchant": "Blacksmith",
+   "trainer": "Smithing (Common)",
+   "trainerSkills": [
+    "smithing"
+   ],
+   "condition": "Complete her favor: Skilled Apprenticeship",
+   "quests": [
+    "Skilled Apprenticeship"
+   ]
+  },
+  {
+   "id": "gilfre",
+   "name": "Gilfre",
+   "role": "wife",
+   "race": "Imperial",
+   "location": "Mixwater Mill",
+   "home": "Gilfre's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Work for her by chopping firewood",
+   "quests": []
+  },
+  {
+   "id": "hilund",
+   "name": "Hilund",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Thirsk Mead Hall",
+   "home": "Bed (Thirsk Mead Hall)",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Hilund Favor Quest",
+   "quests": [
+    "Hilund Favor Quest"
+   ]
+  },
+  {
+   "id": "iona",
+   "name": "Iona",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Riften (Honeyside)",
+   "home": "Bed (Honeyside)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become Thane of the Rift",
+   "quests": []
+  },
+  {
+   "id": "jenassa",
+   "name": "Jenassa",
+   "role": "wife",
+   "race": "Dark Elf",
+   "location": "Whiterun (The Drunken Huntsman)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Hire her at least once",
+   "quests": []
+  },
+  {
+   "id": "jordis-the-sword-maiden",
+   "name": "Jordis the Sword-Maiden",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Solitude (Proudspire Manor)",
+   "home": "Bed (Proudspire Manor)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become Thane of Haafingar",
+   "quests": []
+  },
+  {
+   "id": "lydia",
+   "name": "Lydia",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Whiterun (Dragonsreach or Breezehome)",
+   "home": "Bed (Breezehome)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Dragon Rising and purchase Breezehome.",
+   "quests": [
+    "Dragon Rising"
+   ]
+  },
+  {
+   "id": "mjoll-the-lioness",
+   "name": "Mjoll the Lioness",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Riften",
+   "home": "Aerin's House",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Grimsever's Return",
+   "quests": [
+    "Grimsever's Return"
+   ]
+  },
+  {
+   "id": "morwen",
+   "name": "Morwen",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Skaal Village",
+   "home": "Morwen's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Skaal Village Dialogue",
+   "quests": [
+    "Skaal Village Dialogue"
+   ]
+  },
+  {
+   "id": "muiri",
+   "name": "Muiri",
+   "role": "wife",
+   "race": "Breton",
+   "location": "Markarth (The Hag's Cure)",
+   "home": "The Hag's Cure",
+   "follower": false,
+   "merchant": "Apothecary*",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Mourning Never Comes \u2022 Player must kill Nilsine as well. \u2022 Must be proprietor of the store to sell Apothecary merchandise.",
+   "quests": [
+    "Mourning Never Comes"
+   ]
+  },
+  {
+   "id": "njada-stonearm",
+   "name": "Njada Stonearm",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "Block (Expert)",
+   "trainerSkills": [
+    "block"
+   ],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "orla",
+   "name": "Orla",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Markarth (Temple of Dibella)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete The Heart of Dibella",
+   "quests": [
+    "The Heart of Dibella"
+   ]
+  },
+  {
+   "id": "rayya",
+   "name": "Rayya",
+   "role": "wife",
+   "race": "Redguard",
+   "location": "Falkreath (Jarl's Longhouse)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become Thane of Falkreath",
+   "quests": []
+  },
+  {
+   "id": "ria",
+   "name": "Ria",
+   "role": "wife",
+   "race": "Imperial",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "senna",
+   "name": "Senna",
+   "role": "wife",
+   "race": "Breton",
+   "location": "Markarth (Temple of Dibella)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete The Heart of Dibella",
+   "quests": [
+    "The Heart of Dibella"
+   ]
+  },
+  {
+   "id": "shahvee",
+   "name": "Shahvee",
+   "role": "wife",
+   "race": "Argonian",
+   "location": "Windhelm (Argonian Assemblage)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Retrieve Shahvee's Amulet of Zenithar",
+   "quests": []
+  },
+  {
+   "id": "sylgja",
+   "name": "Sylgja",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Shor's Stone",
+   "home": "Sylgja's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Special Delivery",
+   "quests": []
+  },
+  {
+   "id": "taarie",
+   "name": "Taarie",
+   "role": "wife",
+   "race": "High Elf",
+   "location": "Solitude (Radiant Raiment)",
+   "home": "",
+   "follower": false,
+   "merchant": "General",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Fit for a Jarl",
+   "quests": [
+    "Fit for a Jarl"
+   ]
+  },
+  {
+   "id": "temba-wide-arm",
+   "name": "Temba Wide-Arm",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Ivarstead",
+   "home": "Bed (Vilemyr Inn)",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete her favor: Chop Wood or Grin and Bear It",
+   "quests": [
+    "Grin and Bear It"
+   ]
+  },
+  {
+   "id": "uthgerd-the-unbroken",
+   "name": "Uthgerd the Unbroken",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Whiterun (The Bannered Mare)",
+   "home": "Uthgerd's House",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Challenge her to a brawl and win",
+   "quests": []
+  },
+  {
+   "id": "viola-giordano",
+   "name": "Viola Giordano",
+   "role": "wife",
+   "race": "Imperial",
+   "location": "Windhelm (Candlehearth Hall)",
+   "home": "Viola Giordano's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Rat out Revyn Sadri during his favor",
+   "quests": []
+  },
+  {
+   "id": "ysolda",
+   "name": "Ysolda",
+   "role": "wife",
+   "race": "Nord",
+   "location": "Whiterun (Open Market)",
+   "home": "Ysolda's House",
+   "follower": false,
+   "merchant": "General",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Bring her one Mammoth Tusk as a favor",
+   "quests": []
+  },
+  {
+   "id": "ainethach",
+   "name": "Ainethach",
+   "role": "husband",
+   "race": "Breton",
+   "location": "Karthwasten",
+   "home": "Karthwasten Hall",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Clear Sanuarach Mine of mercenaries",
+   "quests": [
+    "Sanuarach Mine"
+   ]
+  },
+  {
+   "id": "angrenor-once-honored",
+   "name": "Angrenor Once-Honored",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Windhelm (Candlehearth Hall)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Take pity by giving him a gold piece",
+   "quests": []
+  },
+  {
+   "id": "argis-the-bulwark",
+   "name": "Argis the Bulwark",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Markarth (Vlindrel Hall)",
+   "home": "Bed (Vlindrel Hall)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become Thane of the Reach",
+   "quests": []
+  },
+  {
+   "id": "athis",
+   "name": "Athis",
+   "role": "husband",
+   "race": "Dark Elf",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "One-handed (Expert)",
+   "trainerSkills": [
+    "oneHanded"
+   ],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "balimund",
+   "name": "Balimund",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Riften",
+   "home": "The Scorched Hammer",
+   "follower": false,
+   "merchant": "Blacksmith",
+   "trainer": "Smithing (Expert)",
+   "trainerSkills": [
+    "smithing"
+   ],
+   "condition": "Complete his favor: Stoking the Flames",
+   "quests": [
+    "Stoking the Flames"
+   ]
+  },
+  {
+   "id": "belrand",
+   "name": "Belrand",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Solitude (The Winking Skeever)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Hire him at least once",
+   "quests": []
+  },
+  {
+   "id": "benor",
+   "name": "Benor",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Morthal",
+   "home": "Bed (Morthal Guardhouse)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Challenge him to a brawl and win",
+   "quests": []
+  },
+  {
+   "id": "calder",
+   "name": "Calder",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Windhelm (Hjerim)",
+   "home": "Bed (Hjerim)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become Thane of Eastmarch",
+   "quests": []
+  },
+  {
+   "id": "cosnach",
+   "name": "Cosnach",
+   "role": "husband",
+   "race": "Breton",
+   "location": "Markarth (Silver-Blood Inn)",
+   "home": "Bed (Silver-Blood Inn)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Challenge him to a brawl and win",
+   "quests": []
+  },
+  {
+   "id": "derkeethus",
+   "name": "Derkeethus",
+   "role": "husband",
+   "race": "Argonian",
+   "location": "Darkwater Crossing",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Find and rescue him",
+   "quests": []
+  },
+  {
+   "id": "farkas",
+   "name": "Farkas",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "Bed (Jorrvaskr)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "Heavy Armor (Master)",
+   "trainerSkills": [
+    "heavyArmor"
+   ],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "filnjar",
+   "name": "Filnjar",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Shor's Stone",
+   "home": "Filnjar's House",
+   "follower": false,
+   "merchant": "Blacksmith",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Mine or Yours",
+   "quests": [
+    "Mine or Yours"
+   ]
+  },
+  {
+   "id": "gat-gro-shargakh",
+   "name": "Gat gro-Shargakh",
+   "role": "husband",
+   "race": "Orc",
+   "location": "Left Hand Mine/Kolskeggr Mine",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Clear Kolskeggr Mine for Pavo Attius",
+   "quests": [
+    "Kolskeggr Mine"
+   ]
+  },
+  {
+   "id": "ghorbash-the-iron-hand",
+   "name": "Ghorbash the Iron Hand",
+   "role": "husband",
+   "race": "Orc",
+   "location": "Dushnikh Yal",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Convince him to become a follower",
+   "quests": []
+  },
+  {
+   "id": "gregor",
+   "name": "Gregor",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Heljarchen Hall",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become thane of the Pale",
+   "quests": []
+  },
+  {
+   "id": "halbarn-iron-fur",
+   "name": "Halbarn Iron-Fur",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Thirsk Mead Hall",
+   "home": "Bed (Thirsk Mead Hall)",
+   "follower": false,
+   "merchant": "Blacksmith",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: Halbarn Favor Quest",
+   "quests": [
+    "Halbarn Favor Quest"
+   ]
+  },
+  {
+   "id": "marcurio",
+   "name": "Marcurio",
+   "role": "husband",
+   "race": "Imperial",
+   "location": "Riften (The Bee and Barb)",
+   "home": "Bed (The Bee and Barb)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Hire him at least once",
+   "quests": []
+  },
+  {
+   "id": "moth-gro-bagol",
+   "name": "Moth gro-Bagol",
+   "role": "husband",
+   "race": "Orc",
+   "location": "Markarth (Understone Keep)",
+   "home": "Bed (Understone Keep)",
+   "follower": false,
+   "merchant": "Blacksmith",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: Coated in Blood",
+   "quests": [
+    "Coated in Blood"
+   ]
+  },
+  {
+   "id": "octieve-san",
+   "name": "Octieve San",
+   "role": "husband",
+   "race": "Breton",
+   "location": "Solitude",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: A Few Words...",
+   "quests": []
+  },
+  {
+   "id": "omluag",
+   "name": "Omluag",
+   "role": "husband",
+   "race": "Breton",
+   "location": "Markarth (Smelter)",
+   "home": "Bed (The Warrens)",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: A Few Words...",
+   "quests": []
+  },
+  {
+   "id": "onmund",
+   "name": "Onmund",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Winterhold (College of Winterhold)",
+   "home": "Bed (Hall of Attainment)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: Onmund's Request",
+   "quests": [
+    "Onmund's Request"
+   ]
+  },
+  {
+   "id": "pavo-attius",
+   "name": "Pavo Attius",
+   "role": "husband",
+   "race": "Imperial",
+   "location": "Left Hand Mine/Kolskeggr Mine",
+   "home": "Pavo's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Clear Kolskeggr Mine for him",
+   "quests": [
+    "Kolskeggr Mine"
+   ]
+  },
+  {
+   "id": "perth",
+   "name": "Perth",
+   "role": "husband",
+   "race": "Breton",
+   "location": "Soljund's Sinkhole",
+   "home": "Bed (Miner's House)",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Clear Soljund's Sinkhole for him",
+   "quests": [
+    "Soljund's Sinkhole"
+   ]
+  },
+  {
+   "id": "quintus-navale",
+   "name": "Quintus Navale",
+   "role": "husband",
+   "race": "Imperial",
+   "location": "Windhelm (The White Phial)",
+   "home": "",
+   "follower": false,
+   "merchant": "Apothecary*",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Repairing the Phial",
+   "quests": [
+    "Repairing the Phial"
+   ]
+  },
+  {
+   "id": "revyn-sadri",
+   "name": "Revyn Sadri",
+   "role": "husband",
+   "race": "Dark Elf",
+   "location": "Windhelm (Sadri's Used Wares)",
+   "home": "Sadri's Used Wares",
+   "follower": false,
+   "merchant": "General",
+   "trainer": "Speech (Common)",
+   "trainerSkills": [
+    "speech"
+   ],
+   "condition": "Complete his favor: Plant a stolen item",
+   "quests": []
+  },
+  {
+   "id": "roggi-knot-beard",
+   "name": "Roggi Knot-Beard",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Kynesgrove",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Retrieve Roggi's Ancestral Shield",
+   "quests": []
+  },
+  {
+   "id": "romlyn-dreth",
+   "name": "Romlyn Dreth",
+   "role": "husband",
+   "race": "Dark Elf",
+   "location": "Riften (Black-Briar Meadery)",
+   "home": "Romlyn Dreth's House",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: Under the Table",
+   "quests": [
+    "Under the Table"
+   ]
+  },
+  {
+   "id": "rulnik-wind-strider",
+   "name": "Rulnik Wind-Strider",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Whiterun (Temple of Kynareth)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Choose the Altar of Nothing during A Dying Wish",
+   "quests": [
+    "A Dying Wish"
+   ]
+  },
+  {
+   "id": "scouts-many-marshes",
+   "name": "Scouts-Many-Marshes",
+   "role": "husband",
+   "race": "Argonian",
+   "location": "Windhelm (Argonian Assemblage)",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "Light Armor (Common)",
+   "trainerSkills": [
+    "lightArmor"
+   ],
+   "condition": "Complete his favor: A Few Words...",
+   "quests": []
+  },
+  {
+   "id": "sondas-drenim",
+   "name": "Sondas Drenim",
+   "role": "husband",
+   "race": "Dark Elf",
+   "location": "Darkwater Crossing",
+   "home": "",
+   "follower": false,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor:Deliver a note",
+   "quests": []
+  },
+  {
+   "id": "sorex-vinius",
+   "name": "Sorex Vinius",
+   "role": "husband",
+   "race": "Imperial",
+   "location": "Solitude (The Winking Skeever)",
+   "home": "The Winking Skeever",
+   "follower": false,
+   "merchant": "Innkeeper*",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete his favor: Deliver a bottle of rum",
+   "quests": []
+  },
+  {
+   "id": "stenvar",
+   "name": "Stenvar",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Windhelm (Candlehearth Hall)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Hire him at least once",
+   "quests": []
+  },
+  {
+   "id": "torvar",
+   "name": "Torvar",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "valdimar",
+   "name": "Valdimar",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Windstad Manor",
+   "home": "",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Become thane of Hjaalmarch",
+   "quests": []
+  },
+  {
+   "id": "vilkas",
+   "name": "Vilkas",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Whiterun (Jorrvaskr)",
+   "home": "Bed (Jorrvaskr)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "Two-handed (Master)",
+   "trainerSkills": [
+    "twoHanded"
+   ],
+   "condition": "Complete the Companions Questline",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "vorstag",
+   "name": "Vorstag",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Markarth (Silver-Blood Inn)",
+   "home": "Bed (Silver-Blood Inn)",
+   "follower": true,
+   "merchant": "",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Hire him at least once",
+   "quests": []
+  },
+  {
+   "id": "wilhelm",
+   "name": "Wilhelm",
+   "role": "husband",
+   "race": "Nord",
+   "location": "Ivarstead (Vilemyr Inn)",
+   "home": "",
+   "follower": false,
+   "merchant": "Innkeeper",
+   "trainer": "",
+   "trainerSkills": [],
+   "condition": "Complete Lifting the Shroud",
+   "quests": [
+    "Lifting the Shroud"
+   ]
+  }
+ ],
+ "homes": [
+  {
+   "id": "breezehome",
+   "name": "Breezehome",
+   "kind": "city",
+   "description": "WhiterunLocated in Whiterun, right next to Warmaiden's and near the main gate, is Breezehome. The house has two stories, but is very small. However, Breezehome is the cheapest of all purchasable houses in the game and makes for an excellent starter home. The home's proximity to a blacksmith is very convenient for players who need Smithing amenities nearby.",
+   "quests": [
+    "Bleak Falls Barrow"
+   ],
+   "place": "Whiterun",
+   "housecarl": "Lydia",
+   "price": "5,000",
+   "totalCost": "6,550 to 6,800",
+   "features": [
+    "Alchemy Lab"
+   ],
+   "note": "The cheapest home, and the only one that can never have an arcane enchanter.",
+   "dlc": "base"
+  },
+  {
+   "id": "honeyside",
+   "name": "Honeyside",
+   "kind": "city",
+   "description": "RiftenHoneyside is a two-story house located in the northwest corner of Riften. The house is small, but slightly larger than Breezehome. One unique feature is that it has access from both within the city, and from a dock outside the city walls. This makes Honeyside a useful home for players who wish to avoid loading screens or players who are vampires as the house can be entered without attracting any attention or even venturing into the city.",
+   "quests": [],
+   "place": "Riften",
+   "housecarl": "Iona",
+   "price": "5,000 to 8,000",
+   "totalCost": "8,850 to 12,300",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter",
+    "Tanning Rack"
+   ],
+   "note": "Has a garden and sits near an alchemy shop, which makes it the alchemist's pick.",
+   "dlc": "base"
+  },
+  {
+   "id": "vlindrel-hall",
+   "name": "Vlindrel Hall",
+   "kind": "city",
+   "description": "Markarth Vlindrel Hall is located high above Markarth, in the northeast corner of the city. The house is spacious and, like the rest of the city, features Dwemer architecture. It can be upgraded to contain harvestable plants, display cases, three weapon racks, one mannequin, an alchemy lab, and an arcane enchanter. It has the largest amount of bookshelf space of any purchasable home, which is great for displaying your collection of books.",
+   "quests": [],
+   "place": "Markarth",
+   "housecarl": "Argis",
+   "price": "8,000",
+   "totalCost": "11,900 to 12,200",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "hjerim",
+   "name": "Hjerim",
+   "kind": "city",
+   "description": "Windhelm In its most basic state, Hjerim in Windhelm features little more than a wardrobe, bed, and a chest. However the upgrades available for Hjerim make it arguably one of the most desirable houses in the game, featuring the largest amount of storage space, a large armory with several display cases, plaques and mannequins, and a large amount of bookshelf space. Hjerim also features a secret chamber, which can be turned into an Alchemy and Enchanting room. You must complete Blood on the Ice before you can decorate Hjerim.",
+   "quests": [
+    "Blood on the Ice"
+   ],
+   "place": "Windhelm",
+   "housecarl": "Calder",
+   "price": "8,000 to 12,000",
+   "totalCost": "17,000 to 22,250",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter"
+   ],
+   "note": "Ulfric won't let you buy here until you've helped the Stormcloaks take Falkreath Hold; on the Imperial side you must win the war first.",
+   "side": "civilwar",
+   "dlc": "base"
+  },
+  {
+   "id": "proudspire-manor",
+   "name": "Proudspire Manor",
+   "kind": "city",
+   "description": "Solitude Next to the Bards College in Solitude stands Proudspire Manor. Featuring three stories, it is by far the most expensive house in the game. The closest fast travel point is not Solitude itself but the Blue Palace. Despite its mammoth cost and grand design, the house is in many ways inferior to the other houses, featuring little storage space and no display cases.",
+   "quests": [
+    "Elisif's Tribute"
+   ],
+   "place": "Solitude",
+   "housecarl": "Jordis",
+   "price": "25,000",
+   "totalCost": "36,000 to 39,000",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "heljarchen-hall",
+   "name": "Heljarchen Hall",
+   "kind": "hearthfire",
+   "description": "The Pale, with the bedroom and kitchen wings The land for Heljarchen Hall lies north of Loreius Farm and west of Blizzard Rest. The land can be purchased from the Jarl of Dawnstar who resides in The White Hall. A unique aspect of this property is that you have the option of constructing a grain mill, allowing wheat to be converted into flour. This plot of land becomes available after you finish Waking Nightmare and Kill the Giant.",
+   "quests": [
+    "Waking Nightmare"
+   ],
+   "place": "The Pale",
+   "price": "5,000",
+   "housecarl": "Gregor",
+   "features": [
+    "Built by you: choose wings such as an alchemy laboratory, enchanter's tower or library"
+   ],
+   "dlc": "hearthfire"
+  },
+  {
+   "id": "lakeview-manor",
+   "name": "Lakeview Manor",
+   "kind": "hearthfire",
+   "description": "Falkreath Hold, with the bedroom, storage room, and armory wings South of Lake Ilinalta, between Falkreath and Riverwood lies the plot for Lakeview Manor. The land can be purchased from the steward at the Jarl's Longhouse in Falkreath. A unique aspect of this property is that you have the option of constructing an apiary, from which honeycombs and bees can be harvested. This plot of land becomes available after you kill some bandits.",
+   "quests": [],
+   "place": "Falkreath Hold",
+   "price": "5,000",
+   "housecarl": "Rayya",
+   "features": [
+    "Built by you: choose wings such as an alchemy laboratory, enchanter's tower or library"
+   ],
+   "dlc": "hearthfire"
+  },
+  {
+   "id": "windstad-manor",
+   "name": "Windstad Manor",
+   "kind": "hearthfire",
+   "description": "Hjaalmarch, with the enchanter's tower, alchemy laboratory, and library wings The potential location for Windstad Manor is between the Abandoned Shack and High Gate Ruins. The land can be purchased from the steward at Highmoon Hall in Morthal. A unique aspect of Windstad Manor is that a fish hatchery can be built to the north of the property, allowing you to breed and harvest varieties of fish. This plot of land becomes available after you finish Laid to Rest.",
+   "quests": [
+    "Laid to Rest"
+   ],
+   "place": "Hjaalmarch",
+   "price": "5,000",
+   "housecarl": "Valdimar",
+   "features": [
+    "Built by you: choose wings such as an alchemy laboratory, enchanter's tower or library"
+   ],
+   "dlc": "hearthfire"
+  },
+  {
+   "id": "severin-manor",
+   "name": "Severin Manor",
+   "kind": "dragonborn",
+   "description": "Raven Rock Severin Manor is located in the settlement of Raven Rock on Solstheim, and initially is occupied by Mirri, Tilisu, and Vendil Severin. It can be later awarded to you by Councilor Morvayn as a quest reward for Served Cold. Severin Manor is the only house you can own on Solstheim, and it features a number of differences from other houses in the game. Like many dwellings on Solstheim, it is mainly decorated with Dunmer-style furnishings.",
+   "quests": [
+    "Served Cold"
+   ],
+   "place": "Raven Rock, Solstheim",
+   "price": "Free (quest reward)",
+   "features": [
+    "Enchanting, alchemy, smithing and cooking areas, fully stocked"
+   ],
+   "note": "No spouse, steward or adopted children can live here, and there's no housecarl.",
+   "dlc": "dragonborn"
+  }
+ ],
+ "factionHomes": [
+  {
+   "id": "sky-haven-temple",
+   "name": "Sky Haven Temple",
+   "kind": "faction",
+   "faction": "Blades",
+   "place": "The Reach",
+   "description": "Temple available upon completing Alduin's Wall, during the main quest. Not available if you side against the Blades over the Paarthurnax issue.",
+   "quests": [
+    "Alduin's Wall"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "hall-of-attainment",
+   "name": "Hall of Attainment",
+   "kind": "faction",
+   "faction": "College of Winterhold",
+   "place": "Winterhold",
+   "description": "Room available upon completing First Lessons, to join the College of Winterhold.",
+   "quests": [
+    "First Lessons"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "arch-mages-quarters",
+   "name": "Arch-Mage's Quarters",
+   "kind": "faction",
+   "faction": "College of Winterhold",
+   "place": "Winterhold",
+   "description": "Quarters available upon completing The Eye of Magnus, and becoming Arch-Mage.",
+   "quests": [
+    "The Eye of Magnus"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "jorrvaskr-living-quarters",
+   "name": "Jorrvaskr Living Quarters",
+   "kind": "faction",
+   "faction": "Companions",
+   "place": "Whiterun",
+   "description": "Bed available upon completing Take Up Arms, to join the Companions.",
+   "quests": [
+    "Take Up Arms"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "harbingers-room",
+   "name": "Harbingers Room",
+   "kind": "faction",
+   "faction": "Companions",
+   "place": "Whiterun",
+   "description": "Room available upon completing Glory of the Dead, and becoming Harbinger",
+   "quests": [
+    "Glory of the Dead"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "dark-brotherhood-sanctuary",
+   "name": "Dark Brotherhood Sanctuary",
+   "kind": "faction",
+   "faction": "Dark Brotherhood",
+   "place": "Falkreath Hold",
+   "description": "Bed available after completing Sanctuary for the Dark Brotherhood or completing Destroy the Dark Brotherhood!",
+   "quests": [],
+   "questsAny": [
+    "Sanctuary",
+    "Destroy the Dark Brotherhood!"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "dawnstar-sanctuary",
+   "name": "Dawnstar Sanctuary",
+   "kind": "faction",
+   "faction": "Dark Brotherhood",
+   "place": "Dawnstar",
+   "description": "Sanctuary available after completing Hail Sithis! and becoming Listener. Sanctuary can be upgraded during Where You Hang Your Enemy's Head...",
+   "quests": [
+    "Hail Sithis!"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "the-ragged-flagon-cistern",
+   "name": "The Ragged Flagon Cistern",
+   "kind": "faction",
+   "faction": "Thieves Guild",
+   "place": "Riften",
+   "description": "Bed and chest available upon completing Taking Care of Business, to join the Thieves Guild. Furniture upgraded after becoming Guildmaster.",
+   "quests": [
+    "Taking Care of Business"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "nightingale-hall",
+   "name": "Nightingale Hall",
+   "kind": "faction",
+   "faction": "Thieves Guild",
+   "place": "The Rift",
+   "description": "Hall available upon completing Darkness Returns, and joining the Nightingales.",
+   "quests": [
+    "Darkness Returns"
+   ],
+   "dlc": "base"
+  },
+  {
+   "id": "fort-dawnguard",
+   "name": "Fort Dawnguard",
+   "kind": "faction",
+   "faction": "Dawnguard",
+   "place": "The Rift",
+   "description": "Fort available after Bloodline if you reject Lord Harkon's gift, and side with the Dawnguard.",
+   "quests": [
+    "Bloodline"
+   ],
+   "side": "dawnguard",
+   "dlc": "dawnguard"
+  },
+  {
+   "id": "volkihar-keep",
+   "name": "Volkihar Keep",
+   "kind": "faction",
+   "faction": "Volkihar Vampire Clan",
+   "place": "Haafingar",
+   "description": "Keep available after Bloodline if you accept Lord Harkon's gift, and side with the Volkihar vampire clan.",
+   "quests": [
+    "Bloodline"
+   ],
+   "side": "volkihar",
+   "dlc": "dawnguard"
+  }
+ ]
+}

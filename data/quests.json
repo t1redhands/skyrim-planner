@@ -110,7 +110,7 @@
 "reward": "Leveled gold",
 "rewardLinks": [],
 "prev": [
-"The_Eye_of_Magnus"
+"The Eye of Magnus"
 ],
 "prevAny": false,
 "next": [],
@@ -338,9 +338,7 @@
 "giver": "Savos Aren",
 "description": "Find the books needed to identify the artifact found in Saarthal.",
 "reward": "Skill books",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "Under Saarthal"
 ],
@@ -417,7 +415,6 @@
 "description": "Purify the focus points for magical energy around the College of Winterhold.",
 "reward": "Soul gems, temporary Regenerate Magicka effect (see bugs section)",
 "rewardLinks": [
-"",
 "Regenerate Magicka"
 ],
 "prev": [],
@@ -835,7 +832,7 @@
 "reward": "Leveled Gold",
 "rewardLinks": [],
 "prev": [
-"The_Silver_Hand"
+"The Silver Hand"
 ],
 "prevAny": false,
 "next": [],
@@ -852,7 +849,7 @@
 "reward": "Leveled Gold",
 "rewardLinks": [],
 "prev": [
-"The_Silver_Hand"
+"The Silver Hand"
 ],
 "prevAny": false,
 "next": [],
@@ -930,7 +927,7 @@
 "description": "Make a bitter choice.",
 "reward": "Bittercup; Master Transmute (Path of Fortune only); Grand Champion's Sword (Path of Power only); Grand Champion's Helm (Path of Power only); Ability to cook Ironwood Soup (Path of Nothing only); Rulnik Wind-Strider as a follower (Path of Nothing only); Rulnik's Dagger (Path of Nothing only)",
 "rewardLinks": [
-"Alteration_Spells",
+"Alteration Spells",
 "Bittercup (item)",
 "Followers",
 "Grand Champion's Helm",
@@ -1061,7 +1058,7 @@
 "description": "Find out who attacked the temple and retrieve their unique mask.",
 "reward": "Mask of Dagoth Ur, Robe of the Lich, two Fahlbtharz Forge Gems",
 "rewardLinks": [
-"Ghosts_of_the_Tribunal_Items",
+"Ghosts of the Tribunal Items",
 "Mask of Dagoth Ur",
 "Robe of the Lich"
 ],
@@ -1174,7 +1171,7 @@
 "Bloodthirst"
 ],
 "prev": [
-"A_Soul_Divided"
+"A Soul Divided"
 ],
 "prevAny": false,
 "next": [],
@@ -1213,7 +1210,7 @@
 "Dismal Visage",
 "Dragonbone Mail",
 "Namira's Itch",
-"Tyrant%27s_Bane"
+"Tyrant%27s Bane"
 ],
 "prev": [],
 "prevAny": false,
@@ -1445,7 +1442,7 @@
 "description": "Determine the fate of a Thalmor agent.",
 "reward": "Full set of enchanted leather scout armor.",
 "rewardLinks": [
-"Leather_Scout_Armor"
+"Leather Scout Armor"
 ],
 "prev": [],
 "prevAny": false,
@@ -1554,8 +1551,8 @@
 "description": "Claim a fortune.",
 "reward": "Loot, 1000 or 300 Gold, Bittercup, spell tome of Master's Transmute",
 "rewardLinks": [
-"Alteration_Spells",
-"Bittercup_Items",
+"Alteration Spells",
+"Bittercup Items",
 "Gold"
 ],
 "prev": [
@@ -1760,7 +1757,7 @@
 "description": "Spread the word of the Goddess Almalexia.",
 "reward": "Leveled gold, Upgraded Ashfall's Tear if disseminating translated letters",
 "rewardLinks": [
-"Leveled_Lists"
+"Leveled Lists"
 ],
 "prev": [
 "Ghosts of the Tribunal"
@@ -1835,7 +1832,6 @@
 "description": "Save the Jarl of Whiterun from an assassination plot.",
 "reward": "Bow of Shadows and Leveled Gold",
 "rewardLinks": [
-"",
 "Bow of Shadows (item)"
 ],
 "prev": [],
@@ -2204,9 +2200,7 @@
 "giver": "",
 "description": "Reclaim the holy relics of Pelinal Whitestrake.",
 "reward": "Crusader's Relics (see below)",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [
@@ -2543,7 +2537,7 @@
 "description": "Locate a huge collection of powerful spell tomes.",
 "reward": "16 spell tomes",
 "rewardLinks": [
-"Arcane_Accessories_Items"
+"Arcane Accessories Items"
 ],
 "prev": [],
 "prevAny": false,
@@ -2592,7 +2586,7 @@
 "description": "Survive a pit battle.",
 "reward": "Bittercup, Grand Champion's Sword, Grand Champion's Helm",
 "rewardLinks": [
-"Bittercup_Items",
+"Bittercup Items",
 "Grand Champion's Helm",
 "Grand Champion's Sword"
 ],
@@ -2942,7 +2936,6 @@
 "description": "Participate in the Daedric Prince Hircine's Great Hunt.",
 "reward": "Savior's Hide and/or Ring of Hircine (see Multiple Rewards)",
 "rewardLinks": [
-"",
 "Ring of Hircine",
 "Savior's Hide"
 ],
@@ -3077,9 +3070,7 @@
 "rewardLinks": [
 "Spellbreaker"
 ],
-"prev": [
-""
-],
+"prev": [],
 "prevAny": false,
 "next": [],
 "loc": "Shrine to Peryite, Bthardamz",
@@ -3298,7 +3289,7 @@
 "Mysterious Note (DB)"
 ],
 "prev": [
-"Delayed_Burial"
+"Delayed Burial"
 ],
 "prevAny": false,
 "next": [
@@ -3621,19 +3612,19 @@
 "description": "Pick up your first contracts as a Brotherhood member.",
 "reward": "The Shrouded Robes, Shrouded Hood, Shrouded Hand Wraps, and Shrouded Shoes",
 "rewardLinks": [
-"Shrouded_Hand_Wraps",
-"Shrouded_Hood",
-"Shrouded_Robes",
-"Shrouded_Shoes"
+"Shrouded Hand Wraps",
+"Shrouded Hood",
+"Shrouded Robes",
+"Shrouded Shoes"
 ],
 "prev": [
 "With Friends Like These..."
 ],
 "prevAny": false,
 "next": [
-"Kill_Narfi",
-"Kill_Beitild",
-"Kill_Ennodius_Papius"
+"Kill Narfi",
+"Kill Beitild",
+"Kill Ennodius Papius"
 ],
 "loc": "Dark Brotherhood Sanctuary"
 },
@@ -3672,7 +3663,7 @@
 ],
 "prevAny": false,
 "next": [
-"Recipe_for_Disaster"
+"Recipe for Disaster"
 ],
 "loc": "Dawnstar Sanctuary",
 "suggLevel": 8
@@ -3794,7 +3785,7 @@
 "rewardLinks": [
 "Dark Brotherhood",
 "Marked for Death",
-"Shrouded_Armor"
+"Shrouded Armor"
 ],
 "prev": [
 "Innocence Lost"
@@ -4000,7 +3991,7 @@
 "description": "Find Arvak's skull.",
 "reward": "Summon Arvak spell",
 "rewardLinks": [
-"Summon_Arvak"
+"Summon Arvak"
 ],
 "prev": [
 "Chasing Echoes"
@@ -4149,9 +4140,7 @@
 "Crossbow",
 "Steel Bolt"
 ],
-"prev": [
-""
-],
+"prev": [],
 "prevAny": false,
 "next": [
 "Awakening"
@@ -4745,7 +4734,6 @@
 "description": "Recover the bonemold formula for Glover Mallory.",
 "reward": "Various Treasure; Exquisite Sapphire",
 "rewardLinks": [
-"",
 "Exquisite Sapphire"
 ],
 "prev": [
@@ -4915,7 +4903,6 @@
 "description": "Survive the Kagrumez trials to claim a unique prize.",
 "reward": "Steadfast Dwarven Spider follower, Steadfast Dwarven Sphere follower, Dwarven Black Bow of Fate (see notes)",
 "rewardLinks": [
-"",
 "Dwarven Black Bow of Fate",
 "Steadfast Dwarven Sphere",
 "Steadfast Dwarven Spider"
@@ -5235,10 +5222,10 @@
 "description": "Help Talvas Fathryon by killing an ash guardian.",
 "reward": "Random Staff or the Conjure Ash Guardian spell tome; Talvas Fathryon as a follower; ability to buy spell tome Ash Shell, Ash Rune, Bound Dagger, Conjure Ash Guardian from Talvas Fathryon",
 "rewardLinks": [
-"Ash_Rune",
-"Ash_Shell",
-"Bound_Dagger",
-"Conjure_Ash_Guardian",
+"Ash Rune",
+"Ash Shell",
+"Bound Dagger",
+"Conjure Ash Guardian",
 "Staves",
 "Talvas Fathryon"
 ],
@@ -5256,9 +5243,7 @@
 "giver": "Elynea Mothren",
 "description": "Help Elynea Mothren repair the tower of Tel Mithryn.",
 "reward": "Two leveled potions of well-being",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -5574,8 +5559,8 @@
 "description": "Discover the treasure of Angarvunde.",
 "reward": "Word Wall for the Shout Animal Allegiance",
 "rewardLinks": [
-"Animal_Allegiance",
-"Word_Wall"
+"Animal Allegiance",
+"Word Wall"
 ],
 "prev": [],
 "prevAny": false,
@@ -5611,7 +5596,7 @@
 "description": "Seal away an ancient evil.",
 "reward": "Hevnoraak, Hevnoraak's Staff; Word for the Aura Whisper shout.",
 "rewardLinks": [
-"Aura_Whisper",
+"Aura Whisper",
 "Hevnoraak (item)",
 "Hevnoraak's Staff"
 ],
@@ -5950,9 +5935,7 @@
 "giver": "Legate Rikke",
 "description": "Find and deliver some forged documents to the Stormcloaks.",
 "reward": "5 gold and Leveled gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "Battle for Whiterun (Imperial)"
 ],
@@ -5972,7 +5955,7 @@
 "description": "Protect Whiterun from the Stormcloak invasion.",
 "reward": "Quaestor rank with a leveled enchanted weapon",
 "rewardLinks": [
-"Imperial_Legion",
+"Imperial Legion",
 "Leveled Lists"
 ],
 "prev": [
@@ -5980,8 +5963,7 @@
 ],
 "prevAny": false,
 "next": [
-"Reunification of Skyrim",
-""
+"Reunification of Skyrim"
 ],
 "loc": "Whiterun"
 },
@@ -5998,7 +5980,7 @@
 "Hjerim"
 ],
 "prev": [
-"The_Battle_for_Fort_Amol"
+"The Battle for Fort Amol"
 ],
 "prevAny": false,
 "next": [],
@@ -6013,9 +5995,7 @@
 "giver": "Legate Rikke",
 "description": "Use a corrupt steward to gain intelligence on the Stormcloaks.",
 "reward": "Leveled gold; access to respawning loot in the wagon",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "The Battle for Fort Dunstad (Imperial)"
 ],
@@ -6052,14 +6032,12 @@
 "description": "Prove yourself worthy to join the Imperial Legion.",
 "reward": "Induction into the Imperial Legion; Auxiliary rank",
 "rewardLinks": [
-"Imperial_Legion"
+"Imperial Legion"
 ],
-"prev": [
-""
-],
+"prev": [],
 "prevAny": false,
 "next": [
-"The_Jagged_Crown_(Imperial)",
+"The Jagged Crown (Imperial)",
 "Get Outfitted"
 ],
 "loc": "Fort Hraggstad, Castle Dour",
@@ -6094,10 +6072,10 @@
 "description": "Take Fort Kastav for the Imperials and rescue the prisoners within.",
 "reward": "Legate rank with a leveled armor",
 "rewardLinks": [
-"Imperial_Legion"
+"Imperial Legion"
 ],
 "prev": [
-"The_Battle_for_Fort_Greenwall_(Imperial)"
+"The Battle for Fort Greenwall (Imperial)"
 ],
 "prevAny": false,
 "next": [
@@ -6143,7 +6121,7 @@
 ],
 "prevAny": false,
 "next": [
-"Battle_for_Windhelm"
+"Battle for Windhelm"
 ],
 "loc": "Eastmarch Imperial Camp, Fort Amol",
 "suggLevel": 6
@@ -6158,7 +6136,6 @@
 "description": "Take Fort Dunstad for the Imperials.",
 "reward": "Praefect rank with leveled sword (see Bugs)",
 "rewardLinks": [
-"",
 "Imperial Legion"
 ],
 "prev": [
@@ -6181,11 +6158,10 @@
 "description": "Take Fort Greenwall for the Imperials.",
 "reward": "Tribune rank with a leveled shield (see Bugs)",
 "rewardLinks": [
-"",
-"Imperial_Legion"
+"Imperial Legion"
 ],
 "prev": [
-"Compelling_Tribute_(Imperial)"
+"Compelling Tribute (Imperial)"
 ],
 "prevAny": false,
 "next": [
@@ -6270,7 +6246,7 @@
 ],
 "prevAny": false,
 "next": [
-"Message_to_Whiterun_(Imperial)"
+"Message to Whiterun (Imperial)"
 ],
 "loc": "Solitude, Korvanjund",
 "suggLevel": 12
@@ -7125,9 +7101,7 @@
 "giver": "Malborn",
 "description": "The Thalmor are after Malborn. Help him get to safety.",
 "reward": "Leveled gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "Diplomatic Immunity"
 ],
@@ -7146,7 +7120,6 @@
 "description": "Model some clothes for Elisif the Fair.",
 "reward": "Leveled gold and Radiant Raiment Fine Clothes",
 "rewardLinks": [
-"",
 "Radiant Raiment Fine Clothes"
 ],
 "prev": [],
@@ -7462,9 +7435,7 @@
 "giver": "Svari",
 "description": "Convince a mourning mother to go to the local temple.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -7839,11 +7810,11 @@
 "reward": "None",
 "rewardLinks": [],
 "prev": [
-"Helping_Hand"
+"Helping Hand"
 ],
 "prevAny": false,
 "next": [
-"Supply_and_Demand"
+"Supply and Demand"
 ],
 "loc": "Riften",
 "minor": true
@@ -7858,7 +7829,7 @@
 "description": "Convince Vittoria Vici to hand over some spices.",
 "reward": "25 gold and 2 Bottles of Spiced Wine",
 "rewardLinks": [
-"Spiced_Wine"
+"Spiced Wine"
 ],
 "prev": [],
 "prevAny": false,
@@ -7966,7 +7937,7 @@
 "reward": "Sinderion's Serendipity ability, The Nirnroot Missive",
 "rewardLinks": [
 "Sinderion's Serendipity",
-"The_Nirnroot_Missive"
+"The Nirnroot Missive"
 ],
 "prev": [],
 "prevAny": false,
@@ -8007,7 +7978,7 @@
 "Gauldur Blackbow",
 "Ice Form",
 "Staff of Jyrik Gauldurson",
-"The_Gauldur_Amulet"
+"The Gauldur Amulet"
 ],
 "prev": [],
 "prevAny": false,
@@ -8111,7 +8082,6 @@
 "description": "Escape from Cidhna Mine!",
 "reward": "Shiv, Silver-Blood Family Ring and/or Armor of the Old Gods (see notes)",
 "rewardLinks": [
-"",
 "Armor of the Old Gods",
 "Shiv",
 "Silver-Blood Family Ring"
@@ -8171,7 +8141,7 @@
 "description": "Help the East Empire Company take care of some pirates.",
 "reward": "Leveled Gold; Adelaisa Vendicci as follower",
 "rewardLinks": [
-"Adelaisa_Vendicci",
+"Adelaisa Vendicci",
 "Followers"
 ],
 "prev": [],
@@ -8210,7 +8180,7 @@
 "prev": [],
 "prevAny": false,
 "next": [
-"No_One_Escapes_Cidhna_Mine"
+"No One Escapes Cidhna Mine"
 ],
 "loc": "Markarth"
 },
@@ -8305,7 +8275,7 @@
 "description": "Uncover the memories of the Dwemer.",
 "reward": "Ancient Knowledge",
 "rewardLinks": [
-"Ancient_Knowledge"
+"Ancient Knowledge"
 ],
 "prev": [],
 "prevAny": false,
@@ -8323,9 +8293,7 @@
 "giver": "Galmar Stone-Fist",
 "description": "Find and deliver some forged documents to the Imperials.",
 "reward": "5 gold and Leveled gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "The Battle for Fort Sungard (Stormcloaks)"
 ],
@@ -8383,9 +8351,7 @@
 "giver": "Galmar Stone-Fist",
 "description": "Blackmail a Talos worshipper into helping the Stormcloaks.",
 "reward": "Leveled gold; access to respawning loot in the wagon",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "Rescue from Fort Neugrad"
 ],
@@ -8760,9 +8726,7 @@
 "giver": "Brynjolf",
 "description": "Send a message to a former Thieves Guild client.",
 "reward": "Leveled gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [
 "Taking Care of Business"
 ],
@@ -8804,7 +8768,7 @@
 "description": "Find the 24 gems to restore the Crown of Barenziah.",
 "reward": "Prowler's Profit",
 "rewardLinks": [
-"Prowler's_Profit"
+"Prowler's Profit"
 ],
 "prev": [],
 "prevAny": false,
@@ -8948,9 +8912,7 @@
 "giver": "Delvin Mallory",
 "description": "Steal a set amount of gold's worth of items.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -8965,9 +8927,7 @@
 "giver": "Vex",
 "description": "Steal a special item from a wealthy home.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -8986,7 +8946,7 @@
 "Thieves Guild (faction)"
 ],
 "prev": [
-"Thieves_Guild_(faction)"
+"Thieves Guild (faction)"
 ],
 "prevAny": false,
 "next": [],
@@ -9002,9 +8962,7 @@
 "giver": "Delvin Mallory in the Ragged Flagon",
 "description": "Steal an item out of a target's pocket.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9019,9 +8977,7 @@
 "giver": "Vex",
 "description": "Steal a particular item from a store.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9036,9 +8992,7 @@
 "giver": "",
 "description": "Find items for Delvin Mallory throughout the questline.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9053,9 +9007,7 @@
 "giver": "Delvin Mallory in The Ragged Flagon",
 "description": "Alter the business ledger of a store.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9091,9 +9043,7 @@
 "giver": "Vex",
 "description": "Place an item as evidence inside a wealthy home.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9108,9 +9058,7 @@
 "giver": "Vex",
 "description": "Steal three specific valuable items from a wealthy house.",
 "reward": "Leveled Gold",
-"rewardLinks": [
-""
-],
+"rewardLinks": [],
 "prev": [],
 "prevAny": false,
 "next": [],
@@ -9126,7 +9074,6 @@
 "description": "Deliver moon sugar to Ri'saad.",
 "reward": "Leveled Gold, Access to Atahbah, Zaynabi, and Ma'jhad as fences",
 "rewardLinks": [
-"",
 "Atahbah",
 "Ma'jhad",
 "Zaynabi"
@@ -9185,9 +9132,9 @@
 "description": "Become the Guild Master of the Thieves Guild.",
 "reward": "Guild Master's Armor, Tribute Chest Key, Amulet of Articulation",
 "rewardLinks": [
-"Amulet_of_Articulation",
-"Guild_Master's_Armor",
-"Tribute_Chest_Key"
+"Amulet of Articulation",
+"Guild Master's Armor",
+"Tribute Chest Key"
 ],
 "prev": [
 "Darkness Returns",
@@ -9231,8 +9178,8 @@
 "description": "Retrieve vampire parts from varied locations around Skyrim.",
 "reward": "Upgrade(s) to the Bloodstone Chalice, 3 Potions of Blood",
 "rewardLinks": [
-"Bloodstone_Chalice",
-"Potion_of_Blood"
+"Bloodstone Chalice",
+"Potion of Blood"
 ],
 "prev": [
 "The Bloodstone Chalice"
@@ -9346,7 +9293,7 @@
 "description": "Retrieve the Ring of the Erudite and the Ring of The Beast.",
 "reward": "Ring of the Erudite, Ring of The Beast, 3 Potions of Blood",
 "rewardLinks": [
-"Potion_of_Blood",
+"Potion of Blood",
 "Ring of The Beast",
 "Ring of the Erudite"
 ],
