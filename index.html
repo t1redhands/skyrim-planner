@@ -186,6 +186,13 @@ tbody tr:last-child td { border-bottom: 0; }
 .stone .sl { font-size: .85rem; color: var(--ink-2); }
 .stone .su { font-size: .82rem; color: var(--accent); font-weight: 500; }
 
+/* Shouts */
+.tagd { font-family: var(--mono); font-size: .7rem; padding: 1px 6px; border-radius: 3px; border: 1px solid var(--rule); color: var(--ink-2); margin-left: 6px; vertical-align: 2px; text-transform: uppercase; letter-spacing: .05em; }
+.tagd.q { border-color: var(--accent); color: var(--accent); }
+.words { font-size: .9rem; }
+.words b { font-family: var(--display); font-weight: 400; letter-spacing: .03em; }
+.ms ul { margin: 0; padding-left: 18px; font-size: .88rem; color: var(--ink-2); }
+
 /* Attributes */
 .bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
@@ -333,7 +340,20 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <div class="milestones" id="stoneStretches"></div>
     <div class="stone-groups" id="stoneList"></div>
-    <p class="muted" style="margin:0;font-size:.9rem">Shouts, gear, potions and recipes will join this screen next.</p>
+    <div class="intro" style="margin-top:12px">
+      <h2>Shouts</h2>
+      <p class="muted">Choose the shouts you want and the milestone you want each one by. Each shout has three words, found at word walls or given during quests, and each word takes one dragon soul to unlock. Some quests unlock their words for you.</p>
+    </div>
+    <div class="milestones" id="shoutTally"></div>
+    <div class="row" id="shoutFilter" role="radiogroup" aria-label="Show shouts">
+      <button class="chip" data-f="all" aria-checked="true">All 27</button>
+      <button class="chip" data-f="base" aria-checked="false">Base game</button>
+      <button class="chip" data-f="dawnguard" aria-checked="false">Dawnguard</button>
+      <button class="chip" data-f="dragonborn" aria-checked="false">Dragonborn</button>
+      <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
+    </div>
+    <div class="box"><div class="perks" id="shoutList"></div></div>
+    <p class="muted" style="margin:0;font-size:.9rem">Gear, potions and recipes will join this screen next. The quests listed here will feed the quest plan.</p>
   </section>
 
   <!-- 5. Summary -->
@@ -375,7 +395,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
 <footer>
   <div class="wrap">
-    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
+    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Shout words and locations from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
     <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
   </div>
 </footer>
@@ -434,15 +454,17 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA] = await Promise.all([get('perks.json'), get('stones.json')]);
+    [PERKDATA, STONEDATA, SHOUTDATA] = await Promise.all([get('perks.json'), get('stones.json'), get('shouts.json')]);
   } catch (e) {
-    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads <code>perks.json</code> and <code>stones.json</code> from the <code>data</code> folder next to this page. Check that both files are there and reload the page.</p></div>`;
+    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads <code>perks.json</code>, <code>stones.json</code> and <code>shouts.json</code> from the <code>data</code> folder next to this page. Check that all three files are there and reload the page.</p></div>`;
     return;
   }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
+  const SHOUTS = SHOUTDATA.shouts, SH = Object.fromEntries(SHOUTS.map(s => [s.id, s]));
+  const DLC = { base: 'Base game', dawnguard: 'Dawnguard', dragonborn: 'Dragonborn' };
   const STRETCH = { 20: 'Levels 1–20', 40: 'Levels 21–40', 60: 'Levels 41–60' };
   const TREES = PERKDATA.trees;
   const PERKS = {};                       // id -> perk (with .skill)
@@ -553,7 +575,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null },
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -561,6 +583,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.name = 'Example: Nord paladin'; s.style = 'paladin'; s.alignment = 'Lawful Good'; s.example = true;
     s.picks = suggestPicks('nord', 'paladin');
     s.stones = suggestStones(s.picks, 'nord');
+    s.shouts = { 'unrelenting-force': 20, 'whirlwind-sprint': 20, 'become-ethereal': 40, 'dragonrend': 40, 'call-of-valor': 60 };
     BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
     return s;
   }
@@ -573,6 +596,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (!s || !RC[s.race] || !ST[s.style] || !s.bands || !MS.every(m => Array.isArray(s.bands[m]) && s.bands[m].length === 3)) return null;
     const out = { v: 2, name: String(s.name || 'Unnamed build'), race: s.race, alignment: s.alignment || 'Neutral Neutral', style: s.style, bands: s.bands, picks: {}, stones: { 20: null, 40: null, 60: null }, example: false };
     if (s.stones) MS.forEach(m => { if (STN[s.stones[m]]) out.stones[m] = s.stones[m]; });
+    out.shouts = {};
+    if (s.shouts && typeof s.shouts === 'object') for (const [k, v] of Object.entries(s.shouts)) if (SH[k] && MS.includes(v)) out.shouts[k] = v;
     if (s.picks && typeof s.picks === 'object') for (const [k, v] of Object.entries(s.picks)) {
       const [id, i] = k.split('#');
       if (PERKS[id] && PERKS[id].ranks[+i] != null && MS.includes(v)) out.picks[k] = v;
@@ -774,7 +799,41 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const used = MS.filter(m => state.stones[m] === s.id).map(m => STRETCH[m]);
       return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}</span><span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
     }).join('')}</div></div>`).join('');
+    renderShouts();
   }
+  let shoutFilter = 'all';
+  function renderShouts() {
+    $('shoutTally').innerHTML = MS.map(m => {
+      const by = SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m);
+      const words = by.length * 3;
+      const quests = [...new Set(by.flatMap(s => s.quests))].sort();
+      return `<div class="ms"><div class="ms-head"><span class="ms-level">By level ${m}</span></div>
+        <div class="ms-stats"><span><strong class="num">${by.length}</strong> shout${by.length === 1 ? '' : 's'}</span><span><strong class="num">${words}</strong> words</span><span>up to <strong class="num">${words}</strong> dragon souls</span></div>
+        ${quests.length ? `<div class="ms-note">Quests along the way:</div><ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed: every word is at a word wall.' : 'No shouts chosen for this milestone yet.'}</div>`}</div>`;
+    }).join('');
+    const list = SHOUTS.filter(s => shoutFilter === 'all' || (shoutFilter === 'wanted' ? state.shouts[s.id] != null : s.dlc === shoutFilter));
+    $('shoutList').innerHTML = list.length ? list.map(s => {
+      const v = state.shouts[s.id];
+      const where = s.locations.map(l => l.quest ? `${esc(l.place)} <span class="muted">(during ${esc(l.quest)})</span>` : esc(l.place)).join('; ');
+      return `<div class="perk${v != null ? ' taken' : ''}"><div>
+          <div class="pn">${esc(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc]}</span>` : ''}${s.questOnly ? '<span class="tagd q">Quest only</span>' : ''}</div>
+          <div class="pe">${esc(s.effect)}</div>
+          <div class="words">${s.words.map(w => `<b>${esc(w.word)}</b> <span class="muted">${esc(w.meaning)}</span>`).join(' · ')}</div>
+          <div class="pr">Words at: ${where}</div></div>
+        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="sh-${s.id}" data-shout="${s.id}" aria-label="${esc(s.name)}: milestone">
+          <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
+    }).join('') : '<p class="muted" style="margin:12px 0">No shouts chosen yet. Pick some from All 27.</p>';
+  }
+  $('shoutList').addEventListener('change', e => {
+    const el = e.target.closest('select[data-shout]'); if (!el) return;
+    if (el.value === '') delete state.shouts[el.dataset.shout]; else state.shouts[el.dataset.shout] = +el.value;
+    touch(); renderShouts(); $(el.id)?.focus();
+  });
+  $('shoutFilter').addEventListener('click', e => {
+    const b = e.target.closest('[data-f]'); if (!b) return; shoutFilter = b.dataset.f;
+    $('shoutFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    renderShouts();
+  });
   $('stoneStretches').addEventListener('change', e => {
     const el = e.target.closest('select[data-m]'); if (!el) return;
     state.stones[+el.dataset.m] = el.value || null; touch(); renderLoadout(); $(el.id)?.focus();
@@ -800,7 +859,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd></dl></div>`; }).join('');
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
