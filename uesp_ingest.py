@@ -27,7 +27,7 @@ import requests
 
 API = "https://en.uesp.net/w/api.php"   # confirm the endpoint if requests fail
 WIKI = "https://en.uesp.net/wiki/"
-USER_AGENT = "SkyrimCharacterPlanner/0.1 (private fan tool; contact: d.ehren.russell@gmail.com)"  # put your email here
+USER_AGENT = "SkyrimCharacterPlanner/0.1 (private fan tool; contact: you@example.com)"  # put your email here
 DELAY_SECONDS = 3      # be gentle: UESP is volunteer-run and blocks aggressive bots
 OUT = Path("data")
 RAW = OUT / "raw"
@@ -107,13 +107,82 @@ def parse_race(wikitext):
     }
 
 
+def flatten(wikitext):
+    """Wiki markup to plain-ish text, keeping template contents (perk tables often live in templates)."""
+    t = re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]*)\]\]", r"\1", wikitext)   # [[Page|Text]] -> Text
+    t = re.sub(r"'{2,}", "", t)                                       # bold / italic quotes
+    t = re.sub(r"<[^>]+>", " ", t)                                    # html tags
+    return re.sub(r"\s+", " ", t)
+
+
+def perk_section(wikitext):
+    code = mwparserfromhell.parse(wikitext)
+    secs = code.get_sections(matches=r"Perks", flat=False)
+    return str(secs[0]) if secs else wikitext
+
+
+def check_perks(session, refresh, only_unverified=True):
+    """Compare data/perks.json with each skill's UESP page. Writes data/raw/perk-check.txt."""
+    perks_file = OUT / "perks.json"
+    data = json.loads(perks_file.read_text(encoding="utf-8"))
+    report, problems, checked = [], [], 0
+    for skill, tree in data["trees"].items():
+        if only_unverified and tree.get("verified"):
+            continue
+        title = "Skyrim:" + tree["source"].rsplit("Skyrim:", 1)[1].replace("_", " ")
+        try:
+            raw = perk_section(fetch_wikitext(session, title, refresh))
+        except Exception as exc:
+            problems.append(f"{skill}: fetch failed ({exc})")
+            continue
+        text = flatten(raw)
+        low = text.lower()
+        names = [p["name"] for p in tree["perks"]]
+        # where each perk's own row starts: first mention of its name
+        starts = sorted((low.find(n.lower()), n) for n in names if low.find(n.lower()) >= 0)
+        tree_problems = []
+        for p in tree["perks"]:
+            pos = low.find(p["name"].lower())
+            if pos < 0:
+                tree_problems.append(f"'{p['name']}' not found on the page")
+                continue
+            later = [s for s, _ in starts if s > pos]
+            window = text[pos: later[0] if later else pos + 800]
+            for req in p["ranks"]:
+                if req and not re.search(rf"(?<!\d){req}(?!\d)", window):
+                    tree_problems.append(f"{p['name']}: requirement {req} not seen near the perk")
+            for pre in p["prereq"]:
+                pre_name = next(x["name"] for x in tree["perks"] if x["id"] == pre)
+                if pre_name.lower() not in low:
+                    tree_problems.append(f"{p['name']}: prerequisite '{pre_name}' not found on the page")
+        checked += 1
+        status = "OK" if not tree_problems else f"{len(tree_problems)} to review"
+        print(f"{'OK ' if not tree_problems else '?? '} {skill} ({status})")
+        problems += [f"{skill}: {x}" for x in tree_problems]
+        report.append(f"===== {skill} ({title}) =====\n{status}\n" + "\n".join(tree_problems) + f"\n--- page text ---\n{text[:6000]}\n")
+    RAW.mkdir(parents=True, exist_ok=True)
+    (RAW / "perk-check.txt").write_text("\n".join(report), encoding="utf-8")
+    print(f"\nChecked {checked} trees. Full report: {RAW / 'perk-check.txt'}")
+    if problems:
+        print("\nNeeds a look (some may be false alarms from page formatting):")
+        for p in problems:
+            print("  -", p)
+    else:
+        print("Every perk name, requirement and prerequisite was found on UESP.")
+    return not problems
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="refetch pages instead of using the cache")
+    ap.add_argument("--perks", action="store_true", help="check data/perks.json against UESP instead of races")
+    ap.add_argument("--all", action="store_true", help="with --perks, also recheck trees already marked verified")
     args = ap.parse_args()
 
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
+    if args.perks:
+        sys.exit(0 if check_perks(session, args.refresh, only_unverified=not args.all) else 1)
     races, problems = {}, []
 
     for race_id, title in RACE_PAGES.items():
