@@ -218,16 +218,78 @@ def dump_pages(session, titles):
     return not failed
 
 
+def api_get(session, **params):
+    params.update(format="json", formatversion=2)
+    resp = session.get(API, params=params, timeout=60)
+    resp.raise_for_status()
+    data = resp.json()
+    if "error" in data:
+        raise RuntimeError(data["error"].get("info"))
+    time.sleep(DELAY_SECONDS)
+    return data
+
+
+def category_members(session, category, kind):
+    """All members of one category (kind = 'page' or 'subcat'), following API continuation."""
+    out, cont = [], {}
+    while True:
+        data = api_get(session, action="query", list="categorymembers", cmtitle=category,
+                       cmtype=kind, cmlimit=500, **cont)
+        out += [m["title"] for m in data["query"]["categorymembers"]]
+        if "continue" not in data:
+            return out
+        cont = {"cmcontinue": data["continue"]["cmcontinue"]}
+
+
+def dump_quests(session, root="Category:Skyrim-Quests", max_depth=3):
+    """Walk the quest category tree and save every quest page's wikitext to data/source/quests.json."""
+    seen_cats, pages = set(), {}
+    queue = [(root, 0)]
+    while queue:
+        cat, depth = queue.pop(0)
+        if cat in seen_cats:
+            continue
+        seen_cats.add(cat)
+        for title in category_members(session, cat, "page"):
+            pages.setdefault(title, []).append(cat.replace("Category:", ""))
+        if depth < max_depth:
+            queue += [(c, depth + 1) for c in category_members(session, cat, "subcat")]
+        print(f"  {cat}: {len(pages)} quest pages so far")
+    titles = sorted(pages)
+    out = {}
+    for i in range(0, len(titles), 50):
+        batch = titles[i:i + 50]
+        data = api_get(session, action="query", prop="revisions", rvprop="content", rvslots="main",
+                       titles="|".join(batch), redirects=1)
+        for p in data["query"].get("pages", []):
+            revs = p.get("revisions")
+            if revs:
+                out[p["title"]] = {"categories": pages.get(p["title"], []),
+                                   "wikitext": revs[0]["slots"]["main"]["content"]}
+        print(f"  fetched {min(i + 50, len(titles))} of {len(titles)}")
+    SOURCE.mkdir(parents=True, exist_ok=True)
+    (SOURCE / "quests.json").write_text(json.dumps({
+        "license": "CC BY-SA 2.5, text from UESP (https://en.uesp.net)",
+        "fetched": time.strftime("%Y-%m-%d"), "categories": sorted(seen_cats), "pages": out,
+    }, ensure_ascii=False), encoding="utf-8")
+    size = (SOURCE / "quests.json").stat().st_size // 1024
+    print(f"\nSaved {len(out)} quest pages from {len(seen_cats)} categories to {SOURCE / 'quests.json'} ({size} KB)")
+    return bool(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--refresh", action="store_true", help="refetch pages instead of using the cache")
     ap.add_argument("--perks", action="store_true", help="check data/perks.json against UESP instead of races")
     ap.add_argument("--all", action="store_true", help="with --perks, also recheck trees already marked verified")
     ap.add_argument("--dump", nargs="*", metavar="PAGE", help="save UESP pages to data/source/ (default: the planner's page list)")
+    ap.add_argument("--quests", action="store_true", help="save every Skyrim quest page to data/source/quests.json")
     args = ap.parse_args()
 
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
+    if args.quests:
+        sys.exit(0 if dump_quests(session) else 1)
     if args.dump is not None:
         sys.exit(0 if dump_pages(session, args.dump or DUMP_PAGES) else 1)
     if args.perks:
