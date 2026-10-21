@@ -1,0 +1,915 @@
+{
+ "license": "CC BY-SA 3.0; shout words and locations from The Elder Scrolls Wiki (https://elderscrolls.fandom.com/wiki/Dragon_Shouts) and UESP (https://en.uesp.net/wiki/Skyrim:Shouts), summarized.",
+ "asOf": "2026-10-21",
+ "shouts": [
+  {
+   "id": "animal-allegiance",
+   "name": "Animal Allegiance",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Raan",
+     "meaning": "Animal"
+    },
+    {
+     "word": "Mir",
+     "meaning": "Allegiance"
+    },
+    {
+     "word": "Tah",
+     "meaning": "Pack"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Angarvunde"
+    },
+    {
+     "place": "Ancient's Ascent"
+    },
+    {
+     "place": "Ysgramor's Tomb",
+     "quest": "Glory of the Dead"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Nearby animals come to fight for you.",
+   "quests": [
+    "Glory of the Dead"
+   ]
+  },
+  {
+   "id": "aura-whisper",
+   "name": "Aura Whisper",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Laas",
+     "meaning": "Life"
+    },
+    {
+     "word": "Yah",
+     "meaning": "Seek"
+    },
+    {
+     "word": "Nir",
+     "meaning": "Hunt"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Northwind Summit"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Reveals the life forces of nearby creatures, even through walls.",
+   "quests": []
+  },
+  {
+   "id": "become-ethereal",
+   "name": "Become Ethereal",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Feim",
+     "meaning": "Fade"
+    },
+    {
+     "word": "Zii",
+     "meaning": "Spirit"
+    },
+    {
+     "word": "Gron",
+     "meaning": "Bind"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Ironbind Barrow"
+    },
+    {
+     "place": "Lost Valley Redoubt"
+    },
+    {
+     "place": "Ustengrav",
+     "quest": "The Horn of Jurgen Windcaller"
+    }
+   ],
+   "questOnly": false,
+   "effect": "You can't harm or be harmed for a short time.",
+   "quests": [
+    "The Horn of Jurgen Windcaller"
+   ]
+  },
+  {
+   "id": "call-dragon",
+   "name": "Call Dragon",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Od",
+     "meaning": "Snow"
+    },
+    {
+     "word": "Ah",
+     "meaning": "Hunter"
+    },
+    {
+     "word": "Viing",
+     "meaning": "Wing"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Sky Haven Temple or High Hrothgar"
+    },
+    {
+     "place": "High Hrothgar",
+     "quest": "The Fallen"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Summons the dragon Odahviing to fight beside you.",
+   "quests": [
+    "The Fallen"
+   ]
+  },
+  {
+   "id": "call-of-valor",
+   "name": "Call of Valor",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Hun",
+     "meaning": "Hero"
+    },
+    {
+     "word": "Kaal",
+     "meaning": "Champion"
+    },
+    {
+     "word": "Zoor",
+     "meaning": "Legend"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Sovngarde"
+    },
+    {
+     "place": "Sovngarde",
+     "quest": "Dragonslayer"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Calls a hero of Sovngarde to fight for you.",
+   "quests": [
+    "Dragonslayer"
+   ]
+  },
+  {
+   "id": "clear-skies",
+   "name": "Clear Skies",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Lok",
+     "meaning": "Sky"
+    },
+    {
+     "word": "Vah",
+     "meaning": "Spring"
+    },
+    {
+     "word": "Koor",
+     "meaning": "Summer"
+    }
+   ],
+   "locations": [
+    {
+     "place": "High Hrothgar"
+    },
+    {
+     "place": "Throat of the World",
+     "quest": "The Throat of the World"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Clears away fog and bad weather.",
+   "quests": [
+    "The Throat of the World"
+   ]
+  },
+  {
+   "id": "disarm",
+   "name": "Disarm",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Zun",
+     "meaning": "Weapon"
+    },
+    {
+     "word": "Haal",
+     "meaning": "Hand"
+    },
+    {
+     "word": "Viik",
+     "meaning": "Defeat"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Eldersblood Peak"
+    },
+    {
+     "place": "Silverdrift Lair"
+    },
+    {
+     "place": "Snow Veil Sanctum",
+     "quest": "Speaking With Silence"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Knocks the weapon out of an opponent's hands.",
+   "quests": [
+    "Speaking With Silence"
+   ]
+  },
+  {
+   "id": "dismay",
+   "name": "Dismay",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Faas",
+     "meaning": "Fear"
+    },
+    {
+     "word": "Ru",
+     "meaning": "Run"
+    },
+    {
+     "word": "Maar",
+     "meaning": "Terror"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Dead Crone Rock"
+    },
+    {
+     "place": "Lost Tongue Overlook"
+    },
+    {
+     "place": "Labyrinthian (Shalidor's Maze)"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Nearby enemies flee in fear.",
+   "quests": []
+  },
+  {
+   "id": "dragonrend",
+   "name": "Dragonrend",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Joor",
+     "meaning": "Mortal"
+    },
+    {
+     "word": "Zah",
+     "meaning": "Finite"
+    },
+    {
+     "word": "Frul",
+     "meaning": "Temporary"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Throat of the World",
+     "quest": "Alduin's Bane"
+    }
+   ],
+   "questOnly": true,
+   "effect": "Forces a flying dragon to land.",
+   "quests": [
+    "Alduin's Bane"
+   ]
+  },
+  {
+   "id": "elemental-fury",
+   "name": "Elemental Fury",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Su",
+     "meaning": "Air"
+    },
+    {
+     "word": "Grah",
+     "meaning": "Battle"
+    },
+    {
+     "word": "Dun",
+     "meaning": "Grace"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Dragontooth Crater"
+    },
+    {
+     "place": "Shriekwind Bastion"
+    },
+    {
+     "place": "Statue to Meridia"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Your weapon attacks become much faster.",
+   "quests": []
+  },
+  {
+   "id": "fire-breath",
+   "name": "Fire Breath",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Yol",
+     "meaning": "Fire"
+    },
+    {
+     "word": "Toor",
+     "meaning": "Inferno"
+    },
+    {
+     "word": "Shul",
+     "meaning": "Sun"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Dustman's Cairn",
+     "quest": "Proving Honor"
+    },
+    {
+     "place": "Sunderstone Gorge"
+    },
+    {
+     "place": "Throat of the World",
+     "quest": "The Throat of the World"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Breathes a cone of fire.",
+   "quests": [
+    "Proving Honor",
+    "The Throat of the World"
+   ]
+  },
+  {
+   "id": "frost-breath",
+   "name": "Frost Breath",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Fo",
+     "meaning": "Frost"
+    },
+    {
+     "word": "Krah",
+     "meaning": "Cold"
+    },
+    {
+     "word": "Diin",
+     "meaning": "Freeze"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Bonestrewn Crest"
+    },
+    {
+     "place": "Skyborn Altar"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Breathes a cone of frost.",
+   "quests": []
+  },
+  {
+   "id": "ice-form",
+   "name": "Ice Form",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Iiz",
+     "meaning": "Ice"
+    },
+    {
+     "word": "Slen",
+     "meaning": "Flesh"
+    },
+    {
+     "word": "Nus",
+     "meaning": "Statue"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Frostmere Crypt"
+    },
+    {
+     "place": "Mount Anthor"
+    },
+    {
+     "place": "Saarthal",
+     "quest": "Under Saarthal"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Freezes an opponent solid.",
+   "quests": [
+    "Under Saarthal"
+   ]
+  },
+  {
+   "id": "kyne-s-peace",
+   "name": "Kyne's Peace",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Kaan",
+     "meaning": "Kyne"
+    },
+    {
+     "word": "Drem",
+     "meaning": "Peace"
+    },
+    {
+     "word": "Ov",
+     "meaning": "Trust"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Ragnvald"
+    },
+    {
+     "place": "Rannveig's Fast"
+    },
+    {
+     "place": "Shroud Hearth Barrow"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Calms nearby animals so they won't fight or flee.",
+   "quests": []
+  },
+  {
+   "id": "marked-for-death",
+   "name": "Marked for Death",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Krii",
+     "meaning": "Kill"
+    },
+    {
+     "word": "Lun",
+     "meaning": "Leech"
+    },
+    {
+     "word": "Aus",
+     "meaning": "Suffer"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Autumnwatch Tower"
+    },
+    {
+     "place": "Dark Brotherhood Sanctuary",
+     "quest": "With Friends Like These... or Destroy the Dark Brotherhood!"
+    },
+    {
+     "place": "Forsaken Cave"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Lowers a target's armor and drains its health over time.",
+   "quests": [
+    "With Friends Like These... or Destroy the Dark Brotherhood!"
+   ]
+  },
+  {
+   "id": "slow-time",
+   "name": "Slow Time",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Tiid",
+     "meaning": "Time"
+    },
+    {
+     "word": "Klo",
+     "meaning": "Sand"
+    },
+    {
+     "word": "Ul",
+     "meaning": "Eternity"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Hag's End"
+    },
+    {
+     "place": "Korvanjund",
+     "quest": "The Jagged Crown"
+    },
+    {
+     "place": "Labyrinthian",
+     "quest": "The Staff of Magnus"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Briefly slows the world around you.",
+   "quests": [
+    "The Jagged Crown",
+    "The Staff of Magnus"
+   ]
+  },
+  {
+   "id": "storm-call",
+   "name": "Storm Call",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Strun",
+     "meaning": "Storm"
+    },
+    {
+     "word": "Bah",
+     "meaning": "Wrath"
+    },
+    {
+     "word": "Qo",
+     "meaning": "Lightning"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Forelhost"
+    },
+    {
+     "place": "High Gate Ruins"
+    },
+    {
+     "place": "Skuldafn",
+     "quest": "The World-Eater's Eyrie"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Calls a storm that strikes everyone nearby with lightning, allies included.",
+   "quests": [
+    "The World-Eater's Eyrie"
+   ]
+  },
+  {
+   "id": "throw-voice",
+   "name": "Throw Voice",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Zul",
+     "meaning": "Voice"
+    },
+    {
+     "word": "Mey",
+     "meaning": "Fool"
+    },
+    {
+     "word": "Gut",
+     "meaning": "Far"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Shearpoint"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Throws your voice to distract and lure enemies.",
+   "quests": []
+  },
+  {
+   "id": "unrelenting-force",
+   "name": "Unrelenting Force",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Fus",
+     "meaning": "Force"
+    },
+    {
+     "word": "Ro",
+     "meaning": "Balance"
+    },
+    {
+     "word": "Dah",
+     "meaning": "Push"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Bleak Falls Barrow"
+    },
+    {
+     "place": "High Hrothgar",
+     "quest": "The Way of the Voice"
+    },
+    {
+     "place": "High Hrothgar",
+     "quest": "The Horn of Jurgen Windcaller"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Knocks enemies and objects away from you.",
+   "quests": [
+    "The Horn of Jurgen Windcaller",
+    "The Way of the Voice"
+   ]
+  },
+  {
+   "id": "whirlwind-sprint",
+   "name": "Whirlwind Sprint",
+   "dlc": "base",
+   "words": [
+    {
+     "word": "Wuld",
+     "meaning": "Whirlwind"
+    },
+    {
+     "word": "Nah",
+     "meaning": "Fury"
+    },
+    {
+     "word": "Kest",
+     "meaning": "Tempest"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Dead Men's Respite"
+    },
+    {
+     "place": "High Hrothgar",
+     "quest": "The Way of the Voice"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Rushes you forward a long way in an instant.",
+   "quests": [
+    "The Way of the Voice"
+   ]
+  },
+  {
+   "id": "drain-vitality",
+   "name": "Drain Vitality",
+   "dlc": "dawnguard",
+   "words": [
+    {
+     "word": "Gaan",
+     "meaning": "Stamina"
+    },
+    {
+     "word": "Lah",
+     "meaning": "Magicka"
+    },
+    {
+     "word": "Haas",
+     "meaning": "Health"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Arcwind Point"
+    },
+    {
+     "place": "Dimhollow Crypt",
+     "quest": "Awakening"
+    },
+    {
+     "place": "Forgotten Vale",
+     "quest": "Touching the Sky"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Drains a target's Stamina, then Magicka, then Health.",
+   "quests": [
+    "Awakening",
+    "Touching the Sky"
+   ]
+  },
+  {
+   "id": "soul-tear",
+   "name": "Soul Tear",
+   "dlc": "dawnguard",
+   "words": [
+    {
+     "word": "Rii",
+     "meaning": "Essence"
+    },
+    {
+     "word": "Vaaz",
+     "meaning": "Tear"
+    },
+    {
+     "word": "Zol",
+     "meaning": "Zombie"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Soul Cairn",
+     "quest": "Soul Cairn quests with Durnehviir"
+    }
+   ],
+   "questOnly": true,
+   "effect": "Tears at a target's soul; a target it kills rises to fight for you.",
+   "quests": [
+    "Soul Cairn quests with Durnehviir"
+   ]
+  },
+  {
+   "id": "summon-durnehviir",
+   "name": "Summon Durnehviir",
+   "dlc": "dawnguard",
+   "words": [
+    {
+     "word": "Dur",
+     "meaning": "Curse"
+    },
+    {
+     "word": "Neh",
+     "meaning": "Never"
+    },
+    {
+     "word": "Viir",
+     "meaning": "Dying"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Soul Cairn",
+     "quest": "Soul Cairn quests with Durnehviir"
+    }
+   ],
+   "questOnly": true,
+   "effect": "Summons the dragon Durnehviir from the Soul Cairn.",
+   "quests": [
+    "Soul Cairn quests with Durnehviir"
+   ]
+  },
+  {
+   "id": "battle-fury",
+   "name": "Battle Fury",
+   "dlc": "dragonborn",
+   "words": [
+    {
+     "word": "Mid",
+     "meaning": "Loyal"
+    },
+    {
+     "word": "Vur",
+     "meaning": "Valor"
+    },
+    {
+     "word": "Shaan",
+     "meaning": "Inspire"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Vahlok's Tomb"
+    },
+    {
+     "place": "Vahlok's Tomb",
+     "quest": "Lost Legacy"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Your allies' weapon attacks become faster.",
+   "quests": [
+    "Lost Legacy"
+   ]
+  },
+  {
+   "id": "bend-will",
+   "name": "Bend Will",
+   "dlc": "dragonborn",
+   "words": [
+    {
+     "word": "Gol",
+     "meaning": "Earth"
+    },
+    {
+     "word": "Hah",
+     "meaning": "Mind"
+    },
+    {
+     "word": "Dov",
+     "meaning": "Dragon"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Saering's Watch"
+    },
+    {
+     "place": "Apocrypha",
+     "quest": "Dragonborn main quest"
+    },
+    {
+     "place": "Skaal Village",
+     "quest": "Dragonborn main quest"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Bends the will of people, animals and, at full strength, dragons.",
+   "quests": [
+    "Dragonborn main quest"
+   ]
+  },
+  {
+   "id": "cyclone",
+   "name": "Cyclone",
+   "dlc": "dragonborn",
+   "words": [
+    {
+     "word": "Ven",
+     "meaning": "Wind"
+    },
+    {
+     "word": "Gaar",
+     "meaning": "Unleash"
+    },
+    {
+     "word": "Nos",
+     "meaning": "Strike"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Benkongerike"
+    },
+    {
+     "place": "White Ridge Barrow"
+    },
+    {
+     "place": "Kolbjorn Barrow"
+    }
+   ],
+   "questOnly": false,
+   "effect": "A whirlwind lifts targets into the air and damages them.",
+   "quests": []
+  },
+  {
+   "id": "dragon-aspect",
+   "name": "Dragon Aspect",
+   "dlc": "dragonborn",
+   "words": [
+    {
+     "word": "Mul",
+     "meaning": "Strength"
+    },
+    {
+     "word": "Qah",
+     "meaning": "Armor"
+    },
+    {
+     "word": "Diiv",
+     "meaning": "Wyrm"
+    }
+   ],
+   "locations": [
+    {
+     "place": "Apocrypha (Waking Dreams)"
+    },
+    {
+     "place": "Bloodskal Barrow"
+    },
+    {
+     "place": "Temple of Miraak"
+    }
+   ],
+   "questOnly": false,
+   "effect": "Once a day, take on a dragon's power: stronger attacks, shouts and armor.",
+   "quests": []
+  }
+ ]
+}
