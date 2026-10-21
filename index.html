@@ -224,6 +224,19 @@ tbody tr:last-child td { border-bottom: 0; }
 details.src summary { cursor: pointer; font-size: .82rem; color: var(--ink-2); }
 details.src p { margin: 4px 0 0; font-size: .82rem; color: var(--ink-2); }
 
+/* Quest plan */
+.quest-plan { display: grid; gap: 16px; }
+.qms h3 { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.qlist { list-style: none; margin: 0; padding: 0; display: grid; border-top: 1px solid var(--rule); counter-reset: q; }
+.qitem { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 4px 12px; padding: 10px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.qitem input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--accent); }
+.qitem.done .pn { text-decoration: line-through; color: var(--ink-2); }
+.qitem .why { font-size: .85rem; color: var(--accent); }
+.qitem .num { color: var(--ink-2); font-size: .8rem; }
+.tagd.warn { border-color: var(--bad); color: var(--bad); }
+.problems { border: 1px solid var(--bad); border-radius: 8px; padding: 12px 16px; display: grid; gap: 4px; font-size: .92rem; }
+.problems:empty { display: none; }
+
 /* Attributes */
 .bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
@@ -271,7 +284,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perk plan</button>
       <button role="tab" id="tab-attributes" aria-controls="p-attributes" aria-selected="false" data-step="attributes"><span class="n">3</span> Attributes</button>
       <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">4</span> Loadout</button>
-      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">5</span> Summary</button>
+      <button role="tab" id="tab-quests" aria-controls="p-quests" aria-selected="false" data-step="quests"><span class="n">5</span> Quest plan</button>
+      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">6</span> Summary</button>
     </nav>
   </div>
 </header>
@@ -302,7 +316,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="box">
         <h3>Alignment</h3>
         <div class="align-grid" id="alignGrid" role="radiogroup" aria-label="Alignment"></div>
-        <p class="muted" style="margin:0;font-size:.9rem">Alignment will filter the quest list when quest planning arrives. It has no effect on the numbers here.</p>
+        <p class="muted" style="margin:0;font-size:.9rem">Alignment flags quests on the Quest plan that don't fit this character. It has no effect on the numbers here.</p>
       </div>
       <div class="box">
         <h3>Combat style</h3>
@@ -473,7 +487,38 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
-  <!-- 5. Summary -->
+  <!-- 5. Quest plan -->
+  <section class="panel" id="p-quests" role="tabpanel" aria-labelledby="tab-quests" hidden>
+    <div class="intro">
+      <h2>Quest plan</h2>
+      <p class="muted">Every quest your chosen shouts and gear depend on, plus the quests that unlock them, in the order to do them by milestone. Tick quests off as you finish them.</p>
+    </div>
+    <div class="grid-2">
+      <div class="box">
+        <h3>Sides</h3>
+        <div class="field"><span class="label">Civil War</span>
+          <div class="styles" id="cwSide" role="radiogroup" aria-label="Civil War side"><button class="chip" data-v="imperial">Imperial Legion</button><button class="chip" data-v="stormcloak">Stormcloaks</button><button class="chip" data-v="none">Stay out of it</button></div></div>
+        <div class="field"><span class="label">Dawnguard</span>
+          <div class="styles" id="dgSide" role="radiogroup" aria-label="Dawnguard side"><button class="chip" data-v="dawnguard">Dawnguard</button><button class="chip" data-v="volkihar">Volkihar vampires</button><button class="chip" data-v="none">Not playing it</button></div></div>
+        <p class="muted" style="margin:0;font-size:.9rem">Each war has two sides and you can only finish one. Quests for the other side are left out.</p>
+      </div>
+      <div class="box">
+        <h3>Alignment</h3>
+        <p id="alignRule" style="margin:0"></p>
+        <label class="check"><input type="checkbox" id="skipConflicts"> Leave out quests that conflict with my alignment</label>
+        <p class="muted" style="margin:0;font-size:.9rem">These are the planner's own rules of thumb: the Dark Brotherhood, the Volkihar vampires and some Daedric quests count as evil acts, and the Thieves Guild and Dark Brotherhood count as lawless.</p>
+      </div>
+    </div>
+    <div id="questProblems"></div>
+    <div id="questPlan" class="quest-plan"></div>
+    <div class="box">
+      <h3>Add a quest</h3>
+      <div class="field"><label class="label" for="questSearch">Search all quests</label><input type="search" id="questSearch" class="search" placeholder="Quest, questline or place, such as Companions or Riften" autocomplete="off"></div>
+      <div class="perks" id="questResults"></div>
+    </div>
+  </section>
+
+  <!-- 6. Summary -->
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
     <div class="intro">
       <h2>Build sheet</h2>
@@ -512,7 +557,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
 <footer>
   <div class="wrap">
-    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Gear, alchemy, food and scrolls from <a href="https://en.uesp.net/wiki/Skyrim:Unique_Weapons" target="_blank" rel="noopener">UESP</a>. Shout words and locations, and Daedric artifact quests, from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
+    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Gear, alchemy, food, scrolls and quests from <a href="https://en.uesp.net/wiki/Skyrim:Unique_Weapons" target="_blank" rel="noopener">UESP</a>. Shout words and locations, and Daedric artifact quests, from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
     <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
   </div>
 </footer>
@@ -571,12 +616,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls'].map(n => get(n + '.json')));
+    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests'].map(n => get(n + '.json')));
   } catch (e) {
-    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads six files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code> and <code>scrolls.json</code>. Check that all six are there and reload the page.</p></div>`;
+    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads seven files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code> and <code>quests.json</code>. Check that all seven are there and reload the page.</p></div>`;
     return;
   }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
@@ -584,6 +629,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   const EFF = Object.fromEntries(ALCHDATA.effects.map(e => [e.id, e])), INGR = ALCHDATA.ingredients, RECIPES = ALCHDATA.recipes, RC_ = Object.fromEntries(RECIPES.map(r => [r.id, r]));
   const SCROLLS = SCROLLDATA.scrolls, SPIDERS = SCROLLDATA.spiders, SCR = Object.fromEntries(SCROLLS.map(s => [s.id, s])), SPD = Object.fromEntries(SPIDERS.map(s => [s.id, s]));
+  const QUESTS = QUESTDATA.quests, QID = Object.fromEntries(QUESTS.map(q => [q.id, q]));
+  const QNAME = {}; QUESTS.forEach(q => { (QNAME[q.name.toLowerCase()] ||= []).push(q); });
+  const QREWARD = {}; QUESTS.forEach(q => q.rewardLinks.forEach(l => { (QREWARD[l.toLowerCase()] ||= []).push(q); }));
   const DLC = { base: 'Base game', dawnguard: 'Dawnguard', dragonborn: 'Dragonborn', hearthfire: 'Hearthfire', cc: 'Creation Club' };
   const STRETCH = { 20: 'Levels 1–20', 40: 'Levels 21–40', 60: 'Levels 41–60' };
   const TREES = PERKDATA.trees;
@@ -695,7 +743,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none',
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -706,6 +754,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.gear = { 'dawnbreaker': 20, 'spellbreaker': 20, 'mace-of-molag-bal': 40, 'volendrung': 40 };
     s.potions = [{ effects: ['restore-health'], ingredients: ['blue-mountain-flower', 'wheat'], m: 20 }, { effects: ['fortify-smithing'], ingredients: ['glowing-mushroom', 'spriggan-sap'], m: 40 }].filter(x => x.ingredients.every(i => INGR.some(g => g.id === i)));
     s.food = { 'vegetable-soup': 20, 'beef-stew': 40 };
+    s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
     s.shouts = { 'unrelenting-force': 20, 'whirlwind-sprint': 20, 'become-ethereal': 40, 'dragonrend': 40, 'call-of-valor': 60 };
     BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
     return s;
@@ -726,6 +775,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.scrollUse = ['none', 'some', 'main'].includes(s.scrollUse) ? s.scrollUse : 'none';
     out.spiderUse = ['none', 'some', 'main'].includes(s.spiderUse) ? s.spiderUse : 'none';
     out.potions = Array.isArray(s.potions) ? s.potions.filter(x => x && MS.includes(x.m) && Array.isArray(x.effects) && x.effects.every(e => EFF[e]) && Array.isArray(x.ingredients) && x.ingredients.every(i => INGR.some(g => g.id === i))).slice(0, 40) : [];
+    out.cwSide = ['imperial', 'stormcloak', 'none'].includes(s.cwSide) ? s.cwSide : 'none';
+    out.dgSide = ['dawnguard', 'volkihar', 'none'].includes(s.dgSide) ? s.dgSide : 'none';
+    out.skipConflicts = !!s.skipConflicts;
+    out.quests = keep(s.quests, QID);
+    out.done = Object.fromEntries(Object.entries(s.done && typeof s.done === 'object' ? s.done : {}).filter(([k, v]) => QID[k] && v === true));
     out.shouts = {};
     if (s.shouts && typeof s.shouts === 'object') for (const [k, v] of Object.entries(s.shouts)) if (SH[k] && MS.includes(v)) out.shouts[k] = v;
     if (s.picks && typeof s.picks === 'object') for (const [k, v] of Object.entries(s.picks)) {
@@ -747,7 +801,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
-    ['identity','skills','attributes','loadout','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    ['identity','skills','attributes','loadout','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    if (step === 'quests') renderQuests();
     if (step === 'skills') renderSkills();
     if (step === 'loadout') renderLoadout();
     if (step === 'attributes') renderAttributes();
@@ -1200,6 +1255,156 @@ footer p { margin: 4px 0; max-width: 80ch; }
     touch(); renderScrolls(); renderSubtabs(); $(el.id)?.focus();
   });
 
+  // ---------- Quest plan ----------
+  const EVIL_QUESTS = new Set(["boethiahs-calling", "the-house-of-horrors", "the-taste-of-death", "the-whispering-door"]);
+  const GOOD_EXCEPT = new Set(["destroy-the-dark-brotherhood", "with-friends-like-these"]);   // where you choose to join or destroy the Brotherhood
+  function questConflict(q) {
+    const [law, good] = state.alignment.split(' ');
+    const evil = !GOOD_EXCEPT.has(q.id) && (q.line === 'Dark Brotherhood' || q.line === 'Volkihar Vampire Clan' || EVIL_QUESTS.has(q.id));
+    const lawless = !GOOD_EXCEPT.has(q.id) && (q.line === 'Thieves Guild' || q.line === 'Dark Brotherhood');
+    const why = [];
+    if (good === 'Good' && evil) why.push('evil acts');
+    if (law === 'Lawful' && lawless) why.push('crime');
+    return why.length ? `Involves ${why.join(' and ')}, which doesn't fit a ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment} character.` : '';
+  }
+  function sideBlock(q) {
+    if (q.line === 'Imperial Legion' && state.cwSide !== 'imperial') return state.cwSide === 'stormcloak' ? 'Imperial Legion quest; you chose the Stormcloaks.' : 'Imperial Legion quest; choose a Civil War side to include it.';
+    if (q.line === 'Stormcloaks' && state.cwSide !== 'stormcloak') return state.cwSide === 'imperial' ? 'Stormcloak quest; you chose the Imperial Legion.' : 'Stormcloak quest; choose a Civil War side to include it.';
+    if (q.line === 'Dawnguard' && state.dgSide !== 'dawnguard') return state.dgSide === 'volkihar' ? 'Dawnguard quest; you chose the vampires.' : 'Dawnguard quest; choose a Dawnguard side to include it.';
+    if (q.line === 'Volkihar Vampire Clan' && state.dgSide !== 'volkihar') return state.dgSide === 'dawnguard' ? 'Vampire quest; you chose the Dawnguard.' : 'Vampire quest; choose a Dawnguard side to include it.';
+    if (q.dlc === 'dawnguard' && state.dgSide === 'none') return 'Dawnguard content; you chose not to play it.';
+    return '';
+  }
+  const usable = q => !sideBlock(q) && !(state.skipConflicts && questConflict(q));
+  // a quest name can match several pages (Imperial and Stormcloak versions); take the one the build can do
+  function findQuest(name) {
+    const opts = QNAME[name.toLowerCase().replace(/\s*\(quest\)$/, '')] || [];
+    return opts.find(usable) || opts[0] || null;
+  }
+  function pickAlt(names) {
+    const qs = names.map(findQuest).filter(Boolean);
+    return qs.find(q => usable(q) && !questConflict(q)) || qs.find(usable) || null;   // prefer the version that fits the alignment
+  }
+  function questTargets() {
+    // what the build asks for, with the quest each one needs
+    const out = [], problems = [];
+    for (const g of GEAR) {
+      const m = state.gear[g.id]; if (m == null) continue;
+      const cands = g.quest ? [g.quest] : (QREWARD[g.name.toLowerCase()] || []).map(q => q.name);
+      if (!cands.length) continue;
+      const q = pickAlt(cands);
+      if (q) out.push({ q, m, label: g.name }); else {
+        const any = findQuest(cands[0]);
+        problems.push(`${g.name} needs ${cands[0]}${any ? `, which is left out: ${sideBlock(any) || questConflict(any)}` : ', which isn\'t in the quest data yet.'}`);
+      }
+    }
+    for (const s of SHOUTS) {
+      const m = state.shouts[s.id]; if (m == null) continue;
+      const free = s.locations.filter(l => !l.quests).length, gated = s.locations.filter(l => l.quests);
+      // with three or more places, each place teaches one word; with fewer, one quest teaches several words
+      const total = free + gated.length, need = Math.max(0, 3 - free), blocked = [];
+      let got = 0;
+      for (const l of gated) {
+        const q = pickAlt(l.quests);
+        if (!q) { blocked.push(l.quests.join(' or ')); continue; }
+        if (got < need) { out.push({ q, m, label: `${s.name} (word at ${l.place})` }); got++; }
+      }
+      const short = total >= 3 ? free + (gated.length - blocked.length) < 3 : blocked.length > 0;
+      if (short) problems.push(`${s.name}: ${blocked.length === gated.length && total < 3 ? 'its words come' : 'a word comes'} from ${blocked.join(', ')}, which your sides or alignment leave out.`);
+    }
+    for (const [id, m] of Object.entries(state.quests)) out.push({ q: QID[id], m, label: 'Added by you' });
+    return { targets: out, problems };
+  }
+  function buildQuestPlan() {
+    const { targets, problems } = questTargets();
+    const plan = {};   // id -> { q, m, why:Set, leadsTo:Set }
+    const visit = (q, m, why, from, depth = 0) => {
+      if (!q || depth > 40) return;
+      const had = plan[q.id], before = had ? had.m : Infinity;
+      const p = plan[q.id] ||= { q, m, why: new Set(), leadsTo: new Set() };
+      if (m < p.m) p.m = m;
+      if (why) p.why.add(why);
+      if (from) p.leadsTo.add(from.name);
+      if (had && before <= m) return;   // its prerequisites are already scheduled at least this early
+      const prevs = q.prev.map(findQuest).filter(Boolean);
+      const chosen = q.prevAny ? [prevs.find(usable) || prevs[0]].filter(Boolean) : prevs;
+      for (const pq of chosen) visit(pq, m, null, q, depth + 1);
+    };
+    targets.forEach(t => visit(t.q, t.m, t.label, null));
+    // order: prerequisites first, then questline, then level
+    const order = [], seen = new Set();
+    const place = (id, stack = new Set()) => {
+      if (seen.has(id) || stack.has(id)) return; stack.add(id);
+      const q = plan[id].q;
+      q.prev.map(findQuest).filter(x => x && plan[x.id]).forEach(x => place(x.id, stack));
+      seen.add(id); order.push(id);
+    };
+    Object.keys(plan).sort((a, b) => plan[a].m - plan[b].m || plan[a].q.line.localeCompare(plan[b].q.line) || ((plan[a].q.reqLevel || plan[a].q.suggLevel || 0) - (plan[b].q.reqLevel || plan[b].q.suggLevel || 0))).forEach(id => place(id));
+    // a quest can't be due before the quests it depends on are due
+    return { plan, order, problems };
+  }
+  function renderQuests() {
+    $('cwSide').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === state.cwSide)));
+    $('dgSide').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === state.dgSide)));
+    $('skipConflicts').checked = state.skipConflicts;
+    const al = state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment;
+    const [law, good] = state.alignment.split(' ');
+    $('alignRule').innerHTML = `<strong>${esc(al)}.</strong> ${good === 'Good' && law === 'Lawful' ? 'Evil acts and crime are flagged.' : good === 'Good' ? 'Evil acts are flagged.' : law === 'Lawful' ? 'Crime is flagged.' : 'Nothing is flagged for this alignment.'} You can change it on the Identity screen.`;
+    const { plan, order, problems } = buildQuestPlan();
+    const issues = [...problems];
+    $('questProblems').innerHTML = issues.length ? `<div class="problems"><strong>Not covered by this plan</strong>${issues.map(t => `<div>${esc(t)}</div>`).join('')}</div>` : '';
+    if (!order.length) {
+      $('questPlan').innerHTML = `<div class="box"><p class="muted" style="margin:0">No quests yet. Choose shouts or gear on the Loadout screen, or add a quest below.</p></div>`;
+    } else {
+      $('questPlan').innerHTML = MS.map(m => {
+        const ids = order.filter(id => plan[id].m === m);
+        if (!ids.length) return '';
+        const done = ids.filter(id => state.done[id]).length;
+        return `<div class="box qms"><h3>By level ${m} <span class="muted num" style="font-size:.85rem">${done} of ${ids.length} done</span></h3><ol class="qlist">${ids.map(id => {
+          const { q, why, leadsTo } = plan[id];
+          const warn = [];
+          if (q.reqLevel && q.reqLevel > m) warn.push(`Can't start until level ${q.reqLevel}.`);
+          const c = questConflict(q); if (c) warn.push(c);
+          const lv = q.reqLevel ? `<span class="tagd${q.reqLevel > m ? ' warn' : ''}">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : '';
+          const reasons = [...why].map(w => `For ${esc(w)}`).concat(leadsTo.size ? [`Leads to ${[...leadsTo].map(esc).join(', ')}`] : []);
+          return `<li class="qitem${state.done[id] ? ' done' : ''}"><input type="checkbox" id="qd-${id}" data-done="${id}" ${state.done[id] ? 'checked' : ''} aria-label="Done: ${esc(q.name)}"><div>
+            <div class="pn"><label for="qd-${id}">${esc(q.name)}</label><span class="tagd">${esc(q.line)}</span>${q.dlc !== 'base' && !q.line.includes(DLC[q.dlc] || '~') && q.line !== 'Volkihar Vampire Clan' ? `<span class="tagd">${DLC[q.dlc] || q.dlc}</span>` : ''}${lv}${c ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+            ${reasons.length ? `<div class="why">${reasons.join(' · ')}</div>` : ''}
+            ${q.description ? `<div class="pe">${esc(q.description)}</div>` : ''}
+            <div class="pr">${[q.giver ? `Start: ${esc(q.giver)}` : '', q.loc ? esc(q.loc) : ''].filter(Boolean).concat(`<a href="https://en.uesp.net/wiki/${encodeURI(q.page.replace(/ /g, '_'))}" target="_blank" rel="noopener">UESP</a>`).join(' · ')}</div>
+            ${q.reward ? `<div class="pr">Reward: ${esc(q.reward)}</div>` : ''}
+            ${warn.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div></li>`;
+        }).join('')}</ol></div>`;
+      }).join('');
+    }
+    renderQuestSearch();
+  }
+  function renderQuestSearch() {
+    const q = ($('questSearch').value || '').trim().toLowerCase();
+    if (q.length < 2) { $('questResults').innerHTML = '<p class="muted" style="margin:12px 0">Type at least two letters.</p>'; return; }
+    const hits = QUESTS.filter(x => [x.name, x.line, x.loc, x.giver].some(t => t && t.toLowerCase().includes(q)))
+      .map(x => ({ x, r: (x.name.toLowerCase().includes(q) ? 0 : 2) + (x.minor ? 1 : 0) }))
+      .sort((a, b) => a.r - b.r || (a.x.prev.length ? 1 : 0) - (b.x.prev.length ? 1 : 0)).slice(0, 12).map(o => o.x);
+    $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.line)}</span>${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : ''}</div>
+        <div class="pe">${esc(x.description)}</div>${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
+        <div class="ranks">${msSelect('qa-' + x.id, state.quests[x.id], x.name, `data-addq="${x.id}"`)}</div></div>`).join('')
+      : `<p class="muted" style="margin:12px 0">No quest matches "${esc(q)}".</p>`;
+  }
+  $('questSearch').addEventListener('input', renderQuestSearch);
+  $('questResults').addEventListener('change', e => {
+    const el = e.target.closest('select[data-addq]'); if (!el) return;
+    if (el.value === '') delete state.quests[el.dataset.addq]; else state.quests[el.dataset.addq] = +el.value;
+    touch(); renderQuests(); $(el.id)?.focus();
+  });
+  $('questPlan').addEventListener('change', e => {
+    const el = e.target.closest('input[data-done]'); if (!el) return;
+    if (el.checked) state.done[el.dataset.done] = true; else delete state.done[el.dataset.done];
+    touch(); renderQuests(); $(el.id)?.focus();
+  });
+  $('cwSide').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.cwSide = b.dataset.v; touch(); renderQuests(); });
+  $('dgSide').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.dgSide = b.dataset.v; touch(); renderQuests(); });
+  $('skipConflicts').addEventListener('change', e => { state.skipConflicts = e.target.checked; touch(); renderQuests(); });
+
   // ---------- Summary ----------
   const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
   const decode = c => JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
@@ -1217,7 +1422,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); return ids.length ? `${ids.length} in the plan, ${ids.filter(id => state.done[id]).length} done` : 'None yet'; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
       `<tr><td>${s.name}</td><td class="c num">${startOf(state.race, s.id)}</td>${lv.map(l => `<td class="c num">${l[s.id]}</td>`).join('')}</tr>`).join('')).join('');
@@ -1263,9 +1468,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
   });
 
-  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderSummary(); }
+  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderQuests(); renderSummary(); }
   renderAll();
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
-  showStep(['identity','skills','attributes','loadout','summary'].includes(step) ? step : 'identity');
+  showStep(['identity','skills','attributes','loadout','quests','summary'].includes(step) ? step : 'identity');
 })();
 </script>
