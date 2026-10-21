@@ -191,6 +191,9 @@ tbody tr:last-child td { border-bottom: 0; }
 .tagd.q { border-color: var(--accent); color: var(--accent); }
 .words { font-size: .9rem; }
 .words b { font-family: var(--display); font-weight: 400; letter-spacing: .03em; }
+.search { padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); max-width: 420px; width: 100%; }
+.gear-sets { display: grid; gap: 14px; }
+.pr a { color: var(--ink-2); }
 .tagd.fit { border-color: var(--good); color: var(--good); }
 .ms .warn { color: var(--bad); font-size: .88rem; }
 .ms ul { margin: 0; padding-left: 18px; font-size: .88rem; color: var(--ink-2); }
@@ -357,7 +360,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="box"><div class="perks" id="shoutList"></div></div>
     <div class="intro" style="margin-top:12px">
       <h2>Gear</h2>
-      <p class="muted">Choose the artifacts you want and the milestone you want each one by. Each comes from a quest, and some quests can't start until you reach a certain level. Items marked "Fits your build" use a skill you've planned perks in.</p>
+      <p class="muted">Choose the gear you want and the milestone you want each one by. Daedric artifacts come from quests, and some of those quests can't start until a certain level. Unique weapons and armor are found in set places or given during quests. Items marked "Fits your build" use a skill you've planned perks in.</p>
     </div>
     <div class="milestones" id="gearTally"></div>
     <div class="row" id="gearFilter" role="radiogroup" aria-label="Show gear">
@@ -368,8 +371,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button class="chip" data-f="fits" aria-checked="false">Fits your build</button>
       <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
     </div>
-    <div class="box"><h3>Daedric artifacts</h3><div class="perks" id="gearList"></div></div>
-    <p class="muted" style="margin:0;font-size:.9rem">Unique weapons and armor, potions and recipes will join this screen next. The quests listed here will feed the quest plan.</p>
+    <div class="field"><label class="label" for="gearSearch">Search gear</label><input type="search" id="gearSearch" class="search" placeholder="Name, type or place, such as Linwe or bow" autocomplete="off"></div>
+    <div class="gear-sets" id="gearList"></div>
+    <p class="muted" style="margin:0;font-size:.9rem">Potions and recipes will join this screen next. The quests listed here will feed the quest plan.</p>
   </section>
 
   <!-- 5. Summary -->
@@ -411,7 +415,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
 <footer>
   <div class="wrap">
-    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Shout words and locations, and Daedric artifact quests, from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
+    <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Unique weapons and armor and Daedric quest levels from <a href="https://en.uesp.net/wiki/Skyrim:Unique_Weapons" target="_blank" rel="noopener">UESP</a>. Shout words and locations, and Daedric artifact quests, from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
     <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
   </div>
 </footer>
@@ -481,7 +485,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
   const SHOUTS = SHOUTDATA.shouts, SH = Object.fromEntries(SHOUTS.map(s => [s.id, s]));
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
-  const DLC = { base: 'Base game', dawnguard: 'Dawnguard', dragonborn: 'Dragonborn' };
+  const DLC = { base: 'Base game', dawnguard: 'Dawnguard', dragonborn: 'Dragonborn', hearthfire: 'Hearthfire', cc: 'Creation Club' };
   const STRETCH = { 20: 'Levels 1–20', 40: 'Levels 21–40', 60: 'Levels 41–60' };
   const TREES = PERKDATA.trees;
   const PERKS = {};                       // id -> perk (with .skill)
@@ -859,30 +863,38 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function renderGear() {
     $('gearTally').innerHTML = MS.map(m => {
       const by = GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m);
-      const quests = [...new Set(by.map(g => g.quest))].sort();
+      const quests = [...new Set(by.map(g => g.quest).filter(Boolean))].sort();
       const issues = by.filter(g => state.gear[g.id] === m && gearIssues(g, m).length).length;
       return `<div class="ms${issues ? ' under' : ''}"><div class="ms-head"><span class="ms-level">By level ${m}</span>${issues ? '<span class="pill under">Needs fixing</span>' : ''}</div>
-        <div class="ms-stats"><span><strong class="num">${by.length}</strong> artifact${by.length === 1 ? '' : 's'}</span><span><strong class="num">${quests.length}</strong> quest${quests.length === 1 ? '' : 's'}</span></div>
+        <div class="ms-stats"><span><strong class="num">${by.length}</strong> item${by.length === 1 ? '' : 's'}</span><span><strong class="num">${quests.length}</strong> quest${quests.length === 1 ? '' : 's'}</span></div>
         ${issues ? `<div class="warn">${issues} item${issues === 1 ? '' : 's'} here can't be had by this level as planned.</div>` : ''}
-        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">No artifacts chosen for this milestone yet.</div>`}</div>`;
+        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed for these items.' : 'No gear chosen for this milestone yet.'}</div>`}</div>`;
     }).join('');
-    const list = GEAR.filter(g => gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.category === gearFilter));
-    $('gearList').innerHTML = list.length ? list.map(g => {
+    const q = ($('gearSearch').value || '').trim().toLowerCase();
+    const list = GEAR.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.category === gearFilter))
+      && (!q || [g.name, g.type, g.where, g.quest, g.prince].some(t => t && t.toLowerCase().includes(q))));
+    const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
+      const how = g.set === 'daedric' ? `${esc(g.prince)} · Quest: ${esc(g.quest)}` : (g.quest ? `Quest: ${esc(g.quest)}` : '');
       return `<div class="perk${v != null ? ' taken' : ''}"><div>
-          <div class="pn">${esc(g.name)}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
+          <div class="pn">${esc(g.name)}${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
-          <div class="pr">${esc(g.type)} · ${esc(g.prince)} · Quest: ${esc(g.quest)}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}</div>
+          ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
+          <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: milestone">
           <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
-    }).join('') : `<p class="muted" style="margin:12px 0">${gearFilter === 'fits' ? 'No artifacts match the skills in your perk plan yet.' : 'No artifacts chosen yet. Pick some from All.'}</p>`;
+    };
+    const sets = Object.entries(GEARDATA.sets).map(([id, label]) => [label, list.filter(g => g.set === id)]).filter(([, items]) => items.length);
+    $('gearList').innerHTML = sets.length ? sets.map(([label, items]) => `<div class="box"><h3>${esc(label)} <span class="muted num" style="font-size:.85rem">${items.length}</span></h3><div class="perks">${items.map(row).join('')}</div></div>`).join('')
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : gearFilter === 'fits' ? 'No gear matches the skills in your perk plan yet.' : 'No gear chosen yet. Pick some from All.'}</p></div>`;
   }
   $('gearList').addEventListener('change', e => {
     const el = e.target.closest('select[data-gear]'); if (!el) return;
     if (el.value === '') delete state.gear[el.dataset.gear]; else state.gear[el.dataset.gear] = +el.value;
     touch(); renderGear(); $(el.id)?.focus();
   });
+  $('gearSearch').addEventListener('input', () => renderGear());
   $('gearFilter').addEventListener('click', e => {
     const b = e.target.closest('[data-f]'); if (!b) return; gearFilter = b.dataset.f;
     $('gearFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
@@ -923,7 +935,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Artifacts</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
