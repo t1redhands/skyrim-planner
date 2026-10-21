@@ -237,6 +237,12 @@ details.src p { margin: 4px 0 0; font-size: .82rem; color: var(--ink-2); }
 .problems { border: 1px solid var(--bad); border-radius: 8px; padding: 12px 16px; display: grid; gap: 4px; font-size: .92rem; }
 .problems:empty { display: none; }
 
+/* Household */
+.hh { display: grid; gap: 20px; }
+.grid-2 > .box, .perks { align-content: start; }
+.tagd.good { border-color: var(--good); color: var(--good); }
+.home-facts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .88rem; color: var(--ink-2); }
+
 /* Attributes */
 .bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
@@ -284,8 +290,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perk plan</button>
       <button role="tab" id="tab-attributes" aria-controls="p-attributes" aria-selected="false" data-step="attributes"><span class="n">3</span> Attributes</button>
       <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">4</span> Loadout</button>
-      <button role="tab" id="tab-quests" aria-controls="p-quests" aria-selected="false" data-step="quests"><span class="n">5</span> Quest plan</button>
-      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">6</span> Summary</button>
+      <button role="tab" id="tab-household" aria-controls="p-household" aria-selected="false" data-step="household"><span class="n">5</span> Household</button>
+      <button role="tab" id="tab-quests" aria-controls="p-quests" aria-selected="false" data-step="quests"><span class="n">6</span> Quest plan</button>
+      <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">7</span> Summary</button>
     </nav>
   </div>
 </header>
@@ -487,7 +494,50 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
-  <!-- 5. Quest plan -->
+  <!-- 5. Household -->
+  <section class="panel" id="p-household" role="tabpanel" aria-labelledby="tab-household" hidden>
+    <nav class="subtabs" id="hhtabs" aria-label="Household sections">
+      <button data-hh="followers" aria-pressed="true">Followers</button>
+      <button data-hh="marriage" aria-pressed="false">Marriage</button>
+      <button data-hh="homes" aria-pressed="false">Homes</button>
+    </nav>
+    <div class="hh" data-hh="followers">
+      <div class="intro">
+        <h2>Followers</h2>
+        <p class="muted">Recommendations are based on your perk plan. "Covers your gaps" fighters are strong where you've planned few perks, such as a heavily armored blade for a mage. "Fights like you" followers share your skills. Any quest a follower needs goes into your quest plan.</p>
+      </div>
+      <div class="grid-2">
+        <div class="box"><h3>Covers your gaps</h3><div class="perks" id="folGaps"></div></div>
+        <div class="box"><h3>Fights like you</h3><div class="perks" id="folLike"></div></div>
+      </div>
+      <div class="row" id="folFilter" role="radiogroup" aria-label="Show followers">
+        <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="marry" aria-checked="false">Can marry</button><button class="chip" data-f="steward" aria-checked="false">Can be a steward</button><button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
+      </div>
+      <div class="field"><label class="label" for="folSearch">Search followers</label><input type="search" id="folSearch" class="search" placeholder="Name, skill or group, such as Lydia, Destruction or Housecarls" autocomplete="off"></div>
+      <div class="box"><div class="perks" id="folList"></div></div>
+    </div>
+    <div class="hh" data-hh="marriage" hidden>
+      <div class="intro">
+        <h2>Marriage</h2>
+        <p class="muted" id="marryIntro"></p>
+      </div>
+      <div class="box"><h3>Recommended for this build</h3><div class="perks" id="spRec"></div></div>
+      <div class="row" id="spFilter" role="radiogroup" aria-label="Show marriage candidates">
+        <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="follower" aria-checked="false">Also a follower</button><button class="chip" data-f="trainer" aria-checked="false">Trainers</button><button class="chip" data-f="merchant" aria-checked="false">Merchants</button><button class="chip" data-f="husband" aria-checked="false">Husbands</button><button class="chip" data-f="wife" aria-checked="false">Wives</button>
+      </div>
+      <div class="field"><label class="label" for="spSearch">Search candidates</label><input type="search" id="spSearch" class="search" placeholder="Name, race or town, such as Nord or Riften" autocomplete="off"></div>
+      <div class="box"><div class="perks" id="spList"></div></div>
+    </div>
+    <div class="hh" data-hh="homes" hidden>
+      <div class="intro">
+        <h2>Homes</h2>
+        <p class="muted">Homes you can buy or build, and the rooms your factions give you. Homes with the crafting stations your perks use are marked. Any quest a home needs goes into your quest plan.</p>
+      </div>
+      <div id="homeList" class="gear-sets"></div>
+    </div>
+  </section>
+
+  <!-- 6. Quest plan -->
   <section class="panel" id="p-quests" role="tabpanel" aria-labelledby="tab-quests" hidden>
     <div class="intro">
       <h2>Quest plan</h2>
@@ -509,6 +559,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <p class="muted" style="margin:0;font-size:.9rem">These are the planner's own rules of thumb: the Dark Brotherhood, the Volkihar vampires and some Daedric quests count as evil acts, and the Thieves Guild and Dark Brotherhood count as lawless.</p>
       </div>
     </div>
+    <div class="box">
+      <h3>Suggested for your perks</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Quests that suit the skills you've planned perks in, either because the questline trains them or because the quest rewards gear that uses them. The questline pairings are the planner's own rule of thumb.</p>
+      <div class="perks" id="questSuggest"></div>
+    </div>
     <div id="questProblems"></div>
     <div id="questPlan" class="quest-plan"></div>
     <div class="box">
@@ -518,7 +573,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
-  <!-- 6. Summary -->
+  <!-- 7. Summary -->
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
     <div class="intro">
       <h2>Build sheet</h2>
@@ -616,12 +671,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests'].map(n => get(n + '.json')));
+    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household'].map(n => get(n + '.json')));
   } catch (e) {
-    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads seven files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code> and <code>quests.json</code>. Check that all seven are there and reload the page.</p></div>`;
+    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads eight files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code>, <code>quests.json</code> and <code>household.json</code>. Check that all eight are there and reload the page.</p></div>`;
     return;
   }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
@@ -629,6 +684,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   const EFF = Object.fromEntries(ALCHDATA.effects.map(e => [e.id, e])), INGR = ALCHDATA.ingredients, RECIPES = ALCHDATA.recipes, RC_ = Object.fromEntries(RECIPES.map(r => [r.id, r]));
   const SCROLLS = SCROLLDATA.scrolls, SPIDERS = SCROLLDATA.spiders, SCR = Object.fromEntries(SCROLLS.map(s => [s.id, s])), SPD = Object.fromEntries(SPIDERS.map(s => [s.id, s]));
+  const FOLS = HOUSEDATA.followers, FOL = Object.fromEntries(FOLS.map(f => [f.id, f]));
+  const SPS = HOUSEDATA.spouses, SPO = Object.fromEntries(SPS.map(s => [s.id, s]));
+  const HOMES = [...HOUSEDATA.homes, ...HOUSEDATA.factionHomes], HOM = Object.fromEntries(HOMES.map(x => [x.id, x]));
   const QUESTS = QUESTDATA.quests, QID = Object.fromEntries(QUESTS.map(q => [q.id, q]));
   const QNAME = {}; QUESTS.forEach(q => { (QNAME[q.name.toLowerCase()] ||= []).push(q); });
   const QREWARD = {}; QUESTS.forEach(q => q.rewardLinks.forEach(l => { (QREWARD[l.toLowerCase()] ||= []).push(q); }));
@@ -743,7 +801,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -755,6 +813,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.potions = [{ effects: ['restore-health'], ingredients: ['blue-mountain-flower', 'wheat'], m: 20 }, { effects: ['fortify-smithing'], ingredients: ['glowing-mushroom', 'spriggan-sap'], m: 40 }].filter(x => x.ingredients.every(i => INGR.some(g => g.id === i)));
     s.food = { 'vegetable-soup': 20, 'beef-stew': 40 };
     s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
+    s.homes = { 'breezehome': 20 };
     s.shouts = { 'unrelenting-force': 20, 'whirlwind-sprint': 20, 'become-ethereal': 40, 'dragonrend': 40, 'call-of-valor': 60 };
     BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
     return s;
@@ -779,6 +838,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.dgSide = ['dawnguard', 'volkihar', 'none'].includes(s.dgSide) ? s.dgSide : 'none';
     out.skipConflicts = !!s.skipConflicts;
     out.quests = keep(s.quests, QID);
+    out.followers = keep(s.followers, FOL); out.homes = keep(s.homes, HOM);
+    out.spouse = s.spouse && SPO[s.spouse.id] && MS.includes(s.spouse.m) ? { id: s.spouse.id, m: s.spouse.m } : null;
     out.done = Object.fromEntries(Object.entries(s.done && typeof s.done === 'object' ? s.done : {}).filter(([k, v]) => QID[k] && v === true));
     out.shouts = {};
     if (s.shouts && typeof s.shouts === 'object') for (const [k, v] of Object.entries(s.shouts)) if (SH[k] && MS.includes(v)) out.shouts[k] = v;
@@ -801,7 +862,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
-    ['identity','skills','attributes','loadout','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    ['identity','skills','attributes','loadout','household','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    if (step === 'household') renderHousehold();
     if (step === 'quests') renderQuests();
     if (step === 'skills') renderSkills();
     if (step === 'loadout') renderLoadout();
@@ -1312,6 +1374,16 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const short = total >= 3 ? free + (gated.length - blocked.length) < 3 : blocked.length > 0;
       if (short) problems.push(`${s.name}: ${blocked.length === gated.length && total < 3 ? 'its words come' : 'a word comes'} from ${blocked.join(', ')}, which your sides or alignment leave out.`);
     }
+    for (const [id, m] of Object.entries(state.followers)) FOL[id].quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Follower: ${FOL[id].name}` }); else problems.push(`${FOL[id].name} needs ${n}, which your sides or alignment leave out.`); });
+    if (state.spouse) {
+      const sp = SPO[state.spouse.id], m = state.spouse.m;
+      [...sp.quests, 'The Bonds of Matrimony'].forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Marrying ${sp.name}` }); });
+    }
+    for (const [id, m] of Object.entries(state.homes)) {
+      const hm = HOM[id];
+      hm.quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); else problems.push(`${hm.name} needs ${n}, which your sides or alignment leave out.`); });
+      if (hm.questsAny) { const q = pickAlt(hm.questsAny); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); }
+    }
     for (const [id, m] of Object.entries(state.quests)) out.push({ q: QID[id], m, label: 'Added by you' });
     return { targets: out, problems };
   }
@@ -1343,6 +1415,71 @@ footer p { margin: 4px 0; max-width: 80ch; }
     // a quest can't be due before the quests it depends on are due
     return { plan, order, problems };
   }
+  // Quest suggestions from the perk plan
+  const LINE_SKILLS = {
+    'College of Winterhold': ['alteration', 'conjuration', 'destruction', 'illusion', 'restoration', 'enchanting'],
+    'Companions': ['oneHanded', 'twoHanded', 'archery', 'block', 'heavyArmor', 'smithing'],
+    'Thieves Guild': ['sneak', 'lockpicking', 'pickpocket', 'speech', 'lightArmor'],
+    'Dark Brotherhood': ['sneak', 'oneHanded', 'archery', 'alchemy', 'illusion'],
+    'Bards College': ['speech'],
+    'Imperial Legion': ['oneHanded', 'twoHanded', 'archery', 'block', 'heavyArmor', 'lightArmor'],
+    'Stormcloaks': ['oneHanded', 'twoHanded', 'archery', 'block', 'heavyArmor', 'lightArmor'],
+    'Dawnguard': ['archery', 'smithing', 'restoration'],
+    'Volkihar Vampire Clan': ['destruction', 'illusion', 'conjuration', 'sneak'],
+  };
+  const GEAR_BY_NAME = Object.fromEntries(GEAR.map(g => [g.name.toLowerCase(), g]));
+  const ENTRY_LINE = { 'Dawnguard': 'Dawnguard main quest', 'Volkihar Vampire Clan': 'Dawnguard main quest' };   // both sides begin with the DLC's opening quests
+  const ENTRY_PREF = { 'Dark Brotherhood': 'Innocence Lost' };   // two openers tie on chain length; this is the usual one
+  const entryCache = {};
+  function lineEntry(line) {
+    if (line in entryCache) return entryCache[line];
+    const inLine = n => { const q = (QNAME[n.toLowerCase()] || []).find(x => x.line === line); return q || null; };
+    const chain = (q, seen = new Set()) => seen.has(q.id) ? 0 : (seen.add(q.id), 1 + Math.max(0, ...q.next.map(inLine).filter(Boolean).map(n => chain(n, seen))));
+    if (ENTRY_PREF[line] && QNAME[ENTRY_PREF[line].toLowerCase()]) return entryCache[line] = QNAME[ENTRY_PREF[line].toLowerCase()][0];
+    const starts = QUESTS.filter(q => q.line === line && !q.minor && !q.prev.some(inLine));
+    return entryCache[line] = starts.sort((a, b) => chain(b) - chain(a))[0] || null;
+  }
+  function suggestQuests(inPlan) {
+    const perks = Object.fromEntries(SKILLS.map(s => [s.id, ALL_RANKS.filter(r => r.perk.skill === s.id && takenBy(state.picks, r.key, 60)).length]));
+    const total = Object.values(perks).reduce((a, b) => a + b, 0);
+    if (!total) return [];
+    const out = [];
+    const lineSeen = new Set();
+    // the first quest of each questline: no earlier quest in the line, and the longest chain of follow-ups
+    for (const [line, skills] of Object.entries(LINE_SKILLS)) {
+      const fit = skills.filter(s => perks[s] > 0);
+      if (!fit.length) continue;
+      const entry = lineEntry(ENTRY_LINE[line] || line);
+      if (!entry || !usable(entry) || inPlan.has(entry.id) || lineSeen.has(entry.id)) continue;
+      lineSeen.add(entry.id);
+      const score = fit.reduce((a, s) => a + perks[s], 0);
+      out.push({ q: entry, score, why: `Starts the ${line} questline, which suits your ${fit.map(s => SK[s].name).join(', ')} perks.` });
+    }
+    // single quests whose rewards are gear for your skills
+    for (const q of QUESTS) {
+      if (q.minor || inPlan.has(q.id) || !usable(q)) continue;
+      const items = q.rewardLinks.map(l => GEAR_BY_NAME[l.toLowerCase()]).filter(g => g && g.skill && perks[g.skill] > 0);
+      if (!items.length) continue;
+      const score = items.reduce((a, g) => a + perks[g.skill], 0) * 0.8;
+      out.push({ q, score, why: `Rewards ${items.map(g => `${g.name} (${SK[g.skill].name})`).join(', ')}.` });
+    }
+    const best = {};
+    out.forEach(o => { if (!best[o.q.id] || best[o.q.id].score < o.score) best[o.q.id] = o; });
+    return Object.values(best).sort((a, b) => b.score - a.score).slice(0, 8);
+  }
+  function renderSuggestions(plan) {
+    const inPlan = new Set(Object.keys(plan));
+    const list = suggestQuests(inPlan);
+    $('questSuggest').innerHTML = list.length ? list.map(({ q, why }) => `<div class="perk"><div><div class="pn">${esc(q.name)}<span class="tagd">${esc(q.line)}</span>${q.reqLevel ? `<span class="tagd">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : ''}${questConflict(q) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+        <div class="why">${esc(why)}</div>${q.description ? `<div class="pe">${esc(q.description)}</div>` : ''}</div>
+        <div class="ranks"><label class="rank"><span class="rl">Add it</span><select id="qs-${q.id}" data-addq="${q.id}" aria-label="Add ${esc(q.name)} by milestone"><option value="">Not added</option>${MS.map(m => `<option value="${m}">By ${m}</option>`).join('')}</select></label></div></div>`).join('')
+      : `<p class="muted" style="margin:12px 0">${ALL_RANKS.some(r => takenBy(state.picks, r.key, 60)) ? 'Every quest that suits your perks is already in the plan.' : 'Plan some perks first and suggestions will appear here.'}</p>`;
+  }
+  $('questSuggest').addEventListener('change', e => {
+    const el = e.target.closest('select[data-addq]'); if (!el || el.value === '') return;
+    state.quests[el.dataset.addq] = +el.value; touch(); renderQuests();
+  });
+
   function renderQuests() {
     $('cwSide').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === state.cwSide)));
     $('dgSide').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === state.dgSide)));
@@ -1351,6 +1488,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const [law, good] = state.alignment.split(' ');
     $('alignRule').innerHTML = `<strong>${esc(al)}.</strong> ${good === 'Good' && law === 'Lawful' ? 'Evil acts and crime are flagged.' : good === 'Good' ? 'Evil acts are flagged.' : law === 'Lawful' ? 'Crime is flagged.' : 'Nothing is flagged for this alignment.'} You can change it on the Identity screen.`;
     const { plan, order, problems } = buildQuestPlan();
+    renderSuggestions(plan);
     const issues = [...problems];
     $('questProblems').innerHTML = issues.length ? `<div class="problems"><strong>Not covered by this plan</strong>${issues.map(t => `<div>${esc(t)}</div>`).join('')}</div>` : '';
     if (!order.length) {
@@ -1405,6 +1543,140 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('dgSide').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.dgSide = b.dataset.v; touch(); renderQuests(); });
   $('skipConflicts').addEventListener('change', e => { state.skipConflicts = e.target.checked; touch(); renderQuests(); });
 
+  // ---------- Household ----------
+  let hhTab = 'followers';
+  try { const t = localStorage.getItem('skp.hh'); if (['followers', 'marriage', 'homes'].includes(t)) hhTab = t; } catch {}
+  const perkCounts = () => Object.fromEntries(SKILLS.map(s => [s.id, ALL_RANKS.filter(r => r.perk.skill === s.id && takenBy(state.picks, r.key, 60)).length]));
+  const FRONT = ['heavyArmor', 'block', 'oneHanded', 'twoHanded'], RANGED = ['archery', 'destruction'], SUPPORT = ['restoration', 'conjuration'];
+  const COMBAT = new Set([...FRONT, ...RANGED, ...SUPPORT, 'lightArmor', 'illusion', 'alteration', 'sneak']);   // what matters in a fighting companion
+  function followerScores() {
+    const pc = perkCounts(), mine = new Set(Object.keys(pc).filter(k => pc[k] > 0));
+    const has = list => list.some(k => mine.has(k));
+    return FOLS.filter(f => f.skills.length).map(f => {
+      const gaps = f.skills.filter(k => COMBAT.has(k) && !mine.has(k)), shared = f.skills.filter(k => COMBAT.has(k) && mine.has(k));
+      let gapScore = gaps.length * 0.5, why = [];
+      if (!has(FRONT) && f.skills.some(k => FRONT.includes(k))) { gapScore += 3; why.push('holds the front line'); }
+      if (!has(RANGED) && f.skills.some(k => RANGED.includes(k))) { gapScore += 2; why.push('attacks from range'); }
+      if (!has(SUPPORT) && f.skills.some(k => SUPPORT.includes(k))) { gapScore += 2; why.push('heals or summons'); }
+      const clash = folClash(f);
+      return { f, gapScore, gaps, shared, why, clash, likeScore: shared.reduce((a, k) => a + pc[k], 0) };
+    });
+  }
+  // a follower clashes with the alignment if their quest does, or if they belong to a faction that does
+  const folClash = f => f.quests.map(n => findQuest(n)).filter(Boolean).some(q => questConflict(q)) || !!questConflict({ id: '', line: f.group });
+  const moralFit = f => {
+    const [law, good] = state.alignment.split(' ');
+    if (good === 'Evil' && /any crime/.test(f.moral)) return 'Will go along with anything';
+    if (law === 'Lawful' && /not commit/.test(f.moral)) return 'Law-abiding, like you';
+    return '';
+  };
+  const folRow = (f, extra = '') => `<div class="perk${state.followers[f.id] != null ? ' taken' : ''}"><div>
+      <div class="pn">${esc(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+      ${extra ? `<div class="why">${extra}</div>` : ''}
+      <div class="pe">${esc(f.description)}</div>
+      <div class="pr">Skills: ${esc(f.skillsText)} · Up to level ${esc(f.maxLevel || '?')} · ${esc(f.moral)}</div>
+      ${f.prereq && !/^none$/i.test(f.prereq.trim()) ? `<div class="pr">Needs: ${esc(f.prereq)}</div>` : ''}</div>
+    <div class="ranks">${msSelect('fl-' + f.id, state.followers[f.id], f.name, `data-fol="${f.id}"`)}</div></div>`;
+  let folFilter = 'all', spFilter = 'all';
+  function renderFollowers() {
+    const sc = followerScores();
+    const planned = ALL_RANKS.some(r => takenBy(state.picks, r.key, 60));
+    const list2 = (a) => a.length > 1 ? `${a.slice(0, -1).join(', ')} and ${a.at(-1)}` : a[0];
+    const gaps = sc.filter(x => x.gapScore > 2 && !x.clash).sort((a, b) => b.gapScore - a.gapScore).slice(0, 4);
+    const like = sc.filter(x => x.likeScore > 0 && !x.clash).sort((a, b) => b.likeScore - a.likeScore).slice(0, 3);
+    $('folGaps').innerHTML = planned && gaps.length ? gaps.map(x => folRow(x.f, esc(`${x.why.length ? list2(x.why).replace(/^./, c => c.toUpperCase()) + '. ' : ''}Strong in ${list2(x.gaps.map(k => SK[k].name))}, which you haven't planned.`))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
+    $('folLike').innerHTML = planned && like.length ? like.map(x => folRow(x.f, esc(`Shares your ${x.shared.map(k => SK[k].name).join(', ')}.`))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
+    const q = ($('folSearch').value || '').trim().toLowerCase();
+    const list = FOLS.filter(f => (folFilter === 'all' || (folFilter === 'wanted' ? state.followers[f.id] != null : f[folFilter])) && (!q || [f.name, f.group, f.skillsText, f.description].some(t => t && t.toLowerCase().includes(q))));
+    $('folList').innerHTML = list.length ? list.map(f => folRow(f)).join('') : `<p class="muted" style="margin:12px 0">${q ? `Nothing matches "${esc(q)}".` : 'No followers chosen yet.'}</p>`;
+  }
+  function spouseRec() {
+    const pc = perkCounts(), mine = new Set(Object.keys(pc).filter(k => pc[k] > 0));
+    const fs = Object.fromEntries(followerScores().map(x => [x.f.name, x]));
+    return SPS.map(s => {
+      const why = [];
+      let score = 0;
+      if (s.follower && fs[s.name] && fs[s.name].gapScore > 2) { score += fs[s.name].gapScore; why.push(`also a follower, strong in ${fs[s.name].gaps.map(k => SK[k].name).join(', ')}, which you haven't planned`); }
+      else if (s.follower) { score += 2; why.push('also a follower'); }
+      const tr = s.trainerSkills.filter(k => mine.has(k));
+      if (tr.length) { score += 3 + tr.reduce((a, k) => a + pc[k], 0) / 5; why.push(`trains your ${tr.map(k => SK[k].name).join(', ')}`); }
+      if (s.merchant) { score += 1; why.push(`runs a shop (${s.merchant})`); }
+      return { s, score, why };
+    }).filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, 5);
+  }
+  const spRow = (s, extra = '') => {
+    const chosen = state.spouse && state.spouse.id === s.id;
+    return `<div class="perk${chosen ? ' taken' : ''}"><div>
+      <div class="pn">${esc(s.name)}<span class="tagd">${esc(s.race)}</span>${s.follower ? '<span class="tagd good">Follower</span>' : ''}${s.trainer ? `<span class="tagd">Trains ${esc(s.trainer)}</span>` : ''}${s.merchant ? `<span class="tagd">${esc(s.merchant)}</span>` : ''}</div>
+      ${extra ? `<div class="why">${extra}</div>` : ''}
+      <div class="pr">${esc(s.location)} · Home: ${esc(s.home)}</div>
+      ${s.condition ? `<div class="pr">To marry: ${esc(s.condition)}</div>` : ''}</div>
+    <div class="ranks"><label class="rank"><span class="rl">Marry</span><select class="${chosen ? 'on' : ''}" id="spm-${s.id}" data-sp="${s.id}" aria-label="Marry ${esc(s.name)} by milestone"><option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${chosen && state.spouse.m === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
+  };
+  function renderMarriage() {
+    const bonds = findQuest('The Bonds of Matrimony');
+    const cur = state.spouse ? SPO[state.spouse.id] : null;
+    $('marryIntro').textContent = `${cur ? `You plan to marry ${cur.name} by level ${state.spouse.m}. ` : ''}You can marry one person. You'll need the quest The Bonds of Matrimony${bonds && bonds.giver ? ` (start: ${bonds.giver})` : ''}, and some candidates ask for a favor first. Both go into your quest plan.`;
+    const rec = spouseRec();
+    $('spRec').innerHTML = rec.length ? rec.map(x => spRow(x.s, esc(x.why.join('; ').replace(/^./, c => c.toUpperCase()) + '.'))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
+    const q = ($('spSearch').value || '').trim().toLowerCase();
+    const list = SPS.filter(s => (spFilter === 'all' || (spFilter === 'husband' || spFilter === 'wife' ? s.role === spFilter : spFilter === 'follower' ? s.follower : spFilter === 'trainer' ? !!s.trainer : !!s.merchant))
+      && (!q || [s.name, s.race, s.location, s.home].some(t => t && t.toLowerCase().includes(q))));
+    $('spList').innerHTML = list.length ? list.map(s => spRow(s)).join('') : `<p class="muted" style="margin:12px 0">Nothing matches "${esc(q)}".</p>`;
+  }
+  let planLines = new Set();
+  function homeFit(hm) {
+    const pc = perkCounts(), f = (hm.features || []).join(' ').toLowerCase() + ' ' + (hm.note || '').toLowerCase(), out = [];
+    if (pc.alchemy && /alchemy|alchemist/.test(f)) out.push('alchemy lab for your Alchemy perks');
+    if (pc.enchanting && /enchant/.test(f)) out.push('enchanter for your Enchanting perks');
+    if (pc.smithing && /smithing/.test(f)) out.push('forge for your Smithing perks');
+    const line = hm.faction === 'Blades' ? null : hm.faction;
+    if (line && planLines.has(line)) out.push(`you're doing ${line} quests`);
+    return out;
+  }
+  function homeBlock(hm) {
+    if (hm.side === 'dawnguard' && state.dgSide !== 'dawnguard') return 'Only if you side with the Dawnguard.';
+    if (hm.side === 'volkihar' && state.dgSide !== 'volkihar') return 'Only if you side with the vampires.';
+    if (hm.side === 'civilwar' && state.cwSide === 'none') return 'Needs you to take part in the Civil War.';
+    return '';
+  }
+  function renderHomes() {
+    const { plan } = buildQuestPlan(); planLines = new Set(Object.values(plan).map(p => p.q.line));
+    const groups = [['Homes to buy', HOMES.filter(x => x.kind === 'city')], ['Homes to build (Hearthfire)', HOMES.filter(x => x.kind === 'hearthfire')], ['Solstheim (Dragonborn)', HOMES.filter(x => x.kind === 'dragonborn')], ['Faction rooms', HOMES.filter(x => x.kind === 'faction')]];
+    $('homeList').innerHTML = groups.map(([label, list]) => `<div class="box"><h3>${label}</h3><div class="perks">${list.map(hm => {
+      const fit = homeFit(hm), blk = homeBlock(hm);
+      return `<div class="perk${state.homes[hm.id] != null ? ' taken' : ''}"><div>
+        <div class="pn">${esc(hm.name)}${hm.faction ? `<span class="tagd">${esc(hm.faction)}</span>` : ''}${fit.length ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
+        ${fit.length ? `<div class="why">${esc(fit.join('; ').replace(/^./, c => c.toUpperCase()))}.</div>` : ''}
+        <div class="home-facts">${[hm.place, hm.price && `Price: ${hm.price}`, hm.totalCost && `With all upgrades: ${hm.totalCost}`, hm.housecarl && `Housecarl: ${hm.housecarl}`].filter(Boolean).map(esc).map(t => `<span>${t}</span>`).join('')}</div>
+        ${hm.features ? `<div class="pr">Crafting: ${esc(hm.features.join(', '))}</div>` : ''}
+        <div class="pe">${esc(hm.note ? hm.note + ' ' : '')}${esc(hm.description)}</div>
+        ${hm.quests.length || hm.questsAny ? `<div class="pr">Quest: ${esc([...hm.quests, ...(hm.questsAny ? [hm.questsAny.join(' or ')] : [])].join(', '))}</div>` : ''}
+        ${blk ? `<div class="pw">${esc(blk)}</div>` : ''}</div>
+        <div class="ranks">${msSelect('hm-' + hm.id, state.homes[hm.id], hm.name, `data-home="${hm.id}"`)}</div></div>`;
+    }).join('')}</div></div>`).join('');
+  }
+  function renderHousehold() {
+    $('hhtabs').querySelectorAll('[data-hh]').forEach(b => {
+      const k = b.dataset.hh, n = k === 'followers' ? Object.keys(state.followers).length : k === 'marriage' ? (state.spouse ? 1 : 0) : Object.keys(state.homes).length;
+      b.setAttribute('aria-pressed', String(k === hhTab)); b.innerHTML = `${b.textContent.replace(/\s*\d+$/, '')}${n ? ` <span class="cnt">${n}</span>` : ''}`;
+    });
+    document.querySelectorAll('#p-household .hh').forEach(s => s.hidden = s.dataset.hh !== hhTab);
+    if (hhTab === 'followers') renderFollowers(); else if (hhTab === 'marriage') renderMarriage(); else renderHomes();
+  }
+  $('hhtabs').addEventListener('click', e => { const b = e.target.closest('[data-hh]'); if (!b) return; hhTab = b.dataset.hh; try { localStorage.setItem('skp.hh', hhTab); } catch {} renderHousehold(); });
+  $('p-household').addEventListener('change', e => {
+    const el = e.target.closest('select[data-fol], select[data-sp], select[data-home]'); if (!el) return;
+    if (el.dataset.fol) { if (el.value === '') delete state.followers[el.dataset.fol]; else state.followers[el.dataset.fol] = +el.value; }
+    if (el.dataset.home) { if (el.value === '') delete state.homes[el.dataset.home]; else state.homes[el.dataset.home] = +el.value; }
+    if (el.dataset.sp) state.spouse = el.value === '' ? (state.spouse && state.spouse.id === el.dataset.sp ? null : state.spouse) : { id: el.dataset.sp, m: +el.value };
+    touch(); renderHousehold(); $(el.id)?.focus();
+  });
+  $('folSearch').addEventListener('input', renderFollowers);
+  $('spSearch').addEventListener('input', renderMarriage);
+  $('folFilter').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (!b) return; folFilter = b.dataset.f; $('folFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b))); renderFollowers(); });
+  $('spFilter').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (!b) return; spFilter = b.dataset.f; $('spFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b))); renderMarriage(); });
+
   // ---------- Summary ----------
   const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
   const decode = c => JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
@@ -1422,7 +1694,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); return ids.length ? `${ids.length} in the plan, ${ids.filter(id => state.done[id]).length} done` : 'None yet'; })()}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); return ids.length ? `${ids.length} in the plan, ${ids.filter(id => state.done[id]).length} done` : 'None yet'; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
       `<tr><td>${s.name}</td><td class="c num">${startOf(state.race, s.id)}</td>${lv.map(l => `<td class="c num">${l[s.id]}</td>`).join('')}</tr>`).join('')).join('');
@@ -1468,9 +1740,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
   });
 
-  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderQuests(); renderSummary(); }
+  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); }
   renderAll();
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
-  showStep(['identity','skills','attributes','loadout','quests','summary'].includes(step) ? step : 'identity');
+  showStep(['identity','skills','attributes','loadout','household','quests','summary'].includes(step) ? step : 'identity');
 })();
 </script>
