@@ -259,13 +259,19 @@ def dump_quests(session, root="Category:Skyrim-Quests", max_depth=3):
     out = {}
     for i in range(0, len(titles), 50):
         batch = titles[i:i + 50]
-        data = api_get(session, action="query", prop="revisions", rvprop="content", rvslots="main",
-                       titles="|".join(batch), redirects=1)
-        for p in data["query"].get("pages", []):
-            revs = p.get("revisions")
-            if revs:
-                out[p["title"]] = {"categories": pages.get(p["title"], []),
-                                   "wikitext": revs[0]["slots"]["main"]["content"]}
+        cont = {}
+        while True:   # the API sends large batches in parts; keep asking until it says it's done
+            data = api_get(session, action="query", prop="revisions", rvprop="content", rvslots="main",
+                           titles="|".join(batch), redirects=1, **cont)
+            back = {r["to"]: r["from"] for r in data["query"].get("redirects", [])}
+            for p in data["query"].get("pages", []):
+                revs = p.get("revisions")
+                if revs:
+                    cats = pages.get(p["title"]) or pages.get(back.get(p["title"]), [])
+                    out[p["title"]] = {"categories": cats, "wikitext": revs[0]["slots"]["main"]["content"]}
+            if "continue" not in data:
+                break
+            cont = data["continue"]
         print(f"  fetched {min(i + 50, len(titles))} of {len(titles)}")
     SOURCE.mkdir(parents=True, exist_ok=True)
     (SOURCE / "quests.json").write_text(json.dumps({
