@@ -1,0 +1,66 @@
+{{Trail|Items}} {{TOCright|limit=2}}
+'''Leveled items''' are typically obtained as quest rewards. The item is scaled in power based on the player's level at the time the reward is given. Some leveled items become stronger in both their physical and magical characteristics, while others only improve their enchantments. The items do ''not'' improve in quality when your character levels up. Some, such as the Axe of Whiterun, are random leveled items with a random enchantment in which the displayed name of that specific instance (that [[Skyrim:Form ID|reference ID]]) is changed to be unique. In these cases the item does not have a unique base ID or set of base IDs. For full leveled statistics on each item, please visit the main article relating to these items, which is linked in the name of each item listed.
+
+This article only lists items that are leveled.
+* For items that meet the definition of artifacts, see [[Skyrim:Artifacts|Artifacts]].
+* For items that do not fit all of the requirements of an Artifact and are not leveled, see [[Skyrim:Unique Items|Unique Items]].
+* For unique items that are quest-related, see [[Skyrim:Quest Items|Quest Items]].
+{{NewLine}}
+==Weapons==
+===[[Skyrim:Chillrend|Chillrend]]===
+{{Skyrim:Chillrend}}{{NewLine}}
+===[[Skyrim:Dragonbane|Dragonbane]]===
+{{Skyrim:Dragonbane}}{{NewLine}}
+===[[Skyrim:Gauldur Blackblade|Gauldur Blackblade]]===
+{{Skyrim:Gauldur Blackblade}}{{NewLine}}
+===[[Skyrim:Gauldur Blackbow|Gauldur Blackbow]]===
+{{Skyrim:Gauldur Blackbow}}{{NewLine}}
+
+===Lunar Weapons===
+===[[Skyrim:Lunar Iron Mace|Lunar Iron Mace]]===
+{{Skyrim:Lunar Iron Mace}}{{NewLine}}
+===[[Skyrim:Lunar Iron Sword|Lunar Iron Sword]]===
+{{Skyrim:Lunar Iron Sword}}{{NewLine}}
+===[[Skyrim:Lunar Iron War Axe|Lunar Iron War Axe]]===
+{{Skyrim:Lunar Iron War Axe}}{{NewLine}}
+===[[Skyrim:Lunar Steel Mace|Lunar Steel Mace]]===
+{{Skyrim:Lunar Steel Mace}}{{NewLine}}
+===[[Skyrim:Lunar Steel Sword|Lunar Steel Sword]]===
+{{Skyrim:Lunar Steel Sword}}{{NewLine}}
+===[[Skyrim:Lunar Steel War Axe|Lunar Steel War Axe]]===
+{{Skyrim:Lunar Steel War Axe}}{{NewLine}}
+===[[Skyrim:Miraak's Sword|Miraak's Sword]]===
+{{Skyrim:Miraak's Sword}}{{NewLine}}
+===[[Skyrim:Miraak's Staff|Miraak's Staff]]===
+{{Skyrim:Miraak's Staff}}{{NewLine}}
+===[[Skyrim:Nightingale Blade|Nightingale Blade]]===
+{{Skyrim:Nightingale Blade}}{{NewLine}}
+===[[Skyrim:Nightingale Bow|Nightingale Bow]]===
+{{Skyrim:Nightingale Bow}}{{NewLine}}
+===[[Skyrim:The Pale Blade|The Pale Blade]]===
+{{Skyrim:The Pale Blade}}{{NewLine}}
+===[[Skyrim:Tsun's Battle Axe|Tsun's Battle Axe]]===
+{{Skyrim:Tsun's Battle Axe}}{{NewLine}}
+
+==Armor==
+===[[Skyrim:Miraak (item)|Miraak]]===
+{{Skyrim:Miraak (item)}}{{NewLine}}
+===[[Skyrim:Nightingale Armor|Nightingale Armor]]===
+{{Skyrim:Nightingale Armor}}{{NewLine}}
+===[[Skyrim:Nightingale Boots|Nightingale Boots]]===
+{{Skyrim:Nightingale Boots}}{{NewLine}}
+===[[Skyrim:Nightingale Gloves|Nightingale Gloves]]===
+{{Skyrim:Nightingale Gloves}}{{NewLine}}
+===[[Skyrim:Nightingale Hood|Nightingale Hood]]===
+{{Skyrim:Nightingale Hood}}{{NewLine}}
+===[[Skyrim:Shield of Solitude|Shield of Solitude]]===
+{{Skyrim:Shield of Solitude}}{{NewLine}}
+
+==Clothes==
+===[[Skyrim:Amulet of Articulation|Amulet of Articulation]]===
+{{Skyrim:Amulet of Articulation}}{{NewLine}}
+===[[Skyrim:Mage's Circlet|Mage's Circlet]]===
+{{Skyrim:Mage's Circlet}}{{NewLine}}
+[[Category:Skyrim-Weapons| ]]
+[[Category:Skyrim-Armor| ]]
+[[Category:Skyrim-Clothing| ]]

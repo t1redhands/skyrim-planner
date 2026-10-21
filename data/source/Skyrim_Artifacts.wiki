@@ -1,0 +1,53 @@
+{{Trail|Items}}{{TOCright|limit=2}}
+An '''artifact''' is a unique and unusually powerful magical item. Many of these artifacts in Skyrim have appeared in previous Elder Scrolls games, as listed on the [[Lore:Artifacts|Lore article on artifacts]].
+==Artifact Definition==
+The definition used for artifacts on this article is that the item must meet '''all three''' of the following requirements:
+* Be unique in appearance.
+* Only appear once in the game.
+* Have a unique and useful enchantment.
+None of these artifacts can be disenchanted to learn the enchantment. Some of them may be improved by [[Skyrim:Smithing|smithing]]. The material and perk relevant to each item is given below. Improving enchanted items requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk. However, many artifacts do not have an applicable perk that allows improvement past ''flawless'' quality without a Smithing skill of greater than 100.
+
+Many of the artifacts are of [[Lore:Daedra|Daedric]] origin. These items are formed from the essence of a [[Lore:Daedric Princes|Daedric Prince]], providing the items with their power. Nineteen ''Daedric Artifacts'' are available in the game; most are rewards for the [[Skyrim:Daedric Quests|Daedric Quests]].
+
+In addition to the Daedric artifacts, there are also other unique relics such as the masks worn by the undead [[Skyrim:Dragon Priest|Dragon Priests]]. There are nine of these scattered across Skyrim, each with unique powers and enchantments.
+
+Please see the [[Skyrim:Daedric_Quests#Achievements|following page]] for information about what items count as Daedric Artifacts for the following achievements/trophies:
+* {{achievement|Daedric Influence}}
+* {{achievement|Oblivion Walker}}
+
+This article only lists items that fit the definition of an artifact.
+* For items that are leveled, see [[Skyrim:Leveled Items|Leveled Items]].
+* For items that do not fit all of the requirements of an Artifact and are not leveled, see [[Skyrim:Unique Items|Unique Items]].
+* For unique items that are quest-related, see [[Skyrim:Quest Items|Quest Items]].
+
+The [[Skyrim:Spear of Bitter Mercy|Spear of Bitter Mercy]]{{CC|Goblins}} is an [[Skyrim:Unobtainable Items|unobtainable]] artifact that is used by the [[Skyrim:Goblin|goblin]] [[Skyrim:Gogh|Gogh]].
+
+{{NewLine}}
+{|class=wikitable width=50% style="text-align:center;" align=center
+|'''[[Skyrim:Weapon Artifacts|Weapons]]'''||'''[[Skyrim:Armor Artifacts|Armor]]'''||'''[[Skyrim:Clothing Artifacts|Clothing]]'''
+|-valign=top
+|width=33%|
+[[Skyrim:Weapon Artifacts#Daggers|Daggers]]<br>
+[[Skyrim:Weapon Artifacts#Maces|Maces]]<br>
+[[Skyrim:Weapon Artifacts#Staves|Staves]]<br>
+[[Skyrim:Weapon Artifacts#Swords|Swords]]<br>
+[[Skyrim:Weapon Artifacts#War Axes|War Axes]]<br>
+[[Skyrim:Weapon Artifacts#Battleaxes|Battleaxes]]<br>
+[[Skyrim:Weapon Artifacts#Bows|Bows]]<br>
+[[Skyrim:Weapon Artifacts#Greatswords|Greatswords]]<br>
+[[Skyrim:Weapon Artifacts#Warhammers|Warhammers]]
+|width=33%|
+[[Skyrim:Armor Artifacts#Armor (Cuirasses)|Armor (Cuirasses)]]<br>
+[[Skyrim:Armor Artifacts#Boots|Boots]]<br>
+[[Skyrim:Armor Artifacts#Gauntlets|Gauntlets]]<br>
+[[Skyrim:Armor Artifacts#Helmets|Helmets]]<br>
+[[Skyrim:Armor Artifacts#Shields|Shields]]<br>
+[[Skyrim:Armor Artifacts#Dragon Priest Masks|Dragon Priest Masks]]
+|width=33%|
+[[Skyrim:Clothing Artifacts#Amulets|Amulets]]<br>
+[[Skyrim:Clothing Artifacts#Circlets|Circlets]]<br>
+[[Skyrim:Clothing Artifacts#Rings|Rings]]<br>
+[[Skyrim:Clothing Artifacts#Robes|Robes]]<br>
+|-
+|colspan=3|'''[[Skyrim:Other Artifacts|Other]]'''
+|}
