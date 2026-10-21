@@ -1,0 +1,118 @@
+{{Trail|Items|Unique Items}} {{TOCright|limit=2}}
+'''Unique Armor''' is a type of armor available in Skyrim that is generally found in fixed locations, unlike most equipment in the game, which are randomly generated or generic equipment (see [[Skyrim:Generic Magic Apparel|Generic Magic Apparel]]). Some of these armors can be improved through [[Skyrim:smithing|smithing]]. Improving enchanted armor requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk.
+
+Many of these items are quest rewards, although some of the most valuable quest rewards are listed at [[Skyrim:Leveled Items|Leveled Items]] (unique items, but with level-dependent statistics) and [[Skyrim:Artifacts|Artifacts]] (unusually powerful unique items with unique appearances and enchantments). For unique items that are needed to complete quests, please see the [[Skyrim:Quest Items|Quest Items]] article. For other unique items in the game, see the [[Skyrim:Unique Items|Unique Items]] article. For a list of the other available armor, see the [[:Category:Skyrim-Armor|armor category]].
+{{NewLine}}
+==Armor==
+===[[Skyrim:Ahzidal's Armor of Retribution|Ahzidal's Armor of Retribution]]===
+{{Skyrim:Ahzidal's Armor of Retribution}}{{NewLine}}
+===[[Skyrim:Ahzidal's Boots of Waterwalking|Ahzidal's Boots of Waterwalking]]===
+{{Skyrim:Ahzidal's Boots of Waterwalking}}{{NewLine}}
+===[[Skyrim:Ahzidal's Gauntlets of Warding|Ahzidal's Gauntlets of Warding]]===
+{{Skyrim:Ahzidal's Gauntlets of Warding}}{{NewLine}}
+===[[Skyrim:Ahzidal's Helm of Vision|Ahzidal's Helm of Vision]]===
+{{Skyrim:Ahzidal's Helm of Vision}}{{NewLine}}
+===[[Skyrim:Ancient Helmet of the Unburned|Ancient Helmet of the Unburned]]===
+{{Skyrim:Ancient Helmet of the Unburned}}{{NewLine}}
+===[[Skyrim:Ancient Shrouded Armor|Ancient Shrouded Armor]]===
+{{Skyrim:Ancient Shrouded Armor}}{{NewLine}}
+===[[Skyrim:Ancient Shrouded Boots|Ancient Shrouded Boots]]===
+{{Skyrim:Ancient Shrouded Boots}}{{NewLine}}
+===[[Skyrim:Ancient Shrouded Cowl|Ancient Shrouded Cowl]]===
+{{Skyrim:Ancient Shrouded Cowl}}{{NewLine}}
+===[[Skyrim:Ancient Shrouded Gloves|Ancient Shrouded Gloves]]===
+{{Skyrim:Ancient Shrouded Gloves}}{{NewLine}}
+===[[Skyrim:Blackguard's Armor|Blackguard's Armor]]===
+{{Skyrim:Blackguard's Armor}}{{NewLine}}
+===[[Skyrim:Blackguard's Boots|Blackguard's Boots]]===
+{{Skyrim:Blackguard's Boots}}{{NewLine}}
+===[[Skyrim:Blackguard's Gloves|Blackguard's Gloves]]===
+{{Skyrim:Blackguard's Gloves}}{{NewLine}}
+===[[Skyrim:Blackguard's Hood|Blackguard's Hood]]===
+{{Skyrim:Blackguard's Hood}}{{NewLine}}
+===[[Skyrim:Deathbrand Armor|Deathbrand Armor]]===
+{{Skyrim:Deathbrand Armor}}{{NewLine}}
+===[[Skyrim:Deathbrand Boots|Deathbrand Boots]]===
+{{Skyrim:Deathbrand Boots}}{{NewLine}}
+===[[Skyrim:Deathbrand Gauntlets|Deathbrand Gauntlets]]===
+{{Skyrim:Deathbrand Gauntlets}}{{NewLine}}
+===[[Skyrim:Deathbrand Helm|Deathbrand Helm]]===
+{{Skyrim:Deathbrand Helm}}{{NewLine}}
+===[[Skyrim:Diadem of the Savant|Diadem of the Savant]]===
+{{Skyrim:Diadem of the Savant}}{{NewLine}}
+===[[Skyrim:General Tullius' Armor|General Tullius' Armor]]===
+{{Skyrim:General Tullius' Armor}}{{NewLine}}
+===[[Skyrim:Gilded Wristguards|Gilded Wristguards]]===
+{{Skyrim:Gilded Wristguards}}{{NewLine}}
+===[[Skyrim:Gloves of the Pugilist|Gloves of the Pugilist]]===
+{{Skyrim:Gloves of the Pugilist}}{{NewLine}}
+===[[Skyrim:Guild Master's Armor|Guild Master's Armor]]===
+{{Skyrim:Guild Master's Armor}}{{NewLine}}
+===[[Skyrim:Guild Master's Boots|Guild Master's Boots]]===
+{{Skyrim:Guild Master's Boots}}{{NewLine}}
+===[[Skyrim:Guild Master's Gloves|Guild Master's Gloves]]===
+{{Skyrim:Guild Master's Gloves}}{{NewLine}}
+===[[Skyrim:Guild Master's Hood|Guild Master's Hood]]===
+{{Skyrim:Guild Master's Hood}}{{NewLine}}
+===[[Skyrim:Helm of Yngol|Helm of Yngol]]===
+{{Skyrim:Helm of Yngol}}{{NewLine}}
+===[[Skyrim:Ironhand Gauntlets|Ironhand Gauntlets]]===
+{{Skyrim:Ironhand Gauntlets}}{{NewLine}}
+===[[Skyrim:Linwe's Armor|Linwe's Armor]]===
+{{Skyrim:Linwe's Armor}}{{NewLine}}
+===[[Skyrim:Linwe's Boots|Linwe's Boots]]===
+{{Skyrim:Linwe's Boots}}{{NewLine}}
+===[[Skyrim:Linwe's Gloves|Linwe's Gloves]]===
+{{Skyrim:Linwe's Gloves}}{{NewLine}}
+===[[Skyrim:Linwe's Hood|Linwe's Hood]]===
+{{Skyrim:Linwe's Hood}}{{NewLine}}
+===[[Skyrim:Movarth's Boots|Movarth's Boots]]===
+{{Skyrim:Movarth's Boots}}{{NewLine}}
+===[[Skyrim:Armor of the Old Gods|Armor of the Old Gods]]===
+{{Skyrim:Armor of the Old Gods}}{{NewLine}}
+===[[Skyrim:Boots of the Old Gods|Boots of the Old Gods]]===
+{{Skyrim:Boots of the Old Gods}}{{NewLine}}
+===[[Skyrim:Gauntlets of the Old Gods|Gauntlets of the Old Gods]]===
+{{Skyrim:Gauntlets of the Old Gods}}{{NewLine}}
+===[[Skyrim:Helmet of the Old Gods|Helmet of the Old Gods]]===
+{{Skyrim:Helmet of the Old Gods}}{{NewLine}}
+===[[Skyrim:Predator's Grace|Predator's Grace]]===
+{{Skyrim:Predator's Grace}}{{NewLine}}
+===[[Skyrim:Shrouded Armor|Shrouded Armor]]===
+{{Skyrim:Shrouded Armor}}{{NewLine}}
+===[[Skyrim:Shrouded Boots|Shrouded Boots]]===
+{{Skyrim:Shrouded Boots}}{{NewLine}}
+===[[Skyrim:Shrouded Cowl|Shrouded Cowl]]===
+{{Skyrim:Shrouded Cowl}}{{NewLine}}
+===[[Skyrim:Shrouded Gloves|Shrouded Gloves]]===
+{{Skyrim:Shrouded Gloves}}{{NewLine}}
+===[[Skyrim:Thieves Guild Armor|Thieves Guild Armor]]===
+{{Skyrim:Thieves Guild Armor}}{{NewLine}}
+===[[Skyrim:Thieves Guild Boots|Thieves Guild Boots]]===
+{{Skyrim:Thieves Guild Boots}}{{NewLine}}
+===[[Skyrim:Thieves Guild Gloves|Thieves Guild Gloves]]===
+{{Skyrim:Thieves Guild Gloves}}{{NewLine}}
+===[[Skyrim:Thieves Guild Hood|Thieves Guild Hood]]===
+{{Skyrim:Thieves Guild Hood}}{{NewLine}}
+===[[Skyrim:Torturer's Hood|Torturer's Hood]]===
+{{Skyrim:Torturer's Hood}}{{NewLine}}
+===[[Skyrim:Tumblerbane Gloves|Tumblerbane Gloves]]===
+{{Skyrim:Tumblerbane Gloves}}{{NewLine}}
+===[[Skyrim:Ulfric's Bracers|Ulfric's Bracers]]===
+{{Skyrim:Ulfric's Bracers}}{{NewLine}}
+===[[Skyrim:Visage of Mzund|Visage of Mzund]]===
+{{Skyrim:Visage of Mzund}}{{NewLine}}
+==Gallery==
+===Male===
+<gallery>
+File:SR-item-General Tullius' Armor Male.jpg|General Tullius' Armor
+File:SR-item-Helm of Yngol Male.jpg|Helm of Yngol with Ancient Nord Armor
+File:SR-item-Thieves Guild Variant Armor Male.jpg|Linwe's Armor
+</gallery>
+===Female===
+<gallery>
+File:SR-item-General Tullius' Armor Female.jpg|General Tullius' Armor
+File:SR-item-Helm of Yngol Female.jpg|Helm of Yngol with Ancient Nord Armor
+File:SR-item-Thieves Guild Variant Armor Female.jpg|Linwe's Armor
+</gallery>
+[[Category:Skyrim-Armor| ]]

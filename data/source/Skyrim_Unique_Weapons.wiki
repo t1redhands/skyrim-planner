@@ -1,0 +1,152 @@
+{{Trail|Items|Unique Items}} {{TOCright|limit=2}}
+'''Unique Weapons''' are weapons available in Skyrim generally found in fixed locations, unlike most equipment in the game, which are randomly generated or generic equipment (see [[Skyrim:Generic Magic Weapons|Generic Magic Weapons]]). Some of these weapons can be improved through [[Skyrim:smithing|smithing]]. Improving enchanted weapons requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk.
+
+Many of these items are quest rewards, although some of the most valuable quest rewards are listed at [[Skyrim:Leveled Items|Leveled Items]] (unique items, but with level-dependent statistics) and [[Skyrim:Artifacts|Artifacts]] (unusually powerful unique items with unique appearances and enchantments). For unique items that are needed to complete quests, please see the [[Skyrim:Quest Items|Quest Items]] article. For other unique items in the game, see the [[Skyrim:Unique Items|Unique Items]] article. For a list of the other available weapons, see the [[:Category:Skyrim-Weapons|weapon category]].
+{{NewLine}}
+==Arrows==
+===[[Skyrim:Bloodcursed Elven Arrow|Bloodcursed Elven Arrow]]===
+{{Skyrim:Bloodcursed Elven Arrow}}{{NewLine}}
+===[[Skyrim:Sunhallowed Elven Arrow|Sunhallowed Elven Arrow]]===
+{{Skyrim:Sunhallowed Elven Arrow}}{{NewLine}}
+
+==Battleaxes==
+===[[Skyrim:Drainblood Battleaxe|Drainblood Battleaxe]]===
+{{Skyrim:Drainblood Battleaxe}}{{NewLine}}
+===[[Skyrim:The Rueful Axe|The Rueful Axe]]===
+{{Skyrim:The Rueful Axe}}{{NewLine}}
+===[[Skyrim:Steel Battleaxe of Fiery Souls|Steel Battleaxe of Fiery Souls]]===
+{{Skyrim:Steel Battleaxe of Fiery Souls}}{{NewLine}}
+===[[Skyrim:Tsun's Judgement|Tsun's Judgement]] {{CC|Civil War Champions}}===
+{{Skyrim:Tsun's Judgement}}{{NewLine}}
+===[[Skyrim:The Woodsman's Friend|The Woodsman's Friend]]===
+{{Skyrim:The Woodsman's Friend}}{{NewLine}}
+
+==Bows==
+===[[Skyrim:Angi's Bow|Angi's Bow]]===
+{{Skyrim:Angi's Bow}}{{NewLine}}
+===[[Skyrim:Bow of the Hunt|Bow of the Hunt]]===
+{{Skyrim:Bow of the Hunt}}{{NewLine}}
+===[[Skyrim:Drainspell Bow|Drainspell Bow]]===
+{{Skyrim:Drainspell Bow}}{{NewLine}}
+===[[Skyrim:Firiniel's End|Firiniel's End]]===
+{{Skyrim:Firiniel's End}}{{NewLine}}
+===[[Skyrim:Froki's Bow|Froki's Bow]]===
+{{Skyrim:Froki's Bow}}{{NewLine}}
+===[[Skyrim:Glass Bow of the Stag Prince|Glass Bow of the Stag Prince]]===
+{{Skyrim:Glass Bow of the Stag Prince}}{{NewLine}}
+===[[Skyrim:Karliah's Bow|Karliah's Bow]]===
+{{Skyrim:Karliah's Bow}}{{NewLine}}
+===[[Skyrim:Zephyr|Zephyr]]===
+{{Skyrim:Zephyr}}{{NewLine}}
+
+==Daggers==
+===[[Skyrim:Blade of Sacrifice|Blade of Sacrifice]]===
+{{Skyrim:Blade of Sacrifice}}{{NewLine}}
+===[[Skyrim:Blade of Woe|Blade of Woe]]===
+{{Skyrim:Blade of Woe}}{{NewLine}}
+===[[Skyrim:Bloodthorn|Bloodthorn]]===
+{{Skyrim:Bloodthorn}}{{NewLine}}
+===[[Skyrim:Borvir's Dagger|Borvir's Dagger]]===
+{{Skyrim:Borvir's Dagger}}{{NewLine}}
+===[[Skyrim:Dragon Priest Dagger|Dragon Priest Dagger]]===
+{{Skyrim:Dragon Priest Dagger}}{{NewLine}}
+===[[Skyrim:Nettlebane|Nettlebane]]===
+{{Skyrim:Nettlebane}}{{NewLine}}
+===[[Skyrim:Rundi's Dagger|Rundi's Dagger]]===
+{{Skyrim:Rundi's Dagger}}{{NewLine}}
+===[[Skyrim:Shiv (item)|Shiv]]===
+{{Skyrim:Shiv (item)}}{{NewLine}}
+===[[Skyrim:Valdr's Lucky Dagger|Valdr's Lucky Dagger]]===
+{{Skyrim:Valdr's Lucky Dagger}}{{NewLine}}
+===[[Skyrim:Bittercup_Items#Rulnik.27s_Dagger|Rulnik's Dagger]] {{CC|Bittercup}}===
+[[Skyrim:Bittercup_Items#Rulnik.27s_Dagger|Rulnik's Dagger]] is equipped by [[SR:Rulnik Wind-Strider|Rulnik Wind-Strider]], who appears only if you select path of nothing in [[SR:A Dying Wish|A Dying Wish]]. {{NewLine}}
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Nordic Dagger}}
+| {{Anchor|Rulnik's Dagger}}<br>{{ID|FExxxECE|par=1}} || Dagger || 3.5 || 115 || 8 || 4 || 1.3 || 0.7
+|}
+
+
+==Greatswords==
+===[[Skyrim:Stormfang|Stormfang]]===
+{{Skyrim:Stormfang}}{{NewLine}}
+===[[Skyrim:Bittercup_Items#Grand Champion's Sword|Grand Champion's Sword]] {{CC|Bittercup}}===
+[[Skyrim:Bittercup_Items#Grand Champion's Sword|Grand Champion's Sword]] is equipped by [[SR:Neski Skull-Sabre|Neski Skull-Sabre]], who appears only if you select path of power in [[SR:A Dying Wish|A Dying Wish]]. {{NewLine}}
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Grand Champion's Sword}}
+| {{Anchor|Grand Champion's Sword}}<br>{{ID|FExxx807|par=1}} || One-Handed Sword || 12 || 2500 || 14 || 6 || 1 || 1
+|}
+
+==Maces==
+===[[Skyrim:Horksbane|Horksbane]]===
+{{Skyrim:Horksbane}}{{NewLine}}
+
+==Pickaxes==
+===[[Skyrim:Hoarfrost|Hoarfrost]]===
+{{Skyrim:Hoarfrost}}{{NewLine}}
+===[[Skyrim:Notched Pickaxe|Notched Pickaxe]]===
+{{Skyrim:Notched Pickaxe}}{{NewLine}}
+
+==Swords==
+===[[Skyrim:Bloodscythe|Bloodscythe]]===
+{{Skyrim:Bloodscythe}}{{NewLine}}
+===[[Skyrim:Bolar's Oathblade|Bolar's Oathblade]]===
+{{Skyrim:Bolar's Oathblade}}{{NewLine}}
+===[[Skyrim:Dragon's Oath|Dragon's Oath]] {{CC|Civil War Champions}}===
+{{Skyrim:Dragon's Oath}}{{NewLine}}
+===[[Skyrim:Drainheart Sword|Drainheart Sword]]===
+{{Skyrim:Drainheart Sword}}{{NewLine}}
+===[[Skyrim:Eduj|Eduj]]===
+{{Skyrim:Eduj}}{{NewLine}}
+===[[Skyrim:Ghostblade|Ghostblade]]===
+{{Skyrim:Ghostblade}}{{NewLine}}
+===[[Skyrim:Master Sword|Master Sword]]===
+{{Skyrim:Master Sword}}{{NewLine}}
+===[[Skyrim:Red Eagle's Bane|Red Eagle's Bane]]===
+{{Skyrim:Red Eagle's Bane}}{{NewLine}}
+===[[Skyrim:Soulrender|Soulrender]]===
+{{Skyrim:Soulrender}}{{NewLine}}
+===[[Skyrim:Storm-Bear Sword|Storm-Bear Sword]] {{CC|Civil War Champions}}===
+{{Skyrim:Storm-Bear Sword}}{{NewLine}}
+===[[Skyrim:Windshear|Windshear]]===
+{{Skyrim:Windshear}}{{NewLine}}
+
+==War Axes==
+===[[Skyrim:Namira's Itch|Namira's Itch]] {{CC|Alternative Armors - Dragon Plate}}===
+{{Skyrim:Namira's Itch}}{{NewLine}}
+===[[Skyrim:Okin|Okin]]===
+{{Skyrim:Okin}}{{NewLine}}
+===[[Skyrim:Poacher's Axe|Poacher's Axe]]===
+{{Skyrim:Poacher's Axe}}{{NewLine}}
+
+==Warhammers==
+===[[Skyrim:Aegisbane|Aegisbane]]===
+{{Skyrim:Aegisbane}}{{NewLine}}
+===[[Skyrim:Akatosh's Talon|Akatosh's Talon]] {{CC|Civil War Champions}}===
+{{Skyrim:Akatosh's Talon}}{{NewLine}}
+===[[Skyrim:Champion's Cudgel|Champion's Cudgel]]===
+{{Skyrim:Champion's Cudgel}}{{NewLine}}
+===[[Skyrim:The Longhammer|The Longhammer]]===
+{{Skyrim:The Longhammer}}{{NewLine}}
+===[[Skyrim:Trollsbane|Trollsbane]]===
+{{Skyrim:Trollsbane}}{{NewLine}}
+[[Category:Skyrim-Weapons| ]]

@@ -1,0 +1,297 @@
+{{Trail|Items}}{{#addtotrail:Alchemy|separator=' / '}} [[Category:Skyrim-Magic]] [[Category:Skyrim-Ingredients]]
+This is an overview of ''[[Skyrim:Skyrim|Skyrim]]''{{'}}s '''[[Skyrim:Alchemy|alchemical]] ingredients''' (also called "alchemy reagents").
+
+More information on each ingredient can be found on its individual page (see links in the [[#2|tables]] below). '''<span class="plainlinks">[https://gamemap.uesp.net/sr/ UESP's Skyrim Map]</span>''' and '''<span class="plainlinks">[https://gamemap.uesp.net/sr/?world=solstheim UESP's Dragonborn Map]</span>''' have the functionality to show the location of plants in Tamriel world space.
+
+The [[Skyrim:Alchemy Effects|Alchemy Effects]] article lists ingredients indexed by magical effect and contains additional information about the relationships between ingredients, alchemy, and magical effects. A few ingredients are also classified as [[Skyrim:Food|food]].
+
+Some ingredients (especially [[Skyrim:Salt Pile|Salt Piles]] and [[Skyrim:Garlic|Garlic]]) are also used for culinary purposes. Visit the [[Skyrim:Cooking|Cooking]] page for details.
+
+With the [[Skyrim:Hearthfire|Hearthfire]] add-on, some ingredients (especially [[Skyrim:Salt Pile|Salt Piles]] and [[Skyrim:Chicken's Egg|Chicken Eggs]]) are also used for oven purposes. Visit the [[Skyrim:Baking|Baking]] page for details.
+
+==Sources==
+There are several ways to obtain ingredients:
+* '''Purchasing from [[Skyrim:Merchants|merchants]]'''
+** General merchants usually offer a few ingredients. Apothecary merchants offer many more, each stocking:
+*** Up to 15 common ingredients
+*** Up to 10 uncommon ingredients
+*** Up to 5 rare ingredients
+** Counterintuitively, your chances of finding a ''specific'' uncommon ingredient in an apothecary's stock are smaller than those for finding a rare ingredient. This is because there are so many more uncommon ingredients than rare ingredients, that: [(# of uncommon ingredients offered/total # of uncommon ingredients) < (# of rare ingredients offered/total number of rare ingredients)].
+** Some ingredients can be bought and sold only if the [[Skyrim:Merchant (perk)|merchant]] perk has been unlocked on the [[Skyrim:Speech|Speech]] perk tree.
+* '''Already-harvested samples'''
+** You can find some ingredients on shelves or tables, in baskets, pots, etc., in various locations throughout Skyrim. They are typically plentiful in apothecaries' businesses and living quarters. Their owners may let you take the relatively inexpensive of these for free if you have done them [[Skyrim:Favors|favors]]. Mages and wizards around Skyrim, a concentration of which are [[Skyrim:College of Winterhold (faction)|people living at the College of Winterhold,]] tend to possess ingredients in their dwellings and rooms.
+** Some types of NPCs and enemies may carry ingredients on their person.
+** Ingredients can also be found in containers.
+*** Certain [[Skyrim:Barrel|barrels]] contain multiple copies of a common ingredient.
+*** [[Skyrim:Apothecary's Satchel|Apothecary's satchels]] always contain one or more randomly-selected ingredients (plus a 25% chance of containing a healing [[Skyrim:Potions|potion]]). These satchels are tagged internally in the game as of common-, uncommon-, or rare-type. Rare-type satchels always contain one common, one uncommon, and one rare ingredient.
+* '''Harvesting from plants'''
+** You can take ingredients from many of Skyrim's plants. Some of these are common and widespread, with thousands of plants growing in diverse areas, whereas others are quite rare and difficult to find. Once you have harvested a plant's ingredient, some or all of its flowers and stems disappear, allowing already-harvested plants to be easily identified. Harvested plants will later [[Skyrim:Respawn|respawn]], at which point you can again harvest their ingredients.
+* '''Collecting from creatures'''
+** Many [[Skyrim:Creatures|creatures']] body parts&mdash;meat, wings, heart, skin, horns, teeth, etc&mdash;are alchemy ingredients. When you kill the creature, you can collect the ingredient from its corpse.
+* '''Catching passive creatures'''
+** Various [[Skyrim:Passive Creatures|passive creatures]] can be caught to obtain ingredients, including bees, fish, dragonflies, torchbugs, and butterflies.
+* '''Growing plants in [[Skyrim:Construction|the homesteads]]'''{{HF}}
+** With [[Skyrim:Hearthfire|Hearthfire]] installed, areas of fertile soils can be added to the homesteads. These soils can be planted with a sample. The plant will grow into maturity after typically 2 days and there will be 2-5 samples of the ingredient on each plant (depending on the plant). The plant will not die and will respawn every few days after harvesting. However, not all plant ingredients can be planted. A list of plants that can be grown may be found [[Skyrim:Greenhouse#Food and Ingredients|here]].
+
+==Standard Ingredients==
+This table lists all of the standard ingredients in the game. You will experience a mild primary effect from eating an ingredient. [[Skyrim:Alchemy|Brewing]] two or more ingredients that share magical effects at an alchemy table will result in a potion or poison, with higher Alchemy skill levels resulting in stronger effects&mdash;longer duration, better fortifications or damage, etc. Special items such as Daedric Hearts and Void Salts are used in smithing [[Skyrim:Daedric|Daedric]] equipment and improving [[Skyrim:Nightingale Armor|Nightingale armor]], respectively.
+
+Ingredients added by [[SR:Dawnguard|Dawnguard]], [[SR:Hearthfire|Hearthfire]] and [[SR:Dragonborn|Dragonborn]] are included in the table below, but a quick list of all the ingredients each add-on adds can be seen [[SR:Dawnguard Items#Alchemy|here (Dawnguard)]], [[SR:Dragonborn Items#Ingredients|here (Dragonborn)]] and [[SR:Hearthfire Items#Ingredients|here (Hearthfire)]]. For [[SR:Creation Club|Creation Club]] ingredients, see [[:Category:Skyrim-Creation Club-Ingredients|this category]].
+
+There are 91 ingredients in the base game, with 5 added by [[SR:Dawnguard|Dawnguard]], 11 added by [[SR:Dragonborn|Dragonborn]], 2 added by [[SR:Hearthfire|Hearthfire]], and 1 added via the _ResourcePack.esl file, for a total of 110 ingredients. Additionally there are 5 [[SR:Unobtainable Items#Ingredients|unused]] ingredients, 3 of which were later used in Creation Club content and 1 of which is obtainable via a glitch.
+
+Positive effects are highlighted in green, and negative ones are highlighted in red.
+{{#define:domerchant|1}}{{#define:noharvest|1}}{{#local:dogarden|1}}
+{|class="wikitable striped2_1"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+!Garden{{HF}}
+|-
+{{Ingredient Entry|ing=Abecean Longfin|description=Collected by catching [[Skyrim:Abacean Longfin|Abacean Longfin]] fish.}}
+{{Ingredient Entry|ing=Aloe Vera Leaves|description=Added by [[Skyrim:Special Edition Patch#1.6.1130|Special Edition Patch 1.6.1130]] on December 5, 2023.}}
+{{Ingredient Entry|ing=Ancestor Moth Wing|mod={{DG}}|description=Collected by catching [[Skyrim:Ancestor Moth|Ancestor Moths]].}}
+{{Ingredient Entry|ing=Ash Creep Cluster|mod={{DB}}|description=Harvested from creep cluster plants unique to Solstheim.}}
+{{Ingredient Entry|ing=Ash Hopper Jelly|mod={{DB}}|description=Collected from dead [[Skyrim:Ash Hopper|ash hoppers]].}}
+{{Ingredient Entry|ing=Ashen Grass Pod|mod={{DB}}|description=Harvested from spiky grass plants unique to Solstheim.}}
+{{Ingredient Entry|ing=Bear Claws|description=Collected from various types of dead [[Skyrim:Bear|Bear]]s.}}
+{{Ingredient Entry|ing=Bee|description=Collected from beehives and by catching [[Skyrim:Bee|Bee]]s.}}
+{{Ingredient Entry|ing=Beehive Husk|description=Collected from beehives.}}
+{{Ingredient Entry|ing=Bleeding Crown|description=Harvested from [[Lore:Bleeding Crown|Bleeding Crown]], a mushroom found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Blisterwort|description=Harvested from Blisterwort mushrooms found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Blue Butterfly Wing|description=Collected by catching [[Skyrim:Blue Butterfly|Blue Butterflies]]. Often found during daylight hours near flowering plants.}}
+{{Ingredient Entry|ing=Blue Dartwing|description=Collected by catching [[Skyrim:Dragonfly|Dragonflies]] found near rivers and streams below the snow line.}}
+{{Ingredient Entry|ing=Blue Mountain Flower|description=Harvested from the blue variety of Mountain Flower, found throughout Skyrim.}}
+{{Ingredient Entry|ing=Boar Tusk|mod={{DB}}|description=Collected from dead [[Skyrim:Bristleback|bristlebacks]] and [[Skyrim:Riekling|rieklings]].}}
+{{Ingredient Entry|ing=Bone Meal|description=Collected from [[Skyrim:Undead|undead]] such as [[Skyrim:Skeleton|skeletons]], and [[Skyrim:Draugr|Draugr]].}}
+{{Ingredient Entry|ing=Briar Heart|description=Collected from [[Skyrim:Forsworn Briarheart|Forsworn Briarhearts]].}}
+{{Ingredient Entry|ing=Burnt Spriggan Wood|mod={{DB}}|description=Collected from dead [[Skyrim:Burnt Spriggan|burnt spriggans]].}}
+{{Ingredient Entry|ing=Butterfly Wing|description=Collected from catching [[Skyrim:Monarch Butterfly|Monarch Butterflies]]. Often found during daylight hours near flowering plants.}}
+{{Ingredient Entry|ing=Canis Root|description=Harvested from Canis Root, found in [[Skyrim:The Rift|The Rift]] and [[Skyrim:Hjaalmarch|Hjaalmarch]].}}
+{{Ingredient Entry|ing=Charred Skeever Hide|description=Food, collected from dead [[Skyrim:Skeever|Skeevers]] found on roasting spits.}}
+{{Ingredient Entry|ing=Chaurus Eggs|description=Collected from [[Skyrim:Chaurus|Chaurus]] Egg Sacs, found in [[Skyrim:Falmer|Falmer]] caves.}}
+{{Ingredient Entry|ing=Chaurus Hunter Antennae|mod={{DG}}|description=Collected from dead [[Skyrim:Chaurus Hunter|Chaurus Hunters]] and [[Skyrim:Chaurus Hunter Fledgling|Chaurus Hunter Fledglings]].}}
+{{Ingredient Entry|ing=Chicken's Egg|description=Food, harvested from [[Skyrim:Chicken|Chicken]] nests in various [[Skyrim:Farms|farms]].}}
+{{Ingredient Entry|ing=Creep Cluster|description=Harvested from Creep Cluster, found in the volcanic tundra of [[Skyrim:Eastmarch|Eastmarch]].}}
+{{Ingredient Entry|ing=Crimson Nirnroot|description=Harvested from Crimson Nirnroot, found in [[Skyrim:Blackreach|Blackreach]], needed for the quest [[Skyrim:A Return To Your Roots|A Return To Your Roots]].}}
+{{Ingredient Entry|ing=Cyrodilic Spadetail|description=Collected by catching [[Skyrim:Passive Creatures#Cyrodilic Spadetail|Cyrodilic Spadetail]] fish.}}
+{{Ingredient Entry|ing=Daedra Heart|description=Collected from dead [[Skyrim:Dremora|Dremora]].}}
+{{Ingredient Entry|ing=Deathbell|description=Harvested from [[Lore:Deathbell|Deathbell]], found in [[Skyrim:Hjaalmarch|Hjaalmarch]]. Needed for the quests [[Skyrim:Few and Far Between|Few and Far Between]] and [[Skyrim:The Only Cure|The Only Cure]].}}
+{{Ingredient Entry|ing=Dragon's Tongue|description=Harvested from Dragon's Tongue, found in the volcanic tundra of [[Skyrim:Eastmarch|Eastmarch]].}}
+{{Ingredient Entry|ing=Dwarven Oil|description=Collected from destroyed [[Skyrim:Dwarven Automatons|Dwarven Automatons]], found in [[Skyrim:Dwarven Ruins|Dwarven Ruins]].}}
+{{Ingredient Entry|ing=Ectoplasm|description=Collected from undead [[Skyrim:Ghost|Ghosts]].}}
+{{Ingredient Entry|ing=Elves Ear|description=Harvested from Dried Elves Ear bunches found in homes and camps.}}
+{{Ingredient Entry|ing=Emperor Parasol Moss|mod={{DB}}|description=Harvested from emperor parasol moss plants near [[Skyrim:Tel Mithryn (settlement)|Tel Mithryn]].}}
+{{Ingredient Entry|ing=Eye of Sabre Cat|description=Collected from dead [[Skyrim:Sabre Cat|Sabre Cats]].}}
+{{Ingredient Entry|ing=Falmer Ear|description=Collected from dead [[Skyrim:Falmer|Falmer]].}}
+{{Ingredient Entry|ing=Felsaad Tern Feathers|mod={{DB}}|description=Collected from dead [[Skyrim:Felsaad Tern|Felsaad terns]].}}
+{{Ingredient Entry|ing=Fire Salts|description=Collected from dead [[Skyrim:Flame Atronach|Flame Atronachs]], a type of [[Skyrim:Daedra|daedra]]. Needed for the quest [[Skyrim:Stoking the Flames|Stoking the Flames]].}}
+{{Ingredient Entry|ing=Fly Amanita|description=Harvested from [[Lore:Fly Amanita|Fly Amanita]] mushrooms, found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Frost Mirriam|description=Harvested from Dried Frost Mirriam bunches found in homes and camps.}}
+{{Ingredient Entry|ing=Frost Salts|description=Collected from dead [[Skyrim:Frost Atronach|Frost Atronachs]], a type of [[Skyrim:Daedra|daedra]]. One is needed for the quest [[Skyrim:Dravynea's Frost Salts|Dravynea's Frost Salts]].}}
+{{Ingredient Entry|ing=Garlic|description=Food. Can also be harvested from Garlic Braids.}}
+{{Ingredient Entry|ing=Giant Lichen|description=Harvested from Giant Lichen, found in [[Skyrim:Hjaalmarch|Hjaalmarch]].}}
+{{Ingredient Entry|ing=Giant's Toe|description=Collected from dead [[Skyrim:Giant|Giants]], which can be found in [[Skyrim:Giant Camps|Giant Camps]].}}
+{{Ingredient Entry|ing=Gleamblossom|mod={{DG}}|description=Harvested from the plant of the same name.}}
+{{Ingredient Entry|ing=Glow Dust|description=Collected from dead [[Skyrim:Wisp|Wisps]] and [[Skyrim:Wispmother|Wispmother]]s.}}
+{{Ingredient Entry|ing=Glowing Mushroom|description=Harvested from Glowing Mushrooms, found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Grass Pod|description=Harvested from Spiky Grass, found in northern regions of Skyrim.}}
+{{Ingredient Entry|ing=Hagraven Claw|description=Collected from dead [[Skyrim:Hagraven|Hagravens]].}}
+{{Ingredient Entry|ing=Hagraven Feathers|description=Collected from dead [[Skyrim:Hagraven|Hagravens]]. Can also be found scattered around their sleeping areas.}}
+{{Ingredient Entry|ing=Hanging Moss|description=Harvested from Hanging Moss.}}
+{{Ingredient Entry|ing=Hawk Beak|description=Collected from dead [[Skyrim:Hawk|Hawks]].}}
+{{Ingredient Entry|ing=Hawk Feathers|description=Collected from dead [[Skyrim:Hawk|Hawks]].}}
+{{Ingredient Entry|ing=Hawk's Egg|mod=[[Skyrim:Hearthfire|HF]]|description=Harvested from Hawk nests.}}
+{{Ingredient Entry|ing=Histcarp|description=Collected by catching [[Skyrim:Passive Creatures#Histcarp|Histcarp]] fish.}}
+{{Ingredient Entry|ing=Honeycomb|description=Food. Collected from beehives.}}
+{{Ingredient Entry|ing=Human Flesh|description=Cannot be harvested or collected; with the [[Skyrim:Dawnguard|Dawnguard add-on]] installed, several respawning samples can be found in [[Skyrim:Volkihar Keep|Volkihar Keep]].}}
+{{Ingredient Entry|ing=Human Heart|description=Cannot be harvested or collected; limited number of samples available.}}
+{{Ingredient Entry|ing=Ice Wraith Teeth|description=Collected from [[Skyrim:Ice Wraith|Ice Wraiths]]. Needed for the quest [[Skyrim:Ice Cold|Ice Cold]].}}
+{{Ingredient Entry|ing=Imp Stool|description=Harvested from Imp Stool mushrooms, found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Jazbay Grapes|description=Harvested from Jazbay vines, found in the volcanic tundra of [[Skyrim:Eastmarch|Eastmarch]]. Needed for the quest [[Skyrim:Smooth Jazbay|Smooth Jazbay]].}}
+{{Ingredient Entry|ing=Juniper Berries|description=Harvested from Juniper shrubs, common in [[Skyrim:The Reach|The Reach]]. Needed for the quest [[Skyrim:Elmus Favor Quest (berries)|Elmus Favor Quest]].}}
+{{Ingredient Entry|ing=Large Antlers|description=Collected from dead male [[Skyrim:Elk|Elk]].}}
+{{Ingredient Entry|ing=Lavender|description=Harvested from [[Lore:Lavender|Lavender]], most common in [[Skyrim:Whiterun Hold|Whiterun Hold]].}}
+{{Ingredient Entry|ing=Luna Moth Wing|description=Collected by catching [[Skyrim:Luna Moth|Luna Moths]]. Often found near flowers after dark.}}
+{{Ingredient Entry|ing=Moon Sugar|description=Cannot be collected or harvested. Can be purchased from the [[Skyrim:Khajiit Traders|Khajiit Traders]].}}
+{{Ingredient Entry|ing=Mora Tapinella|description=Harvested from Mora Tapinella mushrooms, found growing on dead trees.}}
+{{Ingredient Entry|ing=Mudcrab Chitin|description=Collected from dead [[Skyrim:Mudcrab|Mudcrabs]], found in or near bodies of water.}}
+{{Ingredient Entry|ing=Namira's Rot|description=Harvested from Namira's Rot mushrooms, found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Netch Jelly|mod={{DB}}|description=Collected from dead [[Skyrim:Netch|netch]].}}
+{{Ingredient Entry|ing=Nightshade|description=Harvested from [[Lore:Nightshade|Nightshade]], found growing throughout Skyrim. Needed for the quest [[Skyrim:Few and Far Between|Few and Far Between]].}}
+{{Ingredient Entry|ing=Nirnroot|description=Harvested from [[Lore:Nirnroot|Nirnroot]], found near bodies of water throughout Skyrim. Needed for the quest [[Skyrim:Few and Far Between|Few and Far Between]].}}
+{{Ingredient Entry|ing=Nordic Barnacle|description=Harvested from [[Skyrim:Nordic Barnacle Cluster|Nordic Barnacle Cluster]]s, found in or near water.}}
+{{Ingredient Entry|ing=Orange Dartwing|description=Collected by catching [[Skyrim:Dragonfly|Dragonflies]] found near rivers and streams below the snow line.}}
+{{Ingredient Entry|ing=Pearl|description=Cannot be harvested or collected in the original version of the game; only readily available after the [[Skyrim:Merchant (perk)|Merchant]] perk has been unlocked. With [[Skyrim:Dragonborn|Dragonborn]], they can be harvested from [[Skyrim:Pearl Oyster|Pearl Oysters]] in Solstheim.}}
+{{Ingredient Entry|ing=Pine Thrush Egg|description=Harvested from bird nests in forested regions, in particular [[Skyrim:The Rift|The Rift]].}}
+{{Ingredient Entry|ing=Poison Bloom|mod={{DG}}|description=Harvested from the plant of the same name.}}
+{{Ingredient Entry|ing=Powdered Mammoth Tusk|description=Cannot be harvested or collected; only readily available after the [[Skyrim:Merchant (perk)|Merchant]] perk has been unlocked.}}
+{{Ingredient Entry|ing=Purple Mountain Flower|description=Harvested from the purple variety of Mountain Flower.}}
+{{Ingredient Entry|ing=Red Mountain Flower|description=Harvested from the red variety of Mountain Flower.}}
+{{Ingredient Entry|ing=River Betty|description=Collected by catching [[Skyrim:Passive Creatures#River Betty|River Betty]] fish.}}
+{{Ingredient Entry|ing=Rock Warbler Egg|description=Harvested from bird nests in rocky regions, in particular [[Skyrim:The Reach|The Reach]].}}
+{{Ingredient Entry|ing=Sabre Cat Tooth|description=Collected from dead [[Skyrim:Sabre Cat|Sabre cats]].}}
+{{Ingredient Entry|ing=Salmon Roe|mod=[[Skyrim:Hearthfire|HF]]|description=Harvested from jumping [[Skyrim:Salmon (creature)|Salmon]].}}
+{{Ingredient Entry|ing=Salt Pile|description=Food. Cannot be harvested or collected, but is commonly found in barrels and sacks.}}
+{{Ingredient Entry|ing=Scaly Pholiota|description=Harvested from Scaly Pholiota mushrooms, found growing on dead trees.}}
+{{Ingredient Entry|ing=Scathecraw|mod={{DB}}|description=Harvested from scathecraw plants.}}
+{{Ingredient Entry|ing=Silverside Perch|description=Collected by catching [[Skyrim:Passive Creatures#Silverside Perch|Silverside Perch]] fish.}}
+{{Ingredient Entry|ing=Skeever Tail|description=Collected from dead [[Skyrim:Skeever|Skeevers]].}}
+{{Ingredient Entry|ing=Slaughterfish Egg|description=Collected from Slaughterfish Egg Nests, found in or near water.}}
+{{Ingredient Entry|ing=Slaughterfish Scales|description=Collected from dead [[Skyrim:Slaughterfish|Slaughterfish]].}}
+{{Ingredient Entry|ing=Small Antlers|description=Collected from dead female [[Skyrim:Elk|Elk]].}}
+{{Ingredient Entry|ing=Small Pearl|description=Cannot be harvested or collected in the original version of the game; only readily available after the [[Skyrim:Merchant (perk)|Merchant]] perk has been unlocked. With [[Skyrim:Dragonborn|Dragonborn]], they can be harvested from [[Skyrim:Pearl Oyster|Pearl Oysters]] in Solstheim.}}
+{{Ingredient Entry|ing=Snowberries|description=Harvested from Snowberry bushes, found in snowy regions of Skyrim.}}
+{{Ingredient Entry|ing=Spawn Ash|mod={{DB}}|description=Collected from dead [[Skyrim:Ash Spawn|ash spawn]].}}
+{{Ingredient Entry|ing=Spider Egg|description=Collected from [[Skyrim:Frostbite Spider|spider]] Egg Sacs and Web Sacs.}}
+{{Ingredient Entry|ing=Spriggan Sap|description=Cannot be harvested or collected; best source is merchants.}}
+{{Ingredient Entry|ing=Swamp Fungal Pod|description=Harvested from Swamp Fungal Pod, common in the tundra marsh of [[Skyrim:Hjaalmarch|Hjaalmarch]].}}
+{{Ingredient Entry|ing=Taproot|description=Collected from dead [[Skyrim:Spriggan|Spriggans]].}}
+{{Ingredient Entry|ing=Thistle Branch|description=Harvested from Thistle.}}
+{{Ingredient Entry|ing=Torchbug Thorax|description=Collected by catching [[Skyrim:Torchbug|Torchbug]]s. Found below the snowline after dark.}}
+{{Ingredient Entry|ing=Trama Root|mod={{DB}}|description=Harvested from trama root plants.}}
+{{Ingredient Entry|ing=Troll Fat|description=Collected from dead [[Skyrim:Troll|Trolls]]. Needed for the quest [[Skyrim:The Cursed Tribe|The Cursed Tribe]].}}
+{{Ingredient Entry|ing=Tundra Cotton|description=Harvested from Tundra Cotton, found in [[Skyrim:Whiterun Hold|Whiterun Hold]].}}
+{{Ingredient Entry|ing=Vampire Dust|description=Collected from dead [[Skyrim:Vampire|Vampires]].}}
+{{Ingredient Entry|ing=Void Salts|description=Collected from dead [[Skyrim:Storm Atronach|Storm Atronachs]].}}
+{{Ingredient Entry|ing=Wheat|description=Food. Harvested from wheat bushels, found in various [[Skyrim:Farms|farms]].}}
+{{Ingredient Entry|ing=White Cap|description=Harvested from White Cap mushrooms, found in various [[Skyrim:Caves|caves]].}}
+{{Ingredient Entry|ing=Wisp Wrappings|description=Collected from dead [[Skyrim:Wispmother|Wispmothers]].}}
+{{Ingredient Entry|ing=Yellow Mountain Flower|mod={{DG}}|description=Harvested from the yellow variety of Mountain Flower.}}
+|}
+
+==Creation Club Ingredients==
+A total of 73 ingredients are added by the following [[Skyrim:Creation Club|Creations]]:
+* [[Skyrim:Bittercup|Bittercup]] (Ironwood Fruit)
+* [[Skyrim:Fishing|Fishing]] (9 ingredients)
+* [[Skyrim:Forgotten Seasons|Forgotten Seasons]] (Wild Grass Pod)
+* [[Skyrim:Goblins|Goblins]] (Steel-Blue Entoloma)
+* [[Skyrim:Rare Curios|Rare Curios]] (51 ingredients)
+* [[Skyrim:Plague of the Dead|Plague of the Dead]] (Mort Flesh)
+* [[Skyrim:Saints & Seducers|Saints & Seducers]] (6 ingredients)
+* [[Skyrim:The Cause|The Cause]] (3 ingredients)
+In addition, two [[#Quest Ingredients|quest ingredients]] are added by [[Skyrim:Spell Knight Armor|Spell Knight Armor]].
+
+Positive effects are highlighted in green, and negative ones are highlighted in red.
+{{#define:domerchant|1}}{{#define:noharvest|1}}{{#local:dogarden|1}}{{#local:ns_full=Skyrim}}
+{| class="wikitable striped2_1"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+!Garden
+|-
+{{Ingredient Entry|ing=Alocasia Fruit|description=[[Shivering:Alocasia Fruit|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Ambrosia|description=[[Oblivion:Ambrosia|Originating]] from Mankar Camoran's destroyed realm of Oblivion. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Angelfish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate lakes with an Alik'ri rod, or in the [[Skyrim:Ancestor Glade|Ancestor Glade]].}}
+{{Ingredient Entry|ing=Angler Larvae|description=Caught by [[Skyrim:Fishing|Fishing]] in freezing waters.}}
+{{Ingredient Entry|ing=Aster Bloom Core|description=[[Shivering:Aster Bloom Core|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Bittergreen Petals|description=[[Morrowind:Bittergreen Petals|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Blind Watcher's Eye|description=[[Shivering:Blind Watcher's Eye|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Bliss Bug Thorax|description=Harvested by [[Skyrim:Saints & Seducers|Saints & Seducers]].}}
+{{Ingredient Entry|ing=Blister Pod Cap|description=[[Shivering:Blister Pod Cap|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Bloodgrass|description=Harvested from the [[Skyrim:Deadlands|Deadlands]], if one has [[Skyrim:The Cause|The Cause]] to go there.}}
+{{Ingredient Entry|ing=Bog Beacon|description=[[Oblivion:Bog Beacon|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Bungler's Bane|description=[[Morrowind:Bungler's Bane|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Chokeberry|description=[[Oblivion:Chokeberry|Originating]] from the [[Oblivion:Vile Lair|vile lair]] of a Cyrodiilic vampire assassin. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Chokeweed|description=[[Morrowind:Chokeweed|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Coda Flower|description=[[Morrowind:Coda Flower|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Comberry|description=[[Morrowind:Comberry|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Congealed Putrescence|description=[[Shivering:Congealed Putrescence|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Corkbulb Root|description=[[Morrowind:Corkbulb Root|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Daedra Silk|description=[[Oblivion:Daedra Silk|Originating]] from the planes of Oblivion. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Daedra Venin|description=[[Oblivion:Daedra Venin|Originating]] from the planes of Oblivion. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Daedroth Teeth|description=[[Oblivion:Daedroth Teeth|Originating]] from the planes of Oblivion. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Dreugh Wax|description=[[Morrowind:Dreugh Wax|Originating]] from Vvardenfell's dreughs or Cyrodiil's land dreughs. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Elytra Ichor|description=[[Shivering:Elytra Ichor|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Fire Petal|description=[[Morrowind:Fire Petal|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Flame Stalk|description=[[Shivering:Flame Stalk|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Fungus Stalk|description=[[Shivering:Fungus Stalk|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Glassfish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate lakes.}}
+{{Ingredient Entry|ing=Gnarl Bark|description=[[Shivering:Gnarl Bark|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Gold Kanet|description=[[Morrowind:Gold Kanet|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Goldfish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate lakes in clear weather or in the ponds found in some [[Skyrim:Clearings|clearings]].}}
+{{Ingredient Entry|ing=Green Butterfly Wing|description=Harvested by [[Skyrim:Saints & Seducers|Saints & Seducers]].}}
+{{Ingredient Entry|ing=Hackle-Lo Leaf|description=[[Morrowind:Hackle-Lo Leaf|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Harrada|description=Harvested from the [[Skyrim:Deadlands|Deadlands]], if one has [[Skyrim:The Cause|The Cause]] to go there.}}
+{{Ingredient Entry|ing=Heart of Order|description=[[Shivering:Heart of Order|Originating]] from the Shivering Isles during a Greymarch. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Hunger Tongue|description=[[Shivering:Hunger Tongue|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Hydnum Azure Giant Spore|description=[[Shivering:Hydnum Azure Giant Spore|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Hypha Facia|description=[[Morrowind:Hypha Facia|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Imp Gall|description=[[Oblivion:Imp Gall|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Ironwood Fruit|description=Harvested from the Ironwood Trees found in [[Skyrim:Iron Tusk Cave|Iron Tusk Cave]].}}
+{{Ingredient Entry|ing=Juvenile Mudcrab|description=Caught by [[Skyrim:Fishing|Fishing]] on the surface.}}
+{{Ingredient Entry|ing=Kagouti Hide|description=[[Morrowind:Kagouti Hide|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Kresh Fiber|description=[[Morrowind:Kresh Fiber|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Lichor|description=[[Oblivion:Lichor|Originating]] from Mankar Camoran's destroyed realm of Oblivion. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Luminous Russula|description=[[Morrowind:Luminous Russula|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Lyretail Anthias|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate streams and at [[Skyrim:Evergreen Grove|Evergreen Grove]].}}
+{{Ingredient Entry|ing=Marshmerrow|description=[[Morrowind:Marshmerrow|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Minotaur Horn|description=[[Oblivion:Minotaur Horn|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Mort Flesh|description=[[Oblivion:Mort Flesh|Originating]] from Cyrodiil. Dropped by the [[Skyrim:Zombie|zombies]] from [[Skyrim:Plague of the Dead|Plague of the Dead]].}}
+{{Ingredient Entry|ing=Nightshade|set=bloodchill|description=A variant of the regular [[Skyrim:Nightshade|Nightshade]] that has one less leaf on its stem.}}
+{{Ingredient Entry|ing=Ogre's Teeth|description=[[Oblivion:Ogre's Teeth|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Pearlfish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate lakes and streams in rainy weather.}}
+{{Ingredient Entry|ing=Purple Butterfly Wing|description=Harvested by [[Skyrim:Saints & Seducers|Saints & Seducers]].}}
+{{Ingredient Entry|ing=Pygmy Sunfish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate lakes in rainy weather.}}
+{{Ingredient Entry|ing=Red Kelp Gas Bladder|description=[[Shivering:Red Kelp Gas Bladder|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Redwort Flower|description=[[Oblivion:Redwort Flower|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Roobrush|description=[[Morrowind:Roobrush|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Rot Scale|description=[[Shivering:Rot Scale|Originating]] from the Shivering Isles.}}
+{{Ingredient Entry|ing=Saltrice|description=[[Morrowind:Saltrice|Originating]] from Morrowind. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Scalon Fin|description=[[Shivering:Scalon Fin|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Screaming Maw|description=[[Shivering:Screaming Maw|Originating]] from the Shivering Isles. Harvested by [[Skyrim:Saints & Seducers|Saints & Seducers]].}}
+{{Ingredient Entry|ing=Scrib Jelly|description=[[Morrowind:Scrib Jelly|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Scrib Jerky|description=[[Morrowind:Scrib Jerky|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Sload Soap|description=[[Morrowind:Sload Soap|Popular]] in Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Spadefish|description=Caught by [[Skyrim:Fishing|Fishing]] in temperate streams on sunny days, in the [[Skyrim:Eldergleam Sanctuary|Eldergleam Sanctuary]], and in the [[Skyrim:Evergreen Grove|Evergreen Grove]].}}
+{{Ingredient Entry|ing=Spiddal Stick|description=Harvested from the [[Skyrim:Deadlands|Deadlands]], if one has [[Skyrim:The Cause|The Cause]] to go there.}}
+{{Ingredient Entry|ing=Steel-Blue Entoloma|description=[[Oblivion:Steel-Blue Entoloma Cap|Originating]] from Cyrodiil. Useful to con [[Skyrim:Goblins|goblins]].}}
+{{Ingredient Entry|ing=Stoneflower Petals|description=[[Morrowind:Stoneflower Petals|Originating]] from Vvardenfell. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Thorn Hook|description=[[Shivering:Thorn Hook|Originating]] from the Shivering Isles. Harvested by [[Skyrim:Saints & Seducers|Saints & Seducers]].}}
+{{Ingredient Entry|ing=Void Essence|description=[[Shivering:Void Essence|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Watcher's Eye|description=[[Shivering:Watcher's Eye|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Wild Grass Pod|description=Growing near the entrance to the Runoff Caverns, made wild by [[Skyrim:Forgotten Seasons|Forgotten Seasons]].}}
+{{Ingredient Entry|ing=Wisp Stalk Caps|description=[[Oblivion:Wisp Stalk Caps|Originating]] from Cyrodiil. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Withering Moon|description=[[Shivering:Withering Moon|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+{{Ingredient Entry|ing=Worm's Head Cap|description=[[Shivering:Worm's Head Cap|Originating]] from the Shivering Isles. One of the [[Skyrim:Rare Curios|Rare Curios]] sold by [[Skyrim:Khajiit Traders|Khajiit trade caravans]].}}
+|}
+
+==Quest Ingredients==
+{{#local:dogarden|}}
+These ingredients are of limited value for alchemy: some of them can't be used in alchemy (even though the game labels them as ingredients) and they have a very limited number of possible samples.
+{| class="wikitable striped2_1"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+|-
+{{Ingredient Entry|ing=Berit's Ashes|merchant=None|description=This ingredient is given as a quest item. Its effects are all identical to standard Bone Meal.}}
+{{Ingredient Entry|ing=Corrupted Human Heart|mod={{CC|Spell Knight Armor}}|merchant=None|description=The heart of a cursed [[Skyrim:Simon Rodayne|Spell Knight]].}}
+{{Ingredient Entry|ing=Farengar's Frost Salt|merchant=None|description=This ingredient is given as a quest item. It is identical to standard [[Skyrim:Frost Salts|Frost Salts]], except for its name.}}
+{{Ingredient Entry|ing=Fine-Cut Void Salts|merchant=None|description=This ingredient is given as a quest item. It is identical to standard [[Skyrim:Void Salts|Void Salts]], except for its name.}}
+{{Ingredient Entry|ing=Jarrin Root|description=You may only receive this ingredient once during the Dark Brotherhood quest line.}}
+{{Ingredient Entry|ing=Simon Rodayne's Heart|mod={{CC|Spell Knight Armor}}|merchant=None|description=The heart of a fallen [[Skyrim:Simon Rodayne|Spell Knight]], purified of corruption.}}
+|}
+
+==Notes==
+*All ingredients which can be placed as world objects to harvest, or grown in fertile soil plots experience issues with scaling that can render them difficult, or impossible to actually harvest because of the default size not being used. Collision with other objects can similarly cause them to be unobtainable.
+*If [[Skyrim:Survival Mode|Survival Mode]] is active, [[Skyrim:Fire Salts|Fire Salts]] are also used to create [[Skyrim:Food#Hot Soups|hot soups]].
+*[[Skyrim:Taproot|Taproot]] and [[Skyrim:Dwarven Oil|Dwarven Oil]] are two of the few ingredients that share all 4 effects.
+**You can also do this with [[Skyrim:Berit's Ashes|Berit's Ashes]] and [[Skyrim:Bone Meal|Bone Meal]].
+**[[Skyrim:Human Heart|Human Hearts]], [[Skyrim:Corrupted Human Heart|Corrupted Human Hearts]], [[Skyrim:Simon Rodayne's Heart|Simon Rodayne's Heart]], and [[Skyrim:Mort Flesh|Mort Flesh]] all share the same effects as well.
+**You can also do this with [[Skyrim:Void Salts|Void Salts]] and [[Skyrim:Fine-Cut Void Salts|Fine-Cut Void Salts]].
+*Your Inventory says that [[Skyrim:Ash Creep Cluster|Ash Creep Clusters]]{{DB}}, [[Skyrim:Ash Hopper Jelly|Ash Hopper Jelly]]{{DB}}, [[Skyrim:Bleeding Crown|Bleeding Crowns]], [[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetails]], [[Skyrim:Dwarven Oil|Dwarven Oil]], [[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}}, [[Skyrim:Fire Salts|Fire Salts]], [[Skyrim:Frost Salts|Frost Salts]], [[Skyrim:Garlic|Garlic]], [[Skyrim:Giant Lichen|Giant Lichens]], [[Skyrim:Hagraven Claw|Hagraven Claws]], [[Skyrim:Hanging Moss|Hanging Moss]], [[Skyrim:Hawk Beak|Hawk Beaks]], [[Skyrim:Histcarp|Histcarps]], [[Skyrim:Human Flesh|Human Flesh]], [[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]], [[Skyrim:Mora Tapinella|Mora Talinella]], [[Skyrim:Mudcrab Chitin|Mudcrab Chitins]], [[Skyrim:Namira's Rot|Namira's Rot]], [[Skyrim:Poison Bloom|Poison Blooms]]{{DG}}, [[Skyrim:River Betty|River Bettys]], [[Skyrim:Scaly Pholiota|Scaly Pholiota]], [[Skyrim:Silverside Perch|Silverside Perches]], [[Skyrim:Swamp Fungal Pod|Swamp Fungal Pods]], and [[Skyrim:Void Salts|Void Salts]] all weigh 0.3 instead of 0.25. It is unknown if this is normal or a bug.

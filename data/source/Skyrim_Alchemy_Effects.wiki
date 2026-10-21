@@ -1,0 +1,1148 @@
+{{Trail|Alchemy}} [[Category:Skyrim-Magic]] [[Category:Skyrim-Magic-Effects]]
+The following tables provide lists of all the [[Skyrim:Alchemy|alchemical]] effects and the [[Skyrim:Ingredients|ingredients]] with that effect. Details on the various effects can be found on the [[Skyrim:Magical Effects|Magical Effects]] page.  Green effects are positive effects and are used to create drinkable '''potions'''.  Red effects are negative effects used to create '''poisons''' that can be applied to weapons.  Ingredients listed in '''bold''' have that effect as their first, meaning that eating a sample of that ingredient will provide a small version of that effect.
+
+== Potion Strengths ==
+The last three columns of the following table provide the magnitude, duration, and cost (gold) of a ''standard'' potion if crafted at 100 Alchemy skill, without any perks.  These are ''not'' the maximum strengths of a potion: they can be increased if alchemy perks are unlocked and also by [[Skyrim:Fortify Alchemy|fortifying alchemy]] skill.  With 100% Fortify Alchemy (the maximum possible without custom enchantments) and all Alchemy perks, most potions and poisons will be five times stronger (6.25 times stronger for restoration potions).  Even larger enhancements are possible with custom enchantments.
+
+Values in italics (for example, the duration of many potions) are values that are not visible in-game, and in most cases do not have an effect on gameplay.  However, those values are still relevant in determining the cost of the potion.
+
+=== Non-Standard Ingredients ===
+Several effects (most notably Damage Health) have ingredients that produce non-standard potion strengths.  Those ingredients are noted in the following table by including symbols summarizing how those ingredients alter the potion.  For example:
+* [[Skyrim:River Betty|River Betty]] ({{Effect Mult|mag|2.5}}): Damage Health potions that include River Betty will have a magnitude 2.5 times greater than a standard Damage Health potion (e.g., 30 magnitude at alchemy 100).  The gold cost of the potion is also affected, but the factor is not shown on this page (see [[Skyrim:Damage Health|Damage Health]] for details).
+* [[Skyrim:Nirnroot|Nirnroot]] ({{Effect Mult|val|12.6}}): Damage Health potions that include Nirnroot will have a gold cost 12.6 times larger than a standard potion, even though the magnitude of the potion is the same.  (The internal value for the duration of the potion has been changed, but that duration has no effect on gameplay other than through the gold cost of the potion).
+
+When using non-standard ingredients, the effect properties are determined '''only by the highest priority ingredient''' for that effect, where the ingredient priority is believed to be the Cost for the effect, as listed for each item in the Creation Kit.  The ingredients in the following table are all listed in decreasing priority, so the top-most ingredient is always the one that determines the properties.  If River Betty and Nirnroot are combined, the potion will have the exact same properties as a potion made using River Betty and Deathbell or River Betty and Falmer Ear.  This also means that ingredients with weaker effect strengths, such as [[Skyrim:Ectoplasm|Ectoplasm]] and Nightshade for Fortify Destruction, are only relevant if combined with another weak ingredient.  Ectoplasm combined with any Fortify Destruction ingredient other than Nightshade yields a standard-strength Fortify Destruction potion.
+
+=== Damage Health Gold cost Bug ===
+
+There's a bug that affects gold calculation for most ingredients with [[Skyrim:Damage Health|Damage Health]]. Instead of calculating gold cost based on a 0-second duration (which is treated as 10 seconds), many Damage Health ingredients use a 1-second duration. The ingredients [[Skyrim:River Betty|River Betty]], [[Skyrim:Nirnroot|Nirnroot]], and [[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}} are exceptions to this rule.
+
+=== Strength Equations ===
+{|class="wikitable collapsible collapsed"
+!Helper functions used in effect strength calculations:
+|-
+| style="padding:0" |
+{{Pre|style=margin:0|<nowiki>function AlchemistPerk() {
+    if (Player.HasPerk "000c07cd") return 100 // Alchemist perk rank 5
+    else if (Player.HasPerk "000c07cc") return 80 // Alchemist perk rank 4
+    else if (Player.HasPerk "000c07cb") return 60 // Alchemist perk rank 3
+    else if (Player.HasPerk "000c07ca") return 40 // Alchemist perk rank 2
+    else if (Player.HasPerk "000be127") return 20 // Alchemist perk rank 1
+    else return 0
+}
+ 
+function PhysicianPerk(</nowiki>[[Skyrim Mod:Mod File Format/MGEF|MGEF]]<nowiki> mgef) {
+    restoreHealth = "00042503" // Restore Health (MagicAlchRestoreHealth)
+    restoreMagicka = "00042508" // Restore Magicka (MagicAlchRestoreMagicka)
+    restoreStamina = "00042503" // Restore Stamina (MagicAlchRestoreStamina)
+    physicianPerk = Player.HasPerk "00058215" // Physician perk
+    KYWD kwda[] = mgef.</nowiki>[[Skyrim Mod:Mod File Format/KYWD#Including Keywords|KWDA]]<nowiki> // effect keywords
+    if (physicianPerk and kwda.ContainsAny(restoreHealth, restoreMagicka, restoreStamina)) return 25
+    else return 0
+}
+ 
+function BenefactorPerk(</nowiki>[[Skyrim Mod:Mod File Format/MGEF|MGEF]]<nowiki> mgef) {
+    beneficial = "000F8A4E" // Beneficial Effect (MagicAlchBeneficial)
+    benefactorPerk = Player.HasPerk "00058216" // Benefactor perk
+    isPotion = not EPAlchemyGetMakingPoison
+    KYWD kwda[] = mgef.</nowiki>[[Skyrim Mod:Mod File Format/KYWD#Including Keywords|KWDA]]<nowiki> // effect keywords
+    if (benefactorPerk and isPotion and kwda.Contains(beneficial)) return 25
+    else return 0
+}
+ 
+function PoisonerPerk(</nowiki>[[Skyrim Mod:Mod File Format/MGEF|MGEF]]<nowiki> mgef) {
+    harmful = "00042509" // Harmful Effect (MagicAlchHarmful)
+    poisonerPerk = Player.HasPerk "00058217" // Poisoner perk
+    isPoison = EPAlchemyGetMakingPoison
+    KYWD kwda[] = mgef.</nowiki>[[Skyrim Mod:Mod File Format/KYWD#Including Keywords|KWDA]]<nowiki> // effect keywords
+    if (poisonerPerk and isPoison and kwda.Contains(harmful)) return 25
+    else return 0
+}
+
+function PowerFactor(</nowiki>[[Skyrim Mod:Mod File Format/MGEF|MGEF]]<nowiki> mgef) {
+    ingredientMult = GetGameSetting fAlchemyIngredientInitMult // 4.0
+    skillFactor = GetGameSetting fAlchemySkillFactor // 1.5
+    alchemySkill = Player.GetBaseActorValue Alchemy
+    fortifyAlchemy = Player.GetActorValue AlchemyMod// the sum of all active </nowiki>[[Skyrim:Fortify Alchemy|Fortify Alchemy]]<nowiki> effects
+    alchemistPerk = AlchemistPerk()
+    physicianPerk = PhysicianPerk(mgef)
+    benefactorPerk = BenefactorPerk(mgef)
+    poisonerPerk = PoisonerPerk(mgef)
+    return ingredientMult * (1 + (skillFactor - 1) * alchemySkill / 100) *
+            (1 + fortifyAlchemy / 100) * (1 + alchemistPerk / 100) *
+            (1 + physicianPerk / 100) * (1 + benefactorPerk / 100 + poisonerPerk / 100)
+    // alternative result, wrong:
+    //     ingredientMult * skillFactor ^ (alchemySkill / 100) *
+    //      (1 + fortifyAlchemy / 100) * (1 + alchemistPerk / 100) *
+    //      (1 + physicianPerk / 100) * (1 + benefactorPerk / 100 + poisonerPerk / 100)
+}</nowiki>}}
+|}
+
+{|class="wikitable collapsible collapsed"
+!The magnitude, duration, and gold value of a potion effect are calculated from:
+|-
+| style="padding:0" |
+{{Pre|style=margin:0|[[Skyrim Mod:Mod File Format/MGEF|MGEF]]<nowiki> effect = </nowiki>[[Skyrim Mod:Mod File Format/INGR|ingredient]]<nowiki>.Effect.EFID
+powerFactor = PowerFactor(effect)
+
+magnitude = ingredient.Effect.EFIT.Magnitude
+if (effect.DATA.Flags.NoMagnitude) magnitude = 0
+magnitudeFactor = 1
+if (effect.DATA.Flags.PowerAffectsMagnitude) magnitudeFactor = powerFactor
+magnitude = round(magnitude * magnitudeFactor)
+
+duration = ingredient.Effect.EFIT.Duration
+if (effect.DATA.Flags.NoDuration or duration < 0) duration = 0
+durationFactor = 1
+if (effect.DATA.Flags.PowerAffectsDuration) durationFactor = powerFactor
+duration = round(duration * durationFactor)
+
+magnitudeFactor = 1
+if (magnitude > 0 ) magnitudeFactor = magnitude
+durationFactor = 1
+if (duration > 0 ) durationFactor = duration / 10
+value = floor(effect.DATA.BaseCost * (magnitudeFactor * durationFactor) ^ 1.1)
+</nowiki>}}
+|}
+
+{|class="wikitable collapsible collapsed"
+!The magnitude of a potion is calculated from:
+|-
+| style="padding:0" |
+{{Pre|style=margin:0|<nowiki>Magnitude =  round(Base_Mag *
+             4 *                          (Game setting fAlchemyIngredientInitMult)
+            (1+(Alchemy_Skill/200)) *   (1.5 is the game setting fAlchemySkillFactor; this is technically 1+(fAlchemySkillFactor-1)*(Alchemy_Skill/100))
+            (1 + Fortify_Alchemy/100) *
+            (1 + Alchemist_Perk/100)  *
+            (1 + Physician_Perk/100)  *
+            (1 + Benefactor_Perk/100  + Poisoner_Perk/100) *
+            (1 + Seeker of Shadows/100))</nowiki>}}
+|}
+
+For potions where the duration varies instead of magnitude, the same equation is applied to the duration, using <code>Base_Dur</code> instead of <code>Base_Mag</code>. Currently duration only varies for Invisibility, Paralysis, Slow, and Waterbreathing; for all other effects: <code>Duration = Base_Dur</code>. The values used in these equations are:
+* <code>Base_Mag</code> and <code>Base_Dur</code> are the strengths for the single strongest ingredient being used in the potion.  In the game data, these base values are listed in the ingredient's [[Skyrim Mod:Mod File Format/INGR|EFIT]] field.  The standard base values used for each effect are listed on each effect page, as well as details about the base values for any non-standard ingredients.
+* <code>Alchemy_Skill</code> is your character's alchemy skill (15-100)
+* <code>Fortify_Alchemy</code> is the sum of all active [[Skyrim:Fortify Alchemy|Fortify Alchemy]] enchantments
+* <code>Alchemist_Perk</code> is the enhancement from the [[Skyrim:Alchemist|Alchemist]] perk (0, 20, 40, 60, 80, or 100)
+* <code>Physician_Perk</code> is the enhancement from the [[Skyrim:Physician|Physician]] perk (0 or 25).  This value is only set to 25 if your character has unlocked the perk ''and'' it is being applied to a [[Skyrim:Restore Health|Restore Health]], [[Skyrim:Restore Magicka|Restore Magicka]], or [[Skyrim:Restore Stamina|Restore Stamina]] effect
+* <code>Benefactor_Perk</code> is the enhancement from the [[Skyrim:Benefactor|Benefactor]] perk (0 or 25).  This value is only set to 25 if your character has unlocked the perk ''and'' it is being applied to a beneficial effect in a potion.
+* <code>Poisoner_Perk</code> is the enhancement from the [[Skyrim:Poisoner|Poisoner]] perk (0 or 25).  This value is only set to 25 if your character has unlocked the perk ''and'' it is being applied to a negative effect in a poison.
+**(Only one of <code>Benefactor_Perk</code> or <code>Poisoner_Perk</code> is ever non-zero).
+* <code>Seeker of Shadows</code> is the enhancement from the [[Skyrim:Powers#Abilities|Seeker of Shadows]] ability (0 or 10) from [[Skyrim:Dragonborn|Dragonborn]] that adds +10% to potion magnitude.
+
+The gold cost of a potion is calculated from:
+  Gold_cost = floor( Base_Cost * max(Magnitude^1.1,1) * ((Duration/10)^1.1 if Duration else 1) )
+If the magnitude or duration is zero, the corresponding term disappears from the equation, i.e.:
+  Gold_cost (When Magnitude = 0) = floor( Base_Cost * max((Duration/10)^1.1,1) )
+  Gold_cost (When Duration = 0)  = floor( Base_Cost * (Magnitude^1.1) )
+  Gold_cost (When Duration = 0 and Magnitude = 0, which is never true in vanilla)  = floor( Base_Cost )
+If the magnitude or duration is not displayed in game, that does '''not''' necessarily mean that the value is zero.  The game still has an internal value for each parameter (based on the ingredient's <code>Base_Mag</code> and <code>Base_Dur</code>) which is used in this calculation.  A clear-cut example of these hidden values at work is the Cure Disease potion, which has a higher monetary value when brewed to a higher "magnitude", despite having both a fixed effect and a fixed duration in practice.  These internal values are listed in the following table.
+
+=== Multiple-Effect Potions ===
+If a potion has multiple effects, the magnitude, duration, and gold cost of each effect is separately determined according to the [[#Strength Equation|above equations]].  The total gold cost of the potion is the sum of the costs of the individual effects.
+
+The effect with the largest individual gold cost is the effect that controls the overall properties of the mixture.  That effect is used for naming, and it determines whether the result is considered to be a potion or a poison.  The determination of the strongest effect is actually done before the perks are factored into the gold cost (i.e., having the Benefactor and/or Poisoner perk does not alter whether a mixture is a poison or a potion).
+
+Additional adjustments that are made include:
+* The [[Skyrim:Benefactor|Benefactor]] perk only applies to effects in potions — beneficial side-effects of a poison are not enhanced.
+* The [[Skyrim:Poisoner|Poisoner]] perk only applies to effects in poisons — negative side-effects of a potion are not enhanced.
+* If the [[Skyrim:Purity_(perk)|Purity]] perk has been unlocked, the properties of all negative effects in a potion will be set to zero (and positive effects in a poison will be set to zero).  This means that the gold cost of the potion will be reduced.
+
+==Effect List==
+Any potion effect will be affected by Alchemy level, perks, enchantments, etc, and this effect will either go to its magnitude ''or'' its duration (never both, and never neither). The other attribute is fixed, and is always the same regardless of outside factors such as level, perks, or enchantments. The variable attribute is noted in below by having a green background. The majority of effects have a fixed duration and a variable magnitude.
+
+Note that Cure Disease and Cure Poison have variable magnitudes which have no impact when drank (these always cure all diseases and remove all poisons, respectively), but ''does'' impact the gold value of the potion.  Note also that Damage Magicka and the three Ravage effects have non-zero durations which likewise have no impact when applied to the target - the first is instantaneous and the latter three are permanent until cured - but ''do'' impact the gold value of the potion.
+
+{{#local:nosup|1}}
+{| class="wikitable sortable"
+!Effect ([[Skyrim:Form ID|ID]])
+!Ingredients
+!Description
+!class="sort_num sort_desc"|{{hover|Base Cost of the effect|Base_Cost}}
+!class="sort_num sort_desc"|{{hover|Inherent Magnitude of the effect|Base_Mag}}
+!class="sort_num sort_desc"|{{hover|Inherent Duration of the effect|Base_Dur}}
+!class="sort_num sort_desc"|{{Value Icon|caption=Value at 100 skill}}
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Cure Disease|Cure Disease]]}}<br/>{{ID|000AE722|par=1}}
+|
+[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]] ({{Effect Mult|val|0.36}})<br/>
+[[Skyrim:Chokeweed|Chokeweed]]{{CC|Rare Curios}} ({{Effect Mult|val|0.36}})<br>
+'''[[Skyrim:Hawk Feathers|Hawk Feathers]]''' ({{Effect Mult|val|0.36}})<br/>
+[[Skyrim:Hunger Tongue|Hunger Tongue]]{{CC|Rare Curios}} ({{Effect Mult|val|0.36}})<br>
+[[Skyrim:Red Kelp Gas Bladder|Red Kelp Gas Bladder]]{{CC|Rare Curios}} ({{Effect Mult|val|0.36}})<br>
+[[Skyrim:Scrib Jelly|Scrib Jelly]]{{CC|Rare Curios}} ({{Effect Mult|val|0.36}})<br>
+[[Skyrim:Withering Moon|Withering Moon]]{{CC|Rare Curios}} ({{Effect Mult|val|0.36}})<br>
+[[Skyrim:Felsaad Tern Feathers|Felsaad Tern Feathers]]{{DB}}<br/>
+[[Skyrim:Mudcrab Chitin|Mudcrab Chitin]]<br/>
+[[Skyrim:Vampire Dust|Vampire Dust]]
+|Cures all diseases.
+| 0.5 ||class="EffectPos"| 5 || 0 || 21
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Cure Poison|Cure Poison]]}}<br>{{ID|00109ADD|par=1}}
+|
+[[Skyrim:Ambrosia|Ambrosia]]{{CC|Rare Curios}} ({{Effect Mult|val|1.56}})<br>
+[[Skyrim:Bittergreen Petals|Bittergreen Petals]]{{CC|Rare Curios}}<br>
+[[Skyrim:Hunger Tongue|Hunger Tongue]]{{CC|Rare Curios}}<br>
+[[Skyrim:Imp Gall|Imp Gall]]{{CC|Rare Curios}}<br>
+[[Skyrim:Redwort Flower|Redwort Flower]]{{CC|Rare Curios}}<br>
+[[Skyrim:Roobrush|Roobrush]]{{CC|Rare Curios}}<br>
+[[Skyrim:Scrib Jelly|Scrib Jelly]]{{CC|Rare Curios}}<br>
+|Stops poison's continuing effects.
+| 0.2 ||class="EffectPos"| 2 || 0 || 3
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Damage Health|Damage Health]]}}<br/>{{ID|0003EB42|par=1}}
+|
+'''[[Skyrim:Jarrin Root|Jarrin Root]]''' ({{Effect Mult|mag|100}},{{Effect Mult|val|158.5}})<br/>
+'''[[Skyrim:River Betty|River Betty]]''' ({{Effect Mult|mag|2.5}},{{Effect Mult|val|34.5}})<br/>
+'''[[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]'''{{DB}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|19.7}})<br/>
+'''[[Skyrim:Nirnroot|Nirnroot]]''' ({{Effect Mult|val|12.6}})<br/>
+'''[[Skyrim:Crimson Nirnroot|Crimson Nirnroot]]''' ({{Effect Mult|mag|3}},{{Effect Mult|val|3.3}})<br/>
+'''[[Skyrim:Chokeberry|Chokeberry]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Coda Flower|Coda Flower]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Deathbell|Deathbell]]''' ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.6}})<br/>
+'''[[Skyrim:Fire Petal|Fire Petal]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Gnarl Bark|Gnarl Bark]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Imp Gall|Imp Gall]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Poison Bloom|Poison Bloom]]{{DG}}''' ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.6}})<br/>
+[[Skyrim:Redwort Flower|Redwort Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Scalon Fin|Scalon Fin]] ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Wisp Stalk Caps|Wisp Stalk Caps]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Ectoplasm|Ectoplasm]]<br/>
+'''[[Skyrim:Falmer Ear|Falmer Ear]]'''<br/>
+'''[[Skyrim:Human Flesh|Human Flesh]]'''<br/>
+'''[[Skyrim:Human Heart|Human Heart]]'''<br/>
+'''[[Skyrim:Imp Stool|Imp Stool]]'''<br/>
+'''[[Skyrim:Mort Flesh|Mort Flesh]]'''{{CC|Plague of the Dead}}<br>
+'''[[Skyrim:Nightshade|Nightshade]]'''<br/>
+[[Skyrim:Red Mountain Flower|Red Mountain Flower]]<br/>
+[[Skyrim:Skeever Tail|Skeever Tail]]<br/>
+[[Skyrim:Small Antlers|Small Antlers]]<br/>
+[[Skyrim:Troll Fat|Troll Fat]]<br/>
+[[Skyrim:Void Salts|Void Salts]]
+|Causes <mag> points of poison damage.
+| 3 ||class="EffectPos"| 2 || 1 || 3
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Damage Magicka|Damage Magicka]]}}<br/>{{ID|0003A2B6|par=1}}
+|
+[[Skyrim:Bittergreen Petals|Bittergreen Petals]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Chokeweed|Chokeweed]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Butterfly Wing|Butterfly Wing]]<br/>
+[[Skyrim:Chaurus Eggs|Chaurus Eggs]]<br/>
+[[Skyrim:Daedra Heart|Daedra Heart]]<br/>
+[[Skyrim:Eye of Sabre Cat|Eye of Sabre Cat]]<br/>
+'''[[Skyrim:Glow Dust|Glow Dust]]'''<br/>
+'''[[Skyrim:Hagraven Feathers|Hagraven Feathers]]'''<br/>
+'''[[Skyrim:Hanging Moss|Hanging Moss]]'''<br/>
+[[Skyrim:Human Heart|Human Heart]]<br/>
+[[Skyrim:Jarrin Root|Jarrin Root]]<br/>
+'''[[Skyrim:Luna Moth Wing|Luna Moth Wing]]'''<br/>
+[[Skyrim:Mort Flesh|Mort Flesh]]{{CC|Plague of the Dead}}<br>
+'''[[Skyrim:Namira's Rot|Namira's Rot]]'''<br/>
+'''[[Skyrim:Nordic Barnacle|Nordic Barnacle]]'''<br/>
+[[Skyrim:Trama Root|Trama Root]]{{DB}}
+|Drains the target's Magicka by <mag> points.
+| 2.2 ||class="EffectPos"| 3 || 0 || 52
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Damage Magicka Regen|Damage Magicka Regen]]}}<br/>{{ID|00073F2B|par=1}}
+|
+[[Skyrim:Daedroth Teeth|Daedroth Teeth]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Minotaur Horn|Minotaur Horn]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Scalon Fin|Scalon Fin]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Ancestor Moth Wing|Ancestor Moth Wing]]{{DG}}<br/>
+[[Skyrim:Bear Claws|Bear Claws]]<br/>
+[[Skyrim:Blue Butterfly Wing|Blue Butterfly Wing]]<br/>
+[[Skyrim:Blue Mountain Flower|Blue Mountain Flower]]<br/>
+[[Skyrim:Burnt Spriggan Wood|Burnt Spriggan Wood]]{{DB}}<br/>
+[[Skyrim:Chaurus Hunter Antennae|Chaurus Hunter Antennae]]{{DG}}<br/>
+[[Skyrim:Chicken's Egg|Chicken's Egg]]<br/>
+[[Skyrim:Glow Dust|Glow Dust]]<br/>
+[[Skyrim:Hanging Moss|Hanging Moss]]<br/>
+[[Skyrim:Hawk's Egg|Hawk's Egg]]{{HF}}<br/>
+[[Skyrim:Human Heart|Human Heart]]<br/>
+[[Skyrim:Mort Flesh|Mort Flesh]]{{CC|Plague of the Dead}}<br>
+[[Skyrim:Jarrin Root|Jarrin Root]]<br/>
+[[Skyrim:Nightshade|Nightshade]]<br/>
+[[Skyrim:Spider Egg|Spider Egg]]<br/>
+'''[[Skyrim:Spriggan Sap|Spriggan Sap]]'''
+|Decrease the target's Magicka regeneration by <mag>% for <dur> seconds.
+| 0.5 || 100 ||class="EffectPos"| 5 || 265
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Damage Stamina|Damage Stamina]]}}<br/>{{ID|0003A2C6|par=1}}
+|
+[[Skyrim:Crimson Nirnroot|Crimson Nirnroot]] ({{Effect Mult|mag|3}})<br/>
+[[Skyrim:Bog Beacon|Bog Beacon]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Comberry|Comberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Marshmerrow|Marshmerrow]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Ancestor Moth Wing|Ancestor Moth Wing]]'''{{DG}}<br/>
+'''[[Skyrim:Ash Creep Cluster|Ash Creep Cluster]]'''{{DB}}<br/>
+'''[[Skyrim:Berit's Ashes|Berit's Ashes]]'''<br/>
+'''[[Skyrim:Blisterwort|Blisterwort]]'''<br/>
+'''[[Skyrim:Blue Butterfly Wing|Blue Butterfly Wing]]'''<br/>
+'''[[Skyrim:Bone Meal|Bone Meal]]'''<br/>
+'''[[Skyrim:Canis Root|Canis Root]]'''<br/>
+'''[[Skyrim:Chaurus Hunter Antennae|Chaurus Hunter Antennae]]'''{{DG}}<br/>
+'''[[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetail]]'''<br/>
+'''[[Skyrim:Giant's Toe|Giant's Toe]]'''<br/>
+[[Skyrim:Jarrin Root|Jarrin Root]]<br/>
+[[Skyrim:Nirnroot|Nirnroot]]<br/>
+[[Skyrim:Rock Warbler Egg|Rock Warbler Egg]]<br/>
+'''[[Skyrim:Spider Egg|Spider Egg]]'''
+|Drain the target's Stamina by <mag> points.
+| 1.8 ||class="EffectPos"| 3 || 0 || 43
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Damage Stamina Regen|Damage Stamina Regen]]}}<br/>{{ID|00073F2C|par=1}}
+|
+[[Skyrim:Bungler's Bane|Bungler's Bane]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Saltrice|Saltrice]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Creep Cluster|Creep Cluster]]<br/>
+[[Skyrim:Daedra Heart|Daedra Heart]]<br/>
+[[Skyrim:Frost Mirriam|Frost Mirriam]]<br/>
+[[Skyrim:Giant's Toe|Giant's Toe]]<br/>
+[[Skyrim:Histcarp|Histcarp]]<br/>
+[[Skyrim:Juniper Berries|Juniper Berries]]<br/>
+[[Skyrim:Large Antlers|Large Antlers]]<br/>
+[[Skyrim:Silverside Perch|Silverside Perch]]<br/>
+'''[[Skyrim:Skeever Tail|Skeever Tail]]'''<br/>
+[[Skyrim:Wheat|Wheat]]<br/>
+[[Skyrim:Yellow Mountain Flower|Yellow Mountain Flower]]{{DG}}<br/>
+|Decrease the target's Stamina regeneration by <mag>% for <dur> seconds.
+| 0.3 || 100 ||class="EffectPos"| 5 || 159
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Fear (effect)|Fear]]}}<br/>{{ID|00073F20|par=1}}
+|
+[[Skyrim:Bog Beacon|Bog Beacon]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Elytra Ichor|Elytra Ichor]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Luminous Russula|Luminous Russula]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Sload Soap|Sload Soap]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Blue Dartwing|Blue Dartwing]]<br/>
+[[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetail]]<br/>
+[[Skyrim:Daedra Heart|Daedra Heart]]<br/>
+[[Skyrim:Gleamblossom|Gleamblossom]]{{DG}}<br/>
+[[Skyrim:Green Butterfly Wing|Green Butterfly Wing]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Namira's Rot|Namira's Rot]]<br/>
+[[Skyrim:Netch Jelly|Netch Jelly]]{{DB}}<br/>
+[[Skyrim:Poison Bloom|Poison Bloom]]{{DG}}<br/>
+[[Skyrim:Powdered Mammoth Tusk|Powdered Mammoth Tusk]]<br>
+[[Skyrim:Rot Scale|Rot Scale]]{{CC|Saints & Seducers}} ({{Effect Mult|dur|0.16}},{{Effect Mult|val|0.14}})
+|Creatures and people up to level <mag> flee from combat for <dur> seconds.
+| 5 ||class="EffectPos"| 1 || 30 || 120
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Alteration|Fortify Alteration]]}}<br/>{{ID|0003EB24|par=1}}
+|
+[[Skyrim:Blind Watcher's Eye|Blind Watcher's Eye]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Screaming Maw|Screaming Maw]]{{CC|Saints & Seducers}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Sload Soap|Sload Soap]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Burnt Spriggan Wood|Burnt Spriggan Wood]]{{DB}}<br/>
+[[Skyrim:Grass Pod|Grass Pod]]<br/>
+[[Skyrim:River Betty|River Betty]]<br/>
+[[Skyrim:Spriggan Sap|Spriggan Sap]]<br>
+[[Skyrim:Wild Grass Pod|Wild Grass Pod]]{{CC|Forgotten Seasons}}
+|Alteration spells last <mag>% longer for <dur> seconds.
+| 0.2 ||class="EffectPos"| 4 || 60 || 47
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Barter|Fortify Barter]]}}<br/>{{ID|0003EB23|par=1}}
+|
+[[Skyrim:Imp Gall|Imp Gall]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Butterfly Wing|Butterfly Wing]]<br/>
+[[Skyrim:Dragon's Tongue|Dragon's Tongue]]<br/>
+[[Skyrim:Hagraven Claw|Hagraven Claw]]<br/>
+[[Skyrim:Tundra Cotton|Tundra Cotton]]
+|You haggle for <mag>% better prices for <dur> seconds.
+| 2 ||class="EffectPos"| 1 || 30 || 48
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Block|Fortify Block]]}}<br/>{{ID|0003EB1C|par=1}}
+|
+[[Skyrim:Aster Bloom Core|Aster Bloom Core]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Bleeding Crown|Bleeding Crown]]<br/>
+[[Skyrim:Boar Tusk|Boar Tusk]]{{DB}}<br/>
+[[Skyrim:Pearl|Pearl]]<br/>
+[[Skyrim:Slaughterfish Scales|Slaughterfish Scales]]<br/>
+[[Skyrim:Tundra Cotton|Tundra Cotton]]<br/>
+[[Skyrim:Briar Heart|Briar Heart]] ({{Effect Mult|mag|0.5}})<br/>
+[[Skyrim:Honeycomb|Honeycomb]] ({{Effect Mult|mag|0.5}})
+|Blocking absorbs <mag>% more damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Carry Weight|Fortify Carry Weight]]}}<br/>{{ID|0003EB01|par=1}}
+|
+[[Skyrim:Coda Flower|Coda Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Kagouti Hide|Kagouti Hide]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Marshmerrow|Marshmerrow]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Worm's Head Cap|Worm's Head Cap]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Creep Cluster|Creep Cluster]]<br/>
+[[Skyrim:Giant's Toe|Giant's Toe]]<br/>
+[[Skyrim:Hawk Beak|Hawk Beak]]<br/>
+[[Skyrim:Netch Jelly|Netch Jelly]]{{DB}}<br/>
+[[Skyrim:Poison Bloom|Poison Bloom]]{{DG}}<br/>
+[[Skyrim:River Betty|River Betty]]<br/>
+[[Skyrim:Scaly Pholiota|Scaly Pholiota]]<br/>
+[[Skyrim:Steel-Blue Entoloma|Steel-Blue Entoloma]]{{CC|Goblins}}<br>
+[[Skyrim:Trama Root|Trama Root]]{{DB}}<br/>
+[[Skyrim:Wisp Wrappings|Wisp Wrappings]]
+|Carrying capacity increases by <mag> for <dur> seconds.
+| 0.15 ||class="EffectPos"| 4 || 300 || 208
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Conjuration|Fortify Conjuration]]}}<br/>{{ID|0003EB25|par=1}}
+|
+[[Skyrim:Congealed Putrescence|Congealed Putrescence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Sload Soap|Sload Soap]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Ancestor Moth Wing|Ancestor Moth Wing]]{{DG}}<br/>
+[[Skyrim:Berit's Ashes|Berit's Ashes]]<br/>
+[[Skyrim:Blue Butterfly Wing|Blue Butterfly Wing]]<br/>
+[[Skyrim:Blue Mountain Flower|Blue Mountain Flower]]<br/>
+[[Skyrim:Bone Meal|Bone Meal]]<br/>
+[[Skyrim:Chaurus Hunter Antennae|Chaurus Hunter Antennae]]{{DG}}<br/>
+[[Skyrim:Frost Salts|Frost Salts]]<br/>
+[[Skyrim:Hagraven Feathers|Hagraven Feathers]]<br/>
+[[Skyrim:Lavender|Lavender]]
+|Conjurations spells last <mag>% longer for <dur> seconds.
+| 0.25 ||class="EffectPos"| 5 || 60 || 75
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Destruction|Fortify Destruction]]}}<br/>{{ID|0003EB26|par=1}}
+|
+[[Skyrim:Comberry|Comberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Daedra Venin|Daedra Venin]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Ash Creep Cluster|Ash Creep Cluster]]{{DB}}<br/>
+[[Skyrim:Beehive Husk|Beehive Husk]]<br/>
+[[Skyrim:Glow Dust|Glow Dust]]<br/>
+[[Skyrim:Glowing Mushroom|Glowing Mushroom]]<br/>
+[[Skyrim:Steel-Blue Entoloma|Steel-Blue Entoloma]]{{CC|Goblins}}<br>
+[[Skyrim:Wisp Wrappings|Wisp Wrappings]]<br/>
+[[Skyrim:Ectoplasm|Ectoplasm]] ({{Effect Mult|mag|0.8}})<br/>
+[[Skyrim:Nightshade|Nightshade]] ({{Effect Mult|mag|0.8}})
+|Destruction spells are <mag>% stronger for <dur> seconds.
+| 0.5 ||class="EffectPos"| 5 || 60 || 151
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Enchanting|Fortify Enchanting]]}}<br/>{{ID|0003EB29|par=1}}
+|
+[[Skyrim:Dreugh Wax|Dreugh Wax]]{{CC|Rare Curios}} ({{Effect Mult|mag|2.0}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Stoneflower Petals|Stoneflower Petals]]{{CC|Rare Curios}} ({{Effect Mult|mag|2.0}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Ancestor Moth Wing|Ancestor Moth Wing]]{{DG}}<br/>
+[[Skyrim:Blue Butterfly Wing|Blue Butterfly Wing]]<br/>
+[[Skyrim:Chaurus Hunter Antennae|Chaurus Hunter Antennae]]{{DG}}<br/>
+[[Skyrim:Hagraven Claw|Hagraven Claw]]<br/>
+[[Skyrim:Snowberries|Snowberries]]<br/>
+[[Skyrim:Spawn Ash|Spawn Ash]]{{DB}}<br/>
+[[Skyrim:Spriggan Sap|Spriggan Sap]]
+|For <dur> seconds, items are enchanted <mag>% stronger.
+| 0.6 ||class="EffectPos"| 1 || 30 || 14
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Health|Fortify Health]]}}<br/>{{ID|0003EAF3|par=1}}
+|
+[[Skyrim:Fungus Stalk|Fungus Stalk]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Heart of Order|Heart of Order]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Hydnum Azure Giant Spore|Hydnum Azure Giant Spore]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Void Essence|Void Essence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Ambrosia|Ambrosia]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Boar Tusk|Boar Tusk]]{{DB}} ({{Effect Mult|dur|5}}, {{Effect Mult|val|5.9}})<br/>
+[[Skyrim:Giant's Toe|Giant's Toe]] ({{Effect Mult|dur|5}}, {{Effect Mult|val|5.9}})<br/>
+[[Skyrim:Bear Claws|Bear Claws]]<br/>
+[[Skyrim:Blue Mountain Flower|Blue Mountain Flower]]<br/>
+[[Skyrim:Glowing Mushroom|Glowing Mushroom]]<br/>
+[[Skyrim:Hanging Moss|Hanging Moss]]<br/>
+[[Skyrim:Wheat|Wheat]]<br/>
+[[Skyrim:Yellow Mountain Flower|Yellow Mountain Flower]]{{DG}}<br/>
+|Health is increased by <mag> points for <dur> seconds.
+| 0.35 ||class="EffectPos"| 4 || 60 || 82
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Heavy Armor|Fortify Heavy Armor]]}}<br/>{{ID|0003EB1E|par=1}}
+|
+[[Skyrim:Bog Beacon|Bog Beacon]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Gnarl Bark|Gnarl Bark]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Bliss Bug Thorax|Bliss Bug Thorax]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]]<br/>
+[[Skyrim:Sabre Cat Tooth|Sabre Cat Tooth]]<br/>
+[[Skyrim:Slaughterfish Scales|Slaughterfish Scales]]<br/>
+[[Skyrim:Thistle Branch|Thistle Branch]]<br/>
+[[Skyrim:White Cap|White Cap]]
+|Increase Heavy Armor skill by <mag> points for <dur> seconds.
+| 0.5 ||class="EffectPos"| 2 || 60 || 55
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Illusion|Fortify Illusion]]}}<br/>{{ID|0003EB27|par=1}}
+|
+[[Skyrim:Watcher's Eye|Watcher's Eye]]{{CC|Rare Curios}} ({{Effect Mult|mag|5}},{{Effect Mult|val|5.87}})<br>
+[[Skyrim:Dwarven Oil|Dwarven Oil]]<br/>
+[[Skyrim:Mora Tapinella|Mora Tapinella]]<br/>
+[[Skyrim:Scaly Pholiota|Scaly Pholiota]]<br/>
+[[Skyrim:Taproot|Taproot]]<br/>
+[[Skyrim:Dragon's Tongue|Dragon's Tongue]]<br>
+[[Skyrim:Bliss Bug Thorax|Bliss Bug Thorax]]{{CC|Saints & Seducers}} ({{Effect Mult|mag|0.25}},{{Effect Mult|val|0.21}})
+|Illusion spells are <mag>% stronger for <dur> seconds.
+| 0.4 ||class="EffectPos"| 4 || 60 || 94
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Light Armor|Fortify Light Armor]]}}<br/>{{ID|0003EB1F|par=1}}
+|
+[[Skyrim:Aster Bloom Core|Aster Bloom Core]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Withering Moon|Withering Moon]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Ash Hopper Jelly|Ash Hopper Jelly]]{{DB}}<br/>
+[[Skyrim:Beehive Husk|Beehive Husk]]<br/>
+[[Skyrim:Felsaad Tern Feathers|Felsaad Tern Feathers]]{{DB}}<br/>
+[[Skyrim:Hawk Feathers|Hawk Feathers]]<br/>
+[[Skyrim:Honeycomb|Honeycomb]]<br/>
+[[Skyrim:Luna Moth Wing|Luna Moth Wing]]<br/>
+[[Skyrim:Skeever Tail|Skeever Tail]]
+|Increases Light Armor skill by <mag> points for <dur> seconds.
+| 0.5 ||class="EffectPos"| 2 || 60 || 55
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Lockpicking|Fortify Lockpicking]]}}<br/>{{ID|0003EB21|par=1}}
+|
+[[Skyrim:Worm's Head Cap|Worm's Head Cap]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Ashen Grass Pod|Ashen Grass Pod]]{{DB}}<br/>
+[[Skyrim:Falmer Ear|Falmer Ear]]<br/>
+[[Skyrim:Namira's Rot|Namira's Rot]]<br/>
+[[Skyrim:Pine Thrush Egg|Pine Thrush Egg]]<br/>
+[[Skyrim:Spider Egg|Spider Egg]]
+|Lockpicking is <mag>% easier for <dur> seconds.
+| 0.5 ||class="EffectPos"| 2 || 30 || 25
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Magicka|Fortify Magicka]]}}<br/>{{ID|0003EAF8|par=1}}
+|
+[[Skyrim:Salmon Roe|Salmon Roe]]{{HF}} ({{Effect Mult|mag|12.5}}, {{Effect Mult|dur|0.08}}, {{Effect Mult|val|1.05}})<br>
+[[Skyrim:Blind Watcher's Eye|Blind Watcher's Eye]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Blister Pod Cap|Blister Pod Cap]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Hunger Tongue|Hunger Tongue]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Lichor|Lichor]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Red Kelp Gas Bladder|Red Kelp Gas Bladder]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Saltrice|Saltrice]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Stoneflower Petals|Stoneflower Petals]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Watcher's Eye|Watcher's Eye]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Briar Heart|Briar Heart]]<br/>
+[[Skyrim:Ectoplasm|Ectoplasm]]<br/>
+[[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}}<br/>
+[[Skyrim:Histcarp|Histcarp]]<br/>
+[[Skyrim:Jazbay Grapes|Jazbay Grapes]]<br/>
+[[Skyrim:Red Mountain Flower|Red Mountain Flower]]<br/>
+[[Skyrim:Tundra Cotton|Tundra Cotton]]<br/>
+[[Skyrim:Void Salts|Void Salts]]
+|Magicka is increased by <mag> points for <dur> seconds.
+| 0.3 ||class="EffectPos"| 4 || 60 || 71
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Marksman|Fortify Marksman]]}}<br/>{{ID|0003EB1B|par=1}}
+|
+[[Skyrim:Corkbulb Root|Corkbulb Root]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Canis Root|Canis Root]]<br/>
+[[Skyrim:Elves Ear|Elves Ear]]<br/>
+[[Skyrim:Juniper Berries|Juniper Berries]]<br/>
+[[Skyrim:Spider Egg|Spider Egg]]
+|Bows do <mag>% more damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify One-handed|Fortify One-handed]]}}<br/>{{ID|0003EB19|par=1}}
+|
+[[Skyrim:Heart of Order|Heart of Order]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Stoneflower Petals|Stoneflower Petals]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Bear Claws|Bear Claws]]<br/>
+[[Skyrim:Canis Root|Canis Root]]<br/>
+[[Skyrim:Hanging Moss|Hanging Moss]]<br/>
+[[Skyrim:Hawk Feathers|Hawk Feathers]]<br/>
+[[Skyrim:Rock Warbler Egg|Rock Warbler Egg]]<br/>
+[[Skyrim:Small Pearl|Small Pearl]]
+|One-handed weapons do <mag>% more damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Pickpocket|Fortify Pickpocket]]}}<br/>{{ID|0003EB20|par=1}}
+|
+[[Skyrim:Blue Dartwing|Blue Dartwing]]<br/>
+[[Skyrim:Kresh Fiber|Kresh Fiber]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Nordic Barnacle|Nordic Barnacle]]<br/>
+[[Skyrim:Orange Dartwing|Orange Dartwing]]<br/>
+[[Skyrim:Slaughterfish Egg|Slaughterfish Egg]]
+|Pickpocketing is <mag>% easier for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Restoration|Fortify Restoration]]}}<br/>{{ID|0003EB28|par=1}}
+|
+[[Skyrim:Hackle-Lo Leaf|Hackle-Lo Leaf]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Yellow Mountain Flower|Yellow Mountain Flower]]{{DG}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Abecean Longfin|Abecean Longfin]]<br/>
+[[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetail]]<br/>
+[[Skyrim:Salt Pile|Salt Pile]]<br/>
+[[Skyrim:Small Antlers|Small Antlers]]<br/>
+[[Skyrim:Small Pearl|Small Pearl]]
+|Restoration spells are <mag>% stronger for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Smithing|Fortify Smithing]]}}<br/>{{ID|0003EB1D|par=1}}
+|
+[[Skyrim:Dreugh Wax|Dreugh Wax]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Gold Kanet|Gold Kanet]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Blisterwort|Blisterwort]]<br/>
+[[Skyrim:Glowing Mushroom|Glowing Mushroom]]<br/>
+[[Skyrim:Sabre Cat Tooth|Sabre Cat Tooth]]<br/>
+[[Skyrim:Spriggan Sap|Spriggan Sap]]
+|For <dur> seconds, weapon and armor improving is <mag>% better.
+| 0.75 ||class="EffectPos"| 4 || 30 || 82
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Sneak|Fortify Sneak]]}}<br/>{{ID|0003EB22|par=1}}
+|
+[[Skyrim:Kresh Fiber|Kresh Fiber]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Roobrush|Roobrush]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Abecean Longfin|Abecean Longfin]]<br/>
+[[Skyrim:Ashen Grass Pod|Ashen Grass Pod]]{{DB}}<br/>
+[[Skyrim:Frost Mirriam|Frost Mirriam]]<br/>
+[[Skyrim:Hawk Feathers|Hawk Feathers]]<br/>
+[[Skyrim:Human Flesh|Human Flesh]]<br/>
+[[Skyrim:Powdered Mammoth Tusk|Powdered Mammoth Tusk]]<br/>
+[[Skyrim:Purple Mountain Flower|Purple Mountain Flower]]<br/>
+[[Skyrim:Beehive Husk|Beehive Husk]]
+|You are <mag>% harder to detect for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Stamina|Fortify Stamina]]}}<br/>{{ID|0003EAF9|par=1}}
+|
+'''[[Skyrim:Boar Tusk|Boar Tusk]]'''{{DB}} ({{Effect Mult|mag|1.25}}, {{Effect Mult|dur|5}},  {{Effect Mult|val|7.5}})<br/>
+[[Skyrim:Fungus Stalk|Fungus Stalk]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Void Essence|Void Essence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|dur|5}},{{Effect Mult|val|7.5}})<br>
+[[Skyrim:Scrib Jerky|Scrib Jerky]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Chaurus Eggs|Chaurus Eggs]]<br/>
+[[Skyrim:Garlic|Garlic]]<br/>
+[[Skyrim:Large Antlers|Large Antlers]]<br/>
+[[Skyrim:Lavender|Lavender]]<br/>
+[[Skyrim:Slaughterfish Egg|Slaughterfish Egg]]<br/>
+[[Skyrim:Torchbug Thorax|Torchbug Thorax]]
+|Stamina is increased by <mag> points for <dur> seconds.
+| 0.3 ||class="EffectPos"| 4 || 60 || 71
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Fortify Two-handed|Fortify Two-handed]]}}<br/>{{ID|0003EB1A|par=1}}
+|
+[[Skyrim:Heart of Order|Heart of Order]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Dragon's Tongue|Dragon's Tongue]]<br/>
+[[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}}<br/>
+[[Skyrim:Fly Amanita|Fly Amanita]]<br/>
+[[Skyrim:Troll Fat|Troll Fat]]
+|Two-handed weapons do <mag>% more damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Frenzy (effect)|Frenzy]]}}<br/>{{ID|00073F29|par=1}}
+|
+[[Skyrim:Dreugh Wax|Dreugh Wax]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Hypha Facia|Hypha Facia]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Wisp Stalk Caps|Wisp Stalk Caps]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Blisterwort|Blisterwort]]<br/>
+[[Skyrim:Boar Tusk|Boar Tusk]]{{DB}}<br/>
+[[Skyrim:Falmer Ear|Falmer Ear]]<br/>
+[[Skyrim:Fly Amanita|Fly Amanita]]<br/>
+[[Skyrim:Hagraven Feathers|Hagraven Feathers]]<br/>
+[[Skyrim:Human Heart|Human Heart]]<br/>
+[[Skyrim:Mort Flesh|Mort Flesh]]{{CC|Plague of the Dead}}<br>
+[[Skyrim:Troll Fat|Troll Fat]]
+|Creatures and people up to level <mag> will attack anything nearby for <dur> seconds.
+| 15 ||class="EffectPos"| 1 || 10 || 107
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Invisibility (effect)|Invisibility]]}}<br/>{{ID|0003EB3D|par=1}}
+|
+[[Skyrim:Screaming Maw|Screaming Maw]]{{CC|Saints & Seducers}} ({{Effect Mult|dur|4}},{{Effect Mult|val|4.6}})<br>
+[[Skyrim:Bittergreen Petals|Bittergreen Petals]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Blister Pod Cap|Blister Pod Cap]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Daedra Silk|Daedra Silk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Elytra Ichor|Elytra Ichor]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Flame Stalk|Flame Stalk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Redwort Flower|Redwort Flower]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Ash Creep Cluster|Ash Creep Cluster]]{{DB}}<br/>
+[[Skyrim:Chaurus Eggs|Chaurus Eggs]]<br/>
+[[Skyrim:Crimson Nirnroot|Crimson Nirnroot]]<br/>
+[[Skyrim:Green Butterfly Wing|Green Butterfly Wing]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]]<br/>
+[[Skyrim:Luna Moth Wing|Luna Moth Wing]]<br/>
+[[Skyrim:Nirnroot|Nirnroot]]<br/>
+'''[[Skyrim:Vampire Dust|Vampire Dust]]'''
+|Invisibility for <dur> seconds.
+| 100 || 0 ||class="EffectPos"| 4 || 261
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Light|Light]]}}<br>{{ID|FExxx846|par=1}}
+|
+[[Skyrim:Alocasia Fruit|Alocasia Fruit]]{{CC|Rare Curios}}<br>
+'''[[Skyrim:Blind Watcher's Eye|Blind Watcher's Eye]]'''{{CC|Rare Curios}}<br>
+[[Skyrim:Daedroth Teeth|Daedroth Teeth]]{{CC|Rare Curios}}<br>
+[[Skyrim:Hydnum Azure Giant Spore|Hydnum Azure Giant Spore]]{{CC|Rare Curios}}
+|Emits a small light that lasts for <dur> seconds.
+| 0.5 || 0 ||class="EffectPos"| 60 || 25
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Lingering Damage Health|Lingering Damage Health]]}}<br/>{{ID|0010AA4A|par=1}}
+|
+[[Skyrim:Rot Scale|Rot Scale]]{{CC|Saints & Seducers}} ({{Effect Mult|dur|3}},{{Effect Mult|val|3.34}})<br>
+[[Skyrim:Chokeberry|Chokeberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{FC|green|'''2.14'''}}{{Value Icon}})<br>
+[[Skyrim:Luminous Russula|Luminous Russula]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{FC|green|'''2.14'''}}{{Value Icon}})<br>
+[[Skyrim:Roobrush|Roobrush]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{FC|green|'''2.14'''}}{{Value Icon}})<br>
+[[Skyrim:Imp Stool|Imp Stool]]<br/>
+[[Skyrim:Mora Tapinella|Mora Tapinella]]<br/>
+[[Skyrim:Orange Dartwing|Orange Dartwing]]<br/>
+[[Skyrim:Scathecraw|Scathecraw]]{{DB}}<br/>
+[[Skyrim:Slaughterfish Egg|Slaughterfish Egg]]<br/>
+[[Skyrim:Slaughterfish Scales|Slaughterfish Scales]]<br>
+[[Skyrim:Thorn Hook|Thorn Hook]]{{CC|Saints & Seducers}}
+|Causes <mag> points of poison damage for <dur> seconds.
+| 12 ||class="EffectPos"| 1 || 10 || 86
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Lingering Damage Magicka|Lingering Damage Magicka]]}}<br/>{{ID|0010DE5F|par=1}}
+|
+[[Skyrim:Ogre's Teeth|Ogre's Teeth]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{FC|green|'''2.14'''}}{{Value Icon}})<br>
+[[Skyrim:Scalon Fin|Scalon Fin]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{FC|green|'''2.14'''}}{{Value Icon}})<br>
+[[Skyrim:Hagraven Claw|Hagraven Claw]]<br/>
+[[Skyrim:Purple Mountain Flower|Purple Mountain Flower]]<br/>
+[[Skyrim:Swamp Fungal Pod|Swamp Fungal Pod]]<br/>
+[[Skyrim:Torchbug Thorax|Torchbug Thorax]]<br/>
+[[Skyrim:Wheat|Wheat]]
+|Drains the target's Magicka by <mag> points per second for <dur> seconds.
+| 10 ||class="EffectPos"| 1 || 10 || 71
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Lingering Damage Stamina|Lingering Damage Stamina]]}}<br/>{{ID|0010DE5E|par=1}}
+|
+'''[[Skyrim:Bittergreen Petals|Bittergreen Petals]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Coda Flower|Coda Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+'''[[Skyrim:Daedra Silk|Daedra Silk]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+'''[[Skyrim:Kagouti Hide|Kagouti Hide]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+'''[[Skyrim:Luminous Russula|Luminous Russula]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Butterfly Wing|Butterfly Wing]]<br/>
+[[Skyrim:Chicken's Egg|Chicken's Egg]]<br/>
+[[Skyrim:Hawk's Egg|Hawk's Egg]]{{HF}}</br>
+[[Skyrim:Nightshade|Nightshade]]<br/>
+[[Skyrim:Small Antlers|Small Antlers]]
+|Drain the target's Stamina by <mag> points per second for <dur> seconds.
+| 1.8 ||class="EffectPos"| 1 || 10 || 12
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Night Eye (effect)|Night Eye]]}}<br>{{ID|FExxx803|par=1}}
+|
+[[Skyrim:Blister Pod Cap|Blister Pod Cap]]{{CC|Rare Curios}}<br>
+[[Skyrim:Daedra Silk|Daedra Silk]]{{CC|Rare Curios}}<br>
+[[Skyrim:Kagouti Hide|Kagouti Hide]]{{CC|Rare Curios}}<br>
+'''[[Skyrim:Watcher's Eye|Watcher's Eye]]'''{{CC|Rare Curios}}<br>
+[[Skyrim:Worm's Head Cap|Worm's Head Cap]]{{CC|Rare Curios}}
+|Improved night vision for <dur> seconds.
+| 0.75 || 0 ||class="EffectPos"| 60 || 38
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Paralyze (effect)|Paralysis]]}}<br/>{{ID|00073F30|par=1}}
+|
+[[Skyrim:Aster Bloom Core|Aster Bloom Core]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Corkbulb Root|Corkbulb Root]]'''{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Daedra Silk|Daedra Silk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Daedra Venin|Daedra Venin]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Fire Petal|Fire Petal]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Gold Kanet|Gold Kanet]]'''{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Hackle-Lo Leaf|Hackle-Lo Leaf]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Scrib Jerky|Scrib Jerky]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Briar Heart|Briar Heart]]<br/>
+[[Skyrim:Canis Root|Canis Root]]<br/>
+[[Skyrim:Gleamblossom|Gleamblossom]]{{DG}}<br/>
+[[Skyrim:Human Flesh|Human Flesh]]<br/>
+[[Skyrim:Imp Stool|Imp Stool]]<br/>
+'''[[Skyrim:Netch Jelly|Netch Jelly]]'''{{DB}}<br/>
+[[Skyrim:Purple Butterfly Wing|Purple Butterfly Wing]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Rot Scale|Rot Scale]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Swamp Fungal Pod|Swamp Fungal Pod]]<br>
+[[Skyrim:Thorn Hook|Thorn Hook]]{{CC|Saints & Seducers}}
+|Target is paralyzed for <dur> seconds.
+| 500 || 0 ||class="EffectPos"| 1 || 285
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Ravage Health|Ravage Health]]}}<br/>{{ID|00073F26|par=1}}
+|
+[[Skyrim:Chokeberry|Chokeberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+'''[[Skyrim:Congealed Putrescence|Congealed Putrescence]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+'''[[Skyrim:Daedra Venin|Daedra Venin]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+[[Skyrim:Gold Kanet|Gold Kanet]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+[[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetail]]<br/>
+[[Skyrim:Eye of Sabre Cat|Eye of Sabre Cat]]<br/>
+[[Skyrim:Giant Lichen|Giant Lichen]]<br/>
+[[Skyrim:Jazbay Grapes|Jazbay Grapes]]<br/>
+'''[[Skyrim:Scathecraw|Scathecraw]]'''{{DB}}<br/>
+[[Skyrim:Silverside Perch|Silverside Perch]]<br/>
+[[Skyrim:Skeever Tail|Skeever Tail]]
+|Causes <mag> points of concentrated poison damage.
+| 0.4 ||class="EffectPos"| 2 || 10 || 6
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Ravage Magicka|Ravage Magicka]]}}<br/>{{ID|00073F27|par=1}}
+|
+[[Skyrim:Alocasia Fruit|Alocasia Fruit]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Coda Flower|Coda Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Frost Mirriam|Frost Mirriam]]<br/>
+[[Skyrim:Grass Pod|Grass Pod]]<br/>
+[[Skyrim:Lavender|Lavender]]<br/>
+[[Skyrim:Orange Dartwing|Orange Dartwing]]<br/>
+[[Skyrim:Red Mountain Flower|Red Mountain Flower]]<br/>
+[[Skyrim:Scathecraw|Scathecraw]]{{DB}}<br/>
+[[Skyrim:Spawn Ash|Spawn Ash]]{{DB}}<br/>
+[[Skyrim:White Cap|White Cap]]<br>
+[[Skyrim:Wild Grass Pod|Wild Grass Pod]]{{CC|Forgotten Seasons}}
+|Concentrated poison damages maximum magicka by <mag> points.
+| 1 ||class="EffectPos"| 2 || 10 || 15
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Ravage Stamina|Ravage Stamina]]}}<br/>{{ID|00073F23|par=1}}
+|
+[[Skyrim:Deathbell|Deathbell]] ({{Effect Mult|val|2.1}})<br/>
+[[Skyrim:Bungler's Bane|Bungler's Bane]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+[[Skyrim:Hypha Facia|Hypha Facia]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|3.34}})<br>
+[[Skyrim:Bee|Bee]]<br/>
+[[Skyrim:Berit's Ashes|Berit's Ashes]]<br/>
+[[Skyrim:Bone Meal|Bone Meal]]<br/>
+[[Skyrim:Honeycomb|Honeycomb]]<br/>
+[[Skyrim:Scathecraw|Scathecraw]]{{DB}}<br/>
+'''[[Skyrim:Spawn Ash|Spawn Ash]]'''{{DB}}<br/>
+[[Skyrim:Thistle Branch|Thistle Branch]]
+|Concentrated poison damages maximum stamina by <mag> points.
+| 1.6 ||class="EffectPos"| 2 || 10 || 24
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Regenerate Health|Regenerate Health]]}}<br/>{{ID|0003EB06|par=1}}
+|
+[[Skyrim:Screaming Maw|Screaming Maw]]{{CC|Saints & Seducers}} ({{Effect Mult|mag|4}},{{Effect Mult|dur|0.03}},{{Effect Mult|val|0.11}})<br>
+[[Skyrim:Alocasia Fruit|Alocasia Fruit]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Ambrosia|Ambrosia]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Gnarl Bark|Gnarl Bark]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Hydnum Azure Giant Spore|Hydnum Azure Giant Spore]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Minotaur Horn|Minotaur Horn]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Ogre's Teeth|Ogre's Teeth]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Void Essence|Void Essence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}}<br/>
+[[Skyrim:Garlic|Garlic]]<br/>
+[[Skyrim:Gleamblossom|Gleamblossom]]{{DG}}<br/>
+[[Skyrim:Juniper Berries|Juniper Berries]]<br/>
+[[Skyrim:Luna Moth Wing|Luna Moth Wing]]<br/>
+[[Skyrim:Namira's Rot|Namira's Rot]]<br/>
+[[Skyrim:Nordic Barnacle|Nordic Barnacle]]<br/>
+'''[[Skyrim:Purple Butterfly Wing|Purple Butterfly Wing]]'''{{CC|Saints & Seducers}}<br>
+[[Skyrim:Vampire Dust|Vampire Dust]]<br>
+[[Skyrim:Thorn Hook|Thorn Hook]]{{CC|Saints & Seducers}} ({{Effect Mult|mag|0.6}},{{Effect Mult|dur|0.6}},{{Effect Mult|val|0.32}})
+|Health regenerates <mag>% faster for <dur> seconds.
+| 0.1 ||class="EffectPos"| 5 || 300 || 177
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Regenerate Magicka|Regenerate Magicka]]}}<br/>{{ID|0003EB07|par=1}}
+|
+'''[[Skyrim:Screaming Maw|Screaming Maw]]'''{{CC|Saints & Seducers}} ({{Effect Mult|mag|4}},{{Effect Mult|dur|0.2}},{{Effect Mult|val|0.78}})<br>
+[[Skyrim:Lichor|Lichor]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Minotaur Horn|Minotaur Horn]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Scrib Jelly|Scrib Jelly]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Dwarven Oil|Dwarven Oil]]<br/>
+[[Skyrim:Fire Salts|Fire Salts]]<br/>
+[[Skyrim:Garlic|Garlic]]<br/>
+[[Skyrim:Jazbay Grapes|Jazbay Grapes]]<br/>
+[[Skyrim:Moon Sugar|Moon Sugar]]<br/>
+[[Skyrim:Purple Butterfly Wing|Purple Butterfly Wing]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Salmon Roe|Salmon Roe]]{{HF}}</br>
+[[Skyrim:Salt Pile|Salt Pile]]<br/>
+[[Skyrim:Taproot|Taproot]]<br>
+[[Skyrim:Thorn Hook|Thorn Hook]]{{CC|Saints & Seducers}} ({{Effect Mult|mag|0.6}},{{Effect Mult|dur|0.6}},{{Effect Mult|val|0.32}})
+|Magicka regenerates <mag>% faster for <dur> seconds.
+| 0.1 ||class="EffectPos"| 5 || 300 || 177
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Regenerate Stamina|Regenerate Stamina]]}}<br/>{{ID|0003EB08|par=1}}
+|
+'''[[Skyrim:Alocasia Fruit|Alocasia Fruit]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Daedroth Teeth|Daedroth Teeth]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Red Kelp Gas Bladder|Red Kelp Gas Bladder]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Scrib Jelly|Scrib Jelly]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Wisp Stalk Caps|Wisp Stalk Caps]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Bee|Bee]]<br/>
+[[Skyrim:Fly Amanita|Fly Amanita]]<br/>
+[[Skyrim:Mora Tapinella|Mora Tapinella]]<br/>
+[[Skyrim:Purple Butterfly Wing|Purple Butterfly Wing]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Scaly Pholiota|Scaly Pholiota]]
+|Stamina regenerates <mag>% faster for <dur> seconds.
+| 0.1 ||class="EffectPos"| 5 || 300 || 177
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Resist Fire|Resist Fire]]}}<br/>{{ID|0003EAEA|par=1}}
+|
+'''[[Skyrim:Ashen Grass Pod|Ashen Grass Pod]]'''{{DB}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br/>
+[[Skyrim:Fire Petal|Fire Petal]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Gnarl Bark|Gnarl Bark]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Sload Soap|Sload Soap]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Ash Creep Cluster|Ash Creep Cluster]]{{DB}}<br/>
+[[Skyrim:Berit's Ashes|Berit's Ashes]]<br/>
+[[Skyrim:Bliss Bug Thorax|Bliss Bug Thorax]]{{CC|Saints & Seducers}}<br>
+[[Skyrim:Bone Meal|Bone Meal]]<br/>
+'''[[Skyrim:Dragon's Tongue|Dragon's Tongue]]'''<br/>
+[[Skyrim:Elves Ear|Elves Ear]]<br/>
+[[Skyrim:Fire Salts|Fire Salts]]<br/>
+'''[[Skyrim:Fly Amanita|Fly Amanita]]'''<br/>
+[[Skyrim:Mudcrab Chitin|Mudcrab Chitin]]<br/>
+'''[[Skyrim:Snowberries|Snowberries]]'''<br/>
+[[Skyrim:Spawn Ash|Spawn Ash]]{{DB}}
+|Resist <mag>% of fire damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 3 || 60 || 86
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Resist Frost|Resist Frost]]}}<br/>{{ID|0003EAEB|par=1}}
+|
+'''[[Skyrim:Daedroth Teeth|Daedroth Teeth]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Flame Stalk|Flame Stalk]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Hydnum Azure Giant Spore|Hydnum Azure Giant Spore]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Redwort Flower|Redwort Flower]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Frost Mirriam|Frost Mirriam]]'''<br/>
+[[Skyrim:Frost Salts|Frost Salts]]<br/>
+[[Skyrim:Hawk Beak|Hawk Beak]]<br/>
+[[Skyrim:Moon Sugar|Moon Sugar]]<br/>
+[[Skyrim:Purple Mountain Flower|Purple Mountain Flower]]<br/>
+[[Skyrim:Silverside Perch|Silverside Perch]]<br/>
+'''[[Skyrim:Slaughterfish Scales|Slaughterfish Scales]]'''<br/>
+[[Skyrim:Small Pearl|Small Pearl]]<br/>
+[[Skyrim:Snowberries|Snowberries]]<br/>
+[[Skyrim:Steel-Blue Entoloma|Steel-Blue Entoloma]]{{CC|Goblins}}<br>
+'''[[Skyrim:Thistle Branch|Thistle Branch]]'''
+|Resist <mag>% of frost damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 3 || 60 || 86
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Resist Magic|Resist Magic]]}}<br/>{{ID|00039E51|par=1}}
+|
+'''[[Skyrim:Aster Bloom Core|Aster Bloom Core]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Bungler's Bane|Bungler's Bane]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Hypha Facia|Hypha Facia]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Bleeding Crown|Bleeding Crown]]<br/>
+'''[[Skyrim:Chicken's Egg|Chicken's Egg]]'''<br/>
+[[Skyrim:Crimson Nirnroot|Crimson Nirnroot]]<br/>
+[[Skyrim:Felsaad Tern Feathers|Felsaad Tern Feathers]]{{DB}}<br/>
+'''[[Skyrim:Gleamblossom|Gleamblossom]]'''{{DG}}<br/>
+'''[[Skyrim:Hagraven Claw|Hagraven Claw]]'''<br/>
+'''[[Skyrim:Hawk's Egg|Hawk's Egg]]'''{{HF}}</br>
+'''[[Skyrim:Lavender|Lavender]]'''<br/>
+[[Skyrim:Nirnroot|Nirnroot]]<br/>
+'''[[Skyrim:Tundra Cotton|Tundra Cotton]]'''<br/>
+[[Skyrim:Void Salts|Void Salts]]<br/>
+[[Skyrim:Wisp Wrappings|Wisp Wrappings]]
+|Resist <mag>% of magic for <dur> seconds.
+| 1 ||class="EffectPos"| 1 || 60 || 51
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Resist Poison|Resist Poison]]}}<br/>{{ID|00090041|par=1}}
+|
+[[Skyrim:Minotaur Horn|Minotaur Horn]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Ogre's Teeth|Ogre's Teeth]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.25}},{{Effect Mult|val|1.27}})<br>
+[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]]<br/>
+[[Skyrim:Falmer Ear|Falmer Ear]]<br/>
+'''[[Skyrim:Garlic|Garlic]]'''<br/>
+'''[[Skyrim:Grass Pod|Grass Pod]]'''<br/>
+[[Skyrim:Mudcrab Chitin|Mudcrab Chitin]]<br/>
+'''[[Skyrim:Slaughterfish Egg|Slaughterfish Egg]]'''<br/>
+'''[[Skyrim:Troll Fat|Troll Fat]]'''<br/>
+'''[[Skyrim:Wild Grass Pod|Wild Grass Pod]]'''{{CC|Forgotten Seasons}}<br>
+'''[[Skyrim:Yellow Mountain Flower|Yellow Mountain Flower]]'''{{DG}}<br/>
+'''[[Skyrim:Beehive Husk|Beehive Husk]]''' ({{Effect Mult|mag|0.5}},{{Effect Mult|val|0.46}})<br>
+[[Skyrim:Thistle Branch|Thistle Branch]] ({{Effect Mult|mag|0.75}},{{Effect Mult|dur|0}},{{Effect Mult|val|0.1}})
+|Resist <mag>% of poison for <dur> seconds.
+| 0.5 ||class="EffectPos"| 4 || 60 || 118
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Resist Shock|Resist Shock]]}}<br/>{{ID|0003EAEC|par=1}}
+|
+[[Skyrim:Corkbulb Root|Corkbulb Root]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Kagouti Hide|Kagouti Hide]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Ash Hopper Jelly|Ash Hopper Jelly]]{{DB}}<br/>
+'''[[Skyrim:Blue Dartwing|Blue Dartwing]]'''<br/>
+[[Skyrim:Glow Dust|Glow Dust]]<br/>
+'''[[Skyrim:Glowing Mushroom|Glowing Mushroom]]'''<br/>
+[[Skyrim:Hawk Beak|Hawk Beak]]<br/>
+[[Skyrim:Pearl|Pearl]]<br/>
+[[Skyrim:Pine Thrush Egg|Pine Thrush Egg]]<br/>
+[[Skyrim:Snowberries|Snowberries]]<br/>
+'''[[Skyrim:Swamp Fungal Pod|Swamp Fungal Pod]]'''
+|Resist <mag>% of shock damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 3 || 60 || 86
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Restore Health|Restore Health]]}}<br/>{{ID|0003EB15|par=1}}
+|
+'''[[Skyrim:Ambrosia|Ambrosia]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Corkbulb Root|Corkbulb Root]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Flame Stalk|Flame Stalk]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Heart of Order|Heart of Order]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Marshmerrow|Marshmerrow]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Saltrice|Saltrice]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Void Essence|Void Essence]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Ash Hopper Jelly|Ash Hopper Jelly]]'''{{DB}}<br/>
+[[Skyrim:Blue Dartwing|Blue Dartwing]]<br/>
+'''[[Skyrim:Blue Mountain Flower|Blue Mountain Flower]]'''<br/>
+'''[[Skyrim:Butterfly Wing|Butterfly Wing]]'''<br/>
+[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]]<br/>
+'''[[Skyrim:Daedra Heart|Daedra Heart]]'''<br/>
+[[Skyrim:Eye of Sabre Cat|Eye of Sabre Cat]]<br/>
+'''[[Skyrim:Felsaad Tern Feathers|Felsaad Tern Feathers]]'''{{DB}}<br/>
+'''[[Skyrim:Rock Warbler Egg|Rock Warbler Egg]]'''<br/>
+[[Skyrim:Swamp Fungal Pod|Swamp Fungal Pod]]<br/>
+'''[[Skyrim:Wheat|Wheat]]'''<br/>
+[[Skyrim:Blisterwort|Blisterwort]] ({{Effect Mult|mag|0.6}},{{Effect Mult|val|0.57}})<br/>
+[[Skyrim:Imp Stool|Imp Stool]] ({{Effect Mult|mag|0.6}},{{Effect Mult|val|0.57}})
+|Restore <mag> points of Health.
+| 0.5 ||class="EffectPos"| 5 || 0 || 21
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Restore Magicka|Restore Magicka]]}}<br/>{{ID|0003EB17|par=1}}
+|
+'''[[Skyrim:Blister Pod Cap|Blister Pod Cap]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Bog Beacon|Bog Beacon]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Comberry|Comberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Congealed Putrescence|Congealed Putrescence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Elytra Ichor|Elytra Ichor]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+[[Skyrim:Fungus Stalk|Fungus Stalk]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Lichor|Lichor]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Withering Moon|Withering Moon]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Briar Heart|Briar Heart]]'''<br/>
+'''[[Skyrim:Creep Cluster|Creep Cluster]]'''<br/>
+[[Skyrim:Dwarven Oil|Dwarven Oil]]<br/>
+'''[[Skyrim:Ectoplasm|Ectoplasm]]'''<br/>
+'''[[Skyrim:Elves Ear|Elves Ear]]'''<br/>
+[[Skyrim:Fire Salts|Fire Salts]]<br/>
+[[Skyrim:Frost Salts|Frost Salts]]<br/>
+[[Skyrim:Giant Lichen|Giant Lichen]]<br/>
+[[Skyrim:Grass Pod|Grass Pod]]<br/>
+'''[[Skyrim:Green Butterfly Wing|Green Butterfly Wing]]'''{{CC|Saints & Seducers}}<br>
+[[Skyrim:Human Flesh|Human Flesh]]<br/>
+[[Skyrim:Moon Sugar|Moon Sugar]]<br/>
+'''[[Skyrim:Mora Tapinella|Mora Tapinella]]'''<br/>
+[[Skyrim:Pearl|Pearl]]<br/>
+'''[[Skyrim:Red Mountain Flower|Red Mountain Flower]]'''<br/>
+'''[[Skyrim:Steel-Blue Entoloma|Steel-Blue Entoloma]]'''{{CC|Goblins}}<br>
+[[Skyrim:Taproot|Taproot]]<br/>
+[[Skyrim:Vampire Dust|Vampire Dust]]<br/>
+[[Skyrim:White Cap|White Cap]]<br/>
+[[Skyrim:Wild Grass Pod|Wild Grass Pod]]{{CC|Forgotten Seasons}}
+|Restore <mag> points of Magicka.
+| 0.6 ||class="EffectPos"| 5 || 0 || 25
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Restore Stamina|Restore Stamina]]}}<br/>{{ID|0003EB16|par=1}}
+| 
+[[Skyrim:Netch Jelly|Netch Jelly]] ({{Effect Mult|mag|2}}){{DB}}<br/>
+[[Skyrim:Chokeweed|Chokeweed]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Hackle-Lo Leaf|Hackle-Lo Leaf]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Saltrice|Saltrice]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Scrib Jerky|Scrib Jerky]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}})<br>
+'''[[Skyrim:Bee|Bee]]'''<br/>
+'''[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]]'''<br/>
+'''[[Skyrim:Eye of Sabre Cat|Eye of Sabre Cat]]'''<br/>
+'''[[Skyrim:Hawk Beak|Hawk Beak]]'''<br/>
+'''[[Skyrim:Histcarp|Histcarp]]'''<br/>
+'''[[Skyrim:Honeycomb|Honeycomb]]'''<br/>
+'''[[Skyrim:Large Antlers|Large Antlers]]'''<br/>
+'''[[Skyrim:Mudcrab Chitin|Mudcrab Chitin]]'''<br/>
+'''[[Skyrim:Orange Dartwing|Orange Dartwing]]'''<br/>
+'''[[Skyrim:Pearl|Pearl]]'''<br/>
+'''[[Skyrim:Pine Thrush Egg|Pine Thrush Egg]]'''<br/>
+'''[[Skyrim:Powdered Mammoth Tusk|Powdered Mammoth Tusk]]'''<br/>
+'''[[Skyrim:Purple Mountain Flower|Purple Mountain Flower]]'''<br/>
+'''[[Skyrim:Sabre Cat Tooth|Sabre Cat Tooth]]'''<br/>
+'''[[Skyrim:Silverside Perch|Silverside Perch]]'''<br/>
+'''[[Skyrim:Small Pearl|Small Pearl]]'''<br/>
+'''[[Skyrim:Torchbug Thorax|Torchbug Thorax]]'''<br/>
+'''[[Skyrim:Wisp Wrappings|Wisp Wrappings]]'''<br/>
+'''[[Skyrim:Bear Claws|Bear Claws]]''' ({{Effect Mult|mag|0.8}},{{Effect Mult|val|0.78}})<br/>
+'''[[Skyrim:Salmon Roe|Salmon Roe]]'''{{HF}} ({{Effect Mult|mag|0.4}},{{Effect Mult|val|0.36}})
+|Restore <mag> Stamina.
+| 0.6 ||class="EffectPos"| 5 || 0 || 25
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Slow|Slow]]}}<br/>{{ID|00073F25|par=1}}
+|
+[[Skyrim:Large Antlers|Large Antlers]] ({{Effect Mult|dur|6}}, {{Effect Mult|val|1.75}})<br>
+[[Skyrim:Green Butterfly Wing|Green Butterfly Wing]]{{CC|Saints & Seducers}} ({{Effect Mult|dur|6}},{{Effect Mult|val|0.57}})<br>
+'''[[Skyrim:Rot Scale|Rot Scale]]'''{{CC|Saints & Seducers}} ({{Effect Mult|dur|3}},{{Effect Mult|val|0.26}})<br>
+'''[[Skyrim:Bungler's Bane|Bungler's Bane]]'''{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Elytra Ichor|Elytra Ichor]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Kresh Fiber|Kresh Fiber]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Worm's Head Cap|Worm's Head Cap]]{{CC|Rare Curios}} ({{Effect Mult|dur|2}},{{Effect Mult|val|2.14}})<br>
+[[Skyrim:Burnt Spriggan Wood|Burnt Spriggan Wood]]{{DB}}<br/>
+[[Skyrim:Deathbell|Deathbell]]<br/>
+[[Skyrim:Poison Bloom|Poison Bloom]]{{DG}}<br/>
+[[Skyrim:River Betty|River Betty]]<br/>
+[[Skyrim:Salt Pile|Salt Pile]]<br/>
+[[Skyrim:Trama Root|Trama Root]]{{DB}}
+|Target moves at 50% speed for <dur> seconds.
+| 1 || 50 ||class="EffectPos"| 5 || 247
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Spell Absorption|Spell Absorption]]}}<br>{{ID|FExxx812|par=1}}
+|
+[[Skyrim:Blind Watcher's Eye|Blind Watcher's Eye]]{{CC|Rare Curios}}<br>
+[[Skyrim:Comberry|Comberry]]{{CC|Rare Curios}}<br>
+[[Skyrim:Daedra Venin|Daedra Venin]]{{CC|Rare Curios}}<br>
+[[Skyrim:Fire Petal|Fire Petal]]{{CC|Rare Curios}}<br>
+[[Skyrim:Lichor|Lichor]]{{CC|Rare Curios}}<br>
+[[Skyrim:Watcher's Eye|Watcher's Eye]]{{CC|Rare Curios}}<br>
+[[Skyrim:Withering Moon|Withering Moon]]{{CC|Rare Curios}}
+|Absorb <mag>% of the magicka from hostile spells for <dur> seconds.
+| 0.1 || 50 ||class="EffectPos"| 60 || 380
+|-
+!class="EffectPos"|{{Anchor|[[Skyrim:Waterbreathing (effect)|Waterbreathing]]}}<br/>{{ID|0003AC2D|par=1}}
+|
+[[Skyrim:Salmon Roe|Salmon Roe]]{{HF}} ({{Effect Mult|dur|12}}, {{Effect Mult|val|15.4}})</br>
+[[Skyrim:Fungus Stalk|Fungus Stalk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+[[Skyrim:Hackle-Lo Leaf|Hackle-Lo Leaf]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+[[Skyrim:Luminous Russula|Luminous Russula]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+[[Skyrim:Red Kelp Gas Bladder|Red Kelp Gas Bladder]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+'''[[Skyrim:Scalon Fin|Scalon Fin]]'''{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+[[Skyrim:Scrib Jerky|Scrib Jerky]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.6}},{{Effect Mult|val|1.67}})<br>
+[[Skyrim:Chicken's Egg|Chicken's Egg]]<br/>
+[[Skyrim:Hawk's Egg|Hawk's Egg]]{{HF}}</br>
+[[Skyrim:Histcarp|Histcarp]]<br/>
+[[Skyrim:Nordic Barnacle|Nordic Barnacle]]</br>
+|Can breathe underwater for <dur> seconds.
+| 30 || 0 ||class="EffectPos"| 5 || 100
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Weakness to Fire|Weakness to Fire]]}}<br/>{{ID|00073F2D|par=1}}
+|
+'''[[Skyrim:Hunger Tongue|Hunger Tongue]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|dur|2}},{{Effect Mult|val|2.93}})<br>
+[[Skyrim:Congealed Putrescence|Congealed Putrescence]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Flame Stalk|Flame Stalk]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Imp Gall|Imp Gall]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Bleeding Crown|Bleeding Crown]]'''<br/>
+'''[[Skyrim:Bliss Bug Thorax|Bliss Bug Thorax]]'''{{CC|Saints & Seducers}}<br>
+'''[[Skyrim:Burnt Spriggan Wood|Burnt Spriggan Wood]]'''{{DB}}<br/>
+'''[[Skyrim:Frost Salts|Frost Salts]]'''<br/>
+[[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]]<br/>
+'''[[Skyrim:Juniper Berries|Juniper Berries]]'''<br/>
+'''[[Skyrim:Moon Sugar|Moon Sugar]]'''<br/>
+[[Skyrim:Powdered Mammoth Tusk|Powdered Mammoth Tusk]]
+|Target is <mag>% weaker to fire damage for <dur> seconds.
+| 0.6 ||class="EffectPos"| 3 || 30 || 48
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Weakness to Frost|Weakness to Frost]]}}<br/>{{ID|00073F2E|par=1}}
+|
+'''[[Skyrim:Chokeweed|Chokeweed]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Gold Kanet|Gold Kanet]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Abecean Longfin|Abecean Longfin]]'''<br/>
+[[Skyrim:Ash Hopper Jelly|Ash Hopper Jelly]]{{DB}}<br/>
+'''[[Skyrim:Fire Salts|Fire Salts]]'''<br/>
+'''[[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]]'''<br/>
+'''[[Skyrim:White Cap|White Cap]]'''<br/>
+[[Skyrim:Elves Ear|Elves Ear]]
+|Target is <mag>% weaker to frost damage for <dur> seconds.
+| 0.5 ||class="EffectPos"| 3 || 30 || 40
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Weakness to Magic|Weakness to Magic]]}}<br/>{{ID|00073F51|par=1}}
+|
+'''[[Skyrim:Dreugh Wax|Dreugh Wax]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Kresh Fiber|Kresh Fiber]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Marshmerrow|Marshmerrow]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Roobrush|Roobrush]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Creep Cluster|Creep Cluster]]<br/>
+'''[[Skyrim:Dwarven Oil|Dwarven Oil]]'''<br/>
+'''[[Skyrim:Jazbay Grapes|Jazbay Grapes]]'''<br/>
+[[Skyrim:Rock Warbler Egg|Rock Warbler Egg]]<br/>
+'''[[Skyrim:Salt Pile|Salt Pile]]'''<br/>
+'''[[Skyrim:Scaly Pholiota|Scaly Pholiota]]'''<br/>
+'''[[Skyrim:Taproot|Taproot]]'''<br/>
+[[Skyrim:Torchbug Thorax|Torchbug Thorax]]
+|Target is <mag>% weaker to magic for <dur> seconds.
+| 1 ||class="EffectPos"| 2 || 30 || 51
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Weakness to Poison|Weakness to Poison]]}}<br/>{{ID|00090042|par=1}}
+|
+[[Skyrim:Chokeberry|Chokeberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+'''[[Skyrim:Hypha Facia|Hypha Facia]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Wisp Stalk Caps|Wisp Stalk Caps]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})<br>
+[[Skyrim:Abecean Longfin|Abecean Longfin]]<br/>
+[[Skyrim:Bleeding Crown|Bleeding Crown]]<br/>
+'''[[Skyrim:Chaurus Eggs|Chaurus Eggs]]'''<br/>
+[[Skyrim:Deathbell|Deathbell]]<br/>
+[[Skyrim:Giant Lichen|Giant Lichen]]<br/>
+[[Skyrim:Pine Thrush Egg|Pine Thrush Egg]]<br/>
+[[Skyrim:Sabre Cat Tooth|Sabre Cat Tooth]]<br/>
+'''[[Skyrim:Small Antlers|Small Antlers]]'''
+|Target is <mag>% weaker to poison for <dur> seconds.
+| 1 ||class="EffectPos"| 2 || 30 || 51
+|-
+!class="EffectNeg"|{{Anchor|[[Skyrim:Weakness to Shock|Weakness to Shock]]}}<br/>{{ID|00073F2F|par=1}}
+|
+'''[[Skyrim:Ogre's Teeth|Ogre's Teeth]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+'''[[Skyrim:Stoneflower Petals|Stoneflower Petals]]'''{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}})<br>
+[[Skyrim:Ashen Grass Pod|Ashen Grass Pod]]{{DB}}<br/>
+[[Skyrim:Bee|Bee]]<br/>
+'''[[Skyrim:Giant Lichen|Giant Lichen]]'''<br/>
+[[Skyrim:Hagraven Feathers|Hagraven Feathers]]<br/>
+'''[[Skyrim:Trama Root|Trama Root]]'''{{DB}}<br/>
+'''[[Skyrim:Void Salts|Void Salts]]'''
+|Target is <mag>% weaker to shock damage for <dur> seconds.
+| 0.7 ||class="EffectPos"| 3 || 30 || 56
+|}
+<references/>
+
+== Notes ==
+* Alchemy effects stack with [[Skyrim:Enchanting Effects|enchanting effects]], but not with one another — only the strongest alchemy effect will be active, except Weakness to Magic and Weakness to Poison.
