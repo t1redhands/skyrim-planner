@@ -1,0 +1,128 @@
+{{Trail|Items|Artifacts}} {{TOCright|limit=2}}
+There are a number of artifact weapons  that can be found throughout the game of ''[[Skyrim:Skyrim|Skyrim]]''.
+
+The definition used for artifacts on this article is that the item must meet ''all three'' of the following requirements:
+* Be unique in appearance.
+* Only appear once in the game.
+* Have a unique and useful enchantment.
+None of these artifacts can be disenchanted to learn the enchantment. Some of them may be improved by [[Skyrim:Smithing|smithing]]. The material and perk relevant to each item is given below. Improving enchanted items requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk. However, many artifacts do not have an applicable perk that allows improvement past ''flawless'' quality without a Smithing skill of greater than 100.
+
+Many of the artifacts are of [[Lore:Daedra|Daedric]] origin. These items are formed from the essence of a [[Lore:Daedric Princes|Daedric Prince]], providing the items with their power. Nineteen ''Daedric Artifacts'' are available in the game; most are rewards for the [[Skyrim:Daedric Quests|Daedric Quests]].
+{{NewLine}}
+==Battleaxes==
+===[[Skyrim:The Rueful Axe|The Rueful Axe]]===
+{{Skyrim:The Rueful Axe}}{{NewLine}}
+===[[Skyrim:Wuuthrad|Wuuthrad]]===
+{{Skyrim:Wuuthrad}}{{NewLine}}
+
+==Bows==
+===[[Skyrim:Auriel's Bow|Auriel's Bow]]{{DG}}===
+{{Skyrim:Auriel's Bow}}{{NewLine}}
+===[[Skyrim:Dwarven Black Bow of Fate|Dwarven Black Bow of Fate]]{{DB}}===
+{{Skyrim:Dwarven Black Bow of Fate}}{{NewLine}}
+===[[Skyrim:Nightingale Bow|Nightingale Bow]]===
+{{Skyrim:Nightingale Bow}}{{NewLine}}
+
+==Daggers==
+===[[Skyrim:Keening|Keening]]===
+{{Skyrim:Keening}}{{NewLine}}
+===[[Skyrim:Mehrunes' Razor|Mehrunes' Razor]]===
+{{Skyrim:Mehrunes' Razor}}{{NewLine}}
+
+==Greatswords==
+===[[Skyrim:Bloodskal Blade|Bloodskal Blade]]{{DB}}===
+{{Skyrim:Bloodskal Blade}}{{NewLine}}
+===[[Skyrim:Ebony Blade|Ebony Blade]]===
+{{Skyrim:Ebony Blade}}{{NewLine}}
+
+==Maces==
+===[[Skyrim:Mace of Molag Bal|Mace of Molag Bal]]===
+{{Skyrim:Mace of Molag Bal}}{{NewLine}}
+
+==Staves==
+===[[Skyrim:Aetherial Staff|Aetherial Staff]]{{DG}}===
+{{Skyrim:Aetherial Staff}}{{NewLine}}
+===[[Skyrim:Miraak's Staff|Miraak's Staff]]{{DB}}===
+{{Skyrim:Miraak's Staff}}{{NewLine}}
+===[[Skyrim:Sanguine Rose|Sanguine Rose]]===
+{{Skyrim:Sanguine Rose}}{{NewLine}}
+===[[Skyrim:Staff of Magnus|Staff of Magnus]]===
+{{Skyrim:Staff of Magnus}}{{NewLine}}
+===[[Skyrim:Skull of Corruption|Skull of Corruption]]===
+{{Skyrim:Skull of Corruption}}{{NewLine}}
+===[[Skyrim:Wabbajack|Wabbajack]]===
+{{Skyrim:Wabbajack}}{{NewLine}}
+
+==Swords==
+===[[Skyrim:Chillrend|Chillrend]]===
+{{Skyrim:Chillrend}}{{NewLine}}
+===[[Skyrim:Dawnbreaker|Dawnbreaker]]===
+{{Skyrim:Dawnbreaker}}{{NewLine}}
+===[[Skyrim:Dragonbane|Dragonbane]]===
+{{Skyrim:Dragonbane}}{{NewLine}}
+===[[Skyrim:Harkon's Sword|Harkon's Sword]]{{DG}}===
+{{Skyrim:Harkon's Sword}}{{NewLine}}
+
+===[[Skyrim:Miraak's Sword|Miraak's Sword]]{{DB}}===
+{{Skyrim:Miraak's Sword}}{{NewLine}}
+
+===[[Skyrim:Nightingale Blade|Nightingale Blade]]===
+{{Skyrim:Nightingale Blade}}{{NewLine}}
+
+==War Axes==
+===[[Skyrim:Dawnguard Rune Axe|Dawnguard Rune Axe]]{{DG}}===
+{{Skyrim:Dawnguard Rune Axe}}{{NewLine}}
+
+==Warhammers==
+===[[Skyrim:Dawnguard Rune Hammer|Dawnguard Rune Hammer]]{{DG}}===
+{{Skyrim:Dawnguard Rune Hammer}}{{NewLine}}
+===[[Skyrim:Volendrung|Volendrung]]===
+{{Skyrim:Volendrung}}{{NewLine}}
+
+==Creation Club Bows==
+===[[Skyrim:Ruin's Edge (item)|Ruin's Edge]]{{CC|Ruin's Edge}}===
+{{Skyrim:Ruin's Edge (item)}}{{NewLine}}
+
+==Creation Club Greatswords==
+===[[Skyrim:Chrysamere (item)|Chrysamere]]{{CC|Chrysamere}}===
+{{Skyrim:Chrysamere (item)}}{{NewLine}}
+===[[Skyrim:Ice Blade of the Monarch|Ice Blade of the Monarch]]{{CC|The Contest}}===
+{{Skyrim:Ice Blade of the Monarch}}{{NewLine}}
+===[[Skyrim:Sword of Jyggalag|Sword of Jyggalag]]{{CC|Saints & Seducers}}===
+{{Skyrim:Sword of Jyggalag}}{{NewLine}}
+===[[Skyrim:Umbra (item)|Umbra]]{{CC|Umbra}}===
+{{Skyrim:Umbra (item)}}{{NewLine}}
+
+==Creation Club Maces==
+===[[Skyrim:Mace of the Crusader|Mace of the Crusader]]{{CC|Divine Crusader}}===
+{{Skyrim:Mace of the Crusader}}{{NewLine}}
+===[[Skyrim:Sunder|Sunder]]{{CC|Sunder & Wraithguard}}===
+{{Skyrim:Sunder}}{{NewLine}}
+
+==Creation Club Staves==
+===[[Skyrim:Staff of Hasedoki (item)|Staff of Hasedoki]]{{CC|Staff of Hasedoki}}===
+{{Skyrim:Staff of Hasedoki (item)}}{{NewLine}}
+===[[Skyrim:Staff of Sheogorath (item)|Staff of Sheogorath]]{{CC|Staff of Sheogorath}}===
+{{Skyrim:Staff of Sheogorath (item)}}{{NewLine}}
+
+==Creation Club Swords==
+===[[Skyrim:Blackwater Blade|Blackwater Blade]]{{CC|Dead Man's Dread}}===
+{{Skyrim:Blackwater Blade}}{{NewLine}}
+===[[Skyrim:Bloodthirst|Bloodthirst]]{{CC|Dawnfang & Duskfang}}===
+{{Skyrim:Bloodthirst}}{{NewLine}}
+===[[Skyrim:Dawnfang and Duskfang|Dawnfang and Duskfang]]{{CC|Dawnfang & Duskfang}}===
+{{Skyrim:Dawnfang and Duskfang}}{{NewLine}}
+===[[Skyrim:Sword of the Crusader|Sword of the Crusader]]{{CC|Divine Crusader}}===
+{{Skyrim:Sword of the Crusader}}{{NewLine}}
+===[[Skyrim:Torment|Torment]]{{CC|The Cause}}===
+{{Skyrim:Torment}}{{NewLine}}
+
+==Creation Club Warhammers==
+===[[Skyrim:Nerveshatter|Nerveshatter]]{{CC|Saints & Seducers}}===
+{{Skyrim:Nerveshatter}}{{NewLine}}
+===[[Skyrim:Stendarr's Hammer (item)|Stendarr's Hammer]]{{CC|Stendarr's Hammer}}===
+{{Skyrim:Stendarr's Hammer (item)}}{{NewLine}}
+
+==Multiple==
+===[[Skyrim:Shadowrend (item)|Shadowrend]]{{CC|Shadowrend}}===
+{{Skyrim:Shadowrend (item)}}

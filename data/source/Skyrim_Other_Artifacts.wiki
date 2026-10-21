@@ -1,0 +1,22 @@
+{{Trail|Items|Artifacts}} __NOTOC__
+There are a number of artifacts describable as Miscellaneous Items found throughout the game of ''[[Skyrim:Skyrim|Skyrim]]''.
+
+The definition used for artifacts on this article is that the item must meet ''all three'' of the following requirements:
+* Be unique in appearance.
+* Only appear once in the game.
+* Have a unique and useful enchantment.
+None of these artifacts can be disenchanted to learn the enchantment. Some of them may be improved by [[Skyrim:Smithing|smithing]]. The material and perk relevant to each item is given below. Improving enchanted items requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk. However, many artifacts do not have an applicable perk that allows improvement past ''flawless'' quality without a Smithing skill of greater than 100.
+
+Many of the artifacts are of [[Lore:Daedra|Daedric]] origin. These items are formed from the essence of a [[Lore:Daedric Princes|Daedric Prince]], providing the items with their power. Nineteen ''Daedric Artifacts'' are available in the game; most are rewards for the [[Skyrim:Daedric Quests|Daedric Quests]].
+{{NewLine}}
+==Other Artifacts==
+===[[Skyrim:Azura's Star|Azura's Star]]===
+{{Skyrim:Azura's Star}}{{NewLine}}
+===[[Skyrim:The Black Star (item)|The Black Star]]===
+{{Skyrim:The Black Star (item)}}{{NewLine}}
+===[[Skyrim:Oghma Infinium|Oghma Infinium]]===
+{{Skyrim:Oghma Infinium}}{{NewLine}}
+===[[Skyrim:Skeleton Key|Skeleton Key]]===
+{{Skyrim:Skeleton Key}}{{NewLine}}
+===[[Skyrim:The White Phial (item)|The White Phial]]===
+{{Skyrim:The White Phial (item)}}

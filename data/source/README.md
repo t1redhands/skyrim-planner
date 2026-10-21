@@ -4,5 +4,7 @@ Raw page text from the Unofficial Elder Scrolls Pages (https://en.uesp.net), sav
 
 UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/).
 
-- [Skyrim:Artifacts](https://en.uesp.net/wiki/Skyrim:Artifacts)
-- [Skyrim:Leveled Items](https://en.uesp.net/wiki/Skyrim:Leveled_Items)
+- [Skyrim:Weapon Artifacts](https://en.uesp.net/wiki/Skyrim:Weapon_Artifacts)
+- [Skyrim:Armor Artifacts](https://en.uesp.net/wiki/Skyrim:Armor_Artifacts)
+- [Skyrim:Clothing Artifacts](https://en.uesp.net/wiki/Skyrim:Clothing_Artifacts)
+- [Skyrim:Other Artifacts](https://en.uesp.net/wiki/Skyrim:Other_Artifacts)

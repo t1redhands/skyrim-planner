@@ -1,0 +1,47 @@
+{{Trail|Items|Artifacts}} {{TOCright|limit=2}}
+There are a number of artifact weapons  that can be found throughout the game of [[Skyrim:Skyrim|Skyrim]].
+
+The definition used for artifacts on this article is that the item must meet ''all three'' of the following requirements:
+* Be unique in appearance.
+* Only appear once in the game.
+* Have a unique and useful enchantment.
+None of these artifacts can be disenchanted to learn the enchantment. Some of them may be improved by [[Skyrim:Smithing|smithing]]. The material and perk relevant to each item is given below. Improving enchanted items requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk. However, many artifacts do not have an applicable perk that allows improvement past ''flawless'' quality without a Smithing skill of greater than 100.
+
+Many of the artifacts are of [[Lore:Daedra|Daedric]] origin. These items are formed from the essence of a [[Lore:Daedric Princes|Daedric Prince]], providing the items with their power. Nineteen ''Daedric Artifacts'' are available in the game; most are rewards for the [[Skyrim:Daedric Quests|Daedric Quests]].
+
+==Amulets==
+===[[Skyrim:Amulet of Articulation|Amulet of Articulation]]===
+{{Skyrim:Amulet of Articulation}}{{NewLine}}
+===[[Skyrim:Necromancer Amulet|Necromancer Amulet]]===
+{{Skyrim:Necromancer Amulet}}{{NewLine}}
+
+==Circlets==
+===[[Skyrim:Aetherial Crown|Aetherial Crown]]{{DG}}===
+{{Skyrim:Aetherial Crown}}{{NewLine}}
+
+==Rings==
+===[[Skyrim:Denstagmer's Ring|Denstagmer's Ring]]{{CC|Fishing}}===
+{{Skyrim:Denstagmer's Ring}}{{NewLine}}
+===[[Skyrim:Mentor's Ring|Mentor's Ring]]{{CC|Fishing}}===
+{{Skyrim:Mentor's Ring}}{{NewLine}}
+===[[Skyrim:Ring of Hircine|Ring of Hircine]]===
+{{Skyrim:Ring of Hircine}}{{NewLine}}
+===[[Skyrim:Ring of Khajiit|Ring of Khajiit]]{{CC|Fishing}}===
+{{Skyrim:Ring of Khajiit}}{{NewLine}}
+===[[Skyrim:Ring of Namira|Ring of Namira]]===
+{{Skyrim:Ring of Namira}}{{NewLine}}
+===[[Skyrim:Ring of Phynaster|Ring of Phynaster]]{{CC|Fishing}}===
+{{Skyrim:Ring of Phynaster}}{{NewLine}}
+===[[Skyrim:Ring of Surroundings|Ring of Surroundings]]{{CC|Fishing}}===
+{{Skyrim:Ring of Surroundings}}{{NewLine}}
+===[[Skyrim:Ring of the Wind|Ring of the Wind]]{{CC|Fishing}}===
+{{Skyrim:Ring of the Wind}}{{NewLine}}
+===[[Skyrim:Vampiric Ring|Vampiric Ring]]{{CC|Fishing}}===
+{{Skyrim:Vampiric Ring}}{{NewLine}}
+===[[Skyrim:Warlock's Ring|Warlock's Ring]]{{CC|Fishing}}===
+{{Skyrim:Warlock's Ring}}{{NewLine}}
+==Robes==
+===[[Skyrim:Archmage's Robes|Archmage's Robes]]===
+{{Skyrim:Archmage's Robes}}{{NewLine}}
+===[[Skyrim:Miraak's Robes|Miraak's Robes]]{{DB}}===
+{{Skyrim:Miraak's Robes}}
