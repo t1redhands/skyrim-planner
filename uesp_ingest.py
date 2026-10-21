@@ -139,10 +139,14 @@ def check_perks(session, refresh, only_unverified=True):
         low = text.lower()
         names = [p["name"] for p in tree["perks"]]
         # where each perk's own row starts: first mention of its name
-        starts = sorted((low.find(n.lower()), n) for n in names if low.find(n.lower()) >= 0)
+        def row_start(name):
+            # perk rows carry {{Anchor|Name}}; fall back to the first mention of the name
+            a = low.find("{{anchor|" + name.lower() + "}}")
+            return a if a >= 0 else low.find(name.lower())
+        starts = sorted((row_start(n), n) for n in names if row_start(n) >= 0)
         tree_problems = []
         for p in tree["perks"]:
-            pos = low.find(p["name"].lower())
+            pos = row_start(p["name"])
             if pos < 0:
                 tree_problems.append(f"'{p['name']}' not found on the page")
                 continue
