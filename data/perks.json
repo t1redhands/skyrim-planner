@@ -1,6 +1,6 @@
 {
  "license": "CC BY-SA 2.5; perk names, requirements and prerequisites from UESP (https://en.uesp.net). Effects summarized.",
- "asOf": "2026-10-20",
+ "asOf": "2026-10-21",
  "trees": {
   "oneHanded": {
    "verified": true,
@@ -243,7 +243,7 @@
    ]
   },
   "archery": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Archery",
    "perks": [
     {
@@ -354,7 +354,7 @@
    ]
   },
   "block": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Block",
    "perks": [
     {
@@ -558,7 +558,7 @@
    ]
   },
   "smithing": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Smithing",
    "perks": [
     {
@@ -673,7 +673,7 @@
    ]
   },
   "alteration": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Alteration",
    "perks": [
     {
@@ -791,7 +791,7 @@
    ]
   },
   "conjuration": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Conjuration",
    "perks": [
     {
@@ -962,7 +962,7 @@
    ]
   },
   "destruction": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Destruction",
    "perks": [
     {
@@ -1123,7 +1123,7 @@
    ]
   },
   "illusion": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Illusion",
    "perks": [
     {
@@ -1271,7 +1271,7 @@
    ]
   },
   "restoration": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Restoration",
    "perks": [
     {
@@ -1408,7 +1408,7 @@
    ]
   },
   "enchanting": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Enchanting",
    "perks": [
     {
@@ -1516,7 +1516,7 @@
    ]
   },
   "lightArmor": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Light_Armor",
    "perks": [
     {
@@ -1591,7 +1591,7 @@
    ]
   },
   "sneak": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Sneak",
    "perks": [
     {
@@ -1698,7 +1698,7 @@
    ]
   },
   "lockpicking": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Lockpicking",
    "perks": [
     {
@@ -1823,7 +1823,7 @@
    ]
   },
   "pickpocket": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Pickpocket",
    "perks": [
     {
@@ -1919,7 +1919,7 @@
    ]
   },
   "speech": {
-   "verified": false,
+   "verified": true,
    "source": "https://en.uesp.net/wiki/Skyrim:Speech",
    "perks": [
     {
