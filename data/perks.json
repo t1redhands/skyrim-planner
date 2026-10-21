@@ -1,0 +1,2139 @@
+{
+ "license": "CC BY-SA 2.5; perk names, requirements and prerequisites from UESP (https://en.uesp.net). Effects summarized.",
+ "asOf": "2026-10-20",
+ "trees": {
+  "oneHanded": {
+   "verified": true,
+   "source": "https://en.uesp.net/wiki/Skyrim:One-handed",
+   "perks": [
+    {
+     "id": "oneHanded.armsman",
+     "name": "Armsman",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "One-handed weapons deal 20% more damage per rank, up to double at rank 5."
+    },
+    {
+     "id": "oneHanded.fighting-stance",
+     "name": "Fighting Stance",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "oneHanded.armsman"
+     ],
+     "effect": "One-handed power attacks cost 25% less Stamina."
+    },
+    {
+     "id": "oneHanded.hack-and-slash",
+     "name": "Hack and Slash",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "oneHanded.armsman"
+     ],
+     "effect": "War axe attacks cause extra bleeding damage, more with each rank."
+    },
+    {
+     "id": "oneHanded.bone-breaker",
+     "name": "Bone Breaker",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "oneHanded.armsman"
+     ],
+     "effect": "Mace attacks ignore 25% of armor per rank."
+    },
+    {
+     "id": "oneHanded.bladesman",
+     "name": "Bladesman",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "oneHanded.armsman"
+     ],
+     "effect": "Sword attacks have a chance for critical damage, rising with each rank."
+    },
+    {
+     "id": "oneHanded.dual-flurry",
+     "name": "Dual Flurry",
+     "ranks": [
+      30,
+      50
+     ],
+     "prereq": [
+      "oneHanded.armsman"
+     ],
+     "effect": "Dual-wield attacks are 20% faster, then 35%."
+    },
+    {
+     "id": "oneHanded.critical-charge",
+     "name": "Critical Charge",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "oneHanded.fighting-stance"
+     ],
+     "effect": "Sprinting power attack that deals double critical damage."
+    },
+    {
+     "id": "oneHanded.savage-strike",
+     "name": "Savage Strike",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "oneHanded.fighting-stance"
+     ],
+     "effect": "Standing power attacks deal 25% more damage and can decapitate."
+    },
+    {
+     "id": "oneHanded.dual-savagery",
+     "name": "Dual Savagery",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "oneHanded.dual-flurry"
+     ],
+     "effect": "Dual-wield power attacks deal 50% more damage."
+    },
+    {
+     "id": "oneHanded.paralyzing-strike",
+     "name": "Paralyzing Strike",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "oneHanded.critical-charge",
+      "oneHanded.savage-strike"
+     ],
+     "effect": "Backward power attacks have a 25% chance to paralyze."
+    }
+   ]
+  },
+  "twoHanded": {
+   "verified": true,
+   "source": "https://en.uesp.net/wiki/Skyrim:Two-handed",
+   "perks": [
+    {
+     "id": "twoHanded.barbarian",
+     "name": "Barbarian",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Two-handed weapons deal 20% more damage per rank, up to double at rank 5."
+    },
+    {
+     "id": "twoHanded.champion-s-stance",
+     "name": "Champion's Stance",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "twoHanded.barbarian"
+     ],
+     "effect": "Two-handed power attacks cost 25% less Stamina."
+    },
+    {
+     "id": "twoHanded.limbsplitter",
+     "name": "Limbsplitter",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "twoHanded.barbarian"
+     ],
+     "effect": "Battleaxe attacks cause extra bleeding damage, more with each rank."
+    },
+    {
+     "id": "twoHanded.deep-wounds",
+     "name": "Deep Wounds",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "twoHanded.barbarian"
+     ],
+     "effect": "Greatsword attacks have a chance for critical damage, rising with each rank."
+    },
+    {
+     "id": "twoHanded.skullcrusher",
+     "name": "Skullcrusher",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "twoHanded.barbarian"
+     ],
+     "effect": "Warhammer attacks ignore 25% of armor per rank."
+    },
+    {
+     "id": "twoHanded.devastating-blow",
+     "name": "Devastating Blow",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "twoHanded.champion-s-stance"
+     ],
+     "effect": "Standing power attacks deal 25% more damage and can decapitate."
+    },
+    {
+     "id": "twoHanded.great-critical-charge",
+     "name": "Great Critical Charge",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "twoHanded.champion-s-stance"
+     ],
+     "effect": "Sprinting power attack that deals double critical damage."
+    },
+    {
+     "id": "twoHanded.sweep",
+     "name": "Sweep",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "twoHanded.devastating-blow",
+      "twoHanded.great-critical-charge"
+     ],
+     "effect": "Sideways power attacks hit everyone in front of you."
+    },
+    {
+     "id": "twoHanded.warmaster",
+     "name": "Warmaster",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "twoHanded.sweep"
+     ],
+     "effect": "Backward power attacks have a 25% chance to knock the target down."
+    }
+   ]
+  },
+  "archery": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Archery",
+   "perks": [
+    {
+     "id": "archery.overdraw",
+     "name": "Overdraw",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Bows deal 20% more damage per rank, up to double at rank 5."
+    },
+    {
+     "id": "archery.critical-shot",
+     "name": "Critical Shot",
+     "ranks": [
+      30,
+      60,
+      90
+     ],
+     "prereq": [
+      "archery.overdraw"
+     ],
+     "effect": "Arrows have a chance for critical damage, rising with each rank."
+    },
+    {
+     "id": "archery.eagle-eye",
+     "name": "Eagle Eye",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "archery.overdraw"
+     ],
+     "effect": "Block while aiming to zoom in."
+    },
+    {
+     "id": "archery.steady-hand",
+     "name": "Steady Hand",
+     "ranks": [
+      40,
+      60
+     ],
+     "prereq": [
+      "archery.eagle-eye"
+     ],
+     "effect": "Zooming in slows time by 25%, then 50%."
+    },
+    {
+     "id": "archery.power-shot",
+     "name": "Power Shot",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "archery.eagle-eye"
+     ],
+     "effect": "Arrows stagger most targets."
+    },
+    {
+     "id": "archery.hunter-s-discipline",
+     "name": "Hunter's Discipline",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "archery.critical-shot"
+     ],
+     "effect": "Recover twice as many arrows from bodies."
+    },
+    {
+     "id": "archery.ranger",
+     "name": "Ranger",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "archery.hunter-s-discipline"
+     ],
+     "effect": "Move faster with a bow drawn."
+    },
+    {
+     "id": "archery.quick-shot",
+     "name": "Quick Shot",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "archery.power-shot"
+     ],
+     "effect": "Draw bows 30% faster."
+    },
+    {
+     "id": "archery.bullseye",
+     "name": "Bullseye",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "archery.quick-shot",
+      "archery.ranger"
+     ],
+     "effect": "Arrows have a 15% chance to paralyze."
+    }
+   ]
+  },
+  "block": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Block",
+   "perks": [
+    {
+     "id": "block.shield-wall",
+     "name": "Shield Wall",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Blocking is 20% more effective per rank."
+    },
+    {
+     "id": "block.quick-reflexes",
+     "name": "Quick Reflexes",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "block.shield-wall"
+     ],
+     "effect": "Time slows while blocking an enemy power attack."
+    },
+    {
+     "id": "block.deflect-arrows",
+     "name": "Deflect Arrows",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "block.shield-wall"
+     ],
+     "effect": "Arrows that hit your shield do no damage."
+    },
+    {
+     "id": "block.power-bash",
+     "name": "Power Bash",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "block.shield-wall"
+     ],
+     "effect": "Hold block and attack to do a power bash."
+    },
+    {
+     "id": "block.elemental-protection",
+     "name": "Elemental Protection",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "block.deflect-arrows"
+     ],
+     "effect": "Blocking with a shield reduces fire, frost and shock damage by 50%."
+    },
+    {
+     "id": "block.deadly-bash",
+     "name": "Deadly Bash",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "block.power-bash"
+     ],
+     "effect": "Bashing does five times more damage."
+    },
+    {
+     "id": "block.block-runner",
+     "name": "Block Runner",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "block.elemental-protection"
+     ],
+     "effect": "Move faster with a shield raised."
+    },
+    {
+     "id": "block.disarming-bash",
+     "name": "Disarming Bash",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "block.deadly-bash"
+     ],
+     "effect": "Power bashes can disarm."
+    },
+    {
+     "id": "block.shield-charge",
+     "name": "Shield Charge",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "block.block-runner",
+      "block.disarming-bash"
+     ],
+     "effect": "Sprinting with a shield raised knocks most targets down."
+    }
+   ]
+  },
+  "heavyArmor": {
+   "verified": true,
+   "source": "https://en.uesp.net/wiki/Skyrim:Heavy_Armor",
+   "perks": [
+    {
+     "id": "heavyArmor.juggernaut",
+     "name": "Juggernaut",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Heavy armor rating increases by 20% per rank."
+    },
+    {
+     "id": "heavyArmor.fists-of-steel",
+     "name": "Fists of Steel",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "heavyArmor.juggernaut"
+     ],
+     "effect": "Unarmed attacks with heavy gauntlets add their armor rating to damage."
+    },
+    {
+     "id": "heavyArmor.well-fitted",
+     "name": "Well Fitted",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "heavyArmor.juggernaut"
+     ],
+     "effect": "25% armor bonus when wearing all heavy armor: head, chest, hands, feet."
+    },
+    {
+     "id": "heavyArmor.cushioned",
+     "name": "Cushioned",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "heavyArmor.fists-of-steel"
+     ],
+     "effect": "Half fall damage when wearing all heavy armor."
+    },
+    {
+     "id": "heavyArmor.tower-of-strength",
+     "name": "Tower of Strength",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "heavyArmor.well-fitted"
+     ],
+     "effect": "50% less stagger when wearing only heavy armor."
+    },
+    {
+     "id": "heavyArmor.conditioning",
+     "name": "Conditioning",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "heavyArmor.cushioned"
+     ],
+     "effect": "Heavy armor weighs nothing and doesn't slow you down."
+    },
+    {
+     "id": "heavyArmor.matching-set",
+     "name": "Matching Set",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "heavyArmor.tower-of-strength"
+     ],
+     "effect": "Extra 25% armor bonus when wearing a matched set of heavy armor."
+    },
+    {
+     "id": "heavyArmor.reflect-blows",
+     "name": "Reflect Blows",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "heavyArmor.matching-set"
+     ],
+     "effect": "10% chance to reflect melee damage back to the attacker."
+    }
+   ]
+  },
+  "smithing": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Smithing",
+   "perks": [
+    {
+     "id": "smithing.steel-smithing",
+     "name": "Steel Smithing",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Forge steel gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.arcane-blacksmith",
+     "name": "Arcane Blacksmith",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "smithing.steel-smithing"
+     ],
+     "effect": "Improve magical weapons and armor."
+    },
+    {
+     "id": "smithing.dwarven-smithing",
+     "name": "Dwarven Smithing",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "smithing.steel-smithing"
+     ],
+     "effect": "Forge Dwarven gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.elven-smithing",
+     "name": "Elven Smithing",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "smithing.steel-smithing"
+     ],
+     "effect": "Forge Elven gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.orcish-smithing",
+     "name": "Orcish Smithing",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "smithing.dwarven-smithing"
+     ],
+     "effect": "Forge Orcish gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.advanced-armors",
+     "name": "Advanced Armors",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "smithing.elven-smithing"
+     ],
+     "effect": "Forge scaled and plate armor and improve it twice as much."
+    },
+    {
+     "id": "smithing.glass-smithing",
+     "name": "Glass Smithing",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "smithing.advanced-armors"
+     ],
+     "effect": "Forge Glass gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.ebony-smithing",
+     "name": "Ebony Smithing",
+     "ranks": [
+      80
+     ],
+     "prereq": [
+      "smithing.orcish-smithing"
+     ],
+     "effect": "Forge Ebony gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.daedric-smithing",
+     "name": "Daedric Smithing",
+     "ranks": [
+      90
+     ],
+     "prereq": [
+      "smithing.ebony-smithing"
+     ],
+     "effect": "Forge Daedric gear and improve it twice as much."
+    },
+    {
+     "id": "smithing.dragon-armor",
+     "name": "Dragon Armor",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "smithing.daedric-smithing",
+      "smithing.glass-smithing"
+     ],
+     "effect": "Forge Dragon armor and improve it twice as much."
+    }
+   ]
+  },
+  "alteration": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Alteration",
+   "perks": [
+    {
+     "id": "alteration.novice-alteration",
+     "name": "Novice Alteration",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice Alteration spells cost half as much Magicka."
+    },
+    {
+     "id": "alteration.alteration-dual-casting",
+     "name": "Alteration Dual Casting",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "alteration.novice-alteration"
+     ],
+     "effect": "Dual-cast Alteration spells for a stronger effect."
+    },
+    {
+     "id": "alteration.apprentice-alteration",
+     "name": "Apprentice Alteration",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "alteration.novice-alteration"
+     ],
+     "effect": "Apprentice Alteration spells cost half as much Magicka."
+    },
+    {
+     "id": "alteration.mage-armor",
+     "name": "Mage Armor",
+     "ranks": [
+      30,
+      50,
+      70
+     ],
+     "prereq": [
+      "alteration.novice-alteration"
+     ],
+     "effect": "Armor spells are twice as strong, more with each rank, when not wearing armor."
+    },
+    {
+     "id": "alteration.magic-resistance",
+     "name": "Magic Resistance",
+     "ranks": [
+      30,
+      50,
+      70
+     ],
+     "prereq": [
+      "alteration.novice-alteration"
+     ],
+     "effect": "Block 10% of a spell's effects per rank."
+    },
+    {
+     "id": "alteration.adept-alteration",
+     "name": "Adept Alteration",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "alteration.apprentice-alteration"
+     ],
+     "effect": "Adept Alteration spells cost half as much Magicka."
+    },
+    {
+     "id": "alteration.stability",
+     "name": "Stability",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "alteration.adept-alteration"
+     ],
+     "effect": "Alteration spells last 50% longer."
+    },
+    {
+     "id": "alteration.expert-alteration",
+     "name": "Expert Alteration",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "alteration.adept-alteration"
+     ],
+     "effect": "Expert Alteration spells cost half as much Magicka."
+    },
+    {
+     "id": "alteration.atronach",
+     "name": "Atronach",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "alteration.expert-alteration"
+     ],
+     "effect": "Absorb 30% of the Magicka from spells that hit you."
+    },
+    {
+     "id": "alteration.master-alteration",
+     "name": "Master Alteration",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "alteration.expert-alteration"
+     ],
+     "effect": "Master Alteration spells cost half as much Magicka."
+    }
+   ]
+  },
+  "conjuration": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Conjuration",
+   "perks": [
+    {
+     "id": "conjuration.novice-conjuration",
+     "name": "Novice Conjuration",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice Conjuration spells cost half as much Magicka."
+    },
+    {
+     "id": "conjuration.conjuration-dual-casting",
+     "name": "Conjuration Dual Casting",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "conjuration.novice-conjuration"
+     ],
+     "effect": "Dual-cast Conjuration spells for longer-lasting summons."
+    },
+    {
+     "id": "conjuration.mystic-binding",
+     "name": "Mystic Binding",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "conjuration.novice-conjuration"
+     ],
+     "effect": "Bound weapons do more damage."
+    },
+    {
+     "id": "conjuration.apprentice-conjuration",
+     "name": "Apprentice Conjuration",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "conjuration.novice-conjuration"
+     ],
+     "effect": "Apprentice Conjuration spells cost half as much Magicka."
+    },
+    {
+     "id": "conjuration.summoner",
+     "name": "Summoner",
+     "ranks": [
+      30,
+      70
+     ],
+     "prereq": [
+      "conjuration.novice-conjuration"
+     ],
+     "effect": "Summon atronachs and raise undead twice as far away, then three times."
+    },
+    {
+     "id": "conjuration.soul-stealer",
+     "name": "Soul Stealer",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "conjuration.mystic-binding"
+     ],
+     "effect": "Bound weapons cast Soul Trap on targets."
+    },
+    {
+     "id": "conjuration.atromancy",
+     "name": "Atromancy",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "conjuration.summoner"
+     ],
+     "effect": "Summoned atronachs last twice as long."
+    },
+    {
+     "id": "conjuration.necromancy",
+     "name": "Necromancy",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "conjuration.novice-conjuration"
+     ],
+     "effect": "Raised undead last longer."
+    },
+    {
+     "id": "conjuration.adept-conjuration",
+     "name": "Adept Conjuration",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "conjuration.apprentice-conjuration"
+     ],
+     "effect": "Adept Conjuration spells cost half as much Magicka."
+    },
+    {
+     "id": "conjuration.oblivion-binding",
+     "name": "Oblivion Binding",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "conjuration.soul-stealer"
+     ],
+     "effect": "Bound weapons banish summoned creatures and turn raised ones."
+    },
+    {
+     "id": "conjuration.dark-souls",
+     "name": "Dark Souls",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "conjuration.necromancy"
+     ],
+     "effect": "Raised undead have 100 more Health."
+    },
+    {
+     "id": "conjuration.expert-conjuration",
+     "name": "Expert Conjuration",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "conjuration.adept-conjuration"
+     ],
+     "effect": "Expert Conjuration spells cost half as much Magicka."
+    },
+    {
+     "id": "conjuration.elemental-potency",
+     "name": "Elemental Potency",
+     "ranks": [
+      80
+     ],
+     "prereq": [
+      "conjuration.atromancy"
+     ],
+     "effect": "Conjured atronachs are 50% more powerful."
+    },
+    {
+     "id": "conjuration.master-conjuration",
+     "name": "Master Conjuration",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "conjuration.expert-conjuration"
+     ],
+     "effect": "Master Conjuration spells cost half as much Magicka."
+    },
+    {
+     "id": "conjuration.twin-souls",
+     "name": "Twin Souls",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "conjuration.dark-souls",
+      "conjuration.elemental-potency"
+     ],
+     "effect": "Have two summons or raised undead at once."
+    }
+   ]
+  },
+  "destruction": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Destruction",
+   "perks": [
+    {
+     "id": "destruction.novice-destruction",
+     "name": "Novice Destruction",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice Destruction spells cost half as much Magicka."
+    },
+    {
+     "id": "destruction.destruction-dual-casting",
+     "name": "Destruction Dual Casting",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "destruction.novice-destruction"
+     ],
+     "effect": "Dual-cast Destruction spells for a stronger effect."
+    },
+    {
+     "id": "destruction.apprentice-destruction",
+     "name": "Apprentice Destruction",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "destruction.novice-destruction"
+     ],
+     "effect": "Apprentice Destruction spells cost half as much Magicka."
+    },
+    {
+     "id": "destruction.augmented-flames",
+     "name": "Augmented Flames",
+     "ranks": [
+      30,
+      60
+     ],
+     "prereq": [
+      "destruction.novice-destruction"
+     ],
+     "effect": "Fire spells do 25% more damage, then 50%."
+    },
+    {
+     "id": "destruction.augmented-frost",
+     "name": "Augmented Frost",
+     "ranks": [
+      30,
+      60
+     ],
+     "prereq": [
+      "destruction.novice-destruction"
+     ],
+     "effect": "Frost spells do 25% more damage, then 50%."
+    },
+    {
+     "id": "destruction.augmented-shock",
+     "name": "Augmented Shock",
+     "ranks": [
+      30,
+      60
+     ],
+     "prereq": [
+      "destruction.novice-destruction"
+     ],
+     "effect": "Shock spells do 25% more damage, then 50%."
+    },
+    {
+     "id": "destruction.impact",
+     "name": "Impact",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "destruction.destruction-dual-casting"
+     ],
+     "effect": "Most dual-cast Destruction spells stagger the target."
+    },
+    {
+     "id": "destruction.rune-master",
+     "name": "Rune Master",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "destruction.apprentice-destruction"
+     ],
+     "effect": "Runes can be placed five times farther away."
+    },
+    {
+     "id": "destruction.adept-destruction",
+     "name": "Adept Destruction",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "destruction.apprentice-destruction"
+     ],
+     "effect": "Adept Destruction spells cost half as much Magicka."
+    },
+    {
+     "id": "destruction.intense-flames",
+     "name": "Intense Flames",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "destruction.augmented-flames"
+     ],
+     "effect": "Fire damage makes low-Health targets flee."
+    },
+    {
+     "id": "destruction.deep-freeze",
+     "name": "Deep Freeze",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "destruction.augmented-frost"
+     ],
+     "effect": "Frost damage paralyzes low-Health targets."
+    },
+    {
+     "id": "destruction.disintegrate",
+     "name": "Disintegrate",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "destruction.augmented-shock"
+     ],
+     "effect": "Shock damage disintegrates low-Health targets."
+    },
+    {
+     "id": "destruction.expert-destruction",
+     "name": "Expert Destruction",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "destruction.adept-destruction"
+     ],
+     "effect": "Expert Destruction spells cost half as much Magicka."
+    },
+    {
+     "id": "destruction.master-destruction",
+     "name": "Master Destruction",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "destruction.expert-destruction"
+     ],
+     "effect": "Master Destruction spells cost half as much Magicka."
+    }
+   ]
+  },
+  "illusion": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Illusion",
+   "perks": [
+    {
+     "id": "illusion.novice-illusion",
+     "name": "Novice Illusion",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice Illusion spells cost half as much Magicka."
+    },
+    {
+     "id": "illusion.animage",
+     "name": "Animage",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "illusion.novice-illusion"
+     ],
+     "effect": "Illusion spells work on higher-level animals."
+    },
+    {
+     "id": "illusion.illusion-dual-casting",
+     "name": "Illusion Dual Casting",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "illusion.novice-illusion"
+     ],
+     "effect": "Dual-cast Illusion spells for a stronger effect."
+    },
+    {
+     "id": "illusion.apprentice-illusion",
+     "name": "Apprentice Illusion",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "illusion.novice-illusion"
+     ],
+     "effect": "Apprentice Illusion spells cost half as much Magicka."
+    },
+    {
+     "id": "illusion.hypnotic-gaze",
+     "name": "Hypnotic Gaze",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "illusion.novice-illusion"
+     ],
+     "effect": "Calm spells work on higher-level opponents."
+    },
+    {
+     "id": "illusion.kindred-mage",
+     "name": "Kindred Mage",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "illusion.animage"
+     ],
+     "effect": "Illusion spells work on higher-level people."
+    },
+    {
+     "id": "illusion.adept-illusion",
+     "name": "Adept Illusion",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "illusion.apprentice-illusion"
+     ],
+     "effect": "Adept Illusion spells cost half as much Magicka."
+    },
+    {
+     "id": "illusion.aspect-of-terror",
+     "name": "Aspect of Terror",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "illusion.hypnotic-gaze"
+     ],
+     "effect": "Fear spells work on higher-level opponents."
+    },
+    {
+     "id": "illusion.quiet-casting",
+     "name": "Quiet Casting",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "illusion.kindred-mage"
+     ],
+     "effect": "Spells from every school are silent to others."
+    },
+    {
+     "id": "illusion.rage",
+     "name": "Rage",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "illusion.aspect-of-terror"
+     ],
+     "effect": "Frenzy spells work on higher-level opponents."
+    },
+    {
+     "id": "illusion.expert-illusion",
+     "name": "Expert Illusion",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "illusion.adept-illusion"
+     ],
+     "effect": "Expert Illusion spells cost half as much Magicka."
+    },
+    {
+     "id": "illusion.master-of-the-mind",
+     "name": "Master of the Mind",
+     "ranks": [
+      90
+     ],
+     "prereq": [
+      "illusion.quiet-casting",
+      "illusion.rage"
+     ],
+     "effect": "Illusion spells work on undead, daedra and automatons."
+    },
+    {
+     "id": "illusion.master-illusion",
+     "name": "Master Illusion",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "illusion.expert-illusion"
+     ],
+     "effect": "Master Illusion spells cost half as much Magicka."
+    }
+   ]
+  },
+  "restoration": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Restoration",
+   "perks": [
+    {
+     "id": "restoration.novice-restoration",
+     "name": "Novice Restoration",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice Restoration spells cost half as much Magicka."
+    },
+    {
+     "id": "restoration.regeneration",
+     "name": "Regeneration",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Healing spells cure 50% more."
+    },
+    {
+     "id": "restoration.restoration-dual-casting",
+     "name": "Restoration Dual Casting",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Dual-cast Restoration spells for a stronger effect."
+    },
+    {
+     "id": "restoration.apprentice-restoration",
+     "name": "Apprentice Restoration",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Apprentice Restoration spells cost half as much Magicka."
+    },
+    {
+     "id": "restoration.recovery",
+     "name": "Recovery",
+     "ranks": [
+      30,
+      60
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Magicka regenerates 25% faster, then 50%."
+    },
+    {
+     "id": "restoration.respite",
+     "name": "Respite",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Healing spells also restore Stamina."
+    },
+    {
+     "id": "restoration.adept-restoration",
+     "name": "Adept Restoration",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "restoration.apprentice-restoration"
+     ],
+     "effect": "Adept Restoration spells cost half as much Magicka."
+    },
+    {
+     "id": "restoration.ward-absorb",
+     "name": "Ward Absorb",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "restoration.novice-restoration"
+     ],
+     "effect": "Wards recharge your Magicka when hit by spells."
+    },
+    {
+     "id": "restoration.necromage",
+     "name": "Necromage",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "restoration.regeneration"
+     ],
+     "effect": "All spells are more effective against undead."
+    },
+    {
+     "id": "restoration.expert-restoration",
+     "name": "Expert Restoration",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "restoration.adept-restoration"
+     ],
+     "effect": "Expert Restoration spells cost half as much Magicka."
+    },
+    {
+     "id": "restoration.avoid-death",
+     "name": "Avoid Death",
+     "ranks": [
+      90
+     ],
+     "prereq": [
+      "restoration.recovery"
+     ],
+     "effect": "Once a day, heal 250 points automatically when Health falls low."
+    },
+    {
+     "id": "restoration.master-restoration",
+     "name": "Master Restoration",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "restoration.expert-restoration"
+     ],
+     "effect": "Master Restoration spells cost half as much Magicka."
+    }
+   ]
+  },
+  "enchanting": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Enchanting",
+   "perks": [
+    {
+     "id": "enchanting.enchanter",
+     "name": "Enchanter",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "New enchantments are 20% stronger per rank."
+    },
+    {
+     "id": "enchanting.soul-squeezer",
+     "name": "Soul Squeezer",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "enchanting.enchanter"
+     ],
+     "effect": "Soul gems give extra Magicka for recharging."
+    },
+    {
+     "id": "enchanting.fire-enchanter",
+     "name": "Fire Enchanter",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "enchanting.enchanter"
+     ],
+     "effect": "Fire enchantments on weapons and armor are 25% stronger."
+    },
+    {
+     "id": "enchanting.frost-enchanter",
+     "name": "Frost Enchanter",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "enchanting.fire-enchanter"
+     ],
+     "effect": "Frost enchantments on weapons and armor are 25% stronger."
+    },
+    {
+     "id": "enchanting.soul-siphon",
+     "name": "Soul Siphon",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "enchanting.soul-squeezer"
+     ],
+     "effect": "Killing a creature with an enchanted weapon recharges it by 5%."
+    },
+    {
+     "id": "enchanting.insightful-enchanter",
+     "name": "Insightful Enchanter",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "enchanting.enchanter"
+     ],
+     "effect": "Skill enchantments on armor are 25% stronger."
+    },
+    {
+     "id": "enchanting.storm-enchanter",
+     "name": "Storm Enchanter",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "enchanting.frost-enchanter"
+     ],
+     "effect": "Shock enchantments on weapons and armor are 25% stronger."
+    },
+    {
+     "id": "enchanting.corpus-enchanter",
+     "name": "Corpus Enchanter",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "enchanting.insightful-enchanter"
+     ],
+     "effect": "Health, Magicka and Stamina enchantments on armor are 25% stronger."
+    },
+    {
+     "id": "enchanting.extra-effect",
+     "name": "Extra Effect",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "enchanting.storm-enchanter",
+      "enchanting.corpus-enchanter"
+     ],
+     "effect": "Put two enchantments on the same item."
+    }
+   ]
+  },
+  "lightArmor": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Light_Armor",
+   "perks": [
+    {
+     "id": "lightArmor.agile-defender",
+     "name": "Agile Defender",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Light armor rating increases by 20% per rank."
+    },
+    {
+     "id": "lightArmor.custom-fit",
+     "name": "Custom Fit",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "lightArmor.agile-defender"
+     ],
+     "effect": "25% armor bonus when wearing all light armor: head, chest, hands, feet."
+    },
+    {
+     "id": "lightArmor.unhindered",
+     "name": "Unhindered",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "lightArmor.custom-fit"
+     ],
+     "effect": "Light armor weighs nothing and doesn't slow you down."
+    },
+    {
+     "id": "lightArmor.wind-walker",
+     "name": "Wind Walker",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "lightArmor.unhindered"
+     ],
+     "effect": "Stamina regenerates 50% faster in all light armor."
+    },
+    {
+     "id": "lightArmor.matching-set",
+     "name": "Matching Set",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "lightArmor.custom-fit"
+     ],
+     "effect": "Extra 25% armor bonus when wearing a matched set of light armor."
+    },
+    {
+     "id": "lightArmor.deft-movement",
+     "name": "Deft Movement",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "lightArmor.wind-walker",
+      "lightArmor.matching-set"
+     ],
+     "effect": "10% chance to avoid all melee damage in all light armor."
+    }
+   ]
+  },
+  "sneak": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Sneak",
+   "perks": [
+    {
+     "id": "sneak.stealth",
+     "name": "Stealth",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "You are 20% harder to detect while sneaking, more with each rank."
+    },
+    {
+     "id": "sneak.backstab",
+     "name": "Backstab",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "sneak.stealth"
+     ],
+     "effect": "Sneak attacks with one-handed weapons do six times damage."
+    },
+    {
+     "id": "sneak.muffled-movement",
+     "name": "Muffled Movement",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "sneak.stealth"
+     ],
+     "effect": "Noise from armor is reduced 50%."
+    },
+    {
+     "id": "sneak.deadly-aim",
+     "name": "Deadly Aim",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "sneak.backstab"
+     ],
+     "effect": "Sneak attacks with bows do three times damage."
+    },
+    {
+     "id": "sneak.light-foot",
+     "name": "Light Foot",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "sneak.muffled-movement"
+     ],
+     "effect": "You won't trigger pressure plates."
+    },
+    {
+     "id": "sneak.assassin-s-blade",
+     "name": "Assassin's Blade",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "sneak.deadly-aim"
+     ],
+     "effect": "Sneak attacks with daggers do 15 times damage."
+    },
+    {
+     "id": "sneak.silent-roll",
+     "name": "Silent Roll",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "sneak.light-foot"
+     ],
+     "effect": "Sprinting while sneaking does a silent forward roll."
+    },
+    {
+     "id": "sneak.silence",
+     "name": "Silence",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "sneak.silent-roll"
+     ],
+     "effect": "Walking and running don't affect detection."
+    },
+    {
+     "id": "sneak.shadow-warrior",
+     "name": "Shadow Warrior",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "sneak.silence"
+     ],
+     "effect": "Crouching stops combat for a moment and forces distant enemies to search."
+    }
+   ]
+  },
+  "lockpicking": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Lockpicking",
+   "perks": [
+    {
+     "id": "lockpicking.novice-locks",
+     "name": "Novice Locks",
+     "ranks": [
+      0
+     ],
+     "prereq": [],
+     "effect": "Novice locks are much easier to pick."
+    },
+    {
+     "id": "lockpicking.apprentice-locks",
+     "name": "Apprentice Locks",
+     "ranks": [
+      25
+     ],
+     "prereq": [
+      "lockpicking.novice-locks"
+     ],
+     "effect": "Apprentice locks are much easier to pick."
+    },
+    {
+     "id": "lockpicking.quick-hands",
+     "name": "Quick Hands",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "lockpicking.apprentice-locks"
+     ],
+     "effect": "Pick locks without being noticed."
+    },
+    {
+     "id": "lockpicking.adept-locks",
+     "name": "Adept Locks",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "lockpicking.apprentice-locks"
+     ],
+     "effect": "Adept locks are much easier to pick."
+    },
+    {
+     "id": "lockpicking.wax-key",
+     "name": "Wax Key",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "lockpicking.quick-hands"
+     ],
+     "effect": "Automatically get a copy of a lock's key after picking it."
+    },
+    {
+     "id": "lockpicking.golden-touch",
+     "name": "Golden Touch",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "lockpicking.adept-locks"
+     ],
+     "effect": "Find more gold in chests."
+    },
+    {
+     "id": "lockpicking.treasure-hunter",
+     "name": "Treasure Hunter",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "lockpicking.golden-touch"
+     ],
+     "effect": "50% greater chance of special treasure in chests."
+    },
+    {
+     "id": "lockpicking.expert-locks",
+     "name": "Expert Locks",
+     "ranks": [
+      75
+     ],
+     "prereq": [
+      "lockpicking.adept-locks"
+     ],
+     "effect": "Expert locks are much easier to pick."
+    },
+    {
+     "id": "lockpicking.locksmith",
+     "name": "Locksmith",
+     "ranks": [
+      80
+     ],
+     "prereq": [
+      "lockpicking.expert-locks"
+     ],
+     "effect": "Picking starts close to the lock's sweet spot."
+    },
+    {
+     "id": "lockpicking.master-locks",
+     "name": "Master Locks",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "lockpicking.expert-locks"
+     ],
+     "effect": "Master locks are much easier to pick."
+    },
+    {
+     "id": "lockpicking.unbreakable",
+     "name": "Unbreakable",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "lockpicking.locksmith"
+     ],
+     "effect": "Lockpicks never break."
+    }
+   ]
+  },
+  "pickpocket": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Pickpocket",
+   "perks": [
+    {
+     "id": "pickpocket.light-fingers",
+     "name": "Light Fingers",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Pickpocketing bonus of 20% per rank; heavier items are harder to steal."
+    },
+    {
+     "id": "pickpocket.night-thief",
+     "name": "Night Thief",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "pickpocket.light-fingers"
+     ],
+     "effect": "+25% chance to pickpocket a sleeping target."
+    },
+    {
+     "id": "pickpocket.cutpurse",
+     "name": "Cutpurse",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "pickpocket.night-thief"
+     ],
+     "effect": "Pickpocketing gold is 50% easier."
+    },
+    {
+     "id": "pickpocket.poisoned",
+     "name": "Poisoned",
+     "ranks": [
+      40
+     ],
+     "prereq": [
+      "pickpocket.night-thief"
+     ],
+     "effect": "Silently harm enemies by placing poisons in their pockets."
+    },
+    {
+     "id": "pickpocket.extra-pockets",
+     "name": "Extra Pockets",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "pickpocket.night-thief"
+     ],
+     "effect": "Carrying capacity increases by 100."
+    },
+    {
+     "id": "pickpocket.keymaster",
+     "name": "Keymaster",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "pickpocket.cutpurse"
+     ],
+     "effect": "Pickpocketing keys almost always works."
+    },
+    {
+     "id": "pickpocket.misdirection",
+     "name": "Misdirection",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "pickpocket.keymaster"
+     ],
+     "effect": "Pickpocket equipped weapons."
+    },
+    {
+     "id": "pickpocket.perfect-touch",
+     "name": "Perfect Touch",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "pickpocket.misdirection"
+     ],
+     "effect": "Pickpocket equipped items."
+    }
+   ]
+  },
+  "speech": {
+   "verified": false,
+   "source": "https://en.uesp.net/wiki/Skyrim:Speech",
+   "perks": [
+    {
+     "id": "speech.haggling",
+     "name": "Haggling",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Buying and selling prices are 10% better per rank."
+    },
+    {
+     "id": "speech.allure",
+     "name": "Allure",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "speech.haggling"
+     ],
+     "effect": "10% better prices with the opposite sex."
+    },
+    {
+     "id": "speech.bribery",
+     "name": "Bribery",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "speech.haggling"
+     ],
+     "effect": "Bribe guards to ignore crimes."
+    },
+    {
+     "id": "speech.merchant",
+     "name": "Merchant",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "speech.allure"
+     ],
+     "effect": "Sell any type of item to any kind of merchant."
+    },
+    {
+     "id": "speech.persuasion",
+     "name": "Persuasion",
+     "ranks": [
+      50
+     ],
+     "prereq": [
+      "speech.bribery"
+     ],
+     "effect": "Persuasion attempts are 30% easier."
+    },
+    {
+     "id": "speech.investor",
+     "name": "Investor",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "speech.merchant"
+     ],
+     "effect": "Invest 500 gold with a shopkeeper to raise their gold permanently."
+    },
+    {
+     "id": "speech.intimidation",
+     "name": "Intimidation",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "speech.persuasion"
+     ],
+     "effect": "Intimidation is twice as successful."
+    },
+    {
+     "id": "speech.fence",
+     "name": "Fence",
+     "ranks": [
+      90
+     ],
+     "prereq": [
+      "speech.investor"
+     ],
+     "effect": "Barter stolen goods with any merchant you've invested in."
+    },
+    {
+     "id": "speech.master-trader",
+     "name": "Master Trader",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "speech.fence"
+     ],
+     "effect": "Every merchant in the world gains 1,000 gold for bartering."
+    }
+   ]
+  },
+  "alchemy": {
+   "verified": true,
+   "source": "https://en.uesp.net/wiki/Skyrim:Alchemy",
+   "perks": [
+    {
+     "id": "alchemy.alchemist",
+     "name": "Alchemist",
+     "ranks": [
+      0,
+      20,
+      40,
+      60,
+      80
+     ],
+     "prereq": [],
+     "effect": "Potions and poisons are 20% stronger per rank, up to double at rank 5."
+    },
+    {
+     "id": "alchemy.physician",
+     "name": "Physician",
+     "ranks": [
+      20
+     ],
+     "prereq": [
+      "alchemy.alchemist"
+     ],
+     "effect": "Restore Health, Magicka and Stamina potions are 25% stronger."
+    },
+    {
+     "id": "alchemy.benefactor",
+     "name": "Benefactor",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "alchemy.physician"
+     ],
+     "effect": "Beneficial potions are 25% stronger."
+    },
+    {
+     "id": "alchemy.poisoner",
+     "name": "Poisoner",
+     "ranks": [
+      30
+     ],
+     "prereq": [
+      "alchemy.physician"
+     ],
+     "effect": "Poisons are 25% more effective."
+    },
+    {
+     "id": "alchemy.experimenter",
+     "name": "Experimenter",
+     "ranks": [
+      50,
+      70,
+      90
+     ],
+     "prereq": [
+      "alchemy.benefactor"
+     ],
+     "effect": "Eating an ingredient reveals more of its effects with each rank."
+    },
+    {
+     "id": "alchemy.concentrated-poison",
+     "name": "Concentrated Poison",
+     "ranks": [
+      60
+     ],
+     "prereq": [
+      "alchemy.poisoner"
+     ],
+     "effect": "Poisons on weapons last for twice as many hits."
+    },
+    {
+     "id": "alchemy.green-thumb",
+     "name": "Green Thumb",
+     "ranks": [
+      70
+     ],
+     "prereq": [
+      "alchemy.concentrated-poison"
+     ],
+     "effect": "Gather two ingredients from plants."
+    },
+    {
+     "id": "alchemy.snakeblood",
+     "name": "Snakeblood",
+     "ranks": [
+      80
+     ],
+     "prereq": [
+      "alchemy.experimenter",
+      "alchemy.concentrated-poison"
+     ],
+     "effect": "50% resistance to all poisons."
+    },
+    {
+     "id": "alchemy.purity",
+     "name": "Purity",
+     "ranks": [
+      100
+     ],
+     "prereq": [
+      "alchemy.snakeblood"
+     ],
+     "effect": "Potions lose their negative effects and poisons lose their positive ones."
+    }
+   ]
+  }
+ }
+}
