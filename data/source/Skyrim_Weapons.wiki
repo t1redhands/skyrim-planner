@@ -1,0 +1,1055 @@
+{{Trail|Items}}[[Category:Skyrim-Weapons]]{{protection|semi}}{{TOCright}}
+'''Weapons''' in Skyrim fall into three classes, organized around the three weapon skills:
+* [[Skyrim:One-handed|One-handed]]: daggers, maces, swords, and war axes
+* [[Skyrim:Two-handed|Two-handed]]: battleaxes, greatswords, and war hammers
+* [[Skyrim:Archery|Archery]]: bows and arrows, crossbows and bolts{{DG}}
+
+==Weapon Categories==
+This page only lists the '''base (unenchanted) weaponry''' available in Skyrim.  Base weapons are considered to be those which appear in standard leveled lists and those which can be made by the player at [[Skyrim:Forge|Forge]]s.  There are several other pages that also provide information on weapons. If the weapon you are looking for is not listed on this page, you may want to check one of these other resources:
+* '''[[Skyrim:Weapons_(All)|Weapons (All)]]''': All weapons on one page for easy comparison.
+* '''[[Skyrim:Generic_Magic_Weapons|Generic Magic Weapons]]''': Magic weapons that are found in random loot.
+* '''[[Skyrim:Leveled_Items|Leveled Items]]''': Magic weapons that vary depending upon your character's level (generally quest rewards).
+* '''[[Skyrim:Artifacts|Artifacts]]''': Weapons with one-of-a-kind enchantments and unique appearances.
+* '''[[Skyrim:Ammunition|Ammunition]]''': Arrows and bolts{{DG|alt}}, both normal and enchanted.
+* '''[[Skyrim:Staves|Staves]]''': Staves are used for casting magical spells instead of physical attacks.
+* '''[[Skyrim:Specialty Gear|Specialty Gear]]''': Weapons and armor only obtainable from specific factions.
+* '''[[:Category:Skyrim-Weapons|Skyrim-Weapons]]''': Category listing of all the weapons available in the game.
+* '''Search''': Type the name of the weapon into the search box on the left and click the magnifying glass icon to find the weapon.
+
+==Overview==
+For all of the weapons listed on this site, the provided damage values are the weapons' '''base damage'''.  The actual damage your character will do with a weapon is derived from the base damage according to your character's weapon skill and any relevant skill perks.  The damage can also be increased by using [[Skyrim:smithing|smithing]] to sharpen a weapon.
+
+Weapon damage formula:
+{{Pre|1=displayed damage {{=}} Round[ (base damage + smithing increase) * (1 + skill/200) * (1 + perk effects) * (1 + item effects) * (1 + potion effect) * (1 + Seeker of Might bonus) ]<br>
+* Smithing Increase should use the unrounded value based on [[Skyrim:Smithing#QualityLevel|this formula]].<br>
+* Perk Effects {{=}} .2 * Barbarian/Armsman/Overdraw rank level<br>
+* Blessing of Auriel is additive with item effects while Blessing of Boethiah is additive with potion effect<br>
+<br>
+Damage {{=}} 
+ ((Right Hand displayed Damage * (1 + Power Attack Bonus) *  (1 + Power Attack Perk) * (1 + Dual Power Attack perk)) * Dual Power Attack Mod) + ((Left Hand displayed Damage * (1 + Power Attack Bonus) *  (1 + Power Attack Perk) * (1 + Dual Power Attack perk)) * Dual Power Attack Mod)<br>
+* Power Attack Bonus {{=}} 1 if power attacking<br>
+* Power Attack Perk {{=}} 0.25 if power attacking and you have Savage Strike or Devastating Blow<br>
+* Dual Power Attack Perk {{=}} 0.5 if power attacking with two weapons and you have Dual Savagery<br>
+* Dual Power Attack Mod is 1.5 for the right (1xattack) and 3 (2xattack) for the left hand if dual power attacking (else 1)
+}}
+
+Note on Dual Savagery, you don't have to be power attacking with both weapons. Single power attacks get this bonus as long as there is a weapon in both hands.
+
+== Weapon Materials ==
+Weapons appear in several different materials and styles, which determine the quality of the weapon.  Higher quality weapons do more damage (but are generally heavier).  Which quality weapons you will find are generally determined based on your character's level.
+
+The following table describes the standard level at which a weapon type begins to show up in randomly generated loot; lower level weapons will also randomly appear. Enchanted versions of weapons will begin to appear one level later; see [[Skyrim:Generic Magic Weapons|Generic Magic Weapons]] for details. See [[Skyrim:Leveled Lists|Leveled Lists]] for details on how these lists are used to determine the probabilities of individual items appearing.  Level of "N/A" means that the item is not available from standard leveled lists. Although daedric weapons can be found in random loot once your level is high enough, the chances of finding daedric weapons is 20 times smaller than other weapon types.
+
+Most weapons from the list below can be created at [[Skyrim:Forge|Forge]]s, by using the [[Skyrim:Smithing|Smithing]] skill.  The ability to make a weapon is not dependent upon your character's level, but is instead dependent upon which Smithing perks you have unlocked.  All standard weapons can also be tempered at [[Skyrim:Grindstone|Grindstone]]s, if you have the necessary item.  Tempering is twice as effective if you have unlocked the perk necessary to forge that item.  Tempering an enchanted version of the weapon (whether custom-[[Skyrim:Enchanting|enchanted]], or [[Skyrim:Generic Magic Weapons|generic]]) is similar to tempering the base version – it requires the same item, and is twice as effective if you have unlocked the forging perk – but also requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk to be unlocked.
+
+{| class=wikitable
+|-
+! Level !! Material !! Perk to [[Skyrim:Forge|Forge]] !! Item for [[Skyrim:Grindstone|Tempering]]
+|-
+| 1 || [[Skyrim:Iron Weapons|Iron]] || No perk needed || [[Skyrim:Iron Ingot|Iron Ingot]]
+|-
+| 2 || [[Skyrim:Steel Weapons|Steel]] || [[Skyrim:Steel Smithing|Steel Smithing]] || [[Skyrim:Steel Ingot|Steel Ingot]]
+|-
+| N/A || [[Skyrim:Specialty Gear#Silver Hand Equipment|Silver]]<sup>†</sup> || N/A || N/A
+|-
+| 6 || [[Skyrim:Orcish Weapons|Orcish]] || [[Skyrim:Orcish Smithing|Orcish Smithing]] || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]]
+|-
+| 12 || [[Skyrim:Dwarven Weapons|Dwarven]] || [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]]
+|-
+| N/A || [[Skyrim:Nord Hero (material)|Nord Hero]] || N/A<sup>††</sup> || [[Skyrim:Steel Ingot|Steel Ingot]]
+|-
+| N/A || Skyforge Steel || N/A<sup>‡‡</sup> || [[Skyrim:Steel Ingot|Steel Ingot]]
+|-
+| 18 || [[Skyrim:Nordic Weapons|Nordic]]{{DB}} || [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]]
+|-
+| 19 || [[Skyrim:Elven Weapons|Elven]] || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Refined Moonstone|Refined Moonstone]]
+|-
+| 27 || [[Skyrim:Glass Weapons|Glass]] || [[Skyrim:Glass Smithing|Glass Smithing]] || [[Skyrim:Refined Malachite|Refined Malachite]]
+|-
+| 35 || [[Skyrim:Stalhrim Weapons|Stalhrim]]{{DB}} || [[Skyrim:Ebony Smithing|Ebony Smithing]]<sup>†††</sup> || [[Skyrim:Stalhrim|Stalhrim]]
+|-
+| 36 || [[Skyrim:Ebony Weapons|Ebony]] || [[Skyrim:Ebony Smithing|Ebony Smithing]] || [[Skyrim:Ebony Ingot|Ebony Ingot]]
+|-
+| 46 || [[Skyrim:Daedric Weapons|Daedric]] || [[Skyrim:Daedric Smithing|Daedric Smithing]]<sup>‡</sup> || [[Skyrim:Ebony Ingot|Ebony Ingot]]
+|-
+| N/A || [[Skyrim:Dragonbone|Dragonbone]]{{DG}} || [[Skyrim:Dragon Armor|Dragon Armor]] || [[Skyrim:Dragon Bone|Dragon Bone]]
+|}
+<sup>†</sup> Silver weapons (regardless of type) gain 20 base damage when used against undead or werewolves. This amount is not improved by your weapon skill, but is increased by relevant enchantments and perks. This effect is not considered an enchantment, so silver weapons can be enchanted like any normal unenchanted weapon, though they will always display the text for this effect and not for any enchantment that you may place on it.
+<br/>
+<sup>‡</sup> All Daedric weapons can also be made at the [[Skyrim:Atronach Forge|Atronach Forge]], in which case the Daedric Smithing perk is not needed, but instead the [[Skyrim:Sigil Stone|Sigil Stone]] must be obtained.  Tempering weapons created at the Atronach Forge is still augmented by the Daedric Smithing perk.<br/>
+<sup>††</sup> Nord Hero weapons can only be created at the [[Skyrim:Skyforge|Skyforge]], and only after the quest [[Skyrim:Glory of the Dead|Glory of the Dead]] has been completed.<br/>
+<sup>‡‡</sup> Although Skyforge Steel weapons cannot be forged, tempering them is still augmented by the Steel Smithing perk.<br/>
+<sup>†††</sup> Forging Stalhrim weapons also requires completion of the quest [[Skyrim:A New Source of Stalhrim|A New Source of Stalhrim]].
+
+==One-handed Weapons==
+{| class="vtop" style="width:100%"
+|width=50%|
+===Swords===
+* '''Reach''': 1
+* '''Speed''': 1
+* '''Stagger''': 0.75
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Sword.png
+ |name=Iron Sword
+ |displayname=[[Skyrim:Iron Sword|Iron Sword]]
+ |id=00012eb7|weight=9|value=25|damage=7}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelSword.png
+ |name=Steel Sword
+ |displayname=[[Skyrim:Steel Sword|Steel Sword]]
+ |id=00013989|weight=10|value=45|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishSword.png
+ |name=Orcish Sword
+ |displayname=[[Skyrim:Orcish Sword|Orcish Sword]]
+ |id=00013991|weight=11|value=75|damage=9}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenSword.png
+ |name=Dwarven Sword
+ |displayname=[[Skyrim:Dwarven Sword|Dwarven Sword]]
+ |id=00013999|weight=12|value=125|damage=10}}
+{{Item Data
+ |icon=SR-icon-weapon-NordHeroSword.png
+ |name=Nord Hero Sword
+ |displayname=[[Skyrim:Nord Hero Sword|Nord Hero Sword]]
+ |id=00068c7b|weight=9|value=135|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelSword.png
+ |name=Skyforge Steel Sword
+ |displayname=[[Skyrim:Skyforge Steel Sword|Skyforge Steel Sword]]
+ |id=0009f25c|weight=10|value=70|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenSword.png
+ |name=Elven Sword
+ |displayname=[[Skyrim:Elven Sword|Elven Sword]]
+ |id=000139a1|weight=13|value=235|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Sword.png
+ |name=Golden Sword
+ |displayname=[[Skyrim:Golden Sword|Golden Sword]]{{CC|Saints & Seducers}}
+ |id=xx000822|weight=11|value=250|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Sword.png
+ |name=Nordic Sword
+ |displayname=[[Skyrim:Nordic Sword|Nordic Sword]]{{DB}}
+ |id=xx01cdb1|weight=12|value=290|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Sword.png
+ |name=Dark Sword
+ |displayname=[[Skyrim:Dark Sword|Dark Sword]]{{CC|Saints & Seducers}}
+ |id=xx000823|weight=11|value=250|damage=12}}
+{{Item Data 
+ |icon=SR-icon-weapon-Remnant Scimitar Fire.png
+ |name=Remnant Scimitar
+ |displayname=[[Skyrim:Remnant Scimitar|Remnant Scimitar]]{{CC|Redguard Elite Armaments}}
+ |id=FExxx805|weight=10.5|value=325|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Sword.png
+ |name=Glass Sword
+ |displayname=[[Skyrim:Glass Sword|Glass Sword]]
+ |id=000139a9|weight=14|value=410|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonySword.png
+ |name=Ebony Sword
+ |displayname=[[Skyrim:Ebony Sword|Ebony Sword]]
+ |id=000139b1|weight=15|value=720|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Sword.png
+ |name=Stalhrim Sword
+ |displayname=[[Skyrim:Stalhrim Sword|Stalhrim Sword]]{{DB}}{{Intnote|StalhrimStagger1|†}}
+ |id=xx01cdb8|weight=14|value=985|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricSword.png
+ |name=Daedric Sword
+ |displayname=[[Skyrim:Daedric Sword|Daedric Sword]]
+ |id=000139b9|weight=16|value=1250|damage=14}}
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Scimitar.png
+ |name=Ebony Scimitar
+ |displayname=[[Skyrim:Ebony Scimitar|Ebony Scimitar]]{{CC|Ghosts of the Tribunal}}
+ |id=xx000E38|weight=14|value=800|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Sword.png
+ |name=Dragonbone Sword
+ |displayname=[[Skyrim:Dragonbone Sword|Dragonbone Sword]]{{DG}}
+ |id=xx014fce|weight=19|value=1500|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Sword.png
+ |name=Amber Sword
+ |displayname=[[Skyrim:Amber Sword|Amber Sword]]{{CC|Saints & Seducers}}
+ |id=xx000BE0|weight=14|value=1600|damage=15}}
+{{Item Data 
+ |icon=SR-icon-weapon-Madness Sword.png
+ |name=Madness Sword
+ |displayname=[[Skyrim:Madness Sword|Madness Sword]]{{CC|Saints & Seducers}}
+ |id=xx000BE9|weight=20|value=250|damage=16}}
+|}
+|width=50%|
+
+===War Axes===
+* '''Reach''': 1
+* '''Speed''': 0.9
+* '''Stagger''': 0.85
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron War Axe.png
+ |name=Iron War Axe
+ |displayname=[[Skyrim:Iron War Axe|Iron War Axe]]
+ |id=00013790|weight=11|value=30|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelWarAxe.png
+ |name=Steel War Axe
+ |displayname=[[Skyrim:Steel War Axe|Steel War Axe]]
+ |id=00013983|weight=12|value=55|damage=9}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishWarAxe.png
+ |name=Orcish War Axe
+ |displayname=[[Skyrim:Orcish War Axe|Orcish War Axe]]
+ |id=0001398b|weight=13|value=90|damage=10}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenWarAxe.png
+ |name=Dwarven War Axe
+ |displayname=[[Skyrim:Dwarven War Axe|Dwarven War Axe]]
+ |id=00013993|weight=14|value=165|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-NordHeroWarAxe.png
+ |name=Nord Hero War Axe
+ |displayname=[[Skyrim:Nord Hero War Axe|Nord Hero War Axe]]
+ |id=00068c63|weight=11|value=165|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelWarAxe.png
+ |name=Skyforge Steel War Axe
+ |displayname=[[Skyrim:Skyforge Steel War Axe|Skyforge Steel War Axe]]
+ |id=0009f260|weight=12|value=80|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenWarAxe.png
+ |name=Elven War Axe
+ |displayname=[[Skyrim:Elven War Axe|Elven War Axe]]
+ |id=0001399b|weight=15|value=280|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden War Axe.png
+ |name=Golden War Axe
+ |displayname=[[Skyrim:Golden War Axe|Golden War Axe]]{{CC|Saints & Seducers}}
+ |id=xx00080A|weight=13|value=320|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic War Axe.png
+ |name=Nordic War Axe
+ |displayname=[[Skyrim:Nordic War Axe|Nordic War Axe]]{{DB}}
+ |id=xx01cdb2|weight=14|value=350|damage=12}}
+{{Item Data 
+ |icon=SR-icon-weapon-Irkngthand War Axe.png
+ |name=Irkngthand War Axe
+ |displayname=[[Skyrim:Irkngthand War Axe|Irkngthand War Axe]]{{CC|Fishing}}
+ |id=xx07aed6|weight=16|value=265|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark War Axe.png
+ |name=Dark War Axe
+ |displayname=[[Skyrim:Dark War Axe|Dark War Axe]]{{CC|Saints & Seducers}}
+ |id=xx000829|weight=13|value=320|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass War Axe.png
+ |name=Glass War Axe
+ |displayname=[[Skyrim:Glass War Axe|Glass War Axe]]
+ |id=000139a3|weight=16|value=490|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyWarAxe.png
+ |name=Ebony War Axe
+ |displayname=[[Skyrim:Ebony War Axe|Ebony War Axe]]{{Intnote|DS2|‡}}
+ |id=000139AB|weight=17|value=865|damage=14}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim War Axe.png
+ |name=Stalhrim War Axe
+ |displayname=[[Skyrim:Stalhrim War Axe|Stalhrim War Axe]]{{DB}}{{Intnote|StalhrimStagger1|†}}
+ |id=xx01cdb9|weight=16|value=1180|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricWarAxe.png
+ |name=Daedric War Axe
+ |displayname=[[Skyrim:Daedric War Axe|Daedric War Axe]]
+ |id=000139b3|weight=18|value=1500|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone War Axe.png
+ |name=Dragonbone War Axe
+ |displayname=[[Skyrim:Dragonbone War Axe|Dragonbone War Axe]]{{DG}}
+ |id=xx014fcf|weight=21|value=1700|damage=16}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber War Axe.png
+ |name=Amber War Axe
+ |displayname=[[Skyrim:Amber War Axe|Amber War Axe]]{{CC|Saints & Seducers}}
+ |id=xx000BE1|weight=16|value=1800|damage=16}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness War Axe.png
+ |name=Madness War Axe
+ |displayname=[[Skyrim:Madness War Axe|Madness War Axe]]{{CC|Saints & Seducers}}
+ |id=xx000BEA|weight=22|value=1900|damage=17}}
+|}
+{{Note|DS2|‡|{{Bug|The Ebony War Axe originally had an incorrect damage value of 15, the same as the Daedric War Axe, rather than 14.|OSSEP|1.6.1130|nobullet=1}}}}
+|-
+|
+
+===Maces===
+* '''Reach''': 1
+* '''Speed''': 0.8
+* '''Stagger''': 1
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Mace.png
+ |name=Iron Mace
+ |displayname=[[Skyrim:Iron Mace|Iron Mace]]
+ |id=00013982|weight=13|value=35|damage=9}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelMace.png
+ |name=Steel Mace
+ |displayname=[[Skyrim:Steel Mace|Steel Mace]]
+ |id=00013988|weight=14|value=65|damage=10}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishMace.png
+ |name=Orcish Mace
+ |displayname=[[Skyrim:Orcish Mace|Orcish Mace]]
+ |id=00013990|weight=15|value=105|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenMace.png
+ |name=Dwarven Mace
+ |displayname=[[Skyrim:Dwarven Mace|Dwarven Mace]]
+ |id=00013998|weight=16|value=190|damage=12}}
+{{Item Data
+ |icon=SR-icon-weapon-Ancient Nord Mace.png
+ |name=Nord Hero Mace
+ |displayname=[[Skyrim:Nord Hero Mace|Nord Hero Mace]]{{CC|Fishing}}
+ |id=xx08A1E5|weight=13|value=195|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenMace.png
+ |name=Elven Mace
+ |displayname=[[Skyrim:Elven Mace|Elven Mace]]
+ |id=000139a0|weight=17|value=330|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Mace.png
+ |name=Golden Mace
+ |displayname=[[Skyrim:Golden Mace|Golden Mace]]{{CC|Saints & Seducers}}
+ |id=xx000827|weight=15|value=370|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Mace.png
+ |name=Nordic Mace
+ |displayname=[[Skyrim:Nordic Mace|Nordic Mace]]{{DB}}
+ |id=xx01cdb0|weight=16|value=410|damage=13}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Mace.png
+ |name=Dark Mace
+ |displayname=[[Skyrim:Dark Mace|Dark Mace]]{{CC|Saints & Seducers}}
+ |id=xx000824|weight=15|value=370|damage=14}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Mace.png
+ |name=Glass Mace
+ |displayname=[[Skyrim:Glass Mace|Glass Mace]]
+ |id=000139a8|weight=18|value=575|damage=14}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyMace.png
+ |name=Ebony Mace
+ |displayname=[[Skyrim:Ebony Mace|Ebony Mace]]{{Intnote|DS3|‡}}
+ |id=000139b0|weight=19|value=1000|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Mace.png
+ |name=Stalhrim Mace
+ |displayname=[[Skyrim:Stalhrim Mace|Stalhrim Mace]]{{DB}}{{Intnote|StalhrimStagger1|†}}
+ |id=xx01cdb7|weight=18|value=1375|damage=16}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricMace.png
+ |name=Daedric Mace
+ |displayname=[[Skyrim:Daedric Mace|Daedric Mace]]
+ |id=000139b8|weight=20|value=1750|damage=16}}
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Mace 02.png
+ |name=Ebony Mace
+ |displayname=[[Skyrim:Ebony Mace|Ebony Mace]]{{CC|Ghosts of the Tribunal}}
+ |id=xx000E37|weight=19|value=1000|damage=17}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Mace.png
+ |name=Dragonbone Mace
+ |displayname=[[Skyrim:Dragonbone Mace|Dragonbone Mace]]{{DG}}
+ |id=xx014fcd|weight=22|value=2000|damage=17}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Mace.png
+ |name=Amber Mace
+ |displayname=[[Skyrim:Amber Mace|Amber Mace]]{{CC|Saints & Seducers}}
+ |id=xx000BDF|weight=18|value=2100|damage=17}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness Mace.png
+ |name=Madness Mace
+ |displayname=[[Skyrim:Madness Mace|Madness Mace]]{{CC|Saints & Seducers}}
+ |id=xx000BE8|weight=23|value=2200|damage=18}}
+|}
+{{Note|DS3|‡|{{Bug|The Ebony Mace originally had an incorrect damage of 16 rather than 15, and a critical damage of 8 rather than 7.|OSSEP|1.6.1130|nobullet=1}}}}
+|
+
+===Daggers===
+* '''Reach''': 0.7
+* '''Speed''': 1.3
+* '''Stagger''': 0
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Dagger.png
+ |name=Iron Dagger
+ |displayname=[[Skyrim:Iron Dagger|Iron Dagger]]
+ |id=0001397e|weight=2|value=10|damage=4}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelDagger.png
+ |name=Steel Dagger
+ |displayname=[[Skyrim:Steel Dagger|Steel Dagger]]
+ |id=00013986|weight=2.5|value=18|damage=5}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishDagger.png
+ |name=Orcish Dagger
+ |displayname=[[Skyrim:Orcish Dagger|Orcish Dagger]]
+ |id=0001398e|weight=3|value=30|damage=6}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenDagger.png
+ |name=Dwarven Dagger
+ |displayname=[[Skyrim:Dwarven Dagger|Dwarven Dagger]]
+ |id=00013996|weight=3.5|value=55|damage=7}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelDagger.png
+ |name=Skyforge Steel Dagger
+ |displayname=[[Skyrim:Skyforge Steel Dagger|Skyforge Steel Dagger]]{{Intnote|SSD|‡}}
+ |id=0009f25d|weight=2.5|value=25|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-Ancient Nord Dagger.png
+ |name=Nord Hero Dagger
+ |displayname=[[Skyrim:Nord Hero Dagger|Nord Hero Dagger]]{{CC|Fishing}}
+ |id=xx08A1E4|weight=2|value=55|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenDagger.png
+ |name=Elven Dagger
+ |displayname=[[Skyrim:Elven Dagger|Elven Dagger]]
+ |id=0001399e|weight=4|value=95|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Dagger.png
+ |name=Golden Dagger
+ |displayname=[[Skyrim:Golden Dagger|Golden Dagger]]{{CC|Saints & Seducers}}
+ |id=xx00080E|weight=3|value=105|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Dagger.png
+ |name=Nordic Dagger
+ |displayname=[[Skyrim:Nordic Dagger|Nordic Dagger]]{{DB}}
+ |id=xx01cdae|weight=3.5|value=115|damage=8}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Dagger.png
+ |name=Dark Dagger
+ |displayname=[[Skyrim:Dark Dagger|Dark Dagger]]{{CC|Saints & Seducers}}
+ |id=xx000821|weight=3|value=105|damage=9}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Dagger.png
+ |name=Glass Dagger
+ |displayname=[[Skyrim:Glass Dagger|Glass Dagger]]
+ |id=000139a6|weight=4.5|value=165|damage=9}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyDagger.png
+ |name=Ebony Dagger
+ |displayname=[[Skyrim:Ebony Dagger|Ebony Dagger]]
+ |id=000139ae|weight=5|value=290|damage=10}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Dagger.png
+ |name=Stalhrim Dagger
+ |displayname=[[Skyrim:Stalhrim Dagger|Stalhrim Dagger]]{{DB}}
+ |id=xx01cdb5|weight=4.5|value=395|damage=10}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricDagger.png
+ |name=Daedric Dagger
+ |displayname=[[Skyrim:Daedric Dagger|Daedric Dagger]]
+ |id=000139b6|weight=6|value=500|damage=11}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Dagger.png
+ |name=Dragonbone Dagger
+ |displayname=[[Skyrim:Dragonbone Dagger|Dragonbone Dagger]]{{DG}}
+ |id=xx014fcb|weight=6.5|value=600|damage=12}}
+{{Item Data
+|icon=SR-icon-weapon-Amber Dagger.png
+|name=Amber Dagger 
+|displayname=[[Skyrim:Amber Dagger|Amber Dagger]]{{CC|Saints & Seducers}}
+|id=xx000BDD|weight=4.5|value=700|damage=12}}
+{{Item Data 
+|icon=SR-icon-weapon-Madness Dagger.png
+|name=Madness Dagger
+|displayname=[[Skyrim:Madness Dagger|Madness Dagger]]{{CC|Saints & Seducers}}
+|id=xx000BE6|weight=7|value=800|damage=13}}
+|}
+{{Note|SSD|‡|{{Bug|The Skyforge Steel Dagger cannot be tempered, because it was completely left out of the appropriate list.|USKP|1.0|nobullet=1}}}}
+|}
+{{Note|StalhrimStagger1|†|Stalhrim melee weapons that are not daggers have +0.1 stagger.}}
+
+==Two-handed Weapons==
+{| class="vtop"
+|-
+|width=33%|
+===Greatswords===
+* '''Reach''': 1.3
+* '''Speed''': 0.7 (0.75 with [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]], see [[Skyrim:Two-handed#Bugs|Two-handed Bugs]])
+* '''Stagger''': 1.1
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Greatsword.png
+ |name=Iron Greatsword
+ |displayname=[[Skyrim:Iron Greatsword|Iron Greatsword]]
+ |id=0001359d|weight=16|value=50|damage=15}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelGreatsword.png
+ |name=Steel Greatsword
+ |displayname=[[Skyrim:Steel Greatsword|Steel Greatsword]]
+ |id=00013987|weight=17|value=90|damage=17}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishGreatsword.png
+ |name=Orcish Greatsword
+ |displayname=[[Skyrim:Orcish Greatsword|Orcish Greatsword]]
+ |id=0001398f|weight=18|value=75|damage=18}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenGreatsword.png
+ |name=Dwarven Greatsword
+ |displayname=[[Skyrim:Dwarven Greatsword|Dwarven Greatsword]]
+ |id=00013997|weight=19|value=270|damage=19}}
+{{Item Data
+ |icon=SR-icon-weapon-NordHeroGreatsword.png
+ |name=Nord Hero Greatsword
+ |displayname=[[Skyrim:Nord Hero Greatsword|Nord Hero Greatsword]]
+ |id=000a3115|weight=16|value=250|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelGreatsword.png
+ |name=Skyforge Steel Greatsword
+ |displayname=[[Skyrim:Skyforge Steel Greatsword|Skyforge Steel Greatsword]]
+ |id=0009f25e|weight=17|value=140|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenGreatsword.png
+ |name=Elven Greatsword
+ |displayname=[[Skyrim:Elven Greatsword|Elven Greatsword]]
+ |id=0001399f|weight=20|value=470|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Greatsword.png
+ |name=Nordic Greatsword
+ |displayname=[[Skyrim:Nordic Greatsword|Nordic Greatsword]]{{DB}}
+ |id=xx01cdaf|weight=19|value=585|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Greatsword.png
+ |name=Dark Greatsword
+ |displayname=[[Skyrim:Dark Greatsword|Dark Greatsword]]{{CC|Saints & Seducers}}
+ |id=xx000825|weight=18|value=510|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Greatsword.png
+ |name=Golden Greatsword
+ |displayname=[[Skyrim:Golden Greatsword|Golden Greatsword]]{{CC|Saints & Seducers}}
+ |id=xx000826|weight=18|value=510|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Greatsword.png
+ |name=Glass Greatsword
+ |displayname=[[Skyrim:Glass Greatsword|Glass Greatsword]]
+ |id=000139a7|weight=22|value=820|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyGreatsword.png
+ |name=Ebony Greatsword
+ |displayname=[[Skyrim:Ebony Greatsword|Ebony Greatsword]]
+ |id=000139af|weight=22|value=1440|damage=22}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Greatsword.png
+ |name=Stalhrim Greatsword
+ |displayname=[[Skyrim:Stalhrim Greatsword|Stalhrim Greatsword]]{{DB}}{{intnote|StalhrimStagger2|†}}
+ |id=xx01cdb6|weight=21|value=1970|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricGreatsword.png
+ |name=Daedric Greatsword
+ |displayname=[[Skyrim:Daedric Greatsword|Daedric Greatsword]]
+ |id=000139b7|weight=23|value=2500|damage=24}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Greatsword.png
+ |name=Dragonbone Greatsword
+ |displayname=[[Skyrim:Dragonbone Greatsword|Dragonbone Greatsword]]{{DG}}
+ |id=xx014fcc|weight=27|value=2725|damage=25}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Greatsword.png
+ |name=Amber Greatsword
+ |displayname=[[Skyrim:Amber Greatsword|Amber Greatsword]]{{CC|Saints & Seducers}}
+ |id=xx000BDE|weight=22|value=2925|damage=25}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness Greatsword.png
+ |name=Madness Greatsword
+ |displayname=[[Skyrim:Madness Greatsword|Madness Greatsword]]{{CC|Saints & Seducers}}
+ |id=xx000BE7|weight=28|value=3100|damage=26}}
+|}
+|width=33%|
+
+===Battleaxes===
+* '''Reach''': 1.3
+* '''Speed''': 0.7
+* '''Stagger''': 1.15
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Battleaxe.png
+ |name=Iron Battleaxe
+ |displayname=[[Skyrim:Iron Battleaxe|Iron Battleaxe]]
+ |id=00013980|weight=20|value=55|damage=16}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelBattleaxe.png
+ |name=Steel Battleaxe
+ |displayname=[[Skyrim:Steel Battleaxe|Steel Battleaxe]]
+ |id=00013984|weight=21|value=100|damage=18}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishBattleaxe.png
+ |name=Orcish Battleaxe
+ |displayname=[[Skyrim:Orcish Battleaxe|Orcish Battleaxe]]{{intnote|obl|‡}}
+ |id=0001398c|weight=25|value=165|damage=19}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenBattleaxe.png
+ |name=Dwarven Battleaxe
+ |displayname=[[Skyrim:Dwarven Battleaxe|Dwarven Battleaxe]]
+ |id=00013994|weight=23|value=300|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-NordHeroBattleAxe.png
+ |name=Nord Hero Battle Axe
+ |displayname=[[Skyrim:Nord Hero Battle Axe|Nord Hero Battle Axe]]
+ |id=00068c79|weight=20|value=300|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelBattleaxe.png
+ |name=Skyforge Steel Battleaxe
+ |displayname=[[Skyrim:Skyforge Steel Battleaxe|Skyforge Steel Battleaxe]]
+ |id=0009f25f|weight=21|value=150|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenBattleaxe.png
+ |name=Elven Battleaxe
+ |displayname=[[Skyrim:Elven Battleaxe|Elven Battleaxe]]
+ |id=0001399c|weight=24|value=520|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Battleaxe.png
+ |name=Nordic Battleaxe
+ |displayname=[[Skyrim:Nordic Battleaxe|Nordic Battleaxe]]{{DB}}
+ |id=xx01cdad|weight=23|value=650|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Battleaxe.png
+ |name=Dark Battleaxe
+ |displayname=[[Skyrim:Dark Battleaxe|Dark Battleaxe]]{{CC|Saints & Seducers}}
+ |id=xx000839|weight=22|value=575|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Battleaxe.png
+ |name=Golden Battleaxe
+ |displayname=[[Skyrim:Golden Battleaxe|Golden Battleaxe]]{{CC|Saints & Seducers}}
+ |id=xx000810|weight=22|value=575|damage=22}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Battleaxe.png
+ |name=Glass Battleaxe
+ |displayname=[[Skyrim:Glass Battleaxe|Glass Battleaxe]]
+ |id=000139a4|weight=25|value=900|damage=22}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyBattleaxe.png
+ |name=Ebony Battleaxe
+ |displayname=[[Skyrim:Ebony Battleaxe|Ebony Battleaxe]]
+ |id=000139ac|weight=26|value=1585|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Battleaxe.png
+ |name=Stalhrim Battleaxe
+ |displayname=[[Skyrim:Stalhrim Battleaxe|Stalhrim Battleaxe]]{{DB}}{{intnote|StalhrimStagger2|†}}
+ |id=xx01cdb4|weight=25|value=2150|damage=24}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricBattleaxe.png
+ |name=Daedric Battleaxe
+ |displayname=[[Skyrim:Daedric Battleaxe|Daedric Battleaxe]]
+ |id=000139b4|weight=27|value=2750|damage=25}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Battleaxe.png
+ |name=Amber Battleaxe
+ |displayname=[[Skyrim:Amber Battleaxe|Amber Battleaxe]]{{CC|Saints & Seducers}}
+ |id=xx000810|weight=24|value=1600|damage=26}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Battleaxe.png
+ |name=Dragonbone Battleaxe
+ |displayname=[[Skyrim:Dragonbone Battleaxe|Dragonbone Battleaxe]]{{DG}}
+ |id=xx014fc3|weight=30|value=3000|damage=26}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness Battleaxe.png
+ |name=Madness Battleaxe
+ |displayname=[[Skyrim:Madness Battleaxe|Madness Battleaxe]]{{CC|Saints & Seducers}}
+ |id=xx000BE4|weight=31|value=3300|damage=27}}
+|}
+{{note|obl|‡|{{Bug|The Orcish Battleaxe has been left out of the standard <code>LItemWeaponBattleAxe</code> [[Skyrim:Leveled Lists|leveled list]], although it is included in several less common battleaxe leveled lists.  As a result, this axe is less likely to be found in random loot than other base weapons.|USKP|1.3.2|nobullet=1}}}}
+|}
+
+===Warhammers===
+* '''Reach''': 1.3
+* '''Speed''': 0.6
+* '''Stagger''': 1.25
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+{{Item Data
+ |icon=SR-icon-weapon-Iron Warhammer.png
+ |name=Iron Warhammer
+ |displayname=[[Skyrim:Iron Warhammer|Iron Warhammer]]
+ |id=00013981|weight=24|value=60|damage=18}}
+{{Item Data
+ |icon=SR-icon-weapon-Ancient Nord Warhammer.png
+ |name=Ancient Nord Warhammer
+ |displayname=[[Skyrim:Ancient Nord Warhammer|Ancient Nord Warhammer]]{{CC|Fishing}}
+ |id=0001398A|weight=26|value=42|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-SteelWarhammer.png
+ |name=Steel Warhammer
+ |displayname=[[Skyrim:Steel Warhammer|Steel Warhammer]]
+ |id=0001398A|weight=25|value=110|damage=20}}
+{{Item Data
+ |icon=SR-icon-weapon-OrcishWarhammer.png
+ |name=Orcish Warhammer
+ |displayname=[[Skyrim:Orcish Warhammer|Orcish Warhammer]]
+ |id=00013992|weight=26|value=180|damage=21}}
+{{Item Data
+ |icon=SR-icon-weapon-Dawnguard Warhammer.png
+ |name=Dawnguard Warhammer
+ |displayname=[[Skyrim:Dawnguard Warhammer|Dawnguard Warhammer]]{{DG}}
+ |id=xx00DD55|weight=26|value=110|damage=22}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenWarhammer.png
+ |name=Dwarven Warhammer
+ |displayname=[[Skyrim:Dwarven Warhammer|Dwarven Warhammer]]
+ |id=0001399A|weight=27|value=325|damage=22}}
+{{Item Data
+ |icon=SR-icon-weapon-Ancient Nord Warhammer.png
+ |name=Nord Hero Warhammer
+ |displayname=[[Skyrim:Nord Hero Warhammer|Nord Hero Warhammer]]{{CC|Fishing}}
+ |id=xx08A1E6|weight=24|value=350|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-Ancient_Nord_Warhammer.png
+ |name=Honed Ancient Nord Warhammer
+ |displayname=[[Skyrim:Honed Ancient Nord Warhammer|Honed Ancient Nord Warhammer]]{{CC|Fishing}}
+ |id=xx08A1EF|weight=29|value=76|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenWarhammer.png
+ |name=Elven Warhammer
+ |displayname=[[Skyrim:Elven Warhammer|Elven Warhammer]]
+ |id=000139A2|weight=28|value=565|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-Dark Warhammer.png
+ |name=Dark Warhammer
+ |displayname=[[Skyrim:Dark Warhammer|Dark Warhammer]]{{CC|Saints & Seducers}}
+ |id=xx000828|weight=26|value=620|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Warhammer.png
+ |name=Nordic Warhammer
+ |displayname=[[Skyrim:Nordic Warhammer|Nordic Warhammer]]{{DB}}
+ |id=xx01CDB3|weight=27|value=700|damage=23}}
+{{Item Data
+ |icon=SR-icon-weapon-Golden Warhammer.png
+ |name=Golden Warhammer
+ |displayname=[[Skyrim:Golden Warhammer|Golden Warhammer]]{{CC|Saints & Seducers}}
+ |id=xx000809|weight=26|value=620|damage=24}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Warhammer.png
+ |name=Glass Warhammer
+ |displayname=[[Skyrim:Glass Warhammer|Glass Warhammer]]
+ |id=000139AA|weight=29|value=985|damage=24}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyWarhammer.png
+ |name=Ebony Warhammer
+ |displayname=[[Skyrim:Ebony Warhammer|Ebony Warhammer]]
+ |id=000139B2|weight=30|value=1725|damage=25}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Warhammer.png
+ |name=Stalhrim Warhammer
+ |displayname=[[Skyrim:Stalhrim Warhammer|Stalhrim Warhammer]]{{DB}}{{intnote|StalhrimStagger2|†}}
+ |id=xx01CDBA|weight=29|value=2850|damage=26}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricWarhammer.png
+ |name=Daedric Warhammer
+ |displayname=[[Skyrim:Daedric Warhammer|Daedric Warhammer]]
+ |id=000139BA|weight=31|value=4000|damage=27}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Warhammer.png
+ |name=Dragonbone Warhammer
+ |displayname=[[Skyrim:Dragonbone Warhammer|Dragonbone Warhammer]]{{DG}}
+ |id=xx014FD0|weight=33|value=4275|damage=28}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Warhammer.png
+ |name=Amber Warhammer
+ |displayname=[[Skyrim:Amber Warhammer|Amber Warhammer]]{{CC|Saints & Seducers}}
+ |id=xx000BE2|weight=29|value=4475|damage=28}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness Warhammer.png
+ |name=Madness Warhammer
+ |displayname=[[Skyrim:Madness Warhammer|Madness Warhammer]]{{CC|Saints & Seducers}}
+ |id=xx000BEB|weight=34|value=4600|damage=29}}
+|}
+{{Note|StalhrimStagger2|†|Stalhrim melee weapons that are not daggers have +0.1 stagger.}}
+
+==Archery==
+===Bows===
+All traditional bows require [[Skyrim:arrow|arrow]]s as ammunition.
+
+* '''Stagger''': 0 (50% chance for 0.25 with [[Skyrim:Power Shot|Power Shot]])
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Speed
+{{Item Data
+ |icon=SR-icon-weapon-Long Bow.png
+ |name=Long Bow
+ |displayname=[[SR:Long Bow|Long Bow]]<sup>†</sup>
+ |id=0003b562|weight=5|value=30|damage=6|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Hunting Bow.png
+ |name=Hunting Bow
+ |displayname=[[SR:Hunting Bow|Hunting Bow]]<sup>‡</sup>
+ |id=00013985|weight=7|value=50|damage=7|notes=0.9375}}
+
+{{Item Data
+ |icon=SR-icon-weapon-AncientNordBow.png
+ |name=Ancient Nord Bow
+ |displayname=[[SR:Ancient Nord Bow|Ancient Nord Bow]]
+ |id=000302ca|weight=12|value=45|damage=8|notes=0.875}}
+
+{{Item Data
+ |icon=SR-icon-weapon-OrcishBow.png
+ |name=Orcish Bow
+ |displayname=[[Skyrim:Orcish Bow|Orcish Bow]]
+ |id=0001398d|weight=9|value=150|damage=10|notes=0.8125}}
+{{Item Data
+ |icon=SR-icon-weapon-NordHeroBow.png
+ |name=Nord Hero Bow
+ |displayname=[[Skyrim:Nord Hero Bow|Nord Hero Bow]]<sup>††</sup>
+ |id=00068c57|weight=7|value=200|damage=11|notes=0.875}}
+{{Item Data
+ |Name=Golden Bow
+ |icon=SR-icon-weapon-Golden Bow.png
+ |displayname=[[Skyrim:Golden Bow|Golden Bow]]{{CC|Saints & Seducers}}
+ |id=00080F|weight=10|value=495|damage=11|notes=0.5}}
+{{Item Data
+ |icon=SR-icon-weapon-DwarvenBow.png
+ |name=Dwarven Bow
+ |displayname=[[Skyrim:Dwarven Bow|Dwarven Bow]]
+ |id=00013995|weight=10|value=270|damage=12|notes=0.75}}
+{{Item Data
+ |icon=SR-icon-weapon-ElvenBow.png
+ |name=Elven Bow
+ |displayname=[[Skyrim:Elven Bow|Elven Bow]]
+ |id=0001399d|weight=12|value=470|damage=13|notes=0.6875}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Bow.png
+ |name=Nordic Bow
+ |displayname=[[Skyrim:Nordic Bow|Nordic Bow]]{{DB}}
+ |id=xx026232|weight=11|value=580|damage=13|notes=0.6875}}
+{{Item Data 
+ |icon=SR-icon-weapon-Dark Bow.png
+ |name=Dark Bow
+ |displayname=[[Skyrim:Dark Bow|Dark Bow]]{{CC|Saints & Seducers}}
+ |id=000802|weight=10|value=495|damage=13|notes=0.5}}
+{{Item Data
+ |icon=SR-icon-weapon-AncientNordBow.png
+ |name=Supple Ancient Nord Bow
+ |displayname=[[Skyrim:Supple Ancient Nord Bow|Supple Ancient Nord Bow]]
+ |id=0005d179|weight=18|value=234|damage=14|notes=0.875}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Bow.png
+ |name=Glass Bow
+ |displayname=[[Skyrim:Glass Bow|Glass Bow]]
+ |id=000139a5|weight=14|value=820|damage=15|notes=0.625}}
+{{Item Data
+ |icon=SR-icon-weapon-EbonyBow.png
+ |name=Ebony Bow
+ |displayname=[[Skyrim:Ebony Bow|Ebony Bow]]
+ |id=000139ad|weight=16|value=1440|damage=17|notes=0.5625}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Bow.png
+ |name=Stalhrim Bow
+ |displayname=[[Skyrim:Stalhrim Bow|Stalhrim Bow]]{{DB}}
+ |id=xx026231|weight=15|value=1800|damage=17|notes=0.5625}}
+{{Item Data
+ |icon=SR-icon-weapon-DaedricBow.png
+ |name=Daedric Bow
+ |displayname=[[Skyrim:Daedric Bow|Daedric Bow]]
+ |id=000139b5|weight=18|value=2500|damage=19|notes=0.5}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Bow.png
+ |name=Dragonbone Bow
+ |displayname=[[Skyrim:Dragonbone Bow|Dragonbone Bow]]{{DG}}
+ |id=xx0176f1|weight=20|value=2725|damage=20|notes=0.75}}
+{{Item Data
+ |icon=SR-icon-weapon-Amber Bow.png
+ |name=Amber Bow
+ |displayname=[[Skyrim:Amber Bow|Amber Bow]]{{CC|Saints & Seducers}}
+ |id=xx000BDC|weight=14|value=2925|damage=20|notes=0.5}}
+{{Item Data
+ |icon=SR-icon-weapon-Madness Bow.png
+ |name=Madness Bow
+ |displayname=[[Skyrim:Madness Bow|Madness Bow]]{{CC|Saints & Seducers}}
+ |id=xx000BE5|weight=21|value=3050|damage=21|notes=0.5}}
+|}
+<sup>†</sup> The long bow cannot be created at [[Skyrim:Forge|forge]]s. It can be tempered using [[Skyrim:Firewood|firewood]]. Tempering is not augmented by any Smithing perks. While it possesses the fastest firing speed of all the standard bows, it has another drawback besides also having the lowest base damage; it has reduced range compared to all other bows, with arrows dipping in flight far sooner than when fired by the others. To compensate for longer shots, the long bow must be aimed higher to land long-range shots and achieve equivalent range.<br/>
+<sup>‡</sup> The hunting bow cannot be created at forges. It can be tempered using [[Skyrim:Leather Strips|leather strips]], and tempering is augmented if you have selected the [[Skyrim:Steel Smithing|Steel Smithing]] perk.</br>
+<sup>††</sup> {{Bug|The Nord hero bow cannot be tempered. Its tempering entry (<code>TemperWeaponSkyforgeBow</code>) incorrectly links to the Nord hero battle axe instead of the bow.|OSP|1.9.26.0.8|nobullet=1}}
+
+==={{Anchor|Crossbows}}{{DG}}===
+Crossbows are only available with the [[Skyrim:Dawnguard|Dawnguard add-on]]. The Dwarven Crossbow can only be acquired by siding with the [[Skyrim:Dawnguard (faction)|Dawnguard]] (see [[Skyrim:Ancient_Technology|Ancient Technology]] for details). The Elven and Ebony Crossbows require the completion of the quest [[Skyrim:Night Hunter|Night Hunter]], while other types of Crossbows can be purchased from the Fletcher in [[Skyrim:Solitude|Solitude]].  Crossbows all require [[Skyrim:bolt|bolt]]s as ammunition instead of arrows. While all other types of crossbows and all bolts can be manufactured at any forge, regular and Dwarven Crossbows can only be crafted at [[Skyrim:Forge#Gunmar.27s_Forge|Gunmar's forge]] in [[Skyrim:Fort_Dawnguard|Fort Dawnguard]] or at the All Forge in the [[Skyrim:Myrwatch|Myrwatch]] [[Skyrim:Creation Club|Creation]]. Forging Elven and Ebony Crossbows requires the completion of the quest Night Hunter, and other crossbows will need to be acquired from loot or merchants first before they can be crafted. Crafting Stalhrim Crossbows also requires the completion of [[Skyrim:A New Source of Stalhrim|A New Source of Stalhrim]]. 
+
+* '''Stagger''': 0.75
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Speed {{intnote|speed|††}}
+{{Item Data
+ |icon=SR-icon-weapon-Crossbow.png
+ |name=Crossbow
+ |displayname=[[Skyrim:Steel#Crossbow|Crossbow]]{{DG}}
+ |id=xx000801|weight=14|value=120|damage=19|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Crossbow.png
+ |name=Enhanced Crossbow
+ |displayname=[[Skyrim:Enhanced Crossbow|Enhanced Crossbow]]{{DG}} {{intnote|Enhanced|†}}
+ |id=xx00f19e|weight=15|value=200|damage=19|notes=1}}
+ {{Item Data
+|icon=SR-icon-weapon-Imperial Crossbow.png
+|name=Imperial Crossbow
+|displayname=[[Skyrim:Imperial Crossbow|Imperial Crossbow]]{{CC|Expanded Crossbow Pack}}
+
+|id=FExxx80b|weight=14|value=200|damage=20|notes=1}}
+{{Item Data
+|icon=SR-icon-weapon-Imperial Crossbow.png
+|name=Enhanced Imperial Crossbow
+|displayname=[[Skyrim:Enhanced Imperial Crossbow|Enhanced Imperial Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+
+|id=FExxx817|weight=14|value=400|damage=20|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Silver Crossbow.png
+ |name=Silver Crossbow
+ |displayname=[[Skyrim:Silver Crossbow|Silver Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx80E|weight=14|value=600|damage=21|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Silver Crossbow.png
+ |name=Enhanced Silver Crossbow
+ |displayname=[[Skyrim:Enhanced Silver Crossbow|Enhanced Silver Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx81A|weight=14|value=700|damage=21|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dwarven Crossbow.png
+ |name=Dwarven Crossbow
+ |displayname=[[Skyrim:Dwarven Crossbow|Dwarven Crossbow]]{{DG}}
+ |id=xx00b647|weight=20|value=350|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dwarven Crossbow.png
+ |name=Enhanced Dwarven Crossbow
+ |displayname=[[Skyrim:Enhanced Dwarven Crossbow|Enhanced Dwarven Crossbow]]{{DG}} {{intnote|Enhanced|†}}
+ |id=xx00f19f|weight=21|value=550|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Orcish Crossbow.png
+ |name=Orcish Crossbow
+ |displayname=[[Skyrim:Orcish Crossbow|Orcish Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx80D|weight=15|value=500|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Orcish Crossbow.png
+ |name=Enhanced Orcish Crossbow
+ |displayname=[[Skyrim:Enhanced Orcish Crossbow|Enhanced Orcish Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx819|weight=15|value=700|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Elven Crossbow.png
+ |name=Elven Crossbow
+ |displayname=[[Skyrim:Elven Crossbow|Elven Crossbow]]{{CC|Elite Crossbows}}
+ |id=FExxx801|weight=21|value=480|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Elven Crossbow.png
+ |name=Enhanced Elven Crossbow
+ |displayname=[[Skyrim:Enhanced Elven Crossbow|Enhanced Elven Crossbow]]{{CC|Elite Crossbows}}{{intnote|Enhanced|†}}
+ |id=FExxx809|weight=22|value=630|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Crossbow.png
+ |name=Nordic Crossbow
+ |displayname=[[Skyrim:Nordic Crossbow|Nordic Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx80C|weight=15|value=700|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Crossbow.png
+ |name=Enhanced Nordic Crossbow
+ |displayname=[[Skyrim:Enhanced Nordic Crossbow|Enhanced Nordic Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx818|weight=15|value=900|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Crossbow.png
+ |name=Ebony Crossbow
+ |displayname=[[Skyrim:Ebony Crossbow|Ebony Crossbow]]{{CC|Elite Crossbows}}
+ |id=FExxx8A6|weight=23|value=610|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Crossbow.png
+ |name=Enhanced Ebony Crossbow
+ |displayname=[[Skyrim:Enhanced Ebony Crossbow|Enhanced Ebony Crossbow]]{{CC|Elite Crossbows}}{{intnote|Enhanced|†}}
+ |id=FExxx8AE|weight=24|value=870|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Crossbow.png
+ |name=Glass Crossbow
+ |displayname=[[Skyrim:Glass Crossbow|Glass Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx80A|weight=16|value=800|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Crossbow.png
+ |name=Enhanced Glass Crossbow
+ |displayname=[[Skyrim:Enhanced Glass Crossbow|Enhanced Glass Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx816|weight=16|value=1000|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Crossbow.png
+ |name=Stalhrim Crossbow
+ |displayname=[[Skyrim:Stalhrim Crossbow|Stalhrim Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx80F|weight=18|value=1100|damage=27|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Crossbow.png
+ |name=Enhanced Stalhrim Crossbow
+ |displayname=[[Skyrim:Enhanced Stalhrim Crossbow|Enhanced Stalhrim Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx81B|weight=18|value=1300|damage=27|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Daedric Crossbow.png
+ |name=Daedric Crossbow
+ |displayname=[[Skyrim:Daedric Crossbow| Daedric Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx808|weight=20|value=1400|damage=28|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Daedric Crossbow.png
+ |name=Enhanced Daedric Crossbow
+ |displayname=[[Skyrim:Enhanced Daedric Crossbow|Enhanced Daedric Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx814|weight=20|value=1700|damage=28|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Crossbow.png
+ |name=Dragonbone Crossbow
+ |displayname=[[Skyrim:Dragonbone Crossbow|Dragonbone Crossbow]]{{CC|Expanded Crossbow Pack}}
+ |id=FExxx809|weight=22|value=1500|damage=30|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Crossbow.png
+ |name=Enhanced Dragonbone Crossbow
+ |displayname=[[Skyrim:Enhanced Dragonbone Crossbow|Enhanced Dragonbone Crossbow]]{{CC|Expanded Crossbow Pack}}{{intnote|Enhanced|†}}
+ |id=FExxx815|weight=22|value=2000|damage=30|notes=1}}
+|}
+
+{{note|Enhanced|†|The Enhanced versions have an additional property: ''Attacks with this crossbow ignore 50% of armor.'' This effect is not considered an enchantment, so enhanced crossbows can be enchanted like any normal unenchanted weapon, though they will only display the text for this effect and not for any enchantment that you may place on it. {{pc22}} The text display issue is fixed by the mod [[Skyrim Mod:Enchantable Special Item Fix|Enchantable Special Item Fix]].}}
+{{note|Speed|††|Despite saying they have the same speed as the long bow, all crossbows fire significantly slower than most of the normal bows. Unlike with normal bows, however, it is possible to circumvent this by means of an exploit: unequipping the bow then re-equipping it by means of hotkeys will cause the crossbow to be reloaded.}}

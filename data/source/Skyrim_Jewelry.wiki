@@ -1,0 +1,807 @@
+{{Trail|Items}} [[Category:Skyrim-Clothing|Clothing]]
+{{TOCright}}
+This page describes the mundane (non-magical) '''clothing items''' in ''[[Skyrim:Skyrim|Skyrim]]''. The [[Skyrim:Generic Magic Apparel|Generic Magic Apparel]] page details most magical clothing with the rest found at [[Skyrim:Specialty Gear|Specialty Gear]]; the category [[:Category:Skyrim-Clothing|Skyrim-Clothing]] provides lists of all the individual pieces of clothing in the game. Clothing items do not provide any armor; wearing them doesn't improve the armor rating.
+
+==Clothes==
+These cover both your upper and lower body, and cannot be worn together with primary armor.
+{| class="wikitable sortable"
+!class=unsortable width=120|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|0001be1a}}| {{icon|c|BeltedTunic(m)|60}}{{icon|c|BeltedTunic(f)|60}}
+| {{Anchor|Belted Tunic}}<br>{{ID|0001BE1A|par=1}}
+| 1 || 2 || 27
+|
+*Worn by [[Skyrim:Gestur Rockbreaker|Gestur Rockbreaker]], [[Skyrim:Rhorlak|Rhorlak]], [[Skyrim:Louis Letrush|Louis Letrush]], [[Skyrim:Camilla Valerius|Camilla Valerius]], [[Skyrim:Una|Una]], and others.
+*Carried by [[Skyrim:Brand-Shei|Brand-Shei]], [[Skyrim:Maven Black-Briar|Maven Black-Briar]], [[Skyrim:General Tullius|General Tullius]], [[Skyrim:Mercer Frey|Mercer Frey]], and others.
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] in [[Skyrim:Solitude|Solitude]].
+*Found in [[Skyrim:Klimmek's House|Klimmek's house]], [[Skyrim:Belyn Hlaalu's House|Belyn Hlaalu's house]], and [[Skyrim:Hod and Gerdur's House|Hod and Gerdur's house]].
+|-
+|{{HE|0005b69f}}| {{icon|c|Blacksmith'sApron1(m)|60}}{{icon|c|Blacksmith'sApron1(f)|60}}
+| {{Anchor|Blacksmith's Apron}}<br>{{ID|0005B69F|par=1}}
+|rowspan=2| 1 ||rowspan=2| 8 ||rowspan=2| 27
+|rowspan=1|
+*Worn by [[Skyrim:Ghorza gra-Bagol|Ghorza gra-Bagol]], [[Skyrim:Adrianne Avenicci|Adrianne Avenicci]], and others.
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] in [[Skyrim:Solitude|Solitude]].
+*Found in the [[Skyrim:Blacksmith Quarters|Blacksmith Quarters]] in [[Skyrim:Windhelm|Windhelm]], [[Skyrim:Alvor and Sigrid's House|Alvor and Sigrid's house]], and [[Skyrim:Rustleif's House|Rustleif's house]].
+|-
+|{{HE|0006ff37}}| {{icon|c|Blacksmith'sApron2(m)|60}}{{icon|c|Blacksmith'sApron2(f)|60}}
+| {{Anchor|Blacksmith's Apron}}<br>{{ID|0006FF37|par=1}}
+| 
+*Worn by [[Skyrim:Arnskar Ember-Master|Arnskar Ember-Master]], [[Skyrim:Heimvar|Heimvar]] and others.
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] in [[Skyrim:Solitude|Solitude]].
+*Found in [[Skyrim:Volkihar Keep|Volkihar Keep]]{{DG}} in a smithing area.
+|-
+|{{HE|0001bc82}}| {{icon|c|Chef'sTunic(m)|60}}{{icon|c|Chef'sTunic(f)|60}}
+| {{Anchor|Chef's Tunic}}<br>{{ID|0001BC82|par=1}}
+| 1 || 8 || 27
+|
+*Worn by [[Skyrim:Knjakr|Knjakr]], [[Skyrim:Bendt|Bendt]], [[Skyrim:Odar|Odar]], [[Skyrim:Anton Virane|Anton Virane]], and [[Skyrim:Gianna|Gianna]].
+*Found in [[Skyrim:Radiant Raiment|Radiant Raiment]] and in the [[Skyrim:Bards College|Bards College]].
+|-
+|{{HE|000209a6}}| {{icon|c|Clothes2(m)|60}}{{icon|c|Clothes2(f)|60}}
+| Clothes<br>{{ID|000209A6|par=1}}
+|rowspan=12| 1 ||rowspan=8| 2 ||rowspan=12| 27
+|rowspan=1|
+*Worn by [[Skyrim:Hilde|Hilde]], [[Skyrim:Muiri|Muiri]], and [[Skyrim:Mikael|Mikael]].
+*Found in [[Skyrim:Whiterun Stables|Whiterun Stables]] and in [[Skyrim:Pelagia Farm|Pelagia Farm]].
+|-
+|{{HE|0003452e}}| {{icon|c|Clothes4(m)|60}}{{icon|c|Clothes4(f)|60}}
+| Clothes<br>{{ID|0003452E|par=1}}
+|
+*Worn by [[Skyrim:Ysolda|Ysolda]], [[Skyrim:Delphine|Delphine]] (before permanently relocating to Sky Haven Temple), and [[Skyrim:Sven|Sven]].
+*Found in [[Skyrim:Honningbrew Meadery|Honningbrew Meadery]].
+|-
+|{{HE|00017695}}| {{icon|c|Clothes1(m)|60}}{{icon|c|Clothes1(f)|60}}
+| Clothes<br>{{ID|00017695|par=1}}
+|
+*This set of clothes includes a hat.
+*Very rarely sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] in [[Skyrim:Solitude|Solitude]]. 
+*No known static locations.
+|-
+|{{HE|000261c0}}| {{icon|c|Clothes1(m)|60}}{{icon|c|Clothes1(f)|60}}
+| Clothes<br>{{ID|000261C0|par=1}}
+|Sold at the [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0006c1d8}}| {{icon|c|Clothes7(m)|60}}{{icon|c|Clothes7(f)|60}}
+| Clothes<br>{{ID|0006C1D8|par=1}} 
+|Sold at the [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0006c1d9}}| {{icon|c|Clothes8(m)|60}}{{icon|c|Clothes8(f)|60}}
+| Clothes<br>{{ID|0006C1D9|par=1}} 
+|Sold at the [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0006c1da}}| {{icon|c|Clothes9(m)|60}}{{icon|c|Clothes9(f)|60}}
+| Clothes<br>{{ID|0006C1DA|par=1}} 
+|Sold at the [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|000f1229}} {{AL|C}}| {{icon|c|Miner'sClothes1|60}}
+| Clothes<br>{{ID|000F1229|par=1}}
+|Carried by [[Skyrim:Guards|Guards]].
+|-
+|{{HE|0005b6a1}}| {{icon|c|Clothes6(m)|60}}{{icon|c|Clothes6(f)|60}}
+| Clothes<br>{{ID|0005B6A1|par=1}}
+|rowspan=1| 5
+|rowspan=1|
+*Referred to in the [[Skyrim Mod:Creation Kit|Creation Kit]] as Barkeeper clothes.
+*Worn by [[Skyrim:Sabjorn|Sabjorn]], [[Skyrim:Dagur|Dagur]], [[Skyrim:Hadring|Hadring]], [[Skyrim:Eydis|Eydis]] and others.
+|-
+|{{HE|0006ff38}}| {{icon|c|Clothes10(m)|60}}{{icon|c|Clothes10(f)|60}}
+| Clothes<br>{{ID|0006FF38|par=1}}
+|rowspan=1| 5
+|rowspan=1|
+*Worn by [[SR:Vekel_the_Man|Vekel the Man]], [[SR:Hreinn|Hreinn]], [[SR:Brelas|Brelas]] and others.
+|-
+|{{HE|0004223c}}| {{icon|c|Clothes5(m)|60}}{{icon|c|Clothes5(f)|60}}
+| Clothes<br>{{ID|0004223C|par=1}} ||rowspan=2| 10
+|rowspan=2|
+*Referred to in the Creation Kit as Merchant clothes.
+*Red variant worn by [[Skyrim:Calixto Corrium|Calixto Corrium]], [[Skyrim:Svaknir|Svaknir]], [[Skyrim:Brand-Shei|Brand-Shei]], [[Skyrim:Marise Aravel|Marise Aravel]], and others and blue variant worn by [[Skyrim:Talsgar the Wanderer|Talsgar the Wanderer]], [[Skyrim:Ma'dran|Ma'dran]], [[Skyrim:Ma'jhad|Ma'jhad]] and others.
+|-
+|{{HE|0006ff45}}| {{icon|c|Clothes11(m)|60}}{{icon|c|Clothes11(f)|60}}
+| Clothes<br>{{ID|0006FF45|par=1}}
+|-
+|rowspan=2 {{HE|000cee80}}{{HE|xx0376df}} {{AL|C}}| {{icon|c|FineClothes1|60}}
+| {{Anchor|Fine Clothes}}<br>{{ID|000CEE80|par=1}}
+|rowspan=5| 1
+|rowspan=2| 35
+|rowspan=2| 27 ||Worn by [[Skyrim:Maven Black-Briar|Maven Black-Briar]], [[Skyrim:Ingun Black-Briar|Ingun Black-Briar]], [[Skyrim:Nazeem|Nazeem]] and others.
+|-
+| {{Anchor|Fine Clothes|xx0376df}}&nbsp;{{DB}}<br>{{ID|xx0376df|par=1}}
+|-
+|{{HE|00086991}} {{AL|C}}| {{icon|c|FineClothes2|60}}
+|Fine Clothes<br>{{ID|00086991|par=1}}
+| 40 || rowspan=2| 54
+|
+*Worn by [[Skyrim:Asgeir_Snow-Shod|Asgeir Snow-Shod]], [[Skyrim:Dengeir_of_Stuhn|Dengeir of Stuhn]], and others.
+|-
+|{{HE|000f8713}} {{AL|C}}| {{icon|c|FineClothes3|60}}
+|Fine Clothes<br>{{ID|000F8713|par=1}}
+| 45
+|
+*Worn by [[Skyrim:Erikur|Erikur]], [[Skyrim:Indaryn|Indaryn]], and others.
+|-
+|{{HE|000f8715}} {{AL|C}}| {{icon|c|FineClothes4|60}}
+|Fine Clothes<br>{{ID|000F8715|par=1}}
+| 50 || 27
+|
+*Worn by [[Skyrim:Sibbi_Black-Briar|Sibbi Black-Briar]], [[Skyrim:Captain_Lonely-Gale|Captain Lonely-Gale]], and others.
+|-
+|{{HE|0008698c}} {{AL|C}}| {{icon|c|Fur-TrimmedCloak|60}}
+| {{Anchor|Fur-Trimmed Cloak}}<br>{{ID|0008698C|par=1}}
+| 1 || 100 || 54
+|Worn by [[Skyrim:Korir|Jarl Korir]] of Winterhold, [[Skyrim:Idgrod Ravencrone|Jarl Idgrod Ravencrone]] of Hjaalmarch, and [[Skyrim:Bryling|Thane Bryling]] of Solitude.
+|-
+|{{HE|0007bc19}} {{AL|C}}| {{icon|c|HammerfellGarb|60}}
+| {{Anchor|Hammerfell Garb}}<br>{{ID|0007BC19|par=1}}
+| 1 || 5 || 27
+|
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]].
+*Worn by any of the [[Skyrim:Alik'r Warrior|Alik'r Warriors]] found around Skyrim.
+|-
+|{{HE|0006ff43}} {{AL|C}}| {{icon|c|Miner'sClothes1|60}}
+| {{Anchor|Miner's Clothes}}<br>{{ID|0006FF43|par=1}}
+|rowspan=2| 1 ||rowspan=2| 2
+|rowspan=2| 17 ||rowspan=2|
+*Worn by miners and impoverished NPCs including [[Skyrim:Pavo Attius|Pavo Attius]], [[Skyrim:Hod|Hod]], [[Skyrim:Gat gro-Shargakh|Gat gro-Shargakh]], [[Skyrim:Lash gra-Dushnikh|Lash gra-Dushnikh]], and others.
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] in [[Skyrim:Solitude|Solitude]].
+*Can be found at [[Skyrim:Dragon Bridge Lumber Camp|Dragon Bridge Lumber Camp]] and [[Skyrim:Cragslane Cavern|Cragslane Cavern]].
+*Can be looted from random chests.
+|-
+|{{HE|00080697}} {{AL|C}}| {{icon|c|Miner'sClothes2|60}}
+| Miner's Clothes<br>{{ID|00080697|par=1}}
+|-
+|{{HE|000646a7}} {{AL|C}}|{{icon|c|Mourner'sClothes|60}}
+| {{Anchor|Mourner's Clothes}}<br>{{ID|000646A7|par=1}}
+| 1 || 2 || 27
+|
+*Worn by [[Skyrim:Esbern|Esbern]] after [[Skyrim:Alduin's Wall|Alduin's Wall]] and wounded soldiers at Imperial and Stormcloak Camps.
+*Sold at [[Skyrim:Solitude|Solitude]]'s [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0005db7b}} {{AL|C}}| {{icon|c|NobleClothes|60}}
+| {{Anchor|Noble Clothes}}<br>{{ID|0005DB7B|par=1}}
+| 3 || 100 || 54
+|
+*Worn by [[Skyrim:Balgruuf the Greater|Jarl Balgruuf the Greater]] of Whiterun, [[Skyrim:Laila Law-Giver|Jarl Laila Law-Giver]] of Riften, [[Skyrim:Holgeir|Holgeir]], and [[Skyrim:Skald|Jarl Skald]] of Dawnstar.
+*Can be found in one of the shelves inside the [[Skyrim:East Empire Company Warehouse|East Empire Company Warehouse]] in [[Skyrim:Solitude|Solitude]].
+|-
+|{{HE|000e40df}} {{AL|C}}| {{icon|c|FineClothes1|60}}
+| {{Anchor|Party Clothes}}<br>{{ID|000E40DF|par=1}}
+| 1 || 25 || 27
+| See Quest: '''[[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]'''.
+|-
+|{{HE|000e9eb5}} {{AL|C}}| {{icon|c|FineClothes2|60}}
+| {{Anchor|Radiant Raiment Fine Clothes}}<br>{{ID|000E9EB5|par=1}}
+| 1 || 55 || 54
+| Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]] during '''[[Skyrim:Fit for a Jarl|Fit for a Jarl]]'''.
+|-
+|rowspan=2 {{HE|0008f19a}} {{AL|C}}| {{Anchor||xx00e9eb}}{{icon|c|RaggedTrousers|60}}
+| {{Anchor|Ragged Trousers}}<br>{{ID|0008F19A|par=1}}
+|rowspan=2| 1 ||rowspan=2| 1 ||rowspan=2| 17
+|
+*Worn by [[Skyrim:Sinding|Sinding]], [[Skyrim:Jiub|Jiub]], [[Skyrim:Ghamorz|Ghamorz]], [[Skyrim:Dulug|Dulug]], and others.
+*Carried by [[Skyrim:Chief Larak|Chief Larak]], [[Skyrim:Borgakh the Steel Heart|Borgakh the Steel Heart]], [[Skyrim:Bagrak|Bagrak]], [[Skyrim:Arob|Arob]], and others.
+|-
+| Ragged Trousers{{DG}}<br>{{ID|xx00E9EB|par=1}}
+|
+*This type of Ragged Trousers is a bloody version added by ''[[Skyrim:Dawnguard|Dawnguard]]''.
+*On females, it appears as a bloody version of the Roughspun Tunic, but on males it is missing textures, causing it to appear as featureless pants in various neon colors or vivid white.
+|-
+|{{HE|000e0dd0}} {{AL|C}}| {{icon|c|RedguardClothes|60}}
+| {{Anchor|Redguard Clothes}}<br>{{ID|000E0DD0|par=1}}
+| 1 || 5 || 27
+|
+*Worn by [[Skyrim:Nazir|Nazir]].
+*For the clothes added by the [[Skyrim:Lord's Mail|Lord's Mail]] [[Skyrim:Creation Club|Creation]], see '''[[Skyrim:Redguard Clothes (Lord's Mail)|Redguard Clothes]]'''.
+|-
+|{{HE|0003c9fe}} {{AL|C}}| {{icon|c|RoughspunTunic|60}}
+| {{Anchor|Roughspun Tunic}}<br>{{ID|0003C9FE|par=1}}
+| 1 || 1 || 17
+|
+*Worn by [[Skyrim:Threki the Innocent|Threki the Innocent]], [[Skyrim:Madanach|Madanach]], [[Skyrim:Thorald Gray-Mane|Thorald Gray-Mane]], [[Skyrim:Gian the Fist|Gian the Fist]], and others.
+*You receive this as your first set of clothes in [[Skyrim:Helgen|Helgen]] during the first quest '''[[Skyrim:Unbound|Unbound]]'''.
+*You receive another set upon beginning the quest '''[[Skyrim:No One Escapes Cidhna Mine|No One Escapes Cidhna Mine]]'''.
+*You may receive another set when [[Skyrim:Crime|jailed]] in some holds. (Varies; some holds give [[Skyrim:Clothing#00013105|Ragged Robes]] instead.)
+|-
+|{{HE|000d191f}} {{AL|C}}| {{icon|c|TavernClothes|60}}
+| {{Anchor|Tavern Clothes}}<br>{{ID|000D191F|par=1}}
+| 1 || 2 || 27
+|
+*Worn by [[Skyrim:Alva|Alva]], [[Skyrim:Hroki|Hroki]], [[Skyrim:Karita (bard)|Karita]], [[Skyrim:Narri|Narri]], [[Skyrim:Rhiada|Rhiada]],  [[Skyrim:Susanna the Wicked|Susanna the Wicked]], and others.
+*Can be found on a dead body behind the bar in [[Skyrim:Liar's Retreat|Liar's Retreat]].
+|- 
+|{{HE|00088956}}| {{icon|c|WeddingDress(m)|60}}{{icon|c|WeddingDress(f)|60}}
+| {{Anchor|Wedding Dress}}<br>{{ID|00088956|par=1}}
+| 1 || 50 || 54
+| Worn by [[Skyrim:Vittoria Vici|Vittoria Vici]] in '''[[Skyrim:Bound Until Death|Bound Until Death]]'''.
+|}
+
+==Robes==
+These cover both your upper and lower body, and cannot be worn together with primary armor.
+{| class="wikitable sortable"
+!class=unsortable width=120|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|00106661}}{{HE|xx0376da}} {{AL|C}}| {{icon|c|BlackRobes|60}}
+| {{Anchor|Black Robes}}<br>{{ID|00106661|par=1}}
+| 1 || 5 || 27
+|
+|-
+|{{HE|000a199b}} {{AL|C}}| {{icon|c|BlueRobes|60}}
+| {{Anchor|Blue Robes}}<br>{{ID|000A199B|par=1}}
+| 1 || 5 || 27
+|
+|-
+|{{HE|000d3dea}}| {{icon|c|CollegeRobes1(m)|60}}{{icon|c|CollegeRobes1(f)|60}}
+| {{Anchor|College Robes}}<br>{{ID|000D3DEA|par=1}}
+|rowspan=2| 1 ||rowspan=2| 10 ||rowspan=2| 54
+|rowspan=2| Only the first variant (000D3dea) can be obtained. They can be found and bought in [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0010d6a5}}| {{icon|c|CollegeRobes2(m)|60}}{{icon|c|CollegeRobes2(f)|60}}
+| {{Anchor|College Robes}}<br>{{ID|0010D6A5|par=1}}
+|-
+|{{HE|00015516}} {{AL|C}}| {{icon|c|Emperor'sRobes|60}}
+| {{Anchor|Emperor's Robes}}<br>{{ID|00015516|par=1}}
+| 1 || 100 || 54
+|
+*Worn by [[Skyrim:Emperor Titus Mede II (real)|Emperor Titus Mede II]] and his [[Skyrim:Emperor Titus Mede II (decoy)|decoy]].
+*Found in the bedroom of [[Skyrim:The Katariah|the Katariah]].
+|-
+|{{HE|0010cff0}} {{AL|C}}| {{icon|c|GreenRobes|60}}
+| {{Anchor|Green Robes}}<br>{{ID|0010CFF0|par=1}}
+| 1 || 5 || 27
+| Cannot be obtained in the original version of the game. If ''[[Skyrim:Hearthfire|Hearthfire]]'' is installed, they can be received as a gift from adopted [[Skyrim:Child|children]].
+|-
+|{{HE|00107108}} {{AL|C}}| {{icon|c|BlackRobes|60}}
+| {{Anchor|Hooded Black Robes}}<br>{{ID|00107108|par=1}}
+| 1 || 5 || 54
+|
+*Found in [[Skyrim:Fellglow Keep|Fellglow Keep]], on a shelf in the circular room during or after the quest [[Skyrim:Hitting the Books|Hitting the Books]].
+*Worn by [[Skyrim:Traveler|Travelers]].{{DG}}
+|-
+|{{HE|0010710a}} {{AL|C}}| {{icon|c|BlueRobes|60}}
+| {{Anchor|Hooded Blue Robes}}<br>{{ID|0010710A|par=1}}
+| 1 || 5 || 54
+| With ''[[Skyrim:Dawnguard|Dawnguard]]'' installed, it is worn by a dead [[Skyrim:Adventurer|adventurer]] found at [[Skyrim:Deep Folk Crossing|Deep Folk Crossing]].
+|-
+|{{HE|00107106}} {{AL|C}}| {{icon|c|MonkRobes|60}}
+| {{Anchor|Hooded Monk Robes}}<br>{{ID|00107106|par=1}}
+| 1 || 5 || 54
+|
+*Worn by [[Skyrim:Erandur|Erandur]] and [[Skyrim:Heimskr|Heimskr]].
+*Can be looted from the bodies of two [[Skyrim:Worshipper|worshippers]] at the [[Skyrim:Shrines#Shrine of Talos|Shrine of Talos]] northeast of [[Skyrim:Pinewatch|Pinewatch]].
+|-
+|{{HE|0006b46b}} {{AL|C}}| {{icon|c|BlueRobes|60}}
+| {{Anchor|Mage Robes}}<br>{{ID|0006B46B|par=1}}
+| 1 || 5 || 27
+|
+*Found on a sideboard inside [[Skyrim:Hag%27s_End|Hag's End]].
+*Found on one of the shelves inside the [[Skyrim:East Empire Company Warehouse|East Empire Company Warehouse]] in [[Skyrim:Solitude|Solitude]].
+|
+|-
+|{{HE|000bacf3}} {{AL|C}}| {{icon|c|MonkRobes|60}}
+| {{Anchor|Monk Robes}}<br>{{ID|000BACF3|par=1}}
+| 1 || 5 || 27
+|
+*Worn by [[Skyrim:Rorlund|Rorlund]] and [[Skyrim:Freir|Freir]].
+*Can be purchased from Radiant Raiment in Solitude.
+|-
+|{{HE|00013105}} {{AL|C}}| {{icon|c|RaggedRobes|60}}
+| {{Anchor|Ragged Robes}}<br>{{ID|00013105|par=1}}
+| 1 || 1 || 17
+|
+*Worn by [[Skyrim:Brenuin|Brenuin]], [[Skyrim:Degaine|Degaine]], [[Skyrim:Edda|Edda]], [[Skyrim:Narfi|Narfi]], and others.
+*You may receive a set when [[Skyrim:Crime|jailed]] in some holds. (Varies with hold; some give a [[Skyrim:Clothing#0003c9fe|Roughspun Tunic]] instead.)
+|-
+|{{HE|0010cff2}} {{AL|C}}| {{icon|c|RedRobes|60}}
+| {{Anchor|Red Robes}}<br>{{ID|0010CFF2|par=1}}
+| 1 || 5 || 27
+| Cannot be obtained in the original version of the game. If ''[[Skyrim:Hearthfire|Hearthfire]]'' is installed, they can be received as a gift from adopted [[Skyrim:Child|children]].
+|-
+|{{HE|000e739b}} {{AL|C}}| {{icon|c|VaerminaRobes|60}}
+| {{Anchor|Vaermina Robes}}<br>{{ID|000E739B|par=1}}
+| 5 || 10 || 27
+| Two can be found inside [[Skyrim:Nightcaller Temple|Nightcaller Temple]]. They are also found on [[Skyrim:Vaermina Devotee|Vaermina devotees]] within the temple.
+See Quest: '''[[Skyrim:Waking Nightmare|Waking Nightmare]]'''.
+|}
+
+==Hoods==
+These cover your head, and cannot be worn together with any helmet.
+{| class="wikitable sortable"
+!class=unsortable width=120|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|0007bc1a}} {{AL|C}}| {{icon|c|Alik'rHood|60}}
+| {{Anchor|Alik'r Hood}}<br>{{ID|0007BC1A|par=1}}
+| 0.5 || 2 || 18
+|
+*Can be looted off of any of the [[Skyrim:Alik'r Warrior|Alik'r Warriors]] found around Skyrim.
+*Found on a shelf downstairs at [[Skyrim:Frostflow Lighthouse|Frostflow Lighthouse]].
+*Worn by [[Skyrim:Kesh the Clean|Kesh the Clean]]
+*Worn by [[Skyrim:Rayya|Rayya]] if ''[[Skyrim:Hearthfire|Hearthfire]]'' is installed.
+*Sold at [[Skyrim:Radiant Raiment|Radiant Raiment]].
+|-
+|{{HE|0001bca7}} {{AL|C}}| {{icon|c|Chef'sHat|60}}
+| {{Anchor|Chef's Hat}}<br>{{ID|0001BCA7|par=1}}
+| 0.5 || 1 || 18
+|
+*Worn by [[Skyrim:Knjakr|Knjakr]], [[Skyrim:Gianna|Gianna]], [[Skyrim:Bendt|Bendt]], [[Skyrim:Odar|Odar]], and [[Skyrim:Anton Virane|Anton Virane]].
+* Found on a shelf in [[Skyrim:Castle Dour|Castle Dour]].
+|-
+|{{HE|00017696}} {{AL|C}}| {{icon|c|Hat3|60}}
+| {{Anchor|Cowl}}<br>{{ID|00017696|par=1}}
+| 1 || 1 || 18
+|
+|-
+|{{HE|000cee84}} {{AL|C}}| {{icon|c|FineHat|60}}
+| {{Anchor|Fine Hat}}<br>{{ID|000CEE84|par=1}}
+| 0.5 || 25 || 29
+|
+|-
+|{{HE|000330b3}} {{AL|C}}| {{icon|c|Hat2|60}}
+| {{Anchor|Hat}}<br>{{ID|000330B3|par=1}}
+|rowspan=4| 0.5 ||rowspan=3| 1 ||rowspan=3| 18
+|rowspan=4|
+|-
+|{{HE|000330bc}} {{AL|C}}| {{icon|c|Hat3|60}}
+| {{Anchor|Hat}}<br>{{ID|000330BC|par=1}}
+|-
+|{{HE|000209aa}}| {{icon|c|Hat1(m)|60}}{{icon|c|Hat1(f)|60}}
+| {{Anchor|Hat}}<br>{{ID|000209AA|par=1}}
+|-
+|{{HE|0004223b}} {{AL|C}}| {{icon|c|Hat4|60}}
+| {{Anchor|Hat}}<br>{{ID|0004223B|par=1}}
+| 4 || 29
+|-
+|{{HE|000d3de8}}| {{icon|c|MageHood1(m)|60}}{{icon|c|MageHood1(f)|60}}
+| {{Anchor|Mage Hood}}<br>{{ID|000D3DE8|par=1}}
+|rowspan=3| 1 ||rowspan=3| 1 ||rowspan=3| 29
+| Sold by [[Skyrim:Colette Marence|Colette Marence]]. Can be looted off of random [[Skyrim:Thief (wilderness)|thief]] encounters on the roads of Skyrim.
+|-
+|{{HE|0010d6a6}}| {{icon|c|MageHood2(m)|60}}{{icon|c|MageHood2(f)|60}}
+| {{Anchor|Mage Hood}}<br>{{ID|0010D6A6|par=1}} ||rowspan=2| Unenchanted version unobtainable.
+|-
+|{{HE|0010d6a7}}| {{icon|c|MageHood3(m)|60}}{{icon|c|MageHood3(f)|60}}
+| {{Anchor|Mage Hood}}<br>{{ID|0010D6A7|par=1}}
+|-
+|{{HE|000646ab}} {{AL|C}}| {{icon|c|Mourner'sHat|60}}
+| {{Anchor|Mourner's Hat}}<br>{{ID|000646AB|par=1}}
+| 0.5 || 1 || 18
+|
+|-
+|{{HE|00013104}} {{AL|C}}| {{icon|c|RaggedCap|60}}
+| {{Anchor|Ragged Cap}}<br>{{ID|00013104|par=1}}
+| 0.5 || 1 || 8
+|
+|-
+|{{HE|000e0dd2}} {{AL|C}}| {{icon|c|RedguardHood|60}}
+| {{Anchor|Redguard Hood}}<br>{{ID|000E0DD2|par=1}}
+| 0.5 || 2 || 18
+|
+*Worn by [[Skyrim:Nazir|Nazir]].
+*For the hoods added by the [[Skyrim:Lord's Mail|Lord's Mail]] [[Skyrim:Creation Club|Creation]], see '''[[Skyrim:Redguard Hood (Lord's Mail)|Redguard Hood]]'''.
+|-
+|{{HE|xx03b04e}} {{AL|C}}|{{icon|c|Temple Priest Hood}}
+| {{Anchor|Temple Priest Hood}}&nbsp;{{DB}}<br>{{ID|xx03b04e|par=1}}
+| 2 || 25 || 18
+|
+*This is worn by [[Skyrim:Galdrus Hlervu|Galdrus Hlervu]].
+|-
+|{{HE|0008895a}} {{AL|C}}| {{icon|c|WeddingWreath|60}}
+| {{Anchor|Wedding Wreath}}<br>{{ID|0008895A|par=1}}
+| 0.5 || 10 || 0
+|
+* Cannot be enchanted.
+* See Quest: '''[[Skyrim:Bound Until Death|Bound Until Death]]'''.
+* Can be found in a wooden crate in [[Skyrim:Highpoint Tower|Highpoint Tower]].{{DB}}
+|}
+
+==Shoes==
+Includes all non-armor versions of boots. These go on your feet and cannot be worn with armored boots.
+{| class="wikitable sortable"
+!class=unsortable width=120|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|0001be1b}} {{AL|C}}| {{icon|c|Boots1|60}}
+| {{Anchor|Boots}}<br>{{ID|0001BE1B|par=1}}
+|rowspan=12| 1 ||rowspan=6| 2 ||rowspan=12| 13
+|rowspan=12|
+Other footwear with same name of "Boots" include:
+* One enchanted pair of boots found in the [[Skyrim:Arch-Mage's Quarters|Arch-Mage's Quarters]]; these enchanted boots are documented on their own [[Skyrim:Boots (Arch-Mage)|page]].
+* Armor boots worn by [[Skyrim:Dremora|Dremora]]; these are documented with the other [[Skyrim:Specialty Gear#Boots|Dremora Equipment]], and you cannot loot or equip them.
+|-
+|{{HE|000209a5}}| {{icon|c|Boots2|60}}{{icon|c|Boots2(f)|60}}
+| {{Anchor|Boots}}<br>{{ID|000209A5|par=1}}
+|-
+|{{HE|000261bd}} {{AL|C}}| {{icon|c|Boots3|60}}
+| {{Anchor|Boots}}<br>{{ID|000261BD|par=1}}
+|-
+|{{HE|0003452f}} {{AL|C}}| {{icon|c|Boots4|60}}
+| {{Anchor|Boots}}<br>{{ID|0003452F|par=1}}
+|-
+|{{HE|0006b46c}} {{AL|C}}| {{icon|c|Boots6|60}}
+| {{Anchor|Boots}}<br>{{ID|0006b46C|par=1}}
+|-
+|{{HE|000d1921}} {{AL|C}}| {{icon|c|Boots10|60}}
+| {{Anchor|Boots}}<br>{{ID|000D1921|par=1}}
+|-
+|{{HE|000bacd7}} {{AL|C}}| {{icon|c|Boots8|60}}
+| {{Anchor|Boots}}<br>{{ID|000BACD7|par=1}}
+|rowspan=3| 3
+|-
+| {{HE|000c5d12}}{{HE|xx0376d9}} {{AL|C}}| {{icon|c|Boots9|60}}
+| {{Anchor|Boots}}<br>{{ID|000C5D12|par=1}}
+|-
+|{{HE|000e0dd4}} {{AL|C}}| {{icon|c|Boots11|60}}
+| {{Anchor|Boots}}<br>{{ID|000E0DD4|par=1}}
+|-
+|{{HE|0004223d}} {{AL|C}}| {{icon|c|Boots5|60}}
+| {{Anchor|Boots}}<br>{{ID|0004223D|par=1}}
+|rowspan=3| 4
+|-
+|{{HE|00080699}} {{AL|C}}| {{icon|c|Boots7|60}}
+| {{Anchor|Boots}}<br>{{ID|00080699|par=1}}
+|-
+|{{HE|000c36e8}} {{AL|C}}| {{icon|c|Boots9|60}}
+| {{Anchor|Boots}}<br>{{ID|000C36E8|par=1}}
+|-
+|{{HE|000cee78}} {{AL|C}}| {{icon|c|CuffedBoots|60}}
+| {{Anchor|Cuffed Boots}}<br>{{ID|000CEE78|par=1}}
+| 1 || 25 || 13
+| Worn by [[Skyrim:Elisif the Fair|Jarl Elisif the Fair]] and [[Skyrim:High King Torygg|High King Torygg]].
+|-
+|{{HE|xx037b8e}} {{AL|C}}|{{icon|c|Cultist Boots|60}}
+| {{Anchor|Cultist Boots}}&nbsp;{{DB}}<br>{{ID|xx037b8e|par=1}}
+| 1 || 25 || 13
+|
+* These are worn by [[Skyrim:Cultist|cultists]].
+|-
+|{{HE|xx03705a}} {{AL|C}}|{{icon|c|Dunmer Shoes}}
+| {{Anchor|Dunmer Shoes}}&nbsp;{{DB}}<br>{{ID|xx03705a|par=1}}
+| 2 || 25 || 27
+|
+*The enchantment type for the shoes is incorrectly assigned to use body enchantments.
+|-
+|{{HE|00086993}} {{AL|C}}| {{icon|c|FineBoots|60}}
+| {{Anchor|Fine Boots}}<br>{{ID|00086993|par=1}}
+|rowspan=3| 1 || 20 || 24
+|rowspan=3| 
+|-
+|rowspan=2 {{HE|000cee82}}{{HE|xx0376de}} {{AL|C}}| {{icon|c|PartyBoots|60}}
+| {{Anchor|Fine Boots}}<br>{{ID|000CEE82|par=1}}
+|rowspan=2| 25 ||rowspan=2| 13
+|-
+| {{Anchor|Fine Boots}}&nbsp;{{DB}}<br>{{ID|xx0376de|par=1}}
+|-
+|rowspan=2 {{HE|0003ca00}} {{AL|C}}| {{icon|c|Footwraps|60}}
+| {{Anchor|Footwraps}}<br>{{ID|0003CA00|par=1}}
+|rowspan=2| 1 ||rowspan=2| 1 || 13
+|rowspan=2| Typically worn in conjunction with the Roughspun Tunic. The second type of Footwraps is a bloody version added by ''[[Skyrim:Dawnguard|Dawnguard]]''.
+|-
+|{{Anchor||xx00E9EA}}{{Anchor|Footwraps}}{{DG}}<br>{{ID|xx00E9EA|par=1}} || 7
+|-
+|{{HE|0005db7e}} {{AL|C}}| {{icon|c|Fur-LinedBoots|60}}
+| {{Anchor|Fur-lined Boots}}<br>{{ID|0005DB7E|par=1}}
+| 1 || 25 || 24
+| Three pairs can be found in the [[Skyrim:East Empire Company Warehouse|East Empire Company Warehouse]].
+|-
+|{{HE|000b1460}} {{AL|C}}| {{icon|c|MythicDawnBoots|60}}
+| {{Anchor|Mythic Dawn Boots}}<br>{{ID|000B1460|par=1}}
+| 1 || 15 || 13
+|
+|-
+|{{HE|000e40de}} {{AL|C}}| {{icon|c|PartyBoots|60}}
+| {{Anchor|Party Boots}}<br>{{ID|000E40DE|par=1}}
+| 0 || 25 || 0
+| See Quest: '''[[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]'''.
+|-
+|{{HE|0008698e}} {{AL|C}}| {{icon|c|PleatedShoes|60}}
+| {{Anchor|Pleated Shoes}}<br>{{ID|0008698E|par=1}}
+| 1 || 25 || 13
+| 
+*When viewed in the inventory, these are visually identical to the unique-named pair worn by [[Skyrim:Ulfric Stormcloak|Ulfric Stormcloak]].
+*A pair can be found in [[Skyrim:Shriekwind Bastion|Shriekwind Bastion]].
+|-
+|{{HE|00013106}} {{AL|C}}| {{icon|c|RaggedBoots|60}}
+| {{Anchor|Ragged Boots}}<br>{{ID|00013106|par=1}}
+| 1 || 1 || 7
+|
+|-
+|{{HE|0007bc15}} {{AL|C}}| {{icon|c|RedguardBoots|60}}
+| {{Anchor|Redguard Boots}}<br>{{ID|0007BC15|par=1}}
+| 1 || 3 || 13
+|
+*Can be bought at [[Skyrim:Radiant Raiment|Radiant Raiment]].
+*Can be looted off of any of the [[Skyrim:Alik'r Warrior|Alik'r Warriors]] found around Skyrim.
+|-
+|rowspan=3 {{HE|00018801}}{{HE|xx03c81a}} {{AL|C}}| {{Anchor||0005b6a0}}{{Anchor||000e80a8}}{{icon|c|Shoes1|60}}
+| {{Anchor|Shoes}}<br>{{ID|00018801|par=1}}
+|rowspan=3| 0 ||rowspan=4| 2 ||rowspan=4| 13
+|rowspan=3|
+|-
+| {{Anchor|Shoes}}<br>{{ID|0005B6A0|par=1}}
+|-
+| {{Anchor|Shoes}}<br>{{ID|000E80A8|par=1}}
+|-
+|{{HE|0005b69e}} {{AL|C}}| {{icon|c|Shoes2|60}}
+| {{Anchor|Shoes}}<br>{{ID|0005B69E|par=1}}
+| 2
+|
+|-
+|{{HE|xx03b04b}} {{AL|C}}|{{icon|c|Temple Priest Boots}}
+| {{Anchor|Temple Priest Boots}}&nbsp;{{DB}}<br>{{ID|xx03b04b|par=1}}
+| 1 || 25 || 13
+|
+*These are worn by [[Skyrim:Galdrus Hlervu|Galdrus Hlervu]] and [[Skyrim:Elder Othreloth|Elder Othreloth]].
+|-
+|{{HE|00065bac}} {{AL|C}}| {{icon|c|ThalmorBoots|60}}
+| {{Anchor|Thalmor Boots}}<br>{{ID|00065BAC|par=1}}
+| 1 || 10 || 13
+|
+|-
+|{{HE|00088958}} {{AL|C}}| {{icon|c|WeddingSandals|60}}
+| {{Anchor|Wedding Sandals}}<br>{{ID|00088958|par=1}}
+| 1 || 20 || 7
+| See Quest: '''[[Skyrim:Bound Until Death|Bound Until Death]]'''.
+|}
+
+==Gloves==
+These go on your hands and cannot be worn together with gauntlets or bracers.
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|000261c1}}| {{icon|c|Gloves|60}}
+| {{Anchor|Gloves}}<br>{{ID|000261C1|par=1}}
+| 0.5 || 1 || 13
+|
+* Often worn by Hunters, including those slain by [[Skyrim:Spriggan|Spriggans]] in [[Skyrim:World_Interactions|World Interactions]], the dead Hunters in the bear lair near [[Skyrim:Halldir's_Cairn|Halldir's Cairn]], and the dead Hunters outside [[Skyrim:Pinepeak_Cavern|Pinepeak Cavern]].
+* Can be found on the dresser in the whelp area of Jorrvaskr Living Quarters.
+* Can be purchased at Radiant Raiment.
+|-
+|{{HE|000b145b}}| {{icon|c|MythicDawnGloves|60}}
+| {{Anchor|Mythic Dawn Gloves}}<br>{{ID|000B145B|par=1}}
+| 1 || 25 || 13
+|
+|-
+|{{HE|00065bb3}}| {{icon|c|ThalmorGloves|60}}
+| {{Anchor|Thalmor Gloves}}<br>{{ID|00065BB3|par=1}}
+| 1 || 10 || 13
+|
+|}
+
+==Rings==
+All of the following rings (except the Bone Hawk Ring) can be crafted at [[Skyrim:Forges|forges]]; the linked pages provide details on the materials necessary to craft the items.
+
+You may wear only one ring at a time. The ring will be visible on your character's right pointer finger as long as you are not wearing certain types of gauntlets.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|xx011cf5}}| {{icon|j|Bone Hawk Ring|60}}
+| {{Anchor|Bone Hawk Ring}}&nbsp;{{DG}}<br>{{ID|xx011CF5|par=1}}
+| 0.25 || 75
+|Can be found in [[Skyrim:Volkihar Keep|Volkihar Keep]] in Harkon's quarters, up the stairs from the torture set along the left wall before the door to the coffin, locked in a display case.
+|-
+|{{HE|0003b97c}}| {{icon|j|SilverRing|60}}
+| {{Anchor|[[Skyrim:Silver Ring|Silver Ring]]}}<br>{{ID|0003B97C|par=1}}
+| 0.25 || 30
+|
+|-
+|{{HE|0001cf2b}}| {{icon|j|GoldRing|60}}
+| {{Anchor|[[Skyrim:Gold Ring|Gold Ring]]}}<br>{{ID|0001CF2B|par=1}}
+| 0.25 || 75
+|
+|-
+|{{HE|000877ab}}| {{icon|j|SilverGarnetRing|60}}
+| {{Anchor|[[Skyrim:Silver Garnet Ring|Silver Garnet Ring]]}}<br>{{ID|000877AB|par=1}}
+| 0.25 || 160
+|
+|-
+|{{HE|000a77a7}}| {{icon|j|SilverAmethystRing|60}}
+| {{Anchor|[[Skyrim:Silver Amethyst Ring|Silver Amethyst Ring]]}}<br>{{ID|000877A7|par=1}}
+| 0.25 || 180
+|
+|-
+|{{HE|000877b1}}| {{icon|j|SilverRubyRing|60}}
+| {{Anchor|[[Skyrim:Silver Ruby Ring|Silver Ruby Ring]]}}<br>{{ID|000877B1|par=1}}
+| 0.25 || 260
+|
+|-
+|{{HE|000877cb}}| {{icon|j|GoldSapphireRing|60}}
+| {{Anchor|[[Skyrim:Gold Sapphire Ring|Gold Sapphire Ring]]}}<br>{{ID|000877CB|par=1}}
+| 0.25 || 500
+|
+|-
+|{{Anchor||000877ca}}{{icon|j|GoldEmeraldRing|60}}
+| {{Anchor|[[Skyrim:Gold Emerald Ring|Gold Emerald Ring]]}}<br>{{ID|000877CA|par=1}}
+| 0.25 || 700
+|
+|-
+|{{HE|000877c9}}| {{icon|j|GoldDiamondRing|60}}
+| {{Anchor|[[Skyrim:Gold Diamond Ring|Gold Diamond Ring]]}}<br>{{ID|000877C9|par=1}}
+| 0.25 || 900
+|
+|-
+|{{AL|C}}|{{icon|j|Nordic Ring|60}}
+| {{Anchor|Nordic Ring}} {{CC|Nordic Jewelry}}<br>{{ID|FExxx800|par=1}}
+| 0.25 || 270
+| [[Skyrim:Resist Frost|Resist frost]] enchantments are 25% stronger because of [[Skyrim:Stalhrim|Stalhrim]]
+|}
+
+==Amulets==
+All of the following amulets (except the Ancient Nord Amulet and East Empire Pendant) can be crafted at [[Skyrim:Forges|forges]]; the linked pages provide details on the materials necessary to craft the items.
+
+You may wear only one amulet or necklace at a time. The necklace will be visible if you are wearing certain types of clothing or armor.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|0009171b}}| {{icon|j|SilverNecklace|60}}
+| {{Anchor|[[Skyrim:Silver Necklace|Silver Necklace]]}}<br>{{ID|0009171B|par=1}}
+| 0.5 || 60
+|
+|-
+|{{HE|xx01aa0b}}| {{icon|j|Bone Hawk Amulet|60}}
+| {{Anchor|[[Skyrim:Bone Hawk Amulet|Bone Hawk Amulet]]}}&nbsp;{{DG}}<br>{{ID|xx01AA0B|par=1}}
+| 1 || 100
+|Two can be found in [[Skyrim:Volkihar Keep|Volkihar Keep]]:
+* One in Harkon's quarters, up the stairs from the torture set along the left wall before the door to the coffin, locked in a display case.
+* One in the coffin room along the far back wall, locked in a display case.
+Forging these requires materials dropped by [[Skyrim:Bone Hawk|Bone Hawks]]{{DG}} as well as [[Skyrim:Leather Strips|leather strips]].
+|-
+|{{AL|C}}| [[File:SR-icon-jewelry-TheGauldurAmulet.png|48px]]
+| {{Anchor|Ancient Nord Amulet}}<br>{{ID|000cc842|par=1}}
+| 1 || 100
+|rowspan=1|
+* Found in the [[Skyrim:Jarl's Longhouse (Falkreath)|Jarl's Longhouse]] ([[Skyrim:Falkreath|Falkreath]]), in a display case behind Jarl Siddgeir's bed.
+{{Bug|Can't be enchanted.|USKP|1.2.7}}
+|-
+|{{icon|j|East Empire Pendant}}
+| {{Anchor|East Empire Pendant}}&nbsp;{{DB}}<br>{{ID|xx024fa4|par=1}}
+| 0.5 || 25
+| 
+*Found in East Empire Company strongboxes throughout Solstheim. A list of all locations can be found [[Skyrim:Pain in the Necklace#East Empire Company Strongbox Locations|here]].
+*Can be sold to [[Skyrim:Fethis Alor|Fethis Alor]] for the repeatable quest [[Skyrim:Pain in the Necklace|Pain in the Necklace]].
+|-
+|{{HE|000877d5}}| {{icon|j|GoldNecklace|60}}
+| {{Anchor|[[Skyrim:Gold Necklace|Gold Necklace]]}}<br>{{ID|000877D5|par=1}}
+| 0.5 || 120
+|
+|-
+|{{HE|00087834}}| {{icon|j|SilverJeweledNecklace|60}}
+| {{Anchor|[[Skyrim:Silver Jeweled Necklace|Silver Jeweled Necklace]]}}<br>{{ID|00087834|par=1}}
+| 0.5 || 380
+|
+|-
+|{{HE|00087835}}| {{icon|j|GoldJeweledNecklace|60}}
+| {{Anchor|[[Skyrim:Gold Jeweled Necklace|Gold Jeweled Necklace]]}}<br>{{ID|00087835|par=1}}
+| 0.5 || 485
+|
+|-
+|{{HE|000877dc}}| {{icon|j|GoldRubyNecklace|60}}
+| {{Anchor|[[Skyrim:Gold Ruby Necklace|Gold Ruby Necklace]]}}<br>{{ID|000877DC|par=1}}
+| 0.5 || 550
+|
+|-
+|{{HE|00087832}}| {{icon|j|SilverSapphireNecklace|60}}
+| {{Anchor|[[Skyrim:Silver Sapphire Necklace|Silver Sapphire Necklace]]}}<br>{{ID|00087832|par=1}}
+| 0.5 || 580
+|
+|-
+|{{HE|00087833}}| {{icon|j|SilverEmeraldNecklace|60}}
+| {{Anchor|[[Skyrim:Silver Emerald Necklace|Silver Emerald Necklace]]}}<br>{{ID|00087833|par=1}}
+| 0.5 || 830
+|
+|-
+|{{HE|000877f1}}| {{icon|j|GoldDiamondNecklace|60}}
+| {{Anchor|[[Skyrim:Gold Diamond Necklace|Gold Diamond Necklace]]}}<br>{{ID|000877F1|par=1}}
+| 0.5 || 1200
+|
+|-
+|{{AL|C}}|{{icon|j|Nordic Amulet|60}}
+| {{Anchor|Nordic Amulet}} {{CC|Nordic Jewelry}}<br>{{ID|FExxx801|par=1}}
+| 0.5 || 325
+| [[Skyrim:Resist Frost|Resist frost]] enchantments are 25% stronger because of [[Skyrim:Stalhrim|Stalhrim]]
+|}
+
+==Circlets==
+When worn, circlets (including all [[Skyrim:Generic Magic Apparel|enchanted]] circlets) occupy a special "circlet" body part slot. Most helmets and other headgear occupy both the "circlet" and "hair" body part slots; meaning that, in general, circlets cannot be worn with any other headgear. Similarly, most hooded robes occupy both the "circlet" and "hair" body part slots in addition to the "body" part slot. However, there are a handful of items that occupy only the "hair" and not the "circlet" body part slot, allowing them to be worn simultaneously with any circlet:
+* Helmets:
+** [[Skyrim:Falmer Helmet|Falmer Helmets]]
+** The [[Skyrim:Jagged Crown|Jagged Crown]]
+** [[Skyrim:Penitus Oculatus Helmet|Penitus Oculatus Helmets]]
+** The [[Skyrim:Ancient Shrouded Cowl|Ancient Shrouded Cowl]] can only be worn simultaneously with circlets by Khajiit and Argonians.{{vn}}
+** The [[Skyrim:Thieves Guild Hood|Thieves Guild Hood]], the [[Skyrim:Guild Master's Hood|Guild Master's Hood]], the  [[Skyrim:Blackguard's Hood|Blackguard's Hood]], and the [[Skyrim:Torturer's Hood|Torturer's Hood]], but only if the player is a vampire. The hood will be marked as worn, but cannot be seen. Instead, the hair will disappear, making the player appear bald. Armor bonus from perks will be counted for both the hood and any worn circlet (if it has armor points and is classed as "Light Armor").
+* Robes:
+** [[Skyrim:Mythic Dawn Robes|Mythic Dawn Robes]] (hooded)
+** [[Skyrim:Archmage's Robes|Archmage's Robes]] (hooded)
+
+The [[Skyrim:Aetherial Crown|Aetherial Crown]]{{DG}}, [[Skyrim:Wedding Wreath|Wedding Wreath]], and all [[Skyrim:Dragon Priest Mask|Dragon Priest Masks]] occupy only the "circlet" body part slot, and can therefore also be worn simultaneously with any of the aforementioned bugged items. Note that wearing two pieces of armored headgear, even if both are the same weight, negates the armor bonuses from the [[Skyrim:Heavy Armor|Well Fitted]] and [[Skyrim:Light Armor|Custom Fit]] perks. Various bugs that allow multiple head items to be equipped are fixed by the [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]].
+
+Unlike [[#Amulets|amulets]] and [[#Rings|rings]], you cannot craft circlets at forges.
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Notes
+|-
+|{{HE|000166ff}}| {{icon|j|CopperAndOnyxCirclet|60}}
+| {{Anchor|Copper and Onyx Circlet}}<br>{{ID|000166FF|par=1}}
+| 2 || 50 ||
+|-
+|{{HE|00016730}}| {{icon|j|CopperAndMoonstoneCirclet|60}}
+| {{Anchor|Copper and Moonstone Circlet}}<br>{{ID|00016730|par=1}}
+| 2 || 100 ||
+|-
+|{{HE|00016731}}| {{icon|j|CopperAndRubyCirclet|60}}
+| {{Anchor|Copper and Ruby Circlet}}<br>{{ID|00016731|par=1}}
+| 2 || 150 ||
+|-
+|{{HE|000166fe}}| {{icon|j|CopperAndSapphireCirclet|60}}
+| {{Anchor|Copper and Sapphire Circlet}}<br>{{ID|000166FE|par=1}}
+| 2 || 200 ||
+|-
+|{{HE|000166e0}}| {{icon|j|SilverAndMoonstoneCirclet|60}}
+| {{Anchor|Silver and Moonstone Circlet}}<br>{{ID|000166E0|par=1}}
+| 2 || 250 ||
+|-
+|{{HE|0001671a}}| {{icon|j|JadeAndSapphireCirclet|60}}
+| {{Anchor|Jade and Sapphire Circlet}}<br>{{ID|0001671A|par=1}}
+| 2 || 300
+|-
+|{{HE|000166d6}}| {{icon|j|JadeAndEmeraldCirclet|60}}
+| {{Anchor|Jade and Emerald Circlet}}<br>{{ID|000166D6|par=1}}
+| 2 || 350 ||
+|-
+|{{HE|00016719}}| {{icon|j|SilverAndSapphireCirclet|60}}
+| {{Anchor|Silver and Sapphire Circlet}}<br>{{ID|00016719|par=1}}
+| 2 || 400 ||
+|-
+|{{HE|000166fd}}| {{icon|j|GoldAndRubyCirclet|60}}
+| {{Anchor|Gold and Ruby Circlet}}<br>{{ID|000166FD|par=1}}
+| 2 || 450 ||
+|-
+|{{HE|0001672f}}| {{icon|j|GoldAndEmeraldCirclet|60}}
+| {{Anchor|Gold and Emerald Circlet}}<br>{{ID|0001672F|par=1}}
+| 2 || 500 ||
+|-
+|{{AL|C}}|{{icon|j|Nordic Circlet|60}}
+| {{Anchor|Nordic Circlet}} {{CC|Nordic Jewelry}}<br>{{ID|FExxxD62|par=1}}
+| 2 || 325 || The only circlet you can make in a forge. Frost enchantments are 25% stronger.
+|}
+
+=={{Anchor|Backpacks}}{{CC|Adventurer's Backpack}}==
+{{Skyrim:Adventurer's Backpack Items}}
+==Notes==
+* Unlike in previous ''[[General:The Elder Scrolls|Elder Scrolls]]'' games, ''Skyrim''{{'}}s shirts, pants, and skirts are mixed together into a single "Clothes" item to optimize gameplay. It allows more NPCs to be in one place at the same time and reduces the chances of clothing glitches, mislabels, and errors.
+* Additional clothing that you cannot normally obtain and/or use is listed on the [[Skyrim:Unobtainable Items|Unobtainable Items]] page.
+* Three of the Circlets have only one of their listed gem in their models, with the other two gems being onyxes. These are the Copper and Moonstone Circlet, the Silver and Sapphire Circlet, and the Gold and Ruby Circlet.

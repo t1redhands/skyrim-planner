@@ -1,0 +1,1929 @@
+{{Trail|Items}}
+{{About|the type of apparel|the magic effect|Armor (effect)|the spells|Armor (spells)}}
+{{TOCright}}'''Armor''' is a type of apparel that is worn on the body to reduce damage from attacks. Armor comes in two varieties, corresponding to the two different skills governing armor usage: [[Skyrim:Heavy Armor|Heavy Armor]] and [[Skyrim:Light Armor|Light Armor]]. In addition, there are shields which provide an additional passive increase to armor rating (active blocking is governed by the [[Skyrim:Block|Block]] skill).
+
+Armor comes in several pieces which can be equipped independently of each other. These pieces are:
+* '''Armor''': covers your legs, chest and shoulders
+* '''Boots''': covers your feet and ankles
+* '''Gauntlets''': covers your hands up to your elbow
+* '''Helmet''': covers your head
+* '''Shield''': protect and block attacks
+
+The [[SR:Divine Crusader|Divine Crusader]] [[SR:Creation Club|Creation]] adds an additional type of armor: the [[SR:Fastened Shield of the Crusader|Fastened Shield of the Crusader]], which is a '''Shoulder''' piece.
+
+In addition to standard pieces of armor, two necklaces in the game provide an armor bonus: the [[Skyrim:Locket of Saint Jiub|Locket of Saint Jiub]]{{DG}}, and the [[Skyrim:Amulet of Articulation|Amulet of Articulation]].
+
+== Armor Materials ==
+Armor appears in several different materials and styles, which determine the quality of the armor. Higher quality armor provides better protection (but is generally heavier). Which quality armor you will find is generally determined based on your character's level. 
+
+The following tables describe the ''base'' level at which an armor type begins to show up randomly for the player. Lower level armor will also randomly appear, but so will higher level armors in certain situations: potentially up to at least 12 levels "early". Enchanted versions of each armor type will begin to appear one level later; see [[Skyrim:Generic Magic Apparel|Generic Magic Apparel]] for more information. See [[Skyrim:Leveled Lists|Leveled Lists]] for details on how these lists are used to determine the probabilities of individual items appearing.  Although [[Skyrim:Dragonscale Armor|Dragonscale]], [[Skyrim:Dragonplate Armor|Dragonplate]], and [[Skyrim:Daedric Armor|Daedric]] armors can all be found in random loot, once your level is high enough, the chances of finding any of these armor types is 20 times less than finding other armor types.
+
+Most armor from the list below can be created at [[Skyrim:Forge|Forges]], by using the [[Skyrim:Smithing|Smithing]] skill. The ability to make armor is not dependent upon your character's level, but is instead dependent upon which Smithing perks you have unlocked. All standard armor can also be tempered at [[Skyrim:Workbench|Workbenches]], if you have the necessary auxiliary item. Tempering is twice as effective if you have unlocked the perk necessary to forge that armor. Tempering an enchanted version of the armor (whether custom-[[Skyrim:Enchanting|enchanted]], or [[Skyrim:Generic Magic Apparel|generic]]) is similar to tempering the base version - it requires the same auxiliary item, and is twice as effective if you have unlocked the forging perk - but also requires the [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]] perk to be unlocked.
+
+Jewelry (specifically, [[Skyrim:Amulet|amulets/necklaces]] and [[Skyrim:Ring|rings]]), can be created at any blacksmith's forge from ingots and jewels, but these are not counted as protective armor (the two exceptions to this are noted in the section above); similarly, [[Skyrim:Circlet|circlets/crowns]] - like common [[Skyrim:Clothing|clothing]] - have no armor/protection value and cannot be crafted.  The [[Skyrim:Aetherial Crown|Aetherial Crown]], which is a unique, [[Skyrim:Lost to the Ages|quest-related]], crafted item (added by the [[Skyrim:Dawnguard|Dawnguard]] add-on), unlike other jewelry items, is eligible for improvement by ordinary [[Skyrim:Smithing|smithing]], but still only ever bears an armor rating of 0.
+
+The [[Skyrim:Skyforge|Skyforge]] allows you to create [[Skyrim:Ancient Nord Armor|Ancient Nord armor]], a type of heavy armor, if you finish the [[Skyrim:Companions|Companions]] questline. Also, it may be found from level 1 onward in a few locations.  Additionally, there are several other wearable armor sets/pieces that are made available as [[Skyrim:Specialty Gear|loot/specialty gear]] or as [[Skyrim:Unique Items|unique/quest]] items; generally, these can all be improved by [[Skyrim:Smithing|smithing]] and possibly fortified with [[Skyrim:Enchantments|enchantments]] (if not enchanted already), though they cannot be forged as player-created items. (''See also:'' [[Skyrim:Magic Items|Magic Items]] and [[Skyrim:Artifacts|Artifacts]])
+
+The [[Skyrim:Dragonborn|Dragonborn add-on]] adds craftable [[Skyrim:Bonemold|Bonemold]] (heavy), [[Skyrim:Chitin|Chitin]] (light/heavy), [[Skyrim:Nordic|Nordic Carved]] (heavy), and [[Skyrim:Stalhrim|Stalhrim]] (light/heavy) armors. 
+
+The [[Skyrim:Dawnguard|Dawnguard add-on]] adds [[Skyrim:Falmer Equipment| 2 generic Falmer armors]] (heavy) and [[Skyrim:Vampire Armor|Vampire armors]] (light), which may be worn/improved but cannot be forged by the player.
+
+{|class="wikitable sortable" style="display:inline-table;text-align:center;"
+|+ [[sr:Light Armor|Light Armor]] by Material (Numerical Values are for a full, matched suit)
+|-
+! Level !! [[Skyrim:Light Armor|Light Armor]] !! Perk to [[Skyrim:Forge|Forge]] !! Item for [[Skyrim:Workbench|Tempering]]
+!width=22 data-sort-type=number|Weight {{Weight Icon}}
+!width=22 data-sort-type=number|Rating {{Armor Rating Icon}}
+!width=22 data-sort-type=number|Weight with shield {{Weight Icon}}
+!width=22 data-sort-type=number|Rating with shield {{Armor Rating Icon}}
+|-
+|rowspan=5|1 ||[[sr:Forsworn Armor|Forsworn]] || Cannot be forged || [[Skyrim:Leather|Leather]] || 12 || 52 || 12{{intnote|No Shield|^}} || 52{{intnote|No Shield|^}}
+|-
+| [[Skyrim:Hide Armor#Other|Fur]] || Cannot be forged || [[Skyrim:Leather|Leather]] || 9 || 46 || 9{{intnote|No Shield|^}} || 46{{intnote|No Shield|^}}
+|-
+| [[Skyrim:Hide Armor|Hide]] || No perk required || Leather || 9 || 40 || 13 || 55
+|-
+| [[Skyrim:Studded Armor|Studded]] || No perk required || [[Skyrim:Iron Ingot|Iron Ingot]] || 10{{intnote|studded|^^}} || 43{{intnote|studded|^^}} || 14{{intnote|No Shield|^^ ^}} || 58{{intnote|No Shield|^^ ^}}
+|-
+| [[Skyrim:Vampire Armor|Vampire]]{{DG}}{{intnote|vampire|^^^}} || Cannot be forged; [[sr:Advanced Armors|Advanced Armors]] to temper.  || [[Skyrim:Leather|Leather]] || 8.5 || 40 || 8.5{{intnote|No Shield|^}} || 40{{intnote|No Shield|^}}
+|-
+|6 || [[Skyrim:Leather Armor|Leather]] || No perk required || Leather || 12 || 52 || 16{{intnote|No Shield|^}} || 67{{intnote|No Shield|^}}
+|-
+| 11 || [[Skyrim:Chitin Armor|Chitin]]{{DB}} || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Chitin Plate|Chitin Plate]] || 8 || 60.5 || 16 || 85
+|-
+|12 || [[Skyrim:Elven Armor|Elven]] || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Refined Moonstone|Refined Moonstone]] || 7 || 58 || 11 || 79
+|-
+| 19 || [[Skyrim:Scaled Armor|Scaled]] || [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Corundum Ingot|Corundum Ingot]] || 12 || 64 || 12{{intnote|No Shield|^}} || 64{{intnote|No Shield|^}}
+|-
+| 27 || [[Skyrim:Elven Gilded Armor|Elven Gilded]] || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]] || 7 || 64 || 11 || 85
+|-
+| 35 || [[Skyrim:Stalhrim Armor|Stalhrim]]{{DB}} || [[Skyrim:Ebony Smithing|Ebony Smithing]]{{intnote|stahlrim|††}} || [[Skyrim:Stalhrim|Stalhrim]] || 13 || 78.5 || 23{{intnote|No Shield|^}} || 108{{intnote|No Shield|^}}
+|-
+| 36 || [[Skyrim:Glass Armor|Glass]] || [[Skyrim:Glass Smithing|Glass Smithing]] || [[Skyrim:Refined Malachite|Refined Malachite]] || 13 || 76 || 19 || 103
+|-
+| 46 || [[Skyrim:Dragonscale Armor|Dragonscale]] || [[Skyrim:Dragon Armor|Dragon Armor]] || [[Skyrim:Dragon Scales|Dragon Scales]] || 20 || 82 || 26 || 111
+|}
+
+{|class="wikitable sortable"  style="display:inline-table;text-align:center;"
+|+ [[sr:Heavy Armor|Heavy Armor]] by Material (Numerical Values are for a full, matched suit)
+|-
+! Level !! [[Skyrim:Heavy Armor|Heavy Armor]] !! Perk to [[Skyrim:Forge|Forge]] !! Item for [[Skyrim:Workbench|Tempering]]
+!width=22 data-sort-type=number|Weight {{Weight Icon}}
+!width=22 data-sort-type=number|Rating {{Armor Rating Icon}}
+!width=22 data-sort-type=number|Weight with shield {{Weight Icon}}
+!width=22 data-sort-type=number|Rating with shield {{Armor Rating Icon}}
+|-
+|rowspan=6| 1|| [[Skyrim:Iron Armor|Iron]] || No perk required || [[Skyrim:Iron Ingot|Iron Ingot]] || 46 || 60|| 58 || 80
+|-
+| [[Skyrim:Ancient Nord Armor|Ancient Nord]] || None to forge, [[Skyrim:Daedric Smithing|Daedric Smithing]] to temper.{{intnote|ancientnord|‡‡}} || [[Skyrim:Iron Ingot|Iron Ingot]] || 41 || 60|| 41{{intnote|No Shield|^}} || 60{{intnote|No Shield|^}}
+|-
+| [[Skyrim:Banded Iron Armor|Banded Iron]] || No perk required || [[Skyrim:Corundum Ingot|Corundum Ingot]] || 51 || 63 || 56 || 85
+|-
+| rowspan=3 | [[Skyrim:Bonemold|Bonemold]]{{DB}}{{intnote|bonemold|^^^^}}
+| rowspan=3 | [[Skyrim:Steel Smithing|Steel Smithing]]
+| rowspan=3 | [[Skyrim:Bone_Meal|Bone Meal]]
+| data-sort-value=49 | 49 (No Pauldrons)
+| data-sort-value=73 | 73 (No Pauldrons)
+| data-sort-value=57 | 57
+| data-sort-value=94.5 | 94.5
+|-
+| data-sort-value=51 | 51 (Pauldrons)
+| data-sort-value=74 | 74 (Pauldrons)
+| data-sort-value=59 | 59
+| data-sort-value=95.5 | 95.5
+|-
+| data-sort-value=70 | 70 (Improved)
+| data-sort-value=79 | 79 (Improved)
+| data-sort-value=81 | 81
+| data-sort-value=105 | 105
+|-
+| 2 || [[Skyrim:Steel Armor|Steel]] || [[Skyrim:Steel Smithing|Steel Smithing]] || [[Skyrim:Steel Ingot|Steel Ingot]] || 52 || 72 || 64 || 96
+|-
+| 11 || [[Skyrim:Chitin|Chitin]]{{DB}} || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Chitin Plate|Chitin Plate]] || 51 || 87 || 59{{intnote|No Shield|^}} || 111.5{{intnote|No Shield|^}}
+|-
+| 12 || [[Skyrim:Dwarven Armor|Dwarven]] || [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]] || 75 || 78 || 87 || 104
+|-
+| 15 || [[Skyrim:Falmer Hardened Armor|Falmer Hardened]]{{DG}} || Cannot be forged; [[sr:Advanced Armors|Advanced Armors]] to temper. || [[Skyrim:Chaurus_Chitin|Chaurus Chitin]] || 65 || 78 || 80{{intnote|No Shield|^}} || 106{{intnote|No Shield|^}}
+|-
+| rowspan=2 | 18 || [[Skyrim:Steel Plate Armor|Steel Plate]] || [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Corundum Ingot|Corundum Ingot]] || 59 || 87 || 71{{intnote|No Shield|^}} || 111{{intnote|No Shield|^}}
+|-
+| [[Skyrim:Nordic|Nordic]]{{DB}} || [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]] || 56 || 93 || 66 || 119.5
+|-
+| 25 || [[Skyrim:Orcish Armor|Orcish]] || [[Skyrim:Orcish Smithing|Orcish Smithing]] || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]] || 57 || 90 || 71 || 120
+|-
+| rowspan=2 | 30
+| rowspan=2 | [[Skyrim:Falmer_Heavy_Armor|Falmer Heavy]]{{DG}}
+| rowspan=2 | Cannot be forged; [[sr:Advanced Armors|Advanced Armors]] to temper.
+| rowspan=2 | [[Skyrim:Chaurus_Chitin|Chaurus Chitin]]
+| data-sort-value=55 | 55 (Heavy Helm)
+| data-sort-value=96 | 96 (Heavy Helm)
+| data-sort-value=70 | 70{{intnote|No Shield|^}}
+| data-sort-value=124 | 124{{intnote|No Shield|^}}
+|-
+| data-sort-value=53 | 53 (Shellbug)
+| data-sort-value=97 |97 (Shellbug)
+| data-sort-value=68 | 68{{intnote|No Shield|^}}
+| data-sort-value=125 | 125{{intnote|No Shield|^}}
+|-
+| 32 || [[Skyrim:Ebony Armor|Ebony]] || [[Skyrim:Ebony Smithing|Ebony Smithing]] || [[Skyrim:Ebony Ingot|Ebony Ingot]] || 62 || 96 || 76 || 128
+|-
+| 35 || [[Skyrim:Stalhrim|Stalhrim]]{{DB}} || [[Skyrim:Ebony Smithing|Ebony Smithing]]{{intnote|stahlrim|††}} || [[Skyrim:Stalhrim|Stalhrim]] || 59 || 102 || 69{{intnote|No Shield|^}} || 131.5{{intnote|No Shield|^}}
+|-
+| 40 || [[Skyrim:Dragonplate Armor|Dragonplate]] || [[Skyrim:Dragon Armor|Dragon Armor]] || [[Skyrim:Dragon Scales|Dragon Scales]] or [[Skyrim:Dragon Bone|Dragon Bone]]{{intnote|dragonplate|†}} || 64 || 102 || 79 || 136
+|-
+| 48 || [[Skyrim:Daedric Armor|Daedric]] || [[Skyrim:Daedric Smithing|Daedric Smithing]]{{intnote|daedric|‡}} || [[Skyrim:Ebony Ingot|Ebony Ingot]] || 81 || 108|| 96 || 144
+|}
+{{NewLeft}}
+{{Note|No Shield|^|Those armors sets have no matching shield so they are given one of the same material, if any available}}
+{{note|studded|^^|Studded armor only comes in a cuirass, so there is no studded suit - the values listed here pair it with a hide suit.}}
+{{note|vampire|^^^|Vampire armor has no helmet.}}
+{{note|bonemold|^^^^|Improved Bonemold equipment must be made - it will not be randomly found.}}
+{{Note|Dragonplate|†|Dragonplate Cuirasses and Shields are tempered using Dragon Bone; all other Dragonplate armor is improved using Dragon Scales.}}
+{{Note|Stahlrim|††|Forging Stalhrim armor also requires completion of the quest [[Skyrim:A New Source of Stalhrim|A New Source of Stalhrim]].}}
+{{Note|Daedric|‡|All Daedric armor can also be made at the [[Skyrim:Atronach Forge|Atronach Forge]] (except the boots, see [[Skyrim:Atronach Forge#Bugs|Atronach Forge bugs]]), in which case the Daedric Smithing perk is not needed, but instead the [[Skyrim:Sigil Stone|Sigil Stone]] must be obtained. Tempering armor created at the Atronach Forge is still augmented by the Daedric Smithing perk.}}
+{{Note|AncientNord|‡‡|{{pc22}} Version 1.2.7 of the [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]] moves the Ancient Nord armor to the "Steel" category, and makes it require [[Skyrim:Steel Smithing|Steel Smithing]] to forge.}}
+
+== Armor Rating ==
+[[File:SR-graph-Armor and Durability.png|thumb|right|Armor Ratios]]
+
+For all of the armor listed on this site, the provided armor ratings are the '''base armor ratings'''. The actual protection your character will receive from the armor is dependent upon your skill in that armor type and any relevant perks that you have unlocked. The rating can also be improved by using [[Skyrim:smithing|smithing]] to change the armor's quality to "Fine", "Superior", "Exquisite", "Flawless", "Epic", or "Legendary".
+
+The armor rating only reduces physical damage, not magical damage. Each point of armor rating reduces damage by 0.12%. 
+
+'''Approximate formulas''':
+*''Item Armor rating''&nbsp;= CEILING[ (''base armor rating''&nbsp;+ ''item quality'')&nbsp;&times; (1&nbsp;+ 0.4&nbsp;&times; (''skill''&nbsp;+ ''skill effect'')/100) ]&nbsp;&times; (1&nbsp;+ ''unison perk''<sup>&dagger;</sup>&nbsp;) &times; (1 + ''[[Skyrim:Matching Set|Matching Set]]'')&nbsp;&times; (1&nbsp;+ ''armor perk''<sup>&Dagger;</sup>)
+*''Shield rating''&nbsp;= CEILING[ (''base shield rating''&nbsp;+ ''item quality'')&nbsp;&times; (1&nbsp;+ 0.4&nbsp;&times; (''skill''&nbsp;+ ''skill effect'')/100) ]&nbsp;&times; (1&nbsp;+ ''unison perk''<sup>&dagger;</sup>&nbsp;) &times; (1 + ''[[Skyrim:Matching Set|Matching Set]]'')
+*''Displayed armor rating''&nbsp;= SUM(''item armor rating'')&nbsp;+ ''shield rating''&nbsp;+ ''armor effects''
+*''Base damage reduction of 3% per piece worn'' = Hidden armor rating of 25 per piece worn, including shields
+*''Damage reduction percentage''&nbsp;= ''displayed armor rating''&nbsp;&times; 0.12 + (3.00 &times; ''number of pieces worn).''
+&dagger; [[Skyrim:Custom Fit|Custom Fit]] for light armor or [[Skyrim:Well Fitted|Well Fitted]] for heavy armor<br />
+&Dagger; [[Skyrim:Agile Defender|Agile Defender]] for light armor or [[Skyrim:Juggernaut|Juggernaut]] for heavy armor<br />
+
+Clothing and robes do not benefit from the hidden armor rating bonus.
+
+For NPCs the skill coefficient is 1.5 instead of 0.4, and 1.25 ^ 2 (1.5625) instead of 1.25 for Custom Fit.
+
+Note the difference between ''skill'' effects (e.g. Fortify Light/Heavy Armor equipment, [[Skyrim:Ancient Knowledge|Ancient Knowledge]]) and ''armor'' effects (e.g. [[Skyrim:Oakflesh|Oakflesh]], [[Skyrim:The Lord Stone|The Lord Stone]]).
+
+Your durability against physical attacks (i.e. the amount of raw damage you can sustain) is proportional to 100/(100&nbsp;&minus; damage reduction percentage). This results in hyperbolic growth in your physical durability, up to the cap of 80% damage reduction giving a &times;5 multiplier to your physical durability. Thus, the more armor rating you have, the more each additional point of armor rating is worth. The graph displayed shows the multiplier to your physical durability relative to no armor based on the displayed armor rating, assuming you are wearing all four pieces of armor (+12% hidden damage reduction) and have no other effects.
+
+=== Armor Rating Example ===
+
+* Dragonscale Armor
+* Dragonscale Boots
+* Dragonscale Gauntlets
+* Dragonscale Helmet
+* Dragonscale Shield
+* 100 Light Armor Skill 
+* 100 Smithing Skill (''item quality bonus'' of +20 or +10)
+* 5/5 [[Skyrim:Agile Defender|Agile Defender]]
+* [[Skyrim:Custom Fit|Custom Fit]]
+* [[Skyrim:Matching Set|Matching Set]]
+
+''Dragonscale Armor rating''
+* CEILING [(41 + 20) * (1 + 0.4 * (100/100))] * 1.25 * 1.25 * 2
+* = 86 * 1.25 * 1.25 * 2 
+* = 268.75
+''Dragonscale Helmet rating''
+* CEILING [ (17 + 10) * (1 + 0.4 * (100/100)) ] * 1.25 * 1.25 * 2
+* = 118.75
+''Dragonscale Boots rating'' & ''Dragonscale Gauntlets rating''
+* CEILING [ (12 + 10) * (1 + 0.4 * (100/100)) ] * 1.25 * 1.25 * 2
+* = 96.875
+''Dragonscale Shield rating''
+* CEILING [ (29 + 10) * (1 + 0.4 * (100/100)) ] * 1.25 * 1.25
+* = 85.9375
+
+''Displayed armor rating''
+* 268.75 + 118.75 + 96.875 + 96.875 + 85.9375
+* = 667.1875
+
+== Armor Cap ==
+Regardless of your displayed armor rating, you can never exceed 80% physical damage reduction, the '''armor cap'''. You need 667 armor to reach the armor cap. However, each armor piece or shield contributes a hidden +25 to your armor rating for a total +125 bonus. Your displayed armor rating does not record this bonus. Therefore, you need a displayed armor rating of 567 while wearing all four pieces of armor, or 542 while wearing all four pieces of armor and a shield, to achieve 80% physical damage reduction. 
+
+However, even 667 armor is unable to reduce 80% of physical damage from armor penetration attacks: enhanced crossbows ignore 50% of armor, maces using the Bone Breaker perk ignore 25%/50%/75% armor, and warhammers using the Skullcrusher perk ignore 25%/50%/75% armor penetration. To achieve 80% physical damage reduction against an attack that ignores 75% of armor, you need to achieve an armor rating of 2,668: 667 ÷ (1 - 0.75) = 2,668. This means that if you are wearing four pieces of armor, you need to achieve a displayed armor rating of  2,268: 567 ÷ (1 - 0.75) = 2,268. 
+
+There are a few different ways you can reach the armor cap:
+
+'''Light / Heavy armor skills only'''
+
+Let's say you have 100 armor skill and ''all'' relevant armor perks acquired and active (i.e. you're wearing a matched set of all light or all heavy armor):
+* Without a shield your armor must provide a base armor rating of about 130 (567 / (1.4 * 1.25 * 1.25 * 2)) to reach the armor cap.
+** ''Heavy Armor'': The best heavy armor, [[Skyrim:Daedric#Daedric_Armor|Daedric armor]] has 108 base armor rating &rarr; 481 displayed armor rating &rarr; 69.8% damage reduction.
+** ''Light Armor'': The best light armor, [[Skyrim:Dragon_Items#Dragonscale_Armor|Dragonscale armor]] has 82 base armor rating &rarr; 362 displayed armor rating &rarr; 55.5% damage reduction
+* With a shield, you  must reach a displayed armor rating of 542 to reach the armor cap.
+** ''Heavy Armor'': Daedric armor with a matching shield yields 560 displayed armor rating, enough to reach the armor cap.  The next best Heavy Armor, [[Skyrim:Dragon_Items#Dragonplate_Armor|Dragonplate]] with a matching shield provides 525 displayed armor rating &rarr; 78.0% damage reduction
+** ''Light Armor'': Dragonscale armor with a matching shield yields 426 displayed armor rating &rarr; 66.2% damage reduction
+
+'''Light / Heavy armor skills + magic effects'''
+
+While it's impossible for a light armor user to reach the cap relying only on Light Armor skill and perks, you can still reach the cap without using Smithing, Enchanting, or Alchemy effects.  A player with maxed out Light Armor skills, a full set of Dragonscale armor, and a Dragonscale shield will have a displayed armor rating of 423 and a 65.66% damage reduction, 119 less than the 542 displayed armor rating needed to reach the armor cap.  Activating the Lord Stone will boost displayed armor rating to 473 and a 71.66% damage reduction.  Casting the [[Skyrim:Armor_(spells)|armor spells]] Ironflesh or Ebonyflesh will boost displayed armor rating over 542, reaching the 80% armor cap.
+
+'''Light / Heavy armor skills + smithing'''
+
+Reaching the armor cap becomes significantly easier with smithing.  Let's say you have 100 smithing and all relevant smithing perks in addition to 100 armor skill and all relevant armor perks.
+* Improving a piece of armor to Legendary quality adds +10 to the armor rating, or +20 if the piece is chest armor.  This means that improving a fully matched armor set to legendary boosts the total base armor rating by 20 + 10 + 10 + 10 = 50.
+* Without a shield your armor must provide a base armor rating of about 80 to reach the armor cap, since 80 + 50 = 130 (567 / (1.4 * 1.25 * 1.25 * 2)).
+** ''Heavy armor'': A full set of [[Skyrim:Chitin#Chitin Armor|Chitin]] or [[Skyrim:Advanced_Armors#Steel_Plate_Armor|Steel Plate armor]] provides 87 base armor rating, so any tempered set of heavy armor with equal or greater base armor rating will allow you to reach the armor cap
+** ''Light armor'': Only Dragonscale armor provides a high enough armor rating (82) to reach the armor cap with tempering
+* With a shield, you must reach a displayed armor rating of 542 to reach the armor cap.
+** ''Heavy Armor'': A full set of tempered [[Skyrim:Iron#Iron_Armor|Iron Armor]] with a matching shield yields a displayed armor rating of 547, enough to reach the armor cap.  This means that any matching set of heavy armor equal or higher in quality to iron armor can be used to reach the armor cap.  Since iron armor is the lowest quality heavy armor, this means that any tempered heavy armor set will reach the armor cap
+** ''Light armor'': A full set of tempered [[Skyrim:Elven#Elven_Armor|Elven Armor]] with a matching shield yields a displayed armor rating of 550, enough to reach the armor cap.  This means that any matching set of light armor equal or higher in quality to elven armor can be used to reach the armor cap.
+
+'''Light / Heavy armor skills + smithing + alchemy + enchanting'''
+
+With Fortify Smithing enchanted apparel and Fortify Smithing potions you can boost Smithing even further, which can potentially allow ''any'' material to reach the cap, without needing any further benefits (such as the [[sr:Notched Pickaxe|Notched Pickaxe]]); with maxed out enchanting and alchemy and the appropriate perks, using fortify enchanting potions to make better fortify alchemy apparel to make better fortify enchanting potions, to provide the best available Smithing bonuses, you will add 134 total tempering to any suit ''even without a perk'', which is above the 130 rating mentioned above.  This means you could temper a theoretical 0-rating suit (which doesn't exist) high enough to hit the cap, and you don't need a shield to get there.  ''With'' a tempering perk, you will nearly double this, adding 259 to any suit you make; this is practically sufficient to drop any non-chest piece from any suit, and even with the loss of ''two'' armor perks (for wearing a full suit and wearing a matched set), you will still hit the cap, allowing you to walk around without a helmet, if you like - just remember, you will also lose any ''other'' armor perks you have that trigger from having a piece in all 4 wearable slots.
+
+== Notes ==
+* Clothes such as robes and other apparel do not count as armor, and as such do not benefit from the hidden armor rating bonus.
+* [[Skyrim:Custom Fit|Custom Fit]], [[Skyrim:Well Fitted|Well Fitted]], and [[Skyrim:Matching Set|Matching Set]] perks are applied to shields if the four pieces of worn armor (armor, helmet, gloves, boots) match appropriately. The shield does not have to be of the same set, or even the same type (light or heavy).
+* Shields do not benefit from either [[Skyrim:Agile Defender|Agile Defender]] or [[Skyrim:Juggernaut|Juggernaut]], and do not advance the light or heavy armor skills when struck.
+* Armor rating/damage reduction does not affect the speed at which the skill is trained.
+* If you drop a piece of armor or clothing in front of an NPC, generally in a city or town, they may run up to you and [[Skyrim:World Interactions#"Can I have that armor?"|ask you]] if you are throwing it away.
+* [[Skyrim:Guard Dialogue#Reactions_to_Player.27s_Equipment|Guards]] may comment on what kind of armor you're wearing, depending on what faction they belong to and what you're wearing at the time.
+* With version 1.2.1 of the [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]], the Matching Set perks for Light Armor and Heavy Armor have had their conditions changed so that they're now looking for >= 4 instead of just == 4 to qualify for the perk.
+
+== Light Armor ==
+{| class="vtop" style="width:100%"
+|width=33%|
+
+=== {{Anchor||Light Armor}}Armor ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-HideArmor.png
+ |name=Hide Armor
+ |id=00013911|weight=5|value=50|damage=20|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-FurArmor4.png|48px]][[File:SR-icon-armor-FurArmor3.png|48px]]
+ |name=Fur Armor
+ |id=0010594f,0006f393|idsep=<br>|weight=6|value=50|damage=23|warmth=54}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-FurArmor1.png|48px]][[File:SR-icon-armor-FurArmor2.png|48px]]
+ |name=Fur Armor
+ |id=0010594b,0010594d|idsep=<br>|weight=6|value=50|damage=23|warmth=17}}
+{{Item Data
+ |icon=SR-icon-armor-StuddedArmor.png
+ |name=Studded Armor
+ |id=0001b3a2|weight=6|value=75|damage=23|warmth=10}}
+{{Item Data
+ |icon=SR-icon-armor-LeatherArmor.png
+ |name=Leather Armor
+ |id=0003619e|weight=6|value=125|damage=26|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-Vampire_Armor_xx0191f3_(m).png|48px]][[File:SR-icon-armor-Vampire_Armor_xx0142c7_(m).png|48px]][[File:SR-icon-armor-Vampire_Armor_xx0191f2_(m).png|48px]]
+ |name=Vampire Armor
+ |displayname=Vampire Armor{{DG}}
+ |id=xx0191f3,xx0142c7,xx0191f2|idsep=<br>|weight=5|value=175|damage=25|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-ForswornArmor.png
+ |name=Forsworn Armor
+ |id=000d8d50|weight=6|value=100|damage=26|warmth=17}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenArmor.png
+ |name=Elven Armor
+ |id=000896a3|weight=4|value=225|damage=29|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Armor.png
+ |name=Chitin Armor
+ |displayname=Chitin Armor{{DB}}
+ |id=xx01cd87|weight=4|value=240|damage=30|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-ScaledArmor.png
+ |name=Scaled Armor
+ |id=0001b3a3|weight=6|value=350|damage=32|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-ScaledHornArmor.png
+ |name=Scaled Horn Armor
+ |displayname=Scaled Horn Armor<sup>†</sup>
+ |id=0001b3a4|weight=6|value=350|damage=32|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenArmor.png
+ |name=Elven Gilded Armor
+ |id=0001392a|weight=4|value=550|damage=35|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-Glass Armor Male.png|48px]][[File:SR-icon-armor-Glass Armor Female.png|48px]]
+ |name=Glass Armor
+ |id=00013939|weight=7|value=900|damage=38|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Light Armor.png
+ |name=Stalhrim Light Armor
+ |displayname=Stalhrim Light Armor{{DB}}
+ |id=xx01cda2|weight=7|value=925|damage=39|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-DragonscaleArmor.png
+ |name=Dragonscale Armor
+ |id=0001393e|weight=10|value=1500|damage=41|warmth=54}}
+|}
+<sup>†</sup> {{Bug|Scaled Horn Armor cannot be tempered or forged, because it was completely left out of the appropriate list.|nobullet=1|USKP|1.2.6}}
+|width=33%|
+
+=== {{Anchor||Light Boots}}Boots ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-HideBoots.png
+ |name=Hide Boots
+ |id=00013910|weight=1|value=10|damage=5|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-FurBoots.png
+ |name=Fur Boots
+ |displayname=Fur Boots<sup>‡</sup>
+ |id=000a6d7f|weight=2|value=5|damage=5|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-FurShoes.png
+ |name=Fur Shoes
+ |id=0006f398|weight=2|value=4|damage=6|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-LeatherBoots.png
+ |name=Leather Boots
+ |id=00013920|weight=2|value=25|damage=7|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ForswornBoots.png
+ |name=Forsworn Boots
+ |id=000d8d4e|weight=2|value=20|damage=7|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Vampire_Boots.png
+ |name=Vampire Boots
+ |displayname=Vampire Boots{{DG}}
+ |id=xx00b5de|weight=2|value=25|damage=7|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenBoots.png
+ |name=Elven Boots
+ |id=0001391a|weight=1|value=45|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Boots.png
+ |name=Chitin Boots
+ |displayname=Chitin Boots{{DB}}
+ |id=xx01cd86|weight=1|value=50|damage=8.5|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ScaledBoots.png
+ |name=Scaled Boots
+ |id=0001b39f|weight=2|value=70|damage=9|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Glass Boots.png
+ |name=Glass Boots
+ |id=00013938|weight=2|value=190|damage=11|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Light Boots.png
+ |name=Stalhrim Light Boots
+ |displayname=Stalhrim Light Boots{{DB}}
+ |id=xx01cd7e|weight=2|value=215|damage=11.5|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-DragonscaleBoots.png
+ |name=Dragonscale Boots
+ |id=0001393d|weight=3|value=300|damage=12|warmth=24}}
+|}
+<sup>‡</sup> Fur Boots and Fur Gauntlets count as Stormcloak/guard equipment, and therefore do not give the [[Skyrim:Light Armor#Matching_Set|Matching Set]] bonus if worn with other fur equipment.
+|width=33%|
+
+=== {{Anchor||Light Gauntlets}}Gauntlets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-HideBracers.png
+ |name=Hide Bracers
+ |id=00013912|weight=1|value=10|damage=5|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-FurGauntlets.png
+ |name=Fur Gauntlets
+ |displayname=Fur Gauntlets<sup>‡</sup>
+ |id=000a6d7d|weight=2|value=5|damage=5|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-FurBracers.png
+ |name=Fur Bracers
+ |id=0006f39b|weight=1|value=10|damage=6|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-LeatherBracers.png
+ |name=Leather Bracers
+ |id=00013921|weight=2|value=25|damage=7|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ForswornGauntlets.png
+ |name=Forsworn Gauntlets
+ |id=000d8d55|weight=2|value=20|damage=7|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Vampire_Gauntlets.png
+ |name=Vampire Gauntlets
+ |displayname=Vampire Gauntlets{{DG}}
+ |id=xx01a51f|weight=1.5|value=25|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenGauntlets.png
+ |name=Elven Gauntlets
+ |id=0001391c|weight=1|value=45|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Bracers.png
+ |name=Chitin Bracers
+ |displayname=Chitin Bracers{{DB}}
+ |id=xx01cd88|weight=2|value=50|damage=8.5|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ScaledBracers.png
+ |name=Scaled Bracers
+ |id=0001b3a0|weight=2|value=70|damage=9|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Glass Gauntlets.png
+ |name=Glass Gauntlets
+ |id=0001393a|weight=2|value=190|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Light Bracers.png
+ |name=Stalhrim Light Bracers
+ |displayname=Stalhrim Light Bracers{{DB}}
+ |id=xx01cda5|weight=2|value=215|damage=11.5|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-DragonscaleGauntlets.png
+ |name=Dragonscale Gauntlets
+ |id=0001393f|weight=3|value=300|damage=12|warmth=24}}
+|}
+|-
+|width=33%|
+
+=== {{Anchor||Light Helmets}}Helmets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-HideHelmet.png
+ |name=Hide Helmet
+ |id=00013913|weight=2|value=25|damage=10|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-FurHelmet.png
+ |name=Fur Helmet
+ |id=0006f39e|weight=1|value=23|damage=11|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-LeatherHelmet.png
+ |name=Leather Helmet
+ |id=00013922|weight=2|value=60|damage=12|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-ForswornHeaddress.png
+ |name=Forsworn Headdress
+ |id=000d8d52|weight=2|value=50|damage=12|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenHelmet.png
+ |name=Elven Helmet
+ |id=0001391d|weight=1|value=110|damage=13|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Helmet.png
+ |name=Chitin Helmet
+ |displayname=Chitin Helmet{{DB}}
+ |id=xx01cd89|weight=1|value=125|damage=13.5|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-ScaledHelmet.png
+ |name=Scaled Helmet
+ |id=0001b3a1|weight=2|value=175|damage=14|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Glass Helmet.png
+ |name=Glass Helmet
+ |id=0001393b|weight=2|value=450|damage=16|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Light Helmet.png
+ |name=Stalhrim Light Helmet
+ |displayname=Stalhrim Light Helmet{{DB}}
+ |id=xx01cda3|weight=2|value=465|damage=16.5|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-DragonscaleHelmet.png
+ |name=Dragonscale Helmet
+ |id=00013940|weight=4|value=750|damage=17|warmth=29}}
+|}
+
+<sup>†</sup> Netch Leather Helmets and other armor seem to count as leather armor so cannot be improved by double since no Smithing perk exists for leather, unlike for example, the Studded Dragonscale Helmet.
+
+|width=33%|
+
+
+=== {{Anchor||Light Shields}}Shields ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+{{Item Data
+ |icon=SR-icon-armor-HideShield.png
+ |name=Hide Shield
+ |id=00013914|weight=4|value=25|damage=15}}
+{{Item Data
+ |icon=SR-icon-armor-ElvenShield.png
+ |name=Elven Shield
+ |id=0001391e|weight=4|value=115|damage=21}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Shield.png
+ |name=Chitin Shield
+ |displayname=Chitin Shield{{DB}}
+ |id=xx026235|weight=8|value=215|damage=24.5}}
+{{Item Data
+ |icon=SR-icon-armor-Glass Shield.png
+ |name=Glass Shield
+ |id=0001393c|weight=6|value=450|damage=27}}
+{{Item Data
+ |icon=SR-icon-armor-DragonscaleShield.png
+ |name=Dragonscale Shield
+ |id=00013941|weight=6|value=750|damage=29}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Shield.png
+ |name=Stalhrim Shield
+ |displayname=Stalhrim Shield{{DB}}
+ |id=xx026237|weight=10|value=600|damage=29.5}}
+|}
+|width=33%|
+|}
+
+== Heavy Armor ==
+{| class="vtop" style="width:100%"
+|width=33%|
+
+=== {{Anchor||Heavy Armor}}Armor ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-IronArmor(m).png|48px]][[File:SR-icon-armor-IronArmor(f).png|48px]]
+ |name=Iron Armor
+ |id=00012e49|weight=30|value=125|damage=25|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-BandedIronArmor(m).png|48px]][[File:SR-icon-armor-BandedIronArmor(f).png|48px]]
+ |name=Banded Iron Armor
+ |id=00013948|weight=35|value=200|damage=28|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-SteelArmor.png|48px]]<br>[[File:SR-icon-armor-SteelArmor2.png|48px]]
+ |name=Steel Armor
+ |id=00013952,000f6f22|idsep=<br>|weight=35|value=275|damage=31|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Armor.png
+ |name=Bonemold Armor
+ |displayname=Bonemold Armor{{DB}}
+ |id=xx01cd93|weight=34|value=290|damage=32|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Guard Armor.png
+ |name=Bonemold Guard Armor
+ |displayname=Bonemold Guard Armor{{DB}}
+ |id=xx037564|weight=34|value=290|damage=32|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Pauldron Armor.png
+ |name=Bonemold Pauldron Armor
+ |displayname=Bonemold Pauldron Armor{{DB}}
+ |id=xx037563|weight=36|value=290|damage=33|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-DwarvenArmor.png
+ |name=Dwarven Armor
+ |id=0001394d|weight=45|value=400|damage=34|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Armor.png
+ |name=Falmer Hardened Armor
+ |displayname=Falmer Hardened Armor{{DG}}
+ |id=xx00e8de|weight=40|value=250|damage=34|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Pauldron Armor.png
+ |name=Improved Bonemold Armor
+ |displayname=Improved Bonemold Armor{{DB}}
+ |id=xx03ab26|weight=43|value=290|damage=35|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-SteelPlateArmor.png
+ |name=Steel Plate Armor
+ |id=0001395c|weight=38|value=625|damage=40|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Heavy Armor Male.png
+ |name=Chitin Heavy Armor
+ |displayname=Chitin Heavy Armor{{DB}}
+ |id=xx01cd8a|weight=35|value=650|damage=40|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-OrcishArmor.png
+ |name=Orcish Armor
+ |id=00013957|weight=35|value=1000|damage=40|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-EbonyArmor.png
+ |name=Ebony Armor
+ |id=00013961|weight=38|value=1500|damage=43|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Armor.png
+ |name=Falmer Heavy Armor
+ |displayname=Falmer Heavy Armor{{DG}}
+ |id=xx0023e9|weight=35|value=1200|damage=43|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Nordic Carved Armor.png
+ |name=Nordic Carved Armor
+ |displayname=Nordic Carved Armor{{DB}}
+ |id=xx01cd97|weight=37|value=1600|damage=43|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-DragonplateArmor.png
+ |name=Dragonplate Armor
+ |id=00013966|weight=40|value=2125|damage=46|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Heavy Armor.png
+ |name=Stalhrim Heavy Armor
+ |displayname=Stalhrim Heavy Armor{{DB}}
+ |id=xx01cd9f|weight=38|value=2200|damage=46|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-DaedricArmor.png
+ |name=Daedric Armor
+ |id=0001396b|weight=50|value=3200|damage=49|warmth=54}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Boots}}Boots ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-IronBoots.png
+ |name=Iron Boots
+ |id=00012e4b|weight=6|value=25|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-SteelCuffedBoots.png
+ |name=Steel Cuffed Boots
+ |id=00013951|weight=8|value=55|damage=12|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-ImperialBoots.png
+ |name=Steel Shin Boots
+ |id=000f6f21|weight=8|value=55|damage=12|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Boots.png
+ |name=Bonemold Boots
+ |displayname=Bonemold Boots{{DB}}
+ |id=xx01cd92|weight=7|value=60|damage=12|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Boots.png
+ |name=Improved Bonemold Boots
+ |displayname=Improved Bonemold Boots{{DB}}
+ |id=xx03ab25|weight=9|value=60|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Boots.png
+ |name=Falmer Hardened Boots
+ |displayname=Falmer Hardened Boots{{DG}}
+ |id=xx00e8dd|weight=8|value=50|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-DwarvenBoots.png
+ |name=Dwarven Boots
+ |id=0001394c|weight=10|value=85|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-SteelPlateBoots.png
+ |name=Steel Plate Boots
+ |id=0001395b|weight=9|value=125|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Heavy Boots.png
+ |name=Chitin Heavy Boots
+ |displayname=Chitin Heavy Boots{{DB}}
+ |id=xx01cd82|weight=6|value=135|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-OrcishBoots.png
+ |name=Orcish Boots
+ |id=00013956|weight=7|value=200|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Nordic Carved Boots.png
+ |name=Nordic Carved Boots
+ |displayname=Nordic Carved Boots{{DB}}
+ |id=xx01cd96|weight=6|value=220|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-EbonyBoots.png
+ |name=Ebony Boots
+ |id=00013960|weight=7|value=275|damage=16|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Boots.png
+ |name=Falmer Heavy Boots
+ |displayname=Falmer Heavy Boots{{DG}}
+ |id=xx0023ef|weight=6|value=225|damage=16|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-DragonplateBoots.png
+ |name=Dragonplate Boots
+ |id=00013965|weight=8|value=425|damage=17|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Heavy Boots.png
+ |name=Stalhrim Heavy Boots
+ |displayname=Stalhrim Heavy Boots{{DB}}
+ |id=xx01cd9e|weight=7|value=450|damage=17|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-DaedricBoots.png
+ |name=Daedric Boots
+ |id=0001396a|weight=10|value=625|damage=18|warmth=24}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Gauntlets}}Gauntlets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-IronGauntlets.png
+ |name=Iron Gauntlets
+ |id=00012e46|weight=5|value=25|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-ImperialBracers.png
+ |name=Steel Imperial Gauntlets
+ |id=000f6f23|weight=4|value=55|damage=12|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-SteelNordicGauntlets.png
+ |name=Steel Nordic Gauntlets
+ |id=00013953|weight=4|value=55|damage=12|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Gauntlets.png
+ |name=Bonemold Gauntlets
+ |displayname=Bonemold Gauntlets{{DB}}
+ |id=xx01cd94|weight=3.5|value=60|damage=12|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Gauntlets.png
+ |name=Improved Bonemold Gauntlets
+ |displayname=Improved Bonemold Gauntlets{{DB}}
+ |id=xx03ab22|weight=7|value=60|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-DwarvenGauntlets.png
+ |name=Dwarven Gauntlets
+ |id=0001394e|weight=8|value=85|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Gauntlets.png
+ |name=Falmer Hardened Gauntlets{{DG}}
+ |id=xx00e8de|weight=7|value=60|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-SteelPlateGauntlets.png
+ |name=Steel Plate Gauntlets
+ |id=0001395d|weight=6|value=125|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Heavy Gauntlets.png
+ |name=Chitin Heavy Gauntlets
+ |displayname=Chitin Heavy Gauntlets{{DB}}
+ |id=xx01cd8b|weight=5|value=135|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-OrcishGauntlets.png
+ |name=Orcish Gauntlets
+ |id=00013958|weight=7|value=200|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Nordic Carved Gauntlets.png
+ |name=Nordic Carved Gauntlets
+ |displayname=Nordic Carved Gauntlets{{DB}}
+ |id=xx01cd98|weight=6|value=220|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-EbonyGauntlets.png
+ |name=Ebony Gauntlets
+ |id=00013962|weight=7|value=275|damage=16|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Gauntlets.png
+ |name=Falmer Heavy Gauntlets
+ |displayname=Falmer Heavy Gauntlets{{DG}}
+ |id=xx0023ed|weight=6|value=225|damage=16|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-DragonplateGauntlets.png
+ |name=Dragonplate Gauntlets
+ |id=00013967|weight=8|value=425|damage=17|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Heavy Gauntlets.png
+ |name=Stalhrim Heavy Gauntlets
+ |displayname=Stalhrim Heavy Gauntlets{{DB}}
+ |id=xx01cda0|weight=7|value=450|damage=17|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-DaedricGauntlets.png
+ |name=Daedric Gauntlets
+ |id=0001396c|weight=6|value=625|damage=18|warmth=24}}
+|}
+|-
+|width=33%|
+
+=== {{Anchor||Heavy Helmets}}Helmets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-IronHelmet.png
+ |name=Iron Helmet
+ |id=00012e4d|weight=5|value=60|damage=15|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-SteelHelmet.png
+ |name=Steel Helmet
+ |id=00013954|weight=5|value=125|damage=17|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-SteelHornedHelmet.png
+ |name=Steel Horned Helmet
+ |id=000f6f24|weight=5|value=125|damage=17|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Helmet.png
+ |name=Bonemold Helmet
+ |displayname=Bonemold Helmet{{DB}}
+ |id=xx01cd95|weight=4.5|value=135|damage=17|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Helm.png
+ |name=Falmer Hardened Helm
+ |displayname=Falmer Hardened Helm{{DG}}
+ |id=xx00e8de|weight=10|value=150|damage=10|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-DwarvenHelmet.png
+ |name=Dwarven Helmet
+ |id=0001394f|weight=12|value=200|damage=18|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Helmet.png
+ |name=Improved Bonemold Helmet
+ |displayname=Improved Bonemold Helmet{{DB}}
+ |id=xx03ab23|weight=11|value=135|damage=18|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-SteelPlateHelmet.png
+ |name=Steel Plate Helmet
+ |id=0001395e|weight=6|value=300|damage=19|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Chitin Heavy Helmet.png
+ |name=Chitin Heavy Helmet
+ |displayname=Chitin Heavy Helmet{{DB}}
+ |id=xx01cd8c|weight=5|value=135|damage=19|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-OrcishHelmet.png
+ |name=Orcish Helmet
+ |id=00013959|weight=8|value=500|damage=20|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Nordic Carved Helmet.png
+ |name=Nordic Carved Helmet
+ |displayname=Nordic Carved Helmet{{DB}}
+ |id=xx01cd99|weight=7|value=550|damage=20|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-EbonyHelmet.png
+ |name=Ebony Helmet
+ |id=00013963|weight=10|value=750|damage=21|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Falmer_Heavy_Helm.png
+ |name=Falmer Heavy Helm
+ |displayname=Falmer Heavy Helm{{DG}}
+ |id=xx0023eb|weight=8|value=600|damage=21|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-DragonplateHelmet.png
+ |name=Dragonplate Helmet
+ |id=00013969|weight=8|value=1050|damage=22|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Heavy Helmet.png
+ |name=Stalhrim Helmet
+ |displayname=Stalhrim Helmet{{DB}}
+ |id=xx01cda1|weight=7|value=1135|damage=22|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Shellbug Helmet.png
+ |name=Shellbug Helmet
+ |displayname=Shellbug Helmet&nbsp;{{DG}}
+ |id=xx012e8a|weight=6|value=600|damage=22|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-DaedricHelmet.png
+ |name=Daedric Helmet
+ |id=0001396d|weight=15|value=1600|damage=23|warmth=29}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Shields}}Shields ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+{{Item Data
+ |icon=SR-icon-armor-IronShield.png
+ |name=Iron Shield
+ |id=00012eb6|weight=12|value=60|damage=20}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Shield.png
+ |name=Bonemold Shield
+ |displayname=Bonemold Shield{{DB}}
+ |id=xx026234|weight=8|value=95|damage=21.5}}
+{{Item Data
+ |icon=SR-icon-armor-BandedIronShield.png
+ |name=Banded Iron Shield
+ |id=0001394b|weight=12|value=100|damage=22}}
+{{Item Data
+ |icon=SR-icon-armor-SteelShield.png
+ |name=Steel Shield
+ |id=00013955|weight=12|value=150|damage=24}}
+{{Item Data
+ |icon=SR-icon-armor-DwarvenShield.png
+ |name=Dwarven Shield
+ |id=00013950|weight=12|value=225|damage=26}}
+{{Item Data
+ |icon=SR-icon-armor-Bonemold Shield.png
+ |name=Improved Bonemold Shield
+ |displayname=Improved Bonemold Shield{{DB}}
+ |id=xx03ab24|weight=11|value=95|damage=26}}
+{{Item Data
+ |icon=SR-icon-armor-Nordic Shield.png
+ |name=Nordic Shield
+ |displayname=Nordic Shield{{DB}}
+ |id=xx026236|weight=10|value=335|damage=26.5}}
+{{Item Data
+ |icon=SR-icon-armor-FalmerShield.png
+ |name=Falmer Shield
+ |id=0005c06c|weight=15|value=10|damage=28}}
+{{Item Data
+ |icon=SR-icon-armor-OrcishShield.png
+ |name=Orcish Shield
+ |id=00013946|weight=14|value=500|damage=30}}
+{{Item Data
+ |icon=SR-icon-armor-EbonyShield.png
+ |name=Ebony Shield
+ |id=00013964|weight=14|value=750|damage=32}}
+{{Item Data
+ |icon=SR-icon-armor-DragonplateShield.png
+ |name=Dragonplate Shield
+ |id=00013968|weight=15|value=1050|damage=34}}
+{{Item Data
+ |icon=SR-icon-armor-DaedricShield.png
+ |name=Daedric Shield
+ |id=0001396e|weight=15|value=1600|damage=36}}
+|}
+|width=33%|
+|}
+
+== Light Armor Images ==
+<gallery caption="These images show a male [[Skyrim:Nord|Nord]] in different types of light armor." perrow=5>
+File:SR-item-Fur Armor Male.jpg|Fur Armor
+File:SR-item-Hide Armor Male.jpg|Hide Armor
+File:SR-item-Hide Armor Male 02.jpg|Studded Armor (with hide shield)
+File:SR-item-Leather Armor Male.jpg|Leather Armor (with hide shield)
+File:SR-item-Forsworn Armor Male.jpg|Forsworn Armor
+File:SR-item-Vampire Armor Male.jpg|Vampire Armor (Black)
+File:SR-item-Vampire Armor Male 02.jpg|Vampire Armor (Gray)
+File:SR-item-Vampire Armor Male 03.jpg|Vampire Armor (Red)
+File:SR-item-Elven Armor Male.jpg|Elven Armor
+File:SR-item-Chitin Armor Male.jpg|Chitin Armor{{DB}}
+File:SR-item-Scaled Armor Male.jpg|Scaled Armor
+File:SR-item-Scaled Armor Male 02.jpg|Scaled Horn Armor
+File:SR-item-Glass Armor Male.jpg|Glass Armor
+File:SR-item-Dragonscale Armor Male.jpg|Dragonscale Armor
+</gallery>
+
+<gallery caption="These images show a female [[Skyrim:Imperial|Imperial]] in different types of light armor." perrow=5>
+File:SR-item-Fur Armor Female.jpg|Fur Armor
+File:SR-item-Hide Armor Female.jpg|Hide Armor
+File:SR-item-Hide Armor Female 02.jpg|Studded Armor (with hide shield)
+File:SR-item-Leather Armor Female.jpg|Leather Armor (with hide shield)
+File:SR-item-Forsworn Armor Female.jpg|Forsworn Armor {{intnote|forswornarmorfemale|^}}
+File:SR-item-Vampire Armor Female.jpg|Vampire Armor (Black)
+File:SR-item-Vampire Armor Female 02.jpg|Vampire Armor (Gray)
+File:SR-item-Vampire Armor Female 03.jpg|Vampire Armor (Red)
+File:SR-item-Elven Armor Female.jpg|Elven Armor
+File:SR-item-Chitin Armor Female.jpg|Chitin Armor{{DB}}
+File:SR-item-Scaled Armor Female.jpg|Scaled Armor
+File:SR-item-Scaled Armor Female 02.jpg|Scaled Horn Armor
+File:SR-item-Glass Armor Female.jpg|Glass Armor
+File:SR-item-Dragonscale Armor Female.jpg|Dragonscale Armor
+</gallery>
+{{Note|forswornarmorfemale|^|Female [[Lore:Beastfolk|Beastfolk]] ([[Skyrim:Khajiit|Khajiit]]/[[Skyrim:Argonian|Argonian]]) use a different model for the Forsworn Headdress}}
+
+== Heavy Armor Images ==
+<gallery caption="These images show a male [[Skyrim:Nord|Nord]] in different types of heavy armor." perrow=5>
+File:SR-item-Iron Armor Male.jpg|Iron Armor
+File:SR-item-Iron Armor Male 02.jpg|Banded Iron Armor
+File:SR-item-Steel Armor Male.jpg|Steel Armor
+File:SR-item-Steel Armor Male 02.jpg|Steel Armor (alternate)
+File:SR-item-Bonemold Armor Male.jpg|Bonemold Armor{{DB}}
+File:SR-item-Bonemold Pauldron Armor Male.jpg|Bonemold Pauldron Armor{{DB}}
+File:SR-item-Falmer Hardened Armor Male.jpg|Falmer Hardened/Heavy Armor
+File:SR-item-Falmer Hardened Armor Male 02.jpg|Falmer Heavy Armor with Shellbug Helmet
+File:SR-item-Dwarven Armor Male.jpg|Dwarven Armor
+File:SR-item-Steel Plate Armor Male.jpg|Steel Plate Armor
+File:SR-item-Chitin Heavy Armor Male.jpg|Chitin Heavy Armor{{DB}}
+File:SR-item-Nordic Carved Armor Male.jpg|Nordic Carved Armor{{DB}}
+File:SR-item-Orcish Armor Male.jpg|Orcish Armor
+File:SR-item-Ebony Armor Male.jpg|Ebony Armor
+File:SR-item-Dragonplate Armor Male.jpg|Dragonplate Armor
+File:SR-item-Daedric Armor Male.jpg|Daedric Armor
+</gallery>
+
+<gallery caption="These images show a female [[Skyrim:Imperial|Imperial]] in different types of heavy armor." perrow=5>	 
+File:SR-item-Iron Armor Female.jpg|Iron Armor
+File:SR-item-Iron Armor Female 02.jpg|Banded Iron Armor
+File:SR-item-Steel Armor Female.jpg|Steel Armor
+File:SR-item-Steel Armor Female 02.jpg|Steel Armor (alternate)
+File:SR-item-Bonemold Armor Female.jpg|Bonemold Armor{{DB}}
+File:SR-item-Bonemold Pauldron Armor Female.jpg|Bonemold Pauldron Armor{{DB}}
+File:SR-item-Falmer Hardened Armor Female.jpg|Falmer Hardened/Heavy Armor
+File:SR-item-Falmer Hardened Armor Female 02.jpg|Falmer Heavy Armor with Shellbug Helmet
+File:SR-item-Dwarven Armor Female.jpg|Dwarven Armor
+File:SR-item-Steel Plate Armor Female.jpg|Steel Plate Armor
+File:SR-item-Chitin Heavy Armor Female.jpg|Chitin Heavy Armor{{DB}}
+File:SR-item-Nordic Carved Armor Female.jpg|Nordic Carved Armor{{DB}}
+File:SR-item-Orcish Armor Female.jpg|Orcish Armor
+File:SR-item-Ebony Armor Female.jpg|Ebony Armor
+File:SR-item-Dragonplate Armor Female.jpg|Dragonplate Armor
+File:SR-item-Daedric Armor Female.jpg|Daedric Armor
+</gallery>
+
+==  Creation Club Armor Materials ==
+Same as [[Skyrim:Armor#Armor_Materials|Armor Materials]] (see above for more information) but only the armor added by creation club content.
+
+{|class="wikitable sortable" style="display:inline-table;text-align:center;"
+|+ [[sr:Light Armor|Light Armor]] by Material (Numerical Values are for a full, matched suit)
+|-
+! Level !! [[Skyrim:Light Armor|Light Armor]] !! Perk to [[Skyrim:Forge|Forge]] !! Item for [[Skyrim:Workbench|Tempering]]
+!width=22 data-sort-type=number|Weight {{Weight Icon}}
+!width=22 data-sort-type=number|Rating {{Armor Rating Icon}}
+!width=22 data-sort-type=number|Weight with shield {{Weight Icon}}
+!width=22 data-sort-type=number|Rating with shield {{Armor Rating Icon}}
+|-
+| 8 || [[Skyrim:Leather Scout Armor|Leather Scout]]{{CC|Alternative Armors - Leather}} || No perk required || Leather || 12 || 58 || 16{{intnote|No Shield|^}} || 73{{intnote|No Shield|^}}
+|-
+|rowspan=2|12 ||[[Skyrim:Elven Hunter Armor|Elven Hunter]]{{CC|Alternative Armors - Elven Hunter}} || [[Skyrim:Elven Smithing|Elven Smithing]] || [[Skyrim:Refined Moonstone|Refined Moonstone]] || 6 || 51 || 11{{intnote|No Shield|^}} || 85{{intnote|No Shield|^}}
+|-
+| [[Skyrim:Dwarven Mail|Dwarven Mail]]{{CC|Alternative Armors - Dwarven Mail}} || [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]] || 29 || 60 || 42{{intnote|No Shield|^}} || 86{{intnote|No Shield|^}}
+|-
+| 46 || [[Skyrim:Studded Dragonscale Armor|Studded Dragonscale]]{{CC|Alternative Armors - Dragonscale}} || [[Skyrim:Dragon Armor|Dragon Armor]] || [[Skyrim:Dragon Scales|Dragon Scales]] || 20 || 90 || 26{{intnote|No Shield|^}} || 119{{intnote|No Shield|^}}
+|-
+| 48 || [[Skyrim:Daedric Mail|Daedric Mail]]{{CC|Alternative Armors - Daedric Mail}}{{intnote|Daedric Mail|‡‡‡}} || [[Skyrim:Daedric Smithing|Daedric Smithing]]{{intnote|daedric|‡}} || [[Skyrim:Ebony Ingot|Ebony Ingot]] || 19 || 72 || 34{{intnote|No Shield|^}} || 108{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Amber Armor|Amber]]{{CC|Saints & Seducers}} || [[Skyrim:Amber and Madness Smithing|Amber and Madness Smithing]] ; [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Refined Amber|Amber]] || 15 || 88 || 25 || 119
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Dark|Dark]]{{CC|Saints & Seducers}} || [[Skyrim:Daedric Smithing|Daedric Smithing]]{{intnote|daedric|‡}} || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]] || 9 || 70 || 13 || 93
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Netch Leather|Netch Leather]]{{CC|Netch Leather Armor}} || No perk required || [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]] || 12 || 70 || 16 || 88
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Netch Leather|Boiled Netch Leather]]{{CC|Netch Leather Armor}} || No perk required || [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]] || 12 || 77 || 16 || 95
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Netch Leather|Shadowed Netch Leather]]{{CC|Netch Leather Armor}} || No perk required || [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]] || 12 || 74 || 16 || 93
+|}
+
+{|class="wikitable sortable"  style="display:inline-table;text-align:center;"
+|+ [[sr:Heavy Armor|Heavy Armor]] by Material (Numerical Values are for a full, matched suit)
+|-
+! Level !! [[Skyrim:Heavy Armor|Heavy Armor]] !! Perk to [[Skyrim:Forge|Forge]] !! Item for [[Skyrim:Workbench|Tempering]]
+!width=22 data-sort-type=number|Weight {{Weight Icon}}
+!width=22 data-sort-type=number|Rating {{Armor Rating Icon}}
+!width=22 data-sort-type=number|Weight with shield {{Weight Icon}}
+!width=22 data-sort-type=number|Rating with shield {{Armor Rating Icon}}
+|-
+| 32 || [[Skyrim:Ebony Armor|Ebony Plate]]{{CC|Alternative Armors - Ebony Plate}} || [[Skyrim:Ebony Smithing|Ebony Smithing]] || [[Skyrim:Ebony Ingot|Ebony Ingot]] || 62 || 100 || 76{{intnote|No Shield|^}} || 132{{intnote|No Shield|^}}
+|-
+| 35 || [[Skyrim:Stalhrim|Stalhrim Fur]]{{CC|Alternative Armors - Stalhrim Fur}} || [[Skyrim:Ebony Smithing|Ebony Smithing]]{{intnote|stahlrim|††}} || [[Skyrim:Stalhrim|Stalhrim]] || 59 || 110 || 69{{intnote|No Shield|^}} || 139.5{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} || [[Skyrim:Vigil Armor|Vigil Enforcer Armor]]{{CC|Vigil Enforcer Armor Set}} || [[Skyrim:Steel Smithing|Steel Smithing]] || [[Skyrim:Steel Ingot|Steel Ingot]] || 58 || 85 || 58{{intnote|No Shield|^}} || 85{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} ||[[Skyrim:Golden|Golden]]{{CC|Saints & Seducers}} || [[Skyrim:Daedric Smithing|Daedric Smithing]]{{intnote|daedric|‡}} || [[Skyrim:Gold Ingot|Gold Ingot]] || 51 || 92 || 63 || 118
+|-
+| {{intnote|Creation Club|†††}} || [[Skyrim:Iron Spell Knight Armor|Iron Spell Knight]]{{CC|Spell Knight Armor}} || No perk required || [[Skyrim:Iron Ingot|Iron Ingot]] || 46 || 76 || 46{{intnote|No Shield|^}} || 76{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} || [[Skyrim:Steel Spell Knight Armor|Steel Spell Knight]]{{CC|Spell Knight Armor}} || [[Skyrim:Steel Smithing|Steel Smithing]] || [[Skyrim:Steel Ingot|Steel Ingot]] || 52 || 88 || 52{{intnote|No Shield|^}} || 88{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} || [[Skyrim:Ebony Spell Knight Armor|Ebony Spell Knight]]{{CC|Spell Knight Armor}} || [[Skyrim:Ebony Smithing|Ebony Smithing]] || [[Skyrim:Ebony Ingot|Ebony Ingot]] || 62 || 112 || 62{{intnote|No Shield|^}} || 112{{intnote|No Shield|^}}
+|-
+| {{intnote|Creation Club|†††}} || [[Skyrim:Madness Armor|Madness]]{{CC|Saints & Seducers}} || [[Skyrim:Amber and Madness Smithing|Amber and Madness Smithing]] ; [[Skyrim:Advanced Armors|Advanced Armors]] || [[Skyrim:Madness Ingot|Madness Ingot]] || 88 || 114 || 104 || 152
+|}
+{{NewLeft}}
+{{Note|No Shield|^|Those armors sets have no matching shield so they are given one of the same material, if any available}}
+{{Note|Stahlrim|††|Forging Stalhrim armor also requires completion of the quest [[Skyrim:A New Source of Stalhrim|A New Source of Stalhrim]].}}
+{{Note|Creation Club|†††|Those sets will be found during their respective quests and then can be forged by the player but will not appear at random in chests or NPCs.}}
+{{Note|Daedric|‡|All Daedric armor can also be made at the [[Skyrim:Atronach Forge|Atronach Forge]] (except the boots, see [[Skyrim:Atronach Forge#Bugs|Atronach Forge bugs]]), in which case the Daedric Smithing perk is not needed, but instead the [[Skyrim:Sigil Stone|Sigil Stone]] must be obtained. Tempering armor created at the Atronach Forge is still augmented by the Daedric Smithing perk.}}
+{{Note|Daedric Mail|‡‡‡|Daedric Mail set has no helmet.}}
+
+== Creation Club Light Armor ==
+{| class="vtop" style="width:100%"
+|width=33%|
+
+=== {{Anchor||Light Armor}}Armor ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Mail.png
+ |name=Dwarven Mail
+ |displayname=Dwarven Mail{{CC|Alternative Armors - Dwarven Mail}}
+ |id=FExxx801|weight=15|value=400|damage=25|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Leather Scout Armor.png
+ |name=Leather Scout Armor
+ |displayname=Leather Scout Armor{{CC|Alternative Armors - Leather}}
+ |id=FExxx801|weight=6|value=150|damage=27|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Elven Hunter Armor.png
+ |name=Elven Hunter Armor
+ |displayname=Elven Hunter Armor{{CC|Alternative Armors - Elven Hunter}}
+ |id=FExxx801|weight=4|value=225|damage=31|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Armor.png
+ |name=Netch Leather Armor
+ |displayname=Netch Leather Armor{{CC|Netch Leather Armor}}
+ |id=FExxx801|weight=6|value=250|damage=32|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Armor.png
+ |name=Shadowed Netch Leather Armor
+ |displayname=Shadowed Netch Leather Armor{{CC|Netch Leather Armor}}
+ |id=FExxx951|weight=6|value=250|damage=33|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Remnant Armor.png
+ |name=Remnant Armor
+ |displayname=Remnant Armor{{CC|Redguard Elite Armaments}}
+ |id=FExxx80B|weight=6|value=430|damage=34|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Boiled Netch Leather Armor.png
+ |name=Boiled Netch Leather Armor
+ |displayname=Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+ |id=FExxx807|weight=6|value=250|damage=35|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Scaled Armor.png
+ |name=Orcish Scaled Armor
+ |displayname=Orcish Scaled Armor{{CC|Alternative Armors - Orcish Scaled}}
+ |id=FExxx801|weight=14|value=500|damage=36|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Boiled Netch Leather Armor.png
+ |name=Shadowed Boiled Netch Leather Armor
+ |displayname=Shadowed Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+ |id=FExxx974|weight=6|value=300|damage=36|warmth=27}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-Dark Seducer Armor Male.png|48px]][[File:SR-icon-armor-Dark Seducer Armor Female.png|48px]]
+ |name=Dark Seducer Armor
+ |displayname=Dark Seducer Armor{{CC|Saints & Seducers}}
+ |id=xx000873|weight=5|value=650|damage=36|warmth=17}}
+{{Item Data
+ |icon=SR-icon-armor-Studded Dragonscale Armor.png
+ |name=Studded Dragonscale Armor
+ |displayname=Studded Dragonscale Armor{{CC|Alternative Armors - Dragonscale}}
+ |id=FExxx801|weight=10|value=1500|damage=43|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Amber Armor.png
+ |name=Amber Armor
+ |displayname=Amber Armor{{CC|Saints & Seducers}}
+ |id=xx000BC3|weight=8|value=1750|damage=43|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Daedric Mail.png
+ |name=Daedric Mail
+ |displayname=Daedric Mail{{CC|Alternative Armors - Daedric Mail}}
+ |id=FExxx801|weight=12|value=3200|damage=44|warmth=54}}
+|}
+|width=33%|
+
+=== {{Anchor||Light Boots}}Boots ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Leather Scout Boots.png
+ |name=Leather Scout Boots
+ |displayname=Leather Scout Boots{{CC|Alternative Armors - Leather}}
+ |id=FExxx800|weight=2|value=35|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Remnant Boots.png
+ |name=Remnant Boots
+ |displayname=Remnant Boots{{CC|Redguard Elite Armaments}}
+ |id=FExxx80A|weight=1.5|value=90|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Mail Boots.png
+ |name=Dwarven Mail Boots
+ |displayname=Dwarven Mail Boots{{CC|Alternative Armors - Dwarven Mail}}
+ |id=FExxx800|weight=5|value=85|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Elven Hunter Boots.png
+ |name=Elven Hunter Boots
+ |displayname=Elven Hunter Boots{{CC|Alternative Armors - Elven Hunter}}
+ |id=FExxx800|weight=1|value=45|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dark Seducer Boots.png
+ |name=Dark Seducer Boots
+ |displayname=Dark Seducer Boots{{CC|Saints & Seducers}}
+ |id=xx000874|weight=1|value=90|damage=10|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Boots.png
+ |name=Netch Leather Boots
+ |displayname=Netch Leather Boots{{CC|Netch Leather Armor}}
+ |id=FExxx800|weight=2|value=50|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Boots.png
+ |name=Shadowed Netch Leather Boots
+ |displayname=Shadowed Netch Leather Boots{{CC|Netch Leather Armor}}
+ |id=FExxx952|weight=2|value=50|damage=12|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Scaled Boots.png
+ |name=Orcish Scaled Boots
+ |displayname=Orcish Scaled Boots{{CC|Alternative Armors - Orcish Scaled}}
+ |id=FExxx800|weight=4|value=150|damage=13|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Amber Boots.png
+ |name=Amber Boots
+ |displayname=Amber Boots{{CC|Saints & Seducers}}
+ |id=xx000BC4|weight=2|value=400|damage=13.5|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Daedric Mail Boots.png
+ |name=Daedric Mail Boots
+ |displayname=Daedric Mail Boots{{CC|Alternative Armors - Daedric Mail}}
+ |id=FExxx800|weight=4|value=625|damage=14|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Studded Dragonscale Boots.png
+ |name=Studded Dragonscale Boots
+ |displayname=Studded Dragonscale Boots{{CC|Alternative Armors - Dragonscale}}
+ |id=FExxx800|weight=3|value=300|damage=14|warmth=24}}
+|}
+|width=33%|
+
+=== {{Anchor||Light Gauntlets}}Gauntlets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Leather Scout Gauntlets.png
+ |name=Leather Scout Gauntlets
+ |displayname=Leather Scout Gauntlets{{CC|Alternative Armors - Leather}}
+ |id=FExxx802|weight=2|value=35|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Remnant Gloves.png
+ |name=Remnant Gloves
+ |displayname=Remnant Gloves{{CC|Redguard Elite Armaments}}
+ |id=FExxx80D|weight=1|value=90|damage=9|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Mail Gauntlets.png
+ |name=Dwarven Mail Gauntlets
+ |displayname=Dwarven Mail Gauntlets{{CC|Alternative Armors - Dwarven Mail}}
+ |id=FExxx802|weight=4|value=85|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Elven Hunter Gauntlets.png
+ |name=Elven Hunter Gauntlets
+ |displayname=Elven Hunter Gauntlets{{CC|Alternative Armors - Elven Hunter}}
+ |id=FExxx802|weight=1|value=45|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dark Seducer Gauntlets.png
+ |name=Dark Seducer Gauntlets
+ |displayname=Dark Seducer Gauntlets{{CC|Saints & Seducers}}
+ |id=xx000872|weight=1|value=90|damage=10|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Bracers.png
+ |name=Netch Leather Bracers
+ |displayname=Netch Leather Bracers{{CC|Netch Leather Armor}}
+ |id=FExxx802|weight=2|value=50|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Bracers.png
+ |name=Shadowed Netch Leather Bracers
+ |displayname=Shadowed Netch Leather Bracers{{CC|Netch Leather Armor}}
+ |id=FExxx958|weight=2|value=50|damage=12|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Scaled Gauntlets.png
+ |name=Orcish Scaled Gauntlets
+ |displayname=Orcish Scaled Gauntlets{{CC|Alternative Armors - Orcish Scaled}}
+ |id=FExxx802|weight=4|value=100|damage=13|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Amber Gauntlets.png
+ |name=Amber Gauntlets
+ |displayname=Amber Gauntlets{{CC|Saints & Seducers}}
+ |id=xx000BC2|weight=2|value=400|damage=13.5|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Studded Dragonscale Gauntlets.png
+ |name=Studded Dragonscale Gauntlets
+ |displayname=Studded Dragonscale Gauntlets{{CC|Alternative Armors - Dragonscale}}
+ |id=FExxx802|weight=3|value=300|damage=14|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Daedric Mail Gauntlets.png
+ |name=Daedric Mail Gauntlets
+ |displayname=Daedric Mail Gauntlets{{CC|Alternative Armors - Daedric Mail}}
+ |id=FExxx802|weight=3|value=625|damage=14|warmth=24}}
+|}
+|-
+|width=33%|
+
+=== {{Anchor||Light Helmets}}Helmets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Leather Scout Helmet.png
+ |name=Leather Scout Helmet
+ |displayname=Leather Scout Helmet{{CC|Alternative Armors - Leather}}
+ |id=FExxx803|weight=2|value=75|damage=13|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Remnant Hood.png
+ |name=Remnant Hood
+ |displayname=Remnant Hood{{CC|Redguard Elite Armaments}}
+ |id=FExxx80C|weight=1|value=215|damage=13|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Dark Seducer Helmet.png
+ |name=Dark Seducer Helmet
+ |displayname=Dark Seducer Helmet{{CC|Saints & Seducers}}
+ |id=xx000871|weight=2|value=195|damage=14|warmth=8}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Mail Helmet.png
+ |name=Dwarven Mail Helmet
+ |displayname=Dwarven Mail Helmet{{CC|Alternative Armors - Dwarven Mail}}
+ |id=FExxx803|weight=5|value=200|damage=15|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Redoran Watchman's Helmet.png
+ |name=Redoran Watchman's Helmet
+ |displayname=Redoran Watchman's Helmet{{CC|Ghosts of the Tribunal}}
+ |id=xx04D170|weight=1|value=300|damage=15|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Helmet.png
+ |name=Netch Leather Helmet
+ |displayname=Netch Leather Helmet{{CC|Netch Leather Armor}}
+ |id=FExxx803|weight=2|value=100|damage=16|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Helmet.png
+ |name=Shadowed Netch Leather Helmet
+ |displayname=Shadowed Netch Leather Helmet{{CC|Netch Leather Armor}}
+ |id=FExxx95A|weight=2|value=100|damage=17|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Scaled Helmet.png
+ |name=Orcish Scaled Helmet
+ |displayname=Orcish Scaled Helmet{{CC|Alternative Armors - Orcish Scaled}}
+ |id=FExxx803|weight=6|value=200|damage=18|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Amber Helmet.png
+ |name=Amber Helmet
+ |displayname=Amber Helmet{{CC|Saints & Seducers}}
+ |id=xx000BC1|weight=3|value=900|damage=18|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Studded Dragonscale Helmet.png
+ |name=Studded Dragonscale Helmet
+ |displayname=Studded Dragonscale Helmet{{CC|Alternative Armors - Dragonscale}}
+ |id=FExxx803|weight=4|value=750|damage=19|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Boiled Netch Leather Helmet.png
+ |name=Boiled Netch Leather Helmet 
+ |displayname=Boiled Netch Leather Helmet{{CC|Netch Leather Armor}} <sup>†</sup>
+ |id=FExxx804|weight=2|value=150|damage=20|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Boiled Netch Leather Helmet.png
+ |name=Shadowed Boiled Netch Leather Helmet
+ |displayname=Shadowed Boiled Netch Leather Helmet{{CC|Netch Leather Armor}} <sup>†</sup>
+ |id=FExxx973|weight=2|value=150|damage=22|warmth=18}}
+|}
+
+<sup>†</sup> Netch Leather Helmets and other armor seem to count as leather armor so cannot be improved by double since no Smithing perk exists for leather, unlike for example, the Studded Dragonscale Helmet.
+
+|width=33%|
+
+
+=== {{Anchor||Light Shields}}Shields ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Shield.png
+ |name=Netch Leather Shield
+ |displayname=Netch Leather Shield{{CC|Netch Leather Armor}}
+ |id=FExxx806|weight=4|value=150|damage=18}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Shield.png
+ |name=Shadowed Netch Leather Shield
+ |displayname=Shadowed Netch Leather Shield{{CC|Netch Leather Armor}}
+ |id=FExxx950|weight=4|value=150|damage=19}}
+{{Item Data
+ |icon=SR-icon-armor-Dark Seducer Shield.png
+ |name=Dark Seducer Shield
+ |displayname=Dark Seducer Shield{{CC|Saints & Seducers}}
+ |id=xx000805|weight=4|value=250|damage=23}}
+{{Item Data
+ |icon=SR-icon-armor-Netch Leather Tower Shield.png
+ |name=Netch Leather Tower Shield
+ |displayname=Netch Leather Tower Shield{{CC|Netch Leather Armor}}
+ |id=FExxx805|weight=8|value=200|damage=24}}
+{{Item Data
+ |icon=SR-icon-armor-Remnant Shield.png
+ |name=Remnant Shield
+ |displayname=Remnant Shield{{CC|Redguard Elite Armaments}}
+ |id=FExxx802|weight=6|value=340|damage=24}}
+{{Item Data
+ |icon=SR-icon-armor-Shadowed Netch Leather Tower Shield.png
+ |name=Shadowed Netch Leather Tower Shield
+ |displayname=Shadowed Netch Leather Tower Shield{{CC|Netch Leather Armor}}
+ |id=FExxx94F|weight=8|value=200|damage=25}}
+{{Item Data
+ |icon=SR-icon-armor-Amber Shield.png
+ |name=Amber Shield
+ |displayname=Amber Shield{{CC|Saints & Seducers}}
+ |id=xx000BC0|weight=10|value=650|damage=31}}
+|}
+|width=33%|
+
+
+=== {{Anchor||Brawler's Light Gauntlets}}Brawler's Gauntlets{{CC|Fearsome Fists}} ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Hide Bracers.png
+ |name=Brawler's Hide Bracers
+ |id=FExxx854|weight=1|value=10|damage=5|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Fur Bracers.png
+ |name=Brawler's Fur Bracers
+ |id=FExxx84B|weight=1|value=10|damage=6|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Leather Bracers.png
+ |name=Brawler's Leather Bracers
+ |id=FExxx84C|weight=2|value=25|damage=7|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Elven Gauntlets.png
+ |name=Brawler's Elven Gauntlets
+ |id=FExxx851|weight=1|value=45|damage=8|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Scaled Bracers.png
+ |name=Brawler's Scaled Bracers
+ |id=FExxx856|weight=2|value=70|damage=9|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Glass Gauntlets.png
+ |name=Brawler's Glass Gauntlets
+ |id=FExxx84F|weight=2|value=190|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Dragonscale Gauntlets.png
+ |name=Brawler's Dragonscale Gauntlets
+ |id=FExxx84D|weight=3|value=300|damage=12|warmth=24}}
+|}
+|}
+
+== Creation Club Heavy Armor ==
+{| class="vtop" style="width:100%"
+|width=33%|
+
+=== {{Anchor||Heavy Armor}}Armor ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Plate Armor.png
+ |name=Iron Plate Armor
+ |displayname=Iron Plate Armor{{CC|Alternative Armors - Iron}}
+ |id=FExxx801|weight=31|value=150|damage=27|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Spell Knight Armor.png
+ |name=Iron Spell Knight Armor
+ |displayname=Iron Spell Knight Armor{{CC|Spell Knight Armor}}
+ |id=FExxxD78|weight=30|value=275|damage=29|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Soldier Armor.png
+ |name=Steel Soldier Armor
+ |displayname=Steel Soldier Armor{{CC|Alternative Armors - Steel Soldier}}
+ |id=FExxx801|weight=35|value=300|damage=32|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Plate Armor.png
+ |name=Dwarven Plate Armor
+ |displayname=Dwarven Plate Armor{{CC|Alternative Armors - Dwarven Plate}}
+ |id=FExxx801|weight=45|value=500|damage=35|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Spell Knight Armor.png
+ |name=Steel Spell Knight Armor
+ |displayname=Steel Spell Knight Armor{{CC|Spell Knight Armor}}
+ |id=FExxxD74|weight=35|value=350|damage=35|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Plate Armor.png
+ |name=Orcish Orcish Plate Armor
+ |displayname=Orcish Plate Armor{{CC|Alternative Armors - Orcish Plate}}
+ |id=FExxx801|weight=35|value=1100|damage=41|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Silver Armor.png
+ |name=Silver Armor
+ |displayname=Silver Armor{{CC|Alternative Armors - Silver}}
+ |id=FExxx801|weight=40|value=400|damage=42|warmth=54}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-Golden Saint Armor Male.png|48px]][[File:SR-icon-armor-Golden Saint Armor Female.png|48px]]
+ |name=Golden Saint Armor
+ |displayname=Golden Saint Armor{{CC|Saints & Seducers}}
+ |id=xx000877|weight=35|value=1250|damage=42|warmth=17}}
+{{Item Data
+ |icon=SR-icon-armor-Her Hand Armor.png
+ |name=Her Hand Armor
+ |displayname=Her Hand Armor{{CC|Ghosts of the Tribunal}}
+ |id=xx00081C|weight=36|value=1600|damage=43|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Plate Armor.png
+ |name=Ebony Plate Armor
+ |displayname=Ebony Plate Armor{{CC|Alternative Armors - Ebony Plate}}
+ |id=FExxx801|weight=38|value=1600|damage=44|warmth=27}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Spell Knight Armor.png
+ |name=Ebony Spell Knight Armor
+ |displayname=Ebony Spell Knight Armor{{CC|Spell Knight Armor}}
+ |id=FExxxD7C|weight=38|value=2000|damage=47|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Dragonplate Insulated Cuirass.png
+ |name=Dragonplate Insulated Cuirass
+ |displayname=Dragonplate Insulated Cuirass{{CC|Alternative Armors - Dragon Plate}}
+ |id=FExxx801|weight=40|value=2200|damage=48|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Fur Armor.png
+ |name=Stalhrim Fur Armor
+ |displayname=Stalhrim Fur Armor{{CC|Alternative Armors - Stalhrim Fur}}
+ |id=FExxx801|weight=38|value=2200|damage=48|warmth=54}}
+{{Item Data
+ |icon=SR-icon-armor-Daedric Plate Armor.png
+ |name=Daedric Plate Armor
+ |displayname=Daedric Plate Armor{{CC|Alternative Armors - Daedric Plate}}
+ |id=FExxx801|weight=50|value=3200|damage=51|warmth=54}}
+{{Item Data
+ |customicon=[[File:SR-icon-armor-Madness Armor Male.png|48px]]
+ |name=Madness Armor
+ |displayname=Madness Armor{{CC|Saints & Seducers}}
+ |id=xx000BBE|weight=52|value=4100|damage=52|warmth=54}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Boots}}Boots ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Plate Boots.png
+ |name=Iron Plate Boots
+ |displayname=Iron Plate Boots{{CC|Alternative Armors - Iron}}
+ |id=FExxx800|weight=6|value=35|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Soldier Boots.png
+ |name=Steel Soldier Boots
+ |displayname=Steel Soldier Boots{{CC|Alternative Armors - Steel Soldier}}
+ |id=FExxx800|weight=8|value=75|damage=13|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Dwarven Plate Boots.png
+ |name=Dwarven Plate Boots
+ |displayname=Dwarven Plate Boots{{CC|Alternative Armors - Dwarven Plate}}
+ |id=FExxx800|weight=10|value=100|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Spell Knight Boots.png
+ |name=Iron Spell Knight Boots
+ |displayname=Iron Spell Knight Boots{{CC|Spell Knight Armor}}
+ |id=FExxxD77|weight=6|value=55|damage=14|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Silver Boots.png
+ |name=Silver Boots
+ |displayname=Silver Boots{{CC|Alternative Armors - Silver}}
+ |id=FExxx800|weight=8|value=85|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Golden Saint Boots.png
+ |name=Golden Saint Boots
+ |displayname=Golden Saint Boots{{CC|Saints & Seducers}}
+ |id=xx01cd96|weight=6|value=240|damage=15|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Spell Knight Boots.png
+ |name=Steel Spell Knight Boots{{CC|Spell Knight Armor}}
+ |id=FExxxD73|weight=8|value=75|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Plate Boots.png
+ |name=Orcish Orcish Plate Boots
+ |displayname=Orcish Plate Boots{{CC|Alternative Armors - Orcish Plate}}
+ |id=FExxx800|weight=7|value=225|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Her Hand Boots.png
+ |name=Her Hand Boots
+ |displayname=Her Hand Boots{{CC|Ghosts of the Tribunal}}
+ |id=xx00081B|weight=6|value=300|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Plate Boots.png
+ |name=Ebony Plate Boots
+ |displayname=Ebony Plate Boots{{CC|Alternative Armors - Ebony Plate}}
+ |id=FExxx800|weight=7|value=350|damage=17|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dragonplate Insulated Boots.png
+ |name=Dragonplate Insulated Boots
+ |displayname=Dragonplate Insulated Boots{{CC|Alternative Armors - Dragon Plate}}
+ |id=FExxx800|weight=8|value=500|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Madness Boots.png
+ |name=Madness Boots
+ |displayname=Madness Boots{{CC|Saints & Seducers}}
+ |id=FExxx800|weight=11|value=850|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Fur Boots.png
+ |name=Stalhrim Fur Boots
+ |displayname=Stalhrim Fur Boots{{CC|Alternative Armors - Stalhrim Fur}}
+ |id=FExxx800|weight=7|value=450|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Spell Knight Boots.png
+ |name=Ebony Spell Knight Boots
+ |displayname=Ebony Spell Knight Boots{{CC|Spell Knight Armor}}
+ |id=FExxxD7B|weight=7|value=400|damage=20|warmth=24}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Gauntlets}}Gauntlets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Plate Gauntlets.png
+ |name=Iron Plate Gauntlets
+ |displayname=Iron Plate Gauntlets{{CC|Alternative Armors - Iron}}
+ |id=FExxx802|weight=5|value=35|damage=11|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Soldier Gauntlets.png
+ |name=Steel Soldier Gauntlets
+ |displayname=Steel Soldier Gauntlets{{CC|Alternative Armors - Steel Soldier}}
+ |id=FExxx802|weight=4|value=75|damage=13|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Spell Knight Gauntlets.png
+ |name=Iron Spell Knight Gauntlets
+ |displayname=Iron Spell Knight Gauntlets{{CC|Spell Knight Armor}}
+ |id=FExxxD79|weight=5|value=55|damage=14|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Silver Gauntlets.png
+ |name=Silver Gauntlets
+ |displayname=Silver Gauntlets{{CC|Alternative Armors - Silver}}
+ |id=FExxx802|weight=7|value=85|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Golden Saint Gauntlets.png
+ |name=Golden Saint Gauntlets
+ |displayname=Golden Saint Gauntlets{{CC|Saints & Seducers}}
+ |id=xx000876|weight=5|value=240|damage=15|warmth=7}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Plate Gauntlets.png
+ |name=Orcish Orcish Plate Gauntlets
+ |displayname=Orcish Plate Gauntlets{{CC|Alternative Armors - Orcish Plate}}
+ |id=FExxx802|weight=7|value=225|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Her Hand Gauntlets.png
+ |name=Her Hand Gauntlets
+ |displayname=Her Hand Gauntlets{{CC|Ghosts of the Tribunal}}
+ |id=xx00081D|weight=6|value=300|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Spell Knight Gauntlets.png
+ |name=Steel Spell Knight Gauntlets{{CC|Spell Knight Armor}}
+ |id=FExxxD75|weight=4|value=75|damage=16|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Plate Gauntlets.png
+ |name=Ebony Plate Gauntlets
+ |displayname=Ebony Plate Gauntlets{{CC|Alternative Armors - Ebony Plate}}
+ |id=FExxx802|weight=7|value=350|damage=17|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Dragonplate Insulated Gauntlets.png
+ |name=Dragonplate Insulated Gauntlets
+ |displayname=Dragonplate Insulated Gauntlets{{CC|Alternative Armors - Dragon Plate}}
+ |id=FExxx802|weight=8|value=500|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Madness Gauntlets.png
+ |name=Madness Gauntlets
+ |displayname=Madness Gauntlets{{CC|Saints & Seducers}}
+ |id=xx000BBD|weight=8|value=850|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Fur Gauntlets.png
+ |name=Stalhrim Fur Gauntlets
+ |displayname=Stalhrim Fur Gauntlets{{CC|Alternative Armors - Stalhrim Fur}}
+ |id=FExxx802|weight=7|value=450|damage=19|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Spell Knight Gauntlets.png
+ |name=Ebony Spell Knight Gauntlets
+ |displayname=Ebony Spell Knight Gauntlets{{CC|Spell Knight Armor}}
+ |id=FExxxD7D|weight=7|value=400|damage=20|warmth=24}}
+|}
+|-
+|width=33%|
+
+=== {{Anchor||Heavy Helmets}}Helmets ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Plate Helmet.png
+ |name=Iron Plate Helmet
+ |displayname=Iron Plate Helmet{{CC|Alternative Armors - Iron}}
+ |id=FExxx803|weight=5|value=75|damage=16|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Soldier Helmet.png
+ |name=Steel Soldier Helmet
+ |displayname=Steel Soldier Helmet{{CC|Alternative Armors - Steel Soldier}}
+ |id=FExxx803|weight=5|value=150|damage=18|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Iron Spell Knight Helmet.png
+ |name=Iron Spell Knight Helmet{{CC|Spell Knight Armor}}
+ |id=FExxxD7A|weight=5|value=200|damage=19|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Orcish Plate Helmet.png
+ |name=Orcish Orcish Plate Helmet
+ |displayname=Orcish Plate Helmet{{CC|Alternative Armors - Orcish Plate}}
+ |id=FExxx803|weight=8|value=550|damage=20|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Silver Helmet.png
+ |name=Silver Helmet
+ |displayname=Silver Helmet{{CC|Alternative Armors - Silver}}
+ |id=FExxx803|weight=7|value=200|damage=20|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Golden Saint Helmet.png
+ |name=Golden Saint Helmet
+ |displayname=Golden Saint Helmet{{CC|Saints & Seducers}}
+ |id=xx000875|weight=5|value=650|damage=20|warmth=8}}
+{{Item Data
+ |icon=SR-icon-armor-Her Hand Helmet.png
+ |name=Her Hand Helmet
+ |displayname=Her Hand Helmet{{CC|Ghosts of the Tribunal}}
+ |id=xx00081E|weight=8|value=300|damage=21|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Steel Spell Knight Helmet.png
+ |name=Steel Spell Knight Helmet
+ |displayname=Steel Spell Knight Helmet{{CC|Spell Knight Armor}}
+ |id=FExxxD76|weight=5|value=250|damage=21|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Plate Helmet.png
+ |name=Ebony Plate Helmet
+ |displayname=Ebony Plate Helmet{{CC|Alternative Armors - Ebony Plate}}
+ |id=FExxx803|weight=10|value=850|damage=22|warmth=18}}
+{{Item Data
+ |icon=SR-icon-armor-Madness Helmet.png
+ |name=Madness Helmet
+ |displayname=Madness Helmet{{CC|Saints & Seducers}}
+ |id=xx000BC5|weight=17|value=1900|damage=24|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Dragonplate Insulated Helmet.png
+ |name=Dragonplate Insulated Helmet
+ |displayname=Dragonplate Insulated Helmet{{CC|Alternative Armors - Dragon Plate}}
+ |id=FExxx803|weight=8|value=1100|damage=24|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Stalhrim Fur Helmet.png
+ |name=Stalhrim Fur Helmet
+ |displayname=Stalhrim Fur Helmet{{CC|Alternative Armors - Stalhrim Fur}}
+ |id=FExxx803|weight=7|value=1135|damage=24|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Daedric Plate Helmet.png
+ |name=Daedric Plate Helmet
+ |displayname=Daedric Plate Helmet{{CC|Alternative Armors - Daedric Plate}}
+ |id=FExxx803|weight=15|value=1600|damage=25|warmth=29}}
+{{Item Data
+ |icon=SR-icon-armor-Ebony Spell Knight Helmet.png
+ |name=Ebony Spell Knight Helmet
+ |displayname=Ebony Spell Knight Helmet{{CC|Spell Knight Armor}}
+ |id=FExxxD7E|weight=10|value=900|damage=25|warmth=18}}
+|}
+|width=33%|
+
+=== {{Anchor||Heavy Shields}}Shields ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Golden Saint Shield.png
+ |name=Golden Saint Shield
+ |displayname=Golden Saint Shield{{CC|Saints & Seducers}}
+ |id=xx000800|weight=12|value=375|damage=26}}
+{{Item Data
+ |icon=SR-icon-armor-Ordinator Shield.png
+ |name=Ordinator Shield
+ |displayname=Ordinator Shield{{CC|Ghosts of the Tribunal}}
+ |id=xx06668E|weight=8|value=500|damage=26}}
+{{Item Data
+ |icon=SR-icon-armor-Madness Shield.png
+ |name=Madness Shield
+ |displayname=Madness Shield{{CC|Saints & Seducers}}
+ |id=xx000BC5|weight=16|value=1800|damage=38}}
+|}
+|width=33%|
+=== {{Anchor||Brawler's Heavy Gauntlets}}Brawler's Gauntlets{{CC|Fearsome Fists}} ===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Iron Gauntlets.png
+ |name=Brawler's Iron Gauntlets
+ |id=FExxx852|weight=5|value=25|damage=10|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Steel Gauntlets.png
+ |name=Brawler's Steel Gauntlets
+ |id=FExxx850|weight=4|value=55|damage=12|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Dwarven Gauntlets.png
+ |name=Brawler's Dwarven Gauntlets
+ |id=FExxx853|weight=8|value=85|damage=13|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Steel Plate Gauntlets.png
+ |name=Brawler's Steel Plate Gauntlets
+ |id=FExxx859|weight=6|value=125|damage=14|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Orcish Gauntlets.png
+ |name=Brawler's Orcish Gauntlets
+ |id=FExxx857|weight=7|value=200|damage=15|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Ebony Gauntlets.png
+ |name=Brawler's Ebony Gauntlets
+ |id=FExxx858|weight=7|value=275|damage=16|warmth=13}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Dragonplate Gauntlets.png
+ |name=Brawler's Dragonplate Gauntlets
+ |id=FExxx855|weight=8|value=425|damage=17|warmth=24}}
+{{Item Data
+ |icon=SR-icon-armor-Brawler's Daedric Gauntlets.png
+ |name=Brawler's Daedric Gauntlets
+ |id=FExxx84E|weight=6|value=625|damage=18|warmth=24}}
+|}
+|}
+
+== Creation Club Light Armor Images ==
+<gallery caption="These images show a male [[Skyrim:Nord|Nord]] in different types of light armor." perrow=5>
+File:SR-item-Leather Scout Armor Male.jpg|Leather Scout Armor{{CC|Alternative Armors - Leather}} (with hide shield)
+File:SR-item-Dwarven Mail Male.jpg|Dwarven mail{{CC|Alternative Armors - Dwarven Mail}}
+File:SR-item-Redoran Watchman's Helmet Male.jpg|Redoran Watchman's Helmet{{CC|Ghosts of the Tribunal}}
+File:SR-item-Remnant Armor Male.jpg|Remnant Armor{{CC|Redguard Elite Armaments}}
+File:SR-item-Dark Seducer Armor Male.jpg|Dark Seducer Armor{{CC|Saints & Seducers}}
+File:SR-item-Netch Leather Armor Male.jpg|Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Shadowed Netch Leather Armor Male.jpg|Shadowed Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Boiled Netch Leather Armor Male.jpg|Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Orcish Scaled Armor Male.jpg|Orcish Scaled Armor{{CC|Alternative Armors - Orcish Scaled}}
+File:SR-item-Shadowed Boiled Netch Leather Armor Male.jpg|Shadowed Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Daedric Mail Male.jpg|Daedric Mail{{CC|Alternative Armors - Daedric Mail}}
+File:SR-item-Studded Dragonscale Armor Male.jpg|Studded Dragonscale Armor{{CC|Alternative Armors - Dragonscale}}
+File:SR-item-Amber Armor Male.jpg|Amber Armor{{CC|Saints & Seducers}}
+</gallery><br />
+
+<gallery caption="These images show a female [[Skyrim:Imperial|Imperial]] in different types of light armor." perrow=5>
+File:SR-item-Leather Scout Armor Female.jpg|Leather Scout Armor{{CC|Alternative Armors - Leather}} (with hide shield)
+File:SR-item-Dwarven Mail Female.jpg|Dwarven mail{{CC|Alternative Armors - Dwarven Mail}}
+File:SR-item-Redoran Watchman's Helmet Female.jpg|Redoran Watchman's Helmet{{CC|Ghosts of the Tribunal}}
+File:SR-item-Remnant Armor Female.jpg|Remnant Armor{{CC|Redguard Elite Armaments}}
+File:SR-item-Dark Seducer Armor Female.jpg|Dark Seducer Armor{{CC|Saints & Seducers}}
+File:SR-item-Netch Leather Armor Female.jpg|Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Shadowed Netch Leather Armor Female.jpg|Shadowed Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Boiled Netch Leather Armor Female.jpg|Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Orcish Scaled Armor Female.jpg|Orcish Scaled Armor{{CC|Alternative Armors - Orcish Scaled}}
+File:SR-item-Shadowed Boiled Netch Leather Armor Female.jpg|Shadowed Boiled Netch Leather Armor{{CC|Netch Leather Armor}}
+File:SR-item-Daedric Mail Female.jpg|Daedric Mail{{CC|Alternative Armors - Daedric Mail}}
+File:SR-item-Studded Dragonscale Armor Female.jpg|Studded Dragonscale Armor{{CC|Alternative Armors - Dragonscale}}
+File:SR-item-Amber Armor Female.jpg|Amber Armor{{CC|Saints & Seducers}}
+</gallery>
+
+== Creation Club Heavy Armor Images ==
+<gallery caption="These images show a male [[Skyrim:Nord|Nord]] in different types of heavy armor." perrow=5>
+File:SR-item-Iron Plate Armor Male.jpg|Iron Plate Armor{{CC|Alternative Armors - Iron}} (with banded iron shield)
+File:SR-item-Iron Spell Knight Armor Male.jpg|Iron Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Dwarven Plate Armor Male.jpg|Dwarven Plate Armor{{CC|Alternative Armors - Dwarven Plate}}
+File:SR-item-Indoril Armor Male.jpg|Indoril Armor{{CC|Ghosts of the Tribunal}}
+File:SR-item-Steel Spell Knight Armor Male.jpg|Steel Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Golden Saint Armor Male.jpg|Golden Saint Armor{{CC|Saints & Seducers}}
+File:SR-item-Silver Armor Male.jpg|Silver Armor{{CC|Alternative Armors - Silver}}
+File:SR-item-Orcish Plate Armor Male.jpg|Orcish Plate Armor{{CC|Alternative Armors - Orcish Plate}}
+File:SR-item-Her Hand Armor Male.jpg|Her Hand Armor{{CC|Ghosts of the Tribunal}}
+File:SR-item-Ebony Plate Armor Male.jpg|Ebony Plate Armor{{CC|Alternative Armors - Ebony Plate}}
+File:SR-item-Dragonplate Insulated Armor Male.jpg|Dragonplate Insulated Armor{{CC|Alternative Armors - Dragon Plate}}
+File:SR-item-Ebony Spell Knight Armor Male.jpg|Ebony Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Daedric Plate Armor Male.jpg|Daedric Plate Armor{{CC|Alternative Armors - Daedric Plate}}
+File:SR-item-Madness Armor Male.jpg|Madness Armor{{CC|Saints & Seducers}}
+</gallery>
+
+<gallery caption="These images show a female [[Skyrim:Imperial|Imperial]] in different types of heavy armor." perrow=5>	 
+File:SR-item-Iron Plate Armor Female.jpg|Iron Plate Armor{{CC|Alternative Armors - Iron}} (with banded iron shield)
+File:SR-item-Iron Spell Knight Armor Female.jpg|Iron Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Dwarven Plate Armor Female.jpg|Dwarven Plate Armor{{CC|Alternative Armors - Dwarven Plate}}
+File:SR-item-Indoril Armor Female.jpg|Indoril Armor{{CC|Ghosts of the Tribunal}}
+File:SR-item-Steel Spell Knight Armor Female.jpg|Steel Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Golden Saint Armor Female.jpg|Golden Saint Armor{{CC|Saints & Seducers}}
+File:SR-item-Silver Armor Female.jpg|Silver Armor{{CC|Alternative Armors - Silver}}
+File:SR-item-Orcish Plate Armor Female.jpg|Orcish Plate Armor{{CC|Alternative Armors - Orcish Plate}}
+File:SR-item-Her Hand Armor Female.jpg|Her Hand Armor{{CC|Ghosts of the Tribunal}}
+File:SR-item-Ebony Plate Armor Female.jpg|Ebony Plate Armor{{CC|Alternative Armors - Ebony Plate}}
+File:SR-item-Dragonplate Insulated Armor Female.jpg|Dragonplate Insulated Armor{{CC|Alternative Armors - Dragon Plate}}
+File:SR-item-Ebony Spell Knight Armor Female.jpg|Ebony Spell Knight Armor{{CC|Spell Knight Armor}}
+File:SR-item-Daedric Plate Armor Female.jpg|Daedric Plate Armor{{CC|Alternative Armors - Daedric Plate}}
+File:SR-item-Madness Armor Female.jpg|Madness Armor{{CC|Saints & Seducers}}
+</gallery>

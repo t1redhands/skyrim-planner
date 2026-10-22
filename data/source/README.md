@@ -4,6 +4,7 @@ Raw page text from the Unofficial Elder Scrolls Pages (https://en.uesp.net), sav
 
 UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/).
 
-- [Skyrim:Followers](https://en.uesp.net/wiki/Skyrim:Followers)
-- [Skyrim:Marriage](https://en.uesp.net/wiki/Skyrim:Marriage)
-- [Skyrim:Houses](https://en.uesp.net/wiki/Skyrim:Houses)
+- [Skyrim:Weapons](https://en.uesp.net/wiki/Skyrim:Weapons)
+- [Skyrim:Armor](https://en.uesp.net/wiki/Skyrim:Armor)
+- [Skyrim:Clothing](https://en.uesp.net/wiki/Skyrim:Clothing)
+- [Skyrim:Jewelry](https://en.uesp.net/wiki/Skyrim:Jewelry)
