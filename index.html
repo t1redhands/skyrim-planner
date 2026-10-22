@@ -234,6 +234,8 @@ details.src p { margin: 4px 0 0; font-size: .82rem; color: var(--ink-2); }
 .qitem .why { font-size: .85rem; color: var(--accent); }
 .qitem .num { color: var(--ink-2); font-size: .8rem; }
 .tagd.warn { border-color: var(--bad); color: var(--bad); }
+.tagd.need { border-color: var(--accent); color: var(--accent); }
+.qms.tier-expedite { border-top: 3px solid var(--accent); }
 .problems { border: 1px solid var(--bad); border-radius: 8px; padding: 12px 16px; display: grid; gap: 4px; font-size: .92rem; }
 .problems:empty { display: none; }
 
@@ -389,7 +391,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <nav class="subtabs" id="subtabs" aria-label="Loadout sections">
       <button data-sub="stones" aria-pressed="true">Stones</button>
       <button data-sub="shouts" aria-pressed="false">Shouts</button>
-      <button data-sub="gear" aria-pressed="false">Gear</button>
+      <button data-sub="weapons" aria-pressed="false">Weapons</button>
+      <button data-sub="apparel" aria-pressed="false">Apparel</button>
       <button data-sub="potions" aria-pressed="false">Potions</button>
       <button data-sub="food" aria-pressed="false">Food</button>
       <button data-sub="scrolls" aria-pressed="false">Scrolls</button>
@@ -419,19 +422,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <div class="sub" data-sub="gear" hidden>
     <div class="intro">
-      <h2>Gear</h2>
-      <p class="muted">Choose the gear you want and the milestone you want each one by. Daedric artifacts come from quests, and some of those quests can't start until a certain level. Unique weapons and armor are found in set places or given during quests. Items marked "Fits your build" use a skill you've planned perks in.</p>
+      <h2 id="gearTitle">Weapons</h2>
+      <p class="muted" id="gearIntro"></p>
     </div>
     <div class="milestones" id="gearTally"></div>
-    <div class="row" id="gearFilter" role="radiogroup" aria-label="Show gear">
-      <button class="chip" data-f="all" aria-checked="true">All</button>
-      <button class="chip" data-f="weapon" aria-checked="false">Weapons</button>
-      <button class="chip" data-f="armor" aria-checked="false">Armor and shields</button>
-      <button class="chip" data-f="other" aria-checked="false">Staves, rings and other</button>
-      <button class="chip" data-f="fits" aria-checked="false">Fits your build</button>
-      <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
-    </div>
-    <div class="field"><label class="label" for="gearSearch">Search gear</label><input type="search" id="gearSearch" class="search" placeholder="Name, type or place, such as Linwe or bow" autocomplete="off"></div>
+    <div class="row" id="gearFilter" role="radiogroup" aria-label="Show"></div>
+    <div class="field"><label class="label" for="gearSearch" id="gearSearchLabel">Search weapons</label><input type="search" id="gearSearch" class="search" autocomplete="off"></div>
     <div class="gear-sets" id="gearList"></div>
       <p class="muted" style="margin:0;font-size:.9rem">The quests listed here will feed the quest plan.</p>
     </div>
@@ -541,7 +537,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   <section class="panel" id="p-quests" role="tabpanel" aria-labelledby="tab-quests" hidden>
     <div class="intro">
       <h2>Quest plan</h2>
-      <p class="muted">Every quest your chosen shouts and gear depend on, plus the quests that unlock them, in the order to do them by milestone. Tick quests off as you finish them.</p>
+      <p class="muted">Your quests in three tiers: Expedite for what the build needs, Priority for role-play that suits the character, and Selected for everything else you want to do. Prerequisites are pulled in automatically and listed first. Tick quests off as you finish them.</p>
     </div>
     <div class="grid-2">
       <div class="box">
@@ -560,8 +556,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
       </div>
     </div>
     <div class="box">
-      <h3>Suggested for your perks</h3>
-      <p class="muted" style="margin:0;font-size:.9rem">Quests that suit the skills you've planned perks in, either because the questline trains them or because the quest rewards gear that uses them. The questline pairings are the planner's own rule of thumb.</p>
+      <h3>Suggested for this character</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Quests that suit the skills you've planned perks in, either because the questline trains them or because the quest rewards gear that uses them. Add the ones you like to your Priority quests. The questline pairings are the planner's own rule of thumb.</p>
       <div class="perks" id="questSuggest"></div>
     </div>
     <div id="questProblems"></div>
@@ -837,7 +833,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.cwSide = ['imperial', 'stormcloak', 'none'].includes(s.cwSide) ? s.cwSide : 'none';
     out.dgSide = ['dawnguard', 'volkihar', 'none'].includes(s.dgSide) ? s.dgSide : 'none';
     out.skipConflicts = !!s.skipConflicts;
-    out.quests = keep(s.quests, QID);
+    out.quests = Object.fromEntries(Object.entries(s.quests && typeof s.quests === 'object' ? s.quests : {}).filter(([k]) => QID[k]).map(([k, v]) => [k, v === 'priority' ? 'priority' : 'selected']));
     out.followers = keep(s.followers, FOL); out.homes = keep(s.homes, HOM);
     out.spouse = s.spouse && SPO[s.spouse.id] && MS.includes(s.spouse.m) ? { id: s.spouse.id, m: s.spouse.m } : null;
     out.done = Object.fromEntries(Object.entries(s.done && typeof s.done === 'object' ? s.done : {}).filter(([k, v]) => QID[k] && v === true));
@@ -1087,24 +1083,40 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     return out;
   }
+  const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique' };
+  const gearSlot = () => subTab === 'apparel' ? 'apparel' : 'weapon';
+  const inSlot = (g, slot) => slot === 'weapon' ? g.slot === 'weapon' : g.slot !== 'weapon';   // apparel tab also holds the few artifacts that aren't worn
+  let gearSlotShown = null;
   function renderGear() {
+    const slot = gearSlot(), mine = GEAR.filter(g => inSlot(g, slot));
+    if (gearSlotShown !== slot) {   // switching tabs: new title, filters and search
+      gearSlotShown = slot; gearFilter = 'all'; $('gearSearch').value = '';
+      $('gearTitle').textContent = slot === 'weapon' ? 'Weapons' : 'Apparel';
+      $('gearIntro').textContent = slot === 'weapon'
+        ? 'Swords, axes, maces, daggers, bows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in.'
+        : 'Armor, shields, jewelry and clothing, plus a few artifacts that aren\'t worn. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in.';
+      $('gearSearchLabel').textContent = slot === 'weapon' ? 'Search weapons' : 'Search apparel';
+      $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type or place, such as Chillrend or bow' : 'Name, type or place, such as Nightingale or ring';
+      const groups = GEARDATA.groups[slot];
+      $('gearFilter').innerHTML = ['all', ...groups, 'fits', 'wanted'].map(f => `<button class="chip" data-f="${esc(f)}" aria-checked="${f === 'all'}">${f === 'all' ? 'All' : f === 'fits' ? 'Fits your build' : f === 'wanted' ? 'Chosen' : esc(f)}</button>`).join('');
+    }
     $('gearTally').innerHTML = MS.map(m => {
-      const by = GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m);
+      const by = mine.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m);
       const quests = [...new Set(by.map(g => g.quest).filter(Boolean))].sort();
       const issues = by.filter(g => state.gear[g.id] === m && gearIssues(g, m).length).length;
       return `<div class="ms${issues ? ' under' : ''}"><div class="ms-head"><span class="ms-level">By level ${m}</span>${issues ? '<span class="pill under">Needs fixing</span>' : ''}</div>
-        <div class="ms-stats"><span><strong class="num">${by.length}</strong> item${by.length === 1 ? '' : 's'}</span><span><strong class="num">${quests.length}</strong> quest${quests.length === 1 ? '' : 's'}</span></div>
+        <div class="ms-stats"><span><strong class="num">${by.length}</strong> ${slot === 'weapon' ? 'weapon' : 'piece'}${by.length === 1 ? '' : 's'}</span><span><strong class="num">${quests.length}</strong> quest${quests.length === 1 ? '' : 's'}</span></div>
         ${issues ? `<div class="warn">${issues} item${issues === 1 ? '' : 's'} here can't be had by this level as planned.</div>` : ''}
-        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed for these items.' : 'No gear chosen for this milestone yet.'}</div>`}</div>`;
+        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed for these.' : 'Nothing chosen for this milestone yet.'}</div>`}</div>`;
     }).join('');
     const q = ($('gearSearch').value || '').trim().toLowerCase();
-    const list = GEAR.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.category === gearFilter))
+    const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
       && (!q || [g.name, g.type, g.where, g.quest, g.prince].some(t => t && t.toLowerCase().includes(q))));
     const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
       const how = g.set === 'daedric' ? `${esc(g.prince)} · Quest: ${esc(g.quest)}` : (g.quest ? `Quest: ${esc(g.quest)}` : '');
       return `<div class="perk${v != null ? ' taken' : ''}"><div>
-          <div class="pn">${esc(g.name)}${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
+          <div class="pn">${esc(g.name)}<span class="tagd">${SET_TAG[g.set] || ''}</span>${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
@@ -1112,9 +1124,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: milestone">
           <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
     };
-    const sets = Object.entries(GEARDATA.sets).map(([id, label]) => [label, list.filter(g => g.set === id)]).filter(([, items]) => items.length);
-    $('gearList').innerHTML = sets.length ? sets.map(([label, items]) => `<div class="box"><h3>${esc(label)} <span class="muted num" style="font-size:.85rem">${items.length}</span></h3><div class="perks">${items.map(row).join('')}</div></div>`).join('')
-      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : gearFilter === 'fits' ? 'No gear matches the skills in your perk plan yet.' : 'No gear chosen yet. Pick some from All.'}</p></div>`;
+    const groups = GEARDATA.groups[slot].map(gr => [gr, list.filter(g => g.group === gr)]).filter(([, items]) => items.length);
+    $('gearList').innerHTML = groups.length ? groups.map(([label, items]) => `<div class="box"><h3>${esc(label)} <span class="muted num" style="font-size:.85rem">${items.length}</span></h3><div class="perks">${items.map(row).join('')}</div></div>`).join('')
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : gearFilter === 'fits' ? 'Nothing here matches the skills in your perk plan yet.' : 'Nothing chosen yet. Pick some from All.'}</p></div>`;
   }
   $('gearList').addEventListener('change', e => {
     const el = e.target.closest('select[data-gear]'); if (!el) return;
@@ -1148,15 +1160,17 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- Loadout: sub-tabs ----------
   let subTab = 'stones';
-  try { const t = localStorage.getItem('skp.sub'); if (['stones','shouts','gear','potions','food','scrolls'].includes(t)) subTab = t; } catch {}
+  try { let t = localStorage.getItem('skp.sub'); if (t === 'gear') t = 'weapons'; if (['stones','shouts','weapons','apparel','potions','food','scrolls'].includes(t)) subTab = t; } catch {}
   function renderSubtabs() {
-    const n = { stones: MS.filter(m => state.stones[m]).length, shouts: Object.keys(state.shouts).length, gear: Object.keys(state.gear).length,
+    const n = { stones: MS.filter(m => state.stones[m]).length, shouts: Object.keys(state.shouts).length,
+      weapons: Object.keys(state.gear).filter(id => GR[id].slot === 'weapon').length, apparel: Object.keys(state.gear).filter(id => GR[id].slot !== 'weapon').length,
       potions: state.potions.length, food: Object.keys(state.food).length, scrolls: Object.keys(state.scrolls).length + Object.keys(state.spiders).length };
     $('subtabs').querySelectorAll('[data-sub]').forEach(b => {
       const k = b.dataset.sub; b.setAttribute('aria-pressed', String(k === subTab));
       b.innerHTML = `${b.textContent.replace(/\s*\d+$/, '')}${n[k] ? ` <span class="cnt">${n[k]}</span>` : ''}`;
     });
-    document.querySelectorAll('#p-loadout .sub').forEach(s => s.hidden = s.dataset.sub !== subTab);
+    document.querySelectorAll('#p-loadout .sub').forEach(s => s.hidden = !(s.dataset.sub === subTab || (s.dataset.sub === 'gear' && (subTab === 'weapons' || subTab === 'apparel'))));
+    if ((subTab === 'weapons' || subTab === 'apparel') && gearSlotShown !== gearSlot()) renderGear();
   }
   $('subtabs').addEventListener('click', e => {
     const b = e.target.closest('[data-sub]'); if (!b) return; subTab = b.dataset.sub;
@@ -1384,25 +1398,32 @@ footer p { margin: 4px 0; max-width: 80ch; }
       hm.quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); else problems.push(`${hm.name} needs ${n}, which your sides or alignment leave out.`); });
       if (hm.questsAny) { const q = pickAlt(hm.questsAny); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); }
     }
-    for (const [id, m] of Object.entries(state.quests)) out.push({ q: QID[id], m, label: 'Added by you' });
+    out.forEach(t => { t.tier = 0; });   // everything above is needed by the build
+    for (const [id, v] of Object.entries(state.quests)) out.push({ q: QID[id], m: Infinity, tier: v === 'priority' ? 1 : 2, label: v === 'priority' ? 'Added to Priority' : 'Added by you' });
     return { targets: out, problems };
   }
+  const TIERS = [
+    { id: 'expedite', title: 'Expedite', blurb: 'Quests your build depends on: they give your chosen gear, shouts, followers, spouse or homes, or lead to a quest that does. Each shows the milestone that needs it, earliest first.' },
+    { id: 'priority', title: 'Priority', blurb: 'Role-play quests that suit this character. Add them from the suggestions above, or from the search below.' },
+    { id: 'selected', title: 'Selected', blurb: "Other quests you've chosen to do. Add them with the search below." },
+  ];
   function buildQuestPlan() {
     const { targets, problems } = questTargets();
-    const plan = {};   // id -> { q, m, why:Set, leadsTo:Set }
-    const visit = (q, m, why, from, depth = 0) => {
+    const plan = {};   // id -> { q, m, tier, why:Set, leadsTo:Set }; tier 0 Expedite, 1 Priority, 2 Selected
+    const visit = (q, m, tier, why, from, depth = 0) => {
       if (!q || depth > 40) return;
-      const had = plan[q.id], before = had ? had.m : Infinity;
-      const p = plan[q.id] ||= { q, m, why: new Set(), leadsTo: new Set() };
+      const had = plan[q.id], before = had ? [had.m, had.tier] : [Infinity, 9];
+      const p = plan[q.id] ||= { q, m, tier, why: new Set(), leadsTo: new Set() };
       if (m < p.m) p.m = m;
+      if (tier < p.tier) p.tier = tier;   // a prerequisite moves up to the most urgent quest that needs it
       if (why) p.why.add(why);
       if (from) p.leadsTo.add(from.name);
-      if (had && before <= m) return;   // its prerequisites are already scheduled at least this early
+      if (had && before[0] <= m && before[1] <= tier) return;   // its prerequisites are already placed at least this urgently
       const prevs = q.prev.map(findQuest).filter(Boolean);
       const chosen = q.prevAny ? [prevs.find(usable) || prevs[0]].filter(Boolean) : prevs;
-      for (const pq of chosen) visit(pq, m, null, q, depth + 1);
+      for (const pq of chosen) visit(pq, m, tier, null, q, depth + 1);
     };
-    targets.forEach(t => visit(t.q, t.m, t.label, null));
+    targets.forEach(t => visit(t.q, t.m, t.tier, t.label, null));
     // order: prerequisites first, then questline, then level
     const order = [], seen = new Set();
     const place = (id, stack = new Set()) => {
@@ -1411,7 +1432,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       q.prev.map(findQuest).filter(x => x && plan[x.id]).forEach(x => place(x.id, stack));
       seen.add(id); order.push(id);
     };
-    Object.keys(plan).sort((a, b) => plan[a].m - plan[b].m || plan[a].q.line.localeCompare(plan[b].q.line) || ((plan[a].q.reqLevel || plan[a].q.suggLevel || 0) - (plan[b].q.reqLevel || plan[b].q.suggLevel || 0))).forEach(id => place(id));
+    Object.keys(plan).sort((a, b) => plan[a].tier - plan[b].tier || plan[a].m - plan[b].m || plan[a].q.line.localeCompare(plan[b].q.line) || ((plan[a].q.reqLevel || plan[a].q.suggLevel || 0) - (plan[b].q.reqLevel || plan[b].q.suggLevel || 0))).forEach(id => place(id));
     // a quest can't be due before the quests it depends on are due
     return { plan, order, problems };
   }
@@ -1472,12 +1493,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const list = suggestQuests(inPlan);
     $('questSuggest').innerHTML = list.length ? list.map(({ q, why }) => `<div class="perk"><div><div class="pn">${esc(q.name)}<span class="tagd">${esc(q.line)}</span>${q.reqLevel ? `<span class="tagd">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : ''}${questConflict(q) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
         <div class="why">${esc(why)}</div>${q.description ? `<div class="pe">${esc(q.description)}</div>` : ''}</div>
-        <div class="ranks"><label class="rank"><span class="rl">Add it</span><select id="qs-${q.id}" data-addq="${q.id}" aria-label="Add ${esc(q.name)} by milestone"><option value="">Not added</option>${MS.map(m => `<option value="${m}">By ${m}</option>`).join('')}</select></label></div></div>`).join('')
+        <div class="ranks"><button class="btn ghost" data-prio="${q.id}" aria-label="Add ${esc(q.name)} to Priority">Add to Priority</button></div></div>`).join('')
       : `<p class="muted" style="margin:12px 0">${ALL_RANKS.some(r => takenBy(state.picks, r.key, 60)) ? 'Every quest that suits your perks is already in the plan.' : 'Plan some perks first and suggestions will appear here.'}</p>`;
   }
-  $('questSuggest').addEventListener('change', e => {
-    const el = e.target.closest('select[data-addq]'); if (!el || el.value === '') return;
-    state.quests[el.dataset.addq] = +el.value; touch(); renderQuests();
+  $('questSuggest').addEventListener('click', e => {
+    const b = e.target.closest('[data-prio]'); if (!b) return;
+    state.quests[b.dataset.prio] = 'priority'; touch(); renderQuests();
   });
 
   function renderQuests() {
@@ -1494,25 +1515,27 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (!order.length) {
       $('questPlan').innerHTML = `<div class="box"><p class="muted" style="margin:0">No quests yet. Choose shouts or gear on the Loadout screen, or add a quest below.</p></div>`;
     } else {
-      $('questPlan').innerHTML = MS.map(m => {
-        const ids = order.filter(id => plan[id].m === m);
-        if (!ids.length) return '';
+      $('questPlan').innerHTML = TIERS.map((tier, t) => {
+        const ids = order.filter(id => plan[id].tier === t);
         const done = ids.filter(id => state.done[id]).length;
-        return `<div class="box qms"><h3>By level ${m} <span class="muted num" style="font-size:.85rem">${done} of ${ids.length} done</span></h3><ol class="qlist">${ids.map(id => {
-          const { q, why, leadsTo } = plan[id];
+        return `<div class="box qms tier-${tier.id}"><h3>${tier.title} <span class="muted num" style="font-size:.85rem">${ids.length ? `${done} of ${ids.length} done` : 'none yet'}</span></h3><p class="muted" style="margin:0;font-size:.9rem">${tier.blurb}</p>${ids.length ? `<ol class="qlist">${ids.map(id => {
+          const { q, why, leadsTo, m } = plan[id];
           const warn = [];
-          if (q.reqLevel && q.reqLevel > m) warn.push(`Can't start until level ${q.reqLevel}.`);
+          if (t === 0 && q.reqLevel && q.reqLevel > m) warn.push(`Can't start until level ${q.reqLevel}, but it's needed by level ${m}.`);
           const c = questConflict(q); if (c) warn.push(c);
-          const lv = q.reqLevel ? `<span class="tagd${q.reqLevel > m ? ' warn' : ''}">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : '';
-          const reasons = [...why].map(w => `For ${esc(w)}`).concat(leadsTo.size ? [`Leads to ${[...leadsTo].map(esc).join(', ')}`] : []);
+          const lv = q.reqLevel ? `<span class="tagd${t === 0 && q.reqLevel > m ? ' warn' : ''}">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : '';
+          const need = t === 0 && m !== Infinity ? `<span class="tagd need">Needed by level ${m}</span>` : '';
+          const reasons = [...why].map(w => w.startsWith('Added') ? esc(w) : `For ${esc(w)}`).concat(leadsTo.size ? [`Leads to ${[...leadsTo].map(esc).join(', ')}`] : []);
+          const mine = state.quests[id];
           return `<li class="qitem${state.done[id] ? ' done' : ''}"><input type="checkbox" id="qd-${id}" data-done="${id}" ${state.done[id] ? 'checked' : ''} aria-label="Done: ${esc(q.name)}"><div>
-            <div class="pn"><label for="qd-${id}">${esc(q.name)}</label><span class="tagd">${esc(q.line)}</span>${q.dlc !== 'base' && !q.line.includes(DLC[q.dlc] || '~') && q.line !== 'Volkihar Vampire Clan' ? `<span class="tagd">${DLC[q.dlc] || q.dlc}</span>` : ''}${lv}${c ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+            <div class="pn"><label for="qd-${id}">${esc(q.name)}</label><span class="tagd">${esc(q.line)}</span>${q.dlc !== 'base' && !q.line.includes(DLC[q.dlc] || '~') && q.line !== 'Volkihar Vampire Clan' ? `<span class="tagd">${DLC[q.dlc] || q.dlc}</span>` : ''}${need}${lv}${c ? '<span class="tagd warn">Alignment</span>' : ''}</div>
             ${reasons.length ? `<div class="why">${reasons.join(' · ')}</div>` : ''}
             ${q.description ? `<div class="pe">${esc(q.description)}</div>` : ''}
             <div class="pr">${[q.giver ? `Start: ${esc(q.giver)}` : '', q.loc ? esc(q.loc) : ''].filter(Boolean).concat(`<a href="https://en.uesp.net/wiki/${encodeURI(q.page.replace(/ /g, '_'))}" target="_blank" rel="noopener">UESP</a>`).join(' · ')}</div>
             ${q.reward ? `<div class="pr">Reward: ${esc(q.reward)}</div>` : ''}
-            ${warn.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div></li>`;
-        }).join('')}</ol></div>`;
+            ${warn.map(x => `<div class="pw">${esc(x)}</div>`).join('')}
+            ${mine ? `<div class="row" style="margin-top:4px"><button class="btn quiet" data-move="${id}" data-to="${mine === 'priority' ? 'selected' : 'priority'}">Move to ${mine === 'priority' ? 'Selected' : 'Priority'}</button><button class="btn quiet" data-remove="${id}">Remove</button></div>` : ''}</div></li>`;
+        }).join('')}</ol>` : ''}</div>`;
       }).join('');
     }
     renderQuestSearch();
@@ -1525,14 +1548,19 @@ footer p { margin: 4px 0; max-width: 80ch; }
       .sort((a, b) => a.r - b.r || (a.x.prev.length ? 1 : 0) - (b.x.prev.length ? 1 : 0)).slice(0, 12).map(o => o.x);
     $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.line)}</span>${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : ''}</div>
         <div class="pe">${esc(x.description)}</div>${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
-        <div class="ranks">${msSelect('qa-' + x.id, state.quests[x.id], x.name, `data-addq="${x.id}"`)}</div></div>`).join('')
+        <div class="ranks"><label class="rank"><span class="rl">Add as</span><select class="${state.quests[x.id] ? 'on' : ''}" id="qa-${x.id}" data-addq="${x.id}" aria-label="Add ${esc(x.name)} as"><option value="">Not added</option><option value="priority"${state.quests[x.id] === 'priority' ? ' selected' : ''}>Priority</option><option value="selected"${state.quests[x.id] === 'selected' ? ' selected' : ''}>Selected</option></select></label></div></div>`).join('')
       : `<p class="muted" style="margin:12px 0">No quest matches "${esc(q)}".</p>`;
   }
   $('questSearch').addEventListener('input', renderQuestSearch);
   $('questResults').addEventListener('change', e => {
     const el = e.target.closest('select[data-addq]'); if (!el) return;
-    if (el.value === '') delete state.quests[el.dataset.addq]; else state.quests[el.dataset.addq] = +el.value;
+    if (el.value === '') delete state.quests[el.dataset.addq]; else state.quests[el.dataset.addq] = el.value;
     touch(); renderQuests(); $(el.id)?.focus();
+  });
+  $('questPlan').addEventListener('click', e => {
+    const mv = e.target.closest('[data-move]'), rm = e.target.closest('[data-remove]');
+    if (mv) { state.quests[mv.dataset.move] = mv.dataset.to; touch(); renderQuests(); }
+    if (rm) { delete state.quests[rm.dataset.remove]; touch(); renderQuests(); }
   });
   $('questPlan').addEventListener('change', e => {
     const el = e.target.closest('input[data-done]'); if (!el) return;
@@ -1629,7 +1657,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const pc = perkCounts(), f = (hm.features || []).join(' ').toLowerCase() + ' ' + (hm.note || '').toLowerCase(), out = [];
     if (pc.alchemy && /alchemy|alchemist/.test(f)) out.push('alchemy lab for your Alchemy perks');
     if (pc.enchanting && /enchant/.test(f)) out.push('enchanter for your Enchanting perks');
-    if (pc.smithing && /smithing/.test(f)) out.push('forge for your Smithing perks');
+    if (pc.smithing && /smithing|forge|anvil|smelter/.test(f)) out.push('forge for your Smithing perks');
     const line = hm.faction === 'Blades' ? null : hm.faction;
     if (line && planLines.has(line)) out.push(`you're doing ${line} quests`);
     return out;
@@ -1642,7 +1670,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   function renderHomes() {
     const { plan } = buildQuestPlan(); planLines = new Set(Object.values(plan).map(p => p.q.line));
-    const groups = [['Homes to buy', HOMES.filter(x => x.kind === 'city')], ['Homes to build (Hearthfire)', HOMES.filter(x => x.kind === 'hearthfire')], ['Solstheim (Dragonborn)', HOMES.filter(x => x.kind === 'dragonborn')], ['Faction rooms', HOMES.filter(x => x.kind === 'faction')]];
+    const groups = [['Homes to buy', HOMES.filter(x => x.kind === 'city')], ['Homes to build (Hearthfire)', HOMES.filter(x => x.kind === 'hearthfire')], ['Solstheim (Dragonborn)', HOMES.filter(x => x.kind === 'dragonborn')], ['Anniversary Edition (Creation Club)', HOMES.filter(x => x.kind === 'cc')], ['Faction rooms', HOMES.filter(x => x.kind === 'faction')]];
     $('homeList').innerHTML = groups.map(([label, list]) => `<div class="box"><h3>${label}</h3><div class="perks">${list.map(hm => {
       const fit = homeFit(hm), blk = homeBlock(hm);
       return `<div class="perk${state.homes[hm.id] != null ? ' taken' : ''}"><div>
@@ -1694,7 +1722,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); return ids.length ? `${ids.length} in the plan, ${ids.filter(id => state.done[id]).length} done` : 'None yet'; })()}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
       `<tr><td>${s.name}</td><td class="c num">${startOf(state.race, s.id)}</td>${lv.map(l => `<td class="c num">${l[s.id]}</td>`).join('')}</tr>`).join('')).join('');
