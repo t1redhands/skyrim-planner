@@ -1,5 +1,5 @@
 {
- "license": "CC BY-SA 2.5; followers, marriage candidates and houses from UESP (https://en.uesp.net/wiki/Skyrim:Followers, https://en.uesp.net/wiki/Skyrim:Marriage, https://en.uesp.net/wiki/Skyrim:Houses), summarized.",
+ "license": "CC BY-SA 2.5; followers, marriage candidates and houses from UESP (https://en.uesp.net/wiki/Skyrim:Followers, https://en.uesp.net/wiki/Skyrim:Marriage, https://en.uesp.net/wiki/Skyrim:Houses), summarized. Creation Club homes are part of the Anniversary Edition.",
  "asOf": "2026-10-21",
  "followers": [
   {
@@ -2530,6 +2530,161 @@
    ],
    "note": "No spouse, steward or adopted children can live here, and there's no housecarl.",
    "dlc": "dragonborn"
+  },
+  {
+   "id": "bloodchill-cavern",
+   "name": "Bloodchill Cavern",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Bloodchill Manor",
+   "place": "A cave east of Snowpoint Beacon",
+   "price": "Free (quest reward)",
+   "description": "A vampire's mansion inside a cave. Comes fully furnished, with 26 mannequins.",
+   "features": [],
+   "quests": [
+    "Guests for Dinner"
+   ],
+   "note": "Anniversary Edition (the Bloodchill Manor Creation)."
+  },
+  {
+   "id": "dead-mans-dread",
+   "name": "Dead Man's Dread",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Dead Man's Dread",
+   "place": "Blackbone Isle",
+   "price": "Free (quest reward)",
+   "description": "A ship in an underground grotto that becomes a home after The Restless. Comes fully furnished.",
+   "features": [],
+   "quests": [
+    "The Restless"
+   ],
+   "note": "Anniversary Edition (the Dead Man's Dread Creation)."
+  },
+  {
+   "id": "gallows-hall",
+   "name": "Gallows Hall",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Gallows Hall",
+   "place": "North side of Mara's Eye Pond",
+   "price": "Free (quest reward)",
+   "description": "A necromancer's hideout. Its Altar of the Revenant turns greater or grand soul gems into black soul gems, and its Bone Forge gives you an extra permanent summon.",
+   "features": [
+    "Altar of the Revenant (black soul gems)",
+    "Bone Forge (extra permanent summon)"
+   ],
+   "quests": [
+    "Dreams of the Dead"
+   ],
+   "note": "Anniversary Edition (the Gallows Hall Creation)."
+  },
+  {
+   "id": "goldenhills-plantation",
+   "name": "Goldenhills Plantation",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Farming",
+   "place": "East of Rorikstead",
+   "price": "Free; upgrades 4,000 to 4,750",
+   "description": "An abandoned farmstead you can expand to grow crops and raise livestock, with a steward who collects the profits.",
+   "features": [
+    "Alchemy and enchanting lab (upgrade)"
+   ],
+   "quests": [
+    "The Unquiet Dead"
+   ],
+   "note": "Anniversary Edition (the Farming Creation)."
+  },
+  {
+   "id": "hendraheim",
+   "name": "Hendraheim",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Hendraheim",
+   "place": "Mountains south of Fort Sungard",
+   "price": "Free (quest reward)",
+   "description": "An ancient Nordic hall. Comes fully furnished, with 17 mannequins; your spouse and children can move in.",
+   "features": [],
+   "quests": [
+    "Hendraheim"
+   ],
+   "note": "Anniversary Edition (the Hendraheim Creation)."
+  },
+  {
+   "id": "myrwatch",
+   "name": "Myrwatch",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Myrwatch",
+   "place": "Marsh east of Morthal",
+   "price": "Free (quest reward)",
+   "description": "An abandoned wizard's tower with nearly every crafting station, including a staff enchanter and the All Forge; your spouse and children can move in.",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter",
+    "Staff enchanter",
+    "All Forge",
+    "Smelter, grindstone, tanning rack, workbench",
+    "Cooking pot"
+   ],
+   "quests": [
+    "Myrwatch"
+   ],
+   "note": "Anniversary Edition (the Myrwatch Creation)."
+  },
+  {
+   "id": "nchuanthumz",
+   "name": "Nchuanthumz",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Nchuanthumz: Dwarven Home",
+   "place": "Frostroot Cave, north of Kagrenzel",
+   "price": "Free (quest reward)",
+   "description": "A Dwarven ruin you earn through its quest.",
+   "features": [],
+   "quests": [
+    "The Sanctuary and the Manufactory"
+   ],
+   "note": "Anniversary Edition (the Nchuanthumz: Dwarven Home Creation)."
+  },
+  {
+   "id": "shadowfoot-sanctum",
+   "name": "Shadowfoot Sanctum",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Shadowfoot Sanctum",
+   "place": "The Ratway, beneath Riften",
+   "price": "7,500",
+   "description": "A small underground home sold by Vekel the Man, fully furnished, with shrines and many crafting stations; your spouse and children can move in.",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter",
+    "Smelter, anvil, grindstone, tanning rack, workbench",
+    "Cooking pot and oven"
+   ],
+   "quests": [
+    "Shadowfoot Sanctum"
+   ],
+   "note": "Anniversary Edition (the Shadowfoot Sanctum Creation)."
+  },
+  {
+   "id": "tundra-homestead",
+   "name": "Tundra Homestead",
+   "kind": "cc",
+   "dlc": "cc",
+   "creation": "Tundra Homestead",
+   "place": "Just east of Whiterun",
+   "price": "7,500",
+   "description": "A small cottage sold by Whiterun's steward, fully furnished, with shrines and many crafting stations; your spouse and children can move in.",
+   "features": [
+    "Alchemy Lab",
+    "Arcane Enchanter",
+    "Smelter, anvil, grindstone, tanning rack, workbench",
+    "Cooking pot and baking surface"
+   ],
+   "quests": [],
+   "note": "Anniversary Edition (the Tundra Homestead Creation)."
   }
  ],
  "factionHomes": [
