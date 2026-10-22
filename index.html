@@ -245,6 +245,27 @@ details.src p { margin: 4px 0 0; font-size: .82rem; color: var(--ink-2); }
 .tagd.good { border-color: var(--good); color: var(--good); }
 .home-facts { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .88rem; color: var(--ink-2); }
 
+/* Collapsible groups */
+details.fold { display: block; padding: 0; }
+details.fold > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 18px; border-radius: 8px; }
+details.fold > summary::-webkit-details-marker { display: none; }
+details.fold > summary h3 { display: flex; align-items: center; gap: 10px; }
+details.fold > summary h3::before { content: ""; width: 8px; height: 8px; border-right: 2px solid var(--ink-2); border-bottom: 2px solid var(--ink-2); transform: rotate(-45deg); transition: transform .15s ease; flex: 0 0 auto; }
+details.fold[open] > summary h3::before { transform: rotate(45deg); }
+details.fold > summary:hover { background: var(--bg); }
+details.sub-fold { background: var(--bg); border-color: var(--rule); }
+details.sub-fold > summary { padding: 10px 14px; }
+details.sub-fold > summary:hover { background: var(--panel); }
+details.sub-fold > summary h3 { font-size: .98rem; }
+details.sub-fold .fold-body { padding: 0 14px 10px; }
+details.fold > summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.fold-meta { display: flex; gap: 10px; align-items: baseline; font-size: .85rem; color: var(--ink-2); white-space: nowrap; }
+.fold-meta .cnt { color: var(--accent); font-weight: 500; }
+.fold-body { padding: 0 18px 14px; display: grid; gap: 12px; }
+.fold-bar { display: flex; gap: 8px; justify-content: flex-end; flex-wrap: wrap; }
+.fold-bar .btn { padding: 4px 12px; font-size: .88rem; }
+@media (prefers-reduced-motion: reduce) { details.fold > summary h3::before { transition: none; } }
+
 /* Attributes */
 .bands { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 760px) { .bands { grid-template-columns: 1fr; } }
@@ -418,7 +439,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button class="chip" data-f="dragonborn" aria-checked="false">Dragonborn</button>
       <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
     </div>
-    <div class="box"><div class="perks" id="shoutList"></div></div>
+    <div class="gear-sets" id="shoutList"></div>
     </div>
     <div class="sub" data-sub="gear" hidden>
     <div class="intro">
@@ -427,6 +448,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <div class="milestones" id="gearTally"></div>
     <div class="row" id="gearFilter" role="radiogroup" aria-label="Show"></div>
+    <div class="row" id="gearSource" role="radiogroup" aria-label="Source">
+      <span class="label">Source</span>
+      <button class="chip" data-src="all" aria-checked="true">Any</button>
+      <button class="chip" data-src="unique" aria-checked="false">Unique and artifacts</button>
+      <button class="chip" data-src="standard" aria-checked="false">Standard</button>
+    </div>
     <div class="field"><label class="label" for="gearSearch" id="gearSearchLabel">Search weapons</label><input type="search" id="gearSearch" class="search" autocomplete="off"></div>
     <div class="gear-sets" id="gearList"></div>
       <p class="muted" style="margin:0;font-size:.9rem">The quests listed here will feed the quest plan.</p>
@@ -462,7 +489,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
       </div>
       <div class="field"><label class="label" for="foodSearch">Search food</label><input type="search" id="foodSearch" class="search" placeholder="Dish, effect or ingredient, such as stamina or leek" autocomplete="off"></div>
-      <div class="box"><div class="perks" id="foodList"></div></div>
+      <div class="gear-sets" id="foodList"></div>
     </div>
     <div class="sub" data-sub="scrolls" hidden>
       <div class="intro">
@@ -486,7 +513,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         </div>
       </div>
       <div class="perk-note" id="scrollAdvice"></div>
-      <div id="scrollLists"></div>
+      <div id="scrollLists" class="gear-sets"></div>
     </div>
   </section>
 
@@ -510,7 +537,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="marry" aria-checked="false">Can marry</button><button class="chip" data-f="steward" aria-checked="false">Can be a steward</button><button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
       </div>
       <div class="field"><label class="label" for="folSearch">Search followers</label><input type="search" id="folSearch" class="search" placeholder="Name, skill or group, such as Lydia, Destruction or Housecarls" autocomplete="off"></div>
-      <div class="box"><div class="perks" id="folList"></div></div>
+      <div class="gear-sets" id="folList"></div>
     </div>
     <div class="hh" data-hh="marriage" hidden>
       <div class="intro">
@@ -522,7 +549,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="follower" aria-checked="false">Also a follower</button><button class="chip" data-f="trainer" aria-checked="false">Trainers</button><button class="chip" data-f="merchant" aria-checked="false">Merchants</button><button class="chip" data-f="husband" aria-checked="false">Husbands</button><button class="chip" data-f="wife" aria-checked="false">Wives</button>
       </div>
       <div class="field"><label class="label" for="spSearch">Search candidates</label><input type="search" id="spSearch" class="search" placeholder="Name, race or town, such as Nord or Riften" autocomplete="off"></div>
-      <div class="box"><div class="perks" id="spList"></div></div>
+      <div class="gear-sets" id="spList"></div>
     </div>
     <div class="hh" data-hh="homes" hidden>
       <div class="intro">
@@ -665,6 +692,23 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const $ = id => document.getElementById(id);
   const fmt = n => Math.round(n).toLocaleString('en-US');
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+
+  // ---------- Collapsible groups (open/closed state is remembered in this browser) ----------
+  let FOLDS = {};
+  try { FOLDS = JSON.parse(localStorage.getItem('skp.folds')) || {}; } catch {}
+  const saveFolds = () => { try { localStorage.setItem('skp.folds', JSON.stringify(FOLDS)); } catch {} };
+  function fold(key, title, inner, { count = null, chosen = 0, open = true, force = false, cls = '' } = {}) {
+    const isOpen = force || (key in FOLDS ? FOLDS[key] : open);
+    return `<details class="box fold ${cls}" data-fold="${esc(key)}"${isOpen ? ' open' : ''}><summary><h3>${title}</h3><span class="fold-meta">${chosen ? `<span class="cnt">${chosen} chosen</span>` : ''}${count != null ? `<span class="num">${count}</span>` : ''}</span></summary><div class="fold-body">${inner}</div></details>`;
+  }
+  const foldBar = scope => `<div class="fold-bar"><button class="btn quiet" data-foldall="open" data-scope="${scope}">Expand all</button><button class="btn quiet" data-foldall="close" data-scope="${scope}">Collapse all</button></div>`;
+  document.addEventListener('click', e => {
+    const s = e.target.closest('details.fold > summary');
+    if (s) { const d = s.parentElement; FOLDS[d.dataset.fold] = !d.open; saveFolds(); return; }   // record the user's choice, not the forced state
+    const b = e.target.closest('[data-foldall]'); if (!b) return;
+    document.querySelectorAll(`#${b.dataset.scope} details.fold`).forEach(d => { d.open = b.dataset.foldall === 'open'; FOLDS[d.dataset.fold] = d.open; });
+    saveFolds();
+  });
 
   // ---------- Perk data (data/perks.json) ----------
   let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA;
@@ -1038,10 +1082,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="speed" aria-hidden="true"><i style="width:${sp.total ? (sp.covered / sp.total * 100).toFixed(1) : 0}%"></i></div>
         <div class="ms-note">${line}</div>${tip}</div>`;
     }).join('');
-    $('stoneList').innerHTML = ['skills', 'ability', 'power'].map(kind => `<div class="stone-group"><h3>${kindLabel[kind]}</h3><div class="stones">${STONES.filter(s => s.kind === kind).map(s => {
+    $('stoneList').innerHTML = ['skills', 'ability', 'power'].map(kind => fold(`stone-${kind}`, kindLabel[kind], `<div class="stones">${STONES.filter(s => s.kind === kind).map(s => {
       const used = MS.filter(m => state.stones[m] === s.id).map(m => STRETCH[m]);
       return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}</span><span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
-    }).join('')}</div></div>`).join('');
+    }).join('')}</div>`, { count: STONES.filter(s => s.kind === kind).length, chosen: STONES.filter(s => s.kind === kind && MS.some(m => state.stones[m] === s.id)).length })).join('');
     renderShouts();
     renderGear();
     renderPotions();
@@ -1060,7 +1104,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${quests.length ? `<div class="ms-note">Quests along the way:</div><ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed: every word is at a word wall.' : 'No shouts chosen for this milestone yet.'}</div>`}</div>`;
     }).join('');
     const list = SHOUTS.filter(s => shoutFilter === 'all' || (shoutFilter === 'wanted' ? state.shouts[s.id] != null : s.dlc === shoutFilter));
-    $('shoutList').innerHTML = list.length ? list.map(s => {
+    const shoutRow = s => {
       const v = state.shouts[s.id];
       const where = s.locations.map(l => l.quest ? `${esc(l.place)} <span class="muted">(during ${esc(l.quest)})</span>` : esc(l.place)).join('; ');
       return `<div class="perk${v != null ? ' taken' : ''}"><div>
@@ -1070,7 +1114,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <div class="pr">Words at: ${where}</div></div>
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="sh-${s.id}" data-shout="${s.id}" aria-label="${esc(s.name)}: milestone">
           <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
-    }).join('') : '<p class="muted" style="margin:12px 0">No shouts chosen yet. Pick some from All 27.</p>';
+    };
+    const sg = ['base', 'dawnguard', 'dragonborn'].map(d => [d, list.filter(s => s.dlc === d)]).filter(([, l]) => l.length);
+    $('shoutList').innerHTML = sg.length ? (sg.length > 1 ? foldBar('shoutList') : '') + sg.map(([d, l]) => fold(`shout-${d}`, DLC[d], `<div class="perks">${l.map(shoutRow).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.shouts[s.id] != null).length, force: shoutFilter !== 'all' })).join('')
+      : '<div class="box"><p class="muted" style="margin:0">No shouts chosen yet. Pick some from All 27.</p></div>';
   }
   let gearFilter = 'all';
   const planned = skill => skill && perksIn(skill).some(p => state.picks[rankKey(p.id, 0)] != null);
@@ -1083,18 +1130,23 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     return out;
   }
-  const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique' };
+  const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique', standard: 'Standard' };
+  let gearSource = 'all';
+  const num = v => parseFloat(String(v || '').replace(/[^\d.]/g, '')) || 0;
+  // a Smithing perk named in the forging info, if the perk plan has it
+  const forgePerk = f => { if (!f || !f.perk) return null; const id = 'smithing.' + f.perk.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); return PERKS[id] ? { name: PERKS[id].name, m: state.picks[rankKey(id, 0)] } : null; };
   const gearSlot = () => subTab === 'apparel' ? 'apparel' : 'weapon';
   const inSlot = (g, slot) => slot === 'weapon' ? g.slot === 'weapon' : g.slot !== 'weapon';   // apparel tab also holds the few artifacts that aren't worn
   let gearSlotShown = null;
   function renderGear() {
     const slot = gearSlot(), mine = GEAR.filter(g => inSlot(g, slot));
     if (gearSlotShown !== slot) {   // switching tabs: new title, filters and search
-      gearSlotShown = slot; gearFilter = 'all'; $('gearSearch').value = '';
+      gearSlotShown = slot; gearFilter = 'all'; gearSource = 'all'; $('gearSearch').value = '';
+      $('gearSource').querySelectorAll('[data-src]').forEach(x => x.setAttribute('aria-checked', String(x.dataset.src === 'all')));
       $('gearTitle').textContent = slot === 'weapon' ? 'Weapons' : 'Apparel';
       $('gearIntro').textContent = slot === 'weapon'
-        ? 'Swords, axes, maces, daggers, bows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in.'
-        : 'Armor, shields, jewelry and clothing, plus a few artifacts that aren\'t worn. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in.';
+        ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them.'
+        : 'Every piece of armor, shield, jewelry and clothing, unique and standard, plus a few artifacts that aren\'t worn. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it.';
       $('gearSearchLabel').textContent = slot === 'weapon' ? 'Search weapons' : 'Search apparel';
       $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type or place, such as Chillrend or bow' : 'Name, type or place, such as Nightingale or ring';
       const groups = GEARDATA.groups[slot];
@@ -1111,6 +1163,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }).join('');
     const q = ($('gearSearch').value || '').trim().toLowerCase();
     const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
+      && (gearSource === 'all' || (gearSource === 'standard') === (g.set === 'standard'))
       && (!q || [g.name, g.type, g.where, g.quest, g.prince].some(t => t && t.toLowerCase().includes(q))));
     const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
@@ -1120,12 +1173,21 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
+          ${g.forge && g.forge.perk && !/^(n\/a|cannot)/i.test(g.forge.perk) ? (() => { const fp = forgePerk(g.forge); return `<div class="pr">Forge: ${esc(/no perk/i.test(g.forge.perk) ? 'no perk needed' : g.forge.perk)}${g.forge.temper && !/n\/a/i.test(g.forge.temper) ? ` · improve with ${esc(g.forge.temper)}` : ''}${fp ? (fp.m ? ` · <span class="why">${esc(fp.name)} is in your plan by level ${fp.m}</span>` : ` · <span class="muted">${esc(fp.name)} isn't in your perk plan</span>`) : ''}</div>`; })() : ''}
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: milestone">
           <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
     };
     const groups = GEARDATA.groups[slot].map(gr => [gr, list.filter(g => g.group === gr)]).filter(([, items]) => items.length);
-    $('gearList').innerHTML = groups.length ? groups.map(([label, items]) => `<div class="box"><h3>${esc(label)} <span class="muted num" style="font-size:.85rem">${items.length}</span></h3><div class="perks">${items.map(row).join('')}</div></div>`).join('')
+    const forceOpen = !!q || gearFilter !== 'all' || gearSource !== 'all';
+    // unique pieces first, then standard ones from weakest to strongest
+    const order = (a, b) => (a.set === 'standard') - (b.set === 'standard') || (a.set === 'standard' ? (a.forge?.level || 0) - (b.forge?.level || 0) || num(a.damage || a.rating) - num(b.damage || b.rating) : 0) || a.name.localeCompare(b.name);
+    const inner = (gr, items) => {
+      const subs = (GEARDATA.subs[gr] || [gr]).map(s => [s, items.filter(g => g.sub === s)]).filter(([, l]) => l.length);
+      if (subs.length < 2) return `<div class="perks">${items.slice().sort(order).map(row).join('')}</div>`;
+      return subs.map(([s, l]) => fold(`gear-${slot}-${gr}-${s}`, esc(s), `<div class="perks">${l.slice().sort(order).map(row).join('')}</div>`, { count: l.length, chosen: l.filter(g => state.gear[g.id] != null).length, open: false, force: !!q, cls: 'sub-fold' })).join('');
+    };
+    $('gearList').innerHTML = groups.length ? foldBar('gearList') + groups.map(([label, items]) => fold(`gear-${slot}-${label}`, esc(label), inner(label, items), { count: items.length, chosen: items.filter(g => state.gear[g.id] != null).length, open: false, force: forceOpen })).join('')
       : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : gearFilter === 'fits' ? 'Nothing here matches the skills in your perk plan yet.' : 'Nothing chosen yet. Pick some from All.'}</p></div>`;
   }
   $('gearList').addEventListener('change', e => {
@@ -1134,6 +1196,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
     touch(); renderGear(); renderSubtabs(); $(el.id)?.focus();
   });
   $('gearSearch').addEventListener('input', () => renderGear());
+  $('gearSource').addEventListener('click', e => {
+    const b = e.target.closest('[data-src]'); if (!b) return; gearSource = b.dataset.src;
+    $('gearSource').querySelectorAll('[data-src]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    renderGear();
+  });
   $('gearFilter').addEventListener('click', e => {
     const b = e.target.closest('[data-f]'); if (!b) return; gearFilter = b.dataset.f;
     $('gearFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
@@ -1277,12 +1344,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const q = ($('foodSearch').value || '').trim().toLowerCase();
     const list = RECIPES.filter(r => (foodFilter === 'all' || (foodFilter === 'wanted' ? state.food[r.id] != null : r.method === foodFilter))
       && (!q || [r.name, ...r.effects, ...r.ingredients].some(t => t.toLowerCase().includes(q))));
-    $('foodList').innerHTML = list.length ? list.map(r => `<div class="perk${state.food[r.id] != null ? ' taken' : ''}"><div>
+    const foodRow = r => `<div class="perk${state.food[r.id] != null ? ' taken' : ''}"><div>
         <div class="pn">${esc(r.name)}${r.method !== 'cook' ? `<span class="tagd">${r.method === 'bake' ? 'Hearthfire' : 'Survival'}</span>` : ''}</div>
         <div class="pe">${esc(r.effects.join('; '))}</div>
         <div class="pr">${esc(METHOD[r.method])} · ${esc(r.ingredients.join(', '))}</div></div>
-        <div class="ranks">${msSelect('fd-' + r.id, state.food[r.id], r.name, `data-food="${r.id}"`)}</div></div>`).join('')
-      : `<p class="muted" style="margin:12px 0">${q ? `Nothing matches "${esc(q)}".` : 'No food chosen yet. Pick some from All.'}</p>`;
+        <div class="ranks">${msSelect('fd-' + r.id, state.food[r.id], r.name, `data-food="${r.id}"`)}</div></div>`;
+    const FG = { cook: 'Cooking', bake: 'Baking (Hearthfire)', soup: 'Hot soups (Survival)' };
+    const fg = Object.keys(FG).map(k => [k, list.filter(r => r.method === k)]).filter(([, l]) => l.length);
+    $('foodList').innerHTML = fg.length ? (fg.length > 1 ? foldBar('foodList') : '') + fg.map(([k, l]) => fold(`food-${k}`, FG[k], `<div class="perks">${l.map(foodRow).join('')}</div>`, { count: l.length, chosen: l.filter(r => state.food[r.id] != null).length, open: k === 'cook', force: !!q || foodFilter !== 'all' })).join('')
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : 'No food chosen yet. Pick some from All.'}</p></div>`;
   }
   $('foodList').addEventListener('change', e => {
     const el = e.target.closest('select[data-food]'); if (!el) return;
@@ -1313,12 +1383,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('scrollAdvice').textContent = advice;
     let html = '';
     if (state.scrollUse !== 'none') {
-      html += ['Alteration', 'Conjuration', 'Destruction', 'Illusion', 'Restoration', 'Special'].map(sch => `<div class="box"><h3>${sch} scrolls</h3><div class="perks">${SCROLLS.filter(s => s.school === sch).map(s =>
-        `<div class="perk${state.scrolls[s.id] != null ? ' taken' : ''}"><div><div class="pn">Scroll of ${esc(s.name)}</div>${s.note ? `<div class="pe">${esc(s.note)}</div>` : ''}</div><div class="ranks">${msSelect('sc-' + s.id, state.scrolls[s.id], s.name, `data-scroll="${s.id}"`)}</div></div>`).join('')}</div></div>`).join('');
+      html += foldBar('scrollLists') + ['Alteration', 'Conjuration', 'Destruction', 'Illusion', 'Restoration', 'Special'].map(sch => fold(`scroll-${sch}`, `${sch} scrolls`, `<div class="perks">${SCROLLS.filter(s => s.school === sch).map(s =>
+        `<div class="perk${state.scrolls[s.id] != null ? ' taken' : ''}"><div><div class="pn">Scroll of ${esc(s.name)}</div>${s.note ? `<div class="pe">${esc(s.note)}</div>` : ''}</div><div class="ranks">${msSelect('sc-' + s.id, state.scrolls[s.id], s.name, `data-scroll="${s.id}"`)}</div></div>`).join('')}</div>`, { count: SCROLLS.filter(s => s.school === sch).length, chosen: SCROLLS.filter(s => s.school === sch && state.scrolls[s.id] != null).length, open: false })).join('');
     }
     if (state.spiderUse !== 'none') {
-      html += `<div class="box"><h3>Spider scrolls</h3><div class="perks">${SPIDERS.map(s =>
-        `<div class="perk${state.spiders[s.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(s.name)}</div><div class="pe">${esc(s.effect)}</div></div><div class="ranks">${msSelect('sp-' + s.id, state.spiders[s.id], s.name, `data-spider="${s.id}"`)}</div></div>`).join('')}</div></div>`;
+      html += fold('scroll-spiders', 'Spider scrolls', `<div class="perks">${SPIDERS.map(s =>
+        `<div class="perk${state.spiders[s.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(s.name)}</div><div class="pe">${esc(s.effect)}</div></div><div class="ranks">${msSelect('sp-' + s.id, state.spiders[s.id], s.name, `data-spider="${s.id}"`)}</div></div>`).join('')}</div>`, { count: SPIDERS.length, chosen: SPIDERS.filter(s => state.spiders[s.id] != null).length });
     }
     $('scrollLists').innerHTML = html || '<p class="muted" style="margin:0">Choose "Now and then" or more above to pick favorite scrolls.</p>';
   }
@@ -1518,7 +1588,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       $('questPlan').innerHTML = TIERS.map((tier, t) => {
         const ids = order.filter(id => plan[id].tier === t);
         const done = ids.filter(id => state.done[id]).length;
-        return `<div class="box qms tier-${tier.id}"><h3>${tier.title} <span class="muted num" style="font-size:.85rem">${ids.length ? `${done} of ${ids.length} done` : 'none yet'}</span></h3><p class="muted" style="margin:0;font-size:.9rem">${tier.blurb}</p>${ids.length ? `<ol class="qlist">${ids.map(id => {
+        return fold(`tier-${tier.id}`, tier.title, `<p class="muted" style="margin:0;font-size:.9rem">${tier.blurb}</p>${ids.length ? `<ol class="qlist">${ids.map(id => {
           const { q, why, leadsTo, m } = plan[id];
           const warn = [];
           if (t === 0 && q.reqLevel && q.reqLevel > m) warn.push(`Can't start until level ${q.reqLevel}, but it's needed by level ${m}.`);
@@ -1535,7 +1605,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
             ${q.reward ? `<div class="pr">Reward: ${esc(q.reward)}</div>` : ''}
             ${warn.map(x => `<div class="pw">${esc(x)}</div>`).join('')}
             ${mine ? `<div class="row" style="margin-top:4px"><button class="btn quiet" data-move="${id}" data-to="${mine === 'priority' ? 'selected' : 'priority'}">Move to ${mine === 'priority' ? 'Selected' : 'Priority'}</button><button class="btn quiet" data-remove="${id}">Remove</button></div>` : ''}</div></li>`;
-        }).join('')}</ol>` : ''}</div>`;
+        }).join('')}</ol>` : ''}`, { cls: `qms tier-${tier.id}`, chosen: 0, count: ids.length ? `${done} of ${ids.length} done` : 'none yet' });
       }).join('');
     }
     renderQuestSearch();
@@ -1616,7 +1686,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('folLike').innerHTML = planned && like.length ? like.map(x => folRow(x.f, esc(`Shares your ${x.shared.map(k => SK[k].name).join(', ')}.`))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
     const q = ($('folSearch').value || '').trim().toLowerCase();
     const list = FOLS.filter(f => (folFilter === 'all' || (folFilter === 'wanted' ? state.followers[f.id] != null : f[folFilter])) && (!q || [f.name, f.group, f.skillsText, f.description].some(t => t && t.toLowerCase().includes(q))));
-    $('folList').innerHTML = list.length ? list.map(f => folRow(f)).join('') : `<p class="muted" style="margin:12px 0">${q ? `Nothing matches "${esc(q)}".` : 'No followers chosen yet.'}</p>`;
+    const fgs = [...new Set(FOLS.map(f => f.group))].map(g => [g, list.filter(f => f.group === g)]).filter(([, l]) => l.length);
+    $('folList').innerHTML = fgs.length ? foldBar('folList') + fgs.map(([g, l]) => fold(`fol-${g}`, esc(g), `<div class="perks">${l.map(f => folRow(f)).join('')}</div>`, { count: l.length, chosen: l.filter(f => state.followers[f.id] != null).length, open: false, force: !!q || folFilter !== 'all' })).join('')
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : 'No followers chosen yet.'}</p></div>`;
   }
   function spouseRec() {
     const pc = perkCounts(), mine = new Set(Object.keys(pc).filter(k => pc[k] > 0));
@@ -1650,7 +1722,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const q = ($('spSearch').value || '').trim().toLowerCase();
     const list = SPS.filter(s => (spFilter === 'all' || (spFilter === 'husband' || spFilter === 'wife' ? s.role === spFilter : spFilter === 'follower' ? s.follower : spFilter === 'trainer' ? !!s.trainer : !!s.merchant))
       && (!q || [s.name, s.race, s.location, s.home].some(t => t && t.toLowerCase().includes(q))));
-    $('spList').innerHTML = list.length ? list.map(s => spRow(s)).join('') : `<p class="muted" style="margin:12px 0">Nothing matches "${esc(q)}".</p>`;
+    const sgs = [['husband', 'Husbands'], ['wife', 'Wives']].map(([r, label]) => [label, list.filter(s => s.role === r)]).filter(([, l]) => l.length);
+    $('spList').innerHTML = sgs.length ? (sgs.length > 1 ? foldBar('spList') : '') + sgs.map(([label, l]) => fold(`sp-${label}`, label, `<div class="perks">${l.map(s => spRow(s)).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.spouse && state.spouse.id === s.id).length, open: false, force: !!q || spFilter !== 'all' })).join('')
+      : `<div class="box"><p class="muted" style="margin:0">Nothing matches "${esc(q)}".</p></div>`;
   }
   let planLines = new Set();
   function homeFit(hm) {
@@ -1671,7 +1745,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function renderHomes() {
     const { plan } = buildQuestPlan(); planLines = new Set(Object.values(plan).map(p => p.q.line));
     const groups = [['Homes to buy', HOMES.filter(x => x.kind === 'city')], ['Homes to build (Hearthfire)', HOMES.filter(x => x.kind === 'hearthfire')], ['Solstheim (Dragonborn)', HOMES.filter(x => x.kind === 'dragonborn')], ['Anniversary Edition (Creation Club)', HOMES.filter(x => x.kind === 'cc')], ['Faction rooms', HOMES.filter(x => x.kind === 'faction')]];
-    $('homeList').innerHTML = groups.map(([label, list]) => `<div class="box"><h3>${label}</h3><div class="perks">${list.map(hm => {
+    $('homeList').innerHTML = foldBar('homeList') + groups.map(([label, list]) => fold(`home-${label}`, label, `<div class="perks">${list.map(hm => {
       const fit = homeFit(hm), blk = homeBlock(hm);
       return `<div class="perk${state.homes[hm.id] != null ? ' taken' : ''}"><div>
         <div class="pn">${esc(hm.name)}${hm.faction ? `<span class="tagd">${esc(hm.faction)}</span>` : ''}${fit.length ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
@@ -1682,7 +1756,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${hm.quests.length || hm.questsAny ? `<div class="pr">Quest: ${esc([...hm.quests, ...(hm.questsAny ? [hm.questsAny.join(' or ')] : [])].join(', '))}</div>` : ''}
         ${blk ? `<div class="pw">${esc(blk)}</div>` : ''}</div>
         <div class="ranks">${msSelect('hm-' + hm.id, state.homes[hm.id], hm.name, `data-home="${hm.id}"`)}</div></div>`;
-    }).join('')}</div></div>`).join('');
+    }).join('')}</div>`, { count: list.length, chosen: list.filter(hm => state.homes[hm.id] != null).length })).join('');
   }
   function renderHousehold() {
     $('hhtabs').querySelectorAll('[data-hh]').forEach(b => {
