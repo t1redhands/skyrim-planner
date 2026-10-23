@@ -453,6 +453,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button class="chip" data-src="all" aria-checked="true">Any</button>
       <button class="chip" data-src="unique" aria-checked="false">Unique and artifacts</button>
       <button class="chip" data-src="standard" aria-checked="false">Standard</button>
+      <button class="chip" data-src="enchanted" aria-checked="false">Enchanted loot</button>
     </div>
     <div class="field"><label class="label" for="gearSearch" id="gearSearchLabel">Search weapons</label><input type="search" id="gearSearch" class="search" autocomplete="off"></div>
     <div class="gear-sets" id="gearList"></div>
@@ -1123,14 +1124,16 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const planned = skill => skill && perksIn(skill).some(p => state.picks[rankKey(p.id, 0)] != null);
   function gearIssues(g, v) {
     const out = [];
-    if (v != null && v < g.minLevel) out.push(`${g.quest} can't start until level ${g.minLevel}.`);
+    if (v != null && v < g.minLevel) out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
+    if (v != null && g.side === 'volkihar' && state.dgSide !== 'volkihar') out.push(state.dgSide === 'dawnguard' ? 'Only Volkihar vampires can get this (a reward from Garan Marethi); you chose the Dawnguard side.' : 'Only Volkihar vampires can get this (a reward from Garan Marethi). Set your Dawnguard side to Volkihar on the Quest plan step.');
     if (v != null && g.choiceGroup) {
       const rival = GEAR.find(o => o.choiceGroup === g.choiceGroup && o.id !== g.id && state.gear[o.id] != null);
       if (rival) out.push(`You can't have both this and ${rival.name}. ${GEARDATA.choiceGroups[g.choiceGroup]}`);
     }
     return out;
   }
-  const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique', standard: 'Standard' };
+  const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique', 'unique-apparel': 'Unique', 'generic-magic': 'Enchanted', standard: 'Standard' };
+  const srcOf = g => g.set === 'standard' ? 'standard' : g.set === 'generic-magic' ? 'enchanted' : 'unique';
   let gearSource = 'all';
   const num = v => parseFloat(String(v || '').replace(/[^\d.]/g, '')) || 0;
   // a Smithing perk named in the forging info, if the perk plan has it
@@ -1163,7 +1166,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }).join('');
     const q = ($('gearSearch').value || '').trim().toLowerCase();
     const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
-      && (gearSource === 'all' || (gearSource === 'standard') === (g.set === 'standard'))
+      && (gearSource === 'all' || gearSource === srcOf(g))
       && (!q || [g.name, g.type, g.where, g.quest, g.prince].some(t => t && t.toLowerCase().includes(q))));
     const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
@@ -1180,8 +1183,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     };
     const groups = GEARDATA.groups[slot].map(gr => [gr, list.filter(g => g.group === gr)]).filter(([, items]) => items.length);
     const forceOpen = !!q || gearFilter !== 'all' || gearSource !== 'all';
-    // unique pieces first, then standard ones from weakest to strongest
-    const order = (a, b) => (a.set === 'standard') - (b.set === 'standard') || (a.set === 'standard' ? (a.forge?.level || 0) - (b.forge?.level || 0) || num(a.damage || a.rating) - num(b.damage || b.rating) : 0) || a.name.localeCompare(b.name);
+    // unique pieces first, then enchanted robes by school and level, then standard ones from weakest to strongest
+    const rankSrc = g => ({ unique: 0, enchanted: 1, standard: 2 })[srcOf(g)];
+    const order = (a, b) => rankSrc(a) - rankSrc(b) || (a.set === 'generic-magic' ? (a.skill || 'zz').localeCompare(b.skill || 'zz') || a.minLevel - b.minLevel : 0) || (a.set === 'standard' ? (a.forge?.level || 0) - (b.forge?.level || 0) || num(a.damage || a.rating) - num(b.damage || b.rating) : 0) || a.name.localeCompare(b.name);
     const inner = (gr, items) => {
       const subs = (GEARDATA.subs[gr] || [gr]).map(s => [s, items.filter(g => g.sub === s)]).filter(([, l]) => l.length);
       if (subs.length < 2) return `<div class="perks">${items.slice().sort(order).map(row).join('')}</div>`;
@@ -1728,7 +1732,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   let planLines = new Set();
   function homeFit(hm) {
-    const pc = perkCounts(), f = (hm.features || []).join(' ').toLowerCase() + ' ' + (hm.note || '').toLowerCase(), out = [];
+    const pc = perkCounts(), f = (hm.features || []).join(' ').toLowerCase(), out = [];   // only real crafting stations count, not notes about them
     if (pc.alchemy && /alchemy|alchemist/.test(f)) out.push('alchemy lab for your Alchemy perks');
     if (pc.enchanting && /enchant/.test(f)) out.push('enchanter for your Enchanting perks');
     if (pc.smithing && /smithing|forge|anvil|smelter/.test(f)) out.push('forge for your Smithing perks');
