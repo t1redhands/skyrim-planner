@@ -1,0 +1,797 @@
+<noinclude>{{Trail|Skills}}{{#addtotrail:Enchanting}}{{#addtotrail:Magical Effects|separator=' / '}} [[Category:Skyrim-Magic]]
+This page documents the '''[[Skyrim:Magical Effects|Magical Effects]]''' that can be used for '''[[Skyrim:Enchanting|Enchanting]]''' items.
+==Enchantment Effects==
+Enchantment effects can only be put on items that are equipped to certain locations.
+</noinclude>
+===Apparel Effects===
+Apparel enchantments improve the player's attributes, or provide the player with useful new abilities or resistances.  An enchantment's base magnitude is the number shown when you hover over that enchantment (in the enchanting menu) without selecting it. This number specifies the magnitude of the enchantment when a Grand soul is used by a player with level 0 enchanting skill and no enchanting perks.
+
+{| class="wikitable sortable" width=100% {{AL|C}}
+!colspan=3 rowspan=2| Apparel Effect
+!colspan=7| Body Area
+! width=1 rowspan=2| Base Magnitude !! width=1 rowspan=2| {{nowrap|Base Cost}}{{Ref|Rounded down.}} !! rowspan=2| Disenchant
+|-
+!width=40| {{hover|Circlets, Helmets, and Hoods|Head}}
+!width=40| {{hover|Amulets and Necklaces|Neck}}
+!width=40| {{hover|Body Armor and Clothing|Chest}}
+!width=40| {{hover|Bracers, Gauntlets, and Gloves|Hands}}
+!width=40| {{hover|Rings|Finger}}
+!width=40| {{hover|Boots and Shoes|Feet}}
+!width=40| Shield
+|-
+!rowspan=17 width=1| Fortify Skill
+!width=1| {{icon|sp|Magic Hat|24}}
+!width=1| [[Skyrim:Fortify Alchemy|Alchemy]]
+| {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         ||
+| +8% potion strength || 167
+| {{showhide||
+* All varieties of Bracers/Gauntlets, Helmets, and Necklaces ''[[Skyrim:Generic Magic Apparel#Fortify Alchemy|of Alchemy]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Alchemy''
+* [[Skyrim:Muiri's Ring|Muiri's Ring]]
+* [[Skyrim:Ring of Pure Mixtures|Ring of Pure Mixtures]]
+** This item cannot be disenchanted while the [[Skyrim:Dungeon_Delving_(Caves)|related quest]] is active, but can at other times.
+* Due to a bug, the [[Skyrim:Dwarven Helmet of Eminent Alteration|Dwarven Helmet of Eminent Alteration]] also has an alchemy enchantment
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Alteration|Alteration]]
+| {{Yes}} || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| -8% casting cost || 206
+| {{showhide||
+* All varieties of Armor, Bracers, and Helmets ''[[Skyrim:Generic Magic Apparel#Fortify Alteration|of Alteration]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Alteration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Archery|Archery]]
+| {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         ||
+| +13% damage || 352
+| {{showhide||
+* All varieties of Bracers/Gauntlets, Circlets, Helmets, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Archery|of Archery]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Archery''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Barter|Barter]]
+|         || {{Yes}} ||         ||         ||         ||         ||
+| Prices improved by 8% || 206
+| {{showhide||
+* All Necklaces ''[[Skyrim:Generic Magic Apparel#Fortify Barter|of Haggling]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Barter''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Block|Block]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         || {{Yes}}
+| +13% damage blocked || 235
+| {{showhide||
+* All varieties of Shield ''[[Skyrim:Generic Magic Apparel#Fortify_Block|of Blocking]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Fortify Block''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Conjuration|Conjuration]]
+| {{Yes}} || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| -8% casting cost || 246
+| {{showhide||
+* All varieties of Armor, Bracers, and Helmet ''[[Skyrim:Generic Magic Apparel#Fortify Conjuration|of Conjuring]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Fortify Conjuring''
+* All varieties of Circlets, and Imperial Helmets ''of Conjuration''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Conjuration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Destruction|Destruction]]
+| {{Yes}} || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| -8% casting cost || 256
+| {{showhide||
+* All varieties of Armor, Bracers, Circlets, Helmets, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Destruction|of Destruction]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Destruction''
+* [[Skyrim:Hooded Thalmor Robes|Hooded Thalmor Robes]]
+* [[Skyrim:Thalmor Robes|Thalmor Robes]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Heavy Armor|Heavy Armor]]
+|         || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} ||         ||
+| +8 skill || 157
+| {{showhide||
+* '''Most''' varieties of Armor and Necklaces ''[[Skyrim:Generic Magic Apparel#Fortify Heavy Armor|of the Knight]]''
+** Includes the enchantments ''of the [Minor/Major/Eminent/Extreme/Noble/Peerless] Knight''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Illusion|Illusion]]
+| {{Yes}} || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| -8% casting cost || 226
+| {{showhide||
+* All varieties of Armor, and Helmets ''[[Skyrim:Generic Magic Apparel#Fortify Illusion|of Illusion]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Illusion''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Light Armor|Light Armor]]
+|         || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} ||         ||
+| +8 skill || 137
+| {{showhide||
+* All varieties of Armor and Necklaces ''[[Skyrim:Generic Magic Apparel#Fortify Light Armor|of the Squire]]''
+** Includes the enchantments ''of the [Minor/Major/Eminent/Extreme/Noble/Peerless] Squire''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Lockpicking|Lockpicking]]
+| {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         ||
+| +13% || 168
+| {{showhide||
+* All varieties of Bracers/Gauntlets and Necklaces ''[[Skyrim:Generic Magic Apparel#Fortify Lockpicking|of Lockpicking]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Lockpicking''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify One-handed|One-Handed]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} || {{Yes}} ||
+| +13% damage || 369
+| {{showhide||
+* All varieties of Bracers/Gauntlets, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify One-Handed|of Wielding]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Wielding''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Pickpocket|Pickpocket]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} || {{Yes}} ||
+| {{nowrap|+13% multiplier to success chance}} || 184
+| {{showhide||
+* All varieties of Bracers/Gauntlets and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Pickpocket|of Deft Hands]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Deft Hands''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Restoration|Restoration]]
+| {{Yes}} || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| -8% casting cost || 231
+| {{showhide||
+* All varieties of Armor, Circlets, Helmets, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Restoration|of Restoration]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Restoration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Smithing|Smithing]]
+|         || {{Yes}} || {{Yes}} || {{Yes}} || {{Yes}} ||         ||
+| +8% tempering strength || 236
+| {{showhide||
+* All varieties of Bracers/Gauntlets, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Smithing|of Smithing]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Smithing''
+* [[Skyrim:Silver-Blood Family Ring|Silver-Blood Family Ring]]
+* [[Skyrim:The Forgemaster's Fingers (item)|The Forgemaster's Fingers]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Sneak|Sneak]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} || {{Yes}} ||
+| +13% || 672
+| {{showhide||
+* All varieties of Boots, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Sneak|of Sneaking]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Sneaking''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Two-handed|Two-Handed]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} || {{Yes}} ||
+| +13% damage || 369
+| {{showhide||
+* All varieties of Bracers/Gauntlets, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Two-Handed|of Sure Grip]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Sure Grip''
+* [[Skyrim:Ironhand Gauntlets|Ironhand Gauntlets]]
+* [[Skyrim:Ring of Minor Striking|Ring of Minor Striking]]
+}}
+|-
+!rowspan=6| {{nowrap|Fortify Attribute}}
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Regenerate_Health|Healing Regen]]
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         ||
+| +10% || 251
+| {{showhide||
+* All varieties of Armor, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Healing Rate|of Mending]]''
+* All varieties of Armor, Necklaces, and Rings ''of Revival''
+* All varieties of Armor, Necklaces, and Rings ''of Regeneration''
+* All varieties of Armor, Necklaces, and Rings ''of Remedy''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Health|Health]]
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         || {{Yes}}
+| +20 || 202
+| {{showhide||
+* All varieties of Armor ''[[Skyrim:Generic Magic Apparel#Fortify Health|of Health]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Health''
+* [[Skyrim:Enchanted Ring|Enchanted Ring]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Magicka|Magicka]]
+| {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         ||
+| +20 || 188
+| {{showhide||
+* All varieties of Circlets, Helmets, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Magicka|of Magicka]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Magicka''
+* [[Skyrim:Adept Hood|Adept Hood]]
+* [[Skyrim:Amulet of Julianos|Amulet of Julianos]]
+* [[Skyrim:Apprentice Hood|Apprentice Hood]]
+* [[Skyrim:Black Mage Hood|Black Mage Hood]]
+* [[Skyrim:Executioner's Hood|Executioner's Hood]]
+* [[Skyrim:Mage's Circlet|Mage's Circlet]]
+* [[Skyrim:Novice Hood|Novice Hood]]
+* [[Skyrim:Savos Aren's Amulet|Savos Aren's Amulet]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Regenerate Magicka|Magicka Regen]]
+| {{Yes}} ||         || {{Yes}} ||         || {{Yes}} ||         ||
+| +20% || 53
+| {{showhide||
+* All varieties of Helmets, Rings, and Robes ''[[Skyrim:Generic Magic Apparel#Fortify Magicka Rate|of Recovery]]'' items
+* All varieties of Armor, Helmets, Rings, and Robes ''of Replenishing''
+* All varieties of Helmets, Rings, and Robes ''of Resurgence''
+* [[Skyrim:Adept Robes|Adept Robes]]
+* [[Skyrim:Apprentice Robes|Apprentice Robes]]
+* [[Skyrim:Black Mage Robes|Black Mage Robes]]
+* [[Skyrim:Blue Mage Robes|Blue Mage Robes]]
+* [[Skyrim:Expert Robes|Expert Robes]]
+* [[Skyrim:Hooded Black Mage Robes|Hooded Black Mage Robes]]
+* [[Skyrim:Hooded Necromancer Robes|Hooded Necromancer Robes]]
+* [[Skyrim:Master Robes|Master Robes]]
+* [[Skyrim:Mythic Dawn Robes|Mythic Dawn Robes]]
+* [[Skyrim:Necromancer Robes|Necromancer Robes]]
+* [[Skyrim:Generic_Magic_Apparel#Novice_Robes|Novice Robes]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Stamina|Stamina]]
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||
+| +20 || 161
+| {{showhide||
+* All varieties of Armor, Boots, Necklaces, and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Stamina|of Stamina]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Stamina''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Regenerate Stamina|Stamina Regen]]{{Ref|name="Source and Target"|Although armors, necklaces and ''rings'' can be disenchanted in order to gain the enchantment, armors, necklaces and ''foot apparel'' can be enchanted. Therefore you can equip four items (neck, chest, finger, feet) with that enchantment.}}
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}}{{Ref|name="Source and Target"}} || {{Yes}}{{Ref|name="Source and Target"}} ||
+| +10% || 125
+| {{showhide||
+* All varieties of Armor, Necklaces and Rings ''[[Skyrim:Generic Magic Apparel#Fortify Stamina Regen|of Invigoration]]''
+* All varieties of Armor, Necklaces and Rings ''of Recuperation''
+* All varieties of Armor, Necklaces and Rings ''of Rejuvenation''
+* All varieties of Armor, Necklaces and Rings ''of Renewal''
+}}
+|-
+!rowspan=9| Fortify Other
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify_Carry_Weight|Carry Weight]]
+|         || {{Yes}} ||         || {{Yes}} || {{Yes}} || {{Yes}} ||
+| +15 || 393
+| {{showhide||
+* [[Skyrim:Charmed Necklace|Charmed Necklace]]
+* All varieties of Boots ''[[Skyrim:Generic Magic Apparel#Fortify Carry Weight|of Brawn]]''
+* All varieties of Boots ''of Hauling''
+* All varieties of Boots ''of Lifting''
+* All varieties of Boots ''of the Mammoth''
+* All varieties of Boots ''of the Ox''
+* All varieties of Boots ''of Strength''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! {{nowrap|Alteration &<br>Magicka Regen}}
+|         ||         || {{Yes}} ||         ||         ||         ||
+| -5% casting cost</br>+10% Magicka Regen{{Ref|name=FixedMagnitude|The magnitude of this part of the effect is fixed regardless of skill, soul used, or perks.}} || 176
+| {{showhide||
+* All varieties of Robes ''[[Skyrim:Generic Magic Apparel#Fortify Alteration with Regenerate Magicka|of Alteration]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Alteration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! {{nowrap|Conjuration &<br>Magicka Regen}}
+|         ||         || {{Yes}} ||         ||         ||         ||
+| -5% casting cost</br>+10% Magicka Regen{{Ref|name=FixedMagnitude}} || 199
+| {{showhide||
+* All varieties of Robes and Vampire Armor{{DG}} ''[[Skyrim:Generic Magic Apparel#Fortify Conjuration with Regenerate Magicka|of Conjuration]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Conjuration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! {{nowrap|Destruction &<br>Magicka Regen}}
+|         ||         || {{Yes}} ||         ||         ||         ||
+| -5% casting cost</br>+10% Magicka Regen{{Ref|name=FixedMagnitude}} || 205
+| {{showhide||
+* All varieties of Robes and Vampire Armor{{DG}} ''[[Skyrim:Generic Magic Apparel#Fortify Destruction with Regenerate Magicka|of Destruction]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Destruction''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! {{nowrap|Illusion &<br>Magicka Regen}}
+|         ||         || {{Yes}} ||         ||         ||         ||
+| -5% casting cost</br>+10% Magicka Regen{{Ref|name=FixedMagnitude}} || 182
+| {{showhide||
+* All varieties of Robes ''[[Skyrim:Generic Magic Apparel#Fortify Illusion with Regenerate Magicka|of Illusion]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Illusion''
+}}
+|-
+! {{icon|sp|Banish|24}}
+! [[Skyrim:Dark Moon|Dark Moon]]
+| {{Yes}} || {{Yes}} ||         || {{Yes}} || {{Yes}} ||         ||
+|  +40 Magicka</br>-30% Health Regen{{Ref|name=FixedMagnitude}} || 404
+| {{showhide||
+* Elite and Ascendant ''[[Skyrim:Necromancer Hood|Necromancer Hood]]s''{{CC|Necromantic Grimoire}}
+}}
+|-
+! {{icon|sp|Summon|24}}
+! [[Skyrim:Empower Necromancy|Empower Necromancy]]
+|         ||         || {{Yes}} ||         ||         ||         ||
+| Conjuration spell duration +5%<br>Lesser undead summon limit +1{{Ref|name=FixedMagnitude}} || 199
+| {{showhide||
+* Elite and Ascendant ''[[Skyrim:Necromancer Robes|Necromancer Robes]]''{{CC|Necromantic Grimoire}}
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! {{nowrap|Restoration &<br>Magicka Regen}}
+|         ||         || {{Yes}} ||         ||         ||         ||
+| -5% casting cost</br>+10% Magicka Regen{{Ref|name=FixedMagnitude}} || 193
+| {{showhide||
+* All varieties of Robes ''[[Skyrim:Generic Magic Apparel#Fortify Restoration with Regenerate Magicka|of Restoration]]''
+** Includes the enchantments ''of [Minor/Major/Eminent/Extreme/Peerless] Restoration''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Fortify Unarmed Damage|Unarmed]]
+|         ||         ||         || {{Yes}} || {{Yes}} ||         ||
+| +5 damage || 88
+| {{showhide||
+* [[Skyrim:Gloves of the Pugilist|Gloves of the Pugilist]]
+}}
+|-
+!rowspan=6| Resist
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Resist_Disease|Disease]]
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         || {{Yes}}
+| +25% || 55
+| {{showhide||
+* [[Skyrim:Necklace of Disease Immunity|Necklace of Disease Immunity]]
+* [[Skyrim:Necklace of Disease Resistance|Necklace of Disease Resistance]]
+}}
+|-
+! {{icon|sp|Fire|24}}
+! [[Skyrim:Resist Fire|Fire]]
+|         || {{Yes}} ||         ||         || {{Yes}} || {{Yes}} || {{Yes}}
+| +15% || 176
+| {{showhide||
+* All varieties of Boots, Necklaces, and Shields ''[[Skyrim:Generic Magic Apparel#Resist Fire|of Dwindling Flames]]''
+* All varieties of Boots, Necklaces, and Shields ''of Fire Abatement''
+* All varieties of Boots, Necklaces, and Shields ''of Fire Suppression''
+* All varieties of Boots, Necklaces, and Shields ''of Flame Suppression''
+* All varieties of Boots, Necklaces, and Shields ''of the Firewalker''
+* All varieties of Boots, Necklaces, and Shields ''of Resist Fire''
+* All varieties of Boots, Necklaces, and Shields ''of Waning Fire''
+* [[Skyrim:Ancient Helmet of the Unburned|Ancient Helmet of the Unburned]]
+* [[Skyrim:Steel Shield of Fire Resist|Steel Shield of Fire Resist]]
+}}
+|-
+! {{icon|sp|Ice|24}}
+! [[Skyrim:Resist Frost|Frost]]
+|         || {{Yes}} ||         ||         || {{Yes}} || {{Yes}} || {{Yes}}
+| +15% || 186
+| {{showhide||
+* All varieties of Armor, Boots, Necklaces, and Shields ''[[Skyrim:Generic Magic Apparel#Resist Frost|of Dwindling Frost]]''
+* All varieties of Armor, Boots, Necklaces, and Shields ''of Frost Abatement''
+* All varieties of Armor, Boots, Necklaces, and Shields ''of Frost Suppression''
+* All varieties of Armor, Boots, Necklaces, and Shields ''of Resist Frost''
+* All varieties of Armor, Boots, Necklaces, and Shields ''of Waning Frost''
+* All varieties of Armor, Boots, Necklaces, and Shields ''of Warmth''
+* [[Skyrim:Helm of Yngol|Helm of Yngol]]
+* [[Skyrim:Herebane's Fortress|Herebane's Fortress]]
+* [[Skyrim:Necklace of Frost Resist|Necklace of Frost Resist]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Resist_Magic|Magic]]{{Ref|name=TwoVersions|1={{Bug|There are two versions of this effect, allowing it to be applied twice. The second version is from the [[Skyrim:Shield of Solitude|Shield of Solitude]] and has a base magnitude of 10%.|USKP|nobullet=1|fixdetail=The shield has been altered to use the normal version of the effect.}}}}
+|         || {{Yes}} ||         ||         || {{Yes}} ||         || {{Yes}}
+| +8% || 187
+| {{showhide||
+* All varieties of Necklaces, Rings, and Shields ''[[Skyrim:Generic Magic Apparel#Resist Magic|of Dwindling Magic]]'', ''of Resist Magic'', ''of Waning Magic'', ''of Magic Abatement'', ''of Magic Suppression'', and ''of Nullification''
+A second version of the effect is available from one item:
+* [[Skyrim:Shield of Solitude|Shield of Solitude]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Resist_Poison|Poison]]
+|         || {{Yes}} || {{Yes}} ||         || {{Yes}} ||         || {{Yes}}
+| +15% || 39
+| {{showhide||
+* [[Skyrim:Necklace of Poison Immunity|Necklace of Poison Immunity]]
+* [[Skyrim:Necklace of Poison Resistance|Necklace of Poison Resistance]]
+}}
+|-
+! {{icon|sp|Shock|24}}
+! [[Skyrim:Resist Shock|Shock]]
+|         || {{Yes}} ||         ||         || {{Yes}} || {{Yes}} || {{Yes}}
+| +15% || 196
+| {{showhide||
+* All varieties of Boots, Necklaces, and Shields ''[[Skyrim:Generic Magic Apparel#Resist Shock|of Dwindling Shock]]''
+* All varieties of Boots, Necklaces, and Shields ''of Grounding''
+* All varieties of Boots, Necklaces, and Shields ''of Resist Shock''
+* All varieties of Boots, Necklaces, and Shields ''of Shock Abatement''
+* All varieties of Boots, Necklaces, and Shields ''of Shock Suppression''
+* All varieties of Boots, Necklaces, and Shields ''of Waning Shock''
+}}
+|-
+!rowspan=2| Other
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Muffle (effect)|Muffle]]
+|         ||         ||         ||         ||         || {{Yes}} ||
+| n/a || 105
+| {{showhide||
+* All varieties of Boots ''[[Skyrim:Generic Magic Apparel#Muffle|of Muffling]]''
+}}
+|-
+! {{icon|sp|Alteration|24}}
+! [[Skyrim:Waterbreathing (effect)|Waterbreathing]]
+| {{Yes}} || {{Yes}} ||         ||         || {{Yes}} ||         ||
+| n/a || 100
+| {{showhide||
+* All varieties of Circlets, Helmets, and Necklaces ''[[Skyrim:Generic Magic Apparel#Waterbreathing|of Waterbreathing]]''
+}}
+|-
+!colspan=3| Apparel Effect
+! Head !! Neck !! Chest !! Hands !! Finger !! Feet !! Shield
+! Base Magnitude !! Base Cost !! Disenchant
+|}
+{{Reflist|1}}
+
+===Weapon Effects===
+Base magnitude is the number shown when you hover over an enchantment without selecting it, if you have no perks. It is equivalent to the magnitude with a Grand soul, 0 skill, and no perks. Base uses is defined the same way but cannot be seen directly without the use of the console.
+{| class="wikitable sortable" width=100% {{AL|C}}
+!colspan=3| Weapon Effect !! School !! Base Magnitude !! {{nowrap|Base Cost}}{{Ref|Rounded down.}} !! Disenchant
+|-
+!rowspan=3 width=1| Absorb
+!width=1| {{icon|sp|Absorb|24}}
+!width=1| [[Skyrim:Absorb_Health|Health]]
+|width=1| [[Skyrim:Destruction|Destruction]] ||width=1| 8 ||width=1| 31
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Absorb Health|of Absorption]]''
+* All weapons ''of Consuming''
+* All weapons ''of Devouring''
+* All weapons ''of Leeching''
+* All weapons ''of the Vampire''
+* [[Skyrim:Blade of Woe|Blade of Woe]]
+* [[Skyrim:Drainblood Battleaxe|Drainblood Battleaxe]]
+* [[Skyrim:Gauldur Blackblade|Gauldur Blackblade]]
+}}
+|-
+! {{icon|sp|Absorb|24}}
+! [[Skyrim:Absorb_Magicka|Magicka]]{{Ref|name=DuplicateEffect|There are two versions of this effect, allowing it to be applied twice.}}
+| [[Skyrim:Destruction|Destruction]] || 10 || 21
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Absorb Magicka|of the Sorcerer]]''
+* All weapons ''of Evoking''
+* All weapons ''of Harrowing''
+* All weapons ''of Siphoning''
+* All weapons ''of Winnowing''
+* [[Skyrim:Gauldur Blackbow|Gauldur Blackbow]]
+* [[Skyrim:Drainspell Bow|Drainspell Bow]] - has unique version of effect
+}}
+|-
+! {{icon|sp|Absorb|24}}
+! [[Skyrim:Absorb_Stamina|Stamina]]{{Ref|name=DuplicateEffect}}
+| [[Skyrim:Destruction|Destruction]] || 10 || 22
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Absorb Stamina|of Subsuming]]''
+* All weapons ''of Garnering''
+* All weapons ''of Gleaning''
+* All weapons ''of Harvesting''
+* All weapons ''of Reaping''
+* [[Skyrim:Drainheart Sword|Drainheart Sword]] &ndash; has unique version of effect
+}}
+|-
+!rowspan=6| Damage
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Chaos Damage|Chaos]]{{DB}}
+| [[Skyrim:Destruction|Destruction]] || 10 || 19
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Chaos Damage|of Chaos]]''
+* All weapons ''of Extreme Chaos''
+* All weapons ''of High Chaos''
+* All weapons ''of Ultimate Chaos''
+* [[Skyrim:Champion's Cudgel|Champion's Cudgel]]
+}}
+|-
+! {{icon|sp|Fire|24}}
+! [[Skyrim:Fire_Damage|Fire]]
+| [[Skyrim:Destruction|Destruction]] || 10 || 11
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Fire Damage|of Burning]]''
+* All weapons ''of Scorching''
+* All weapons ''of Embers''
+* All weapons ''of Fire''
+* All weapons ''of Flames''
+* All weapons ''of the Blaze''
+* All weapons ''of the Inferno''
+* [[Skyrim:Herebane's Courage|Herebane's Courage]]
+}}
+|-
+! {{icon|sp|Ice|24}}
+! [[Skyrim:Frost_Damage|Frost]]
+| [[Skyrim:Destruction|Destruction]] || 10{{Ref|name=FrostMagnitude|The magnitude of this effect applies to both damage and stamina damage.}}<br/>50%{{Ref|name=FixedMagnitude|The magnitude of this part of the effect is fixed regardless of skill, soul used, or perks.}} slow for 2 seconds{{Ref|name=FixedDuration|The duration of this part of the effect is fixed regardless of skill, soul used, or perks.}} || 13
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Frost Damage|of Chills]]''
+* All weapons ''of Blizzards''
+* All weapons ''of Cold''
+* All weapons ''of Freezing''
+* All weapons ''of Frost''
+* All weapons ''of Ice''
+* All weapons ''of Winter''
+* [[Skyrim:Aegisbane|Aegisbane]]
+* [[Skyrim:Eduj|Eduj]]
+* [[Skyrim:Firiniel's End|Firiniel's End]]
+* [[Skyrim:Grimsever|Grimsever]]
+* [[Skyrim:Okin|Okin]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Damage_Magicka|Magicka]]
+| [[Skyrim:Destruction|Destruction]] || 15 || 15
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Magicka Damage|of Depleting]]''
+* All weapons ''of Diminishing''
+* All weapons ''of Draining''
+* All weapons ''of Enervating''
+* All weapons ''of Nullifying''
+* All weapons ''of Sapping''
+}}
+|-
+! {{icon|sp|Shock|24}}
+! [[Skyrim:Shock_Damage|Shock]]
+| [[Skyrim:Destruction|Destruction]] || 10{{Ref|name=ShockMagnitude|The magnitude of this effect applies to both damage and, at half value rounding down, magicka damage.}} || 14
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Shock Damage|of Sparks]]''
+* All weapons ''of Arcing''
+* All weapons ''of Shocks''
+* All weapons ''of Thunderbolts''
+* All weapons ''of Lightning''
+* All weapons ''of Storms''
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Damage_Stamina|Stamina]]
+| [[Skyrim:Destruction|Destruction]] || 15 || 29
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Damage Stamina|of Debilitation]]''
+* All weapons ''of Exhaustion''
+* All weapons ''of Fatigue''
+* All weapons ''of Lethargy''
+* All weapons ''of Torpor''
+* All weapons ''of Weariness''
+* [[Skyrim:Froki's Bow|Froki's Bow]]
+}}
+|-
+!rowspan=3| Repel
+! {{icon|sp|Banish|24}}
+! [[Skyrim:Banish|Banish]]
+| [[Skyrim:Conjuration|Conjuration]] ||data-sort-value=10| Level 10 || 113
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Banish|of Annihilating]]''
+* All weapons ''of Banishing''
+* All weapons ''of Expelling''
+}}
+|-
+! {{icon|sp|Illusion Dark|24}}
+! [[Skyrim:Fear (effect)|Fear]]
+| [[Skyrim:Illusion|Illusion]] ||data-sort-value=10| Level 10, for 30 seconds || 16
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Fear|of Cowardice]]''
+* All weapons ''of Despair''
+* All weapons ''of Dismay''
+* All weapons ''of Dread''
+* All weapons ''of Fear''
+* All weapons ''of Terror''
+}}
+|-
+! {{icon|sp|Turn Undead|24}}
+! [[Skyrim:Turn_Undead (effect)|Turn Undead]]
+| [[Skyrim:Restoration|Restoration]] ||data-sort-value=10| Level 10, for 30 seconds || 29
+| {{showhide||
+* All varieties of ''[[Skyrim:Generic Magic Weapons#Turn Undead|Blessed]]'' weapons
+* All varieties of ''Hallowed'' weapons
+* All varieties of ''Holy'' weapons
+* All varieties of ''Reverent'' weapons
+* All varieties of ''Sanctified'' weapons
+* All varieties of ''Virtuous'' weapons
+}}
+|-
+!rowspan=2| {{nowrap|Apply Effect}}
+! {{icon|sp|Paralyze|24}}
+! [[Skyrim:Paralyze (effect)|Paralyze]]
+| [[Skyrim:Alteration|Alteration]] ||data-sort-value=2| 26%{{Ref|name=FixedMagnitude|The magnitude of this part of the effect is fixed regardless of skill, soul used, or perks.}} chance for 2 seconds{{Ref|name=VariableDuration|Only the duration is affected by Enchanting level and perks.}} || 34
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Paralyze|of Immobilizing]]''
+* All weapons ''of Petrifying''
+* All weapons ''of Stunning''
+}}
+|-
+! {{icon|sp|Banish|24}}
+! [[Skyrim:Soul_Trap (effect)|Soul Trap]]
+| [[Skyrim:Conjuration|Conjuration]] ||data-sort-value=4| 4 seconds{{Ref|name=VariableDuration|Only the duration is affected by Enchanting level and perks.}} || 9
+| {{showhide||
+* All weapons ''[[Skyrim:Generic Magic Weapons#Soul Trap|of Animus]]''
+* All weapons ''of Binding''
+* All weapons ''of Damnation''
+* All weapons ''of Malediction''
+* All weapons ''of Soul Snares''
+* All weapons ''of Souls''
+}}
+|-
+!rowspan=5| Special
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Briarheart_Geis_(effect)|Briarheart Geis]]{{Ref|name=BriarheartGeis|This effect is found on the Briarheart Geis, a weapon that cannot be found in game.}}
+| [[Skyrim:Destruction|Destruction]] ||data-sort-value=5| +5 damage vs. Nords || 0
+| {{showhide||
+* [[Skyrim:Briarheart Geis|Briarheart Geis]]
+}}
+|-
+! {{icon|sp|Fire|24}}
+! [[Skyrim:Fiery Soul Trap|Fiery Soul Trap]]
+| [[Skyrim:Conjuration|Conjuration]] ||data-sort-value=5| 5 seconds{{Ref|name=VariableDuration|Only the duration is affected by Enchanting level and perks.}}<br/>10 fire damage{{Ref|name=FixedMagnitude|The magnitude of this part of the effect is fixed regardless of skill, soul used, or perks.}} || 11
+| {{showhide||
+* [[Skyrim:Steel Battleaxe of Fiery Souls|Steel Battleaxe of Fiery Souls]]
+}}
+|-
+! {{icon|sp|Magic Hat|24}}
+! [[Skyrim:Huntsman's Prowess|Huntsman's Prowess]]
+| [[Skyrim:Destruction|Destruction]] ||data-sort-value=3| +3 damage vs. Animals || 3
+| {{showhide||
+* [[Skyrim:Poacher's Axe|Poacher's Axe]]
+}}
+|-
+! {{icon|sp|Light|24}}
+! {{nowrap|[[Skyrim:Silent Moons Enchant|Silent Moons Enchant]]}}
+| [[Skyrim:Destruction|Destruction]] ||data-sort-value=10| {{nowrap|+10 damage between 9pm and 5am}} || 5
+| {{showhide||
+* [[Skyrim:Lunar Iron Mace|Lunar Iron Mace]]
+* [[Skyrim:Lunar Iron Sword|Lunar Iron Sword]]
+* [[Skyrim:Lunar Iron War Axe|Lunar Iron War Axe]]
+* [[Skyrim:Lunar Steel Mace|Lunar Steel Mace]]
+* [[Skyrim:Lunar Steel Sword|Lunar Steel Sword]]
+* [[Skyrim:Lunar Steel War Axe|Lunar Steel War Axe]]
+}}
+|-
+! {{icon|sp|Shock|24}}
+! [[Skyrim:Smithing Expertise|Smithing Expertise]]
+| [[Skyrim:Destruction|Destruction]] ||data-sort-value=5| 5 shock damage<br/>+5 Smithing{{Ref|name=FixedMagnitude|The magnitude of this part of the effect is fixed regardless of skill, soul used, or perks.}} || 11
+| {{showhide||
+* [[Skyrim:Notched Pickaxe|Notched Pickaxe]]
+}}
+|}
+
+{{Reflist|1}}<noinclude>
+
+==== Skill and Perk Interaction ====
+* Elemental effects are affected by the appropriate [[Skyrim:Destruction|Destruction]] perks. If you have an elemental effect and the corresponding Destruction perk(s), and a second effect, the perk(s) affect both effects. If you have two  elemental effects and their corresponding Destruction  perks, both perks apply multiplicatively to both effects, giving up to a x2.25 multiplier. 
+* [[Skyrim:Stability|Stability]] affects the duration of [[Skyrim:Paralyze (effect)|Paralyze]] effects.
+* [[Skyrim:Kindred Mage|Kindred Mage]] affects the level of [[Skyrim:Fear (effect)|Fear]] effects against appropriate NPCs. [[Skyrim:Animage|Animage]] likewise boosts the effective level versus animals.
+* [[Skyrim:Aspect of Terror|Aspect of Terror]] does NOT affect the level of [[Skyrim:Fear (effect)|Fear]] effects.
+* [[Skyrim:Necromage (perk)|Necromage]] affects the magnitude (damage or level) of all effects used against undead targets. In particular, this allows [[Skyrim:Turn Undead (effect)|Turn Undead]] effects of level 40 or higher to work on [[Skyrim:Dragon Priest|Dragon Priests]] (level 50). 
+* Necromage also improves the enchantments on items by 25% if the player is a Vampire.
+**This is likely a bug.
+* The total number of charges is increased by magicka cost reducing equipment and a high skill level in the respective magic school, but not by the Novice-Master perks.
+{{Bug|Damage Stamina is affected by both [[Skyrim:Fire Enchanter|Fire Enchanter]] and [[Skyrim:Augmented Flames|Augmented Flames]] due to an erroneous keyword.|fixedby=USKP|fixversion=1.3.2|trackerid=12439}}
+
+=== Notes ===
+* Many Fortify Skill enchantments actually affect the action directly instead of increasing your skill.
+* Fortify Archery, One-Handed, and Two-Handed are the most powerful offensive enchantments. At 100 Enchanting and with the appropriate perks, if you have the maximum four items enchanted with these, you will do +160% damage. Drinking a "+32% Fortify Enchanting" potion while enchanting further increases this to +188%. For comparison, the difference between having zero perks for a weapon and having all perks for a weapon is +100% damage.
+* Resist Magic is probably the most powerful defensive enchantment, as it protects from a wide range of attacks. With the maximum of 85% Resist Magic you can ignore elemental traps and stand in a dragon's breath attack without taking significant damage.
+* Nearly all enchantments are available at level 1. Known exceptions are Resist Poison at level 5, Resist Disease at level 10, Muffle at level 11, Healing Rate and Stamina Regen at level 16, and also Banish and Paralyze at level 22.
+
+====Enchanting for Profit====
+* If you are mass enchanting your items, weapons offer a greater profit per soul gem used.  Weapon enchantment prices are calculated by base uses; the fewer base uses an enchantment has, the more expensive the enchantment will be.  The Banish enchantment is by far the most profitable weapon enchantment, followed by Paralyze and Absorb Health.
+* Although weapons are more profitable overall, the price difference from higher soul gems is greater for apparel. So, if you have fewer soul gems than you have weapons to enchant, it's usually more profitable to use the smaller soul gems on the weapons, and save the larger ones for apparel.
+* If you wish to mass enchant apparel, the most profitable enchantments at the petty soul level are usually Waterbreathing and Muffle, though Fortify Sneak can edge them out at high levels. Waterbreathing can be applied to helms, rings, and necklaces, while Muffle can be applied to footwear. (Waterbreathing and Muffle have no magnitude or duration, so they are just as effective and valuable with a petty soul as with a grand one.) If you use at least lesser souls, Fortify Sneak will surpass it. However, no wearable item enchantments are as profitable as the above-mentioned weapon ones per soul used.
+* Regardless of what you're enchanting, at very low skill levels with smaller soul gems, enchanting prices will vary somewhat from their base cost, so check other enchantments to see which is the most profitable. For example, you may find that an item enchanted with Fortify Destruction & Magicka Regen is worth more than one enchanted with Fortify Destruction, even though Fortify Destruction is normally the more profitable of the two.
+
+== Effect Charges and Strength ==
+=== Apparel ===
+
+The net magnitude of the effect follows this formula, rounded down:
+
+{{Pre|1=net magnitude = base magnitude * soul multiplier * skill multiplier  * (1 + PotionEffect) * (1 + Enchanter perk) * (1 + specific perk modifier) * (1 + Seeker of Sorcery effect)}} if you have Unofficial Patch installed or
+{{Pre|1=net magnitude = base magnitude * soul multiplier * {{Hover|Do NOT edit this, this is not a typo. &quot;skill multiplier1&quot; references a variable different from &quot;skill multiplier&quot;|skill multiplier1}} * (1 + Enchanter perk) * (1 + specific perk modifier) * (1 + Seeker of Sorcery effect)}} if you do not have Unofficial Patch installed.
+
+Soul multiplier is as follows:
+{| class = "wikitable"
+! Class !! Multiplier
+|-
+| Grand || x1
+|-
+| Greater || x2/3
+|-
+| Common || x1/3
+|-
+| Lesser || x1/6
+|-
+| Petty || x1/12
+|}
+{{Pre|1=skill multiplier = 1 + (skill/100) * (skill/100 - 0.14) / 3.4}}Overall, 100 skill points will grant around 25.29% increase over the base magnitude.
+
+
+
+{{Pre|1=skill multiplier1 = 1 + (effective skill / 100) * (effective skill / 100 - 0.14) / 3.4}} where effective skill is the sum of the base skill level and bonuses affecting it directly. That is:
+{{Pre|1=effective skill = skill + potion magnitude + Ahzidal's Genius + Haunting Gift}}
+
+Note that <code>potion magnitude</code> is 100 times larger than <code>PotionEffect</code>. <code>[[Skyrim:Ahzidal's Genius|Ahzidal's Genius]]</code> is 10 if you are wearing four pieces of Ahzidal's set and zero otherwise. <code>Haunting Gift</code> is the sum of all applications of the [[Skyrim:Haunting Gift|Haunting Gift]] effect each of which has the magnitude of 10.
+
+Maximum possible natural (without potions) multiplier with 100 Enchanting, 5 levels in Enchanter, appropriate +25% perk and Grand soul is about 3.132x (with or without the Unofficial Patch). With potions (without exploiting fortify restoration effect) the maximum is 4.21875x.
+
+=== Weapons ===
+For weapons, you can select the magnitude of the effect up to a maximum. The maximum magnitude is similar to apparel, but generally not affected by the soul used. However, if the soul is so small that the Number of Uses cannot reach 1, then the maximum magnitude will be adjusted to make sure the weapon has 1 use:
+
+{{Pre|1=<nowiki>Maximum Magnitude = floor(floor(base enchantment magnitude * skill multiplier * (1 + Potion effect) * (1 + Enchanter perk modifier) * (1 + specific Enchanting perk modifier) * (1 + Seeker of Sorcery effect)) * (1 + elemental Destruction perk modifier))</nowiki>}}
+
+Where skill multiplier is the same as for apparel, including the difference when installing Unofficial Patch. Note that multiple perk modifiers continue to add up - for example, the Chaos effect can incorporate up to 3 specific Enchanting perk modifiers and 3 elemental Destruction perk modifiers.
+
+The number of uses does depend on the soul used, but not on perks (assuming maximum magnitude is used).
+
+{{Pre|1=<nowiki> Charges Per Use = 3 * (base enchantment cost * magnitude / maximum magnitude)^1.1 * (1 - sqrt(skill/200))
+ Net Number of Uses = soul charge capacity / charges per use</nowiki>}}
+
+Note: ''base enchantment cost'' must be calculated according to the [[Skyrim Mod:Mod File Format/ENCH|formula listed here]] when the enchantment is set to "Auto-Calculate".
+
+To give you a rough idea of how this scales, removing the flooring from the maximum magnitude calculation allows the terms to be rearranged:
+
+  Approximate Maximum Magnitude = base enchantment magnitude * (1+(skill/100)*(skill/100-0.14)/3.4) * (1 + fortify enchanting potion) * (1 + (number of enchanter perks)/5) * (1 + other perk modifier) * (1 + other perk modifier) ...
+  Approximate Charges Per Use = 3 * (base enchantment cost / base enchantment magnitude)^1.1 * magnitude^1.1 * (1 - sqrt(skill/200)) / (1+(skill/100)*(skill/100-0.14)/3.4)^1.1 / product(potion and perk modifiers)^1.1
+
+The charges per use are approximately a constant set by the enchantment, multiplied by a value set by skill, then modified upwards by magnitude raised to 1.1 and downwards by other modifiers raised to 1.1; those first two are:
+
+  Constant Portion = 3 * (base enchantment cost / base enchantment magnitude)^1.1
+  Skill Portion = (1 - (skill/200)^0.5)/((1 + ((skill-14)/100)*skill/340)^1.1)
+
+As net uses goes up as charges per use go down, this effectively gives you a net use multiplier based on skill of:
+
+  Net Use Skill Multiplier = ((1 + ((skill-14)/100)*skill/340)^1.1)/(1 - (skill/200)^0.5)
+
+This has a value of 1.38 at skill level 15, and a value of 4.375 at skill level 100. Again, this is approximate, as the flooring operations that occur when setting the maximum magnitude introduce important rounding errors later when determining actual net uses. At skill level 200, Charges Per Use is 0 and Net Uses is infinity, and beyond that, Charges Per Use ceases to be a real number, which is why Fortify Enchanting Potions fortify enchantments directly, rather than adding to skill - it is fundamental to how enchanting works that the skill number used in the above arithmetic never be above 200, and as just explained, even equaling 200 is problematic. The highest Enchanting skill reachable in the game, without mods, is 110, using Ahzidal's GeniusDB, which has a Net Use Skill Multiplier of 5.21.
+
+Soul charge capacities are as follows:
+
+{| class = "wikitable"
+! Class !! Capacity
+|-
+| Grand || 3000
+|-
+| Greater || 2000
+|-
+| Common || 1000
+|-
+| Lesser || 500
+|-
+| Petty || 250
+|}
+
+If the weapon has two effects, the charges per use are ''added together'', resulting in fewer uses.
+
+A graph of the net use multiplier by Enchanting skill level:
+
+[[File:SR-graph-Enchantment_Net_Uses_Accurate.png|800x600px]]
+
+=== Notes ===
+* The exponent of 1.1 in the number of charges consumed per use means that weapons are more efficient if a lower magnitude is picked. However, the effect is quite weak--halving the magnitude of an effect only improves the efficiency by about 7%. Therefore, for most enchantments it is best to use the maximum magnitude. Possible exceptions are enchantments which apply effects with a duration--since you can swing/fire your weapon fairly quickly, using a duration of more than a couple seconds is usually overkill and will drain your weapon much faster.
+* The number of uses formula has an asymptote at 200 skill. For example, if you could get up to 199 Enchanting, your weapon would have x399.5 charges.
+* The formula is based on the displayed number when enchanting the weapon. It is possible this does not work as advertised--see the talk page.
+* The number of uses and charges per use is not fixed at the time of the enchanting. If you use a Fortify Enchanting by 99% potion with 100 enchanting skill to enchant a weapon with a powerful enchant, and then use it later (while not under effect of said potion), it will run out of charges very fast, because number of charges per use is calculated at the moment of the usage. 
+</noinclude>
+* Some enchantment effects cannot be applied to followers, or do not confer the expected benefits to them. See [[Skyrim:Followers#Enchanted_Follower_Equipment|here]].
+* Enchantment effects stack with one another and with [[Skyrim:Alchemy Effects|alchemy effects]].
+* There are traces of a Fortify Enchanting Enchantment in the [[Skyrim:Leveled Lists|leveled lists]], but no items that have the effect (let alone ones you can disenchant) appear in-game.
+
+=== Bugs ===
+* If you equip a shield with magical effects and a one-handed weapon, then equip a two-handed weapon, and then switch back to the one-handed weapon, the shield will be automatically re-equipped but without the magical effects.
+** Unequipping and re-equipping the shield fixes this.
+* Game erroneously modifies Enchanting instead of Enchanting Power Modifier like other alchemy effects.
+** This bug is solved by Unofficial Skyrim Patch.
