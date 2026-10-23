@@ -1,0 +1,81 @@
+{{Trail|Items|Unique Items}} {{TOCright|limit=2}}
+'''Unique Jewelry''' are various accessories available in Skyrim that are generally found in fixed locations, unlike most of the equipment in the game, which are randomly generated or generic equipment (see [[Skyrim:Generic Magic Apparel|Generic Magic Apparel]]). 
+
+Many of these items are quest rewards, although some of the most valuable quest rewards are listed at [[Skyrim:Leveled Items|Leveled Items]] (unique items, but with level-dependent statistics) and [[Skyrim:Artifacts|Artifacts]] (unusually powerful unique items with unique appearances and enchantments). For unique items that are needed to complete quests, please see the [[Skyrim:Quest Items|Quest Items]] article. For other unique items in the game, see the [[Skyrim:Unique Items|Unique Items]] article. For a list of the rest of the available jewelry, see the [[:Category:Skyrim-Jewelry|jewelry category]].
+{{NewLine}}
+==Amulets==
+===[[Skyrim:Amulet of Bats|Amulet of Bats]]{{DG}}===
+{{Skyrim:Amulet of Bats}}{{NewLine}}
+===[[Skyrim:Amulet of The Gargoyle|Amulet of The Gargoyle]]{{DG}}===
+{{Skyrim:Amulet of The Gargoyle}}{{NewLine}}
+===[[Skyrim:Charmed Necklace|Charmed Necklace]]===
+{{Skyrim:Charmed Necklace}}{{NewLine}}
+===[[Skyrim:The Gauldur Amulet|The Gauldur Amulet]]===
+{{Skyrim:The Gauldur Amulet}}{{NewLine}}
+===[[Skyrim:Kyne's Token|Kyne's Token]]===
+{{Skyrim:Kyne's Token}}{{NewLine}}
+===[[Skyrim:Locket of Saint Jiub|Locket of Saint Jiub]]{{DG}}===
+{{Skyrim:Locket of Saint Jiub}}{{NewLine}}
+===[[Skyrim:Lynea's Amulet of Dibella|Lynea's Amulet of Dibella]]{{CC|Fishing}}===
+{{Skyrim:Lynea's Amulet of Dibella}}{{NewLine}}
+===[[Skyrim:Saarthal Amulet|Saarthal Amulet]]===
+{{Skyrim:Saarthal Amulet}}{{NewLine}}
+===[[Skyrim:Savos Aren's Amulet|Savos Aren's Amulet]]===
+{{Skyrim:Savos Aren's Amulet}}{{NewLine}}
+===[[Skyrim:Skaal Amulet|Skaal Amulet]]{{DB}}===
+{{Skyrim:Skaal Amulet}}{{NewLine}}
+===[[Skyrim:Viriya's Charm|Viriya's Charm]]{{CC|Fishing}}===
+{{Skyrim:Viriya's Charm}}{{NewLine}}
+===[[Skyrim:Warlock's Mark|Warlock's Mark]]{{CC|Arms of Chaos}}===
+{{Skyrim:Warlock's Mark}}{{NewLine}}
+===[[Skyrim:Yisra's Necklace|Yisra's Necklace]]===
+{{Skyrim:Yisra's Necklace}}{{NewLine}}
+
+==Circlets==
+===[[Skyrim:Circlet of Waterbreathing|Circlet of Waterbreathing]]{{DG}}===
+{{Skyrim:Circlet of Waterbreathing}}{{NewLine}}
+
+==Rings==
+===[[Skyrim:Ahzidal's Ring of Arcana|Ahzidal's Ring of Arcana]]{{DB}}===
+{{Skyrim:Ahzidal's Ring of Arcana}}{{NewLine}}
+===[[Skyrim:Ahzidal's Ring of Necromancy|Ahzidal's Ring of Necromancy]]{{DB}}===
+{{Skyrim:Ahzidal's Ring of Necromancy}}{{NewLine}}
+===[[Skyrim:The Bond of Matrimony|The Bond of Matrimony]]===
+{{Skyrim:The Bond of Matrimony}}{{NewLine}}
+===[[Skyrim:Enchanted Ring|Enchanted Ring]]===
+{{Skyrim:Enchanted Ring}}{{NewLine}}
+===[[Skyrim:Ilas-Tei's Ring|Ilas-Tei's Ring]]===
+{{Skyrim:Ilas-Tei's Ring}}{{NewLine}}
+===[[Skyrim:Muiri's Ring|Muiri's Ring]]===
+{{Skyrim:Muiri's Ring}}{{NewLine}}
+===[[Skyrim:Nightweaver's Band|Nightweaver's Band]]===
+{{Skyrim:Nightweaver's Band}}{{NewLine}}
+===[[Skyrim:Ring of Bloodlust|Ring of Bloodlust]]{{DB}}===
+{{Skyrim:Ring of Bloodlust}}{{NewLine}}
+===[[Skyrim:Ring of Disrobing|Ring of Disrobing]]{{CC|Saints & Seducers}}===
+{{Skyrim:Ring of Disrobing}}{{NewLine}}
+===[[Skyrim:Ring of Instinct|Ring of Instinct]]{{DB}}===
+{{Skyrim:Ring of Instinct}}{{NewLine}}
+===[[Skyrim:Ring of Hircine|Ring of Hircine]]===
+{{Skyrim:Ring of Hircine}}{{NewLine}}
+===[[Skyrim:Ring of Kynareth|Ring of Kynareth]]{{CC|Fishing}}===
+{{Skyrim:Ring of Kynareth}}{{NewLine}}
+===[[Skyrim:Ring of Masser|Ring of Masser]]{{CC|Alternative Armors - Daedric Mail}}===
+{{Skyrim:Ring of Masser}}{{NewLine}}
+===[[Skyrim:Ring of The Beast|Ring of The Beast]]{{DG}}===
+{{Skyrim:Ring of The Beast}}{{NewLine}}
+===[[Skyrim:Ring of the Erudite|Ring of the Erudite]]{{DG}}===
+{{Skyrim:Ring of the Erudite}}{{NewLine}}
+===[[Skyrim:Ring of the Hunt|Ring of the Hunt]]{{DB}}===
+{{Skyrim:Ring of the Hunt}}{{NewLine}}
+===[[Skyrim:Ring of the Moon|Ring of the Moon]]{{DB}}===
+{{Skyrim:Ring of the Moon}}{{NewLine}}
+===[[Skyrim:Silver-Blood Family Ring|Silver-Blood Family Ring]]===
+{{Skyrim:Silver-Blood Family Ring}}{{NewLine}}
+===[[Skyrim:Sovereign Band|Sovereign Band]]{{CC|Arms of Chaos}}===
+{{Skyrim:Sovereign Band}}{{NewLine}}
+===[[Skyrim:Vittoria's Wedding Band|Vittoria's Wedding Band]]===
+{{Skyrim:Vittoria's Wedding Band}}{{NewLine}}
+===[[Skyrim:Warlock's Ring|Warlock's Ring]]{{CC|Fishing}}===
+{{Skyrim:Warlock's Ring}}
+[[Category:Skyrim-Jewelry| ]]

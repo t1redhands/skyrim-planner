@@ -1,0 +1,56 @@
+{{Trail|Items|Unique Items}} {{TOCright|limit=2}}
+'''Unique Clothing''' are a type of clothing available in Skyrim that are generally found in fixed locations, unlike most equipment in the game, which are randomly generated or generic equipment (see [[Skyrim:Generic Magic Apparel|Generic Magic Apparel]]).
+
+Many of these items are quest rewards, although some of the most valuable quest rewards are listed at [[Skyrim:Leveled Items|Leveled Items]] (unique items, but with level-dependent statistics) and [[Skyrim:Artifacts|Artifacts]] (unusually powerful unique items with unique appearances and enchantments). For unique items that are needed to complete quests, please see the [[Skyrim:Quest Items|Quest Items]] article. For other unique items in the game, see the [[Skyrim:Unique Items|Unique Items]] article. For a list of the other available clothing, see the [[:Category:Skyrim-Clothing|clothing category]].
+{{NewLine}}
+==Clothing==
+===[[Skyrim:Arcane Blacksmith's Apron|Arcane Blacksmith's Apron]]{{CC|Saints & Seducers}}===
+{{Skyrim:Arcane Blacksmith's Apron}}{{NewLine}}
+===[[Skyrim:Boots (Arch-Mage)|Boots]]===
+{{Skyrim:Boots (Arch-Mage)}}{{NewLine}}
+===[[Skyrim:Cicero's Boots|Cicero's Boots]]===
+{{Skyrim:Cicero's Boots}}{{NewLine}}
+===[[Skyrim:Cicero's Clothes|Cicero's Clothes]]===
+{{Skyrim:Cicero's Clothes}}{{NewLine}}
+===[[Skyrim:Cicero's Gloves|Cicero's Gloves]]===
+{{Skyrim:Cicero's Gloves}}{{NewLine}}
+===[[Skyrim:Cicero's Hat|Cicero's Hat]]===
+{{Skyrim:Cicero's Hat}}{{NewLine}}
+===[[Skyrim:Cyrus' Boots|Cyrus' Boots]]{{CC|Dead Man's Dread}}===
+{{Skyrim:Cyrus' Boots}}{{NewLine}}
+===[[Skyrim:Cyrus' Clothes|Cyrus' Clothes]]{{CC|Dead Man's Dread}}===
+{{Skyrim:Cyrus' Clothes}}{{NewLine}}
+===[[Skyrim:Mythic Dawn Robes|Mythic Dawn Robes]]===
+{{Skyrim:Mythic Dawn Robes}}{{NewLine}}
+===[[Skyrim:Shrouded Hand Wraps|Shrouded Hand Wraps]]===
+{{Skyrim:Shrouded Hand Wraps}}{{NewLine}}
+===[[Skyrim:Shrouded Hood|Shrouded Hood]]===
+{{Skyrim:Shrouded Hood}}{{NewLine}}
+===[[Skyrim:Shrouded Robes|Shrouded Robes]]===
+{{Skyrim:Shrouded Robes}}{{NewLine}}
+===[[Skyrim:Shrouded Shoes|Shrouded Shoes]]===
+{{Skyrim:Shrouded Shoes}}{{NewLine}}
+===[[Skyrim:Taron Dreth's Robes|Taron Dreth's Robes]]{{DG}}===
+{{Skyrim:Taron Dreth's Robes}}{{NewLine}}
+===[[Skyrim:Ulfric's Boots|Ulfric's Boots]]===
+{{Skyrim:Ulfric's Boots}}{{NewLine}}
+===[[Skyrim:Ulfric's Clothes|Ulfric's Clothes]]===
+{{Skyrim:Ulfric's Clothes}}{{NewLine}}
+
+==Gallery==
+===Male===
+<gallery>
+File:SR-item-Jester's Clothes Male.jpg|Jester's Clothes
+File:SR-item-Mythic Dawn Robes Male.jpg|Mythic Dawn Robes (hooded)
+File:SR-item-Mythic Dawn Robes Male 02.jpg|Mythic Dawn Robes
+File:SR-item-Shrouded Robes Male.jpg|Shrouded Robes
+File:SR-item-Ulfric's Clothes.jpg|Ulfric's Clothes
+</gallery>
+===Female===
+<gallery>
+File:SR-item-Jester's Clothes Female.jpg|Jester's Clothes
+File:SR-item-Mythic Dawn Robes Female.jpg|Mythic Dawn Robes (hooded)
+File:SR-item-Mythic Dawn Robes Female 02.jpg|Mythic Dawn Robes
+File:SR-item-Shrouded Robes Female.jpg|Shrouded Robes
+</gallery>
+[[Category:Skyrim-Clothing| ]]
