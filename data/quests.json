@@ -1,6 +1,6 @@
 {
 "license": "CC BY-SA 2.5; quest details from UESP (https://en.uesp.net/wiki/Skyrim:Quests), summarized.",
-"asOf": "2026-10-21",
+"asOf": "2026-10-23",
 "quests": [
 {
 "id": "finns-lute",
@@ -3964,6 +3964,7 @@
 "Prophet (Dawnguard)"
 ],
 "loc": "Various",
+"side": "dawnguard",
 "suggLevel": 48
 },
 {
@@ -4116,7 +4117,8 @@
 "Seeking Disclosure",
 "Scroll Scouting"
 ],
-"loc": "Fort Dawnguard, Dragon Bridge, Forebears' Holdout"
+"loc": "Fort Dawnguard, Dragon Bridge, Forebears' Holdout",
+"side": "dawnguard"
 },
 {
 "id": "prophet-vampire",
@@ -4137,7 +4139,8 @@
 "Seeking Disclosure",
 "Scroll Scouting"
 ],
-"loc": "Volkihar Keep, Dragon Bridge, Forebears' Holdout"
+"loc": "Volkihar Keep, Dragon Bridge, Forebears' Holdout",
+"side": "volkihar"
 },
 {
 "id": "scroll-scouting",
@@ -4199,6 +4202,7 @@
 "Prophet (Vampire)"
 ],
 "loc": "Redwater Den",
+"side": "volkihar",
 "suggLevel": 1
 },
 {
