@@ -350,33 +350,46 @@ footer p { margin: 4px 0; max-width: 80ch; }
 .qcheck li { display: flex; gap: 8px; align-items: baseline; }
 .qcheck li.done > span:last-child { text-decoration: line-through; color: var(--ink-2); }
 .box-glyph { font-size: 1.05rem; line-height: 1; }
-.print-title { display: none; }
 
-/* Printing: the Summary step as a build sheet */
+/* Printing: a dedicated, compact build sheet (#printSheet) replaces the page */
+#printSheet { display: none; }
 @media print {
-  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
-    --bg: #fff; --panel: #fff; --ink: #000; --ink-2: #444; --rule: #bbb; --accent: #5a4214; --accent-soft: #eee6d4; --good: #1d5a30; --warn: #6b4808; --bad: #8f2a22; --field: #888; color-scheme: light;
-  }
-  @page { margin: 14mm 12mm; }
-  body { font-size: 10.5pt; background: #fff; }
-  header.top, footer, .skip, dialog, #p-summary .intro, #p-summary .grid-2 > .box:not(.sheet), .sum-tools, .fold-bar { display: none !important; }
-  section.panel:not(#p-summary) { display: none !important; }
-  #p-summary { display: grid !important; gap: 10px; }
-  .print-title { display: block; font-family: var(--display); font-size: 18pt; margin-bottom: 4px; }
-  main { padding: 0; }
-  .wrap { max-width: none; padding: 0; }
-  .grid-2 { display: block; }
-  .box, .tbl-wrap { border: 1px solid var(--rule); border-radius: 4px; padding: 10px; break-inside: avoid-page; box-shadow: none; }
-  .sheet { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; }
-  .sheet > div { break-inside: avoid; }
-  .tbl-wrap { overflow: visible; }
-  thead th { position: static; }
-  #sheetSkills tr { break-inside: avoid; }
-  .pill { border-width: 1px; }
-  a { color: inherit; text-decoration: none; }
-  .quest-check { break-inside: auto; }
-  .qcheck { columns: 2; column-gap: 18px; display: block; }
-  .qcheck li { break-inside: avoid; margin-bottom: 2px; }
+  @page { size: letter; margin: 11mm 11mm 12mm; }
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) { color-scheme: light; }
+  html, body { background: #fff !important; }
+  body > *:not(#printSheet) { display: none !important; }
+  #printSheet { display: block; color: #000; font-family: var(--body); font-size: 8.6pt; line-height: 1.32; }
+  .ps h1 { font-family: var(--display); font-size: 17pt; margin: 0; letter-spacing: .02em; }
+  .ps h2 { font-family: var(--display); font-size: 10.5pt; margin: 9pt 0 3pt; padding-bottom: 1.5pt; border-bottom: 1.2pt solid #5a4214; color: #3d2c0b; break-after: avoid; }
+  .ps-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 2pt solid #5a4214; padding-bottom: 4pt; }
+  .ps-head .sub { font-size: 9.5pt; }
+  .ps-head .meta { font-size: 7.5pt; color: #555; text-align: right; }
+  .ps-ident { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2pt 14pt; margin: 5pt 0 0; }
+  .ps-ident div { break-inside: avoid; }
+  .ps dt { font-size: 7pt; text-transform: uppercase; letter-spacing: .06em; color: #555; }
+  .ps dd { margin: 0 0 2pt; }
+  .ps table { width: 100%; border-collapse: collapse; font-size: inherit; }
+  .ps th, .ps td { border: .5pt solid #aaa; padding: 2pt 4pt; vertical-align: top; text-align: left; white-space: normal; }
+  .ps thead th { background: #eee6d4; font-size: 8pt; text-transform: none; letter-spacing: 0; color: #000; position: static; }
+  .ps-ms th[scope=row] { width: 13%; font-weight: 700; background: #f6f6f6; }
+  .ps-ms td { width: 29%; }
+  .ps-ms tr { break-inside: avoid; }
+  .ps .none { color: #888; }
+  .ps .ok { color: #1d5a30; } .ps .bad { color: #8f2a22; font-weight: 700; }
+  .ps-two { display: grid; grid-template-columns: minmax(0, 36%) minmax(0, 1fr); gap: 12pt; align-items: start; }
+  .ps-skills td, .ps-skills th { text-align: center; padding: 1.5pt 3pt; }
+  .ps-skills td:first-child, .ps-skills th:first-child { text-align: left; }
+  .ps-skills b { font-weight: 700; }
+  .ps-skills .up { background: #eee6d4; font-weight: 700; }
+  .ps-note { font-size: 7.5pt; color: #444; margin: 3pt 0 0; }
+  .ps-perks p { margin: 0 0 4pt; }
+  .ps-perks strong { color: #3d2c0b; }
+  .ps-q h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
+  .ps-q ol { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; }
+  .ps-q li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
+  .ps-q li .muted { color: #555; }
+  .ps-q li.done { color: #666; text-decoration: line-through; }
+  .ps a { color: inherit; text-decoration: none; }
 }
 </style>
 
@@ -695,7 +708,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   <!-- 7. Summary -->
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
-    <div class="print-title" aria-hidden="true">Skyrim Character Planner · build sheet</div>
     <div class="intro">
       <h2>Build sheet</h2>
       <p class="muted">Everything about this build on one page. Copy the build code to keep it or share it, and paste a code to load one.</p>
@@ -748,6 +760,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere. <button class="linkish" id="aboutLink">Full credits and data dates</button></p>
   </div>
 </footer>
+
+<div id="printSheet" aria-hidden="true"></div>
 
 <dialog class="about" id="about" aria-labelledby="aboutTitle">
   <div class="about-head"><h2 id="aboutTitle">About and credits</h2><button class="btn quiet" id="aboutClose">Close</button></div>
@@ -2011,8 +2025,59 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('codeOut').value = encode(state);
     renderSaved();
   }
-  $('printBtn').addEventListener('click', () => window.print());
-  window.addEventListener('beforeprint', renderSummary);   // printing from any step prints a current build sheet
+  // ---------- Printable build sheet ----------
+  function renderPrint() {
+    const r = RC[state.race], list = (a, none = 'None') => a.length ? a.map(esc).join(', ') : `<span class="none">${none}</span>`;
+    const newAt = (obj, all, m, name = x => x.name) => all.filter(x => obj[x.id] === m).map(name);
+    const { plan, order } = buildQuestPlan();
+    const lvl = MS.map(m => skillLevels(state.picks, state.race, m));
+    const side = `${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}`;
+    const info = MS.map(m => ({ m, i: milestoneInfo(m), t: totals(m) }));
+    const row = (label, cells) => cells.every(c => c.includes('class="none"')) && label.startsWith('New') ? '' : `<tr><th scope="row">${label}</th>${cells.map(c => `<td>${c}</td>`).join('')}</tr>`;   // skip rows that are empty everywhere
+    const short = t => { t = (t || '').replace(/^Automatic.*$/i, '').split(/[;(]/)[0].trim(); return t.length > 40 ? t.slice(0, 40).replace(/\s+\S*$/, '') + '…' : t; };
+    const scrollsOn = state.scrollUse !== 'none' || state.spiderUse !== 'none';
+    const used = SKILLS.filter(s => lvl.some(l => l[s.id] > startOf(state.race, s.id)));
+    const unused = SKILLS.filter(s => !used.includes(s));
+    const qn = t => order.filter(id => plan[id].tier === t);
+    $('printSheet').innerHTML = `<div class="ps">
+      <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${r.name} ${ST[state.style].name} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}</div></div>
+        <div class="meta">Skyrim Character Planner<br>${new Date().toLocaleDateString()}</div></div>
+      <dl class="ps-ident">
+        <div><dt>Followers</dt><dd>${list(Object.keys(state.followers).map(id => FOL[id].name))}</dd></div>
+        <div><dt>Spouse</dt><dd>${state.spouse ? `${esc(SPO[state.spouse.id].name)}, by level ${state.spouse.m}` : '<span class="none">None</span>'}</dd></div>
+        <div><dt>Homes</dt><dd>${list(Object.keys(state.homes).map(id => HOM[id].name))}</dd></div>
+        ${scrollsOn ? `<div><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd></div><div><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd></div>` : ''}
+        <div><dt>Quests</dt><dd>${qn(0).length} expedite, ${qn(1).length} priority, ${qn(2).length} selected</dd></div>
+      </dl>
+      <h2>Milestones</h2>
+      <table class="ps-ms"><thead><tr><th></th>${MS.map((m, k) => `<th>By level ${m} <span style="font-weight:400">(${STRETCH[m].toLowerCase()})</span></th>`).join('')}</tr></thead><tbody>
+        ${row('Perks', info.map(({ i }) => `${i.used} of ${i.budget} <span class="${i.status === 'under' ? 'bad' : 'ok'}">${{ ok: 'on track', over: 'ahead', under: 'needs fixing' }[i.status]}</span>`))}
+        ${row('Attributes', info.map(({ t }) => `Health ${t.h} · Magicka ${t.m} · Stamina ${t.s}`))}
+        ${row('Stone', MS.map(m => STN[state.stones[m]]?.name ? esc(STN[state.stones[m]].name) : '<span class="none">None</span>'))}
+        ${row('New shouts', MS.map(m => list(newAt(state.shouts, SHOUTS, m))))}
+        ${row('New gear', MS.map(m => list(GEAR.filter(g => state.gear[g.id] === m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')))))}
+        ${row('New potions', MS.map(m => list(state.potions.filter(x => x.m === m).map(x => potionName(x.effects)))))}
+        ${row('New food', MS.map(m => list(newAt(state.food, RECIPES, m))))}
+        ${scrollsOn ? row('New scrolls', MS.map(m => list([...newAt(state.scrolls, SCROLLS, m), ...newAt(state.spiders, SPIDERS, m)]))) : ''}
+      </tbody></table>
+      <div class="ps-two">
+        <div><h2>Skills</h2>
+          <table class="ps-skills"><thead><tr><th>Skill</th><th>Start</th>${MS.map(m => `<th>${m}</th>`).join('')}</tr></thead><tbody>
+          ${used.map(s => { const st = startOf(state.race, s.id); return `<tr><td><b>${s.name}</b></td><td>${st}</td>${lvl.map((l, k) => { const prev = k ? lvl[k - 1][s.id] : st; return `<td class="${l[s.id] > prev ? 'up' : ''}">${l[s.id]}</td>`; }).join('')}</tr>`; }).join('') || '<tr><td colspan="5" class="none">No perks planned yet</td></tr>'}
+          </tbody></table>
+          ${unused.length ? `<p class="ps-note">No perks planned, so these stay near their start: ${unused.map(s => `${s.name} ${startOf(state.race, s.id)}`).join(', ')}.</p>` : ''}</div>
+        <div class="ps-perks"><h2>Perks by milestone</h2>
+          ${MS.map((m, k) => { const a = perksAddedAt(m); return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${a.length ? a.map(x => `${esc(x.text)} <span class="muted">(${x.skill})</span>`).join(', ') : '<span class="none">none</span>'}</p>`; }).join('')}</div>
+      </div>
+      <div class="ps-q"><h2>Quest checklist</h2>
+        ${order.length ? TIERS.map((tier, t) => { const ids = qn(t); if (!ids.length) return '';
+          return `<h3>${tier.title} (${ids.length})</h3><ol>${ids.map(id => { const { q, m } = plan[id], giver = short(q.giver);
+            return `<li class="${state.done[id] ? 'done' : ''}">${state.done[id] ? '☑' : '☐'} ${esc(q.name)} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by ${m}` : ''}${giver ? ` · ${esc(giver)}` : ''}</span></li>`; }).join('')}</ol>`; }).join('') : '<p class="none">No quests in the plan yet.</p>'}
+      </div>
+    </div>`;
+  }
+  $('printBtn').addEventListener('click', () => { renderPrint(); window.print(); });
+  window.addEventListener('beforeprint', () => { renderSummary(); renderPrint(); });   // printing from any step prints a current build sheet
   $('sumOnly').addEventListener('change', e => { try { localStorage.setItem('skp.sumOnly', e.target.checked ? '1' : '0'); } catch {} renderSummary(); });
   function setStatus(msg, ok = true) { const el = $('saveStatus'); el.textContent = msg; el.className = 'status ' + (ok ? 'ok' : 'bad'); }
   function renderSaved() {
