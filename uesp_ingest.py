@@ -177,9 +177,13 @@ def check_perks(session, refresh, only_unverified=True):
 
 
 SOURCE = OUT / "source"
+# every page the planner's data comes from; the monthly refresh saves them all
 DUMP_PAGES = [
-    "Skyrim:Unique Weapons", "Skyrim:Unique Armor",
+    "Skyrim:Unique Weapons", "Skyrim:Unique Armor", "Skyrim:Unique Jewelry", "Skyrim:Unique Clothing",
+    "Skyrim:Artifacts", "Skyrim:Leveled Items", "Skyrim:Generic Magic Apparel",
+    "Skyrim:Weapons", "Skyrim:Armor", "Skyrim:Clothing", "Skyrim:Jewelry", "Skyrim:Enchantments",
     "Skyrim:Ingredients", "Skyrim:Alchemy Effects", "Skyrim:Food",
+    "Skyrim:Followers", "Skyrim:Marriage", "Skyrim:Houses",
 ]
 
 
@@ -211,7 +215,8 @@ def dump_pages(session, titles):
         "# UESP source pages\n\nRaw page text from the Unofficial Elder Scrolls Pages (https://en.uesp.net), "
         "saved by `uesp_ingest.py --dump` for building the planner's data files.\n\n"
         "UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-sa/2.5/).\n\n"
-        + "\n".join(f"- [{t}]({WIKI}{t.replace(' ', '_')})" for t in ok) + "\n", encoding="utf-8")
+        + "\n".join(f"- [{t}]({WIKI}{t.replace(' ', '_')})" for t in sorted(
+            p.stem.replace("_", " ").replace("Skyrim ", "Skyrim:", 1) for p in SOURCE.glob("*.wiki"))) + "\n", encoding="utf-8")
     print(f"\nSaved {len(ok)} pages to {SOURCE}/")
     if failed:
         print("Not saved:", ", ".join(failed))

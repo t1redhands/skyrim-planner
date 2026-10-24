@@ -13,14 +13,15 @@
   --ink: #1b2228;
   --ink-2: #4c5862;
   --rule: #c9d1d7;
-  --accent: #7d5d22;      /* dwarven brass */
+  --accent: #6e5119;      /* dwarven brass */
   --accent-soft: #e9dcc0;
   --health: #b3352d;
   --magicka: #2f5fa8;
   --stamina: #3c7d3a;
-  --good: #2f7a45;
-  --warn: #9a6a12;
-  --bad: #b3352d;
+  --good: #276a3b;
+  --warn: #7c540b;
+  --bad: #a6342b;
+  --field: #7a8691;       /* borders of things you can click or type in: 3:1 against the page */
   --display: "Marcellus SC", "Trajan Pro", Georgia, serif;
   --body: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
@@ -30,7 +31,7 @@
     --bg: #14191d; --panel: #1c2328; --ink: #e3e8eb; --ink-2: #9aa7b0; --rule: #33404a;
     --accent: #d2ad66; --accent-soft: #3a3222;
     --health: #e0675e; --magicka: #6f9be0; --stamina: #74b46f;
-    --good: #6cc08a; --warn: #e0ac4c; --bad: #e0675e;
+    --good: #6cc08a; --warn: #e0ac4c; --bad: #ec7d74; --field: #62717d;
     color-scheme: dark;
   }
 }
@@ -38,7 +39,7 @@
   --bg: #14191d; --panel: #1c2328; --ink: #e3e8eb; --ink-2: #9aa7b0; --rule: #33404a;
   --accent: #d2ad66; --accent-soft: #3a3222;
   --health: #e0675e; --magicka: #6f9be0; --stamina: #74b46f;
-  --good: #6cc08a; --warn: #e0ac4c; --bad: #e0675e;
+  --good: #6cc08a; --warn: #e0ac4c; --bad: #ec7d74; --field: #62717d;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -57,7 +58,15 @@ h3 { font-size: 1.05rem; }
 .muted { color: var(--ink-2); }
 a { color: var(--accent); }
 button, input, select, textarea { font: inherit; color: inherit; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.skip { position: absolute; left: 16px; top: -60px; z-index: 20; background: var(--accent); color: var(--panel); padding: 8px 14px; border-radius: 6px; text-decoration: none; font-weight: 500; }
+.skip:focus { top: 8px; }
+input[type=text], input[type=search], select, textarea, .search, .chip, .race, .align-cell, .tree-btn, .sb, .skin { border-color: var(--field) !important; }
+.chip[aria-checked="true"], .race[aria-checked="true"], .align-cell[aria-checked="true"], .tree-btn[aria-pressed="true"], select.on, .skin.raised { border-color: var(--accent) !important; }
+.chip[aria-checked="true"]::before { content: "✓ "; }
+.pw::before, .ms .warn::before, .problems > *::before { content: "⚠ "; }
+.problems > h3::before, .problems > p.muted::before { content: none; }
 
 /* Header + steps */
 header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--rule); }
@@ -72,6 +81,28 @@ nav.steps button[aria-selected="true"] { color: var(--ink); border-color: var(--
 nav.steps button:hover { color: var(--ink); }
 
 main { padding-block: 24px 48px; display: grid; gap: 24px; }
+main:focus { outline: none; }
+@media (max-width: 640px) {
+  .top-row { padding-block: 8px; }
+  .top-row h1 { font-size: 1.3rem; }
+  #aboutBtn { order: 2; padding: 4px 10px; font-size: .85rem; }
+  #aboutBtn .long { display: none; }
+  .build-tag { order: 3; flex-basis: 100%; font-size: .82rem; }
+  nav.steps { padding-bottom: 6px; }
+}
+.steps-guide { margin: 0; padding-left: 22px; display: grid; gap: 6px; max-width: 80ch; }
+.guide > summary { background: var(--accent-soft); }
+.guide[open] > summary { border-radius: 8px 8px 0 0; }
+dialog.about { max-width: min(760px, calc(100vw - 32px)); width: 100%; max-height: calc(100dvh - 48px); border: 1px solid var(--rule); border-radius: 10px; background: var(--panel); color: var(--ink); padding: 0; }
+dialog.about::backdrop { background: rgb(0 0 0 / .45); }
+.about-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 20px; border-bottom: 1px solid var(--rule); position: sticky; top: 0; background: var(--panel); }
+.about-body { padding: 4px 20px 20px; display: grid; gap: 14px; }
+.about-body h3 { margin-top: 8px; }
+.about-body p { margin: 0; }
+.credits { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.credits li { border-top: 1px solid var(--rule); padding-top: 8px; font-size: .92rem; }
+.credits .src a { word-break: break-word; }
+.linkish { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
 section.panel { display: grid; gap: 20px; }
 .intro { max-width: 68ch; }
 .intro p { margin: 6px 0 0; }
@@ -294,6 +325,17 @@ details.fold > summary:focus-visible { outline: 2px solid var(--accent); outline
 .sheet dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 16px; margin: 0; }
 .sheet dt { color: var(--ink-2); }
 .sheet dd { margin: 0; }
+#sheetSkills tr.sk-on th, #sheetSkills tr.sk-off th { font-weight: 400; }
+#sheetSkills tr.sk-off th, #sheetSkills tr.sk-off td { color: var(--ink-2); font-size: .88rem; padding-block: 3px; }
+#sheetSkills tr.sk-on th { font-weight: 700; box-shadow: inset 4px 0 0 var(--accent); padding-left: 14px; }
+#sheetSkills td.up { background: var(--accent-soft); color: var(--ink); font-weight: 700; }
+#sheetSkills td.up small { font-weight: 400; color: var(--accent); margin-left: 4px; }
+#sheetSkills td.top { box-shadow: inset 0 0 0 2px var(--accent); }
+.sum-tools { display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: center; justify-content: space-between; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .85rem; color: var(--ink-2); }
+.legend i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -2px; margin-right: 4px; }
+.legend .l-up { background: var(--accent-soft); border: 1px solid var(--accent); }
+.legend .l-top { box-shadow: inset 0 0 0 2px var(--accent); }
 textarea.code { width: 100%; min-height: 84px; padding: 8px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); font-family: var(--mono); font-size: .8rem; word-break: break-all; }
 .saved { display: grid; gap: 6px; }
 .saved-item { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg); }
@@ -303,13 +345,48 @@ textarea.code { width: 100%; min-height: 84px; padding: 8px; border: 1px solid v
 footer { border-top: 1px solid var(--rule); padding-block: 18px 32px; font-size: .88rem; color: var(--ink-2); }
 footer p { margin: 4px 0; max-width: 80ch; }
 @media (prefers-reduced-motion: no-preference) { .xpbar i, .ratio-bar span { transition: width .25s ease; } }
+.quest-check h4 { margin: 6px 0 4px; font-family: var(--display); font-weight: 400; font-size: 1rem; color: var(--accent); }
+.qcheck { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font-size: .92rem; }
+.qcheck li { display: flex; gap: 8px; align-items: baseline; }
+.qcheck li.done > span:last-child { text-decoration: line-through; color: var(--ink-2); }
+.box-glyph { font-size: 1.05rem; line-height: 1; }
+.print-title { display: none; }
+
+/* Printing: the Summary step as a build sheet */
+@media print {
+  :root, :root[data-theme="dark"], :root:not([data-theme="light"]) {
+    --bg: #fff; --panel: #fff; --ink: #000; --ink-2: #444; --rule: #bbb; --accent: #5a4214; --accent-soft: #eee6d4; --good: #1d5a30; --warn: #6b4808; --bad: #8f2a22; --field: #888; color-scheme: light;
+  }
+  @page { margin: 14mm 12mm; }
+  body { font-size: 10.5pt; background: #fff; }
+  header.top, footer, .skip, dialog, #p-summary .intro, #p-summary .grid-2 > .box:not(.sheet), .sum-tools, .fold-bar { display: none !important; }
+  section.panel:not(#p-summary) { display: none !important; }
+  #p-summary { display: grid !important; gap: 10px; }
+  .print-title { display: block; font-family: var(--display); font-size: 18pt; margin-bottom: 4px; }
+  main { padding: 0; }
+  .wrap { max-width: none; padding: 0; }
+  .grid-2 { display: block; }
+  .box, .tbl-wrap { border: 1px solid var(--rule); border-radius: 4px; padding: 10px; break-inside: avoid-page; box-shadow: none; }
+  .sheet { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; }
+  .sheet > div { break-inside: avoid; }
+  .tbl-wrap { overflow: visible; }
+  thead th { position: static; }
+  #sheetSkills tr { break-inside: avoid; }
+  .pill { border-width: 1px; }
+  a { color: inherit; text-decoration: none; }
+  .quest-check { break-inside: auto; }
+  .qcheck { columns: 2; column-gap: 18px; display: block; }
+  .qcheck li { break-inside: avoid; margin-bottom: 2px; }
+}
 </style>
 
+<a class="skip" href="#main">Skip to the current step</a>
 <header class="top">
   <div class="wrap">
     <div class="top-row">
       <h1>Skyrim Character Planner</h1>
       <div class="build-tag" id="buildTag"></div>
+      <button class="btn quiet" id="aboutBtn" aria-haspopup="dialog">About<span class="long"> and credits</span></button>
     </div>
     <nav class="steps" role="tablist" aria-label="Planner steps">
       <button role="tab" id="tab-identity" aria-controls="p-identity" aria-selected="true" data-step="identity"><span class="n">1</span> Identity</button>
@@ -323,7 +400,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   </div>
 </header>
 
-<main class="wrap">
+<main class="wrap" id="main" tabindex="-1">
   <!-- 1. Identity -->
   <section class="panel" id="p-identity" role="tabpanel" aria-labelledby="tab-identity">
     <div class="intro">
@@ -331,6 +408,22 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <p class="muted">Race sets your starting skills. Combat style can fill in a starting plan for you, which you can then adjust skill by skill.</p>
       <p id="exampleNote" hidden><span class="example-note">Example build loaded. Change anything to make it yours.</span></p>
     </div>
+    <details class="box fold guide" data-fold="guide" open>
+      <summary><h3>Start here: how the planner works</h3></summary>
+      <div class="fold-body">
+        <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
+        <ol class="steps-guide">
+          <li><strong>Identity.</strong> Name, race, alignment and combat style. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
+          <li><strong>Perk plan.</strong> Pick perks in each skill tree and the milestone for each. You get one perk per level, and the planner works out the skill levels you'll need.</li>
+          <li><strong>Attributes.</strong> Split your level-ups between Health, Magicka and Stamina.</li>
+          <li><strong>Loadout.</strong> Standing Stones, shouts, weapons, apparel, potions, food and scrolls. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
+          <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
+          <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Choose your Civil War and Dawnguard sides here, and tick quests off as you play.</li>
+          <li><strong>Summary.</strong> The whole build on one page, ready to print, plus a build code to save or share.</li>
+        </ol>
+        <p class="muted" style="margin:0">Red warnings marked ⚠ mean something can't happen as planned, such as gear you can't get by that level or a quest your chosen side locks out. Your build saves automatically in this browser; use the build code on the Summary step to move it to another device.</p>
+      </div>
+    </details>
     <div class="box">
       <div class="field">
         <label class="label" for="buildName">Build name</label>
@@ -602,6 +695,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   <!-- 7. Summary -->
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
+    <div class="print-title" aria-hidden="true">Skyrim Character Planner · build sheet</div>
     <div class="intro">
       <h2>Build sheet</h2>
       <p class="muted">Everything about this build on one page. Copy the build code to keep it or share it, and paste a code to load one.</p>
@@ -613,6 +707,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="row">
           <button class="btn" id="saveBtn">Save in this browser</button>
           <button class="btn ghost" id="copyBtn">Copy build code</button>
+          <button class="btn ghost" id="printBtn">Print build sheet</button>
         </div>
         <div class="status" id="saveStatus" role="status"></div>
         <label class="label" for="codeOut">Build code</label>
@@ -624,9 +719,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="saved" id="savedList"></div>
       </div>
     </div>
+    <div class="sum-tools">
+      <div class="legend" aria-hidden="true"><span><i class="l-up"></i>Raised since the last column</span><span><i class="l-top"></i>Reaches 100</span><span>Grey rows have no perks planned</span></div>
+      <label class="check"><input type="checkbox" id="sumOnly"> Show only skills with perks</label>
+    </div>
     <div class="tbl-wrap">
       <table>
-        <thead><tr><th>Skill</th><th class="c">Start</th><th class="c">Lv 20</th><th class="c">Lv 40</th><th class="c">Lv 60</th></tr></thead>
+        <caption class="sr-only">Skill levels at each milestone. Skills with perks planned come first in each group.</caption>
+        <thead><tr><th scope="col">Skill</th><th scope="col" class="c">Start</th><th scope="col" class="c">Lv 20</th><th scope="col" class="c">Lv 40</th><th scope="col" class="c">Lv 60</th></tr></thead>
         <tbody id="sheetSkills"></tbody>
       </table>
     </div>
@@ -634,15 +734,34 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <h3>Perks by milestone</h3>
       <div class="perk-list" id="sheetPerks"></div>
     </div>
+    <div class="box quest-check">
+      <h3>Quest checklist</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">In play order within each tier. Prerequisites come before the quests that need them.</p>
+      <div id="sheetQuests"></div>
+    </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
     <p>Game data and formulas from <a href="https://en.uesp.net/wiki/Skyrim:Skyrim" target="_blank" rel="noopener">UESP</a> (<a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a>, <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a>, <a href="https://en.uesp.net/wiki/Skyrim:Standing_Stones" target="_blank" rel="noopener">Standing Stones</a>), used under <a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a>. Gear, alchemy, food, scrolls and quests from <a href="https://en.uesp.net/wiki/Skyrim:Unique_Weapons" target="_blank" rel="noopener">UESP</a>. Shout words and locations, and Daedric artifact quests, from <a href="https://elderscrolls.fandom.com/wiki/Dragon_Shouts" target="_blank" rel="noopener">The Elder Scrolls Wiki</a>, used under <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>. Unofficial fan tool; The Elder Scrolls and Skyrim are trademarks of Bethesda Softworks.</p>
-    <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere.</p>
+    <p>Builds saved in this browser stay on this device only. Use the build code to move a build elsewhere. <button class="linkish" id="aboutLink">Full credits and data dates</button></p>
   </div>
 </footer>
+
+<dialog class="about" id="about" aria-labelledby="aboutTitle">
+  <div class="about-head"><h2 id="aboutTitle">About and credits</h2><button class="btn quiet" id="aboutClose">Close</button></div>
+  <div class="about-body">
+    <p>Skyrim Character Planner is an unofficial fan tool for planning a character's perks, attributes, gear, household and quests, covering the base game, Dawnguard, Hearthfire, Dragonborn and the Anniversary Edition's Creation Club content.</p>
+    <p class="muted">The Elder Scrolls, Skyrim and related names are trademarks of Bethesda Softworks and ZeniMax Media. This tool isn't made or endorsed by them, or by UESP or the Elder Scrolls Wiki.</p>
+    <h3>Where the game data comes from</h3>
+    <p>Game data is gathered from the community wikis below and summarized. Their text is shared under Creative Commons Attribution-ShareAlike licenses (<a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a> for UESP, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> for the Elder Scrolls Wiki), so this planner's data files are shared under the same terms. Leveling formulas, races, skills and Standing Stones come from UESP's <a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a> and <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a> pages.</p>
+    <ul class="credits" id="credits"></ul>
+    <h3>Your data</h3>
+    <p>Builds are kept only in this browser on this device. Nothing is sent anywhere. Use the build code on the Summary step to move a build to another device or share it.</p>
+    <p class="muted" id="repoNote">Source code and data: <a href="https://github.com/t1redhands/skyrim-planner" target="_blank" rel="noopener">github.com/t1redhands/skyrim-planner</a>.</p>
+  </div>
+</dialog>
 
 <script>
 (async () => {
@@ -700,6 +819,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // ---------- Collapsible groups (open/closed state is remembered in this browser) ----------
   let FOLDS = {};
   try { FOLDS = JSON.parse(localStorage.getItem('skp.folds')) || {}; } catch {}
+  if ('guide' in FOLDS) document.querySelector('[data-fold="guide"]').open = FOLDS.guide;   // the guide remembers being closed
   const saveFolds = () => { try { localStorage.setItem('skp.folds', JSON.stringify(FOLDS)); } catch {} };
   function fold(key, title, inner, { count = null, chosen = 0, open = true, force = false, cls = '' } = {}) {
     const isOpen = force || (key in FOLDS ? FOLDS[key] : open);
@@ -1483,6 +1603,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (q.line === 'Dawnguard' && state.dgSide !== 'dawnguard') return state.dgSide === 'volkihar' ? 'Dawnguard quest; you chose the vampires.' : 'Dawnguard quest; choose a Dawnguard side to include it.';
     if (q.line === 'Volkihar Vampire Clan' && state.dgSide !== 'volkihar') return state.dgSide === 'dawnguard' ? 'Vampire quest; you chose the Dawnguard.' : 'Vampire quest; choose a Dawnguard side to include it.';
     if (q.dlc === 'dawnguard' && state.dgSide === 'none') return 'Dawnguard content; you chose not to play it.';
+    if (q.side && q.side !== state.dgSide) return q.side === 'dawnguard' ? 'Only on the Dawnguard side; you chose the vampires.' : 'Only on the vampire side; you chose the Dawnguard.';
     return '';
   }
   const usable = q => !sideBlock(q) && !(state.skipConflicts && questConflict(q));
@@ -1862,15 +1983,35 @@ footer p { margin: 4px 0; max-width: 80ch; }
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
-    $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
-      `<tr><td>${s.name}</td><td class="c num">${startOf(state.race, s.id)}</td>${lv.map(l => `<td class="c num">${l[s.id]}</td>`).join('')}</tr>`).join('')).join('');
+    let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
+    $('sumOnly').checked = only;
+    const used = s => lv.some(l => l[s.id] > startOf(state.race, s.id));
+    $('sheetSkills').innerHTML = GROUPS.map(g => {
+      const list = SKILLS.filter(s => s.group === g).sort((a, b) => used(b) - used(a)).filter(s => !only || used(s));
+      if (!list.length) return '';
+      return `<tr class="grp"><th colspan="5" scope="colgroup">${g}</th></tr>` + list.map(s => {
+        const st = startOf(state.race, s.id), on = used(s);
+        const cells = lv.map((l, k) => { const v = l[s.id], prev = k ? lv[k - 1][s.id] : st, up = v > prev;
+          return `<td class="c num${up ? ' up' : ''}${v >= 100 && up ? ' top' : ''}">${v}${up ? `<small aria-label="up ${v - prev}">+${v - prev}</small>` : ''}</td>`; }).join('');
+        return `<tr class="${on ? 'sk-on' : 'sk-off'}"><th scope="row">${s.name}${on ? '' : '<span class="sr-only"> (no perks planned)</span>'}</th><td class="c num">${st}</td>${cells}</tr>`;
+      }).join('');
+    }).join('') || '<tr><td colspan="5" class="muted">No skills have perks planned yet.</td></tr>';
     $('sheetPerks').innerHTML = MS.map((m, k) => {
       const added = perksAddedAt(m);
       return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${added.length ? added.map(a => `${esc(a.text)} <span class="muted">(${a.skill})</span>`).join(', ') : '<span class="muted">none</span>'}</p>`;
     }).join('');
+    const { plan: qp, order: qo } = buildQuestPlan();
+    $('sheetQuests').innerHTML = qo.length ? TIERS.map((tier, t) => {
+      const ids = qo.filter(id => qp[id].tier === t); if (!ids.length) return '';
+      return `<h4>${tier.title} <span class="muted num">(${ids.length})</span></h4><ol class="qcheck">${ids.map(id => { const { q, m } = qp[id];
+        return `<li class="${state.done[id] ? 'done' : ''}"><span class="box-glyph" aria-hidden="true">${state.done[id] ? '☑' : '☐'}</span><span>${esc(q.name)}${state.done[id] ? '<span class="sr-only"> (done)</span>' : ''} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by level ${m}` : ''}${q.giver ? ` · ${esc(q.giver)}` : ''}</span></span></li>`; }).join('')}</ol>`;
+    }).join('') : '<p class="muted" style="margin:0">No quests in the plan yet.</p>';
     $('codeOut').value = encode(state);
     renderSaved();
   }
+  $('printBtn').addEventListener('click', () => window.print());
+  window.addEventListener('beforeprint', renderSummary);   // printing from any step prints a current build sheet
+  $('sumOnly').addEventListener('change', e => { try { localStorage.setItem('skp.sumOnly', e.target.checked ? '1' : '0'); } catch {} renderSummary(); });
   function setStatus(msg, ok = true) { const el = $('saveStatus'); el.textContent = msg; el.className = 'status ' + (ok ? 'ok' : 'bad'); }
   function renderSaved() {
     const list = store.get('skp.saved') || [];
@@ -1906,6 +2047,32 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
   });
 
+  // ---------- About and credits ----------
+  const DATAFILES = [['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA]];
+  const linkify = t => esc(t).replace(/https?:\/\/[^\s,;)]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${decodeURIComponent(u.replace(/^https?:\/\/(en\.uesp\.net\/wiki\/|elderscrolls\.fandom\.com\/wiki\/)?/, '')).replace(/_/g, ' ')}</a>`);
+  $('credits').innerHTML = DATAFILES.map(([name, d]) => `<li><strong>${name}</strong>${d.asOf ? ` <span class="muted">· data from ${esc(d.asOf)}</span>` : ''}<div class="src">${linkify(d.license || '')}</div></li>`).join('');
+  const openAbout = () => { const d = $('about'); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); $('aboutClose').focus(); };
+  $('aboutBtn').addEventListener('click', openAbout); $('aboutLink').addEventListener('click', openAbout);
+  $('aboutClose').addEventListener('click', () => $('about').close ? $('about').close() : $('about').removeAttribute('open'));
+  $('about').addEventListener('click', e => { if (e.target === $('about')) $('about').close(); });   // click outside the box closes it
+  // ---------- Accessibility helpers ----------
+  document.documentElement.lang = 'en';
+  // chip and card choices are radio buttons to assistive tech
+  const markRadios = root => root.querySelectorAll('[role="radiogroup"] button[aria-checked]:not([role])').forEach(b => b.setAttribute('role', 'radio'));
+  new MutationObserver(() => markRadios(document)).observe(document.querySelector('main'), { childList: true, subtree: true });
+  markRadios(document);
+  // arrow keys move between choices in a group and between steps
+  document.addEventListener('keydown', e => {
+    if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(e.key)) return;
+    const t = e.target, group = t.closest('[role="radiogroup"], [role="tablist"], .subtabs');
+    if (!group || !(t.matches('[role="radio"], [role="tab"], .subtabs button'))) return;
+    const items = [...group.querySelectorAll('[role="radio"], [role="tab"], .subtabs button')].filter(b => !b.hidden && b.offsetParent !== null);
+    let i = items.indexOf(t); if (i < 0) return;
+    i = e.key === 'Home' ? 0 : e.key === 'End' ? items.length - 1 : (i + (e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -1 : 1) + items.length) % items.length;
+    e.preventDefault(); items[i].focus(); items[i].click();
+    // some groups redraw when a choice changes: put focus back on the same choice
+    if (!document.contains(items[i]) && group.id) { const g2 = $(group.id); const again = g2 && [...g2.querySelectorAll('[role="radio"], [role="tab"], button')].filter(b => b.offsetParent !== null)[i]; again?.focus(); }
+  });
   function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); }
   renderAll();
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
