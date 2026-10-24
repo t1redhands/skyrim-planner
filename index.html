@@ -160,6 +160,9 @@ tbody tr:last-child td { border-bottom: 0; }
 .pe { font-size: .9rem; color: var(--ink-2); }
 .pr { font-size: .82rem; color: var(--ink-2); }
 .pw { font-size: .85rem; color: var(--bad); }
+.mods { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 2px; }
+.mods .rank { justify-items: start; }
+.mods select { max-width: 15rem; }
 .ranks { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 @media (max-width: 640px) { .ranks { justify-content: flex-start; } }
 .rank { display: grid; gap: 2px; justify-items: center; }
@@ -723,6 +726,20 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
   const SHOUTS = SHOUTDATA.shouts, SH = Object.fromEntries(SHOUTS.map(s => [s.id, s]));
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
+  // enchanting and crafting plans for chosen gear
+  const ENCH = (GEARDATA.enchantments || { list: [] }).list, ENB = Object.fromEntries(ENCH.map(e => [e.name, e]));
+  const ENCH_SLOT = { Helmets: 'head', Hoods: 'head', Circlets: 'head', Amulets: 'amulet', Cuirasses: 'chest', Clothes: 'chest', Robes: 'chest', Gauntlets: 'hands', Gloves: 'hands', Rings: 'ring', Boots: 'feet', Shoes: 'feet', 'Heavy shields': 'shield', 'Light shields': 'shield' };
+  const enchSlot = g => g.slot === 'weapon' ? (g.group === 'Staves' ? null : 'weapon') : ENCH_SLOT[g.sub] || null;
+  // only items that carry no enchantment of their own can be enchanted
+  const canEnchant = g => !!enchSlot(g) && (g.set === 'standard' || g.effect === 'No enchantment.');
+  const forgeable = f => !!(f && f.perk && !/^(n\/a|cannot)/i.test(f.perk));
+  const canCraft = g => forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
+  const enchFor = g => ENCH.filter(e => e.slots.includes(enchSlot(g)));
+  function modText(id) {
+    const md = state.mods[id]; if (!md) return '';
+    const bits = [md.how === 'crafted' ? 'crafted' : md.how === 'found' ? 'found or bought' : '', (md.ench || []).length ? 'enchanted: ' + md.ench.map(e => e || 'effect not chosen').join(' + ') : ''].filter(Boolean);
+    return bits.join(', ');
+  }
   const EFF = Object.fromEntries(ALCHDATA.effects.map(e => [e.id, e])), INGR = ALCHDATA.ingredients, RECIPES = ALCHDATA.recipes, RC_ = Object.fromEntries(RECIPES.map(r => [r.id, r]));
   const SCROLLS = SCROLLDATA.scrolls, SPIDERS = SCROLLDATA.spiders, SCR = Object.fromEntries(SCROLLS.map(s => [s.id, s])), SPD = Object.fromEntries(SPIDERS.map(s => [s.id, s]));
   const FOLS = HOUSEDATA.followers, FOL = Object.fromEntries(FOLS.map(f => [f.id, f]));
@@ -842,7 +859,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, mods: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -870,6 +887,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (s.stones) MS.forEach(m => { if (STN[s.stones[m]]) out.stones[m] = s.stones[m]; });
     out.gear = {};
     if (s.gear && typeof s.gear === 'object') for (const [k, v] of Object.entries(s.gear)) if (GR[k] && MS.includes(v)) out.gear[k] = v;
+    out.mods = {};
+    if (s.mods && typeof s.mods === 'object') for (const [k, md] of Object.entries(s.mods)) {
+      const g = GR[k]; if (!g || out.gear[k] == null || !md) continue;
+      const o = {};
+      if (canCraft(g) && ['found', 'crafted'].includes(md.how)) o.how = md.how;
+      if (canEnchant(g) && Array.isArray(md.ench)) o.ench = md.ench.slice(0, 2).map(e => ENB[e] && ENB[e].slots.includes(enchSlot(g)) ? e : '');
+      if (o.how || o.ench) out.mods[k] = o;
+    }
     const keep = (src, ok) => Object.fromEntries(Object.entries(src && typeof src === 'object' ? src : {}).filter(([k, v]) => ok[k] && MS.includes(v)));
     out.food = keep(s.food, RC_); out.scrolls = keep(s.scrolls, SCR); out.spiders = keep(s.spiders, SPD);
     out.scrollUse = ['none', 'some', 'main'].includes(s.scrollUse) ? s.scrollUse : 'none';
@@ -1125,6 +1150,20 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function gearIssues(g, v) {
     const out = [];
     if (v != null && v < g.minLevel) out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
+    const md = v != null && state.mods[g.id];
+    if (md && md.how === 'crafted') {
+      const fp = forgePerk(g.forge);
+      if (fp && (!fp.m || fp.m > v)) out.push(`Forging this needs ${fp.name}, which isn't in your perk plan by level ${v}.`);
+    }
+    if (md && md.ench) {
+      const ee = md.ench;
+      if (ee.length === 2) {
+        const xm = state.picks[rankKey('enchanting.extra-effect', 0)];
+        if (!xm || xm > v) out.push(`Two enchantments on one item need the Extra Effect perk (Enchanting), which isn't in your perk plan by level ${v}.`);
+        if (ee[0] && ee[0] === ee[1]) out.push('Both enchantments are the same; an item can only hold one of each.');
+      }
+      for (const e of ee) if (ENB[e]?.dlc === 'dawnguard' && state.dgSide === 'none') out.push(`${e} needs Dawnguard, which you chose not to play.`);
+    }
     if (v != null && g.side === 'volkihar' && state.dgSide !== 'volkihar') out.push(state.dgSide === 'dawnguard' ? 'Only Volkihar vampires can get this (a reward from Garan Marethi); you chose the Dawnguard side.' : 'Only Volkihar vampires can get this (a reward from Garan Marethi). Set your Dawnguard side to Volkihar on the Quest plan step.');
     if (v != null && g.choiceGroup) {
       const rival = GEAR.find(o => o.choiceGroup === g.choiceGroup && o.id !== g.id && state.gear[o.id] != null);
@@ -1147,9 +1186,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
       gearSlotShown = slot; gearFilter = 'all'; gearSource = 'all'; $('gearSearch').value = '';
       $('gearSource').querySelectorAll('[data-src]').forEach(x => x.setAttribute('aria-checked', String(x.dataset.src === 'all')));
       $('gearTitle').textContent = slot === 'weapon' ? 'Weapons' : 'Apparel';
+      $('gearSource').querySelector('[data-src="enchanted"]').hidden = slot === 'weapon';   // enchanted loot is robes only
       $('gearIntro').textContent = slot === 'weapon'
-        ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them.'
-        : 'Every piece of armor, shield, jewelry and clothing, unique and standard, plus a few artifacts that aren\'t worn. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it.';
+        ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them. Once you choose a standard weapon, you can say whether you\'ll find or forge it and which enchantments it should carry.'
+        : 'Every piece of armor, shield, jewelry and clothing, unique and standard, plus a few artifacts that aren\'t worn. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it. Once you choose a piece with no enchantment of its own, you can say whether you\'ll find or craft it and which enchantments it should carry.';
       $('gearSearchLabel').textContent = slot === 'weapon' ? 'Search weapons' : 'Search apparel';
       $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type or place, such as Chillrend or bow' : 'Name, type or place, such as Nightingale or ring';
       const groups = GEARDATA.groups[slot];
@@ -1177,6 +1217,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
           ${g.forge && g.forge.perk && !/^(n\/a|cannot)/i.test(g.forge.perk) ? (() => { const fp = forgePerk(g.forge); return `<div class="pr">Forge: ${esc(/no perk/i.test(g.forge.perk) ? 'no perk needed' : g.forge.perk)}${g.forge.temper && !/n\/a/i.test(g.forge.temper) ? ` · improve with ${esc(g.forge.temper)}` : ''}${fp ? (fp.m ? ` · <span class="why">${esc(fp.name)} is in your plan by level ${fp.m}</span>` : ` · <span class="muted">${esc(fp.name)} isn't in your perk plan</span>`) : ''}</div>`; })() : ''}
+          ${v != null && (canCraft(g) || canEnchant(g)) ? modControls(g) : ''}
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: milestone">
           <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
@@ -1194,9 +1235,28 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('gearList').innerHTML = groups.length ? foldBar('gearList') + groups.map(([label, items]) => fold(`gear-${slot}-${label}`, esc(label), inner(label, items), { count: items.length, chosen: items.filter(g => state.gear[g.id] != null).length, open: false, force: forceOpen })).join('')
       : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : gearFilter === 'fits' ? 'Nothing here matches the skills in your perk plan yet.' : 'Nothing chosen yet. Pick some from All.'}</p></div>`;
   }
+  function modControls(g) {
+    const md = state.mods[g.id] || {}, ee = md.ench || [], id = g.id;
+    const sel = (key, label, opts, cur) => `<label class="rank"><span class="rl">${label}</span><select class="${cur ? 'on' : ''}" id="md-${key}-${id}" data-mod="${key}" data-id="${id}" aria-label="${esc(g.name)}: ${label.toLowerCase()}">${opts.map(([v, t]) => `<option value="${esc(v)}"${v === cur ? ' selected' : ''}>${esc(t)}</option>`).join('')}</select></label>`;
+    const effs = enchFor(g).map(e => [e.name, e.name + (e.dlc ? ` (${DLC[e.dlc] || e.dlc})` : '')]);
+    return `<div class="mods">
+      ${canCraft(g) ? sel('how', 'Get it', [['', 'Not decided'], ['found', 'Found or bought'], ['crafted', 'Crafted']], md.how || '') : ''}
+      ${canEnchant(g) ? sel('n', 'Enchant', [['0', 'No'], ['1', 'One effect'], ['2', 'Two effects']], String(ee.length)) : ''}
+      ${ee.map((cur, i) => sel('e' + i, `Effect ${ee.length > 1 ? i + 1 : ''}`.trim(), [['', 'Choose…'], ...effs], cur)).join('')}
+    </div>`;
+  }
   $('gearList').addEventListener('change', e => {
+    const mel = e.target.closest('select[data-mod]');
+    if (mel) {
+      const id = mel.dataset.id, k = mel.dataset.mod, md = { ...(state.mods[id] || {}) };
+      if (k === 'how') { if (mel.value) md.how = mel.value; else delete md.how; }
+      else if (k === 'n') { const n = +mel.value, ee = (md.ench || []).slice(0, n); while (ee.length < n) ee.push(''); if (n) md.ench = ee; else delete md.ench; }
+      else { md.ench = (md.ench || []).slice(); md.ench[+k.slice(1)] = mel.value; }
+      if (md.how || md.ench) state.mods[id] = md; else delete state.mods[id];
+      touch(); renderGear(); $(mel.id)?.focus(); return;
+    }
     const el = e.target.closest('select[data-gear]'); if (!el) return;
-    if (el.value === '') delete state.gear[el.dataset.gear]; else state.gear[el.dataset.gear] = +el.value;
+    if (el.value === '') { delete state.gear[el.dataset.gear]; delete state.mods[el.dataset.gear]; } else state.gear[el.dataset.gear] = +el.value;
     touch(); renderGear(); renderSubtabs(); $(el.id)?.focus();
   });
   $('gearSearch').addEventListener('input', () => renderGear());
@@ -1799,7 +1859,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('sheetSkills').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s =>
