@@ -12,10 +12,10 @@ You plan in three milestones: **by level 20**, **by level 40** and **by level 60
 
 | Step | What you plan |
 | --- | --- |
-| 1. Identity | Name, race, alignment and combat style. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in a starting build for the chosen style. |
+| 1. Identity | Name, race, alignment and combat style, plus free-form role-play notes. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in a starting build for the chosen style. |
 | 2. Perk plan | Perks in all 18 skill trees and the milestone for each. You get one perk per level, and the planner works out the skill levels each perk needs. |
 | 3. Attributes | How your level-ups split between Health, Magicka and Stamina. |
-| 4. Loadout | Standing Stones, shouts, weapons, apparel, potions, food, scrolls and spider scrolls. Standard gear can be marked as found or crafted, and given one or two enchantments. |
+| 4. Loadout | Standing Stones, shouts (how many words, and where you'll get them), spells, weapons, apparel (including faction and specialty gear), potions with a full ingredient list, food, scrolls and spider scrolls, and signature moves: named combinations of shouts, spells, potions and enchantments. Standard gear can be marked as found or crafted, and given one or two enchantments. |
 | 5. Household | Followers, a spouse and homes, with the ones that suit your build marked. |
 | 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Prerequisites are added automatically, and quests your Civil War or Dawnguard side locks out are left out. |
 | 7. Summary | The whole build on one page, a printable build sheet with a quest checklist, and a build code to save or share. |
@@ -40,7 +40,7 @@ The game data in `data/` is the exception. It's summarized from wiki text licens
 
 Game data comes from community wikis and is summarized:
 
-- **[UESP, the Unofficial Elder Scrolls Pages](https://en.uesp.net/wiki/Skyrim:Skyrim)**, used under [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). This covers perks, leveling, races, Standing Stones, gear, enchantments, alchemy, food, scrolls, followers, marriage, homes and quests.
+- **[UESP, the Unofficial Elder Scrolls Pages](https://en.uesp.net/wiki/Skyrim:Skyrim)**, used under [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). This covers perks, leveling, races, Standing Stones, spells, gear, enchantments, alchemy, food, scrolls, followers, marriage, homes and quests.
 - **[The Elder Scrolls Wiki](https://elderscrolls.fandom.com/wiki/Dragon_Shouts)**, used under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). This covers shout word locations and Daedric artifact quests.
 
 Each data file in `data/` names the pages it came from. Because the source text is CC BY-SA, the data files are shared under the same terms. The planner's **About and credits** button lists every source with the date of its data.

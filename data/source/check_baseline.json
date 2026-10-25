@@ -162,6 +162,23 @@
   "whiterun",
   "windhelm"
  ],
+ "Skyrim_Specialty_Gear": [
+  "blades weapons",
+  "bugs",
+  "chaurus chitin",
+  "firewood",
+  "gallery",
+  "imperial soldier armor",
+  "imperial soldier weapons",
+  "iron ingot",
+  "refined moonstone",
+  "steel ingot",
+  "tempering"
+ ],
+ "Skyrim_Vigil_Armor": [
+  "female imperial",
+  "male nord"
+ ],
  "Skyrim_Ingredients": [],
  "Skyrim_Food": [
   "ash yam",
@@ -220,5 +237,6 @@
   "unarmed",
   "weapon effects",
   "weapons"
- ]
+ ],
+ "Skyrim_Spells": []
 }

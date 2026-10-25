@@ -25,7 +25,8 @@ PAGES = {
     'Skyrim_Unique_Clothing': 'gear', 'Skyrim_Artifacts': 'gear', 'Skyrim_Leveled_Items': 'gear',
     'Skyrim_Weapons': 'gear', 'Skyrim_Armor': 'gear', 'Skyrim_Clothing': 'gear', 'Skyrim_Jewelry': 'gear',
     'Skyrim_Followers': 'household', 'Skyrim_Marriage': 'household', 'Skyrim_Houses': 'household',
-    'Skyrim_Ingredients': 'alchemy', 'Skyrim_Food': 'alchemy', 'Skyrim_Enchantments': 'enchantments',
+    'Skyrim_Specialty_Gear': 'gear', 'Skyrim_Vigil_Armor': 'gear', 'Skyrim_Amulets_of_the_Divines': 'gear',
+    'Skyrim_Ingredients': 'alchemy', 'Skyrim_Food': 'alchemy', 'Skyrim_Enchantments': 'enchantments', 'Skyrim_Spells': 'spells',
 }
 
 LINK = r'\[\[(?:Skyrim|SR|Dawnguard|Dragonborn|Hearthfire):([^|\]#]+)(?:\|([^\]]+))?\]\]'
@@ -54,7 +55,9 @@ def listed(wiki):
 
 
 def known():
-    k = {'gear': set(), 'household': set(), 'alchemy': set(), 'enchantments': set()}
+    k = {'gear': set(), 'household': set(), 'alchemy': set(), 'enchantments': set(), 'spells': set()}
+    sp = DATA / 'spells.json'
+    if sp.exists(): k['spells'] = {norm(s['name']) for s in json.load(open(sp, encoding='utf-8'))['spells']}
     gear = json.load(open(DATA / 'gear.json', encoding='utf-8'))
     k['gear'] = {norm(i['name']) for i in gear['items']}
     k['enchantments'] = {norm(e['name']) for e in gear.get('enchantments', {}).get('list', [])}

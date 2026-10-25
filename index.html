@@ -191,6 +191,25 @@ tbody tr:last-child td { border-bottom: 0; }
 .pe { font-size: .9rem; color: var(--ink-2); }
 .pr { font-size: .82rem; color: var(--ink-2); }
 .pw { font-size: .85rem; color: var(--bad); }
+textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); line-height: 1.5; resize: vertical; }
+.moves { display: grid; gap: 14px; }
+.move-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.move-head input { flex: 1 1 220px; padding: 6px 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); font-family: var(--display); font-size: 1.05rem; }
+.move-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; counter-reset: st; }
+.move-step { display: grid; grid-template-columns: auto minmax(110px, 150px) minmax(0, 1fr) auto; gap: 6px; align-items: center; }
+.move-step::before { counter-increment: st; content: counter(st); font-family: var(--mono); font-size: .8rem; color: var(--ink-2); min-width: 1.2em; text-align: right; }
+.move-step select, .move-step input { padding: 5px 8px; border: 1px solid var(--field); border-radius: 4px; background: var(--bg); min-width: 0; width: 100%; }
+.move-step .tools { display: flex; gap: 2px; }
+.move-step .tools button { border: 1px solid var(--field); background: var(--bg); border-radius: 4px; width: 28px; height: 28px; cursor: pointer; font-family: var(--mono); }
+.move-step .hint { grid-column: 3 / 5; font-size: .78rem; color: var(--ink-2); margin-top: -2px; }
+.move-step .hint:empty { display: none; }
+@media (max-width: 640px) {
+  .move-step { grid-template-columns: auto 1fr auto; }
+  .move-step::before { grid-row: 1; } .move-step select { grid-column: 2; grid-row: 1; } .move-step .tools { grid-column: 3; grid-row: 1; }
+  .move-step input { grid-column: 2 / 4; grid-row: 2; } .move-step .hint { grid-column: 2 / 4; grid-row: 3; }
+  .move-steps { gap: 12px; }
+}
+.move-line { margin: 0 0 4px; }
 .mods { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 2px; }
 .mods .rank { justify-items: start; }
 .mods select { max-width: 15rem; }
@@ -225,6 +244,13 @@ tbody tr:last-child td { border-bottom: 0; }
 .tagd.q { border-color: var(--accent); color: var(--accent); }
 .words { font-size: .9rem; }
 .words b { font-family: var(--display); font-weight: 400; letter-spacing: .03em; }
+.words b.muted { color: var(--ink-2); text-decoration: line-through; }
+.sh-src { list-style: none; margin: 2px 0 0; padding: 0; display: grid; gap: 2px; font-size: .85rem; color: var(--ink-2); }
+.sh-src .check { font-size: .85rem; align-items: flex-start; }
+.sh-src input { margin-top: 3px; }
+#shoutTally, #spellTally { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 900px) { #shoutTally, #spellTally { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { #shoutTally, #spellTally { grid-template-columns: 1fr; } }
 .search { padding: 8px 10px; border: 1px solid var(--rule); border-radius: 6px; background: var(--panel); max-width: 420px; width: 100%; }
 .gear-sets { display: grid; gap: 14px; }
 .pr a { color: var(--ink-2); }
@@ -250,6 +276,8 @@ tbody tr:last-child td { border-bottom: 0; }
 .ingr { font-weight: 700; }
 .effs { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
 .eff { font-size: .8rem; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--rule); color: var(--ink-2); }
+button.eff { background: var(--bg); cursor: pointer; font: inherit; font-size: .8rem; }
+button.eff:hover { border-color: var(--accent); color: var(--ink); }
 .eff.want { border-color: var(--accent); color: var(--ink); background: var(--accent-soft); }
 .eff.bad { border-color: var(--bad); color: var(--bad); }
 .save-row { display: flex; gap: 6px; align-items: center; }
@@ -382,7 +410,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   .ps-skills b { font-weight: 700; }
   .ps-skills .up { background: #eee6d4; font-weight: 700; }
   .ps-note { font-size: 7.5pt; color: #444; margin: 3pt 0 0; }
-  .ps-perks p { margin: 0 0 4pt; }
+  .ps-perks p, .ps-move { margin: 0 0 3pt; }
+  .ps-rp { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .ps-perks strong { color: #3d2c0b; }
   .ps-q h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
   .ps-q ol { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; }
@@ -471,6 +500,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
         </div>
       </div>
     </div>
+    <div class="box">
+      <h3><label for="rpNotes">Role-play notes</label></h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Backstory, personality, beliefs, rules you'll play by, things this character would never do. Saved with the build and printed on the build sheet.</p>
+      <textarea id="rpNotes" class="notes" maxlength="6000" placeholder="Raised by the Skaal on Solstheim; distrusts the Thalmor; never steals from the poor…"></textarea>
+      <div class="muted" style="font-size:.8rem" id="rpCount" aria-live="polite"></div>
+    </div>
   </section>
 
   <!-- 2. Perks -->
@@ -521,11 +556,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <nav class="subtabs" id="subtabs" aria-label="Loadout sections">
       <button data-sub="stones" aria-pressed="true">Stones</button>
       <button data-sub="shouts" aria-pressed="false">Shouts</button>
+      <button data-sub="spells" aria-pressed="false">Spells</button>
       <button data-sub="weapons" aria-pressed="false">Weapons</button>
       <button data-sub="apparel" aria-pressed="false">Apparel</button>
       <button data-sub="potions" aria-pressed="false">Potions</button>
       <button data-sub="food" aria-pressed="false">Food</button>
       <button data-sub="scrolls" aria-pressed="false">Scrolls</button>
+      <button data-sub="moves" aria-pressed="false">Signature moves</button>
     </nav>
     <div class="sub" data-sub="stones">
     <div class="intro">
@@ -538,7 +575,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="shouts" hidden>
     <div class="intro">
       <h2>Shouts</h2>
-      <p class="muted">Choose the shouts you want and the milestone you want each one by. Each shout has three words, found at word walls or given during quests, and each word takes one dragon soul to unlock. Some quests unlock their words for you.</p>
+      <p class="muted">Choose each shout as <strong>Expedite</strong>, needed by a milestone, or <strong>Selected</strong>, wanted with no deadline, and how many of its three words you want. Word walls teach a shout's words in order, so what you control is how many words and which places you get them from: untick a place, such as a quest your character wouldn't do, and the planner finds the words elsewhere or warns you. Each word takes one dragon soul.</p>
     </div>
     <div class="milestones" id="shoutTally"></div>
     <div class="row" id="shoutFilter" role="radiogroup" aria-label="Show shouts">
@@ -549,6 +586,16 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
     </div>
     <div class="gear-sets" id="shoutList"></div>
+    </div>
+    <div class="sub" data-sub="spells" hidden>
+    <div class="intro">
+      <h2>Spells</h2>
+      <p class="muted">Your preferred spells, as <strong>Expedite</strong> by a milestone or <strong>Selected</strong> with no deadline. Court wizards sell Novice and Apprentice tomes; Adept tomes appear once that school reaches 40, Expert at 65, and Master spells come from the College's ritual quests, which need 90. The planner checks your perk plan against those levels and adds any quest a spell needs to the quest plan.</p>
+    </div>
+    <div class="milestones" id="spellTally"></div>
+    <div class="row" id="spellFilter" role="radiogroup" aria-label="Show spells"></div>
+    <div class="field"><label class="label" for="spellSearch">Search spells</label><input type="search" id="spellSearch" class="search" placeholder="Name or effect, such as cloak or paralyze" autocomplete="off"></div>
+    <div class="gear-sets" id="spellList"></div>
     </div>
     <div class="sub" data-sub="gear" hidden>
     <div class="intro">
@@ -580,11 +627,22 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <div class="field"><label class="label" for="pe-1">Second effect (optional)</label><select id="pe-1" class="pe-sel"></select></div>
           <div class="field"><label class="label" for="pe-2">Third effect (optional)</label><select id="pe-2" class="pe-sel"></select></div>
         </div>
-        <label class="check"><input type="checkbox" id="pmCC" checked> Include Creation Club ingredients</label>
+        <div class="row">
+          <div class="field" style="min-width:min(100%,260px)"><label class="label" for="pmIng">Must use this ingredient (optional)</label><select id="pmIng" class="pe-sel"></select></div>
+          <label class="check"><input type="checkbox" id="pmCC" checked> Include Creation Club ingredients</label>
+        </div>
         <div class="perk-note" id="pmPerks"></div>
         <div id="pmResults"></div>
       </div>
       <div class="box"><h3>Favorite potions</h3><div class="perks" id="potionList"></div></div>
+      <details class="box fold" data-fold="ingbook">
+        <summary><h3>All ingredients</h3><span class="fold-meta"><span class="num" id="ingCount"></span></span></summary>
+        <div class="fold-body">
+          <p class="muted" style="margin:0;font-size:.9rem" id="ingTally"></p>
+          <div class="field"><label class="label" for="ingSearch">Search ingredients</label><input type="search" id="ingSearch" class="search" placeholder="Name or effect, such as snowberries or resist fire" autocomplete="off"></div>
+          <div class="perks" id="ingList"></div>
+        </div>
+      </details>
     </div>
     <div class="sub" data-sub="food" hidden>
       <div class="intro">
@@ -624,6 +682,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
       </div>
       <div class="perk-note" id="scrollAdvice"></div>
       <div id="scrollLists" class="gear-sets"></div>
+    </div>
+    <div class="sub" data-sub="moves" hidden>
+      <div class="intro">
+        <h2>Signature moves</h2>
+        <p class="muted">Name the combinations this character relies on and list the steps in order: a shout, a spell, a potion, an enchantment, a power. Type anything, or pick from the suggestions, which come from the game data with your own choices listed first. Steps that use something you haven't added to your plan are noted, so you know what to go and get.</p>
+      </div>
+      <div class="moves" id="moveList"></div>
+      <div class="row"><button class="btn" id="addMove">Add a signature move</button></div>
+      <div id="moveLists" hidden></div>
     </div>
   </section>
 
@@ -746,6 +813,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <h3>Perks by milestone</h3>
       <div class="perk-list" id="sheetPerks"></div>
     </div>
+    <div class="grid-2">
+      <div class="box"><h3>Signature moves</h3><div id="sheetMoves" class="perk-list"></div></div>
+      <div class="box"><h3>Role-play notes</h3><div id="sheetNotes" class="perk-list"></div></div>
+    </div>
     <div class="box quest-check">
       <h3>Quest checklist</h3>
       <p class="muted" style="margin:0;font-size:.9rem">In play order within each tier. Prerequisites come before the quests that need them.</p>
@@ -835,7 +906,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // ---------- Collapsible groups (open/closed state is remembered in this browser) ----------
   let FOLDS = {};
   try { FOLDS = JSON.parse(localStorage.getItem('skp.folds')) || {}; } catch {}
-  if ('guide' in FOLDS) document.querySelector('[data-fold="guide"]').open = FOLDS.guide;   // the guide remembers being closed
+  document.querySelectorAll('details.fold[data-fold]').forEach(d => { if (d.dataset.fold in FOLDS) d.open = FOLDS[d.dataset.fold]; });   // static folds (guide, ingredient list) remember their state
   const saveFolds = () => { try { localStorage.setItem('skp.folds', JSON.stringify(FOLDS)); } catch {} };
   function fold(key, title, inner, { count = null, chosen = 0, open = true, force = false, cls = '' } = {}) {
     const isOpen = force || (key in FOLDS ? FOLDS[key] : open);
@@ -851,23 +922,25 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household'].map(n => get(n + '.json')));
+    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household', 'spells'].map(n => get(n + '.json')));
   } catch (e) {
     document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads eight files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code>, <code>quests.json</code> and <code>household.json</code>. Check that all eight are there and reload the page.</p></div>`;
     return;
   }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
   const SHOUTS = SHOUTDATA.shouts, SH = Object.fromEntries(SHOUTS.map(s => [s.id, s]));
+  const SPELLS = SPELLDATA.spells, SPL = Object.fromEntries(SPELLS.map(s => [s.id, s]));
+  const MOVE_KINDS = [['shout', 'Shout'], ['spell', 'Spell'], ['potion', 'Potion'], ['poison', 'Poison'], ['enchant', 'Enchantment'], ['power', 'Power'], ['scroll', 'Scroll'], ['gear', 'Weapon or gear'], ['other', 'Other']];
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   // enchanting and crafting plans for chosen gear
   const ENCH = (GEARDATA.enchantments || { list: [] }).list, ENB = Object.fromEntries(ENCH.map(e => [e.name, e]));
   const ENCH_SLOT = { Helmets: 'head', Hoods: 'head', Circlets: 'head', Amulets: 'amulet', Cuirasses: 'chest', Clothes: 'chest', Robes: 'chest', Gauntlets: 'hands', Gloves: 'hands', Rings: 'ring', Boots: 'feet', Shoes: 'feet', 'Heavy shields': 'shield', 'Light shields': 'shield' };
   const enchSlot = g => g.slot === 'weapon' ? (g.group === 'Staves' ? null : 'weapon') : ENCH_SLOT[g.sub] || null;
   // only items that carry no enchantment of their own can be enchanted
-  const canEnchant = g => !!enchSlot(g) && (g.set === 'standard' || g.effect === 'No enchantment.');
+  const canEnchant = g => !!enchSlot(g) && (g.set === 'standard' || (g.set === 'specialty' && g.faction !== 'Amulets of the Divines') || g.effect === 'No enchantment.');
   const forgeable = f => !!(f && f.perk && !/^(n\/a|cannot)/i.test(f.perk));
   const canCraft = g => forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
   const enchFor = g => ENCH.filter(e => e.slots.includes(enchSlot(g)));
@@ -995,7 +1068,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, gear: {}, mods: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, gear: {}, mods: {}, notes: '', moves: [], potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -1008,7 +1081,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.food = { 'vegetable-soup': 20, 'beef-stew': 40 };
     s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
     s.homes = { 'breezehome': 20 };
-    s.shouts = { 'unrelenting-force': 20, 'whirlwind-sprint': 20, 'become-ethereal': 40, 'dragonrend': 40, 'call-of-valor': 60 };
+    s.shouts = { 'unrelenting-force': { tier: 'expedite', m: 20, words: 3 }, 'whirlwind-sprint': { tier: 'expedite', m: 20, words: 2 }, 'become-ethereal': { tier: 'expedite', m: 40, words: 3 }, 'dragonrend': { tier: 'expedite', m: 40, words: 3 }, 'call-of-valor': { tier: 'selected', words: 3 } };
     BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
     return s;
   }
@@ -1032,6 +1105,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (o.how || o.ench) out.mods[k] = o;
     }
     const keep = (src, ok) => Object.fromEntries(Object.entries(src && typeof src === 'object' ? src : {}).filter(([k, v]) => ok[k] && MS.includes(v)));
+    out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
+    // signature moves: [{ name, steps: [{ kind, text }] }]
+    out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
+      name: String(x.name || '').slice(0, 60),
+      steps: (Array.isArray(x.steps) ? x.steps : []).slice(0, 12).filter(st => st && typeof st === 'object').map(st => ({ kind: MOVE_KINDS.some(([k]) => k === st.kind) ? st.kind : 'other', text: String(st.text || '').slice(0, 80) })),
+    })) : [];
+    // spells: { tier: 'expedite' (with milestone m) | 'selected' }
+    out.spells = {};
+    if (s.spells && typeof s.spells === 'object') for (const [k, v] of Object.entries(s.spells)) {
+      if (!SPL[k] || !v) continue;
+      if (v.tier === 'selected') out.spells[k] = { tier: 'selected' }; else if (MS.includes(v.m)) out.spells[k] = { tier: 'expedite', m: v.m };
+    }
     out.food = keep(s.food, RC_); out.scrolls = keep(s.scrolls, SCR); out.spiders = keep(s.spiders, SPD);
     out.scrollUse = ['none', 'some', 'main'].includes(s.scrollUse) ? s.scrollUse : 'none';
     out.spiderUse = ['none', 'some', 'main'].includes(s.spiderUse) ? s.spiderUse : 'none';
@@ -1044,7 +1129,16 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.spouse = s.spouse && SPO[s.spouse.id] && MS.includes(s.spouse.m) ? { id: s.spouse.id, m: s.spouse.m } : null;
     out.done = Object.fromEntries(Object.entries(s.done && typeof s.done === 'object' ? s.done : {}).filter(([k, v]) => QID[k] && v === true));
     out.shouts = {};
-    if (s.shouts && typeof s.shouts === 'object') for (const [k, v] of Object.entries(s.shouts)) if (SH[k] && MS.includes(v)) out.shouts[k] = v;
+    // shouts: { tier: 'expedite' (with milestone m) | 'selected', words: 1-3, skip: [place indexes not used] }; old builds stored a milestone number
+    if (s.shouts && typeof s.shouts === 'object') for (const [k, v] of Object.entries(s.shouts)) {
+      if (!SH[k]) continue;
+      if (MS.includes(v)) { out.shouts[k] = { tier: 'expedite', m: v, words: 3 }; continue; }
+      if (!v || typeof v !== 'object') continue;
+      const tier = v.tier === 'selected' ? 'selected' : 'expedite', o = { tier, words: [1, 2, 3].includes(v.words) ? v.words : 3 };
+      if (tier === 'expedite') { if (!MS.includes(v.m)) continue; o.m = v.m; }
+      if (Array.isArray(v.skip)) o.skip = v.skip.filter(i => Number.isInteger(i) && i >= 0 && i < SH[k].locations.length);
+      out.shouts[k] = o;
+    }
     if (s.picks && typeof s.picks === 'object') for (const [k, v] of Object.entries(s.picks)) {
       const [id, i] = k.split('#');
       if (PERKS[id] && PERKS[id].ranks[+i] != null && MS.includes(v)) out.picks[k] = v;
@@ -1078,6 +1172,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // ---------- Identity ----------
   function renderIdentity() {
     $('buildName').value = state.name;
+    if (document.activeElement !== $('rpNotes')) $('rpNotes').value = state.notes;
+    $('rpCount').textContent = state.notes.length > 5000 ? `${6000 - state.notes.length} characters left` : '';
     $('races').innerHTML = RACES.map(r => `<button class="race" role="radio" aria-checked="${r.id === state.race}" data-race="${r.id}"><span class="rn">${r.name}</span><span class="rb">+10 ${SK[r.p10].name}</span></button>`).join('');
     const r = RC[state.race];
     $('raceDetail').innerHTML = `<div><span class="label">Starting bonuses</span> +10 ${SK[r.p10].name}; +5 ${r.p5.map(id => SK[id].name).join(', ')}${r.magicka > 100 ? `; Magicka starts at ${r.magicka}` : ''}</div>
@@ -1095,6 +1191,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('styleDesc').textContent = ST[state.style].desc + ' Focus: ' + Object.keys(ST[state.style].w).map(id => SK[id].name).join(', ') + '.';
   }
   $('buildName').addEventListener('input', e => { state.name = e.target.value.trim() || 'Unnamed build'; touch(); });
+  $('rpNotes').addEventListener('input', e => { state.notes = e.target.value.slice(0, 6000); touch(); $('rpCount').textContent = state.notes.length > 5000 ? `${6000 - state.notes.length} characters left` : ''; });
   $('races').addEventListener('click', e => { const b = e.target.closest('[data-race]'); if (!b) return; state.race = b.dataset.race; touch(); renderIdentity(); });
   $('alignGrid').addEventListener('click', e => { const b = e.target.closest('[data-align]'); if (!b) return; state.alignment = b.dataset.align; touch(); renderIdentity(); });
   $('styles').addEventListener('click', e => { const b = e.target.closest('[data-style]'); if (!b) return; state.style = b.dataset.style; touch(); renderIdentity(); });
@@ -1249,33 +1346,69 @@ footer p { margin: 4px 0; max-width: 80ch; }
       return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}</span><span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
     }).join('')}</div>`, { count: STONES.filter(s => s.kind === kind).length, chosen: STONES.filter(s => s.kind === kind && MS.some(m => state.stones[m] === s.id)).length })).join('');
     renderShouts();
+    renderSpells();
     renderGear();
     renderPotions();
+    renderIngredients();
     renderFood();
     renderScrolls();
+    renderMoves();
     renderSubtabs();
   }
   let shoutFilter = 'all';
+  // where a shout's words can come from, given the build's sides and alignment
+  function shoutSources(s) {
+    const total = s.locations.length;
+    return s.locations.map((l, i) => {
+      if (!l.quests) return { i, l, ok: true, q: null, gives: 1 };
+      const q = pickAlt(l.quests), any = q || findQuest(l.quests[0]);
+      return { i, l, ok: !!q, q, why: q ? '' : any ? (sideBlock(any) || questConflict(any) || 'left out by your plan') : 'not in the quest data', gives: total >= 3 ? 1 : 3 };   // with fewer than three places, one quest teaches several words
+    });
+  }
+  // the sources the plan will use, and whether they cover the words wanted
+  function shoutPlan(s) {
+    const v = state.shouts[s.id]; if (!v) return null;
+    const src = shoutSources(s), skip = new Set(v.skip || []);
+    const usable = src.filter(x => x.ok && !skip.has(x.i));
+    const free = usable.filter(x => !x.q), gated = usable.filter(x => x.q);
+    let have = free.reduce((a, x) => a + x.gives, 0); const quests = [];
+    for (const x of gated) { if (have >= v.words) break; quests.push(x); have += x.gives; }
+    return { v, src, skip, quests, short: Math.min(have, 3) < v.words, have: Math.min(have, 3) };
+  }
+  const shoutBy = m => SHOUTS.filter(s => state.shouts[s.id]?.tier === 'expedite' && state.shouts[s.id].m <= m);
+  const shoutLabel = s => { const v = state.shouts[s.id]; return v ? `${s.name}${v.words < 3 ? ` (${v.words} word${v.words > 1 ? 's' : ''})` : ''}` : s.name; };
   function renderShouts() {
+    const sel = SHOUTS.filter(s => state.shouts[s.id]?.tier === 'selected');
     $('shoutTally').innerHTML = MS.map(m => {
-      const by = SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m);
-      const words = by.length * 3;
-      const quests = [...new Set(by.flatMap(s => s.quests))].sort();
-      return `<div class="ms"><div class="ms-head"><span class="ms-level">By level ${m}</span></div>
-        <div class="ms-stats"><span><strong class="num">${by.length}</strong> shout${by.length === 1 ? '' : 's'}</span><span><strong class="num">${words}</strong> words</span><span>up to <strong class="num">${words}</strong> dragon souls</span></div>
-        ${quests.length ? `<div class="ms-note">Quests along the way:</div><ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed: every word is at a word wall.' : 'No shouts chosen for this milestone yet.'}</div>`}</div>`;
-    }).join('');
+      const by = shoutBy(m);
+      const words = by.reduce((a, s) => a + state.shouts[s.id].words, 0);
+      const quests = [...new Set(by.flatMap(s => shoutPlan(s).quests.map(x => x.q.name)))].sort();
+      const short = by.filter(s => shoutPlan(s).short && state.shouts[s.id].m === m).length;
+      return `<div class="ms${short ? ' under' : ''}"><div class="ms-head"><span class="ms-level">By level ${m}</span>${short ? '<span class="pill under">Needs fixing</span>' : ''}</div>
+        <div class="ms-stats"><span><strong class="num">${by.length}</strong> to expedite</span><span><strong class="num">${words}</strong> word${words === 1 ? '' : 's'}</span><span><strong class="num">${words}</strong> dragon soul${words === 1 ? '' : 's'}</span></div>
+        ${short ? `<div class="warn">${short} shout${short === 1 ? '' : 's'} can't get all the words you want.</div>` : ''}
+        ${quests.length ? `<div class="ms-note">Quests along the way:</div><ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed: every word is at a word wall.' : 'No shouts to expedite by this milestone.'}</div>`}</div>`;
+    }).join('') + `<div class="ms"><div class="ms-head"><span class="ms-level">Selected</span></div><div class="ms-stats"><span><strong class="num">${sel.length}</strong> shout${sel.length === 1 ? '' : 's'}, no deadline</span></div>
+      <div class="ms-note">${sel.length ? esc(sel.map(shoutLabel).join(', ')) + '. Their quests go in the Selected tier of the quest plan.' : 'Shouts you want eventually, without a deadline.'}</div></div>`;
     const list = SHOUTS.filter(s => shoutFilter === 'all' || (shoutFilter === 'wanted' ? state.shouts[s.id] != null : s.dlc === shoutFilter));
     const shoutRow = s => {
-      const v = state.shouts[s.id];
-      const where = s.locations.map(l => l.quest ? `${esc(l.place)} <span class="muted">(during ${esc(l.quest)})</span>` : esc(l.place)).join('; ');
-      return `<div class="perk${v != null ? ' taken' : ''}"><div>
+      const v = state.shouts[s.id], pl = shoutPlan(s);
+      const cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m;
+      const srcList = (pl ? pl.src : shoutSources(s)).map(x => {
+        const label = `${esc(x.l.place)}${x.l.quests ? ` <span class="muted">(during ${esc(x.l.quests.join(' or '))})</span>` : ''}`;
+        if (!v) return `<li>${label}${x.ok ? '' : ` <span class="tagd warn">Left out</span>`}</li>`;
+        const used = !pl.skip.has(x.i), inPlan = x.q && pl.quests.includes(x);
+        return `<li><label class="check"><input type="checkbox" data-shsrc="${s.id}" data-i="${x.i}" ${x.ok && used ? 'checked' : ''} ${x.ok ? '' : 'disabled'}> <span>${label}${!x.ok ? ` <span class="tagd warn">Left out</span> <span class="muted">${esc(x.why)}</span>` : inPlan ? ' <span class="tagd need">In quest plan</span>' : ''}</span></label></li>`;
+      }).join('');
+      return `<div class="perk${v ? ' taken' : ''}"><div>
           <div class="pn">${esc(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc]}</span>` : ''}${s.questOnly ? '<span class="tagd q">Quest only</span>' : ''}</div>
           <div class="pe">${esc(s.effect)}</div>
-          <div class="words">${s.words.map(w => `<b>${esc(w.word)}</b> <span class="muted">${esc(w.meaning)}</span>`).join(' · ')}</div>
-          <div class="pr">Words at: ${where}</div></div>
-        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="sh-${s.id}" data-shout="${s.id}" aria-label="${esc(s.name)}: milestone">
-          <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
+          <div class="words">${s.words.map((w, k) => `<b${v && k >= v.words ? ' class="muted"' : ''}>${esc(w.word)}</b> <span class="muted">${esc(w.meaning)}</span>`).join(' · ')}</div>
+          <div class="pr">${v ? 'Word sources (untick any you won\'t use):' : 'Words at:'}</div><ul class="sh-src">${srcList}</ul>
+          ${pl && pl.short ? `<div class="pw">Only ${pl.have} of the ${v.words} word${v.words > 1 ? 's' : ''} you want can be had from the sources left. Choose fewer words, tick another source, or change your sides.</div>` : ''}</div>
+        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v ? 'on' : ''}" id="sh-${s.id}" data-shout="${s.id}" aria-label="${esc(s.name)}: plan">
+          <option value="">Not chosen</option>${MS.map(m => `<option value="e${m}"${cur === 'e' + m ? ' selected' : ''}>Expedite by ${m}</option>`).join('')}<option value="sel"${cur === 'sel' ? ' selected' : ''}>Selected</option></select></label>
+          ${v ? `<label class="rank"><span class="rl">Words</span><select class="on" id="shw-${s.id}" data-shwords="${s.id}" aria-label="${esc(s.name)}: words wanted">${[1, 2, 3].map(n => `<option value="${n}"${v.words === n ? ' selected' : ''}>${n}</option>`).join('')}</select></label>` : ''}</div></div>`;
     };
     const sg = ['base', 'dawnguard', 'dragonborn'].map(d => [d, list.filter(s => s.dlc === d)]).filter(([, l]) => l.length);
     $('shoutList').innerHTML = sg.length ? (sg.length > 1 ? foldBar('shoutList') : '') + sg.map(([d, l]) => fold(`shout-${d}`, DLC[d], `<div class="perks">${l.map(shoutRow).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.shouts[s.id] != null).length, force: shoutFilter !== 'all' })).join('')
@@ -1308,7 +1441,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return out;
   }
   const SET_TAG = { daedric: 'Daedric artifact', artifacts: 'Artifact', leveled: 'Leveled', 'unique-weapons': 'Unique', 'unique-armor': 'Unique', 'unique-apparel': 'Unique', 'generic-magic': 'Enchanted', standard: 'Standard' };
-  const srcOf = g => g.set === 'standard' ? 'standard' : g.set === 'generic-magic' ? 'enchanted' : 'unique';
+  const srcOf = g => g.set === 'standard' || g.set === 'specialty' ? 'standard' : g.set === 'generic-magic' ? 'enchanted' : 'unique';
   let gearSource = 'all';
   const num = v => parseFloat(String(v || '').replace(/[^\d.]/g, '')) || 0;
   // a Smithing perk named in the forging info, if the perk plan has it
@@ -1343,12 +1476,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const q = ($('gearSearch').value || '').trim().toLowerCase();
     const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
       && (gearSource === 'all' || gearSource === srcOf(g))
-      && (!q || [g.name, g.type, g.where, g.quest, g.prince].some(t => t && t.toLowerCase().includes(q))));
+      && (!q || [g.name, g.type, g.where, g.quest, g.prince, g.faction].some(t => t && t.toLowerCase().includes(q))));
     const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
       const how = g.set === 'daedric' ? `${esc(g.prince)} · Quest: ${esc(g.quest)}` : (g.quest ? `Quest: ${esc(g.quest)}` : '');
       return `<div class="perk${v != null ? ' taken' : ''}"><div>
-          <div class="pn">${esc(g.name)}<span class="tagd">${SET_TAG[g.set] || ''}</span>${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
+          <div class="pn">${esc(g.name)}<span class="tagd">${g.set === 'specialty' ? esc(g.faction) : SET_TAG[g.set] || ''}</span>${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
@@ -1407,9 +1540,145 @@ footer p { margin: 4px 0; max-width: 80ch; }
     renderGear();
   });
   $('shoutList').addEventListener('change', e => {
+    const w = e.target.closest('select[data-shwords]'), c = e.target.closest('input[data-shsrc]');
+    if (w) { state.shouts[w.dataset.shwords].words = +w.value; touch(); renderShouts(); $(w.id)?.focus(); return; }
+    if (c) {
+      const v = state.shouts[c.dataset.shsrc], skip = new Set(v.skip || []), i = +c.dataset.i;
+      if (c.checked) skip.delete(i); else skip.add(i);
+      v.skip = [...skip]; if (!v.skip.length) delete v.skip;
+      touch(); renderShouts(); document.querySelector(`input[data-shsrc="${c.dataset.shsrc}"][data-i="${i}"]`)?.focus(); return;
+    }
     const el = e.target.closest('select[data-shout]'); if (!el) return;
-    if (el.value === '') delete state.shouts[el.dataset.shout]; else state.shouts[el.dataset.shout] = +el.value;
+    const id = el.dataset.shout, old = state.shouts[id];
+    if (el.value === '') delete state.shouts[id];
+    else state.shouts[id] = { ...(old || { words: 3 }), ...(el.value === 'sel' ? { tier: 'selected', m: undefined } : { tier: 'expedite', m: +el.value.slice(1) }) };
+    if (state.shouts[id] && state.shouts[id].m === undefined) delete state.shouts[id].m;
     touch(); renderShouts(); renderSubtabs(); $(el.id)?.focus();
+  });
+  // ---------- Loadout: signature moves ----------
+  function moveOptions(kind) {
+    // the build's own choices first, then everything else in the game data
+    const mine = [], all = [];
+    const add = (arr, own, name) => arr.forEach(x => (own(x) ? mine : all).push(name(x)));
+    if (kind === 'shout') add(SHOUTS, s => state.shouts[s.id], s => s.name);
+    if (kind === 'spell') add(SPELLS, s => state.spells[s.id], s => s.name);
+    if (kind === 'potion' || kind === 'poison') {
+      state.potions.filter(x => EFF[x.effects[0]].positive === (kind === 'potion')).forEach(x => mine.push(potionName(x.effects)));
+      ALCHDATA.effects.filter(e => e.positive === (kind === 'potion')).forEach(e => all.push((kind === 'potion' ? 'Potion of ' : 'Poison of ') + e.name));
+    }
+    if (kind === 'enchant') ENCH.forEach(e => all.push(e.name));
+    if (kind === 'power') { mine.push(RC[state.race].power.split(':')[0]); STONES.filter(s => s.kind === 'power').forEach(s => (MS.some(m => state.stones[m] === s.id) ? mine : all).push(s.name)); }
+    if (kind === 'scroll') { add(SCROLLS, s => state.scrolls[s.id], s => s.name); add(SPIDERS, s => state.spiders[s.id], s => s.name); }
+    if (kind === 'gear') add(GEAR, g => state.gear[g.id] != null, g => g.name);
+    return [...new Set([...mine, ...all])];
+  }
+  // whether a step names something the plan already has
+  function stepHint(st) {
+    const t = st.text.trim().toLowerCase(); if (!t) return '';
+    const inPlan = { shout: SHOUTS.find(s => s.name.toLowerCase() === t), spell: SPELLS.find(s => s.name.toLowerCase() === t), gear: GEAR.find(g => g.name.toLowerCase() === t) }[st.kind];
+    if (!inPlan) return '';
+    const chosen = st.kind === 'shout' ? state.shouts[inPlan.id] : st.kind === 'spell' ? state.spells[inPlan.id] : state.gear[inPlan.id] != null;
+    return chosen ? '' : `${inPlan.name} isn't in your ${st.kind === 'gear' ? 'gear' : st.kind + 's'} yet.`;
+  }
+  function renderMoves() {
+    $('moveLists').innerHTML = MOVE_KINDS.filter(([k]) => k !== 'other').map(([k]) => `<datalist id="dl-${k}">${moveOptions(k).map(o => `<option value="${esc(o)}">`).join('')}</datalist>`).join('');
+    $('moveList').innerHTML = state.moves.length ? state.moves.map((mv, i) => `<div class="box" data-move-i="${i}">
+      <div class="move-head"><label class="sr-only" for="mvn-${i}">Name of signature move ${i + 1}</label><input id="mvn-${i}" data-mv-name="${i}" value="${esc(mv.name)}" placeholder="Name it, such as Aspect of Elements" maxlength="60">
+        <button class="btn quiet" data-mv-del="${i}">${'Delete move'}</button></div>
+      <ol class="move-steps">${mv.steps.map((st, j) => { const hint = stepHint(st); return `<li class="move-step">
+        <select id="mvk-${i}-${j}" data-mv-kind="${i}.${j}" aria-label="Step ${j + 1}: kind">${MOVE_KINDS.map(([k, l]) => `<option value="${k}"${st.kind === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
+        <input id="mvt-${i}-${j}" data-mv-text="${i}.${j}" value="${esc(st.text)}" ${st.kind !== 'other' ? `list="dl-${st.kind}"` : ''} placeholder="${{ shout: 'Whirlwind Sprint', spell: 'Flame Cloak', potion: 'Potion of Fortify Illusion', poison: 'Poison of Paralysis', enchant: 'Fortify Destruction', power: 'Highborn', scroll: 'Scroll of Fireball', gear: 'Chillrend', other: 'Sneak behind the target' }[st.kind]}" maxlength="80" aria-label="Step ${j + 1}">
+        <span class="tools"><button data-mv-up="${i}.${j}" aria-label="Move step ${j + 1} up"${j === 0 ? ' disabled' : ''}>↑</button><button data-mv-down="${i}.${j}" aria-label="Move step ${j + 1} down"${j === mv.steps.length - 1 ? ' disabled' : ''}>↓</button><button data-mv-rm="${i}.${j}" aria-label="Remove step ${j + 1}">×</button></span>
+        <span class="hint" id="mvh-${i}-${j}" aria-live="polite">${esc(hint)}</span></li>`; }).join('')}</ol>
+      <div class="row"><button class="btn quiet" data-mv-add="${i}"${mv.steps.length >= 12 ? ' disabled' : ''}>Add a step</button></div></div>`).join('')
+      : '<div class="box"><p class="muted" style="margin:0">No signature moves yet. Add one to plan a combination, such as a shout followed by a spell.</p></div>';
+    $('addMove').disabled = state.moves.length >= 20;
+  }
+  const mvAt = s => s.split('.').map(Number);
+  $('addMove').addEventListener('click', () => { state.moves.push({ name: '', steps: [{ kind: 'shout', text: '' }, { kind: 'spell', text: '' }] }); touch(); renderMoves(); renderSubtabs(); $('mvn-' + (state.moves.length - 1))?.focus(); });
+  $('moveList').addEventListener('input', e => {
+    const t = e.target;
+    if (t.dataset.mvName != null) { state.moves[+t.dataset.mvName].name = t.value.slice(0, 60); touch(); return; }
+    if (t.dataset.mvText != null) { const [i, j] = mvAt(t.dataset.mvText), st = state.moves[i].steps[j]; st.text = t.value.slice(0, 80); touch(); $(`mvh-${i}-${j}`).textContent = stepHint(st); }
+  });
+  $('moveList').addEventListener('change', e => {
+    const t = e.target;
+    if (t.dataset.mvKind != null) { const [i, j] = mvAt(t.dataset.mvKind); state.moves[i].steps[j].kind = t.value; touch(); renderMoves(); $(t.id)?.focus(); }
+  });
+  $('moveList').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const d = b.dataset;
+    if (d.mvDel != null) {
+      if (!b.dataset.armed) { b.dataset.armed = '1'; b.textContent = 'Confirm delete'; return; }
+      state.moves.splice(+d.mvDel, 1); touch(); renderMoves(); renderSubtabs(); $('addMove').focus(); return;
+    }
+    if (d.mvAdd != null) { const mv = state.moves[+d.mvAdd]; mv.steps.push({ kind: 'other', text: '' }); touch(); renderMoves(); $(`mvt-${d.mvAdd}-${mv.steps.length - 1}`)?.focus(); return; }
+    const key = d.mvUp || d.mvDown || d.mvRm; if (!key) return;
+    const [i, j] = mvAt(key), steps = state.moves[i].steps;
+    if (d.mvRm != null) steps.splice(j, 1);
+    else { const k = d.mvUp != null ? j - 1 : j + 1; [steps[j], steps[k]] = [steps[k], steps[j]]; }
+    touch(); renderMoves();
+    const f = d.mvRm != null ? `mvt-${i}-${Math.max(0, j - 1)}` : `mvt-${i}-${d.mvUp != null ? j - 1 : j + 1}`; $(f)?.focus();
+  });
+  const moveText = mv => `${mv.name || 'Unnamed move'}: ${mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet'}`;
+  // ---------- Loadout: spells ----------
+  const SCHOOLS = [['alteration', 'Alteration'], ['conjuration', 'Conjuration'], ['destruction', 'Destruction'], ['illusion', 'Illusion'], ['restoration', 'Restoration']];
+  const TIER_ORDER = ['Novice', 'Apprentice', 'Adept', 'Expert', 'Master', 'Other'];
+  const TOME_SKILL = { Adept: 40, Expert: 65, Master: 90 };   // when tomes are sold / the ritual quest opens
+  let spellFilter = 'all';
+  const spellBy = m => SPELLS.filter(s => state.spells[s.id]?.tier === 'expedite' && state.spells[s.id].m <= m);
+  function spellIssues(s) {
+    const v = state.spells[s.id]; if (!v) return [];
+    const out = [], need = TOME_SKILL[s.tier];
+    if (v.tier === 'expedite' && need && s.dlc === 'base') {
+      const lv = skillLevels(state.picks, state.race, v.m)[s.school];
+      if (lv < need) out.push(`${s.tier} ${SK[s.school].name} spells need ${SK[s.school].name} ${need}${s.tier === 'Master' ? ' for the ritual quest' : ' before tomes are sold'}; your plan reaches ${lv} by level ${v.m}.`);
+    }
+    if (s.dlc === 'dawnguard' && state.dgSide === 'none') out.push('Dawnguard spell; you chose not to play Dawnguard.');
+    if (s.quest) { const q = pickAlt([s.quest]); if (!q) { const any = findQuest(s.quest); out.push(`Comes from ${s.quest}, which is left out: ${any ? sideBlock(any) || questConflict(any) : 'not in the quest data.'}`); } }
+    return out;
+  }
+  function renderSpells() {
+    if (!$('spellFilter').children.length) $('spellFilter').innerHTML = [['all', `All ${SPELLS.length}`], ...SCHOOLS, ['wanted', 'Chosen']].map(([k, l], i) => `<button class="chip" role="radio" data-f="${k}" aria-checked="${i === 0}">${l}</button>`).join('');
+    const sel = SPELLS.filter(s => state.spells[s.id]?.tier === 'selected');
+    $('spellTally').innerHTML = MS.map(m => {
+      const by = spellBy(m), bad = by.filter(s => state.spells[s.id].m === m && spellIssues(s).length).length;
+      const schools = SCHOOLS.filter(([k]) => by.some(s => s.school === k)).map(([, l]) => l);
+      return `<div class="ms${bad ? ' under' : ''}"><div class="ms-head"><span class="ms-level">By level ${m}</span>${bad ? '<span class="pill under">Needs fixing</span>' : ''}</div>
+        <div class="ms-stats"><span><strong class="num">${by.length}</strong> spell${by.length === 1 ? '' : 's'}</span>${schools.length ? `<span>${schools.join(', ')}</span>` : ''}</div>
+        ${bad ? `<div class="warn">${bad} spell${bad === 1 ? '' : 's'} here can't be had by this level as planned.</div>` : `<div class="ms-note">${by.length ? esc(by.filter(s => state.spells[s.id].m === m).map(s => s.name).join(', ')) || 'Nothing new at this milestone.' : 'No spells to expedite by this milestone.'}</div>`}</div>`;
+    }).join('') + `<div class="ms"><div class="ms-head"><span class="ms-level">Selected</span></div><div class="ms-stats"><span><strong class="num">${sel.length}</strong> spell${sel.length === 1 ? '' : 's'}, no deadline</span></div>${sel.length ? `<div class="ms-note">${esc(sel.map(s => s.name).join(', '))}</div>` : ''}</div>`;
+    const q = ($('spellSearch').value || '').trim().toLowerCase();
+    const list = SPELLS.filter(s => (spellFilter === 'all' || (spellFilter === 'wanted' ? state.spells[s.id] : s.school === spellFilter))
+      && (!q || [s.name, s.effect, ...s.where].some(t => t.toLowerCase().includes(q))));
+    const row = s => {
+      const v = state.spells[s.id], cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m, issues = spellIssues(s);
+      return `<div class="perk${v ? ' taken' : ''}"><div>
+        <div class="pn">${esc(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc] || s.dlc}</span>` : ''}${s.quest ? '<span class="tagd q">Quest</span>' : ''}${planned(s.school) ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
+        <div class="pe">${esc(s.effect)}</div>
+        <div class="pr">${esc(s.tier)} ${esc(SK[s.school].name)} · ${esc(s.cost)} Magicka${s.quest ? ` · Quest: ${esc(s.quest)}` : ''}</div>
+        ${s.where.length ? `<div class="pr">${esc(s.where.slice(0, 2).join(' · '))}</div>` : ''}
+        ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
+        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v ? 'on' : ''}" id="sp-${s.id}" data-spell="${s.id}" aria-label="${esc(s.name)}: plan">
+          <option value="">Not chosen</option>${MS.map(m => `<option value="e${m}"${cur === 'e' + m ? ' selected' : ''}>Expedite by ${m}</option>`).join('')}<option value="sel"${cur === 'sel' ? ' selected' : ''}>Selected</option></select></label></div></div>`;
+    };
+    const force = !!q || spellFilter !== 'all';
+    const groups = SCHOOLS.map(([k, l]) => [k, l, list.filter(s => s.school === k)]).filter(([, , l]) => l.length);
+    $('spellList').innerHTML = groups.length ? foldBar('spellList') + groups.map(([k, l, items]) => fold(`spell-${k}`, l,
+        TIER_ORDER.map(t => [t, items.filter(s => s.tier === t)]).filter(([, x]) => x.length).map(([t, x]) => fold(`spell-${k}-${t}`, t, `<div class="perks">${x.map(row).join('')}</div>`, { count: x.length, chosen: x.filter(s => state.spells[s.id]).length, open: false, force, cls: 'sub-fold' })).join(''),
+        { count: items.length, chosen: items.filter(s => state.spells[s.id]).length, open: false, force })).join('')
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : 'No spells chosen yet. Pick some from All.'}</p></div>`;
+  }
+  $('spellList').addEventListener('change', e => {
+    const el = e.target.closest('select[data-spell]'); if (!el) return;
+    if (!el.value) delete state.spells[el.dataset.spell]; else state.spells[el.dataset.spell] = el.value === 'sel' ? { tier: 'selected' } : { tier: 'expedite', m: +el.value.slice(1) };
+    touch(); renderSpells(); renderSubtabs(); $(el.id)?.focus();
+  });
+  $('spellSearch').addEventListener('input', renderSpells);
+  $('spellFilter').addEventListener('click', e => {
+    const b = e.target.closest('[data-f]'); if (!b) return; spellFilter = b.dataset.f;
+    $('spellFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b)));
+    renderSpells();
   });
   $('shoutFilter').addEventListener('click', e => {
     const b = e.target.closest('[data-f]'); if (!b) return; shoutFilter = b.dataset.f;
@@ -1429,7 +1698,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   let subTab = 'stones';
   try { let t = localStorage.getItem('skp.sub'); if (t === 'gear') t = 'weapons'; if (['stones','shouts','weapons','apparel','potions','food','scrolls'].includes(t)) subTab = t; } catch {}
   function renderSubtabs() {
-    const n = { stones: MS.filter(m => state.stones[m]).length, shouts: Object.keys(state.shouts).length,
+    const n = { stones: MS.filter(m => state.stones[m]).length, shouts: Object.keys(state.shouts).length, spells: Object.keys(state.spells).length, moves: state.moves.length,
       weapons: Object.keys(state.gear).filter(id => GR[id].slot === 'weapon').length, apparel: Object.keys(state.gear).filter(id => GR[id].slot !== 'weapon').length,
       potions: state.potions.length, food: Object.keys(state.food).length, scrolls: Object.keys(state.scrolls).length + Object.keys(state.spiders).length };
     $('subtabs').querySelectorAll('[data-sub]').forEach(b => {
@@ -1479,7 +1748,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const bad = extra.filter(e => wantGood === 1 ? !EFF[e].positive : wantGood === -1 ? EFF[e].positive : false).length;
       return bad * 10 + extra.length * 2 + c.ids.length + c.ids.filter(id => ING[id].dlc === 'cc').length * 0.5;
     };
-    return out.map(c => ({ ...c, score: score(c) })).sort((x, y) => x.score - y.score).slice(0, 12);
+    return out.map(c => ({ ...c, score: score(c) })).sort((x, y) => x.score - y.score);
   }
   const potionName = effects => (effects.every(e => !EFF[e].positive) ? 'Poison of ' : 'Potion of ') + effects.map(e => EFF[e].name).join(', ');
   const effChips = (p, want) => {
@@ -1487,7 +1756,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return p.slice().sort((a, b) => want.includes(b) - want.includes(a)).map(e => `<span class="eff${want.includes(e) ? ' want' : (good ? !EFF[e].positive : EFF[e].positive) ? ' bad' : ''}">${esc(EFF[e].name)}</span>`).join('');
   };
   const ingName = id => `${esc(ING[id].name)}${ING[id].dlc !== 'base' ? `<span class="tagd">${DLC[ING[id].dlc] || ING[id].dlc}</span>` : ''}`;
-  let pmWant = ['', '', ''];
+  let pmWant = ['', '', ''], pmIng = '', pmAll = false;
   function renderPotions() {
     if (!$('pe-0').options.length) {
       const pos = ALCHDATA.effects.filter(e => e.positive), neg = ALCHDATA.effects.filter(e => !e.positive);
@@ -1496,6 +1765,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     [0, 1, 2].forEach(i => { $('pe-' + i).value = pmWant[i]; });
     const want = [...new Set(pmWant.filter(Boolean))];
+    // ingredient choice: only ones that carry a chosen effect can be in a combination
+    const ingOpts = INGR.filter(i => ($('pmCC').checked || i.dlc !== 'cc') && (!want.length || i.effects.some(e => want.includes(e)))).sort((a, b) => a.name.localeCompare(b.name));
+    if (pmIng && !ingOpts.some(i => i.id === pmIng)) pmIng = '';
+    $('pmIng').innerHTML = `<option value="">Any ingredient</option>${ingOpts.map(i => `<option value="${i.id}"${i.id === pmIng ? ' selected' : ''}>${esc(i.name)}</option>`).join('')}`;
     // perks from the plan that strengthen what's being brewed
     const perkBits = [];
     const al = [1, 2, 3, 4, 5].filter(r => takenBy(state.picks, rankKey('alchemy.alchemist', r - 1), 60)).length;
@@ -1507,11 +1780,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('pmPerks').textContent = want.length ? (perkBits.length ? `Your perk plan strengthens this: ${perkBits.join(', ')}.` : 'No Alchemy perks in your plan would strengthen this yet.') : '';
     if (!want.length) { $('pmResults').innerHTML = '<p class="muted" style="margin:0">Choose an effect to see ingredient combinations.</p>'; }
     else {
-      const combos = findCombos(want, $('pmCC').checked);
+      const allCombos = findCombos(want, $('pmCC').checked).filter(c => !pmIng || c.ids.includes(pmIng));
+      const combos = pmAll ? allCombos.slice(0, 80) : allCombos.slice(0, 12);
+      const more = allCombos.length > 12 ? `<div class="row" style="margin-top:8px"><span class="muted" style="font-size:.9rem">Showing ${combos.length} of ${allCombos.length}${allCombos.length > 80 && pmAll ? ' (the best 80)' : ''} combinations, fewest side effects first.</span><button class="btn quiet" id="pmMore">${pmAll ? 'Show fewer' : 'Show more'}</button></div>` : '';
       $('pmResults').innerHTML = combos.length ? `<div class="combos">${combos.map((c, k) => `<div class="combo"><div><div class="ingr">${c.ids.map(ingName).join(' + ')}</div><div class="effs">${effChips(c.p, want)}</div>
           <details class="src"><summary>Where to find these</summary>${c.ids.map(id => `<p><strong>${esc(ING[id].name)}:</strong> ${esc(ING[id].source || 'See UESP.')}</p>`).join('')}</details></div>
         <div class="save-row"><select id="pmM-${k}" aria-label="Milestone for this potion">${MS.map(m => `<option value="${m}">By ${m}</option>`).join('')}</select><button class="btn ghost" data-save="${k}">Save</button></div></div>`).join('')}</div>`
-        : '<p class="muted" style="margin:0">No two or three ingredients make all of these together. Try fewer effects.</p>';
+        + more : `<p class="muted" style="margin:0">${pmIng ? `No combination with ${esc(ING[pmIng].name)} makes all of these. Try another ingredient or fewer effects.` : 'No two or three ingredients make all of these together. Try fewer effects.'}</p>`;
       $('pmResults')._combos = combos; $('pmResults')._want = want;
     }
     $('potionList').innerHTML = state.potions.length ? state.potions.map((x, k) => `<div class="perk taken"><div><div class="pn">${esc(potionName(x.effects))}</div>
@@ -1519,7 +1794,27 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="on" id="pf-${k}" data-pot="${k}" aria-label="${esc(potionName(x.effects))}: milestone">${MS.map(m => `<option value="${m}"${x.m === m ? ' selected' : ''}>By ${m}</option>`).join('')}<option value="remove">Remove</option></select></label></div></div>`).join('')
       : '<p class="muted" style="margin:12px 0">No favorite potions yet. Use the potion maker and save a combination.</p>';
   }
-  [0, 1, 2].forEach(i => $('pe-' + i).addEventListener('change', e => { pmWant[i] = e.target.value; renderPotions(); }));
+  [0, 1, 2].forEach(i => $('pe-' + i).addEventListener('change', e => { pmWant[i] = e.target.value; pmAll = false; renderPotions(); }));
+  $('pmIng').addEventListener('change', e => { pmIng = e.target.value; pmAll = false; renderPotions(); });
+  $('pmResults').addEventListener('click', e => { if (e.target.id === 'pmMore') { pmAll = !pmAll; renderPotions(); $('pmMore')?.focus(); } });
+  // ---------- Ingredient list ----------
+  function renderIngredients() {
+    const q = ($('ingSearch').value || '').trim().toLowerCase();
+    const by = d => INGR.filter(i => i.dlc === d).length;
+    $('ingCount').textContent = INGR.length;
+    $('ingTally').textContent = `${INGR.length} ingredients: ${by('base')} in the base game, ${by('dawnguard')} from Dawnguard, ${by('hearthfire')} from Hearthfire, ${by('dragonborn')} from Dragonborn and ${by('cc')} from Creation Club. That's every ingredient on UESP's list except seven one-off quest items, such as Jarrin Root. Choose an effect to start the potion maker with it.`;
+    const list = INGR.filter(i => !q || i.name.toLowerCase().includes(q) || i.effects.some(e => EFF[e].name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
+    $('ingList').innerHTML = list.length ? list.map(i => `<div class="perk"><div><div class="pn">${ingName(i.id)}</div>
+        <div class="effs">${i.effects.map(e => `<button class="eff${EFF[e].positive ? '' : ' bad'}" data-brew="${e}" data-ing="${i.id}" aria-label="Brew ${esc(EFF[e].name)} with ${esc(i.name)}">${esc(EFF[e].name)}</button>`).join('')}</div>
+        ${i.source ? `<div class="pr">${esc(i.source)}</div>` : ''}</div></div>`).join('') : `<p class="muted">Nothing matches "${esc(q)}".</p>`;
+  }
+  $('ingSearch').addEventListener('input', renderIngredients);
+  $('ingList').addEventListener('click', e => {
+    const b = e.target.closest('[data-brew]'); if (!b) return;
+    pmWant = [b.dataset.brew, '', '']; pmIng = b.dataset.ing; pmAll = false;
+    if (ING[pmIng].dlc === 'cc') $('pmCC').checked = true;
+    renderPotions(); $('pe-0').scrollIntoView({ block: 'center' }); $('pe-0').focus();
+  });
   $('pmCC').addEventListener('change', renderPotions);
   $('pmResults').addEventListener('click', e => {
     const b = e.target.closest('[data-save]'); if (!b) return;
@@ -1645,19 +1940,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
         problems.push(`${g.name} needs ${cands[0]}${any ? `, which is left out: ${sideBlock(any) || questConflict(any)}` : ', which isn\'t in the quest data yet.'}`);
       }
     }
+    const selectedShouts = [];
     for (const s of SHOUTS) {
-      const m = state.shouts[s.id]; if (m == null) continue;
-      const free = s.locations.filter(l => !l.quests).length, gated = s.locations.filter(l => l.quests);
-      // with three or more places, each place teaches one word; with fewer, one quest teaches several words
-      const total = free + gated.length, need = Math.max(0, 3 - free), blocked = [];
-      let got = 0;
-      for (const l of gated) {
-        const q = pickAlt(l.quests);
-        if (!q) { blocked.push(l.quests.join(' or ')); continue; }
-        if (got < need) { out.push({ q, m, label: `${s.name} (word at ${l.place})` }); got++; }
+      const pl = shoutPlan(s); if (!pl) continue;
+      const t = pl.v.tier === 'selected';
+      pl.quests.forEach(x => (t ? selectedShouts : out).push({ q: x.q, m: t ? Infinity : pl.v.m, label: `${s.name} (word at ${x.l.place})` }));
+      if (pl.short) {
+        const blocked = pl.src.filter(x => !x.ok).map(x => x.l.quests.join(' or '));
+        problems.push(`${s.name}: only ${pl.have} of the ${pl.v.words} words you want can be had${blocked.length ? `; ${blocked.join(', ')} ${blocked.length === 1 ? 'is' : 'are'} left out by your sides or alignment` : ''}.`);
       }
-      const short = total >= 3 ? free + (gated.length - blocked.length) < 3 : blocked.length > 0;
-      if (short) problems.push(`${s.name}: ${blocked.length === gated.length && total < 3 ? 'its words come' : 'a word comes'} from ${blocked.join(', ')}, which your sides or alignment leave out.`);
     }
     for (const [id, m] of Object.entries(state.followers)) FOL[id].quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Follower: ${FOL[id].name}` }); else problems.push(`${FOL[id].name} needs ${n}, which your sides or alignment leave out.`); });
     if (state.spouse) {
@@ -1669,7 +1960,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
       hm.quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); else problems.push(`${hm.name} needs ${n}, which your sides or alignment leave out.`); });
       if (hm.questsAny) { const q = pickAlt(hm.questsAny); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); }
     }
+    for (const s of SPELLS) {
+      const v = state.spells[s.id]; if (!v || !s.quest) continue;
+      const q = pickAlt([s.quest]); if (!q) { problems.push(`${s.name} comes from ${s.quest}, which your sides or alignment leave out.`); continue; }
+      (v.tier === 'selected' ? selectedShouts : out).push({ q, m: v.tier === 'selected' ? Infinity : v.m, label: `Spell: ${s.name}` });
+    }
     out.forEach(t => { t.tier = 0; });   // everything above is needed by the build
+    selectedShouts.forEach(t => { t.tier = 2; out.push(t); });   // shouts and spells with no deadline go in Selected
     for (const [id, v] of Object.entries(state.quests)) out.push({ q: QID[id], m: Infinity, tier: v === 'priority' ? 1 : 2, label: v === 'priority' ? 'Added to Priority' : 'Added by you' });
     return { targets: out, problems };
   }
@@ -1996,7 +2293,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${SHOUTS.filter(s => state.shouts[s.id] != null && state.shouts[s.id] <= m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
     $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
@@ -2016,6 +2313,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const added = perksAddedAt(m);
       return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${added.length ? added.map(a => `${esc(a.text)} <span class="muted">(${a.skill})</span>`).join(', ') : '<span class="muted">none</span>'}</p>`;
     }).join('');
+    $('sheetMoves').innerHTML = state.moves.length ? state.moves.map(mv => `<p class="move-line"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet')}</p>`).join('') : '<p class="muted">None yet. Add them under Loadout, Signature moves.</p>';
+    $('sheetNotes').innerHTML = state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="muted">None yet. Add them on the Identity step.</p>';
     const { plan: qp, order: qo } = buildQuestPlan();
     $('sheetQuests').innerHTML = qo.length ? TIERS.map((tier, t) => {
       const ids = qo.filter(id => qp[id].tier === t); if (!ids.length) return '';
@@ -2048,18 +2347,25 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div><dt>Homes</dt><dd>${list(Object.keys(state.homes).map(id => HOM[id].name))}</dd></div>
         ${scrollsOn ? `<div><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd></div><div><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd></div>` : ''}
         <div><dt>Quests</dt><dd>${qn(0).length} expedite, ${qn(1).length} priority, ${qn(2).length} selected</dd></div>
+        ${SPELLS.some(s => state.spells[s.id]?.tier === 'selected') ? `<div><dt>Spells, no deadline</dt><dd>${list(SPELLS.filter(s => state.spells[s.id]?.tier === 'selected').map(s => s.name))}</dd></div>` : ''}
+        ${SHOUTS.some(s => state.shouts[s.id]?.tier === 'selected') ? `<div><dt>Shouts, no deadline</dt><dd>${list(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'selected').map(shoutLabel))}</dd></div>` : ''}
       </dl>
       <h2>Milestones</h2>
       <table class="ps-ms"><thead><tr><th></th>${MS.map((m, k) => `<th>By level ${m} <span style="font-weight:400">(${STRETCH[m].toLowerCase()})</span></th>`).join('')}</tr></thead><tbody>
         ${row('Perks', info.map(({ i }) => `${i.used} of ${i.budget} <span class="${i.status === 'under' ? 'bad' : 'ok'}">${{ ok: 'on track', over: 'ahead', under: 'needs fixing' }[i.status]}</span>`))}
         ${row('Attributes', info.map(({ t }) => `Health ${t.h} · Magicka ${t.m} · Stamina ${t.s}`))}
         ${row('Stone', MS.map(m => STN[state.stones[m]]?.name ? esc(STN[state.stones[m]].name) : '<span class="none">None</span>'))}
-        ${row('New shouts', MS.map(m => list(newAt(state.shouts, SHOUTS, m))))}
+        ${row('New shouts', MS.map(m => list(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'expedite' && state.shouts[s.id].m === m).map(shoutLabel))))}
+        ${row('New spells', MS.map(m => list(SPELLS.filter(s => state.spells[s.id]?.tier === 'expedite' && state.spells[s.id].m === m).map(s => s.name))))}
         ${row('New gear', MS.map(m => list(GEAR.filter(g => state.gear[g.id] === m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')))))}
         ${row('New potions', MS.map(m => list(state.potions.filter(x => x.m === m).map(x => potionName(x.effects)))))}
         ${row('New food', MS.map(m => list(newAt(state.food, RECIPES, m))))}
         ${scrollsOn ? row('New scrolls', MS.map(m => list([...newAt(state.scrolls, SCROLLS, m), ...newAt(state.spiders, SPIDERS, m)]))) : ''}
       </tbody></table>
+      ${state.moves.length || state.notes.trim() ? `<div class="ps-two ps-rp">
+        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}</p>`).join('') : '<p class="none">None</p>'}</div>
+        <div><h2>Role-play notes</h2>${state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p class="ps-move">${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="none">None</p>'}</div>
+      </div>` : ''}
       <div class="ps-two">
         <div><h2>Skills</h2>
           <table class="ps-skills"><thead><tr><th>Skill</th><th>Start</th>${MS.map(m => `<th>${m}</th>`).join('')}</tr></thead><tbody>
@@ -2115,7 +2421,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
 
   // ---------- About and credits ----------
-  const DATAFILES = [['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA]];
+  const DATAFILES = [['Spells', SPELLDATA], ['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA]];
   const linkify = t => esc(t).replace(/https?:\/\/[^\s,;)]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${decodeURIComponent(u.replace(/^https?:\/\/(en\.uesp\.net\/wiki\/|elderscrolls\.fandom\.com\/wiki\/)?/, '')).replace(/_/g, ' ')}</a>`);
   $('credits').innerHTML = DATAFILES.map(([name, d]) => `<li><strong>${name}</strong>${d.asOf ? ` <span class="muted">· data from ${esc(d.asOf)}</span>` : ''}<div class="src">${linkify(d.license || '')}</div></li>`).join('');
   const openAbout = () => { const d = $('about'); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); $('aboutClose').focus(); };

@@ -184,6 +184,7 @@ DUMP_PAGES = [
     "Skyrim:Weapons", "Skyrim:Armor", "Skyrim:Clothing", "Skyrim:Jewelry", "Skyrim:Enchantments",
     "Skyrim:Ingredients", "Skyrim:Alchemy Effects", "Skyrim:Food",
     "Skyrim:Followers", "Skyrim:Marriage", "Skyrim:Houses",
+    "Skyrim:Specialty Gear", "Skyrim:Vigil Armor", "Skyrim:Amulets of the Divines", "Skyrim:Spells",
 ]
 
 
