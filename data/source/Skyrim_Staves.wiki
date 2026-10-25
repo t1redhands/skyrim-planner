@@ -1,0 +1,1064 @@
+{{Trail|Magic}}{{#addtotrail:Items|separator=' / '}} [[Category:Skyrim-Items]][[Category:Skyrim-Weapons-Staves]][[Category:Skyrim-Dragonborn-Items]][[Category:Skyrim-Dragonborn-Items]]{{about|the item type|the Creation Club content|Staves (Creation)}}{{TOCright}}
+'''Staves''' are one-handed weapons that are essentially rechargeable [[Skyrim:scrolls|scrolls]]. Anyone can use a staff, regardless of [[Skyrim:Magic Overview|magic]] skill, and using a staff does not use any of the caster's own [[Skyrim:Magicka|Magicka]]; instead, it depletes the staff's charge. However, the higher the user's skill level in the relevant magic school, the lower the charge cost to use the staff. Using staves does ''not'' increase your skills, nor do staves benefit from higher skill levels, with the exception of lowering the charge cost per use. However, staves benefit (particularly Destruction staves) from perks, so a Staff of Flames would do 10 damage per second instead of 8, if you have the Augmented Flames perk from the Destruction skill line.
+
+Once the staff is completely discharged, it becomes unusable, and must be recharged using the [[Skyrim:Enchanting#Recharging Weapons|same methods]] as any enchanted weapon, usually via a filled [[Skyrim:Soul_Gems|soul gem]].  However, the [[Skyrim:Enchanting#Soul Siphon|''Soul Siphon'']] perk will ''not'' work on it.
+
+Although staves are listed in your inventory under "Weapons", they are treated differently from other weapons. In particular, staves will not be bought or sold by blacksmiths. Staves can only be bought from spell [[Skyrim:merchants|merchants]], who will stock a random, level-dependent selection of staves. Both spell and general-goods merchants will buy staves. They can also be found in random loot. Staves cannot be disenchanted.
+
+Staves can also be enchanted using the [[Skyrim:Staff Enchanter|Staff Enchanter]]{{DB}} in [[Skyrim:Tel Mithryn (settlement)|Tel Mithryn]]. Using the table will allow the user to enchant any [[#Unenchanted Staves|unenchanted staff]] that was added with the [[Skyrim:Dragonborn|Dragonborn]] add-on. The type of unenchanted staff determines what kind of enchantments can be applied to it. For example, an Illusion staff cannot have flames (a Destruction effect) enchanted onto it.  The list of staves below does not contain any staves specific to [[Skyrim:Dragonborn|Dragonborn]]; see the [[Skyrim:Staves#Craftable Staves|Craftable Staves]]{{DB}} section for those.
+
+In ''Morrowind'' and ''Oblivion'', staves required both hands to use. In ''Skyrim'', they now only require one hand, and you can dual-wield them.
+
+== Standard Staves ==
+Staves do not simply cast the same spell you would, per the staff's name; they employ enchantments bearing effects which are always similar but not always identical to the spell they are named after.  Differences between the staff and its namesake spell are noted in each staff's entry.
+
+=== [[Skyrim:Alteration|Alteration]] ===
+{| class="wikitable sortable"
+|-{{ALT}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+|-
+| [[File:SR-icon-weapon-AlterationStaff.png|48px]]
+| {{Anchor|Staff of Magelight}}<br>{{ID|000be121|par=1}}
+| 8 || 239 || 0 || 10 ||1000/14=71
+| ''Ball of light that lasts 60 seconds and sticks where it strikes:''
+* [[Skyrim:Magelight|Magelight]], 1 pt for 60 secs
+|
+* [[Skyrim:Blue_Palace|Blue Palace]]
+* [[Skyrim:Hall_of_Countenance|Hall of Countenance]] ([[Skyrim:College_of_Winterhold_(place)|College of Winterhold]])
+* [[Skyrim:Shalidor's_Maze|Shalidor's Maze]]
+* Awarded upon completing [[Skyrim:Under Saarthal|Under Saarthal]]
+|-
+| [[File:SR-icon-weapon-AlterationStaff.png|48px]]
+| {{Anchor|Staff of Paralysis}}<br>{{ID|00029b73|par=1}}
+| 8 || 3965 || 0 || 34 ||3000/450=6
+| ''Targets that fail to resist are paralyzed for 10 seconds:''
+* [[Skyrim:Paralyze (effect)|Paralyze]], for 10 secs
+* [[Skyrim:Stagger|Stagger Push]], 100 pts
+|
+* [[Skyrim:Snapleg_Cave|Snapleg Cave]]
+|}
+
+=== [[Skyrim:Conjuration|Conjuration]] ===
+==== [[Skyrim:Banish|Banish]] ====
+{| class="wikitable sortable"
+|-{{CON}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Banishing}}<br>{{ID|00029b79|par=1}}
+| 8 || 926 || 0 || 22 ||2000/85=23
+| ''Weaker summoned daedra are sent back to Oblivion:''
+* [[Skyrim:Banish|Banish]], 7 pts
+* [[Skyrim:Stagger|Banish/Command Daedra Push]], 100 pts
+|
+* [[Skyrim:Shrine_of_Mehrunes_Dagon|Shrine of Mehrunes Dagon]]
+|
+* The [[sr:Banish Daedra|spell]]'s banishing magnitude is 15, not 7; the difference is that the spell, when single-cast, can banish Potent Flame Atronachs, but the staff cannot.
+* The [[sr:Banish Daedra|spell]], unlike the staff, also includes an effect that deals 20 damage per second for one second.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Daedric Command}}<br>{{ID|00029b7b|par=1}}
+| 8 || 2307 || 0 || 34 ||3000/242=12
+| ''Powerful summoned and raised creatures are put under your control:''
+* [[Skyrim:Command|Command]], 20 pts
+* [[Skyrim:Stagger|Banish/Command Daedra Push]], 0 pts
+|
+|
+* The [[sr:Command Daedra|spell]], unlike the staff, has a Push magnitude of 100, meaning the staff will not stagger targets who resist the command effect.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Expulsion}}<br>{{ID|00029b7e|par=1}}
+| 8 || 2092 || 0 || 34 ||3000/215=13
+| ''Powerful summoned daedra creatures are sent back to Oblivion:''
+* [[Skyrim:Banish|Banish]], 20 pts
+* [[Skyrim:Stagger|Banish/Command Daedra Push]], 0 pts
+**This means the staff is ''worse'' than a Staff of Banishing against Potent Frost Atronachs, Storm Atronachs (potent or not), or any kind of elemental Thrall, as neither staff will Banish them, but the former will still manage a stagger effect.
+|
+|
+* The [[sr:Expel Daedra|spell]], unlike the staff, has a Push magnitude of 100, meaning the staff will not stagger summoned daedra who resist the banish effect.
+* The [[sr:Expel Daedra|spell]], unlike the staff, also includes an effect that deals 40 damage per second for one second.
+|}
+
+==== [[Skyrim:Conjure|Conjure]] ====
+{| class="wikitable sortable"
+|-{{CON}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Notes
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of the Familiar}}<br>{{ID|00029b75|par=1}}
+| 8 || 926 || 0 || 1 ||500/107=4
+| ''Summons a Familiar for 60 seconds wherever the caster is pointing:''
+* [[Skyrim:Conjure|Conjure]] Familiar, for 60 secs
+|
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of the Flame Atronach}}<br>{{ID|00029b78|par=1}}<br>{{ID|xx011d58|par=1}}{{DG}}
+| 8 || 727 || 0 || 10 ||1000/75=13
+| ''Summons a Flame Atronach for 60 seconds wherever the caster is pointing:''
+* [[Skyrim:Conjure|Conjure]] Flame Atronach, for 60 secs
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while [[Skyrim:Dawnguard|Dawnguard]] adds a second staff of the same name with a different appearance, wielded by [[Skyrim:Falmer|Falmer]].
+* The first version can be made at the [[Skyrim:Atronach_Forge|Atronach Forge]].
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of the Frost Atronach}}<br>{{ID|000be120|par=1}}<br>{{ID|xx011d59|par=1}}{{DG}}
+| 8 || 1106 || 0 || 22 ||2000/107=18
+| ''Summons a Frost Atronach for 60 seconds wherever the caster is pointing:''
+* [[Skyrim:Conjure|Conjure]] Frost Atronach, for 60 secs
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while Dawnguard adds a second staff of the same name with a different appearance, wielded by Falmer.
+* The first version can be found in the [[Skyrim:Arch-Mage's_Quarters|Arch-Mage's Quarters]] of the [[Skyrim:College_of_Winterhold_(place)|College of Winterhold]], and can be made at the Atronach Forge.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of the Storm Atronach}}<br>{{ID|00029b7d|par=1}}
+| 8 || 1656 || 0 || 34 ||3000/161=18
+| ''Summons a Storm Atronach for 60 seconds wherever the caster is pointing:''
+* [[Skyrim:Conjure|Conjure]] Storm Atronach, for 60 secs
+|
+* This staff can be made at the Atronach Forge.
+|}
+
+==== [[Skyrim:Reanimate|Reanimate]] ====
+''All'' of these do not apply the secondary effect that disintegrates the corpse after the spell wears off, which the simulated spells all have; see [[#Bugs|the bugs section]] for more.  Aside from this substantial upgrade, all of them are ''weaker'' than their namesake spell.
+
+{| class="wikitable sortable"
+|-{{CON}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Zombies}}<br>{{ID|00029b74|par=1}}
+| 8 || 449 || 0 || 1 ||500/48=10
+| ''Reanimate a weak dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 3 pts for 60 secs
+|
+|
+* [[sr:Raise Zombie|Raise Zombie]]'s magnitude is 6, not 3.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Reanimation}}<br>{{ID|00029b76|par=1}}
+| 8 || 949 || 0 || 10 ||1000/103=9
+| ''Reanimate a weak dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 6 pts for 60 secs
+|
+|
+* [[sr:Reanimate Corpse|Reanimate Corpse]]'s magnitude is 13, not 6.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Revenants}}<br>{{ID|00029b7a|par=1}}
+| 8 || 824 || 0 || 22 ||2000/72=27
+| ''Reanimate a powerful dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 9 pts for 60 secs
+|
+* [[Skyrim:Unmarked_Places#Unmarked_Ruins_and_Monuments|Unmarked ruin]] southeast of [[Skyrim:Morthal|Morthal]] {{Map Link|x=-31085|y=60280|zoom=17}}
+|
+* [[sr:Revenant|Revenant]]'s magnitude is 21, not 9.
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Dread Zombies}}<br>{{ID|00029b7c|par=1}}
+| 8 || 1248 || 0 || 34 ||3000/110=27
+| ''Reanimate a very powerful dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 12 pts for 60 secs
+* [[Skyrim:Regenerate Health|Fortified Healing]], 1 pt for 60 secs
+|
+|
+* [[sr:Dread Zombie|Dread Zombie]]'s reanimate magnitude is 30, not 12, and its fortified healing magnitude is 3, not 1.
+|}
+
+==== [[Skyrim:Soul Trap (effect)|Soul Trap]] ====
+{| class="wikitable sortable"
+|-{{CON}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Staff of Soul Trapping}}<br>{{ID|000be122|par=1}}
+| 8 || 986 || 0 || 10 ||1000/107=9
+| ''If target dies within 60 seconds, fills a soul gem:''
+* [[Skyrim:Soul Trap (effect)|Soul Trap]], for 60 secs
+|}
+
+=== [[Skyrim:Destruction|Destruction]] ===
+==== [[Skyrim:Fire Damage|Fire Damage]] ====
+{| class="wikitable sortable"
+|-{{DES}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Notes
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Flames}}<br>{{ID|0004dee0|par=1}}
+| 8 || 183 || 0 || 1 ||500/14=35 seconds
+| ''A gout of fire that does 8 points per second. Targets on fire take extra damage:''
+* Flames, 8 pts for 1 sec
+|
+* This staff can be found in [[Skyrim:Vahlok's Tomb|Vahlok's Tomb]].{{DB}}
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Firebolts}}<br>{{ID|0004c6ca|par=1}}<br>{{ID|xx011d5d|par=1}}{{DG}}
+| 8 || 456 || 0 || 10 ||1000/41=24
+| ''A blast of fire that does 25 points of damage. Targets on fire take extra damage:''
+* Firebolt, 25 pts
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while [[Skyrim:Dawnguard|Dawnguard]] adds a second staff of the same name with a different appearance, wielded by [[Skyrim:Falmer|Falmer]].
+* The first version can be found in [[Skyrim:Shalidor's_Maze|Shalidor's Maze]], and is carried by [[Skyrim:Maluril|Maluril]].
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Fireballs}}<br>{{ID|00029b82|par=1}}<br>{{ID|xx011d57|par=1}}{{DG}}
+| 8 || 1309 || 0 || 22 ||2000/133=15
+| ''A fiery explosion for 40 points of damage in a 15 foot radius. Targets on fire take extra damage:''
+* Fireball, 40 pts in 15 ft
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while Dawnguard adds a second staff of the same name with a different appearance, wielded by Falmer.
+* The first version can be found in an [[Skyrim:Unmarked_Places#Smaller_Places_of_Interest|unmarked location]] southeast of [[Skyrim:Shadowgreen_Cavern|Shadowgreen Cavern]] {{Map Link|x=-67386|y=117605|zoom=16}}, and is wielded by [[Skyrim:Krosis_(creature)|Krosis]] and [[Skyrim:Vokun_(creature)|Vokun]].
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Incineration}}<br>{{ID|0010fcf2|par=1}}
+| 8 || 2750 || 0 || 34 ||3000/298=10
+| ''A blast of fire that does 60 points of damage. Targets on fire take extra damage:''
+* Incinerate, 60 pts
+|
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of the Flame Wall}}<br>{{ID|00029b85|par=1}}
+| 8 || 1310 || 0 || 34  ||3000/118=25 seconds
+| ''Sprayed on the ground, it creates a wall of fire that does 50 points of fire damage per second:''
+* [[sr:Fire Damage|Fire Barrier]], 8 pts for 3 secs
+|
+|
+* [[sr:Wall of Flames|Wall of Flames]] only inflicts Fire Barrier for 1 second; this is the duration the target burns for when directly hit by the spell, before [[sr:tapering|tapering]] begins, meaning the Staff deals ''more'' damage overall on a single hit basis, although the summoned wall is identical for both staff and spell.
+|}
+
+==== [[Skyrim:Frost Damage|Frost Damage]] ====
+{| class="wikitable sortable"
+|-{{DES}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Notes
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Frostbite}}<br>{{ID|0004dee1|par=1}}
+| 8 || 198 || 0 || 1 ||500/16=31 seconds
+| ''A blast of cold that does 8 points of damage per second to Health and Stamina:''
+* Frostbite, 8 pts for 1 sec
+|
+* This staff is carried by [[Skyrim:Aranea_Ienith|Aranea Ienith]] and [[Skyrim:Brother_Verulus|Brother Verulus]].
+|
+* [[sr:Frostbite|Frostbite]] also applies [[sr:Slow|Slow]], 50 pts for 4 secs.
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Ice Spikes}}<br>{{ID|0004ded8|par=1}}<br>{{ID|xx011d5e|par=1}}{{DG}}
+| 8 || 511 || 0 || 10 ||1000/48=20
+| ''A spike of ice that does 25 points of frost damage to Health and Stamina:''
+* Ice Spike, 25 pts
+* [[Skyrim:Slow|Slow]], 50 pts for 3 secs
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while [[Skyrim:Dawnguard|Dawnguard]] adds a second staff of the same name with a different appearance, wielded by [[Skyrim:Falmer|Falmer]].
+* The first version can be found in the [[Skyrim:Inner_Sanctum_(Vale)|Inner Sanctum]]{{DG}} of the [[Skyrim:Forgotten_Vale|Forgotten Vale]].
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Ice Storms}}<br>{{ID|00029b83|par=1}}<br>{{ID|xx011d5f|par=1}}{{DG}}
+| 8 || 1401 || 0 || 22 ||2000/144=13
+| ''A freezing whirlwind that does 40 points of frost damage per second to Health and Stamina:''
+* Ice Storm, 40 pts in 15 ft
+* [[Skyrim:Slow|Slow]], 50 pts for 5 secs
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while Dawnguard adds a second staff of the same name with a different appearance, wielded by Falmer.
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Icy Spear}}<br>{{ID|0010fcf7|par=1}}
+| 8 || 2931 || 0 || 34 ||3000/320=9
+| ''A spear of ice that does 60 points of frost damage to Health and Stamina:''
+* Icy Spear, 60 pts
+* [[Skyrim:Slow|Slow]], 50 pts for 3 secs
+|
+*This staff can be found in the Inner Sanctum{{DG}} of the Forgotten Vale.
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of the Frost Wall}}<br>{{ID|00029b86|par=1}}
+| 8 || 1468 || 0 || 34  ||3000/137=21 seconds
+| ''Sprayed on the ground, it creates a wall of frost that does 50 points of frost damage per second:''
+* Frost Barrier, 8 pts for 1 sec
+* [[Skyrim:Slow|Slow]], 50 pts for 5 secs
+|
+|
+|}
+
+==== [[Skyrim:Shock Damage|Shock Damage]] ====
+{| class="wikitable sortable"
+|-{{DES}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Notes
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Sparks}}<br>{{ID|0004dee2|par=1}}
+| 8 || 218 || 0 || 1 ||500/19=26 seconds
+| ''Lightning that does 8 points of shock damage to Health and Magicka per second:''
+* Sparks, 8 pts for 1 sec
+|
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Lightning Bolts}}<br>{{ID|0004dee3|par=1}}<br>{{ID|xx011d60|par=1}}{{DG}}
+| 8 || 538 || 0 || 10 ||1000/51=19
+| ''A bolt of lightning that does 25 points of shock damage to Health and half that to Magicka:''
+* Lightning Bolt 25 pts
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while [[Skyrim:Dawnguard|Dawnguard]] adds a second staff of the same name with a different appearance, wielded by [[Skyrim:Falmer|Falmer]].
+* The first version can be found in the [[Skyrim:Hall_of_Countenance|Hall of Countenance]] at the [[Skyrim:College_of_Winterhold_(place)|College of Winterhold]], is carried by [[Skyrim:Brelyna_Maryon|Brelyna Maryon]], and is wielded by [[Skyrim:Ildari Sarothril|Ildari Sarothril]]{{DB}}.
+|
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]<br>[[File:SR-icon-weapon-Falmer Staff.png|48px]]
+| {{Anchor|Staff of Chain Lightning}}<br>{{ID|00029b84|par=1}}<br>{{ID|xx011d56|par=1}}{{DG}}
+| 8 || 1494 || 0 || 22 ||2000/156=12
+| ''Lightning bolt that does 40 points of shock damage to Health and half to Magicka, then leaps to a new target:''
+* Chain Lightning, 40 pts in 20 ft
+* [[Skyrim:Stagger|Stagger Push]], 1 pt
+|
+* Two staves with this enchantment exist. The original game only includes the standard staff, while Dawnguard adds a second staff of the same name with a different appearance, wielded by Falmer.
+|
+* [[sr:Chain Lightning|Chain Lightning]] does not inflict any stagger at all unless the [[sr:Impact|Impact]] perk has been taken ''and'' the spell is dual cast, in which case it inflicts 0.25 stagger, not 1.
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Thunderbolts}}<br>{{ID|0010fcf4|par=1}}
+| 8 || 778 || 0 || 34 ||3000/51=58
+| ''A bolt of lightning that does 25 points of shock damage to Health and half that to Magicka:''
+* Lightning Bolt, 25 pts
+|
+*Has the wrong enchantment attached, using apprentice Lightning Bolts instead of expert Thunderbolts, which explains the high amount of uses. (see [[#Bugs|bugs]])
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of the Storm Wall}}<br>{{ID|00029b87|par=1}}
+| 8 || 1531 || 0 || 34 ||3000/145=20 seconds
+| ''Sprayed on the ground, it creates a wall of lightning that does 50 points of shock damage per second:''
+* Wall of Storms, 8 pts for 1 sec
+|
+* This staff is wielded by [[Skyrim:Otar_the_Mad|Otar the Mad]].
+|
+|}
+
+=== [[Skyrim:Illusion|Illusion]] ===
+==== [[Skyrim:Fear (effect)|Fear]] ====
+{| class="wikitable sortable"
+|-{{ILL}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Fear}}<br>{{ID|00029b8c|par=1}}
+| 8 || 2443 || 0 || 10 ||1000/289=3
+| ''Creatures and people up to level 8 flee from combat for 60 seconds:''
+* [[Skyrim:Fear (effect)|Fear]], 8 pts for 60 secs
+|
+* [[Skyrim:Shalidor's_Maze|Shalidor's Maze]]
+|
+* [[sr:Fear (spell)|Fear]]'s magnitude is 9, not 8, but its duration is 30 secs, not 60.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Vanquishment}}<br>{{ID|00029b92|par=1}}
+| 8 || 1807 || 0 || 34 ||3000/180=16
+| ''Creatures and people up to level 12 flee from combat for 30 seconds:''
+* [[Skyrim:Fear (effect)|Rout]], 12 pts for 30 secs in 15 ft
+|
+|
+* [[sr:Rout|Rout]]'s magnitude is 20, not 12.
+|}
+
+==== [[Skyrim:Frenzy (effect)|Frenzy]] ====
+{| class="wikitable sortable"
+|-{{ILL}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Fury}}<br>{{ID|00029b89|par=1}}
+| 8 || 803 || 0 || 1 ||500/92=5
+| ''Creatures and people up to level 4 will attack anything nearby for 60 seconds:''
+* [[Skyrim:Frenzy (effect)|Fury]], 4 pts for 60 secs
+|
+* [[sr:Fury|Fury]]'s magnitude is 6, not 4, but its duration is 30 secs, not 60.
+* [[sr:Fury|Fury]] simultaneously [[sr:Rally (effect)|rallies]] the target for its duration, raising its confidence as well as its aggression.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Frenzy}}<br>{{ID|00029b8f|par=1}}
+| 8 || 1149 || 0 || 22 ||2000/113=17
+| ''Creatures and people up to level 8 will attack anyone nearby for 60 seconds:''
+* [[Skyrim:Frenzy (effect)|Frenzy]], 8 pts for 60 secs in 15 ft
+|
+* [[sr:Frenzy (spell)|Frenzy]]'s magnitude is 14, not 8.
+* [[sr:Frenzy (spell)|Frenzy]] simultaneously [[sr:Rally (effect)|rallies]] the target for its duration, raising its confidence as well as its aggression.
+|}
+
+==== [[Skyrim:Pacify (effect)|Pacify]] ====
+{| class="wikitable sortable"
+|-{{ILL}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+!Notes
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Calm}}<br>{{ID|00029b8b|par=1}}
+| 8 || 1153 || 0 || 10 ||1000/128=7
+| ''Creatures and people up to level 8 won't fight for 30 seconds:''
+* [[Skyrim:Pacify (effect)|Calm]], 8 pts for 30 secs
+|
+* Within Ildari's sarcophagus northeast of [[Skyrim:Tel Mithryn (settlement)|Tel Mithryn]]{{DB}} during the quest [[Skyrim:Old Friends|Old Friends]] {{Map Link|x=79963|y=28694|zoom=16|map=Dragonborn}}
+|
+|
+* [[sr:Calm|Calm]]'s magnitude is 9, not 8.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Grand Staff of Charming}}<br>{{ID|00029b91|par=1}}
+| 8 || 1393 || 0 || 34 ||3000/128=23
+| ''Creatures and people up to level 8 won't fight for 30 seconds:''
+* Calm, 8 pts for 30 secs
+|
+* [[Skyrim:Yngvild|Yngvild Throne Room]]
+|
+* Required for the quest [[Skyrim:Onmund's Request|Onmund's Request]]
+|
+* While the game's code implies this was originally intended to be a staff carrying the [[sr:Pacify (spell)|Pacify]] spell, it instead is simply a Staff of Calm with more charges. The Pacify staff enchantment is used by an unknown item instead.
+**As a result, it has the same differences: [[sr:Calm|Calm]]'s magnitude is 9, not 8.
+|}
+
+==== [[Skyrim:Rally (effect)|Rally]] ====
+''All'' of these do not apply the secondary Fortify Health and Fortify Stamina effects that they claim they do and that their namesake spells do; see [[#Bugs|the bugs section]] for more.
+
+{| class="wikitable sortable"
+|-{{ILL}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Courage}}<br>{{ID|00029b88|par=1}}
+| 8 || 79 || 0 || 1 ||500/1=500
+| ''Target won't flee for 60 seconds and gets some extra health and stamina:''
+* [[Skyrim:Rally (effect)|Courage]], 6 pts for 60 secs
+|
+*[[sr:Courage|Courage]] has a magnitude of 100, not 6, but the magnitude of this effect may not matter between those values, as maximum [[sr:Confidence|Confidence]] is 4.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Inspiration}}<br>{{ID|00029b8e|par=1}}
+| 8 || 317 || 0 || 22 ||2000/9=222
+| ''Targets won't flee for 60 seconds and get extra health and stamina:''
+* [[Skyrim:Rally (effect)|Rally]], 10 pts for 60 secs in 15 ft
+|
+*[[sr:Rally (spell)|Rally]] has a magnitude of 100, not 10, but the magnitude of this effect may not matter between those values, as maximum [[sr:Confidence|Confidence]] is 4.
+|}
+
+=== [[Skyrim:Restoration|Restoration]] ===
+==== [[Skyrim:Restore Health|Restore Health]] ====
+{| class="wikitable sortable"
+|-{{RES}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Staff of the Healing Hand}}<br>{{ID|00029b93|par=1}}
+| 8 || 198 || 0 || 10 ||1000/9=111 seconds
+| ''Heals the target 4 points per second, but not undead, atronachs or machines:''
+* [[Skyrim:Restore Health|Restore Health]], 4 pts
+|
+* [[sr:Healing Hands|Healing Hands]] has a magnitude of 10, not 4, and a duration of 1, not 0.  Because of how the spell [[sr:tapering|tapers]], this means a single "shot" of healing from the staff heals 5.2 health over 0.3 seconds (17.33 healing per second), while a single "shot" from the spell heals 13 health over 1.3 seconds (10 healing per second), although actual performance will vary depending on how much you "pulse" these effects, rather than holding the key down to channel.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Staff of Mending}}<br>{{ID|00029b99|par=1}}
+| 8 || 613 || 0 || 22 ||2000/46=43
+| ''Heals the target 45 points, but not undead, atronachs or machines:''
+* Restore Health, 45 pts
+|
+* [[sr:Heal Other|Heal Other]] has a magnitude of 75, not 45.
+|}
+
+==== [[Skyrim:Turn Undead (effect)|Turn Undead]] ====
+{| class="wikitable sortable"
+|-{{RES}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=sort_num|Level
+!Charge/Cost = Uses
+!Enchantment
+!Locations
+!Differences From Namesake Spell
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Minor Staff of Turning}}<br>{{ID|00029b94|par=1}}
+| 8 || 556 || 0 || 10 ||1000/53=18
+| ''Undead up to level 4 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Turn Lesser Undead]], 4 pts for 30 secs
+* [[Skyrim:Stagger|Turn Undead Push]], 50 pts
+|
+|
+*[[sr:Turn Lesser Undead|Turn Lesser Undead]] has a magnitude of 6, not 4.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Staff of Turning}}<br>{{ID|00029b95|par=1}}
+| 8 || 1036 || 0 || 22 ||2000/98=20
+| ''Undead up to level 8 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Turn Undead]], 8 pts for 30 secs
+* Turn Undead Push, 0 pts
+|
+|
+*[[sr:Turn Undead (spell)|Turn Undead]] has a magnitude of 13, not 8; see the spell page for a discussion of this effect's lack of a stagger magnitude above 0.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Grand Staff of Turning}}<br>{{ID|00029b97|par=1}}
+| 8 || 1520 || 0 || 34 ||3000/144=20
+| ''Undead up to level 12 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Turn Greater Undead]], 12 pts for 30 secs
+* Turn Undead Push, 100 pts
+|
+|
+*[[sr:Turn Greater Undead|Turn Greater Undead]] has a magnitude of 21, not 12.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Staff of Repulsion}}<br>{{ID|00029b9a|par=1}}
+| 8 || 675 || 0 || 22 ||2000/53=37
+| ''All affected undead up to level 4 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Repel Lesser Undead]], 4 pts for 30 secs
+* Turn Undead Push, 0 pts
+|
+* [[Skyrim:Shalidor's_Maze|Shalidor's Maze]]
+|
+* [[sr:Repel Lesser Undead|Repel Lesser Undead]] has a repel magnitude of 8, not 4.
+* [[sr:Repel Lesser Undead|Repel Lesser Undead]] has a stagger magnitude of 100, not 0.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Grand Staff of Repulsion}}<br>{{ID|00029b9b|par=1}}
+| 8 || 1289 || 0 || 34 ||3000/115=26
+| ''All affected undead up to level 8 flee for 30 seconds:''
+* Repel Lesser Undead, 8 pts for 30 secs
+* Turn Undead Push, 100 pts
+|
+* [[Skyrim:Jarl's_Longhouse_(Winterhold)|Jarl's Longhouse]] ([[Skyrim:Winterhold|Winterhold]])
+* Carried by [[Skyrim:Gauldur|Gauldur]]
+|
+* [[sr:Repel Undead|Repel Undead]] has a magnitude of 16, not 8.
+* [[sr:Repel Undead|Repel Undead]] delivers an effect named "Repel Undead", not "Repel Lesser Undead", which has a base cost of 5, not 3.5; as a result, this staff is more efficient than if it used the same effect.
+|}
+
+== Special Staves ==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Charge/Cost = Uses<br/>(controlling skill)
+!Enchantment
+!Notes
+|-
+| [[File:SR-icon-weapon-AetherialStaff.png|48px]]
+| [[Skyrim:Aetherial Staff|Aetherial Staff]] {{DG}}<br>{{ID|xx00575e|par=1}}
+| 8 || 1970 || 0 || 1000/75=13<br/>(None)
+| ''Summon a Dwarven Spider or Sphere for 60 seconds wherever the caster is pointing.''
+|
+*See [[Skyrim:Aetherial Staff|Aetherial Staff]] for details.
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Dragon Priest Staff}}<br>{{ID|0007e5bb|par=1}}
+| 8 || 1570 || 0 || 5000/118=42 seconds<br/>([[Skyrim:Destruction|Destruction]])
+| ''Sprayed on the ground, it creates a wall of fire that does 50 points of fire damage per second:''
+* [[Skyrim:Fire Damage|Wall of Fire]], 8 pts for 3 secs
+|
+*Wielded by [[Skyrim:Rahgot (creature)|Rahgot]]
+|-
+| [[File:SR-icon-weapon-DragonPriestStaff.png|48px]]
+| {{Anchor|Dragon Priest Staff}}<br>{{ID|0004de5b|par=1}}
+| 8 || 1989 || 2 || 2000/145=13 seconds<br/>([[Skyrim:Destruction|Destruction)]]
+| ''Sprayed on the ground, it creates a wall of lightning that does 50 points of shock damage per second:''
+* [[Skyrim:Shock Damage|Wall of Lightning]], 8 pts for 1 sec
+|
+*Wielded by [[Skyrim:Nahkriin (creature)|Nahkriin]]
+|-
+| [[File:SR-icon-weapon-Hagraven'sStaff.png|48px]]
+| {{Anchor|Eye of Melka}}<br>{{ID|000b3dfa|par=1}}
+| 8 || 1234 || 0 || 1000/133=7<br/>([[Skyrim:Destruction|Destruction]])
+| ''A fiery explosion for 40 points of damage in a 15 foot radius. Targets on fire take extra damage:''
+* [[Skyrim:Fire Damage|Fireball]], 40 pts in 15 ft
+|
+*Quest reward from [[Skyrim:The_Affairs_of_Hagravens|The Affairs of Hagravens]]
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Gadnor's Staff of Charming}}<br>{{ID|00046e0b|par=1}}
+| 8 || 803 || 0 || 500/92=5<br/>([[Skyrim:Illusion|Illusion]])
+| ''Creatures and people up to level 4 will attack anything nearby for 60 seconds:''
+* [[Skyrim:Fury|Fury]], 4 pts for 60 secs
+|
+*Found in [[Skyrim:Crystaldrift Cave|Crystaldrift Cave]]
+|-
+| [[File:SR-icon-weapon-Goblin Totem Staff.png|48px]]
+| {{Anchor|Goblin Totem Staff}}{{CC|Goblins}}<br>{{ID|FExxx805|par=1}}
+| 10 || 1614 || 0 || 3000/156=19<br/>([[Skyrim:Destruction|Destruction]])
+| ''Lightning bolt that does 40 points of shock damage to Health and half to Magicka, then leaps to a new target:''
+* Chain Lightning, 40 pts in 20 ft
+* [[Skyrim:Stagger|Stagger Push]], 1 pt
+|
+*Wielded by [[Skyrim:Blue God|Blue God]] 
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Halldir's Staff}}<br>{{ID|000ab704|par=1}}
+| 8 || 1874 || 17 || 1000/218=4<br/>([[Skyrim:Illusion|Illusion]]/[[Skyrim:Conjuration|Conjuration]])
+| ''Calms less powerful opponents for 60 seconds, and traps their souls should they die:''
+* [[Skyrim:Soul Trap (effect)|Halldir's Soul Trap]], for 60 secs in 15 ft
+* [[Skyrim:Pacify (effect)|Halldir's Pacify]], 12 pts for 60 secs in 15 ft
+|
+*Found in [[Skyrim:Halldir's Cairn|Halldir's Cairn]]
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Hevnoraak's Staff}}<br>{{ID|0010076d|par=1}}
+| 8 || 1791 || 0 || 5000/145=34 seconds<br/>([[Skyrim:Destruction|Destruction]])
+| ''Sprayed on the ground, it creates a wall of lightning that does 50 points of shock damage per second:''
+* [[Skyrim:Shock Damage|Wall of Storms]], 8 pts for 1 sec
+|
+*Wielded by [[Skyrim:Hevnoraak (creature)|Hevnoraak]]
+|-
+| [[File:SR-icon-weapon-Miraak'sStaff.png|48px]]
+| {{Anchor|Miraak's Staff}} {{DB}}<br>{{ID|xx039FA6|xx039FAC|xx039FAD|par=3}}
+| 8 || 1649 - 1849 || 0 ||3000/67=44<br/>(None)
+| ''Sprays writhing tentacles on the ground that stagger and poison foes that enter them.''
+* [[Skyrim:Mora's Agony|Mora's Agony]] {{DB}}, 20 pts
+|
+*See [[Skyrim: Miraak's Staff|Miraak's Staff]] for details.
+|-
+| [[File:SR-icon-weapon-SanguineRose.png|48px]]
+| [[Skyrim:Sanguine Rose|Sanguine Rose]]<br>{{ID|0001cb36|par=1}}
+| 10 || 2087 || 0 || 3000/215=13<br/>([[Skyrim:Conjuration|Conjuration]])
+| ''Summons a Dremora for 60 seconds.''
+|
+*See [[Skyrim:Sanguine Rose|Sanguine Rose]] for details.
+|-
+| [[File:SR-icon-weapon-SkullOfCorruption.png|48px]]
+| [[Skyrim:Skull of Corruption|Skull of Corruption]]<br>{{ID|00035066|par=1}}
+| 10 || 1680 || 2 || 3000/40=75</br>(None)
+| ''20 points damage, increases to 50 if powered with dreams collected from sleeping people.''
+|
+*See [[Skyrim:Skull of Corruption|Skull of Corruption]] for details.
+|-
+| [[File:SR-icon-weapon-SpiderControlRod.png|48px]]
+| {{Anchor|Spider Control Rod}}<br>{{ID|000e57f0|par=1}}<br/>{{ID|000c19ff|par=1}}
+| 8 || 153 || 1 || 1000/1=1000<br/>([[Skyrim:Alteration|Alteration]])
+| ''Directs Aicantar's Spider to the target:''
+* Spider Control, for 3600 secs
+|
+*See [[Skyrim:Aicantar's_Spider|Aicantar's Spider]] for details.
+*[[Skyrim:Myrwatch (place)|Myrwatch Gallery]]{{CC|Myrwatch}} and [[Skyrim:Shadowfoot Sanctum (place)|Shadowfoot Sanctum]]{{CC|Shadowfoot Sanctum}} contain a special holder for this item.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Arcane Authority}}<br>{{ID|000940d8|par=1}}
+| 8 || 2443 || 0 || 1000/289=3<br/>([[Skyrim:Illusion|Illusion]])
+| ''Creatures and people up to level 8 flee from combat for 60 seconds:''
+* [[Skyrim:Fear (effect)|Fear]], 8 pts for 60 secs
+|
+*See [[Skyrim:Some Light Theft|Some Light Theft]] for details.
+|-
+| [[File:SR-icon-weapon-Hagraven'sStaff.png|48px]]
+| {{Anchor|Staff of Hag's Wrath}}<br>{{ID|0007a4fb|par=1}}
+| 8 || 1310 || 0 || 3000/118=25<br/>([[Skyrim:Destruction|Destruction]])
+| ''Sprayed on the ground, it creates a wall of fire that does 50 points of fire damage per second:''
+* [[Skyrim:Fire Damage|Fire Barrier]], 8 pts for 3 secs
+|
+*See [[Skyrim:Repentance|Repentance]] for details.
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Staff of Jyrik Gauldurson}}<br>{{ID|000e5f43|par=1}}
+| 8 || 594 || 0 || 1000/58=17<br/>(None)
+| ''Target takes 25 points of damage, and twice as much Magicka damage:''
+* [[Skyrim:Shock Damage|Lightning Bolt Call Storm]], 25 pts
+|
+*Found in [[Skyrim:Saarthal|Saarthal]]
+*[[Skyrim:Myrwatch (place)|Myrwatch Gallery]]{{CC|Myrwatch}} contains a special holder for this item.
+|-
+| [[File:SR-icon-weapon-StaffOfMagnus.png|48px]]
+| [[Skyrim:Staff of Magnus|Staff of Magnus]]<br>{{ID|00035369|par=1}}
+| 8 || 1468 || 0 || 5000/106=47 seconds<br/>([[Skyrim:Restoration|Restoration]]/[[Skyrim:Alteration|Alteration]])
+| ''Absorb 20 magicka per second. If the target is out of magicka, absorb health instead:''
+|
+*See [[Skyrim:Staff of Magnus|Staff of Magnus]] for details.
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Staff of Ruunvald}} {{DG}}<br>{{ID|xx01958c|par=1}}
+| 8 || 1393 || 0 || 3000/128=23<br/>([[Skyrim:Illusion|Illusion]])
+| ''Creatures and people up to level 8 won't fight for 30 seconds:''
+* [[Skyrim:Pacify (effect)|Calm]], 8 pts for 30 secs
+|
+*Wielded by [[Skyrim:Minorne|Minorne]]
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Staff of Tandil}}<br>{{ID|0006a093|par=1}}
+| 8 || 2530 || 0 || 10000/165=60<br/>([[Skyrim:Illusion|Illusion]])
+| ''Creatures and people up to level 12 won't fight for 60 seconds:''
+* [[Skyrim:Pacify (effect)|Pacify]], 12 pts for 60 secs in 15 ft
+|
+*Part of the quest [[Skyrim:Arniel's Endeavor|Arniel's Endeavor]]
+|-
+| [[File:SR-icon-weapon-Wabbajack.png|48px]]
+| [[Skyrim:Wabbajack|Wabbajack]]<br>{{ID|0002ac6f|par=1}}
+| 10 || 1565 || 27 || 3000/150=20<br/>([[Skyrim:Destruction|Destruction]])
+| ''A blast from Wabbajack with an unpredictable effect:''
+|
+*See [[Skyrim:Wabbajack|Wabbajack]] for details.
+|}
+
+=={{Anchor|Craftable Staves}}{{DB}}==
+'''Staves''' can be crafted at [[Skyrim:Neloth|Neloth]]'s [[Skyrim:Staff Enchanter|staff enchanter]] after completing the quest [[Skyrim:Reluctant Steward|Reluctant Steward]]. All staves use an appropriate [[#Unenchanted Staves|unenchanted staff]] as base objects and one or more [[Skyrim:Heart Stone|heart stones]]. Additionally you must know the spell for the staff you want to craft. Unlike weapons and armor, however, staves cannot be renamed during the crafting process.
+
+All of the staves you can create can also be found as random loot or sold by vendors without Dragonborn. 
+
+===Unenchanted Staves===
+Unenchanted staves can be purchased from [[Skyrim:Neloth|Neloth]] and are needed to craft staves. These staves existed in the original Skyrim as internally used [[Skyrim:Template Items#Templates|templates]], but some of the statistics were changed by Dragonborn.
+
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+|-
+| [[File:SR-icon-weapon-AlterationStaff.png|48px]]
+|{{Anchor|Unenchanted Alteration Staff}}<br>{{ID|0007e646|par=1}}
+| 8 || 500 || 0
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Unenchanted Conjuration Staff}}<br>{{ID|0007e647|par=1}}
+| 8 || 500 || 0
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Unenchanted Destruction Staff}}<br>{{ID|000be11f|par=1}}
+| 8 || 500 || 0
+|-
+| [[File:SR-icon-weapon-IllusionStaff.png|48px]]
+| {{Anchor|Unenchanted Illusion Staff}}<br>{{ID|0007a91b|par=1}}
+| 8 || 500 || 0
+|-
+| [[File:SR-icon-weapon-RestorationStaff.png|48px]]
+| {{Anchor|Unenchanted Restoration Staff}}<br>{{ID|00051b0c|par=1}}
+| 8 || 500 || 0
+|}
+
+===Alteration===
+These use an [[#Unenchanted Alteration Staff|unenchanted Alteration staff]] as base object.
+
+{| class="wikitable sortable"
+!Created Staff
+!Spell
+![[Skyrim:Heart Stone|Heart Stones]]
+|-
+|[[Skyrim:Staff of Magelight|Staff of Magelight]]
+|[[Skyrim:Magelight|Magelight]]||2
+|-
+|[[Skyrim:Staff of Paralysis|Staff of Paralysis]]
+|[[Skyrim:Paralyze (spell)|Paralysis]]||4
+|}
+
+===Conjuration===
+These use an [[#Unenchanted Conjuration Staff|unenchanted Conjuration staff]] as base object.
+
+{| class="wikitable sortable"
+!Created Staff
+!Spell
+![[Skyrim:Heart Stone|Heart Stones]]
+|-
+|[[Skyrim:Staff of Banishing|Staff of Banishing]]
+|[[Skyrim:Banish Daedra|Banish Daedra]]||3
+|-
+|[[Skyrim:Staff of Daedric Command|Staff of Daedric Command]]
+|[[Skyrim:Command Daedra|Command Daedra]]||4
+|-
+|[[Skyrim:Staff of Dread Zombies|Staff of Dread Zombies]]
+|[[Skyrim:Dread Zombie|Dread Zombie]]||4
+|-
+|[[Skyrim:Staff of Expulsion|Staff of Expulsion]]
+|[[Skyrim:Expel Daedra|Expel Daedra]]||4
+|-
+|[[Skyrim:Staff of Reanimation|Staff of Reanimation]]
+|[[Skyrim:Reanimate Corpse|Reanimate Corpse]]||2
+|-
+|[[Skyrim:Staff of Revenants|Staff of Revenants]]
+|[[Skyrim:Revenant|Revenant]]||3
+|-
+|[[Skyrim:Staff of Soul Trapping|Staff of Soul Trapping]]
+|[[Skyrim:Soul Trap (spell)|Soul Trap]]||2
+|-
+|[[Skyrim:Staff of Zombies|Staff of Zombies]]
+|[[Skyrim:Raise Zombie|Raise Zombie]]||1
+|-
+|[[Skyrim:Staff of the Familiar|Staff of the Familiar]]
+|[[Skyrim:Conjure Familiar|Conjure Familiar]]||1
+|-
+|[[Skyrim:Staff of the Flame Atronach|Staff of the Flame Atronach]]
+|[[Skyrim:Conjure Flame Atronach|Conjure Flame Atronach]]||2
+|-
+|[[Skyrim:Staff of the Frost Atronach|Staff of the Frost Atronach]]
+|[[Skyrim:Conjure Frost Atronach|Conjure Frost Atronach]]||3
+|-
+|[[Skyrim:Staff of the Storm Atronach|Staff of the Storm Atronach]]
+|[[Skyrim:Conjure Storm Atronach|Conjure Storm Atronach]]||4
+|}
+
+===Destruction===
+These use an [[#Unenchanted Destruction Staff|unenchanted Destruction staff]] as base object.
+
+{| class="wikitable sortable"
+!Created Staff
+!Spell
+![[Skyrim:Heart Stone|Heart Stones]]
+|-
+|[[Skyrim:Staff of Chain Lightning|Staff of Chain Lightning]]
+|[[Skyrim:Chain Lightning|Chain Lightning]]||3
+|-
+|[[Skyrim:Staff of Fireballs|Staff of Fireballs]]
+|[[Skyrim:Fireball|Fireball]]||3
+|-
+|[[Skyrim:Staff of Firebolts|Staff of Firebolts]]
+|[[Skyrim:Firebolt|Firebolt]]||2
+|-
+|[[Skyrim:Staff of Flames|Staff of Flames]]
+|[[Skyrim:Flames|Flames]]||1
+|-
+|[[Skyrim:Staff of Frostbite|Staff of Frostbite]]
+|[[Skyrim:Frostbite|Frostbite]]||1
+|-
+|[[Skyrim:Staff of Ice Spikes|Staff of Ice Spikes]]
+|[[Skyrim:Ice Spike|Ice Spike]]||2
+|-
+|[[Skyrim:Staff of Ice Storms|Staff of Ice Storms]]
+|[[Skyrim:Ice Storm|Ice Storm]]||3
+|-
+|[[Skyrim:Staff of Icy Spear|Staff of Icy Spear]]
+|[[Skyrim:Icy Spear|Icy Spear]]||4
+|-
+|[[Skyrim:Staff of Incineration|Staff of Incineration]]
+|[[Skyrim:Incinerate|Incinerate]]||4
+|-
+|[[Skyrim:Staff of Lightning Bolts|Staff of Lightning Bolts]]
+|[[Skyrim:Lightning Bolt|Lightning Bolt]]||2
+|-
+|[[Skyrim:Staff of Sparks|Staff of Sparks]]
+|[[Skyrim:Sparks|Sparks]]||1
+|-
+|[[Skyrim:Staff of Thunderbolts|Staff of Thunderbolts]]
+|[[Skyrim:Thunderbolt|Thunderbolt]]||4
+|-
+|[[Skyrim:Staff of the Flame Wall|Staff of the Flame Wall]]
+|[[Skyrim:Wall of Flames|Wall of Flames]]||4
+|-
+|[[Skyrim:Staff of the Frost Wall|Staff of the Frost Wall]]
+|[[Skyrim:Wall of Frost|Wall of Frost]]||4
+|-
+|[[Skyrim:Staff of the Storm Wall|Staff of the Storm Wall]]
+|[[Skyrim:Wall of Storms|Wall of Storms]]||4
+|}
+
+===Illusion===
+These use an [[#Unenchanted Illusion Staff|unenchanted Illusion staff]] as base object.
+
+{| class="wikitable sortable"
+!Created Staff
+!Spell
+![[Skyrim:Heart Stone|Heart Stones]]
+|-
+|[[Skyrim:Staff of Calm|Staff of Calm]]
+|[[Skyrim:Calm|Calm]]||2
+|-
+|[[Skyrim:Staff of Courage|Staff of Courage]]
+|[[Skyrim:Courage|Courage]]||1
+|-
+|[[Skyrim:Staff of Fear|Staff of Fear]]
+|[[Skyrim:Fear (spell)|Fear]]||2
+|-
+|[[Skyrim:Staff of Frenzy|Staff of Frenzy]]
+|[[Skyrim:Frenzy (spell)|Frenzy]]||3
+|-
+|[[Skyrim:Staff of Fury|Staff of Fury]]
+|[[Skyrim:Fury|Fury]]||2
+|-
+|[[Skyrim:Staff of Inspiration|Staff of Inspiration]]
+|[[Skyrim:Rally (spell)|Rally]]||3
+|-
+|[[Skyrim:Staff of Vanquishment|Staff of Vanquishment]]
+|[[Skyrim:Rout|Rout]]||4
+|}
+
+===Restoration===
+These use an [[#Unenchanted Restoration Staff|unenchanted Restoration staff]] as base object.
+
+{| class="wikitable sortable"
+!Created Staff
+!Spell
+![[Skyrim:Heart Stone|Heart Stones]]
+|-
+|[[Skyrim:Grand Staff of Repulsion|Grand Staff of Repulsion]]
+|[[Skyrim:Repel Undead|Repel Undead]]||4
+|-
+|[[Skyrim:Grand Staff of Turning|Grand Staff of Turning]]
+|[[Skyrim:Turn Greater Undead|Turn Greater Undead]]||4
+|-
+|[[Skyrim:Minor Staff of Turning|Minor Staff of Turning]]
+|[[Skyrim:Turn Lesser Undead|Turn Lesser Undead]]||2
+|-
+|[[Skyrim:Staff of Mending|Staff of Mending]]
+|[[Skyrim:Heal Other|Heal Other]]||3
+|-
+|[[Skyrim:Staff of Repulsion|Staff of Repulsion]]
+|[[Skyrim:Repel Lesser Undead|Repel Lesser Undead]]||3
+|-
+|[[Skyrim:Staff of Turning|Staff of Turning]]
+|[[Skyrim:Turn Undead (spell)|Turn Undead]]||3
+|-
+|[[Skyrim:Staff of the Healing Hand|Staff of the Healing Hand]]
+|[[Skyrim:Healing Hands|Healing Hands]]||2
+|}
+
+===Creation Club===
+Crafting these staves does not require knowledge of any spell. Despite requiring the use of a Staff Enchanter, these items are not added by the Dragonborn DLC and instead come from various [[SR:Creation Club|Creation Club]] Creations.
+{| class="wikitable sortable"
+!Created Staff
+!Related Quest
+![[Skyrim:Heart Stone|Heart Stones]]
+!Notes
+|-
+|[[SR:Arm of the Moon|Arm of the Moon]]{{CC|Arms of Chaos}}
+|[[SR:The Arms of Chaos|The Arms of Chaos]]||0
+|Requires the [[SR:Arms of Chaos|Arms of Chaos]] [[SR:Creation Club|Creation]]. This staff uses the unenchanted version of the Arm of the Moon as a base object, and requires a [[SR:Green Sigil Stone|Green Sigil Stone]] instead of a Heart Stone.
+|-
+|[[SR:Arm of the Sun|Arm of the Sun]]{{CC|Arms of Chaos}}
+|[[SR:The Arms of Chaos|The Arms of Chaos]]||0
+|Requires the [[SR:Arms of Chaos|Arms of Chaos]] [[SR:Creation Club|Creation]]. This staff uses the unenchanted version of the Arm of the Sun as a base object, and requires an [[SR:Orange Sigil Stone|Orange Sigil Stone]] instead of a Heart Stone.
+|-
+|[[SR:Staff of Sheogorath (item)|Staff of Sheogorath]]{{CC|Staff of Sheogorath}}
+|[[SR:Put A Fork In It|Put A Fork In It]]||2
+|Requires the [[SR:Staff of Sheogorath|Staff of Sheogorath]] [[SR:Creation Club|Creation]]. No unenchanted staff is needed for the base; instead, you must obtain the [[SR:Branch of the Tree of Shades|Branch of the Tree of Shades]] and [[SR:Ciirta's Eye|Ciirta's Eye]].
+|}
+
+== Notes ==
+* The charge costs given are the ones found in the [[Skyrim Mod:Creation Kit|Creation Kit]]. These are the actual cost values at skill level 0, rounded down. The cost decreases with higher levels of the controlling skill, resulting in more uses before recharging is needed. At skill level 100 this results in about 1.7 times the uses shown here.
+* The [[Skyrim:Enchanting|Enchanting]] perk [[Skyrim:Soul Siphon|Soul Siphon]], which traps 5% of a creature's soul when you kill it with a weapon, does not work with staves.
+* The holding style of the Sanguine Rose is different compared to other staves. Your character holds the staff much higher up on the handle.
+* The Staff of Jyrik Gauldurson is the only lightning staff that does twice as much Magicka damage.
+* Followers will not recharge staves.{{vn|plain}}
+
+== Bugs ==
+{{Bug|[[#Rally|Rally]] staves claim in their description that they provide extra health and stamina, but they do not actually do so.|vn=1}}
+{{Bug|[[#Summon|Summoning]] staves (e.g. Staff of the Flame Atronach, Staff of the Storm Atronach, Sanguine Rose) may not work if you have the [[Skyrim:Elemental Potency|Elemental Potency]] perk.|vn=1}}
+{{Bug|The enchantment for the Staff of Inspiration doesn't match the effects given by the Rally spell. The enchantment for the Staff of Courage also doesn't match the effects given by the Courage spell.|USKP|1.2.4}}
+{{Bug|Equipping the Staff of Jyrik Gauldurson is also meant to apply ''Jyrik's Blessing'', which increases Magicka and Magicka regeneration. However the script to apply the effect is not actually attached to the item.|USKP|2.0.5}}
+{{Bug|Staves that reanimate a corpse will allow for the body to remain intact after the spell wears off allowing the corpse to be reanimated an unlimited number of times. This is unlike reanimation spells, where the body will disintegrate after the spell wears off.|USKP|2.0.9|Reanimated corpses will disintegrate after the spell wears off.}}
+{{Bug|The keyword checks to make sure the Staff of Repel Lesser Undead, Staff of Turn Greater Undead, Staff of Turn Undead, Staff of Turn Lesser Undead, and Staff of Repel Undead only work on undead are missing.|USKP|2.1.3}}
+{{Bug|The Staff of Fury is missing the secondary courage effect.|USKP|2.1.3}}
+{{Bug|The Staff of Frostbite is missing the slowness effect normally found on Frostbite spells.|USKP|2.1.3}}
+{{Bug|The Staff of Paralysis is missing the keyword check on dragons for the stagger effect.|USKP|2.1.3}}
+{{Bug|The Staff of Daedric Command is missing the stagger magnitude it's supposed to have.|USKP|2.1.3}}
+{{Bug|The Staff of Thunderbolts will cast Lightning Bolt when used, rather than Thunderbolt.|USKP|1.1}}
+{{Bug|The description for the Staff of Jyrik Gauldurson doesn't say that it does 25 points of shock damage.}}
+{{Bug|Halldir's Staff can soul trap [[Skyrim:Dwarven Automatons|Dwarven Automatons]], despite the fact that they don't have souls in the first place.|USSEP|4.3.6|The keywords to keep it from working on Dwemer constructs were missing.}}
+{{Bug|The Staff of Jyrik Gauldurson may only do half as much magicka damage, instead of twice as much magicka damage as the description states.}}
+{{Bug|The Staff of Inspiration will not work when used as intended; when cast on a follower or NPC, you'll get a warning in the upper left corner of your screen, indicating that "[NPC/creature] is too powerful" for the spell, even though Rally is not a level-dependent spell in the first place and so the Rally effect will not be placed on them.|vn=0}}

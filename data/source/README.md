@@ -31,6 +31,7 @@ UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-s
 - [Skyrim:Side Quests](https://en.uesp.net/wiki/Skyrim:Side_Quests)
 - [Skyrim:Specialty Gear](https://en.uesp.net/wiki/Skyrim:Specialty_Gear)
 - [Skyrim:Spells](https://en.uesp.net/wiki/Skyrim:Spells)
+- [Skyrim:Staves](https://en.uesp.net/wiki/Skyrim:Staves)
 - [Skyrim:Thieves Guild](https://en.uesp.net/wiki/Skyrim:Thieves_Guild)
 - [Skyrim:Unique Armor](https://en.uesp.net/wiki/Skyrim:Unique_Armor)
 - [Skyrim:Unique Clothing](https://en.uesp.net/wiki/Skyrim:Unique_Clothing)
