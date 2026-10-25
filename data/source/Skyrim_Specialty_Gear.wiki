@@ -1,0 +1,1599 @@
+{{Trail|Items}}{{TOCright}}
+This page summarizes all of the '''Specialty Gear''' in Skyrim. These are items that can be found in many locations in the game, yet do not qualify as generic weapons or generic armor. For example, it includes weapons and armor that are only used by specific races or factions (e.g., the Stormcloaks, the Thieves Guild, the Blades). It also includes some items, such as pickaxes and woodcutter's axes, that are only used in certain situations.
+
+==Blades Equipment==
+===Blades Weapons===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-weapon-BladesSword.png|48px]]
+| {{Anchor|Blades Sword}}<br>{{ID|0003aeb9|par=1}} || One Handed Sword 
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 10 || 300 || 11
+| 
+* Obtained from [[Skyrim:Delphine|Delphine]]'s secret room in The Sleeping Giant's Inn in [[Skyrim:Riverwood|Riverwood]], as well as [[Skyrim:Sky Haven Temple|Sky Haven Temple]]. 
+*[[Skyrim:Followers|Followers]] inducted into the Blades also carry one, and it can be obtained from their inventory when they are actively following you.
+* One can be found on [[Skyrim:Fultheim|Fultheim]] in [[Skyrim:Nightgate Inn|Nightgate Inn]].
+* One can be looted from the body of [[Skyrim:Lorant Bouchard|Lorant Bouchard]] if you have the [[Skyrim:Dawnfang & Duskfang|Dawnfang & Duskfang]] creation installed.
+|}
+
+===Blades Armor===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+|-
+| [[File:SR-icon-armor-BladesArmor.png|48px]]
+| {{Anchor|Blades Armor}}<br>{{ID|0004b28b|par=1}} || Heavy Armor
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 45 || 400 || 44 || 27
+|-
+| [[File:SR-icon-armor-BladesBoots.png|48px]]
+| {{Anchor|Blades Boots}}<br>{{ID|0004b288|par=1}} || Heavy Boots
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 10 || 85 || 13 || 13
+|-
+| [[File:SR-icon-armor-BladesGauntlets.png|48px]]
+| {{Anchor|Blades Gauntlets}}<br>{{ID|0004b28d|par=1}} || Heavy Gauntlets
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 8 || 85 || 13 || 13
+|-
+| [[File:SR-icon-armor-BladesHelmet.png|48px]]
+| {{Anchor|Blades Helmet}}<br>{{ID|0004b28f|par=1}} || Heavy Helmet
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 12 || 200 || 18 || 18
+|-
+| [[File:SR-icon-armor-BladesShield.png|48px]]
+| {{Anchor|Blades Shield}}<br>{{ID|0004f912|par=1}} || Heavy Shield
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 12 || 225 || 26 ||
+|- class="sortbottom"
+|colspan=4| Totals with shield:
+| 87 || 995 || 114 || rowspan="2" | 71
+|- class="sortbottom"
+|colspan=4| Totals without shield:
+| 75 || 770 || 88
+|}
+
+{{Bug|Apart from the armor rating of the cuirass, which exceeds the [[Skyrim:Ebony Armor|ebony cuirass]] by 1 point, all stats are identical to [[Skyrim:Dwarven Armor|dwarven armor]]. As of patch 1.9, the armor qualifies for matching set bonuses with the [[Skyrim:Steel Plate Armor|steel plate armor]], though it does not benefit from any perk to improve it twice as much.|USKP|2.0.6|The armor rating has been lowered to 34, equal to dwarven. This lowers the total with shield to 104, and without shield to 78.}}
+{{Bug|The shield may become invisible for unknown reasons, especially with vampires.|OSSEP|1.7}}
+* The [[Skyrim:Blades|Blades]] armor can be obtained from a chest in [[Skyrim:Sky Haven Temple|Sky Haven Temple]] after completing [[Skyrim:Alduin's Wall|Alduin's Wall]], or looted from the body of [[Skyrim:Lorant Bouchard|Lorant Bouchard]], if you have the [[Skyrim:Dawnfang & Duskfang|Dawnfang & Duskfang]] creation installed. 
+* Oddly enough, the Blades Sword has an associated perk (Steel), whereas the Blades Armor set does not. This seems inconsistent, given that all of the items need a Steel Ingot to temper them.
+
+====Gallery====
+<gallery>
+File:SR-item-Blades Armor Male.jpg|Blades Armor Male
+File:SR-item-Blades Armor Female.jpg|Blades Armor Female
+</gallery>
+
+==Companions Equipment==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+|-
+| [[File:SR-icon-armor-WolfArmor.png|48px]]
+| {{Anchor|Wolf Armor}}<br>{{ID|000cae15|par=1}} || Heavy Armor
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 20 || 55 || 31 || 27
+|-
+| [[File:SR-icon-armor-WolfBoots.png|48px]]
+| {{Anchor|Wolf Boots}}<br>{{ID|000cee7c|par=1}} || Heavy Boots
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 4 || 11 || 12 || 13
+|-
+| [[File:SR-icon-armor-WolfGauntlets.png|48px]]
+| {{Anchor|Wolf Gauntlets}}<br>{{ID|000cee7e|par=1}} || Heavy Gauntlets
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 4 || 11 || 12 || 13
+|-
+| [[File:SR-icon-armor-WolfHelmet.png|48px]]
+| {{Anchor|Wolf Helmet}}<br>{{ID|0004c3d0|par=1}} || Heavy Helmet
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 4 || 125 || 17 || 18
+|- class="sortbottom"
+|colspan=4| Totals:
+| 32 || 202 || 72 || 71
+|}
+*Functionally the set gives the same protection as [[Skyrim: Steel Armor|Steel Armor]], but lighter. All pieces can be purchased from [[Skyrim:Eorlund Gray-Mane|Eorlund Gray-Mane]] after officially joining the Companions.
+*Wearing the Wolf Gauntlets may make any necklace or amulet worn by the player invisible.
+
+====Gallery====
+<gallery>
+File:SR-item-Wolf Armor Male.jpg|Wolf Armor Male
+File:SR-item-Wolf Armor Female.jpg|Wolf Armor Female
+</gallery>
+
+=={{Anchor|Cultist Equipment}}{{DB}}==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|xx037b8a}} {{AL|C}}|{{icon|c|Cultist Robes|60}}
+|{{Anchor|Cultist Robes}}&nbsp;{{DB}}<br>{{ID|xx037b8a|par=1}}
+|Clothing || N/A || 1 || 331 || || 27
+|
+* These are worn by [[Skyrim:Cultist|cultists]].
+*Enchantment: [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+*Disenchant: Yes
+|-
+|{{Icon|c|Cultist Boots}}
+|{{Anchor|Cultist Boots}}&nbsp;{{DB}}<br>{{ID|xx037b8e|par=1}}
+|Clothing || N/A || 1 || 25 || || 13
+| rowspan=3 |
+* These are worn by [[Skyrim:Cultist|cultists]].
+|-
+|{{Icon|a|Cultist Gloves}}
+|{{Anchor|Cultist Gloves}}&nbsp;{{DB}}<br>{{ID|xx037b8c|par=1}}
+|Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: none
+| 1.5 || 30 || 7 || 13
+|-
+|{{Icon|a|Cultist Mask}}
+|{{Anchor|Cultist Mask}}&nbsp;{{DB}}<br>{{ID|xx037b88|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: none{{Intnote|CH}}
+| 5 || 50 || 17 || 18
+|}
+
+{{Note|CH||{{Bug|The Cultist Mask has no tempering perk.|fixedby=USSEP|fixdetail=It now uses [[Skyrim:Daedric Smithing|Daedric Smithing]] for tempering.|nobullet=1}}}}
+===Gallery===
+<gallery>
+File:SR-item-Cultist Robes Male.jpg|Cultist Robes Male
+File:SR-item-Cultist Robes Female.jpg|Cultist Robes Female
+</gallery>
+
+==Dark Brotherhood Equipment==
+Except for the second version of the Worn Shrouded Armor (<code>00105966</code>), one example of each piece of equipment can be found in the [[Skyrim:Dawnstar Sanctuary|Dawnstar Sanctuary]]. Additional Dark Brotherhood equipment can be found [[Skyrim:Unique Armor#Shrouded Armor|here]].
+
+{| class="wikitable sortable"
+|+ Worn Shrouded Set (Light Armor)
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|rowspan=2| [[File:SR-icon-armor-WornShroudedArmor.png|48px]]
+| {{Anchor|Worn Shrouded Armor}}<br>{{ID|0010eb5b|par=1}}
+| Not possible{{Intnote|WA|†}}
+| rowspan=2 | 6 || rowspan=2 | 80 || rowspan=2 | 20 || rowspan=2 | 27
+| 
+|-
+| {{Anchor|Worn Shrouded Armor}}<br>{{ID|00105966|par=1}}
+| Not possible || 
+* Cannot be equipped by the player.
+|-
+|rowspan=2| [[File:SR-icon-armor-WornShroudedBoots.png|48px]]
+| {{Anchor|Worn Shrouded Boots}}<br>{{ID|0010eb5c|par=1}}
+| Not possible{{Intnote|WA}}
+| rowspan=2 | 2 || rowspan=2 | 45 || rowspan=2 | 3 || rowspan=2 | 13
+| 
+|-
+| {{Anchor|Worn Shrouded Boots}}<br>{{ID|00105967|par=1}}
+| Not possible || 
+* Cannot be equipped by the player.
+|-
+|rowspan=2| [[File:SR-icon-armor-WornShroudedCowl.png|48px]]
+| {{Anchor|Worn Shrouded Cowl}}{{Intnote|Cowl|††}}<br>{{ID|0010eb5d|par=1}}
+| Not possible{{Intnote|WA|†}}
+| rowspan=2 | 2 || rowspan=2 | 50 || rowspan=2 | 8 || rowspan=2 | 18
+| 
+|-
+| {{Anchor|Worn Shrouded Cowl}}<br>{{ID|00105969|par=1}}
+| Not possible ||
+* Cannot be equipped by the player.
+|-
+|rowspan=2| [[File:SR-icon-armor-WornShroudedGloves.png|48px]]
+| {{Anchor|Worn Shrouded Gloves}}<br>{{ID|0010eb5e|par=1}}
+| Not possible{{Intnote|WA|†}}
+| rowspan=2 | 2 || rowspan=2 | 50 || rowspan=2 | 4 || rowspan=2 | 13
+|
+* ''Backstab does double damage''
+* Disenchant: No {{Intnote|Gloves|‡}}
+|-
+| {{Anchor|Worn Shrouded Gloves}}<br>{{ID|00105968|par=1}}
+| Not possible ||
+* Cannot be equipped by the player.<br>
+* ''Backstab does double damage''
+* Disenchant: No
+|- class="sortbottom"
+|colspan=3| Totals:
+| 12 || 225 || 35 || 71
+|}
+{{bug|When picking up the versions that cannot be equipped by the player, they turn invisible in the inventory and can't be dropped. They still add to the carry weight, though. It's the armor found in the master bedroom next to the bed. On the PC they can be dropped with the console command <code>player.drop ID 1</code>, where ID is the respective item ID found in the table.|USKP|1.2}}
+{{bug|Although the Worn Shrouded Gloves display an enchantment in-game, no such enchantment is applied. If the player wishes, a custom enchantment can be applied to the gloves at an [[Skyrim:Arcane Enchanter|arcane enchanter]]. Even with a custom enchantment, the description will still read ''"Backstab does double damage"''.|USKP|1.3.2}}
+{{Note|WA||{{Bug|Worn Shrouded armors cannot be tempered.|fixedby=USKP|fixversion=1.0|nobullet=1}}}}
+{{Note|Cowl|††|{{Bug|The Worn Shrouded Cowl has no model for Argonians or Khajiit. Characters of these races attempting to equip the hood will appear bald. This also enables players to equip it alongside other headgear.|confirmed=1|nobullet=1}}}}
+{{Note|Gloves|‡|The ability to disenchant the Worn Shrouded Gloves was added by the [[Skyrim:USKP|Unofficial Skyrim Patch]]. However, the effect learned cannot be used to enchant an item.}} 
+====Gallery====
+<gallery>
+File:SR-item-Shrouded Armor Male.jpg|Shrouded Armor Male
+File:SR-item-Shrouded Armor Female 02.jpg|Shrouded Armor Female
+File:SR-item-Shrouded Armor Female.jpg|Female, with mask
+</gallery>
+
+==Dawnguard Equipment==
+Dawnguard weapons gain an additional 5 points of damage against vampires. This includes the [[Skyrim:Dawnguard Rune Axe|Dawnguard Rune Axe]] but not the [[Skyrim:Dawnguard Rune Hammer|Dawnguard Rune Hammer]], due to a bug.
+{| class="wikitable sortable"
+!class=unsortable width=48|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-weapon-Dawnguard War Axe.png|48px]]
+| {{Anchor|Dawnguard War Axe}}<br>{{ID|xx00d098|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 13 || 55 || 11
+|
+* Does additional damage to [[Skyrim:Vampire|vampires]].
+* This effect seems not to be considered an enchantment, so these weapons can be enchanted like any normal unenchanted weapon, though they will always display the text "Especially effective against vampires."
+* Three can be found on the top of the northern tower at [[Skyrim:Fort Dawnguard|Fort Dawnguard]] on two weapon plaques.
+
+|-
+| [[File:SR-icon-weapon-Dawnguard Warhammer.png|48px]]
+| {{Anchor|Dawnguard Warhammer}}<br>{{ID|xx00dd55|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 26 || 110 || 22
+|
+* Does additional damage to vampires.
+* One can be found on the top of the northern tower at [[Skyrim:Fort Dawnguard|Fort Dawnguard]] on a weapon plaque.
+|}
+{| class="wikitable sortable striped" style="text-align:center;float:left;margin-right:1em;"
+|+ Dawnguard Light Armor
+!class=unsortable width=48|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-Dawnguard Armor xx00f3fb.png|48px]]<br>[[File:SR-icon-armor-Dawnguard Armor xx00f402.png|48px]]<br>[[File:SR-icon-armor-Dawnguard Armor xx00f404.png|48px]]
+| {{Anchor|Dawnguard Armor}}<br>{{ID|xx00f3fb|Red, Sleeveless on Males|par=1}}<br>{{ID|xx00f402|Gray, w/Left Pauldron|par=1}}<br>{{ID|xx00f404|Brown, w/Canteen|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 6 || 220 || 29 || 27
+| Three colors are available in three different styles.
+|-
+| [[File:SR-icon-armor-Dawnguard Boots.png|48px]]
+| {{Anchor|Dawnguard Boots}}<br>{{ID|xx00f400|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 1.5 || 25 || 8 || 13
+|
+|-
+| [[File:SR-icon-armor-Dawnguard Gauntlets.png|48px]]
+| {{Anchor|Dawnguard Gauntlets}}<br>{{ID|xx00f3fe|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 1.5 || 40 || 8 || 13
+|
+|-
+| [[File:SR-icon-armor-Dawnguard Helmet.png|48px]]
+| {{Anchor|Dawnguard Helmet}}<br>{{ID|xx01989e|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 1.5 || 100 || 16 || 18
+|
+|- class="sortbottom"
+|colspan=3|Totals:
+| 10.5 || 385 || 61 || 71 ||
+|}
+
+{| class="wikitable sortable striped" style="text-align:center;float:left;"
+|+ Dawnguard Heavy Armor
+!class=unsortable width=48|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-Dawnguard Heavy Armor xx00f3fa.png|48px]]<br>[[File:SR-icon-armor-Dawnguard Heavy Armor xx00f3f7.png|48px]]
+| {{Anchor|Dawnguard Heavy Armor}}{{Intnote|DGheavy|§}}<br>{{ID|xx00f3fa|Gray, plain Mail Skirt|par=1}}<br>{{ID|xx00f3f7|Brown, studded Mail Skirt|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 42 || 425 || 34 || 27
+| Two colors are available in two different styles.
+|-
+| [[File:SR-icon-armor-Dawnguard Boots.png|48px]]
+| {{Anchor|Dawnguard Heavy Boots}}{{Intnote|DGheavy|§}}<br>{{ID|xx014757|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 9 || 85 || 13 || 13
+|
+|-
+| [[File:SR-icon-armor-Dawnguard Gauntlets.png|48px]]
+| {{Anchor|Dawnguard Heavy Gauntlets}}{{Intnote|DGheavy|§}}<br>{{ID|xx014758|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 7 || 85 || 13 || 13 || style="text-align:left;"|
+{{Bug|Do not benefit from the [[Skyrim:Fists of Steel|Fists of Steel]] perk.|nobullet=yes|UDGP|2.0.0}}
+|-
+| [[File:SR-icon-armor-Dawnguard Full Helmet.png|48px]]
+| {{Anchor|Dawnguard Full Helmet}}{{Intnote|DGheavy|§}}<br>{{ID|xx0050d0|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 10 || 220 || 18 || 18
+|
+|-
+| [[File:SR-icon-armor-Dawnguard Shield.png|48px]]
+| {{Anchor|Dawnguard Shield}}{{Intnote|DGshield}}<br>{{ID|xx0150b8|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 10 || 240 || 26 || || +5 Bash damage against vampires.
+|- class="sortbottom"
+|colspan=3|Totals (With Shield):
+| 78 || 1055 || 104 || 71 ||
+|- class="sortbottom"
+|colspan=3|Totals (Without Shield):
+| 68 || 815 || 78 || 71 ||
+|}
+{{clear}}
+
+====Bugs====
+{{Bug|The Dawnguard version of the Matching Set perk doesn't properly account for wearing the light vs heavy versions of Dawnguard armor.|UDGP|1.1}}
+
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Dawnguard Heavy Armor Male.jpg|Dawnguard Heavy Armor (Brown)
+File:SR-item-Dawnguard Heavy Armor Male 02.jpg|Dawnguard Heavy Armor (Gray)
+File:SR-item-Dawnguard Armor Male.jpg|Dawnguard Armor (Red)
+File:SR-item-Dawnguard Armor Male 02.jpg|Dawnguard Armor (Gray)
+File:SR-item-Dawnguard Armor Male 03.jpg|Dawnguard Armor (Brown)
+</gallery>
+;Female
+<gallery>
+File:SR-item-Dawnguard Heavy Armor Female.jpg|Dawnguard Heavy Armor (Brown)
+File:SR-item-Dawnguard Heavy Armor Female 02.jpg|Dawnguard Heavy Armor (Gray)
+File:SR-item-Dawnguard Armor Female.jpg|Dawnguard Armor (Red)
+File:SR-item-Dawnguard Armor Female 02.jpg|Dawnguard Armor (Gray)
+File:SR-item-Dawnguard Armor Female 03.jpg|Dawnguard Armor (Brown)
+</gallery>
+
+==Dremora Equipment==
+All of these Dremora-specific items can only be equipped using the console.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-clothing-BlackRobes.png|48px]]
+| {{Anchor|Black Robes}}<br>{{ID|00016ffe|par=1}} || Clothing
+| N/A
+| 1 || 5 || 0
+|rowspan=2|
+* These are specifically worn by Dremora, unlike standard [[Skyrim:Black Robes|Black Robes]] or [[Skyrim:Boots|Boots]].
+|-
+| [[File:SR-icon-clothing-Boots9.png|48px]]
+| {{Anchor|Boots}}<br>{{ID|00016fff|par=1}} || Shoes
+| N/A
+| 1 || 4 || 0
+|-
+| [[File:SR-icon-armor-DaedricArmor.png|48px]]
+| {{Anchor|Daedric Armor}}<br>{{ID|000f1abe|par=1}} || Heavy Armor
+| Not possible
+| 38 || 640 || 49
+|rowspan=4|
+* These varieties of Daedric Armor are specifically worn by Dremora, and are different from the standard [[Skyrim:Daedric Armor|Daedric Armor]], [[Skyrim:Daedric Boots|Daedric Boots]], [[Skyrim:Daedric Gauntlets|Daedric Gauntlets]], and [[Skyrim:Daedric Helmet|Daedric Helmet]]. The boots can be created at the [[SR:Atronach Forge|Atronach Forge]], but this is a [[Skyrim:Atronach_Forge#Bugs|bug]] and they should not be picked up.
+|-
+| [[File:SR-icon-armor-DaedricBoots.png|48px]]
+| {{Anchor|Daedric Boots}}<br>{{ID|000f1abd|par=1}} || Heavy Boots
+| Not possible
+| 9 || 125 || 18
+|-
+| [[File:SR-icon-armor-DaedricGauntlets.png|48px]]
+| {{Anchor|Daedric Gauntlets}}<br>{{ID|000f1ac0|par=1}} || Heavy Gauntlets
+| Not possible
+| 9 || 125 || 18
+|-
+| [[File:SR-icon-armor-DaedricHelmet.png|48px]]
+| {{Anchor|Daedric Helmet}}<br>{{ID|0010f75f|par=1}} || Heavy Helmet
+| Not possible
+| 15 || 1600 || 23
+|}
+
+====Gallery====
+<gallery>
+File:SR-item-Daedric Armor Male.jpg|Daedric Armor Male
+File:SR-item-Daedric Armor Female.jpg|Daedric Armor Female
+</gallery>
+
+=={{Anchor|Dunmer Equipment}}{{DB}}==
+
+{| class="wikitable sortable" style="display:inline-table;"
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|Dunmer Outfit}} {{AL|C}}|{{icon|c|Dunmer Outfit (Yellow)|60}}<br>{{icon|c|Dunmer Outfit (Blue)|60}}<br>{{icon|c|Dunmer Outfit (Red)|60}}
+| {{Anchor|Dunmer Outfit}}&nbsp;{{DB}}<br>{{IDs|xx03706a|Yellow|xx01cdaa|Yellow with hood|xx03706b|Blue|xx037065|Blue with hood|xx03706c|Red|xx037066|Red with hood|par=1|hover=1|sep=<br>}}
+| 2 || 75 || 27
+|
+*Enchantment: [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+|-
+|{{HE|xx03705a}} {{AL|C}}|{{icon|c|Dunmer Shoes}}
+| {{Anchor|Dunmer Shoes}}&nbsp;{{DB}}<br>{{ID|xx03705a|par=1}}
+| 2 || 25 || 27
+|
+*The enchantment type for the shoes is incorrectly assigned to use body enchantments.
+|}
+
+====Gallery====
+<gallery>
+File:SR-item-Dunmer Outfit Male.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Male 02.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Male 03.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Male 04.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Male 05.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Male 06.jpg|Dunmer Outfit Male
+File:SR-item-Dunmer Outfit Female.jpg|Dunmer Outfit Female
+File:SR-item-Dunmer Outfit Female 02.jpg|Dunmer Outfit Female
+File:SR-item-Dunmer Outfit Female 03.jpg|Dunmer Outfit Female
+File:SR-item-Dunmer Outfit Female 04.jpg|Dunmer Outfit Female
+File:SR-item-Dunmer Outfit Female 05.jpg|Dunmer Outfit Female
+File:SR-item-Dunmer Outfit Female 06.jpg|Dunmer Outfit Female
+</gallery>
+
+==Falmer Armor==
+{| class="wikitable sortable" style="display:inline-table;"
+|+ Falmer (Heavy Armor)
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+|-
+| [[File:SR-icon-armor-FalmerArmor.png|48px]]
+| {{Anchor|Falmer Armor}}<br>{{ID|000b83cb|par=1}}
+| rowspan=4 | [[Skyrim:Chaurus Chitin|Chaurus Chitin]]
+Perk:&nbsp;None/[[Skyrim:Advanced Armors|Advanced]]{{DG}}
+| 20 || 275 || 31 || 27
+|-
+| [[File:SR-icon-armor-FalmerBoots.png|48px]]
+| {{Anchor|Falmer Boots}}<br>{{ID|000b83cd|par=1}}
+| 4 || 55 || 12 || 13
+|-
+| [[File:SR-icon-armor-FalmerGauntlets.png|48px]]
+| {{Anchor|Falmer Gauntlets}}<br>{{ID|000b83cf|par=1}}
+| 4 || 55 || 12 || 13
+|-
+| [[File:SR-icon-armor-FalmerHelmet.png|48px]]
+| {{Anchor|Falmer Helmet}}<br>{{ID|0004c3cb|par=1}}
+| 5 || 25 || 10 || 18
+|-
+| [[File:SR-icon-armor-FalmerShield.png|48px]]
+| {{Anchor|Falmer Shield}}<br>{{ID|0005c06c|par=1}}
+| [[Skyrim:Chaurus Chitin|Chaurus Chitin]]
+Perk:&nbsp;None
+| 15 || 10 || 28 || 
+|- class="sortbottom"
+|colspan=3| Totals (without shield):
+| 33 || 410 || 65
+| rowspan = 2 | 71
+|- class="sortbottom"
+|colspan=3| Totals (with shield):
+| 48 || 420 || 93
+|}
+{| class="wikitable sortable" style="display:inline-table;"
+|+ Ancient Falmer (Light Armor){{DG}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-Ancient Falmer Boots.png|48px]]
+| {{Anchor|Ancient Falmer Boots}}&nbsp;{{DG}}<br>{{ID|xx00c815|par=1}}
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;[[Skyrim:Elven#Elven_Smithing|Elven]]
+| 2 || 190 || 11 || 13
+| 
+|-
+| [[File:SR-icon-armor-Ancient Falmer Crown.png|48px]]
+| {{Anchor|Ancient Falmer Crown}}&nbsp;{{DG}}<br>{{ID|xx00c814|par=1}}
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;None/[[Skyrim:Elven#Elven_Smithing|Elven]]
+| 2 || 350 || 0/16 || 18
+|
+{{Bug|Normally unobtainable without console commands, and is normally a ''circlet'', not light armor.|fixedby=UDGP|fixversion=2.0.2|fixdetail=It makes this item available from [[Skyrim:Arch-Curate Vyrthur|Arch-Curate Vyrthur]] along with the other Ancient Falmer gear.|trackerid=14881}}
+|-
+| [[File:SR-icon-armor-Ancient Falmer Cuirass.png|48px]]
+| {{Anchor|Ancient Falmer Cuirass}}&nbsp;{{DG}}<br>{{ID|xx00c816|par=1}}<br>{{ID|xx00cad3|par=1}}
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;[[Skyrim:Elven#Elven_Smithing|Elven]]
+| 7 || 900 || 38 || 27
+| 
+*The first version (<code>xx00c816</code>) is worn by [[Skyrim:Arch-Curate Vyrthur|Arch-Curate Vyrthur]] and can be obtained during the quest [[Skyrim:Touching the Sky|Touching the Sky]]
+*The second version (<code>xx00cad3</code>) is worn by [[Skyrim:Knight-Paladin Gelebor|Knight-Paladin Gelebor]] and can only be equipped using the console. For males this version has no shoulder pads. For females it is identical to the first version.
+|-
+| [[File:SR-icon-armor-Ancient Falmer Gauntlets.png|48px]]
+| {{Anchor|Ancient Falmer Gauntlets}}&nbsp;{{DG}}<br>{{ID|xx00c817|par=1}}
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;[[Skyrim:Elven#Elven_Smithing|Elven]]
+| 2 || 190 || 11 || 13
+|
+|- class="sortbottom"
+|colspan=3| Totals (without crown):
+| 11 || 1280 || 60 || 53
+|- class="sortbottom"
+|colspan=3| Totals (with crown):
+| 13 || 1630 || 76 || 71
+|}
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Falmer Armor Male.jpg|Falmer Armor
+File:SR-item-Ancient Falmer Armor Male.jpg|Ancient Falmer Armor
+</gallery>
+;Female
+<gallery>
+File:SR-item-Falmer Armor Female.jpg|Falmer Armor
+File:SR-item-Ancient Falmer Armor Female.jpg|Ancient Falmer Armor
+</gallery>
+==Guard Equipment==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-StormcloakHelmet.png|48px]]
+| {{Anchor|Eastmarch Guard Helmet}}<br>{{ID|0010559d|par=1}} || Light Helmet
+| Not possible
+| 2 || 12 || 12 || 18
+| 
+* Cannot be obtained.
+|-
+| [[File:SR-icon-armor-FalkreathGuard'sArmor.png|48px]]
+| {{Anchor|Falkreath Guard's Armor}}<br>{{ID|0002151e|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-FalkreathGuard'sHelmet.png|48px]]
+| {{Anchor|Falkreath Guard's Helmet}}<br>{{ID|00021619|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-FalkreathGuard'sShield.png|48px]]
+| {{Anchor|Falkreath Guard's Shield}}<br>{{ID|000214ed|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-HjaalmarchGuard'sArmor.png|48px]]
+| {{Anchor|Hjaalmarch Guard's Armor}}<br>{{ID|00021520|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-HjaalmarchGuard'sHelmet.png|48px]]
+| {{Anchor|Hjaalmarch Guard's Helmet}}<br>{{ID|0002161b|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-HjaalmarchGuard'sShield.png|48px]]
+| {{Anchor|Hjaalmarch Guard's Shield}}<br>{{ID|000214ef|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-MarkarthGuard'sArmor.png|48px]]
+| {{Anchor|Markarth Guard's Armor}}<br>{{ID|00021508|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-MarkarthGuard'sHelmet.png|48px]]
+| {{Anchor|Markarth Guard's Helmet}}<br>{{ID|00021613|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-MarkarthGuard'sShield.png|48px]]
+| {{Anchor|Markarth Guard's Shield}}<br>{{ID|000214dc|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-PaleGuard'sArmor.png|48px]]
+| {{Anchor|Pale Guard's Armor}}<br>{{ID|00021525|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-PaleGuard'sHelmet.png|48px]]
+| {{Anchor|Pale Guard's Helmet}}<br>{{ID|0002161f|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-PaleGuard'sShield.png|48px]]
+| {{Anchor|Pale Guard's Shield}}<br>{{ID|000214f7|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-RiftenGuard'sArmor.png|48px]]
+| {{Anchor|Riften Guard's Armor}}<br>{{ID|00021507|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-RiftenGuard'sHelmet.png|48px]]
+| {{Anchor|Riften Guard's Helmet}}<br>{{ID|00021622|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-RiftenGuard'sShield.png|48px]]
+| {{Anchor|Riften Guard's Shield}}<br>{{ID|000214ba|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-SolitudeGuard'sArmor.png|48px]]
+| {{Anchor|Solitude Guard's Armor}}<br>{{ID|000c7f5b|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-SolitudeGuard'sHelmet.png|48px]]
+| {{Anchor|Solitude Guard's Helmet}}<br>{{ID|000c7f5c|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-SolitudeGuard'sShield.png|48px]]
+| {{Anchor|Solitude Guard's Shield}}<br>{{ID|000214f4|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-WhiterunGuard'sArmor.png|48px]]
+| {{Anchor|Whiterun Guard's Armor}}<br>{{ID|0002150d|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+* Sold by [[Skyrim:Adrianne Avenicci|Adrianne Avenicci]] and [[Skyrim:Lucan Valerius|Lucan Valerius]].
+|-
+| [[File:SR-icon-armor-WhiterunGuard'sHelmet.png|48px]]
+| {{Anchor|Whiterun Guard's Helmet}}<br>{{ID|00021615|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-WhiterunGuard'sShield.png|48px]]
+| {{Anchor|Whiterun Guard's Shield}}<br>{{ID|000214e0|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+|-
+| [[File:SR-icon-armor-WindhelmGuard'sShield.png|48px]]
+| {{Anchor|Windhelm Guard's Shield}}<br>{{ID|000214eb|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+|
+* This is the only armor piece specific to Windhelm guards.<br>They use [[#Stormcloak Equipment|Stormcloak Equipment]] for the rest of their gear.
+|-
+| [[File:SR-icon-armor-WinterholdGuard'sArmor.png|48px]]
+| {{Anchor|Winterhold Guard's Armor}}<br>{{ID|00021522|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+| 
+|-
+| [[File:SR-icon-armor-WinterholdGuard'sHelmet.png|48px]]
+| {{Anchor|Winterhold Guard's Helmet}}<br>{{ID|0002161d|par=1}} || Light Helmet
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 2 || 35 || 11 || 18
+| 
+|-
+| [[File:SR-icon-armor-WinterholdGuard'sShield.png|48px]]
+| {{Anchor|Winterhold Guard's Shield}}<br>{{ID|000214f1|par=1}} || Heavy Shield
+| [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk:&nbsp;none
+| 3 || 40 || 17 ||
+| 
+* There is only one copy of this shield in the game, found on the guard that patrols [[Skyrim:Whistling Mine|Whistling Mine]] southeast of Winterhold. It can be pickpocketed. If the Imperials have gained control of Winterhold as part of the Civil War (or the negotiations during Season Unending) then this guard will be replaced by an Imperial Soldier who does not carry the shield. None of the other Hold guards carry the shield.
+|}
+
+==Imperial Soldier Equipment==
+
+===Imperial Soldier Weapons===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-weapon-ImperialBow.png|48px]]
+| {{Anchor|Imperial Bow}}<br>{{ID|00013841|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;Steel Smithing
+| 8 || 90 || 9 || 
+*Draw speed 0.875
+|-
+| [[File:SR-icon-weapon-ImperialSword.png|48px]]
+| {{Anchor|Imperial Sword}}<br>{{ID|000135b8|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 10 || 23 || 8 || 
+|}
+
+===Imperial Soldier Armor===
+
+{| class="wikitable sortable" style="display:inline-table;"
+|+ {{Anchor|Imperial Light}} Armor ([[sr:Light Armor|Light]])
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+|-
+| [[File:SR-icon-armor-ImperialLightArmor.png|48px]]
+| {{Anchor|Imperial Light Armor}}<br>{{ID|00013ed9|par=1}}
+| rowspan=5 | [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+|-
+| [[File:SR-icon-armor-ImperialLightBoots.png|48px]]
+| {{Anchor|Imperial Light Boots}}<br>{{ID|00013ed7|par=1}}
+| 2 || 15 || 6 || 13
+|-
+| [[File:SR-icon-armor-ImperialLightBracers.png|48px]]
+| {{Anchor|Imperial Light Bracers}}<br>{{ID|00013eda|par=1}}
+| 1 || 15 || 6 || 13
+|-
+| [[File:SR-icon-armor-ImperialLightHelmet.png|48px]]
+| {{Anchor|Imperial Light Helmet}}<br>{{ID|00013edb|par=1}}
+| 2 || 35 || 11 || 18
+|-
+| [[File:SR-icon-armor-ImperialLightShield.png|48px]]
+| {{Anchor|Imperial Light Shield}}<br>{{ID|00013ab2|par=1}}
+| 4 || 40 || 19 ||
+|-
+| [[File:SR-icon-armor-StuddedImperialArmor.png|48px]]
+| {{Anchor|Studded Imperial Armor}}{{Intnote|Studded|†}}<br>{{ID|00013ed8|par=1}}
+| Not possible {{Intnote|Studded|†}}
+| 6 || 125 || 23 || 27
+|- class="sortbottom"
+| colspan=3| Totals (without shield):
+| 11 || 140/190 || 46 || rowspan="2" | 71
+|- class="sortbottom"
+| colspan=3| Totals (with shield):
+| 15 || 180/230 || 65
+|}
+{| class="wikitable sortable" style="display:inline-table;"
+|+ {{Anchor|Penitus Oculatus}} Armor ([[sr:Light Armor|Light]])
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+|-
+| [[File:SR-icon-armor-PenitusOculatusArmor.png|48px]]
+| {{Anchor|Penitus Oculatus Armor}}<br>{{ID|000d3ea0|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none
+| 6 || 75 || 23 || 27
+|-
+| [[File:SR-icon-armor-PenitusOculatusBoots.png|48px]]
+| {{Anchor|Penitus Oculatus Boots}}<br>{{ID|000d3ea7|par=1}}
+| rowspan=3 | [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 1 || 15 || 6 || 13
+|-
+| [[File:SR-icon-armor-PenitusOculatusBracers.png|48px]]
+| {{Anchor|Penitus Oculatus Bracers}}<br>{{ID|000d3eab|par=1}}
+| 1 || 15 || 6 || 13
+|-
+| [[File:SR-icon-armor-PenitusOculatusHelmet.png|48px]]
+| {{Anchor|Penitus Oculatus Helmet}}{{intnote|penitusoculatushelmet|††}}<br>{{ID|000d3eaa|par=1}}
+| 1 || 35 || 11 || 18
+|- class="sortbottom"
+| colspan=3| Totals:
+| 9 || 140 || 46 || 71
+|}
+{| class="wikitable sortable" style="display:inline-table;"
+|+ {{Anchor|Imperial Heavy}} Armor ([[sr:Heavy Armor|Heavy]])
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-ImperialArmor.png|48px]]
+| {{Anchor|Imperial Armor}}<br>{{ID|000136d5|par=1}}
+| rowspan=4|[[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 35 || 100 || 25 || 27
+| 
+|-
+| [[File:SR-icon-armor-ImperialBoots.png|48px]]
+| {{Anchor|Imperial Boots}}<br>{{ID|000136d6|par=1}}
+| 8 || 20 || 10 || 13
+| 
+|-
+| [[File:SR-icon-armor-ImperialBracers.png|48px]]
+| {{Anchor|Imperial Bracers}}<br>{{ID|000136d4|par=1}}
+| 4 || 15 || 10 || 13
+| Identical in appearance to the [[Skyrim:Steel Imperial Gauntlets|Steel Imperial Gauntlets]].
+|-
+| [[File:SR-icon-armor-ImperialHelmet(full).png|48px]]
+| {{Anchor|Imperial Helmet}}<br>{{ID|0009610d|par=1}}
+| 5 || 30 || 18 || 18
+|
+* This is a full-face version of the Imperial Helmet; there are exactly 3 of them:
+** 1 during [[Skyrim:Scoundrel's Folly|Scoundrel's Folly]].
+** 1 just inside the entrance of Meridia's Temple, next to a desecrated corpse. 
+** 1 at a Shrine of Talos on a mountaintop, following the path south of [[Skyrim:Froki's Shack|Froki's Shack]]. This one respawns.
+|-
+| [[File:SR-icon-armor-ImperialHelmet(open).png|48px]]
+| {{Anchor|Imperial Helmet}}<br>{{ID|00013edc|par=1}}
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;none{{Intnote|IH|‡}}
+| 5 || 50 || 15 || 18
+| 
+|-
+| [[File:SR-icon-armor-ImperialOfficer'sHelmet.png|48px]]
+| {{Anchor|Imperial Officer's Helmet}}<br>{{ID|000136cf|par=1}}
+| rowspan=2 | [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 4 || 30 || 17 || 18
+|
+*Found in [[Skyrim:Alftand#Alftand_Alftand_Animonculory| Alftand Animonculory]] by searching [[Skyrim:Sulla_Trebatius|Sulla Trebatius's]] pack near the lift.
+*Worn by the [[Skyrim:Imperial Captain|Imperial Captain]] during the quest [[Skyrim:Unbound|Unbound]]. 
+**Can be acquired by killing her after following [[Skyrim:Ralof|Ralof]]. 
+*Also worn by a [[Skyrim:Scavenger|Scavenger]] in a [[Skyrim:World_Interactions#Scavenger|random encounter]].
+|-
+| [[File:SR-icon-armor-ImperialShield.png|48px]]
+| {{Anchor|Imperial Shield}}<br>{{ID|000135ba|par=1}}
+| 12 || 50 || 20 || 
+| 
+|- class="sortbottom"
+| colspan=3| Totals (without shield):
+| 52/52/51 || 165/185/165 || 63/60/62 || rowspan="2" | 71
+|- class="sortbottom"
+| colspan=3| Totals (with shield):
+| 63/63/62 || 215/235/215 || 83/80/82
+|}
+{{Note|Studded|†|Although described in-game as Imperial "medium" armor, it is actually light armor.
+{{Bug|The studded Imperial armor cannot be tempered at a workbench.|nobullet=0|USKP|1.0}}}}
+{{note|penitusoculatushelmet|††|
+{{Bug|This item is one of only three items in the game (along with [[Skyrim:Falmer Helmet|Falmer Helmet]]s and the [[Skyrim:Jagged Crown|Jagged Crown]]) that fills only the "hair" body part slot when worn. This means that it can be worn simultaneously with any [[Skyrim:circlet|circlet]] or a [[Skyrim:Dragon Priest Mask|Dragon Priest Mask]]. Out of the three items, the Penitus Oculatus Helmet is the most lightweight.|USKP|1.2|nobullet=1}}
+}}
+{{Note|IH|‡|{{Bug|The open-faced Imperial Helmet does not use the Steel Smithing perk.|nobullet=1|USKP|1.2}}}}
+
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Imperial Armor Male.jpg|Imperial Armor
+File:SR-item-Imperial Armor Male 02.jpg|Full-face Imperial Helmet
+File:SR-item-Imperial Armor Male 03.jpg|Imperial Officer Helmet
+File:SR-item-Imperial Light Armor Male.jpg|Imperial Light Armor
+File:SR-item-Imperial Light Armor Male 02.jpg|Studded Imperial Armor and Imperial Shield
+File:SR-item-Penitus Oculatus Armor Male.jpg|Penitus Oculatus Armor
+</gallery>
+;Female
+<gallery>
+File:SR-item-Imperial Armor Female.jpg|Imperial Armor
+File:SR-item-Imperial Armor Female 02.jpg|Full-face Imperial Helmet
+File:SR-item-Imperial Armor Female 03.jpg|Imperial Officer Helmet
+File:SR-item-Imperial Light Armor Female.jpg|Imperial Light Armor
+File:SR-item-Imperial Light Armor Female2.jpg|Studded Imperial Armor and Imperial Shield
+File:SR-item-Penitus Oculatus Armor Female.jpg|Penitus Oculatus Armor
+</gallery>
+
+=={{Anchor|Morag Tong Equipment}}{{DB}}==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Morag Tong Armor}}
+|{{Anchor|Morag Tong Armor}}<br>{{ID|xx0292ac|par=1}}
+|Light Armor || [[Skyrim:Leather|Leather]];<br>perk: [[Skyrim:Advanced Armors|Advanced]]
+|5||150||26||27
+| rowspan=5 |
+* These are worn by [[Skyrim:Morag Tong Assassin|Morag Tong assassins]].
+|-
+|{{Icon|a|Morag Tong Boots}}
+|{{Anchor|Morag Tong Boots}}<br>{{ID|xx0292ab|par=1}}
+|Light Boots || [[Skyrim:Leather|Leather]];<br>perk: [[Skyrim:Advanced Armors|Advanced]]
+|2||35||8||13
+|-
+|{{Icon|a|Morag Tong Bracers}}
+|{{Anchor|Morag Tong Bracers}}<br>{{ID|xx0292ad|par=1}}
+|Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: [[Skyrim:Advanced Armors|Advanced]]
+|2||25||7||13
+|-
+|{{Icon|a|Morag Tong Hood}}
+|{{Anchor|Morag Tong Hood}}<br>{{ID|xx0292ae|par=1}}
+|Light Helmet || [[Skyrim:Leather|Leather]];<br>perk: [[Skyrim:Advanced Armors|Advanced]]
+|1.5||2||12||18
+|- class="sortbottom"
+| colspan=4| Totals:
+| 10.5 || 212 || 53 || 71
+|}
+{{Bug|When you perform a cinematic decapitation of a [[Skyrim:Morag Tong Assassin|Morag Tong Assassin]] wearing a Morag Tong hood, you will see the head separate from the body, but the body will still appear to have a head wearing the hood. Looting the hood from the body will reveal the expected neck stump.|confirmed=1}}
+===Gallery===
+<gallery>
+File:SR-item-Morag Tong Armor Male.jpg|Morag Tong Armor Male
+File:SR-item-Morag Tong Armor Female.jpg|Morag Tong Armor Female
+</gallery>
+
+==Silver Hand Equipment==
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-weapon-SilverSword.png|48px]]
+| {{Anchor|Silver Sword}}<br>{{ID|0010aa19|par=1}} || One-Handed Sword || possible
+| 7 || 100 || 8
+|rowspan=2|
+''Especially effective against undead.''
+*Silver weapons can be found wielded by Silver Hand members during the Companions questline.
+**A Silver Sword can also be found in Valerica's Study.
+*Silver weapons add +20 to their base damage when attacking [[Skyrim:Werewolf|werewolves]], [[Skyrim:Werebear|werebears]]{{DB}}, and [[Skyrim:Undead|undead]], including some ghosts (ghostly animals are still animals, and some humanoid ghosts are still marked as their base race instead) and [[Skyrim:Vampire|vampire]]s. Your character's weapon skill does not affect this hidden enchantment. The Barbarian and Armsman perks, however, do affect it. 
+{{Bug|This effect is not considered an enchantment, so silver weapons can be [[Skyrim:Enchanting|enchanted]] like any normal unenchanted weapon, though they will always display the text "Especially effective against undead."|USKP|1.0|Enchantment text is made visible but for this to work the notice about undead had to be removed, and information is now provided via a loading screen text entry.}}
+**{{pc22}} PC players can use the mod [[Skyrim Mod:Enchantable Special Item Fix|Enchantable Special Item Fix]] to instead properly concatenate the text so they can see both the intrinsic special effect and the added enchantments.
+{{Bug|Using a spell (healing, oak flesh) while holding a silver weapon negates the extra damage, re-equipping the weapon fixes this. Tested on Special Edition.|vn=1}}
+{{bug|Sometimes silver weapons do not show any description text.|confirmed=1}}
+{{Bug|Silver weapons cannot be improved at a grindstone.|USKP|1.0|Tempering is made possible with a [[skyrim:Silver|silver ingot]].}}
+|-
+| [[File:SR-icon-weapon-SilverGreatsword.png|48px]]
+| {{Anchor|Silver Greatsword}}<br>{{ID|0010c6fb|par=1}} || Two-Handed Sword || possible
+| 12 || 160 || 17
+|-
+|}
+
+=={{Anchor|Skaal Equipment}}{{DB}}==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Skaal Boots}}
+|{{Anchor|Skaal Boots}}<br>{{ID|xx039112|par=1}}
+|Light Boots || N/A
+|1.5||30||7||24
+| rowspan=5 |
+* These are worn by the [[Skyrim:Skaal Village People|Skaal people]] in [[Skyrim:Skaal Village|Skaal Village]] and [[Skyrim:Hunter|Hunters]] in the wilderness of Solstheim. 
+* A complete set can be found scattered on a rock ledge next to a skeleton in [[Skyrim:Highpoint Tower|Highpoint Tower]] during the quest [[Skyrim:Old Friends|Old Friends]].
+* A coat, gloves and boots can be found on [[Skyrim:Eydis (Dragonborn)|Eydis]] in [[Skyrim:Fahlbtharz|Fahlbtharz]], just before entering the boilery.
+* A coat, boots and hat can be found on the [[Skyrim:Skaal Villager|Skaal Villager]]{{CC|Alternative Armors - Stalhrim Fur}} south of [[SR:Skaal Village|Skaal Village]]. {{Map Link|x=70303|y=65118|zoom=16|map=DB}}
+* A hat can be found on a barrel in an [[Skyrim:Unmarked Places#Reaver's End|unmarked location]] southwest from [[Skyrim:Hrothmund's Barrow|Hrothmund's Barrow]]. {{Map Link|x=41009|y=72590|zoom=16|map=DB}}
+* A pair of boots can be found at the [[SR:Skaal Village|Skaal Village]] [[Skyrim:Fishing (activity)|fishing location]]{{CC|Fishing}}. {{Map Link|x=76948|y=76508|zoom=16|map=DB}}
+|-
+|{{Icon|a|Skaal Coat}}
+|{{Anchor|Skaal Coat}}<br>{{ID|xx03910e|par=1}}
+|Light Armor || N/A
+|5||100||26||54
+|-
+|{{Icon|a|Skaal Gloves}}
+|{{Anchor|Skaal Gloves}}<br>{{ID|xx039110|par=1}}
+|Light Gauntlets || N/A
+|1.5||30||7||24
+|-
+|{{Icon|a|Skaal Hat}}
+|{{Anchor|Skaal Hat}}<br>{{ID|xx039114|par=1}}
+|Light Helmet || N/A
+|1.5||400||6||29
+|- class="sortbottom"
+| colspan=4| Totals:
+| 9.5 || 560 || 46 || 131
+|}
+===Gallery===
+<gallery>
+File:SR-item-Skaal Clothes Male.jpg|Skaal Clothes Male
+File:SR-item-Skaal Clothes Female.jpg|Skaal Clothes Female
+</gallery>
+
+==Stormcloak Equipment==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-FurBoots.png|48px]]
+| {{Anchor|Fur Boots}}<br>{{ID|000a6d7f|par=1}} || Light Boots
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 2 || 5 || 5 || 24
+|rowspan=2|
+* These boots and gauntlets are specific to guards and [[Skyrim:Stormcloaks|Stormcloaks]]. [[Skyrim:Armor#Light_Armor|Standard Fur equipment]] is worn by [[Skyrim:Bandit|Bandits]], who instead wear Fur Shoes and Fur Bracers.
+|-
+| [[File:SR-icon-armor-FurGauntlets.png|48px]]
+| {{Anchor|Fur Gauntlets}}<br>{{ID|000a6d7d|par=1}} || Light Gauntlets
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 2 || 5 || 5 || 7
+|-
+| rowspan=2| [[File:SR-icon-armor-StormcloakCuirass.png|48px]]
+| {{Anchor|Stormcloak Cuirass}}<br>{{ID|000a6d7b|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 8 || 25 || 21 || 27
+|
+* Also worn by guards in [[Skyrim:Windhelm|Windhelm]], and are similar in style to those worn by guards in other cities. (They differ only in color.)
+|-
+|{{Anchor|Stormcloak Cuirass}}<br>{{ID|000ad5a0|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 8 || 25 || 21 || 27
+|
+* This version has sleeves and cannot be found in the game.
+|-
+| [[File:SR-icon-armor-StormcloakHelmet.png|48px]]
+| {{Anchor|Stormcloak Helmet}}<br>{{ID|000a6d79|par=1}} || Light Helmet
+| [[Skyrim:Leather|Leather]]{{Intnote|StormcloakHelmet}};<br>perk:&nbsp;none
+| 2 || 12 || 10 || 18
+|
+* Also worn by guards in Windhelm, and are similar in style to those worn by guards in other cities. (They differ only in color.)
+|-
+| [[File:SR-icon-armor-StormcloakOfficerArmor.png|48px]]
+| {{Anchor|Stormcloak Officer Armor}}<br>{{ID|0008697e|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 8 || 35 || 27 || 54
+| 
+|-
+| [[File:SR-icon-armor-StormcloakOfficerBoots.png|48px]]
+| {{Anchor|Stormcloak Officer Boots}}<br>{{ID|00086981|par=1}} || Light Boots
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 2 || 7 || 7 || 24
+|
+{{Bug|Classified as Light Armor in-game, but instead is affected by Heavy Armor skill and perks, meaning there's no set bonus.|fixedby=OSP|fixversion=1.9}}
+|-
+| [[File:SR-icon-armor-StormcloakOfficerBracers.png|48px]]
+| {{Anchor|Stormcloak Officer Bracers}}<br>{{ID|00086983|par=1}} || Light Gauntlets
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 2 || 7 || 7 || 24
+| 
+|-
+| [[File:SR-icon-armor-StormcloakOfficerHelmet.png|48px]]
+| {{Anchor|Stormcloak Officer Helmet}}<br>{{ID|00086985|par=1}} || Light Helmet
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 2 || 15 || 12 || 29
+| 
+|- class="sortbottom"
+| colspan=4| Totals (Stormcloak set):
+| 14 || 47 || 41 || 76
+|- class="sortbottom"
+| colspan=4| Totals (Stormloak Officer set):
+| 14 || 64 || 53 || 131
+|}
+{{Note|StormcloakHelmet||{{Bug|The Stormcloak Helmet is improved with leather while all other guard helmets use iron ingots. This doesn't make sense, as it serves as the equivalent of the helmet for Windhelm and Eastmatch Hold guards and they only slightly vary in color between each other.|USLEEP|3.0.8|The Stormcloak Helmet is now improved with iron ingots to match the other hold guard helmets in the game.|nobullet=1}}}}
+* A full set of Stormcloak Officer gear is worn by [[Skyrim:Captain_Valmir|Captain Valmir]] during [[Skyrim:Siege_on_the_Dragon_Cult|Siege on the Dragon Cult]]. If he wears it at the start of the quest he will need to be killed before completing the dungeon to obtain it.
+* A full set of Stormcloak Officer gear can be obtained each time the [[Skyrim:Dark_Brotherhood|Dark Brotherhood's]] radiant repeatable [[Skyrim:The_Dark_Brotherhood_Forever|quest]] has the [[Skyrim:Beautiful_Barbarian|Beautiful Barbarian]] as the target.
+
+====Gallery====
+<gallery>
+File:SR-item-Stormcloak Armor Male.jpg|Stormcloak Armor Male
+File:SR-item-Stormcloak Armor Female.jpg|Stormcloak Armor Female
+File:SR-item-Stormcloak Officer Armor Male.jpg|Stormcloak Officer Armor Male
+File:SR-item-Stormcloak Officer Armor Female.jpg|Stormcloak Officer Armor Female
+</gallery>
+
+=={{Anchor|Telvanni Equipment}}{{DB}}==
+
+{| class="wikitable sortable" style="display:inline-table;"
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|xx0376ed}} {{AL|C}}|{{icon|c|Telvanni Robes|60}}
+| {{Anchor|Telvanni Robes}}&nbsp;{{DB}}<br>{{ID|xx0376ed|par=1}}
+| 2 || 75 || 27
+|
+*Enchantment: [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+*These are worn by [[Skyrim:Ildari Sarothril|Ildari Sarothril]].
+*When worn by male characters, they appear the same as those worn by [[Skyrim:Neloth|Neloth]]; however on female characters they display [[Skyrim:Heart Stone|heart stone]] straps and bloodstains seen when Ildari wears them.
+|-
+|{{HE|xx035677}} {{AL|C}}|{{icon|c|Telvanni Shoes}}
+| {{Anchor|Telvanni Shoes}}&nbsp;{{DB}}<br>{{ID|xx035677|par=1}}
+| 0 || 1073 || 13
+|
+*Enchantment: [[Skyrim:Resist Shock|Resist Shock]], 70 pts
+*These are worn by [[Skyrim:Neloth|Neloth]].
+|}
+
+====Gallery====
+<gallery>
+File:SR-item-Telvanni Robes Male.jpg|Telvanni Robes Male
+File:SR-item-Telvanni Robes Female.jpg|Telvanni Robes Female
+</gallery>
+
+=={{Anchor|Temple Priest Equipment}}{{DB}}==
+
+{| class="wikitable sortable" style="display:inline-table;"
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{HE|xx01cdab}} {{AL|C}}|{{icon|c|Temple Priest Robes}}
+| {{Anchor|Temple Priest Robes}}&nbsp;{{DB}}<br>{{ID|xx01cdab|par=1}}
+| 2 || 75 || 27
+|
+*Enchantment: [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+*These are worn by [[Skyrim:Galdrus Hlervu|Galdrus Hlervu]] and [[Skyrim:Elder Othreloth|Elder Othreloth]].
+|-
+|{{HE|xx03b04b}} {{AL|C}}|{{icon|c|Temple Priest Boots}}
+| {{Anchor|Temple Priest Boots}}&nbsp;{{DB}}<br>{{ID|xx03b04b|par=1}}
+| 1 || 25 || 13
+|
+*These are worn by [[Skyrim:Galdrus Hlervu|Galdrus Hlervu]] and [[Skyrim:Elder Othreloth|Elder Othreloth]].
+|-
+|{{HE|xx03b04e}} {{AL|C}}|{{icon|c|Temple Priest Hood}}
+| {{Anchor|Temple Priest Hood}}&nbsp;{{DB}}<br>{{ID|xx03b04e|par=1}}
+| 2 || 25 || 18
+|
+*This is worn by [[Skyrim:Galdrus Hlervu|Galdrus Hlervu]].
+|}
+
+====Gallery====
+<gallery>
+File:SR-item-Temple Priest Robes Male.jpg|Temple Priest Robes Male
+File:SR-item-Temple Priest Robes Female.jpg|Temple Priest Robes Female
+</gallery>
+
+==Thalmor Equipment==
+{| class="wikitable sortable" style="display:inline-table;"
+|+ {{Anchor|Thalmor Armor}} ([[sr:Light Armor|Light]])
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-ElvenLightArmor(m).png|48px]][[File:SR-icon-armor-ElvenArmor.png|48px]]
+| {{Anchor|Elven Light Armor}}<br>{{ID|00105f12|par=1}}
+| rowspan=4 | [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;[[Skyrim:Elven Smithing|Elven]]
+| 4 || 125 || 26 || 27
+|rowspan=4|
+*Appearance identical to [[Skyrim:Elven Armor|elven armor]] without pauldrons, but has the same armor rating as [[Skyrim:Leather Armor|leather armor]]. Despite the name, has the same weight as normal Elven gear.
+|-
+|{{AL|C}}| [[File:SR-icon-armor-ElvenBoots.png|48px]]
+| {{Anchor|Elven Light Boots}}<br>{{ID|00105f11|par=1}}
+| 1 || 25 || 7 || 13
+|-
+|{{AL|C}}| [[File:SR-icon-armor-ElvenGauntlets.png|48px]]
+| {{Anchor|Elven Light Gauntlets}}<br>{{ID|00105f13|par=1}}
+| 1 || 25 || 7 || 13
+|-
+|{{AL|C}}| [[File:SR-icon-armor-ElvenHelmet.png|48px]]
+| {{Anchor|Elven Light Helmet}}<br>{{ID|00105f14|par=1}}
+| 1 || 60 || 12 || 18
+|- class="sortbottom"
+| colspan=3|Totals:
+| 7 || 235 || 52 || 71
+|}
+{| class="wikitable sortable" style="display:inline-table;"
+|+ {{Anchor|Thalmor Clothing}}
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Thalmor Robes.png|48px]]
+| {{Anchor|Hooded Thalmor Robes}}<br>{{ID|0010c698|par=1}}
+| 5 || 410 || 0 || 54
+| ''Destruction spells cost 12% less to cast:''
+* [[Skyrim:Fortify Destruction|Fortify Destruction]], 12 pts
+* Disenchant: Yes
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-ThalmorBoots.png|48px]]
+| {{Anchor|Thalmor Boots}}<br>{{ID|00065bac|par=1}}
+| 1 || 10 || 0 || 13
+|
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-ThalmorGloves.png|48px]]
+| {{Anchor|Thalmor Gloves}}<br>{{ID|00065bb3|par=1}}
+| 1 || 10 || 0 || 13
+|
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Thalmor Robes.png|48px]]
+| {{Anchor|Thalmor Robes}}<br>{{ID|00065bbf|par=1}}
+| 4 || 410 || 0 || 27
+| ''Destruction spells cost 12% less to cast:''
+* [[Skyrim:Fortify Destruction|Fortify Destruction]], 12 pts
+* Disenchant: Yes
+|- class="sortbottom"
+| colspan=2|Totals:
+| 6/7 || 430 || 0 || 53/80 || Higher warmth is with the Hooded robe.
+|}
+
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Elven Light Armor Male.jpg|Elven Light Armor
+File:SR-item-Hooded Thalmor Robes Male.jpg|Hooded Thalmor Robes
+File:SR-item-Thalmor Robes Male.jpg|Thalmor Robes
+</gallery>
+;Female
+<gallery>
+File:SR-item-Elven Light Armor Female.jpg|Elven Light Armor
+File:SR-item-Hooded Thalmor Robes Female.jpg|Hooded Thalmor Robes
+File:SR-item-Thalmor Robes Female.jpg|Thalmor Robes
+</gallery>
+
+==Thieves Guild Equipment==
+{| class="wikitable sortable"
+!class=unsortable width=48| 
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+| {{Icon|a|Guild Master's Armor}}
+| {{Anchor|Guild Master's Armor}}<br>{{ID|001092b5|par=1}} || Light Armor
+| Not possible
+| 10 || 300 || 38
+|rowspan=12|
+* All of this Thieves Guild Equipment is only equippable through the [[Skyrim:Console|console]]. The player-specific versions of all Guild Master's armor and all Thieves Guild armor are listed at [[Skyrim:Unique Items|Unique Items]].
+|-
+| {{Icon|a|Guild Master's Boots}}
+| {{Anchor|Guild Master's Boots}}<br>{{ID|001092b4|par=1}} || Light Boots
+| Not possible
+| 2 || 100 || 15
+|-
+| {{Icon|a|Guild Master's Gloves}}
+| {{Anchor|Guild Master's Gloves}}<br>{{ID|001092b6|par=1}} || Light Gauntlets
+| Not possible
+| 2 || 100 || 15
+|-
+| {{Icon|a|Thieves Guild Armor}}
+| {{Anchor|Thieves Guild Armor}}<br>{{ID|00036584|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29
+|-
+| {{Icon|a|Thieves Guild Boots}}
+| {{Anchor|Thieves Guild Boots}}<br>{{ID|00036583|par=1}} || Light Boots
+| Not possible
+| 0 || 25 || 8
+|-
+| {{Icon|a|Thieves Guild Gloves}}
+| {{Anchor|Thieves Guild Gloves}}<br>{{ID|00042be9|par=1}} || Light Gauntlets
+| Not possible
+| 1.5 || 0 || 8
+|-
+| {{Icon|a|Thieves Guild Hood}}
+| {{Anchor|Thieves Guild Hood}}<br>{{ID|00036585|par=1}} || Light Helmet
+| Not possible
+| 1 || 0 || 13
+|-
+| {{Icon|a|Thieves Guild Hood Alt}}
+| {{Anchor|Thieves Guild Hood Alt}}<br>{{ID|000e35df|par=1}} || Light Helmet
+| Not possible
+| 0 || 0 || 13
+|-
+| {{Icon|a|Thieves Guild Variant Armor}}
+| {{Anchor|Thieves Guild Variant Armor}}<br>{{ID|000e35db|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29
+|-
+| {{Icon|a|Thieves Guild Variant Boots}}
+| {{Anchor|Thieves Guild Variant Boots}}<br>{{ID|000e35da|par=1}} || Light Boots
+| Not possible
+| 0 || 0 || 8
+|-
+| {{Icon|a|Thieves Guild Variant Gloves}}
+| {{Anchor|Thieves Guild Variant Gloves}}<br>{{ID|000e35dc|par=1}} || Light Gauntlets
+| Not possible
+| 1 || 0 || 5
+|-
+| {{Icon|a|Thieves Guild Variant Hood}}
+| {{Anchor|Thieves Guild Variant Hood}}<br>{{ID|000e35dd|par=1}} || Light Helmet
+| Not possible
+| 0 || 0 || 13
+|}
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Thieves Guild Armor Male.jpg|Thieves Guild Armor
+File:SR-item-Thieves Guild Alternate Armor Male.jpg|Thieves Guild Hood Alt
+File:SR-item-Thieves Guild Variant Armor Male.jpg|Thieves Guild Variant Armor
+File:SR-item-Guild Master Armor Male.jpg|Guild Master Armor
+</gallery>
+;Female
+<gallery>
+File:SR-item-Thieves Guild Armor Female.jpg|Thieves Guild Armor
+File:SR-item-Thieves Guild Alternate Armor Female.jpg|Thieves Guild Hood Alt
+File:SR-item-Thieves Guild Variant Armor Female.jpg|Thieves Guild Variant Armor
+File:SR-item-Guild Master Armor Female.jpg|Guild Master Armor
+</gallery>
+
+==Other Weapons==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-weapon-Akaviri Sword.png|48px]]
+| {{Anchor|Akaviri Sword}}{{DG}}<br>{{ID|xx014555|par=1}}
+| Sword
+| Not possible
+| 10 || 300 || 11 ||
+* Only carried by [[Skyrim:Dexion Evicus|Dexion Evicus]]. Can be obtained by pickpocketing him if you have the [[Skyrim:Pickpocket#Misdirection|Misdirection]] perk, or by placing a weapon with a higher base damage in his inventory through pickpocketing, then reloading the area by leaving and entering it again. This will cause him to unequip the Akaviri sword in favor of the placed weapon, allowing you to then pickpocket the Akaviri sword without the Misdirection perk.
+|-
+| [[File:SR-icon-weapon-Ancient Nordic Pickaxe.png|48px]]
+| {{Anchor|Ancient Nordic Pickaxe}}{{DB}}<br>{{IDs|xx0398e6|xx0206f2|par=1}}
+| War Axe
+| Not possible
+| 10 || 500 || 5 ||
+* Needed to mine [[Skyrim:Stalhrim|Stalhrim]]
+* Can be bought from [[Skyrim:Baldor Iron-Shaper|Baldor Iron-Shaper]] in [[Skyrim:Skaal Village|Skaal Village]]
+* Can be found in various chests on Solstheim
+* Can be used in place of a standard [[Skyrim:Pickaxe|pickaxe]] to mine other ores
+* The (<code>xx0206f2</code>) version is obtained during [[Skyrim:An Axe to Find|An Axe to Find]], and does not stack with the others.
+{{Bug|Tempering is impossible.|UDBP|1.0.4|It allows tempering with an iron ingot (version 1.0.5 fixes tempering for the unique axe)}}
+|-
+| [[File:SR-icon-weapon-Fork.png|48px]]
+| {{Anchor|Fork}} {{Intnote|type|†}}<br>{{ID|0001f25b|par=1}}
+| Other
+| Not possible 
+| 0.5 || 5 || 1 ||
+* Speed, reach, and stagger as a dagger (1.3, 0.7, 0).
+* Cutlery found on tables, but can also be used as a weapon.
+* Can be found at [[Skyrim:Throat of the World|Throat of the World]].
+* Can be found outside [[Skyrim:Riften|Riften]], at the balcony of [[Skyrim:Honeyside|Honeyside]] after the player has purchased the porch upgrade.
+* Can be found in [[Skyrim:Redwater Den|Redwater Den]], on a table near the forge.
+* {{HF}} Can be found on a table in the [[Skyrim:Construction|player-built]] [[Skyrim:Small House Layout|Small House]].
+* {{HF}} Can be found in a bin atop the "Desk" furnishing option of the back room on the first level of the player-built [[Skyrim:Main Hall#Main Hall: First Level.2C North Room|Main Hall]].
+* {{HF}} Two can be found in the player-built [[Skyrim:Kitchen|Kitchen]], one in a bin beside the square table and chairs with steamed crab legs and the other on the square table and chairs across from the butter churn.
+* {{DB}} Two can be found on a table next to a salmon steak in the exterior towers of [[Skyrim:Bloodskal Barrow|Bloodskal Barrow]], with a third on a table on the floor above.
+|-
+|rowspan=4|[[File:SR-icon-weapon-Giant Club.png|48px]]
+| {{Anchor|Frost Giant Club}}{{DG}}<br>{{ID|xx012d14|par=1}}
+| Mace
+| Not possible
+| 18 || 598 || 80 ||
+* Speed and reach as a warhammer, uniquely high stagger: (0.6, 1.3, 1.5).
+* Club used by [[Skyrim:Frost Giant|Frost Giant]]s.
+* Can only be equipped by player using the console.
+* ''Target takes 20 points of frost damage to Health and Stamina:''
+** [[Skyrim:Frost Damage|Frost Damage]], 20 pts
+** [[Skyrim:Slow|Slow]], 50 pts for 3 secs
+**Charge/Cost=Uses: 3000/29=103
+|-
+| {{Anchor|Giant Club}}<br>{{ID|000cdec9|par=1}}
+| Sword
+| Not possible
+| 18 || 1 || 5
+|rowspan=3|
+* Speed and reach as a warhammer, uniquely high stagger: (0.6, 1.3, 1.5).
+* Clubs used by [[Skyrim:Giant|Giants]].
+* Two clubs exist ([[Skyrim:Steamcrag_Camp#Notes|Streamcrag Camp]] and [[Skyrim:Tumble_Arch_Pass|Tumble Arch Pass]]) that, when highlighted, show the stats of the club like any other generic items. It can be picked up and equipped by followers only but can only be removed by use of the [[Skyrim:Console|console]].
+* (<code>000461da</code>) has a power that varies based on character level at the time of cell entry. 
+* (<code>000c334f</code>) is enchanted:
+**''Absorb 15 points of stamina:''
+***[[Skyrim:Absorb Stamina|Absorb Stamina]], 15 pts for 1 sec
+***Charge/Cost=Uses: 2000/34=58
+***Disenchant: No
+|-
+| {{Anchor|Giant Club}}<br>{{ID|000461da|par=1}}
+| Sword
+| Not possible
+| 18 || 1 || ''var.''
+|-
+| {{Anchor|Giant Club}}<br>{{ID|000c334f|par=1}}
+| Sword
+| Not possible
+| 18 || 800 || 40
+|-
+| [[File:SR-icon-weapon-Headsman'sAxe.png|48px]]
+| {{Anchor|Headsman's Axe}}<br>{{ID|000be25e|par=1}}
+| Battleaxe
+| Not possible{{Intnote|temper|§}}
+| 11 || 15 || 17 ||
+* Uniquely high reach, but stagger as a war axe: Reach 1.5, Stagger 0.85.
+* Carried by [[Skyrim:Ahtar|Ahtar]] and used by the [[Skyrim:Headsman|executioner]] at [[Skyrim:Helgen|Helgen]].
+|-
+| [[File:SR-icon-weapon-Knife.png|48px]]
+| {{Anchor|Knife}}{{Intnote|type|†}}<br>{{ID|0001f25a|par=1}}
+| Other
+| Not possible
+| 0.5 || 1 || 2 ||
+* Speed, reach, and stagger as a dagger (1.3, 0.7, 0).
+* ''Not'' a dagger, so not affected by dagger perks.
+* Cutlery found on tables, but can also be used as a weapon.
+* Can be found at [[Skyrim:East Empire Company Warehouse|East Empire Company Warehouse]] and [[Skyrim:Throat of the World|Throat of the World]].
+* Can be found outside [[Skyrim:Riften|Riften]], at the balcony of [[Skyrim:Honeyside|Honeyside]] after you've purchased the porch upgrade.
+* Can be found in Redwater Den, on a table near the forge.
+* {{HF}} Can be found in a bin atop the "Desk" furnishing option of the back room on the first level of the player-built [[Skyrim:Main Hall#Main Hall: First Level.2C North Room|Main Hall]].
+* {{DB}} Can be found on a table next to grilled leeks in the exterior towers of [[Skyrim:Bloodskal Barrow|Bloodskal Barrow]].
+* {{DB}} Can be found on a small table next to [[Skyrim:General Falx Carius|General Falx Carius]] in the final room of [[Skyrim:Fort Frostmoth|Fort Frostmoth]].
+|-
+| [[File:SR-icon-weapon-Master Sword.png|48px]]
+| [[SR:Master Sword|{{Anchor|Master Sword}}]]{{Nintendo Switch}}<br>{{ID|xx00081F|par=1}}
+| Sword|| [[Skyrim:Refined Moonstone|Refined Moonstone]]<br>perk: [[Skyrim:Elven Smithing|Elven]]
+| 12 || 235 || 12 ||
+* {{ns22}} On [[Skyrim:Switch|Nintendo Switch]]: Zelda-themed sword obtained using [[Skyrim:Amiibo|amiibo]] or in chest above the [[Skyrim:Throat of the World|Throat of the World]].
+|-
+| [[File:SR-icon-weapon-Pickaxe.png|48px]]
+| {{Anchor|Pickaxe}}<br>{{ID|000e3c16|par=1}}
+| War Axe
+| Not possible{{Intnote|temper|§}}
+| 10 || 5 || 5 ||
+* Speed, reach, and stagger as a dagger (1.3, 0.7, 0).
+* Necessary for [[Skyrim:Mining|mining]] veins and obtaining ore. Giving a follower a pickaxe can force them to dual wield.
+|-
+| [[File:SR-icon-weapon-Scimitar.png|48px]]
+| {{Anchor|Scimitar}}<br>{{ID|0007a91a|par=1}}
+| Sword
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+| 10 || 5 || 11 ||
+*Curved sword carried by [[Skyrim:Kematu|Kematu]] and [[Skyrim:Alik'r Warrior|Alik'r warriors]].
+*Can be found under an upturned canoe on the coastline west of [[Skyrim:Dawnstar|Dawnstar]].
+*Also carried by certain [[Skyrim:Corsair|corsairs]] on the [[Skyrim:Dainty Sload|Dainty Sload]]:those who wear Ragged Pants and Redguard Boots carry Scimitars.
+*[[Skyrim:Velehk Sain|Velehk Sain]] and [[Skyrim:Rayya|Housecarl Rayya]]{{HF}} also carry two of them.
+*One is found in the [[Skyrim:Wreck of the Strident Squall|Wreck of the Strident Squall]] next to a dead Redguard in the area reachable past the flooded section of the ship {{DB}}
+|-
+| [[File:SR-icon-weapon-Woodcutter'sAxe.png|48px]]
+| {{Anchor|Woodcutter's Axe}}{{Intnote|type2|±}} {{Intnote|woodcutter|¥}}<br>{{ID|0002f2f4|par=1}}
+| Other
+| Not possible {{Intnote|temper|§}}
+| 10 || 5 || 5 ||
+* Speed, reach, and stagger as a dagger (1.3, 0.7, 0).
+** ''Not'' a war axe, so not affected by war axe perks.
+* Necessary for [[Skyrim:Chop Wood|chopping wood]].
+|-
+| [[File:SR-icon-weapon-Wooden Sword.png|48px]]
+| {{Anchor|Wooden Sword}}{{HF}}<br>{{ID|xx004D91|par=1}}
+| Sword
+| [[Skyrim:Firewood|Firewood]];<br>perk: none
+| 3 || 25 || 2 ||
+*One-handed weapon, can be used by the player or given as a gift to [[Skyrim:Adoption|adopted]] children.
+* Sold by general goods [[Skyrim:Merchants|merchants]] and [[Skyrim:Khajiit Traders|Khajiit traders]].
+* Can be found in generic [[Skyrim:Containers#Cupboard|cupboards]].
+|}
+{{Note|type|†|Because of the way this weapon is classified in game data, its damage in combat is not affected by either One-handed or Two-handed skill fortify effects or their respective perks.}}
+{{Note|type2|±|{{Bug|Because of the way this weapon is classified in game data, its damage in combat is not affected by either One-handed or Two-handed skill fortify effects or their respective perks.|fixedby=USSEP|fixdetail=Appropriate keywords were added.|nobullet=1}}}}
+{{Note|headsman|‡|{{Bug|Despite being a two-handed weapon, the Headsman's Axe was classified as a War Axe in older patches, meaning that it was affected by war axe-related perks such as [[Skyrim:Hack and Slash|Hack and Slash]].|nobullet=yes|OSP|1.5}}}}	
+{{Note|woodcutter|¥|{{xbox22}}{{Bug|If you place a Woodcutter's Axe on a sword mount it will appear floating in your house instead of on the rack.|confirmed=1|nobullet=yes}}}}
+{{Note|temper|§|{{Bug|These items should have been temperable, but aren't.|nobullet=yes|USKP|1.0}}}}
+
+==Other Apparel==
+{| class="wikitable sortable"
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}| [[File:SR-icon-armor-Champion's Tunic.png|48px]]
+|[[SR:Champion's Tunic|{{Anchor|Champion's Tunic}}]]{{Nintendo Switch}}<br>{{ID|xx00083E|par=1}}
+|Light Armor & Gauntlets & Boots|| [[Skyrim:Refined Moonstone|Refined Moonstone]]&nbsp;×&nbsp;4<br>perk: [[Skyrim:Elven Smithing|Elven]]
+|5 || 300 || 46
+|
+* {{ns22}} On [[Skyrim:Switch|Nintendo Switch]]: Zelda-themed light armor tunic obtained using [[Skyrim:Amiibo|amiibo]] or in chest above the [[Skyrim:Throat of the World|Throat of the World]].
+|-
+|{{AL|C}}| [[File:SR-icon-armor-IronShield.png|48px]]
+|{{Anchor|Dented Iron Shield}}{{DB}}<br>{{ID|xx03399c|par=1}}
+|Heavy Shield || Not possible
+|12||30||15
+|
+* Found on [[Skyrim:Hulking Draugr|Hulking Draugr]].
+* With version 1.0.5 of the [[Skyrim Mod:Unofficial Dragonborn Patch|Unofficial Dragonborn Patch]], it can now be improved with an iron ingot.
+|-
+|{{AL|C}}| [[File:SR-icon-armor-Dovahcore Helmet.png|48px]]
+| {{Anchor|[[Skyrim:Dovahcore Helmet|Dovahcore Helmet]]{{SC}}}}<br>{{ID|xx003321|par=1}}
+| Heavy Helmet
+| [[Skyrim:Refined Moonstone|Refined Moonstone]]<br>(req.&nbsp;[[Skyrim:Arcane Blacksmith|Arcane]]);<br>perk:&nbsp;none
+| 5 || 512 || 15
+|
+*Added by [[SR:Fall of the Space Core, Vol 1|Fall of the Space Core, Vol 1]].
+* Can be created at the [[Skyrim:Atronach Forge|Atronach Forge]].
+* Counts as [[Skyrim:Iron Armor|Iron Armor]] for [[Skyrim:Heavy Armor#Matching Set|Matching Set]].
+|-
+|{{AL|C}}| [[File:SR-icon-armor-FineArmguards.png|48px]]
+| {{Anchor|Fine Armguards}}<br>{{ID|00086990|par=1}}
+| Light Gauntlets
+| Not possible
+| 0.5 || 25 || 7
+|
+* Identified internally as Jarl's gloves.
+* Although these are technically Light Armor, they're treated as clothing in most respects. You can wear them without disabling the [[Skyrim:Mage Armor|Mage Armor]] perk and they won't match any armor type for [[Skyrim:Light Armor#Matching Set|Matching Set]].
+|-
+|{{AL|C}}| [[File:SR-icon-armor-Hylian Shield.png|48px]]
+|[[SR:Hylian Shield|{{Anchor|Hylian Shield}}]]{{Nintendo Switch}}<br>{{ID|000819|par=1}}
+|Light
+|[[Skyrim:Refined Moonstone|Refined Moonstone]]<br>perk: [[Skyrim:Elven Smithing|Elven]]
+| 3 || 115 || 23
+|
+* {{ns22}} On [[Skyrim:Switch|Nintendo Switch]]: Zelda-themed shield obtained using [[Skyrim:Amiibo|amiibo]] or in chest above the [[Skyrim:Throat of the World|Throat of the World]].
+|}
+
+===Gallery===
+<gallery>
+File:SR-item-Champion's Tunic.jpg|Champion's Tunic
+File:SR-npc-Nord Dovahcore Helmet.jpg|Dovahcore Helmet
+File:SR-item-Hylian Shield.jpg|Hylian Shield
+</gallery>
+
+==Notes==
+* Additional specialized armor and weapons are listed at [[Skyrim:Unique Items|Unique Items]] for items occurring a limited number of times (usually once), and at [[Skyrim:Unobtainable Items|Unobtainable Items]] for items that cannot normally be obtained and/or used by the player.

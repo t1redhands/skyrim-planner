@@ -1,0 +1,54 @@
+{{Trail|Magic}}
+{{TOCleft}}Dozens of '''spells''' are available for magically-inclined characters in Skyrim. Most spells (other than starting spells) are learned by reading '''Spell Tomes'''.{{NewLeft}}
+
+==[[SR:Alteration Spells|Alteration Spells]]==
+{{SR:Alteration Spells}}
+
+==[[SR:Conjuration Spells|Conjuration Spells]]==
+{{SR:Conjuration Spells}}
+
+==[[SR:Destruction Spells|Destruction Spells]]==
+{{SR:Destruction Spells}}
+
+==[[SR:Illusion Spells|Illusion Spells]]==
+{{SR:Illusion Spells}}
+
+==[[SR:Restoration Spells|Restoration Spells]]==
+{{SR:Restoration Spells}}
+
+==Master Level Spells==
+Master-level spells are different from lower-level spells:
+* They always require both hands.
+* They take 3 seconds to complete.
+* You cannot move while casting.
+* They may be interrupted by stagger attack.
+
+Other than the Alteration spell Dragonhide and the Restoration spell Guardian Circle, master-level spells do not benefit from dual casting perks.
+
+When in combat, master-level spells are tricky to use because of the time required to cast them.  Furthermore while casting them, you are completely vulnerable and can be interrupted by any sort of attack. Some ways around this weakness are:
+* staggering your enemy first with a dual-cast spell. [[SR:Ice Storm|Ice Storm]] can stagger multiple enemies at once.
+* combining them with shouts such as [[SR:Become Ethereal|Become Ethereal]] or [[SR:Ice Form|Ice Form]].
+* combining them with illusion and alteration crowd control effects, such as [[SR:Pacify (spell)|Pacify]].
+* using followers or conjurations as distractions.
+* combining them with high level flesh spells.
+* casting them from sneak.
+
+{{SR:Spell List Notes}}
+
+==Spell Tome Locations==
+Most spell tomes can be purchased from [[SR:merchants|merchants]].  Novice- and apprentice-level spell tomes can be purchased from the court wizards found in each of Skyrim's cities.  Higher-level spell tomes are more difficult to find: Each court wizard only stocks the adept-level spells for one school ([[SR:Farengar Secret-Fire|Farengar]], [[SR:Madena|Madena]] and [[SR:Wuunferth the Unliving|Wuunferth]] for [[SR:Destruction|Destruction]], [[SR:Falion|Falion]] and [[SR: Calcelmo|Calcelmo]] for [[SR:Conjuration|Conjuration]], [[SR:Sybille Stentor|Sybille Stentor]] for [[SR:Illusion|Illusion]] and [[SR:Wylandriah|Wylandriah]] for [[SR:Alteration|Alteration]]) and the expert-level spells can only be purchased from the specialist mages in the [[SR:College of Winterhold (place)|College of Winterhold]].  Also, adept- and expert-level spell tomes only appear in the mage's merchandise when your magic skill is high enough (40 for Adept and 65 for Expert spells).  After reaching the required skill level, you must wait for the mage's merchandise to be reset (typically two days in-game), or, save, then attack the merchant and reload, before the new tomes will appear.  Master-level spell tomes can only be acquired once that school's ritual spell [[SR:College of Winterhold (faction)#Quests|quest]] has been completed.
+
+Nearly all spell tomes can also be found randomly as loot.  The only spell tomes that can ''not'' be found randomly are quest-specific spell tomes (those that cannot be purchased), tomes added by [[SR:Dawnguard|Dawnguard]] or [[SR:Dragonborn|Dragonborn]], and master-level tomes.  The appearance of random tomes is dependent upon your character's overall level (but is not related to your skill in the magic school, unlike tome purchases):
+* Novice: level 1+
+* Apprentice: level 11+
+* Adept: level 23+
+* Expert: level 35+
+
+Those random loot tomes may be found in boss chests and safes. With the [[SR:Merchant (perk)|Merchant perk]] unlocked, there is a small chance that tomes are sold by [[SR:Blacksmith|blacksmiths]]. With the [[SR:Dawnguard|Dawnguard]] add-on installed, tomes can also be purchased from [[SR:Morven Stroud|Morven Stroud]].
+
+Additionally several chests may contain low level tomes dependent on character level. Those may be carried by several spellcasters too:
+* Novice: level 1+
+* Apprentice: level 10+
+
+==Bugs==
+{{Bug|The loot list for expert level spell tomes in dungeons incorrectly uses a global variable setting that's intended to be used on vendor inventories.|USSEP|4.2.5}}

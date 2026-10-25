@@ -1,0 +1,112 @@
+{{CC Header|Vigil Enforcer Armor Set}}{{Trail|Vigil Enforcer Armor Set}}
+
+Four sets of heavy Vigil Armor variants are added to the game by the [[Skyrim:Vigil Enforcer Armor Set|Vigil Enforcer Armor Set]] [[Skyrim:Creation Club|Creation]] (themed after the [[Skyrim:Vigil of Stendarr|Vigil of Stendarr]]). One set of each armor, except sashed, can be obtained through the [[Skyrim:Unholy Vigil|related quest]], and after completion all variants can be crafted at a [[Skyrim:Forge|forge]].
+
+While the [[Skyrim:Steel Smithing|Steel Smithing]] [[Skyrim:Perks|perk]] is required to craft it, the armor stats are identical to [[Skyrim:Steel Plate Armor|steel plate]] (which requires [[Skyrim:Advanced Armors|Advanced Armors]]). The only differences are the raw materials needed to craft the armors (which are slightly cheaper), and the existence of an open helmet version with lower stats and a sashed armor version available for two variants.
+
+The Vigil Enforcer and Vigil Veteran sets are almost visually identical, with the Enforcer set lacking the Veteran set's elaborate steel etchings on the shoulderpads and upper chest. Note that the open helmet versions of the Corrupted and Veteran variants have lower stats than their regular versions, while the Enforcer and Silver Hand helmets are technically open helmets as well, they nevertheless have the same stats and recipes as the normal versions of the former.
+
+All items can be [[Skyrim:Workbench|tempered]] using one [[Skyrim:Steel Ingot|steel ingot]], and having the Steel Smithing perk doubles the quality improvement.
+
+{| class="wikitable sortable striped"
+!rowspan=2 class=unsortable|
+!rowspan=2|Name ([[Skyrim:Form ID|ID]])
+!rowspan=2|{{Weight Icon}}
+!rowspan=2|{{Value Icon}}
+!rowspan=2|{{Armor Rating Icon}}
+!style="border-left-width:medium; border-left-color:black;" colspan=3 class=unsortable|Raw Materials
+!style="border-left-width:medium; border-left-color:black;" colspan=2 class=unsortable|Delta
+!colspan=2 class=unsortable|Ratio
+|-
+!style="border-left-width:medium; border-left-color:black;"|{{icon|ingot|Steel Ingot|24}} [[Skyrim:Steel Ingot|Steel]]
+!{{icon|ingot|Iron Ingot|24}} [[Skyrim:Iron Ingot|Iron]]
+!{{icon|m|LeatherStrips|24}} [[Skyrim:Leather Strips|Strips]]
+!style="border-left-width:medium; border-left-color:black;"|{{Weight Icon}}
+!{{Value Icon}}
+!{{Weight Icon}}
+!{{Value Icon}}
+|-
+| {{icon|a|Vigil Corrupted Armor}}{{icon|a|Vigil Enforcer Armor}}<br>{{icon|a|Vigil Silver Hand Armor}}{{icon|a|Vigil Veteran Armor}}
+| {{Anchor|Vigil Corrupted Armor}}<br>{{ID|FExxxD7F|par=1}}<br>{{Anchor|Vigil Enforcer Armor}}<br>{{ID|FExxxD61|par=1}}<br>{{Anchor|Vigil Silver Hand Armor}}<br>{{ID|FExxxD84|par=1}}<br>{{Anchor|Vigil Veteran Armor}}<br>{{ID|FExxxD7B|par=1}} || 38 || 625 || 40
+|style="border-left-width:medium; border-left-color:black;"| 4 || 1 || 3
+|style="border-left-width:medium; border-left-color:black; color:red"| 32.7
+| 529
+|style="color:red"| 7.17
+| 6.51
+|-
+| {{icon|a|Vigil Corrupted Sashed Armor}}{{icon|a|Vigil Veteran Sashed Armor}}
+| {{Anchor|Vigil Corrupted Sashed Armor}}<br>{{ID|FExxx803|par=1}}<br>{{Anchor|Vigil Veteran Sashed Armor}}<br>{{ID|FExxx800|par=1}}|| 38 || 625 || 40
+|style="border-left-width:medium; border-left-color:black;"| 4 || 1 || 4
+|style="border-left-width:medium; border-left-color:black; color:red"| 32.6
+| 526
+|style="color:red"| 7.04
+| 6.31
+|-
+| {{icon|a|Vigil Corrupted Boots}}{{icon|a|Vigil Enforcer Boots}}<br>{{icon|a|Vigil Silver Hand Boots}}{{icon|a|Vigil Veteran Boots}}
+| {{Anchor|Vigil Corrupted Boots}}<br>{{ID|FExxxD7E|par=1}}<br>{{Anchor|Vigil Enforcer Boots}}<br>{{ID|FExxxD63|par=1}}<br>{{Anchor|Vigil Silver Hand Boots}}<br>{{ID|FExxxD83|par=1}}<br>{{Anchor|Vigil Veteran Boots}}<br>{{ID|FExxxD7A|par=1}} || 9 || 125 || 14
+|style="border-left-width:medium; border-left-color:black;"| 2 || 1 || 2
+|style="border-left-width:medium; border-left-color:black; color:red"| 5.8
+| 72
+|style="color:red"| 2.81
+| 2.36
+|-
+| {{icon|a|Vigil Corrupted Gauntlets}}{{icon|a|Vigil Enforcer Gauntlets}}<br>{{icon|a|Vigil Silver Hand Gauntlets}}{{icon|a|Vigil Veteran Gauntlets}}
+| {{Anchor|Vigil Corrupted Gauntlets}}<br>{{ID|FExxxD80|par=1}}<br>{{Anchor|Vigil Enforcer Gauntlets}}<br>{{ID|FExxxD62|par=1}}<br>{{Anchor|Vigil Silver Hand Gauntlets}}<br>{{ID|FExxxD85|par=1}}<br>{{Anchor|Vigil Veteran Gauntlets}}<br>{{ID|FExxxD7C|par=1}} || 6 || 125 || 14
+|style="border-left-width:medium; border-left-color:black;"| 2 || 1 || 2
+|style="border-left-width:medium; border-left-color:black; color:red"| 2.8
+| 72
+|style="color:red"| 1.9
+| 2.36
+|-
+| {{icon|a|Vigil Corrupted Helmet}}{{icon|a|Vigil Enforcer Helmet}}<br>{{icon|a|Vigil Silver Hand Helmet}}{{icon|a|Vigil Veteran Helmet}}
+| {{Anchor|Vigil Corrupted Helmet}}<br>{{ID|FExxxD82|par=1}}<br>{{Anchor|Vigil Enforcer Helmet}}<br>{{ID|FExxxD65|par=1}}<br>{{Anchor|Vigil Silver Hand Helmet}}<br>{{ID|FExxxD86|par=1}}<br>{{Anchor|Vigil Veteran Helmet}}<br>{{ID|FExxxD64|par=1}}|| 6 || 300 || 19
+|style="border-left-width:medium; border-left-color:black;"| 2 || 1 || 2
+|style="border-left-width:medium; border-left-color:black; color:red"| 2.8
+| 247
+|style="color:red"| 1.9
+| 5.66
+|-
+| {{icon|a|Vigil Corrupted Open Helmet}}{{icon|a|Vigil Veteran Open Helmet}}
+| {{Anchor|Vigil Corrupted Open Helmet}}<br>{{ID|FExxxD81|par=1}}<br>{{Anchor|Vigil Veteran Open Helmet}}<br>{{ID|FExxxD7D|par=1}}|| 5 || 125 || 17
+|style="border-left-width:medium; border-left-color:black;"| 1 || 1 || 2
+|style="border-left-width:medium; border-left-color:black; color:red"| 2.8
+| 92
+|style="color:red"| 2.27
+| 3.79
+|- class="sortbottom"
+|colspan=2| Totals (with normal helmet):
+| 59 || 1,175 || 87
+|style="border-left-width:medium; border-left-color:black;"| 10 || 5 || 10 (if sashed)
+|style="border-left-width:medium; border-left-color:black;" colspan=4|
+|-
+|- class="sortbottom"
+|colspan=2| Totals (with open helmet):
+| 58 || 1,000 || 85
+|style="border-left-width:medium; border-left-color:black;"| 9 || 5 || 9 (if not)
+|style="border-left-width:medium; border-left-color:black;" colspan=4|
+|-
+|}
+
+==Gallery==
+===Male Nord===
+<gallery style="text-align: center>
+File:SR-item-Vigil Corrupted Armor Male.jpg|Vigil Corrupted armor (open helmet)
+File:SR-item-Vigil Corrupted Armor Male 02.jpg|Vigil Corrupted sashed armor
+File:SR-item-Vigil Enforcer Armor Male.jpg|Vigil Enforcer armor
+File:SR-item-Vigil Silver Hand Armor Male.jpg|Vigil Silver Hand armor
+File:SR-item-Vigil Veteran Armor Male.jpg|Vigil Veteran armor (open helmet)
+File:SR-item-Vigil Veteran Armor Male 02.jpg|Vigil Veteran sashed Armor
+</gallery>
+
+===Female Imperial===
+<gallery style="text-align: center>
+File:SR-item-Vigil Corrupted Armor Female.jpg|Vigil Corrupted armor (open helmet)
+File:SR-item-Vigil Corrupted Armor Female 02.jpg|Vigil Corrupted sashed armor
+File:SR-item-Vigil Enforcer Armor Female.jpg|Vigil Enforcer armor
+File:SR-item-Vigil Silver Hand Armor Female.jpg|Vigil Silver Hand armor
+File:SR-item-Vigil Veteran Armor Female.jpg|Vigil Veteran armor (open helmet)
+File:SR-item-Vigil Veteran Armor Female 02.jpg|Vigil Veteran sashed armor
+</gallery>
+
+[[Category:Skyrim-Creation Club-Items]] [[Category:Skyrim-Vigil Enforcer Armor Set]]
+{{Skyrim Materials and Styles}}
