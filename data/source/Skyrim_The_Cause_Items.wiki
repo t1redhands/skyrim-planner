@@ -1,0 +1,186 @@
+{{CC Header|The Cause}}{{Trail|The Cause}}
+This page documents the '''new items''' added by [[Skyrim:The Cause|The Cause]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!{{Weight Icon}}
+!{{Value Icon}}
+!Notes
+|-
+|{{AL|C}}|{{icon|j|Aetherial Crown}}
+| {{Anchor|Ayleid Crown of Rielle}}<br>{{ID|xx000B71|par=1}} || 2 || 2250 ||
+*Unobtainable.
+*Cannot be enchanted.
+|-
+|{{AL|C}}|{{icon|a|DaedricGauntlets}}
+| {{Anchor|Daedric Gauntlets of Negation}}<br>{{ID|xx1FF511|par=1}} || 6 || 725 ||
+*Enchanted with [[SR:Resist Magic|Resist Magic]], 25 pts
+*Worn by [[SR:Valkyn Gatanas|Valkyn Gatanas]]
+|}
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|Weight
+!width=22|Value
+!width=22|Damage
+!Description
+|-
+{{Item Data|icon=SR-icon-weapon-Scourge.png|name=Scourge|displayname=[[Skyrim:Scourge|Scourge]]|id=xx000B5E|type=1 Hand Mace|temp=Ebony Ingot|perk=Daedric Smithing|weight=22|value=6569|damage=18|enchantment=''Summoned Daedra up to level 36 are sent back to Oblivion.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Staff of Ehlno Ede.png|name=Staff of Ehlno Ede|displayname=[[Skyrim:Staff of Ehlno Ede|Staff of Ehlno Ede]]|id=xx147D9f|type=Staff|temp=N/A|weight=8|value=2394|damage=N/A|enchantment=''Sprayed on the ground, it creates a wall of lightning that does 50 points of shock damage per second. Absorb 8 points of stamina per second from the target.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Torment.png|name=Torment|displayname=[[Skyrim:Torment|Torment]]|id=xx000B5F|type=1 Hand Sword|temp=Ebony Ingot|perk=Daedric Smithing|weight=16|value=3163|damage=18|enchantment=''Burns the target for 30 points. Targets on fire take extra damage.''}}
+|}
+
+==Ingredients==
+{{#define:noharvest|1}}
+{| class="wikitable"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+|-
+{{Ingredient Entry|ing=Bloodgrass|description=}}
+{{Ingredient Entry|ing=Harrada|description=}}
+{{Ingredient Entry|ing=Spiddal Stick|description=}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Excavation Leader's Journal}}
+{{Book Normal|Janus' Journal}}
+{{Book Normal|Skorvild's Journal}}
+{{Book Normal|Vigilant Enforcer's Journal}}
+{{Book Normal|Vonos' Journal}}
+|}
+
+===Spell Tomes===
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Ayleid Lich}}<br>{{ID|xx147D93|par=1}}
+|1
+|720
+|''Summons an Ayleid Lich for 60 seconds.''
+* [[Skyrim:Conjure Ayleid Lich|Conjure Ayleid Lich]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Daedric Horse}}<br>{{ID|xx000B64|par=1}}
+|1
+|720
+|''Summons a Daedric Horse to act as your steed.''
+* [[Skyrim:Summon Daedric Horse|Summon Daedric Horse]], for 60 secs
+|}
+
+===Notes===
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Atronach Forge Recipe 32|Atronach Forge Recipe}}
+{{Book Normal|Mythic Dawn Orders}}
+{{Book Normal|Stranger's Plea}}
+{{Book Normal|Torn Note (The Cause)|Torn Note}}
+{{Book Normal|Vigil's Orders}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Mythic Dawn Chamber Key
+ |displayname=[[Skyrim:Mythic Dawn Chamber Key|Mythic Dawn Chamber Key]]
+ |id=xx0A4323|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Rielle Key
+ |displayname=[[Skyrim:Rielle Key|Rielle Key]]
+ |id=xx0A9430|weight=0|value=0}}
+|}
+
+==Miscellaneous Items==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+{{Item Data
+ |icon=SR-icon-misc-Elemental Shard - Alata.png
+ |name=Elemental Shard - Alata
+ |id=xx0762BA|weight=0.5|value=500
+ |notes=Sources:
+* {{huh}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Elemental Shard - Nen.png
+ |name=Elemental Shard - Nen
+ |id=xx0762B8|weight=0.5|value=500
+ |notes=Sources:
+* {{huh}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Elemental Shard - Sercen.png
+ |name=Elemental Shard - Sercen
+ |id=xx0762B7|weight=0.5|value=500
+ |notes=Sources:
+* {{huh}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Elemental Shard - Wel.png
+ |name=Elemental Shard - Wel
+ |id=xx0762B9|weight=0.5|value=500
+ |notes=Sources: 
+* {{huh}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Great Welkynd Stone.png
+ |name=Great Welkynd Stone
+ |id=xx0BDB37|weight=5|value=3000
+ |notes=Sources: 
+* Found in Rielle Crypt
+Can be used at the [[SR:Atronach Forge|Atronach Forge]] to create [[SR:Spell Tome: Conjure Ayleid Lich|Spell Tome: Conjure Ayleid Lich]].
+}}
+{{Item Data
+ |icon=SR-icon-misc-Weakaned Sigil Stone.png
+ |name={{sic|Weakaned|Weakened}} Sigil Stone
+ |id=xx06C047|weight=0|value=0
+ |notes=Sources:
+* {{huh}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Welkynd Stone.png
+ |name=Welkynd Stone
+ |id=xx000809|weight=1|value=50
+ |notes=Sources:
+* Found in Rielle and Rielle Crypt 
+}}
+|}
+
+===Gallery===
+<gallery>
+File:SR-item-Great Welkynd Stone.jpg|Great Welkynd Stone
+</gallery>
+
+==Notes== 
+*The Welkynd Stones added by this Creation function identically to the [[Skyrim:Rare Curios|Rare Curios]] [[Skyrim:Rare_Curios_Items#Welkynd%20Stone|version]].

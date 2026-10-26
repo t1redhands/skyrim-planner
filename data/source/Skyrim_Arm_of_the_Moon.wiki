@@ -1,0 +1,29 @@
+{{Trail|Arms of Chaos}}{{CC Header|Arms of Chaos}}[[Category:Skyrim-Creation Club-Items]][[Category:Skyrim-Weapons-Staves]]
+[[Category:Skyrim-Items-Artifacts]]
+[[Category:Skyrim-Creation Club-Weapons]]
+{{Artifact Summary
+|mod=Arms of Chaos
+|weight=8
+|value=1273
+|type=[[Skyrim:Staff|Staff]]
+|editorid=ccPEWSSE002_Staff01
+|objectid=FExxx80D
+|charge=2000/129=15
+|enchant=''Random chance to demoralize or frenzy a target for 60 seconds.''
+*[[Skyrim:Fear (effect)|Rout]], 100 pts for 60 seconds
+*[[Skyrim:Frenzy (effect)|Frenzy]], 100 pts for 60 seconds
+|image=SR-item-Arm of the Moon.jpg
+|imgdesc=Arm of the Moon
+}}
+[[Skyrim:Arm of the Moon|Arm of the Moon]] is an artifact [[Skyrim:Staff|Staff]]. It is acquired through [[Skyrim:The Arms of Chaos|The Arms of Chaos]].<includeonly>
+
+For more information, see the [[Skyrim:Arm of the Moon|Arm of the Moon]] article.</includeonly><noinclude>
+{{NewLeft}}
+
+==Notes==
+*Create using the Arm Of The Moon (Quest Item) and the Green Sigil Stone on a Staff Enchanter
+
+==Related Quests==
+*{{Quest Link|The Arms of Chaos}}
+
+{{stub|Item}}</noinclude>

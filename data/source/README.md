@@ -6,6 +6,8 @@ UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-s
 
 - [Dragonborn Dragonborn](https://en.uesp.net/wiki/Dragonborn_Dragonborn)
 - [Skyrim:Alchemy Effects](https://en.uesp.net/wiki/Skyrim:Alchemy_Effects)
+- [Skyrim:Arm of the Moon](https://en.uesp.net/wiki/Skyrim:Arm_of_the_Moon)
+- [Skyrim:Arm of the Sun](https://en.uesp.net/wiki/Skyrim:Arm_of_the_Sun)
 - [Skyrim:Armor](https://en.uesp.net/wiki/Skyrim:Armor)
 - [Skyrim:Armor Artifacts](https://en.uesp.net/wiki/Skyrim:Armor_Artifacts)
 - [Skyrim:Artifacts](https://en.uesp.net/wiki/Skyrim:Artifacts)
@@ -31,7 +33,9 @@ UESP content is licensed CC BY-SA 2.5 (https://creativecommons.org/licenses/by-s
 - [Skyrim:Side Quests](https://en.uesp.net/wiki/Skyrim:Side_Quests)
 - [Skyrim:Specialty Gear](https://en.uesp.net/wiki/Skyrim:Specialty_Gear)
 - [Skyrim:Spells](https://en.uesp.net/wiki/Skyrim:Spells)
+- [Skyrim:Staff of Ehlno Ede](https://en.uesp.net/wiki/Skyrim:Staff_of_Ehlno_Ede)
 - [Skyrim:Staves](https://en.uesp.net/wiki/Skyrim:Staves)
+- [Skyrim:The Cause Items](https://en.uesp.net/wiki/Skyrim:The_Cause_Items)
 - [Skyrim:Thieves Guild](https://en.uesp.net/wiki/Skyrim:Thieves_Guild)
 - [Skyrim:Unique Armor](https://en.uesp.net/wiki/Skyrim:Unique_Armor)
 - [Skyrim:Unique Clothing](https://en.uesp.net/wiki/Skyrim:Unique_Clothing)

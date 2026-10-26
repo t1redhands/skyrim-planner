@@ -1,0 +1,29 @@
+{{Trail|The Cause}}{{CC Header|The Cause}}[[Category:Skyrim-Creation Club-Items]][[Category:Skyrim-Weapons-Staves]]
+[[Category:Skyrim-Items-Artifacts]]
+[[Category:Skyrim-Creation Club-Weapons]]
+{{Artifact Summary
+|mod=The Cause
+|weight=8
+|value=750
+|icon=SR-icon-weapon-Staff of Ehlno Ede.png
+|charge=3000/159=18
+|type=[[Skyrim:Staff|Staff]]
+|editorid=ccBGSSSE067_EnchLichStaff
+|objectid=xx147D9F
+|enchant=''Sprayed on the ground, it creates a wall of lightning that does 50 points of shock damage per second. Absorb 8 points of stamina per second from the target.''
+*[[Skyrim:Shock Damage|Wall of Storms]], 8 pts for 1 second
+** Shock (HazardWallofShockSpell), 50{{vn}} shock damage every 1 second. The hazard effect lasts for 30 seconds on the ground.
+*[[Skyrim:Drain Stamina|Drain Stamina]], 8 pts for 1 second
+|image=SR-item-Staff of Ehlno Ede.png
+|imgdesc=Staff of Ehlno Ede
+}}
+The [[Skyrim:Staff of Ehlno Ede|Staff of Ehlno Ede]] is an ancient Ayleid staff bearing a unique enchantment that attacks health, magicka, and stamina simultaneously. It is wielded by the undead Ayleid Lich [[Skyrim:Norion the Undying|Norion the Undying]], and he uses it against you with impunity after you disturb his rest in [[Skyrim:Rielle#Rielle Crypt|Rielle Crypt]] during the quest [[Skyrim:The Cause (quest)|The Cause]]. Once he is defeated, the staff is yours to claim. 
+{{NewLeft}}
+
+== Notes ==
+*Ehlno Ede means Mortal End in the [[Lore:Ayleidoon|Ayleid language]].
+
+==Bugs==
+{{Bug|This staff is not strengthened by Augmented Shock, making it weaker than a staff with only the Wall of Storms effect.|vn=1}}
+
+{{stub|Item}}

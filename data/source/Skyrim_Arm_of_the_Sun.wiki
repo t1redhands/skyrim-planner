@@ -1,0 +1,29 @@
+{{Trail|Arms of Chaos}}{{CC Header|Arms of Chaos}}[[Category:Skyrim-Creation Club-Items]][[Category:Skyrim-Weapons-Staves]]
+[[Category:Skyrim-Items-Artifacts]]
+[[Category:Skyrim-Creation Club-Weapons]]
+{{Artifact Summary
+|mod=Arms of Chaos
+|weight=8
+|value=627
+|type=[[Skyrim:Staff|Staff]]
+|editorid=ccPEWSSE002_Staff02
+|objectid=FExxx80B
+|enchant=''Burns the target for 20 points. 30% chance for frost and shock to do 20 points of damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 20 pts
+*[[Skyrim:Frost Damage|Frost Damage]], 20 pts
+*[[Skyrim:Shock Damage|Shock Damage]], 20 pts
+|image=SR-icon-weapon-Arm of the Sun.png
+|imgdesc=Arm of the Sun
+}}
+[[Skyrim:Arm of the Sun|Arm of the Sun]] is an artifact [[Skyrim:Staff|Staff]]. It is acquired through [[Skyrim:The Arms of Chaos|The Arms of Chaos]] quest.<includeonly>
+
+For more information, see the [[Skyrim:Arm of the Sun|Arm of the Sun]] article.</includeonly><noinclude>
+{{NewLeft}}
+
+==Notes==
+* Create using the Arm Of The Sun (Quest Item) and the Orange Sigil Stone on a Staff Enchanter
+
+==Related Quests==
+*{{Quest Link|The Arms of Chaos}}
+
+{{stub|Item}}</noinclude>
