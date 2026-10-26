@@ -1,0 +1,78 @@
+{{CC Header|Civil War Champions|shortcut={{CC|Civil War Champions}}|icon=SR-icon-armor-Imperial Dragon Helmet.png}}{{Trail|Creation Club}}{{Content Summary
+|image=SR-menu-Civil War Champions.jpg
+|imgdesc=Civil War Champions
+|title=[[Skyrim:Creation Club|Creation]]:<br>Civil War Champions
+|notrail=1
+|released=December 6, 2018
+|size=169MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=ccffbsse001-imperialdragon.esl
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''600 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.62.0.8|Special Edition Version 1.5.62.0.8]]
+}}__NOTOC__
+'''Civil War Champions''' is a [[Skyrim:Creation Club|Creation]] that adds new armor sets based on the [[Skyrim:Imperial Legion|Imperial Legion]] and [[Skyrim:Stormcloaks|Stormcloaks]], as well as a quest in which you duel a champion of the opposing faction. It was released on December 6, 2018 for 600 Creation Credits.
+
+The Creation was primarily made by [https://www.nexusmods.com/skyrimspecialedition/users/2531318 Borx25], while the quest was created by [https://www.nexusmods.com/skyrimspecialedition/users/1102501 Kris Takahashi].
+{{NewLeft}}
+
+==Official Summary==
+:''In the midst of an unending war, the Stormcloaks and Imperials have agreed to a duel. Two champions are to meet on the field of battle, to decide once and for all whose warriors are the fiercest. Choose a side, don the armor of the champion, and prove your mettle. Created by Borja "Borx25" Franco. Quest created by Kris Takahashi. (Quest "Battle of the Champions" starts by reading Battle of the Champions at The Drunken Huntsman in Whiterun or waiting for a letter from a commanding officer.)''
+
+==Content==
+21 items are included with the Creation, with a full set of champion's armor and weapons for each of the warring factions.
+:;Books
+:{|
+|
+* [[Skyrim:Battle of Champions|Battle of Champions]]
+* [[Skyrim:Legate Adventus Caesennius's Note|Legate Adventus Caesennius's Note]]
+* [[Skyrim:Letter of Commendation (Imperial Legion)|Letter of Commendation (Imperial Legion)]]
+* [[Skyrim:Letter of Commendation (Stormcloak)|Letter of Commendation (Stormcloak)]]
+* [[Skyrim:Letter from the Empire|Letter from the Empire]]
+* [[Skyrim:Letter from the Stormcloaks|Letter from the Stormcloaks]]
+* [[Skyrim:Yrsarald Thrice-Pierced's Note|Yrsarald Thrice-Pierced's Note]]
+|}
+
+:;[[Skyrim:Civil War Champions Items|Items]]
+:{|
+|
+*[[Skyrim:Imperial Dragon Armor|Imperial Dragon Armor]]
+*[[Skyrim:Imperial Dragon Boots|Imperial Dragon Boots]]
+*[[Skyrim:Imperial Dragon Gauntlets|Imperial Dragon Gauntlets]]
+*[[Skyrim:Imperial Dragon Helmet|Imperial Dragon Helmet]]
+*[[Skyrim:Imperial Dragon Shield|Imperial Dragon Shield]]
+
+|
+*[[Skyrim:Storm-Bear Armor|Storm-Bear Armor]]
+*[[Skyrim:Storm-Bear Boots|Storm-Bear Boots]]
+*[[Skyrim:Storm-Bear Gauntlets|Storm-Bear Gauntlets]]
+*[[Skyrim:Storm-Bear Helmet|Storm-Bear Helmet]]
+*[[Skyrim:Storm-Bear Shield|Storm-Bear Shield]]
+|
+*[[Skyrim:Akatosh's Talon|Akatosh's Talon]]
+*[[Skyrim:Dragon's Oath|Dragon's Oath]]
+*[[Skyrim:Storm-Bear Sword|Storm-Bear Sword]]
+*[[Skyrim:Tsun's Judgement|Tsun's Judgement]]
+|
+*[[SR:Imperial Armory Key|Imperial Armory Key]]
+*[[SR:Klija's Snow Bear Pelts|Klija's Snow Bear Pelts]]
+*[[SR:Map of Battle Location|Map of Battle Location]]
+*[[SR:Storm-Bear Chest Key|Storm-Bear Chest Key]]
+|}
+
+:;NPCs
+:{|
+|
+*[[Skyrim:Imperial Champion|Imperial Champion]]
+*[[Skyrim:Klija Wolf-Claw|Klija Wolf-Claw]]
+*[[Skyrim:Stormcloak Champion|Stormcloak Champion]]
+|}
+
+:;Quest
+:{|
+|
+*[[Skyrim:Battle of the Champions|Battle of the Champions]]
+|}
+
+==Notes==
+* The Creation also includes two unique items, the [[Skyrim:Imperial Dragon Cloak|Imperial Dragon Cloak]] and [[Skyrim:Storm-Bear Cloak|Storm-Bear Cloak]], both of which are unobtainable. The Unofficial Skyrim Creation Club Content Patch resolves this.
+* This Creation received an update in February 2019 which modified the textures for both sets of armor.

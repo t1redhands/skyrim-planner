@@ -1,0 +1,252 @@
+{{Trail|Magic}}
+This page documents the '''blessings''' that you can receive, typically by activating altars in temples. These are short-term blessings which act separately from long-term [[Skyrim:Standing Stone|Standing Stone]] effects, and do not overwrite or interact with them. Typically, you will want any blessings you come across, unless you are specifically trying to bolster one effect.
+
+==Shrine Blessings==
+Blessings are bestowed by praying at (activating) a shrine to the specified deity.
+* Locations of the shrines of the Eight (or Nine) Divines, including those for [[Lore:Auriel|Auriel]] added by [[Skyrim:Dawnguard|Dawnguard]], are listed at [[Skyrim:Shrines|Shrines]].
+* The Shrine of Nocturnal is located inside the [[Skyrim:The Ragged Flagon - Cistern|Ragged Flagon Cistern]], once you are midway through the [[Skyrim:Thieves Guild (faction)|Thieves Guild]] quest line.
+You can only have one shrine blessing at a time. If you choose to pray at a second shrine, it will overwrite the previous blessing. Shrine blessings are active for a period of time measured in ''real'' time, not in-game time. So a blessing lasting 12 hours will be active during 12 playing hours.
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|ID]]
+!Description
+!Detailed Effects
+|-{{HE|Blessing of Akatosh}}
+|Blessing of Akatosh
+|{{ID|000fb988}}
+|''Magicka regenerates 10% faster.''
+|
+* [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Arkay}}
+|Blessing of Arkay
+|{{ID|000fb994}}
+|''Increases your health by 25 points.''
+|
+* [[Skyrim:Fortify Health|Fortify Health]], 25 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Auriel}}
+|Blessing of Auriel{{DG}}
+|{{ID|xx011360}}
+|''You are 10% more effective with missile weapons.''
+|
+* [[Skyrim:Fortify Marksman|Fortify Marksman]], 10 pts for 12 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Dibella}}
+|Blessing of Dibella
+|{{ID|000fb995}}
+|''+10 Speechcraft.''
+|
+* [[Skyrim:Fortify Persuasion|Fortify Persuasion]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Julianos}}
+|Blessing of Julianos
+|{{ID|000fb996}}
+|''Increases your Magicka by 25 points.''
+|
+* [[Skyrim:Fortify Magicka|Fortify Magicka]], 25 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Kynareth}}
+|Blessing of Kynareth
+|{{ID|000fb997}}
+|''Increases your stamina by 25 points.''
+|
+* [[Skyrim:Fortify Stamina|Fortify Stamina]], 25 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Mara}}
+|Blessing of Mara
+|{{ID|000fb998}}
+|''Healing spells restore 10% more.''{{intnote|FortifyRestoration|[1]}}
+|
+* [[Skyrim:Fortify Restoration|Fortify Restoration]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Nocturnal}}
+|Blessing of Nocturnal
+|{{ID|0010e8ae}}
+|''You are 10% harder to detect.''
+|
+* [[Skyrim:Fortify Sneak|Fortify Sneak]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Stendarr}}
+|Blessing of Stendarr
+|{{ID|000fb999}}
+|''Block 10% more damage with your shield.''
+|
+* [[Skyrim:Fortify Blocking|Fortify Blocking]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Talos}}
+|Blessing of Talos
+|{{ID|000fb99a}}
+|''Time between shouts is reduced 20%.''
+|
+* [[Skyrim:Fortify Shouts|Fortify Shouts]], 0.2 pts for 8 hours{{intnote|Talos|[2]}}
+* [[Skyrim:Cure Disease|Cure Disease]], 1 pt
+|-{{HE|Blessing of Zenithar}}
+|Blessing of Zenithar
+|{{ID|000fb99b}}
+|''Prices are 10% better.''
+|
+* [[Skyrim:Fortify Barter|Fortify Barter]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|}
+
+In addition, the [[Skyrim:Dragonborn|Dragonborn]] expansion adds three Daedric blessings, all available from the [[Skyrim:Temple|temple]] in [[Skyrim:Raven Rock|Raven Rock]].
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|ID]]
+!Description
+!Detailed Effects
+|-{{HE|Blessing of Azura}}
+|Blessing of Azura
+|{{ID|xx03bcfb}}
+|''Resist 10% of magic.''
+|
+* [[Skyrim:Resist Magic|Resist Magic]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Boethiah}}
+|Blessing of Boethiah
+|{{ID|xx03bcfc}}
+|''One-handed weapons do 10% more damage.''
+|
+* [[Skyrim:Fortify One-handed|Fortify One-handed]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|-{{HE|Blessing of Mephala}}
+|Blessing of Mephala
+|{{ID|xx03bcfd}}
+|''Prices are 10% better.''
+|
+* [[Skyrim:Fortify Barter|Fortify Barter]], 10 pts for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|}
+
+The [[Skyrim:Ghosts of the Tribunal|Ghosts of the Tribunal]] creation further adds three blessings of the [[Skyrim:Tribunal Temple|Tribunal]], all of which are available in [[Skyrim:Ashfall's Tear|Ashfall's Tear]], at the outskirts of [[Skyrim:Raven Rock|Raven Rock]].
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|ID]]
+!Description
+!Detailed Effects
+|-{{HE|Blessing of Almalexia}}
+|Blessing of Almalexia
+|{{ID|05000b1a}}
+|''Increases Heavy Armor skill by 10 points. One-handed weapons do 10% more damage.''
+|
+* [[Skyrim:Fortify Heavy Armor|Fortify Heavy Armor]], 10 pts for 8 hours
+* [[Skyrim:Fortify One-handed|Fortify One-handed]], 10% for 8 hours
+|-{{HE|Blessing of Sotha Sil}}
+|Blessing of Sotha Sil
+|{{ID|05349c32}}
+|''Increases your Magicka by 10 points. Magicka regenerates 5% faster.''
+|
+* [[Skyrim:Fortify Magicka|Fortify Magicka]], 10 pts for 8 hours
+* [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 5% for 8 hours
+|-{{HE|Blessing of Vivec}}
+|Blessing of Vivec
+|{{ID|050ef257}}
+|''Prices are 5% better. You are 5% harder to detect.''
+|
+* [[Skyrim:Fortify Barter|Fortify Barter]], 5% for 8 hours
+* [[Skyrim:Fortify Sneak|Fortify Sneak]], 5% for 8 hours
+|}
+
+The [[Skyrim:Gallows_Hall|Gallows Hall]] creation adds another Daedric blessing available at the Shrine of Vaermina in [[Skyrim:Gallows_Hall_(place)|Gallows Hall]].
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|ID]]
+!Description
+!Detailed Effects
+|-{{HE|Blessing of Vaermina}}
+|Blessing of Vaermina
+|{{ID|fe03b952}}
+|''Conjuration spells cost 5% less to cast. Illusion spells cost 5% less to cast.''
+|
+* [[Skyrim:Fortify Conjuration|Fortify Conjuration]], 5% for 8 hours
+* [[Skyrim:Fortify Illusion|Fortify Illusion]], 5% for 8 hours
+* [[Skyrim:Cure Disease|Cure Disease]], 25 pts
+|}
+
+{{Note|FortifyRestoration|^1|{{Bug|The description of this blessing is misleading; the actual effect is that Restoration spells cost 10% less magicka to cast.|nobullet=1|USSEP|4.1.5}}}}
+{{Note|Talos|^2|{{Bug|The details of the Blessing of Talos are bugged when viewed in-game. The magnitude is displayed as "0%" (truncated from 0.2). Nevertheless, the blessing does still have an effect.|nobullet=2|OSSEP|1.6.1130.0}}}}
+
+==Other Blessings==
+These blessings will stack with each other and shrine blessings.
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|ID]]
+!Description
+!Detailed Effects
+!Source
+|-{{HE|Blessing of the Stag Prince}}
+|Blessing of the Stag Prince{{DB}}
+|{{ID|xx01bfec}}
+|''Receive an additional '''x''' Health and Stamina while Bow of the Stag Prince is equipped.''
+|
+*[[Skyrim:Fortify Health|Fortify Health]], '''x''' pts
+*[[Skyrim:Fortify Stamina|Fortify Stamina]], '''x''' pts
+The value of '''x''' depends on the number of [[sr:animals|animals]] you've killed ''with the Bow'':
+*'''x''' = 5 + floor(kills/20)*5
+** <20 kills = 5
+** 20 kills = 10
+** 40 kills = 15
+** 60 kills = 20
+** 80+ kills = 25
+|
+Obtained by equipping the [[Skyrim:Glass Bow of the Stag Prince|Glass Bow of the Stag Prince]].
+|-{{HE|Blood of the Ancients}}
+|Blood of the Ancients{{DG}}
+|{{ID|xx01419b}}
+|''Your [[Skyrim:Vampiric Drain|Vampiric Drain]] spell absorbs Magicka and Stamina from your victims for 1 days, add max health by 1;<br>Your Vampiric Drain spell absorbs Magicka and Stamina from your victims for 3 days, add max health by 3;<br>Your Vampiric Drain spell absorbs Magicka and Stamina from your victims for 5 days, add max health by 5;<br>Your Vampiric Drain spell absorbs Magicka and Stamina from your victims for 7 days, add max health by 7;<br>Your Vampiric Drain spell absorbs Magicka and Stamina from your victims for 9 days, add max health by 9.''
+|
+* Blood of the Ancients, 1 pt{{intnote|BloodoftheAncients|[3]}}
+* Blood of the Ancients, 3 pts
+* Blood of the Ancients, 5 pts
+* Blood of the Ancients, 7 pts
+* Blood of the Ancients, 9 pts
+|Drink from the [[Skyrim:Bloodstone Chalice|Bloodstone Chalice]]. Duration increases with each [[Skyrim:Ancient Power|Ancient Power]] quest completed, to a maximum of 9 days.
+|-{{HE|Dragonslayer's Blessing}}
+|Dragonslayer's Blessing
+|{{ID|000e76df}}
+|''10% increased Critical Hit Chance vs. Dragons for 5 days.''
+|
+* Dragonslayer's Blessing, for 5 days
+|Speaking to [[Skyrim:Esbern|Esbern]] after [[Skyrim:Alduin's Wall|Alduin's Wall]].
+|-{{HE|Tainted Blood of the Ancients}}
+|Tainted Blood of the Ancients{{DG}}
+|{{ID|xx0149a7}}
+|''Your Vampiric Drain spell absorbs Magicka and Stamina from your victims for 1 day, but at the cost of 30 less health.''
+|
+* Tainted Blood of the Ancients, 30 pts
+|Drink from the [[Skyrim:Redwater Spring|Bloodspring]].
+|-{{HE|The Gift of Charity}}
+|The Gift of Charity
+|{{ID|000eef58}}
+|''+10 Speechcraft for 3600 seconds.''
+|
+* Fortify Persuasion, 10 pts for 1 hour
+|[[Skyrim:Quest all Beggars Have|Giving a coin to a beggar]].<br>Giving a gift to your [[Skyrim:Adoption#Gifts and Allowance|child]].{{HF}}
+|-{{HE|Voice of the Sky}}
+|Voice of the Sky
+|{{ID|0010a2da}}
+|''Animals will neither attack nor flee from you.''
+|
+* Voice of the Sky, for 24 hours
+|Reading all ten etched tablets on the way leading to [[Skyrim:High Hrothgar|High Hrothgar]].<br>
+Effect is removed if you kill a non-hostile animal. Includes your follower, but does not protect your horse from being attacked. Works on [[Skyrim:Vampire|vampires]] but not on [[Skyrim:Troll|trolls]], [[Skyrim:Ice Wraith|ice wraiths]] or [[Skyrim:Skeever|venomfang skeevers]].{{vn|Are there any other creatures that aren't affected?}}
+|}
+{{Note|BloodoftheAncients|^3|{{Bug|The in-game description of the 'Blood of the Ancients' spell is not directly linked to its duration. The duration of the spell is calculated based on scripts and affixed to a specific day, while the description shows the effectively meaningless magnitude of the spell. This means that the Necromage perk, which increases the magnitude and duration of spells cast on undead (such as your vampiric self), causes the description in your 'spells - active effects' menu to display that its duration is increased by 25% (which in turn is caused by the perk's effect on magnitude, not duration), but the spell actually lasts only as long as calculated by the Chalice's Level.|nobullet=1}}}}
+
+==Notes==
+* Even if you betrayed Azura during [[Skyrim:The Black Star|The Black Star]], you will still be able to gain her blessing.
+* Unlike other sources of Fortify Health, the Blessing of Arkay will not default the player to a minimum 1HP when the effect ends, so if you're under 25HP when the effect ends (either by passing enough time or replacing it with another blessing), you die.
+* Blessings are considered to be "potion" effects with [[Skyrim:Survival Mode|Survival Mode]]{{CC}} enabled, and are thus modified by your level of [[Skyrim:Fatigue|Fatigue]].
+
+==Bugs==
+{{Bug|The Gift of Charity may fail to stack with [[Skyrim:Potion of Glibness|glibness potions]]. In fact, drinking one may remove the Gift of Charity from your Active Effects list.|USKP|2.0.4}}
+{{Bug|Voice of the Sky has no effect on [[Skyrim:Slaughterfish|slaughterfish]].|USKP|2.0.5}}
+{{Bug|With [[Skyrim:Dawnguard|Dawnguard]] installed, Voice of the Sky will prevent vampires (and their animal companions) from turning hostile. [[Skyrim:Vampire's Thrall|Thralls]] and [[Skyrim:Gargoyle|Gargoyles]] remain adversarial, however.|confirmed=1|dlc=DG|UDGP|2.0.5|trackerid=13482|The vampires had to be removed from the Prey Faction because it caused Voice of the Sky to make them docile when it wasn't supposed to.}}
+{{Bug|For the player, all shrine blessings and the Blessing of the Stag Prince are scaled by any active [[Skyrim:Fortify Restoration|Fortify Restoration]] alchemy effect at the moment the blessing is applied. Scaled magnitudes stick until the blessing is removed or refreshed. In the 'Active Effects' list, the description will show the increased effect magnitude.|USKP|2.1.3|confirmed=1|modnotes=This is caused by the fact that the associated magic effects have their 'Magic Skill' field set to 'Restoration', which allows perk AlchemySkillBoosts to scale the spell magnitudes by (1 + RestorationPowerMod/100).|trackerid=18867}}
+
+{{Stub|Magic}}

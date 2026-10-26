@@ -1,0 +1,635 @@
+{{Trail|Magic}}
+This page lists all of the '''Powers''' in [[Skyrim:Skyrim|Skyrim]] and the [[Skyrim:Dragonborn|Dragonborn]] expansion, both '''[[#Greater Powers|Greater]]''' and '''[[#Lesser Powers|Lesser]]''', as well as all of the [[#Abilities|abilities]] available to the player. Powers and abilities are special magical capabilities that are innate to your character.  Some are granted by your [[Skyrim:Races|race]]; others are received by activating [[Skyrim:Standing Stones|Standing Stones]], reading [[Skyrim:Black Book (book)|Black Books]]{{DB}}, becoming a [[Skyrim:vampirism|vampire]] or [[Skyrim:werewolves|werewolf]], equipping certain items or completing certain quests.  Greater Powers have no [[Skyrim:Magicka|Magicka]] cost, but can only be used once per day. Lesser Powers may or may not use Magicka, but they can be used as often as you like.  Abilities are magical effects that are permanently active.
+
+[[Skyrim:Dragon Shouts|Dragon Shouts]] are listed on a separate page.
+
+==Greater Powers==
+Your available Greater and [[#Lesser Powers|Lesser]] Powers are listed in the magic menu under "Powers".  To use a power you must first equip it, which it assigns it to the [[Skyrim:Controls#Power|Dragon Shout/Power]] button. Each Greater Power can only be used once per game day.  
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|Spell ID]]
+!Description
+!Notes
+|-
+|[[Skyrim:Adrenaline Rush|Adrenaline Rush]]
+|{{ID|000e40ce}}
+|''[[Skyrim:Regenerate Stamina|Stamina regenerates]] 10x faster for 60 seconds.''
+|[[Skyrim:Redguard|Redguard]] racial power.
+|-
+|[[Skyrim:Ancestor's Wrath|Ancestor's Wrath]]
+|{{ID|000e40d4}}
+|''For 60 seconds, opponents that get too close take 8 points per second of [[Skyrim:Fire Damage|fire damage]].''
+|[[Skyrim:Dark Elf|Dunmer]] racial power.
+|-
+|[[Skyrim:Battle Cry|Battle Cry]]
+|{{ID|000e40c3}}
+|''Targets [[Skyrim:Fear (effect)|flee]] for 30 seconds.''
+|[[Skyrim:Nord|Nord]] racial power.
+|-
+|[[Skyrim:Beast Form|Beast Form]]
+|{{ID|00092c48}}
+|''Take on the form of a werewolf.''
+|Transforms [[Skyrim:Werewolves|Werewolves]] into their beast form. Normally, it could be used once per day. But with the cleansed [[Skyrim:Ring of Hircine|Ring of Hircine]] equipped, one can use it repeatedly.
+|-
+|[[Skyrim:Berserker Rage|Berserker Rage]]
+|{{ID|000aa026}}
+|''You take half damage and do double damage for 60 seconds.''
+|[[Skyrim:Orc|Orc]] racial power.
+|-
+|[[Skyrim:Command Animal|Command Animal]]
+|{{ID|000e40cf}}
+|''Make an animal an ally for 60 seconds.''
+|[[Skyrim:Wood Elf|Bosmer]] racial power.
+|-
+|[[Skyrim:Dragonskin|Dragonskin]]
+|{{ID|000aa022}}
+|''[[Skyrim:Spell Absorption|Absorb]] 50% of the magicka from hostile spells for 60 seconds.''
+|[[Skyrim:Breton|Breton]] racial power.
+|-
+|[[Skyrim:Dread Cloak|Dread Cloak]]
+|{{ID|000ed0a9}}
+|''For 60 seconds, opponents in melee range take 8 points [[Skyrim:Frost Damage|frost damage]] and [[Skyrim:Damage Stamina|Stamina damage]] per second.''
+|Not available in-game.
+|-
+|[[Skyrim:Embrace of Shadows|Embrace of Shadows]]
+|{{ID|00088821}}
+|''You can become [[Skyrim:Invisibility (effect)|invisible]]. Improved [[Skyrim:Night Eye (effect)|night vision]] for 180 seconds.''
+|[[Skyrim:Vampirism|Vampire]] power.
+|-
+|[[Skyrim:Highborn|Highborn]]
+|{{ID|000e40c8}}
+|''[[Skyrim:Regenerate Magicka|Regenerate magicka]] faster for 60 seconds.''
+|[[Skyrim:High Elf|Altmer]] racial power.
+|-
+|[[Skyrim:Histskin|Histskin]]
+|{{ID|000e40d5}}
+|''Invoke the power of the [[Lore:Hist|Hist]] to [[Skyrim:Regenerate Health|recover health]] ten times faster for 60 seconds.''
+|[[Skyrim:Argonian|Argonian]] racial power.
+|-
+| [[Skyrim:Mora's Agony|{{Anchor|Mora's Agony}}]]{{DB}}
+| {{ID|xx031842}}
+| ''Summons a field of writhing tentacles that lasts 30 seconds and poisons foes who enter it.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Hidden Twilight (book)|The Hidden Twilight]]''.
+|-
+| [[Skyrim:Mora's Boon|{{Anchor|Mora's Boon}}]]{{DB}}
+| {{ID|xx01e7f7}}
+| ''Fully restores your [[Skyrim:Health|Health]], [[Skyrim:Magicka|Magicka]] and [[Skyrim:Stamina|Stamina]].''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Hidden Twilight (book)|The Hidden Twilight]]''. The description is not accurate, though. This power restores 1000 points to each of your attributes, which may not "fully restore" them for high-level characters.
+|-
+| [[Skyrim:Mora's Grasp|{{Anchor|Mora's Grasp}}]]{{DB}}
+| {{ID|xx031844}}
+| ''Targets are frozen between Oblivion and Tamriel for 30 seconds, and immune to all damage.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Hidden Twilight (book)|The Hidden Twilight]]''.
+|-
+|[[Skyrim:Nightingale Strife|{{Anchor|Nightingale Strife}}]]
+|{{ID|000f1987}}
+|''Instantly [[Skyrim:Absorb Health|absorb]] 100 points of Health from the target.''
+|Reward from [[Skyrim:Darkness Returns|Darkness Returns]].
+|-
+|[[Skyrim:Nightingale Subterfuge|{{Anchor|Nightingale Subterfuge}}]]
+|{{ID|000f1986}}
+|''People and creatures in the spell's area of effect will [[Skyrim:Frenzy (effect)|attack anyone nearby]] for 30 seconds.''
+|Reward from [[Skyrim:Darkness Returns|Darkness Returns]].
+|-
+| [[Skyrim:Omen of Warding|{{Anchor|Omen of Warding}}]]{{DB}}
+| {{ID|xx01e803}}
+| ''You take no falling damage for 15 seconds.''
+| Only available via [[Skyrim:Console|Console]].
+|-
+|[[Skyrim:Polymorph Skeever|{{Anchor|Polymorph Skeever}}]]
+|{{ID|0006e205}}
+|''Take on the form of a [[Skyrim:skeever|skeever]].''
+|Not available in-game.
+|-
+| [[Skyrim:Secret of Arcana|{{Anchor|Secret of Arcana}}]]{{DB}}
+| {{ID|xx01e7fd}}
+| ''Spells cost no magicka for 30 seconds.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Filament and Filigree (book)|Filament and Filigree]]''. While under the effect of this power, if you begin casting a spell that consumes magicka over time (such as Telekinesis), that spell will remain free of magicka cost for as long as it is active.
+|-
+| [[Skyrim:Secret of Protection|{{Anchor|Secret of Protection}}]]{{DB}}
+| {{ID|xx01e800}}
+| ''You take half damage for 30 seconds.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Filament and Filigree (book)|Filament and Filigree]]''.
+|-
+| [[Skyrim:Secret of Strength|{{Anchor|Secret of Strength}}]]{{DB}}
+| {{ID|xx01e7fa}}
+| ''[[Skyrim:Power Attack|Power attacks]] cost no stamina for 30 seconds.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Filament and Filigree (book)|Filament and Filigree]]''.
+|-
+|[[Skyrim:Shadowcloak of Nocturnal|{{Anchor|Shadowcloak of Nocturnal}}]]
+|{{ID|00017122}}
+|''For 120 seconds you automatically become [[Skyrim:Invisibility (effect)|invisible]] while [[Skyrim:Sneak|sneaking]].''
+|Reward from [[Skyrim:Darkness Returns|Darkness Returns]].
+{{Bug|Within the duration, any actions done while sneaking will turn you visible but allow you to toggle back into sneak to turn invisible again. After this duration, the player may enter invisibility/visibility at will but the effect will stop when sneaking and interacting with something.|USSEP|4.1.5|trackerid=18821}}
+|-
+| [[Skyrim:Stop Rune|{{Anchor|Stop Rune}}]]{{DB}}
+| {{ID|xx01ed9a}}
+| ''Cast on a nearby surface, it explodes {{sic|for|description=extra word}} and freezes the target in place for 10 seconds.''
+| Only available via Console.
+|-
+| [[Skyrim:Summon Karstaag|{{Anchor|Summon Karstaag}}]]{{DB}}
+| {{IDs|xx024812|This version can be cast 3 times|xx029709|This version can be cast 2 times|xx02970a|This version can be cast 1 time|sep=<br>|hover=1}}
+| ''Summons [[Skyrim:Karstaag|Karstaag]] to fight for you for 120 seconds. You may only use this ability 3 times, and only while outdoors.''
+| Reward from the quest [[Skyrim:Summoning Karstaag|Summoning Karstaag]]. Unlike most Greater Powers, you may use this ability three times while outdoors and then never again.
+|-
+|[[Skyrim:Summon Spectral Assassin|{{Anchor|Summon Spectral Assassin}}]]
+|{{ID|000618c6}}
+|''[[Skyrim:Summon|Summons]] [[Skyrim:Spectral Assassin|the ghost]] of the legendary assassin [[Lore:Lucien Lachance|Lucien Lachance]] to fight by your side, until he's defeated.''
+|Reward from [[Skyrim:Bound Until Death|Bound Until Death]]. Is cast like a spell, as opposed to the power/shout button.
+|-
+|[[Skyrim:The Ritual Stone|{{Anchor|The Ritual Stone}}]]
+|{{ID|000e7329}}
+|''Temporarily [[Skyrim:Reanimate|reanimates]] corpses in the immediate area.''
+|Activate the Ritual [[Skyrim:Standing Stone|Standing Stone]].
+|-
+|[[Skyrim:The Serpent Stone|The Serpent Stone]]
+|{{ID|000e5f61}}
+|''Target is [[Skyrim:Paralyze (effect)|paralyzed]] for 5 seconds and takes 25 points of damage over 5 seconds.''
+|Activate the Serpent [[Skyrim:Standing Stone|Standing Stone]].
+|-
+|[[Skyrim:The Shadow Stone|The Shadow Stone]]
+|{{ID|000e732a}}
+|''[[Skyrim:Invisibility (effect)|Invisibility]] for 60 seconds. Activating an object or attacking will break the spell.''
+|Activate the Shadow [[Skyrim:Standing Stone|Standing Stone]].
+|-
+|[[Skyrim:The Tower Stone|The Tower Stone]]
+|{{ID|000e7328}}
+|''Unlock any expert or lower lock once per day.''
+|Activate the Tower [[Skyrim:Standing Stone|Standing Stone]].
+|-
+|[[Skyrim:Vampire's Seduction|Vampire's Seduction]]
+|{{ID|000c4de2}}
+|''Creatures and people up to level 8 [[Skyrim:Pacify (effect)|won't fight]] for 30 seconds.''
+|[[Skyrim:Vampirism|Vampire]] power.
+|-
+|rowspan=4|{{Anchor|[[Skyrim:Vampire's Servant|Vampire's Servant]]}}
+|{{ID|000ed0a4}}
+|''[[Skyrim:Reanimate|Reanimate]] a weak dead body to fight for you for 60 seconds.''
+|Reanimate, 6 pts for 60 seconds.<br>[[Skyrim:Reanimate|Reanimate Secondary Effects]] for 60 seconds.
+|-
+|{{ID|000ed0a5}}
+|''Reanimate a more powerful dead body to fight for you for 60 seconds.''
+|Reanimate, 13 pts for 60 seconds,<br>Will not turn the raised body to ashes when it's killed.
+|-
+|{{ID|000ed0a6}}
+|''Reanimate a powerful dead body to fight for you for 60 seconds.''
+|Reanimate, 21 pts for 60 seconds.<br>Will not turn the raised body to ashes when it's killed.
+|-
+|{{ID|000ed0a7}}
+|''Reanimate a very powerful dead body to fight for you for 60 seconds.''
+|Reanimate, 30 pts for 60 seconds.<br>[[Skyrim:Regenerate Health|Fortified Healing]], 1 pt for 60 seconds.<br>Will not turn the raised body to ashes when it's killed.
+|-
+|[[Skyrim:Voice of the Emperor|Voice of the Emperor]]
+|{{ID|000e40ca}}
+|''[[Skyrim:Pacify (effect)|Calms]] nearby people for 60 seconds.''
+|[[Skyrim:Imperial|Imperial]] racial power.
+|}
+
+===Single-use Greater Powers{{DB}}===
+Each power is acquired by activating a cleansed stone which grants a single use. Activate the stone again to reacquire the power.
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|Spell ID]]
+!Description
+!Notes
+|-
+| [[Skyrim:Bones of the Earth|{{Anchor|Bones of the Earth}}]]
+| {{ID|xx01df9f}}
+| ''Caster ignores 80% of all physical damage for 30 seconds. Single use, then must be reacquired at the Earth Stone.''
+| Acquired at the [[Skyrim:Earth Stone|Earth Stone]].
+|-
+| [[Skyrim:Conjure Werebear|{{Anchor|Conjure Werebear}}]]
+| {{ID|xx01dfa4}}<br>{{ID|xx0322b2}}
+| ''Summons a [[Skyrim:Werebear|Werebear]] for 60 seconds wherever the caster is pointing. Single use, then must be reacquired at the Beast Stone.''
+| Acquired at the [[Skyrim:Beast Stone|Beast Stone]].<br>The werebear will be active for 120 seconds with the appropriate Conjuration perk.
+|-
+| [[Skyrim:North Wind|{{Anchor|North Wind}}]]
+| {{ID|xx01dfa5}}
+| ''Targets take 20 points of frost damage for 10 seconds, plus Stamina damage. Single use, then must be reacquired at the Wind Stone.''
+| Acquired at the [[Skyrim:Wind Stone|Wind Stone]].
+|-
+| [[Skyrim:Root of Power|{{Anchor|Root of Power}}]]
+| {{ID|xx01dfab}}
+| ''All spells cost 75% less to cast for 60 seconds. Single use, then must be reacquired at the Tree Stone.''
+| Acquired at the [[Skyrim:Tree Stone|Tree Stone]].
+|-
+| [[Skyrim:Sun Flare|{{Anchor|Sun Flare}}]]
+| {{ID|xx01df9c}}
+| ''A 100 point fiery explosion centered on the caster. Does more damage to closer targets. Single use, then must be reacquired at the Sun Stone.''
+| Acquired at the [[Skyrim:Sun Stone|Sun Stone]].
+|-
+| [[Skyrim:Waters of Life|{{Anchor|Waters of Life}}]]
+| {{ID|xx01dfa7}}
+| ''Heals everyone close to the caster 200 points. Single use, then must be reacquired at the Water Stone.''
+| Acquired at the [[Skyrim:Water Stone|Water Stone]].
+|}
+
+==Lesser Powers==
+Your available Lesser and [[#Greater Powers|Greater]] Powers are listed in the magic menu under "Powers".  To use a power you must first equip it, which it assigns it to the [[Skyrim:Controls#Power|Dragon Shout/Power]] button. Unlike Greater Powers, each Lesser Power can be used an unlimited number of times per day.
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|Spell ID]]
+!Description
+!Notes
+|-
+| [[SR:amiibo|{{Anchor|amiibo}}]]{{Nintendo Switch}}
+| {{ID|xx00081C}}
+| ''Use an amiibo to summon something useful. You never know what's going to come through when you use it.''
+| This power is only available in the [[Skyrim:Switch|Nintendo Switch]] version of the game. The lowercase name is intentionally stylized. A glowing circle will appear when you cast it at the ground, enabling in-game compatibility with Nintendo's "amiibo" figures. See the section on [[SR:amiibo|amiibo compatibility]] for more information.
+|-
+| [[Skyrim:Bardic Knowledge|{{Anchor|Bardic Knowledge}}]]{{DB}}
+| {{ID|xx029f12}}
+| ''Summons a spectral drum that plays for 300 seconds, improving Stamina Regen for you and nearby allies.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Untold Legends (book)|Untold Legends]]''.
+|-
+| [[Skyrim:Black Market|{{Anchor|Black Market}}]]{{DB}}
+| {{ID|xx01eec6}}
+| ''Summons a [[Skyrim:Dremora Merchant|Dremora merchant]] for 15 seconds.'' 
+| Acquired from the Black Book ''[[Skyrim:Black Book: Untold Legends (book)|Untold Legends]]''.<br>Has 2000 gold, restocks every two days.<br>Affected by the Fence speech perk.
+|-
+| [[Skyrim:Bound Quiver|{{Anchor|Bound Quiver}}]]{{CC|Arcane Archer Pack}}
+| {{ID|xx00080C}}
+| ''Creates a [[Skyrim:Bound Arrow|magic quiver]] for 120 seconds.''
+| Acquired from the [[Skyrim:Arcane Archer Pack|Arcane Archer Pack]]'s [[Skyrim:Spell Tome: Bound Quiver|Spell Tome: Bound Quiver]].<br>Has a base cost of 206 magicka to cast, with [[Skyrim:Adept Conjuration|Adept Conjuration]] halving the cost. Grants no experience.<br>With the [[Skyrim:Mystic Binding|Mystic Binding]] perk, quiver changes to [[Skyrim:Arcane Archer Pack Items#Bound Arrow|Mystic Quiver]], for 120 secs.
+|-
+| [[Skyrim:Breath of Nchuak|{{Anchor|Breath of Nchuak}}]]{{DB}}
+| {{ID|xx03b00d}}
+| ''Draws upon stamina to release a scorching blast of steam that deals 15 points of damage per second.''
+| Acquired by wearing the [[Skyrim:Visage of Mzund|Visage of Mzund]].
+|-
+| [[Skyrim:Frostmoon Instinct|{{Anchor|Frostmoon Instinct}}]]{{DB}}
+| {{ID|xx035b1b}}
+| ''Slows time for 20 seconds.''
+| Activated when entering [[Skyrim:Beast Form|beast form]] while wearing the [[Skyrim:Ring of Instinct|Ring of Instinct]].
+|-
+|[[Skyrim:Howl of the Pack|{{Anchor|Howl of the Pack}}]]
+|{{ID|000cf79d}}
+|''Summons two spectral [[Skyrim:Pack Member|pack members]] to aid in combat.''
+|Acquired by praying to the [[Skyrim:Totem of Brotherhood|Totem of Brotherhood]] during the [[Skyrim:Totems of Hircine|Totems of Hircine]] Quest.
+|-
+|[[Skyrim:Night Eye (power)|{{Anchor|Night Eye}}]]
+|{{ID|000aa01d}}
+|''Improved night vision for 60 seconds.''
+|[[Skyrim:Khajiit|Khajiit]] racial power.
+|-
+|[[Skyrim:Werewolves#Night Eye|Night Eye]]
+|{{ID|0006b10e}}
+|''Improved night vision for 60 seconds.''
+|Not available in-game: power is added in werewolf form, but unusable since you can't access your powers menu. Power is equipped on a hand like a spell.
+|-
+| [[Skyrim:Secret Servant|{{Anchor|Secret Servant}}]]{{DB}}
+| {{ID|xx01ff21}}
+| ''Summons a [[Skyrim:Dremora Butler|Dremora butler]] for 15 seconds to carry your excess items.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Untold Legends (book)|Untold Legends]]''.<br>Can carry up to 148 units in weight.
+|-
+|[[Skyrim:Telekinesis Arrows|{{Anchor|Telekinesis Arrows}}]]{{CC|Arcane Archer Pack}}
+|{{huh}}
+|''Releases suspended [[SR:Telekinesis Arrow|Telekinesis Arrows]].
+|Found on [[Skyrim:Urag gro-Shub|Urag gro-Shub’s]] desk in the Arcaneum at the [[Skyrim: College of Winterhold (place)|College of Winterhold]].
+|-
+|[[Skyrim:Vampire's Sight|{{Anchor|Vampire's Sight}}]]
+|{{ID|000c4de1}}
+|''Improved night vision for 60 seconds.''
+|[[Skyrim:Vampirism|Vampire]] power.
+|-
+|[[Skyrim:Vampire Lord|{{Anchor|Vampire Lord}}]]{{DG}}
+|{{ID|xx00283b}}
+|''Transform into a Vampire Lord. Use the Revert Form power to change back.''
+|[[Skyrim:Vampire Lord|Vampire Lord]] power.
+|}
+
+==Abilities==
+Abilities are constant-effect characteristics, which are listed in the magic menu under "Active Effects" (along with enchantments, diseases, and other active effects). The abilities are listed in the Active Effects menu according to the name of the underlying [[Skyrim:Magical Effects|magical effect]]. This means that abilities are listed under their name only in cases where the ability has a unique effect that shares the same name as the ability.  Cases where the ability is known to be listed under a different name (e.g. Agent of Mara is listed under "Resist Magic") are mentioned in the following table.
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|Spell ID]]
+!Description
+!Notes
+|-
+| {{Anchor|Additional Werewolf Transformations}}
+| {{ID|000f8306}}
+| ''Additional Werewolf Transformations''
+| Acquired from equipping the cleansed [[Skyrim:Ring of Hircine|Ring of Hircine]]. Lifts the one-time daily limit of the "Beast Form" power, allowing [[Skyrim:Werewolves|werewolves]] to perform additional transformations.
+|-
+|{{Anchor|Agent of Dibella}}
+|{{ID|0010a766}}
+|''You do more combat damage to the opposite sex.''
+* 10% more melee damage
+|Reward from [[Skyrim:The Heart of Dibella|The Heart of Dibella]].
+|-
+|{{Anchor|Agent of Mara}}
+|{{ID|000cc79a}}
+|''15% [[Skyrim:Resist Magic|Resist Magic]].''
+|Reward from [[Skyrim:The Book of Love|The Book of Love]].<br/>Listed in Active Effects menu under "Resist Magic".
+|-
+| {{Anchor|Ahzidal's Genius}}{{DB}}
+| {{ID|xx027332}}
+| ''Increases your Enchanting skill by 10 points.''
+| Acquired from wearing any four of the seven relics of [[Skyrim:Ahzidal (creature)|Ahzidal]]: [[Skyrim:Ahzidal (item)|Ahzidal's mask]], [[Skyrim:Ahzidal's Helm of Vision|Ahzidal's Helm of Vision]], [[Skyrim:Ahzidal's Armor of Retribution|Ahzidal's Armor of Retribution]], [[Skyrim:Ahzidal's Gauntlets of Warding|Ahzidal's Gauntlets of Warding]], [[Skyrim:Ahzidal's Boots of Waterwalking|Ahzidal's Boots of Waterwalking]], [[Skyrim:Ahzidal's Ring of Necromancy|Ahzidal's Ring of Necromancy]], or [[Skyrim:Ahzidal's Ring of Arcana|Ahzidal's Ring of Arcana]].
+|-
+|{{Anchor|Ancient Knowledge}}
+|{{ID|0010eb60}}
+|''Knowledge gained from the Lexicon gives you a 25% bonus when wearing Dwarven Armor and Blacksmithing increases 15% faster. ''
+|Reward from [[Skyrim:Unfathomable Depths|Unfathomable Depths]]. (See [[#Bugs|Bugs]].)
+|-
+|{{Anchor|Boethiah's Blessing}}
+|{{ID|00081183}}
+|''You are able to move more quietly, and opponents that get too close take 5 points poison damage per second.''
+|Added by wearing the [[Skyrim:Ebony Mail|Ebony Mail]].
+|-
+|{{Anchor|Champion of the Night}}
+|{{ID|000f5b54}}
+|''[[Skyrim:Illusion|Illusion]] spells cast by a Vampire are 25% [[Skyrim:Fortify Illusion|more powerful]].''
+|[[Skyrim:Vampirism|Vampire]] bonus.
+|-
+|[[Skyrim:Claws|Claws]]
+|{{ID|000aa01e}}
+|''Khajiit claws do {{sic|15|12}} points of damage.''
+|[[Skyrim:Khajiit|Khajiit]] racial bonus<br>Although the in-game text says that claws do 15 points of damage, the actual effect magnitude is only 12 points; see [[Skyrim:Claws|Claws]] for further information.<br>Added by wearing the [[Skyrim:Ring of The Beast|Ring of The Beast]]{{DG}}.
+|-
+| {{Anchor|Companion's Insight}}{{DB}}
+| {{ID|xx01e7f5}}
+| ''Your attacks, shouts, and destruction spells do no damage to your [[Skyrim:Followers|followers]] when in combat.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Winds of Change (book)|The Winds of Change]]''.
+|-
+| {{Anchor|Detect Ash Source}}{{DB}}
+| {{ID|xx01961a}}
+| ''When close enough, identifies the source of the ash spawn attacks on [[Skyrim:Tel Mithryn (settlement)|Tel Mithryn]].''
+| Acquired from wearing [[Skyrim:Neloth's Ring of Tracking|Neloth's Ring of Tracking]] during the quest [[Skyrim:Old Friends|Old Friends]].
+|-
+|{{Anchor|Dragon Infusion}}
+|{{ID|000f5ffa}}
+|''Dragons do 25% less melee damage.''
+|Effect from [[Skyrim:Esbern's Potion|Esbern's Potion]].
+|-
+| {{Anchor|Dragonborn Flame}}{{DB}}
+| {{ID|xx02647d}}
+| ''When your [[Skyrim:Fire Breath|Fire Breath]] Shout kills an enemy, a [[Skyrim:Fire Wyrm|fire wyrm]] emerges from their corpse to fight for you for 60 seconds.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Epistolary Acumen (book)|Epistolary Acumen]]''.
+|-
+| {{Anchor|Dragonborn Force}}{{DB}}
+| {{ID|xx02647b}}
+| ''Your [[Skyrim:Unrelenting Force|Unrelenting Force]] shout does more damage and using all three words may disintegrate enemies.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Epistolary Acumen (book)|Epistolary Acumen]]''.
+|-
+| {{Anchor|Dragonborn Frost}}{{DB}}
+| {{ID|xx02647e}}
+| ''Your [[Skyrim:Frost Breath|Frost Breath]] Shout encases foes in ice for 15 seconds.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: Epistolary Acumen (book)|Epistolary Acumen]]''.
+|-
+|{{Anchor|Eternal Spirit}}
+|{{Small|00e827d}}
+|''While [[Skyrim:Become Ethereal|Ethereal]], you [[Skyrim:Regenerate Health|recover health]] 25% faster.''
+|[[Skyrim:Paarthurnax (dragon)#Meditation|Meditation on the Words of Power]] - choose ''Feim''.<br>Eternal Spirit is only visible on the Active Effects menu when the character is Ethereal.
+*Cannot simultaneously have this and the Force Without Effort or The Fire Within abilities.
+|-
+| [[Skyrim:Father's Love|{{Anchor|Father's Love}}]]{{HF}}
+| {{ID|xx002f54}}
+| ''Healing spells and potions restore 25% more health for 8 hours.''
+| Acquired when sleeping in the same location as your adopted child/children if you are male and not a [[Skyrim:Lycanthropy|Werewolf]].
+|-
+|{{Anchor|The Fire Within}}
+|{{Small|00e8282}}
+|''[[Skyrim:Fire Breath|Fire Breath]] shout deals 25% more damage.''
+|[[Skyrim:Paarthurnax (dragon)#Meditation|Meditation on the Words of Power]] - choose ''Yol''.
+*Cannot simultaneously have this and the Eternal Spirit or Force Without Effort abilities.
+|-
+|{{Anchor|Force Without Effort}}
+|{{Small|00e8281}}
+|''You stagger 25% less and foes stagger 25% more.''
+|[[Skyrim:Paarthurnax (dragon)#Meditation|Meditation on the Words of Power]] - choose ''Fus''.
+*Cannot simultaneously have this and the Eternal Spirit or The Fire Within abilities.
+|-
+|[[Skyrim:Highborn|Highborn]]
+|{{ID|00105f16}}
+|''High Elves are born with 50 [[Skyrim:Fortify Magicka|extra]] [[Skyrim:magicka|magicka]].''
+|[[Skyrim:High Elf|Altmer]] racial bonus
+Listed in Active Effects menu under "Fortify Magicka".
+|-
+|[[Skyrim:Imperial Luck|Imperial Luck]]
+|{{ID|000eb7eb}}
+|''Anywhere gold coins might be found, Imperials always seem to find a few more.''
+|[[Skyrim:Imperial|Imperial]] racial bonus. (See [[#Bugs|Bugs]].)
+|-
+| [[Skyrim:Lover's Comfort|{{Anchor|Lover's Comfort}}]]
+| {{ID|000cda1d}}
+| ''All skills improve 15% faster for 8 hours.''
+| Acquired when sleeping in a place where your spouse is also present. Not obtained if you have the [[Skyrim:The Lover Stone|Lover's Stone]] active or are a [[Skyrim:Lycanthropy|Werewolf]].
+|-
+| {{Anchor|Lover's Insight}}{{DB}}
+| {{ID|xx01e7f3}}
+| ''Do 10% more damage and get 10% [[Skyrim:Fortify Barter|better prices]] from people of the opposite sex.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Winds of Change (book)|The Winds of Change]]''.
+|-
+|[[Skyrim:Breton#Magic Resistance|Magic Resistance]]
+|{{ID|000aa01f}}
+|''Your Breton blood grants a 25% [[Skyrim:Resist Magic|resistance to magic]].''
+|[[Skyrim:Breton|Breton]] racial resistance
+Listed in Active Effects menu under "Resist Magic".
+|-
+| [[Skyrim:Mother's Love|{{Anchor|Mother's Love}}]]{{HF}}
+| {{ID|xx004292}}
+| ''Healing spells and potions restore 25% more health for 8 hours.''
+| Acquired when sleeping in the same location as your adopted child/children if you are female and not a [[Skyrim:Lycanthropy|Werewolf]].
+|-
+| {{Anchor|Neloth's Health Boost}}{{DB}}
+| {{ID|xx01bd0a}}
+| ''Neloth's 25 point health boost. Remains until submerged in water after which you lose 25 points of health until you return to Neloth.''
+| Acquired during the quest [[Skyrim:Experimental Subject (A)|Experimental Subject]].
+|-
+| {{Anchor|Neloth's Memory Spell}}{{DB}}
+| {{ID|xx01c066}}<br>{{ID|xx01c067}}
+| ''Records memories of your experiences for Neloth.''
+| Acquired during the quest [[Skyrim:Briarheart Necropsy|Briarheart Necropsy]].
+|-
+|{{Anchor|Nightingale Armor Full Set}}
+|{{ID|0001711f}}
+|''Increases Armor Rating by 25 points.''
+|Reward from [[Skyrim:Trinity Restored|Trinity Restored]]; only effective if wearing all [[Skyrim:Nightingale Armor|Nightingale Armor]].<br>Listed in Active Effects menu under "Fortify Armor Rating".
+|-
+|{{Anchor|Nightstalker's Footsteps}}
+|{{ID|0010F1E7}}
+|''25% harder to detect while sneaking.''
+|Nightstalker's Footsteps is a permanent effect gained from stage one of Vampirism.<br>Listed in Active Effects menu under "Fortify Sneak".
+|-
+|{{Anchor|Prowler's Profit}}
+|{{Small|00f20be}}
+|''Anywhere gems might be found, members of the Thieves Guild always seem to find a few more.''
+|Reward from [[Skyrim:No Stone Unturned|No Stone Unturned]]. Grants a greater chance of finding additional gems in chests.  For details, see [[Skyrim:Gems#Valuable Gems|Gems]].
+|-
+|[[Skyrim:Argonian#Resist Disease|Resist Disease]]
+|{{ID|00104acf}}
+|''Your Argonian blood is 50% [[Skyrim:Resist Disease|resistant to disease]].''
+|[[Skyrim:Argonian|Argonian]] racial resistance.
+|-
+|{{Anchor|Resist Disease}}
+|{{ID|000f5ba0}}
+|''Your beast blood gives you 100% [[Skyrim:Resist Disease|resistance to disease]].''
+|[[Skyrim:Werewolf|Werewolf]] bonus.
+|-
+|{{Anchor|Resist Disease}}
+|{{ID|000ed0a8}}
+|''Your Vampiric blood gives you 100% [[Skyrim:Resist Disease|resistance to disease]].''
+|[[Skyrim:Vampirism|Vampire]] bonus.
+|-
+|[[Skyrim:Resist Disease and Poison|Resist Disease and Poison]]
+|{{ID|000aa025}}
+|''Your Bosmer blood gives you 50% resistance to [[Skyrim:Resist Poison|poison]] and [[Skyrim:Resist Disease|disease]].''
+|[[Skyrim:Wood Elf|Bosmer]] racial resistance.<br>Listed in Active Effects menu under both "Resist Disease" and "Resist Poison".
+|-
+|{{Anchor|[[Skyrim:Dark Elf#Resist Fire|Resist Fire]]}}
+|{{ID|000aa021}}
+|''Your Dunmer blood gives you 50% [[Skyrim:Resist Fire|resistance to fire]].''
+|[[Skyrim:Dark Elf|Dunmer]] racial resistance.
+|-
+|{{Anchor|[[Skyrim:Nord#Resist Frost|Resist Frost]]}}
+|{{ID|000aa020}}
+|''Your Nord blood gives you 50% [[Skyrim:Resist Frost|resistance to Frost]].''
+|[[Skyrim:Nord|Nord]] racial resistance.
+|-
+|{{Anchor|[[Skyrim:Redguard#Resist Poison|Resist Poison]]}}
+|{{ID|000aa023}}
+|''Your Redguard blood gives you 50% [[Skyrim:Resist Poison|resistance to poison]].''
+|[[Skyrim:Redguard|Redguard]] racial resistance.
+|-
+|{{Anchor|Resist Poison}}
+|{{ID|0010fb30}}
+|''Your Vampiric blood gives you 100% resistance to poison.''
+|[[Skyrim:Vampirism|Vampire]] bonus.
+|-
+| [[Skyrim:Rested|{{Anchor|Rested}}]]
+| {{ID|000fb981}}
+| ''All skills improve 5% faster for 8 hours.''
+| Acquired when sleeping in a normal bed, i.e neither in a player home nor a rented bed in an inn nor with the player's spouse. Not obtained by players who have the [[Skyrim:The Lover Stone|Lover's Stone]] active or are a [[Skyrim:Lycanthropy|Werewolf]].
+|-
+|{{Anchor|Sailor's Repose}}
+|{{ID|000d397f}}
+|''[[Skyrim:Restore Health|Healing]] spells cure 10% more.''
+|Reward from [[Skyrim:Frostflow Abyss|Frostflow Abyss]].
+|-
+| {{Anchor|Scholar's Insight}}{{DB}}
+| {{ID|xx01e7ef}}
+| ''Reading [[Skyrim:Skill Books|Skill Books]] gives you an extra Skill Point.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Winds of Change (book)|The Winds of Change]]''.
+* Note that while books you have not read grant you two skill points, books you have already read will ''not'' grant you an extra skill point if you read them again, so you'll get the most benefit from this if you get it fairly early in the game (or you've just been ignoring skill books until now).
+|-
+| {{Anchor|Seeker of Might}}{{DB}}
+| {{ID|xx034834}}
+| ''Combat skills are all 10% more effective.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Sallow Regent (book)|The Sallow Regent]]''.
+* Specifically multiplies physical damage with one-handed weapons, two-handed weapons, bows, and crossbows, damage blocked with shields and weapons, weapon and armor tempering, and the armor rating of non-shield armor pieces by 1.1.
+|-
+| {{Anchor|Seeker of Shadows}}{{DB}}
+| {{ID|xx034838}}
+| ''Stealth skills are all 10% more effective.''
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Sallow Regent (book)|The Sallow Regent]]''.
+* Specifically multiplies the size of locks' sweet spot, player alchemy effectiveness, and item sell prices by 1.1, item buy prices by 0.91, adds 10% to pickpocket chance, and reduces player detection while crouching by 5. The bonus pickpocket chance and detection are not affected by perks, skill levels, enchantments, or potions.
+|-
+| {{Anchor|Seeker of Sorcery}}{{DB}}
+| {{ID|xx034837}}
+| ''All spells cost 10% less magicka. Enchantments are 10% more powerful.'' 
+| Acquired from the Black Book ''[[Skyrim:Black Book: The Sallow Regent (book)|The Sallow Regent]]''. 
+* Note that the 10% enchanting bonus does not appear in the dialogue box presented for 'Activate Seeker of Sorcery'. It only shows up in the Active Effects section of the Magic menu.''
+* The 10% cost reduction stacks multiplicatively, not additively, with cost reduction from Fortify Magic Skill enchantments.
+|-
+|{{Anchor|Shrouded Armor Full Set}}
+|{{ID|0001711d}}
+|''Increases Armor Rating by 25 points.''
+|This bonus applies for any combination of [[Skyrim:Dark Brotherhood|Dark Brotherhood]] armor, namely any combination of four pieces of [[Skyrim:Ancient Shrouded Armor|Ancient Shrouded]], [[Skyrim:Shrouded Armor|Shrouded]], or [[Skyrim:Worn Shrouded Armor|Worn Shrouded]] armor; [[Skyrim:Tumblerbane Gloves|Tumblerbane Gloves]] also qualify.
+|-
+|{{Anchor|Sinderion's Serendipity}}
+|{{ID|0010bf09}}
+|''There is a 25% chance of creating a duplicate potion when using your alchemy skill.''
+|Reward from [[Skyrim:A Return To Your Roots|A Return To Your Roots]]. The ability is independent of the book ''[[Skyrim:The Nirnroot Missive|The Nirnroot Missive]]'', and therefore remains active even if you remove the book from your inventory.
+|-
+|{{Anchor|Surefoot}}
+|{{ID|0009379c}}
+|''You move more quietly.''
+|Not available in game, effects are: [[Skyrim:Muffle (effect)|Muffle]], 1 point.
+|-
+|{{Anchor|Turn of the Seasons}}{{CC|Forgotten Seasons}}
+|{{ID|xx0df80f}}<br>{{ID|xx0df815}}
+|''Barter prices are 10% better when raining. With a full set of Light Armor equipped, stamina regenerates 5% faster in clear or clement weather. 10% chance of a critical hit that does 10% more critical damage with bows when overcast. With a full set of Heavy Armor equipped, armor rating increased by 10% when snowing.''
+|Reward from [[Skyrim:Forgotten Seasons (quest)|Forgotten Seasons]], acquired by reading ''[[SR:Turn of the Seasons|Turn of the Seasons]]''.
+|-
+| [[Skyrim:Vampiric Blood Rested|{{Anchor|Vampiric Blood Rested}}]]{{DG}}
+| {{ID|xx008e3d}}
+| ''Increases magic resistance by 10%.''
+| Acquired if you are a vampire and sleep in a coffin.
+* The ability is active for 12 hours.
+|-
+|{{Anchor|Waterbreathing}}
+|{{ID|000aa01b}}
+|''Your Argonian lungs can {{sic|[[Skyrim:Waterbreathing (effect)|breath]]|breathe}} underwater.''
+|[[Skyrim:Argonian|Argonian]] racial bonus.
+|-
+|{{Anchor|Weakened Soul}}{{DG}}
+|{{ID|xx00eab5}}
+|''Health, Magicka, and Stamina recover slowly while in Soul Cairn and are reduced by 45 points.''
+|Effect of being partially soul trapped during [[Skyrim:Chasing Echoes|Chasing Echoes]]
+* Health regeneration is slowed by 80%.
+* Magicka and Stamina regeneration are slowed by 50%.
+* Effects are removed when you retrieve the [[Skyrim:Soul Essence Gem (Full)|Soul Essence Gem]].
+|-
+| [[Skyrim:Well Rested|{{Anchor|Well Rested}}]]
+| {{ID|000fb984}}
+| ''All skills improve 10% faster for 8 hours.''
+| Acquired when sleeping in a player home (if you have no spouse or your spouse is not in the same home) or in a rented bed in an inn. Not obtained if you have the [[Skyrim:The Lover Stone|Lover's Stone]] active or are a [[Skyrim:Lycanthropy|Werewolf]].
+|}
+
+==Abilities When Transformed==
+Some Abilities are activated or effective only when you're in either [[Skyrim:Beast Form|Werewolf Form]] or [[Skyrim:Vampire Lord#Vampire Lord Form|Vampire Lord form]]. The ability descriptions cannot be directly seen anywhere in the game as the conventional menus including the Active Effects menu are not accessible when transformed. Such abilities are listed in the following table.
+
+{| class="wikitable sortable"
+!Name
+![[Skyrim:Form ID|Spell/Perk ID]]
+!Description
+!Notes
+|-
+| [[Skyrim:Frostmoon Bloodlust|{{Anchor|Frostmoon Bloodlust}}]]{{DB}}
+|{{ID|xx035B17}}
+|''While in Beast Form, your attacks do 50% more damage, but you also take 50% more damage.''
+|Acquired from [[Skyrim:Ring of Bloodlust|Ring of Bloodlust]] while transformed as a Werewolf.
+|-
+| [[Skyrim:Frostmoon Howl|{{Anchor|Frostmoon Howl}}]]{{DB}}
+|{{ID|xx035B16}}
+|''Increases the duration of your Howls by 25%.''
+|Acquired from [[Skyrim:Ring of the Moon|Ring of the Moon]] while transformed as a Werewolf.
+|-
+| [[Skyrim:Frostmoon Hunt|{{Anchor|Frostmoon Hunt}}]]{{DB}}
+|{{ID|xx035B1E}}
+|''While in Beast Form, your health regenerates.''
+* Health regenerates 100% faster. Regenerate an extra 1% of maximum health per second.
+|Acquired from [[Skyrim:Ring of the Hunt|Ring of the Hunt]] while transformed as a Werewolf.
+|}
+
+==Bugs==
+{{Bug|Although you'll get the Dragon Infusion perk upon drinking [[Skyrim:Esbern's Potion|Esbern's Potion]], the ability won't appear in your Active Effects menu.|OSP|1.9}}
+{{Bug|Ancient Knowledge gives a 25% armor bonus while wearing any type of armor ''except'' Dwarven (any armor at all prior to patch 1.9).|USKP|1.3.1}}
+** This bug was supposed to be fixed by Official Patch 1.9.26.0.8, but Bethesda erroneously required that the armor ''not'' be Dwarven.
+{{Bug|Ancient Knowledge increases effective Smithing skill by 15% when tempering weapons and armor instead of giving a Smithing leveling bonus of 15%.|USKP|1.3.1}}
+{{Bug|The Seeker of Shadows reward from The Sallow Regent only gives a 9% bonus to prices instead of the advertised 10%.|UDBP|1.0.3}}
+{{Bug|The Lover's Insight reward from The Winds of Change only gives a 9% bonus to prices instead of the advertised 10%.|UDBP|1.0.5}}
+{{Bug|In rare instances, the Scholar's Insight reward will only give you one point from the skill book. This is the same bug as noted on the [[Skyrim:Skill Books#Bugs|Skill Books]] page, but it's twice as likely to occur with Scholar's Insight, since you're leveling up twice.|confirmed=1}}
+** Hold off on reading the book until you've advanced a level in that skill.
+{{Bug|The Secret of Arcana power lasts indefinitely as long as a single concentration spell (without the relevant Dual Casting perks) or any combination of concentration spells is dual-cast.|confirmed=1}}
+**This can be used to cast the Master level Destruction spell Lightning Storm indefinitely with no magicka cost.
+{{Bug|Sailor's Repose has an incorrect taper duration and an incorrect magnitude set.|USKP|2.0.3}}
+{{Bug|Even though it's active, Prowler's Profit does not appear in the active effects list.|USKP|1.3.0|trackerid=9666}}
+{{Bug|Certain shouts may continue to damage followers even with the Companion's Insight ability.|confirmed=1}}
+{{Bug|Wearing more than four relics of Ahzidal won't grant the Ahzidal's Genius bonus.|confirmed=1}}
+**Wearing exactly four of the relics will re-activate the effect.
+{{Bug|Vampire followers are not protected by Companion's Insight. This applies to [[Skyrim:Serana|Serana]] as well as any spouse follower you have turned into a vampire through [[Skyrim:The Gift|The Gift]].|confirmed=1}}
+{{Bug|While Breath of Nchuak damage can be increased with Fortify Destruction potions, the damage listed under the power will still read 15 per second.|confirmed=0}}
+{{Bug|Dragons disintegrated by Dragonborn Force may not yield dragon souls or any loot.|confirmed=0}}
+{{Bug|The Imperial Luck racial passive erroneously gets applied to all players after Unbound is completed. It will not show up under Active Effects though, unless you're Imperial. Imperials don't have the bonus applied twice for them—they instead have the bonus immediately instead of after Unbound.|confirmed=1}}
+{{Bug|Nightingale Strife may be used multiple times per day rather than just once.|confirmed=0}}
+
+==See Also==
+*[[Skyrim:Blessings|Blessings]]
+*[[Skyrim:Dragon Shouts|Dragon Shouts]]
+*[[Skyrim:Spells|Spells]]

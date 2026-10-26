@@ -1,0 +1,195 @@
+{{CC Header|Civil War Champions}}{{Trail|Civil War Champions}}
+This page documents the '''new items''' added by the [[Skyrim:Civil War Champions|Civil War Champions]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Armor}}
+|{{Anchor|Imperial Dragon Armor}}<br>{{ID|FExxxD69|par=1}}
+|Heavy Armor || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|50||7601||49||54
+|
+*''Increases Fire Resistance by 30%. Increases Shock Resistance by 30%. Increases Frost Resistance by 30%.''
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Boots}}
+|{{Anchor|Imperial Dragon Boots}}<br>{{ID|FExxxD68|par=1}}
+|Heavy Boots || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|10||1745||18||24
+|
+*''Health regenerates 10% faster. Increases Fire Resistance by 20%.''
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Cloak}}
+|{{Anchor|Imperial Dragon Cloak}}<br>{{ID|FExxx84B|par=1}}
+|Heavy Cloak || [[SR:Leather|Leather]];<br>perk: [[SR:Steel Smithing|Steel]]
+|5||500||0||
+|
+*Unobtainable in-game
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Gauntlets}}
+|{{Anchor|Imperial Dragon Gauntlets}}<br>{{ID|FExxx84D|par=1}}
+|Heavy Gauntlets || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|6||1250||18||24
+|
+*''Increases melee damage by 10%.''
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Helmet}}
+|{{Anchor|Imperial Dragon Helmet}}<br>{{ID|FExxx848|par=1}}
+|Heavy Helmet || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|15||3200||23||29
+|
+*''When low on health (Below 20%), has a 25% chance on being hit to give the wearer Ebonyflesh, increasing defense. This effect can occur once every 20 seconds.''
+|-
+|{{AL|C}}|{{Icon|a|Imperial Dragon Shield}}
+|{{Anchor|Imperial Dragon Shield}}<br>{{ID|FExxx84A|par=1}}
+|Heavy Shield || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|15||3708||36||0
+|
+*''Doubles damage from bashing. Increases Fire Resistance by 10%. Block 20% more damage with your shield.''
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Armor (male)}}{{Icon|a|Storm-Bear Armor (female)}}
+|{{Anchor|Storm-Bear Armor}}<br>{{ID|FExxx84C|par=1}}
+|Heavy Armor || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|50||7974||49||54
+|
+*''Increases your health by 75 points. Increases Frost Resistance by 50%. Time between shouts is reduced 20%.''
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Boots}}
+|{{Anchor|Storm-Bear Boots}}{{intnote|SBBoots}}<br>{{ID|FExxx849|par=1}}
+|Heavy Boots || [[SR:Leather|Leather]];<br>perk: [[SR:Steel Smithing|Steel]]
+|10||1632||18||24
+|
+*''Stamina regenerates 10% faster. Increases Frost Resistance by 20%.''
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Cloak}}
+|{{Anchor|Storm-Bear Cloak}}<br>{{ID|FExxx825|par=1}}
+|Heavy Cloak || [[SR:Leather|Leather]]
+|5||500||0||
+|
+*Unobtainable in-game
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Gauntlets}}
+|{{Anchor|Storm-Bear Gauntlets}}<br>{{ID|FExxxD6A|par=1}}
+|Heavy Gauntlets || [[SR:Leather|Leather]];<br>perk: [[SR:Steel Smithing|Steel]]
+|6||1267||18||24
+|
+*''Power attack stamina cost is reduced by 20%.''
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Helmet}}
+|{{Anchor|Storm-Bear Helmet}}<br>{{ID|FExxxD6B|par=1}}
+|Heavy Helmet || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|15||3217||23||29
+|
+*''When wearing the Storm-Bear Armor, grants increases to armor rating.''
+|-
+|{{AL|C}}|{{Icon|a|Storm-Bear Shield}}
+|{{Anchor|Storm-Bear Shield}}<br>{{ID|FExxxD6C|par=1}}
+|Heavy Shield || [[SR:Steel Ingot|Steel Ingot]];<br>perk: [[SR:Steel Smithing|Steel]]
+|15||3714||36||0
+|
+*''Doubles damage from bashing. Block 20% more damage with your shield. Increases Frost Resistance by 10%.''
+|-
+|}
+{{note|SBBoots||{{Bug|Wearing Storm-Bear Boots disables the Fortify Shouts effect from the Storm-Bear Armor.|vn=1|nobullet=1}}}}
+<gallery style="text-align: center>
+File:SR-item-Imperial Dragon Armor Male.jpg|A male [[Skyrim:Nord|Nord]] wearing Imperial Dragon armor
+File:SR-item-Imperial Dragon Armor Female.jpg|A female [[Skyrim:Imperial|Imperial]] wearing Imperial Dragon armor
+File:SR-item-Imperial Dragon Cloak.jpg|Imperial Dragon cloak
+File:SR-item-Storm-Bear Armor Male.jpg|A male Nord wearing Storm-Bear armor
+File:SR-item-Storm-Bear Armor Female.jpg|A female Imperial wearing Storm-Bear armor
+File:SR-item-Storm-Bear Cloak.jpg|Storm-Bear cloak
+</gallery>
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key 02.png
+ |name=Imperial Armory Key
+ |displayname=[[Skyrim:Imperial Armory Key|Imperial Armory Key]]
+ |id=FExxx876|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key 02.png
+ |name=Storm-Bear Chest Key
+ |displayname=[[Skyrim:Storm-Bear Chest Key|Storm-Bear Chest Key]]
+ |id=FExxx875|weight=0|value=0}}
+|}
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-SnowBearPelt.png
+ |name=Klija's Snow Bear Pelts
+ |id=FExxx868|weight=15|value=300}}
+ |
+*Marked as a [[SR:Quest Items|quest item]]
+{{Item Data
+ |icon=SR-icon-misc-Map of Battle Location.png
+ |name=Map of Battle Location
+ |id=FExxx867|weight=1|value=0}}
+ |
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Battle of Champions}}
+{{Book Normal|Legate Adventus Caesennius's Note}}
+{{Book Normal|Letter from the Empire}}
+{{Book Normal|Letter from the Stormcloaks}}
+{{Book Normal|Letter of Commendation (Imperial Legion)}}
+{{Book Normal|Letter of Commendation (Imperial Legion v2)}}
+{{Book Normal|Letter of Commendation (Stormcloak)}}
+{{Book Normal|Letter of Commendation (Stormcloak v2)}}
+{{Book Normal|Yrsarald Thrice-Pierced's Note}}
+|}
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Akatosh's Talon.png|name=Akatosh's Talon|displayname=[[Skyrim:Akatosh's Talon|Akatosh's Talon]]|id=FExxxD62|type=2 Hand Warhammer|temp=Steel Ingot|perk=Steel Smithing|weight=31|value=4832|damage=27|enchantment=''Burns the target for 50 points. Targets on fire take extra damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 50 pts}}
+|-
+{{Item Data|icon=SR-icon-weapon-Dragon's Oath.png|name=Dragon's Oath|displayname=[[Skyrim:Dragon's Oath|Dragon's Oath]]|id=FExxx84F|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=10|value=3103|damage=14|enchantment=''Burns the target for 30 points. Targets on fire take extra damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 30 pts}}
+|-
+{{Item Data|icon=SR-icon-weapon-Storm-Bear Sword.png|name=Storm-Bear Sword|displayname=[[Skyrim:Storm-Bear Sword|Storm-Bear Sword]]|id=FExxxD61|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=10|value=3230|damage=14|enchantment=''Target takes 30 points of frost damage to Health and Stamina.''
+*[[Skyrim:Slow|Slow]], 50 pts for 3 secs
+*[[Skyrim:Frost Damage|Frost Damage]], 30 pts}}
+|-
+{{Item Data|icon=SR-icon-weapon-Tsun's Judgement.png|name=Tsun's Judgement|displayname=[[Skyrim:Tsun's Judgement|Tsun's Judgement]]|id=FExxx850|type=2 Hand Battleaxe|temp=Steel Ingot|perk=Steel Smithing|weight=31|value=4950|damage=27|enchantment=''Target takes 50 points of frost damage to Health and Stamina.''
+*[[Skyrim:Frost Damage|Frost Damage]], 50 pts
+*[[Skyrim:Slow|Slow]], 50 pts}} for 3 secs
+|}

@@ -1,0 +1,174 @@
+{{Mod Header|Hearthfire}} {{Trail|Hearthfire|Construction}} [[Category:Skyrim-Hearthfire]] [[Category:Skyrim-Hearthfire-Furnishing Options]][[File:SR-book-Byohlonghouse_left.png|frameless|right]]
+{{TOCright}}
+The '''greenhouse''' is one of the additions you can [[Skyrim:Construction|build]] as a [[Skyrim:Construction#West_Wing|west wing]] extension to the [[Skyrim:Main_Hall|main hall]] of your home.
+
+== Construction ==
+{| class="wikitable"
+! Option !! Step !!colspan=2| Parts !! Materials
+|-
+! rowspan=7|Greenhouse<br><br>{{icon|construction|Greenhouse|96}}
+| style="text-align:center"|1 ||{{icon|construction|Door}}|| Doors || 2 Iron Fittings, 2 Sawn Log, 2 Lock, 4 Hinge, 4 Nails
+|-
+| style="text-align:center"|2 ||{{icon|construction|Foundation}}|| Foundation || 2 Sawn Log, 10 Quarried Stone
+|-
+|rowspan=2 style="text-align:center"|3 ||{{icon|construction|Floor}}|| Floor || 4 Quarried Stone
+|-
+|{{icon|construction|Wall Framing}}|| Wall Supports || 8 Sawn Log, 8 Nails
+|-
+|rowspan=2 style="text-align:center"|4 ||{{icon|construction|Roof Framing}}|| Roof Framing || 4 Sawn Log
+|-
+|{{icon|construction|Walls}}|| Walls || 3 Clay, Sawn Log
+|-
+| style="text-align:center"|5 ||{{icon|construction|Roof}}|| Roof || 8 Nails, Sawn Log
+|-
+! Total Materials:
+|colspan=4| ''3 [[Skyrim:Clay|Clay]], 4 [[Skyrim:Hinge|Hinges]], 2 [[Skyrim:Iron_Fittings|Iron Fittings]], 2 [[Skyrim:Lock|Locks]], 20 [[Skyrim:Nails|Nails]], 14 [[Skyrim:Quarried_Stone|Quarried Stone]], 18 [[Skyrim:Sawn_Log|Sawn Logs]]''<br>(2 [[Skyrim:Corundum Ingot|Corundum Ingots]], 9 [[Skyrim:Iron Ingot|Iron Ingots]])
+|}
+
+== Furnishing Options ==
+The greenhouse offers the opportunity to grow [[#Food and Ingredients|food and ingredients]] in up to 18 plots of fertile soil.
+
+The following is a list of furniture items and decorations which can be added using the carpenter's workbench in the greenhouse. It is not necessary to purchase or build all furnishings; you can pick and choose. All items are created in a predetermined location, and only standard items can be moved. Often, a furnishing option includes several pieces of furniture, containers, and/or accessories, but is named for only the primary piece.
+
+A number of miscellaneous items are added with various furnishing options, but only notable items are specified on this table—specifically, usable [[Skyrim:Containers|containers]] and [[Skyrim:Ingredients|ingredients]]. Although other common items are added to your home, they are not listed here.
+
+{| class="wikitable"
+! colspan=6|Greenhouse Furnishings
+|-
+! Type !!colspan=2| Options !! Materials !! Notes
+|-
+! rowspan=6|Containers
+|rowspan=2|{{icon|construction|Barrels 01}}|| Barrels || Sawn Log, Nails, Iron Ingot || Three barrels and two sacks on north wall. Adds growth of [[Skyrim:Imp_Stool|imp stool.]]
+|-
+| Barrels || Sawn Log, Nails, Iron Ingot || Three barrels and two sacks on south wall. Adds [[Skyrim:Honey|honey]].
+|-
+|rowspan=2|{{icon|construction|Cupboard}}|| Cupboard || 2 Sawn Log, 4 Nails, Iron Fittings || West wall, north of center. Adds two satchels.
+|-
+| Cupboard || 2 Sawn Log, 4 Nails, Iron Fittings || West wall, south of center. Adds two satchels.
+|-
+|rowspan=2|{{icon|construction|Display Case and Small Wardrobe}}|| Display Case and Cupboard || 2 Sawn Log, 4 Nails, 2 Hinge, Iron Fittings, 2 Glass || West wall, south side.
+|-
+| Display Case and Cupboard || 2 Sawn Log, 4 Nails, 2 Hinge, Iron Fittings, 2 Glass || West wall, north side.
+|-{{ThickLine}}
+! rowspan=4|Furniture
+|{{icon|construction|Display Case}}|| Display Case || 2 Nails, Sawn Log, Hinge, Glass || South wall. Adds growth of [[Skyrim:Namira's_Rot|Namira's Rot]] beneath it.
+|-
+|rowspan=2|{{icon|construction|Night Tables}}|| Night Tables (2) || 2 Sawn Log, 4 Nails || East wall, north side. Adds two [[Skyrim:Garlic|garlic]] and one [[Skyrim:Grass_Pod|grass pod]].
+|-
+| Night Tables (2) || 2 Sawn Log, 4 Nails || East wall, south side. Adds one [[Skyrim:Dragon's_Tongue|dragon's tongue]] and one [[Skyrim:Creep_Cluster|creep cluster]].
+|-
+|{{icon|construction|Display Case}}|| Tall Shelf || 2 Nails, Sawn Log, Hinge, Glass || North side. {{Bug|nobullet=1|This is actually a large Display Case that's mislabeled in the menu, rather than a "shelf".|UHFP|2.0.1|trackerid=9722}}
+|-{{ThickLine}}
+! Shelves
+|{{icon|construction|Wall Shelves}}|| Wall Shelves (4) || 2 Sawn Log, 2 Nails || Along west wall. Adds a strong box and a [[Skyrim:Honeycomb|honeycomb]].
+|-{{ThickLine}}
+! rowspan=15|Miscellaneous
+|rowspan=2|{{icon|construction|Chandelier}}|| Chandelier, Small || Iron Ingot, 3 Goat Horns, Iron Fittings || South side.
+|-
+| Chandelier, Small || Iron Ingot, 3 Goat Horns, Iron Fittings || North side.
+|-
+|rowspan=3|{{icon|construction|Large Planter}} || Large Planter || 2 Clay, 2 Quarried Stone, Sawn Log || South side. (4 Plots)
+|-
+| Large Planter || 2 Clay, 2 Quarried Stone, Sawn Log || Center. (4 Plots)
+|-
+| Large Planter || 2 Clay, 2 Quarried Stone, Sawn Log || North side. (4 Plots)
+|-
+|rowspan=2|{{icon|construction|Mounted Goat Head}}|| Mounted Goat Head || Leather Strips, Goat Hide || East wall, north side.
+|-
+| Mounted Goat Head || Leather Strips, Goat Hide || West wall, south side.
+|-
+|rowspan=2|{{icon|construction|Mounted Mudcrab}}|| Mounted Mudcrab || Leather Strips, 2 Mudcrab Chitin || East wall, south side.
+|-
+| Mounted Mudcrab || Leather Strips, 2 Mudcrab Chitin || West wall, north side.
+|-
+|rowspan=2|{{icon|construction|Small Planter 1}}|| Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || West wall, north side. (1 Plot)
+|-
+| Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || East wall, south side. (1 Plot)
+|-
+|{{icon|construction|Small Planter 2}}|| Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || East wall, north side. (1 Plot)
+|-
+|rowspan=2|{{icon|construction|Small Planter 1}} || Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || West wall, south of center. (1 Plot)
+|-
+| Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || West wall, north of center. (1 Plot)
+|-
+|{{icon|construction|Small Planter 2}}|| Small Planter with Cupboard || 2 Sawn Log, Iron Fittings, 4 Nails, 2 Clay || West wall, south side. (1 Plot)
+|-{{ThickLine}}
+! Total Materials:
+|colspan=4| ''18 [[Skyrim:Clay|Clay]], 6 [[Skyrim:Glass (item)|Glass]], 2 [[Skyrim:Goat_Hide|Goat Hides]], 6 [[Skyrim:Goat_Horns|Goat Horns]], 6 [[Skyrim:Hinge|Hinges]], 12 [[Skyrim:Iron_Fittings|Iron Fittings]], 4 [[Skyrim:Iron_Ingot|Iron Ingots]], 4 [[Skyrim:Leather_Strips|Leather Strips]], 4 [[Skyrim:Mudcrab_Chitin|Mudcrab Chitin]], 56 [[Skyrim:Nails|Nails]], 6 [[Skyrim:Quarried_Stone|Quarried Stone]], 33 [[Skyrim:Sawn_Log|Sawn Logs]]''<br>(20.6 [[Skyrim:Iron Ingot|Iron Ingots]] in addition to the 4 listed above)
+|}
+
+==Food and Ingredients==
+The following [[Skyrim:Food|food]] and [[Skyrim:Ingredients|ingredients]] can be planted in your greenhouse or [[Skyrim:Construction#Exterior|exterior]] garden. Food or ingredients added by [[Skyrim:Add-ons|official add-ons]] cannot be planted (with some exceptions). You can plant the item of your choice by activating a particular plot of '''Fertile Soil'''. A "Give Gift" inventory menu will come up with the eligible items you are carrying. You only need to use one of the selected item (if you choose more, it will display a message and remove only one from your inventory), and you may plant multiple plots of the same item if you prefer. If you accidentally plant something in a plot when you wanted to plant something else, simply activate the same plot again; if nothing has started growing, then the first item you planted will be placed back in your inventory and the new chosen item will be removed and planted. If you decide to change your mind about what to grow in a particular plot after something is already growing, a message will be displayed to notify you that something is already growing, and you will be given two options: "Do nothing" or "Clear planter". If you choose the latter, the soil will return to its original state and you can begin again.  Food and ingredients harvested from garden or greenhouse plots will produce between 2 and 5 samples every time they are harvested.  The amount for each plant is shown on the list below.
+
+An exterior garden for one of the Hearthfire houses has 11 plots: a Greenhouse has planters containing 18 plots, to make a total of 29 for the house with a Greenhouse installed.
+
+The [[SR:Tundra Homestead|Tundra Homestead]], [[SR:Myrwatch|Myrwatch]], [[SR:Farming|Farming]], [[SR:Bloodchill Manor|Bloodchill Manor]], [[SR:Ghosts of the Tribunal|Ghosts of the Tribunal]], and [[SR:Nchuanthumz: Dwarven Home|Nchuanthumz: Dwarven Home]] [[SR:Creation Club|Creation]]s add several new plots of Fertile Soil separate from Hearthfire housing.
+
+{| class="hiddentable" width=60%
+|'''Food'''||colspan=3|'''Ingredients'''
+|- {{AL|T}}
+|
+* [[Skyrim:Cabbage|Cabbage]] (2)
+* [[Skyrim:Carrot|Carrot]] (4)
+* [[Skyrim:Gourd|Gourd]] (3)
+* [[Skyrim:Leek|Leek]] (2)
+* [[Skyrim:Potato|Potato]] (3)
+|
+* [[Skyrim:Aloe Vera Leaves|Aloe Vera Leaves]] (2)
+* [[Skyrim:Bleeding_Crown|Bleeding Crown]] (3)
+* [[Skyrim:Blisterwort|Blisterwort]] (4)
+* [[Skyrim:Blue Mountain Flower|Blue Mountain Flower]] (3)
+* [[Skyrim:Canis Root|Canis Root]] (4)
+* [[Skyrim:Creep Cluster|Creep Cluster]] (5)
+* [[Skyrim:Deathbell|Deathbell]] (3)
+* [[Skyrim:Dragon's Tongue|Dragon's Tongue]] (4)
+* [[Skyrim:Fly Amanita|Fly Amanita]] (4)
+* [[Skyrim:Giant Lichen|Giant Lichen]] (4)
+|
+* [[Skyrim:Glowing Mushroom|Glowing Mushroom]] (5)
+* [[Skyrim:Grass Pod|Grass Pod]] (3)
+* [[Skyrim:Imp Stool|Imp Stool]] (4)
+* [[Skyrim:Jazbay Grapes|Jazbay Grapes]] (3)
+* [[Skyrim:Juniper Berries|Juniper Berries]] (4)
+* [[Skyrim:Lavender|Lavender]] (3)
+* [[Skyrim:Mora Tapinella|Mora Tapinella]] (3)
+* [[Skyrim:Namira's Rot|Namira's Rot]] (3)
+* [[Skyrim:Nightshade|Nightshade]] (3)
+* [[Skyrim:Purple Mountain Flower|Purple Mountain Flower]] (3)
+|
+* [[Skyrim:Red Mountain Flower|Red Mountain Flower]] (3)
+* [[Skyrim:Scaly Pholiota|Scaly Pholiota]] (5)
+* [[Skyrim:Snowberries|Snowberries]] (4)
+* [[Skyrim:Steel-Blue Entoloma|Steel-Blue Entoloma]]{{CC|Goblins}} (3)
+* [[Skyrim:Swamp Fungal Pod|Swamp Fungal Pod]] (3)
+* [[Skyrim:Thistle Branch|Thistle Branch]] (3)
+* [[Skyrim:Tundra Cotton|Tundra Cotton]] (3)
+* [[Skyrim:Wheat|Wheat]] (4)
+* [[Skyrim:White Cap|White Cap]] (2)
+|}
+
+==Notes==
+* Player-planted plants may have different appearances than wild ones.
+* You can sell the wheat and all of the vegetables except for carrots to farmers. [[Skyrim:Gather Wheat|Click here]] for details on which farmer will accept which plant.
+* When the greenhouse is complete, [[Skyrim:Hanging_Moss|Hanging Moss]] will grow on several rafters, and a beehive will appear on the ceiling at the southeast end of the room. There may also be numerous [[Skyrim:Bee|bees]] and [[Skyrim:Passive_Creatures#Insects|butterflies]] (during the day), and [[Skyrim:Torchbug#Torchbug|torchbugs]] and [[Skyrim:Passive_Creatures#Luna_Moth|luna moths]] (at night) flying around the room. A birds' nest appears on one of the rafters as well.  Note that to be considered "complete", you must plant something in every plot in at least one large planter. For example, planting four (out of four) ingredients in a large planter will cause hanging moss/a birds' nest/beehives to appear directly over and around that planter once the ingredients have grown, affecting that "section" of the room, even if the rest of the room isn't fully furnished. Just building all the options at the workbench is not enough.
+* Once the beehive appears, bees may fly around the rest of the house.
+* Newly-planted plots will produce plants in 24 hours; if you harvest a plant, it will regrow in 3 days. If you want plants every 24 hours, you'll need to clear out the planter and re-plant.
+* You can use the greenhouse to generate between 850-1,000 gold per harvest by planting all of the planters with an expensive ingredient (such as Blisterwort), harvesting the plants, and selling them to alchemists.
+* The three ingredients that may be planted in the garden which produce the single most valuable potion are Creep Cluster, Mora Tapinella, and Scaly Pholiota. The second most valuable is Blue Mountain Flower, Glowing Mushroom, and Nightshade. The most valuable combination based on one plot per ingredient is the third most valuable singly, which is Dragon's Tongue, Fly Amanita, and Scaly Pholiota, as these ingredients allow for four potions where the previous combinations only allow three.
+** Overall, using either the greenhouse and the garden, or just the garden, Creep Cluster, Mora Tapinella, and Scaly Pholiota produce the highest profits. With the greenhouse, thirteen plots should be assigned to Mora Tapinella and eight to each of the others. With just the garden, five plots should be assigned to Mora Tapinella, and three to each of the other two ingredients. This allows for 39 and 15 potions respectively, giving minimum profits of 15k and 5.8k gold respectively.
+** In the [[SR:Special Edition|Special Edition]] there is a [[#Bugs|bug]] with Creep Cluster. Therefore Dragon's Tongue, Fly Amanita, and Scaly Pholiota become the most profitable combination. With the greenhouse, Scaly Pholiota should be assigned eight plots and the other two given ten plots each. With just the garden, three plots should be assigned to Scaly Pholiota and four to each of the other two ingredients. This allows for 40 and 15 potions respectively, giving minimum profits of 13k and 4.9k gold respectively.
+** For exterior gardens, the harvest hitbox is floating above the actual visual model on the ground. The in-game fix is simple: crouch down, aim-point about a foot or so above the cluster, and you should see a very obvious harvest option.
+* Despite the name, it isn't a real greenhouse, as the walls and ceiling are opaque, not transparent.
+
+==Bugs==
+{{Bug|When harvesting plants in the greenhouse you may not receive the quantity which appears on-screen.|vn=1|dlc=HF}}
+{{Bug|After the beehive appears in the southeast corner of the ceiling, moving north past a certain point will cause the beehive to visually disappear. It will reappear when you move back to the south.|UHFP|1.1.2|dlc=HF}}
+{{Bug|The dust beams may be present before the greenhouse is built, even though they're only meant to appear afterwards.|UHFP|2.0.0}}
+{{Bug|Placing items in or closing a display case may freeze the game.|confirmed=1|dlc=HF}}
+{{Bug|After all the planters have been constructed, any followers who enter the Greenhouse may randomly teleport around the room, sometimes appearing right on top of the player's location.|confirmed=1|dlc=HF}}
+{{Bug|The doors for the Greenhouse do not appear after construction.|vn=1|dlc=HF}}
+{{Bug|The planters will not give double the ingredients with [[SR:Green Thumb|Green Thumb]], despite the harvest notification indicating otherwise.|USSEP|4.2.0|trackerid=27196}}
+{{Bug|In the [[SR:Special Edition|Special Edition]], Creep Cluster plants are misaligned when grown. They can be extremely difficult to harvest, and usually not at all. The harvest box appears about a foot above the plot, but can only be activated from about two yards away. If you move closer it cannot be seen. This box will only appear once; if you leave the cell or even reload an older save it will disappear and a new cluster must be planted in order to grow more. They can be harvested most easily from the side of the planters at either end of the greenhouse as they stick out the side, or from the 6 small planters.|dlc=HF|USSEP|4.3.0|trackerid=21364|}}
+{{Bug|{{ns22}} In the [[Skyrim:Switch|Switch version]], the Creep Cluster bug exists but is not as severe. The harvest box still floats above the plot and cannot be selected when you are standing too close, but will appear whenever you have the correct area targeted, and do not disappear. This applies to the exterior garden plots as well. Creep Clusters planted in the small planters can also be targeted around the outside of the rim of the pot.|confirmed=1|dlc=HF}}
+
+{{Skyrim Construction}}
