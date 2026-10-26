@@ -191,6 +191,8 @@ tbody tr:last-child td { border-bottom: 0; }
 .pe { font-size: .9rem; color: var(--ink-2); }
 .pr { font-size: .82rem; color: var(--ink-2); }
 .pw { font-size: .85rem; color: var(--bad); }
+.shared-banner { border-color: var(--accent); background: var(--accent-soft); }
+.move-desc { width: 100%; min-height: 54px; padding: 6px 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); resize: vertical; font-size: .92rem; }
 textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); line-height: 1.5; resize: vertical; }
 .moves { display: grid; gap: 14px; }
 .move-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -443,6 +445,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
 </header>
 
 <main class="wrap" id="main" tabindex="-1">
+  <div class="box shared-banner" id="sharedBanner" role="region" aria-label="Shared build" hidden>
+    <p style="margin:0" id="sharedText"></p>
+    <div class="row"><button class="btn" id="sharedLoad">Open this build</button><button class="btn quiet" id="sharedSave">Open it and keep mine saved</button><button class="btn quiet" id="sharedIgnore">Keep working on mine</button></div>
+  </div>
   <!-- 1. Identity -->
   <section class="panel" id="p-identity" role="tabpanel" aria-labelledby="tab-identity">
     <div class="intro">
@@ -618,7 +624,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="potions" hidden>
       <div class="intro">
         <h2>Potions and poisons</h2>
-        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them, with the fewest unwanted side effects first. Save the ones you like as favorites for a milestone.</p>
+        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them, with the fewest unwanted side effects first. Mark the ones you like as favorites.</p>
       </div>
       <div class="box">
         <h3>Potion maker</h3>
@@ -647,14 +653,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="food" hidden>
       <div class="intro">
         <h2>Food</h2>
-        <p class="muted">Cooked food is made at a cooking pot or spit, baked food at a Hearthfire oven, and hot soups only matter in Survival mode, where they also warm you. Choose favorites and the milestone you want them by.</p>
+        <p class="muted">Cooked food is made at a cooking pot or spit, baked food at a Hearthfire oven, and hot soups only matter in Survival mode, where they also warm you. Mark the ones this character likes as favorites.</p>
       </div>
       <div class="row" id="foodFilter" role="radiogroup" aria-label="Show food">
         <button class="chip" data-f="all" aria-checked="true">All</button>
         <button class="chip" data-f="cook" aria-checked="false">Cooking</button>
         <button class="chip" data-f="bake" aria-checked="false">Baking (Hearthfire)</button>
         <button class="chip" data-f="soup" aria-checked="false">Hot soups (Survival)</button>
-        <button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
+        <button class="chip" data-f="wanted" aria-checked="false">Favorites</button>
       </div>
       <div class="field"><label class="label" for="foodSearch">Search food</label><input type="search" id="foodSearch" class="search" placeholder="Dish, effect or ingredient, such as stamina or leek" autocomplete="off"></div>
       <div class="gear-sets" id="foodList"></div>
@@ -777,7 +783,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
     <div class="intro">
       <h2>Build sheet</h2>
-      <p class="muted">Everything about this build on one page. Copy the build code to keep it or share it, and paste a code to load one.</p>
+      <p class="muted">Everything about this build on one page. Copy the share link or the build code to keep it or send it to someone, and paste a code or link to load one.</p>
     </div>
     <div class="grid-2">
       <div class="box sheet" id="sheet"></div>
@@ -785,14 +791,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <h3>Save and share</h3>
         <div class="row">
           <button class="btn" id="saveBtn">Save in this browser</button>
+          <button class="btn ghost" id="linkBtn">Copy share link</button>
           <button class="btn ghost" id="copyBtn">Copy build code</button>
           <button class="btn ghost" id="printBtn">Print build sheet</button>
         </div>
         <div class="status" id="saveStatus" role="status"></div>
-        <label class="label" for="codeOut">Build code</label>
+        <label class="label" for="codeOut">Build code <span class="muted" id="codeLen" style="text-transform:none;letter-spacing:0"></span></label>
         <textarea class="code" id="codeOut" readonly></textarea>
-        <label class="label" for="codeIn">Load from a build code</label>
-        <textarea class="code" id="codeIn" placeholder="Paste a build code here"></textarea>
+        <label class="label" for="codeIn">Load from a build code or share link</label>
+        <textarea class="code" id="codeIn" placeholder="Paste a build code or share link here"></textarea>
         <div class="row"><button class="btn quiet" id="loadCode">Load this build</button><button class="btn quiet" id="newBuild">Start a blank build</button></div>
         <h3 style="margin-top:6px">Saved builds</h3>
         <div class="saved" id="savedList"></div>
@@ -942,7 +949,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // only items that carry no enchantment of their own can be enchanted
   const canEnchant = g => !!enchSlot(g) && (g.set === 'standard' || (g.set === 'specialty' && g.faction !== 'Amulets of the Divines') || g.effect === 'No enchantment.');
   const forgeable = f => !!(f && f.perk && !/^(n\/a|cannot)/i.test(f.perk));
-  const canCraft = g => forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
+  const canCraft = g => !!g.staffCraft || forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
   const enchFor = g => ENCH.filter(e => e.slots.includes(enchSlot(g)));
   function modText(id) {
     const md = state.mods[id]; if (!md) return '';
@@ -1077,8 +1084,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.picks = suggestPicks('nord', 'paladin');
     s.stones = suggestStones(s.picks, 'nord');
     s.gear = { 'dawnbreaker': 20, 'spellbreaker': 20, 'mace-of-molag-bal': 40, 'volendrung': 40 };
-    s.potions = [{ effects: ['restore-health'], ingredients: ['blue-mountain-flower', 'wheat'], m: 20 }, { effects: ['fortify-smithing'], ingredients: ['glowing-mushroom', 'spriggan-sap'], m: 40 }].filter(x => x.ingredients.every(i => INGR.some(g => g.id === i)));
-    s.food = { 'vegetable-soup': 20, 'beef-stew': 40 };
+    s.potions = [{ effects: ['restore-health'], ingredients: ['blue-mountain-flower', 'wheat'] }, { effects: ['fortify-smithing'], ingredients: ['glowing-mushroom', 'spriggan-sap'] }].filter(x => x.ingredients.every(i => INGR.some(g => g.id === i)));
+    s.food = { 'vegetable-soup': 1, 'beef-stew': 1 };
     s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
     s.homes = { 'breezehome': 20 };
     s.shouts = { 'unrelenting-force': { tier: 'expedite', m: 20, words: 3 }, 'whirlwind-sprint': { tier: 'expedite', m: 20, words: 2 }, 'become-ethereal': { tier: 'expedite', m: 40, words: 3 }, 'dragonrend': { tier: 'expedite', m: 40, words: 3 }, 'call-of-valor': { tier: 'selected', words: 3 } };
@@ -1108,7 +1115,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
-      name: String(x.name || '').slice(0, 60),
+      name: String(x.name || '').slice(0, 60), desc: String(x.desc || '').slice(0, 400),
       steps: (Array.isArray(x.steps) ? x.steps : []).slice(0, 12).filter(st => st && typeof st === 'object').map(st => ({ kind: MOVE_KINDS.some(([k]) => k === st.kind) ? st.kind : 'other', text: String(st.text || '').slice(0, 80) })),
     })) : [];
     // spells: { tier: 'expedite' (with milestone m) | 'selected' }
@@ -1117,10 +1124,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (!SPL[k] || !v) continue;
       if (v.tier === 'selected') out.spells[k] = { tier: 'selected' }; else if (MS.includes(v.m)) out.spells[k] = { tier: 'expedite', m: v.m };
     }
-    out.food = keep(s.food, RC_); out.scrolls = keep(s.scrolls, SCR); out.spiders = keep(s.spiders, SPD);
+    out.food = Object.fromEntries(Object.keys(s.food && typeof s.food === 'object' ? s.food : {}).filter(k => RC_[k] && s.food[k]).map(k => [k, 1]));   // favorites; older builds stored a milestone
+    out.scrolls = keep(s.scrolls, SCR); out.spiders = keep(s.spiders, SPD);
     out.scrollUse = ['none', 'some', 'main'].includes(s.scrollUse) ? s.scrollUse : 'none';
     out.spiderUse = ['none', 'some', 'main'].includes(s.spiderUse) ? s.spiderUse : 'none';
-    out.potions = Array.isArray(s.potions) ? s.potions.filter(x => x && MS.includes(x.m) && Array.isArray(x.effects) && x.effects.every(e => EFF[e]) && Array.isArray(x.ingredients) && x.ingredients.every(i => INGR.some(g => g.id === i))).slice(0, 40) : [];
+    out.potions = Array.isArray(s.potions) ? s.potions.map(x => x && ({ effects: x.effects, ingredients: x.ingredients })).filter(x => x && Array.isArray(x.effects) && x.effects.every(e => EFF[e]) && Array.isArray(x.ingredients) && x.ingredients.every(i => INGR.some(g => g.id === i))).slice(0, 40) : [];
     out.cwSide = ['imperial', 'stormcloak', 'none'].includes(s.cwSide) ? s.cwSide : 'none';
     out.dgSide = ['dawnguard', 'volkihar', 'none'].includes(s.dgSide) ? s.dgSide : 'none';
     out.skipConflicts = !!s.skipConflicts;
@@ -1418,8 +1426,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const planned = skill => skill && perksIn(skill).some(p => state.picks[rankKey(p.id, 0)] != null);
   function gearIssues(g, v) {
     const out = [];
-    if (v != null && v < g.minLevel) out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
+    if (v != null && v < g.minLevel && state.mods[g.id]?.how !== 'crafted') out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
     const md = v != null && state.mods[g.id];
+    if (md && md.how === 'crafted' && g.staffCraft) {
+      const sp = SPELLS.find(s => s.name.toLowerCase() === g.staffCraft.spell.toLowerCase()), sv = sp && state.spells[sp.id];
+      if (sp && !(sv && (sv.tier === 'selected' || sv.m <= v))) out.push(`Crafting this needs the spell ${sp.name}${sv ? `, which your plan has by level ${sv.m}` : ', which isn\'t in your spells yet'}.`);
+    }
     if (md && md.how === 'crafted') {
       const fp = forgePerk(g.forge);
       if (fp && (!fp.m || fp.m > v)) out.push(`Forging this needs ${fp.name}, which isn't in your perk plan by level ${v}.`);
@@ -1485,6 +1497,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
+          ${g.staffCraft ? `<div class="pr">Craft at the Staff Enchanter in Tel Mithryn <span class="muted">(Dragonborn, after Reluctant Steward)</span>: knowing ${esc(g.staffCraft.spell)}, an Unenchanted ${esc(SK[g.staffCraft.school]?.name || '')} Staff and ${g.staffCraft.hearts} Heart Stone${g.staffCraft.hearts === 1 ? '' : 's'}.</div>` : ''}
           ${g.forge && g.forge.perk && !/^(n\/a|cannot)/i.test(g.forge.perk) ? (() => { const fp = forgePerk(g.forge); return `<div class="pr">Forge: ${esc(/no perk/i.test(g.forge.perk) ? 'no perk needed' : g.forge.perk)}${g.forge.temper && !/n\/a/i.test(g.forge.temper) ? ` · improve with ${esc(g.forge.temper)}` : ''}${fp ? (fp.m ? ` · <span class="why">${esc(fp.name)} is in your plan by level ${fp.m}</span>` : ` · <span class="muted">${esc(fp.name)} isn't in your perk plan</span>`) : ''}</div>`; })() : ''}
           ${v != null && (canCraft(g) || canEnchant(g)) ? modControls(g) : ''}
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
@@ -1585,6 +1598,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('moveList').innerHTML = state.moves.length ? state.moves.map((mv, i) => `<div class="box" data-move-i="${i}">
       <div class="move-head"><label class="sr-only" for="mvn-${i}">Name of signature move ${i + 1}</label><input id="mvn-${i}" data-mv-name="${i}" value="${esc(mv.name)}" placeholder="Name it, such as Aspect of Elements" maxlength="60">
         <button class="btn quiet" data-mv-del="${i}">${'Delete move'}</button></div>
+      <label class="sr-only" for="mvd-${i}">Description of ${esc(mv.name || 'this move')}</label><textarea class="move-desc" id="mvd-${i}" data-mv-desc="${i}" maxlength="400" placeholder="What it's for and when to use it, such as: opener against a group of melee enemies">${esc(mv.desc || '')}</textarea>
       <ol class="move-steps">${mv.steps.map((st, j) => { const hint = stepHint(st); return `<li class="move-step">
         <select id="mvk-${i}-${j}" data-mv-kind="${i}.${j}" aria-label="Step ${j + 1}: kind">${MOVE_KINDS.map(([k, l]) => `<option value="${k}"${st.kind === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
         <input id="mvt-${i}-${j}" data-mv-text="${i}.${j}" value="${esc(st.text)}" ${st.kind !== 'other' ? `list="dl-${st.kind}"` : ''} placeholder="${{ shout: 'Whirlwind Sprint', spell: 'Flame Cloak', potion: 'Potion of Fortify Illusion', poison: 'Poison of Paralysis', enchant: 'Fortify Destruction', power: 'Highborn', scroll: 'Scroll of Fireball', gear: 'Chillrend', other: 'Sneak behind the target' }[st.kind]}" maxlength="80" aria-label="Step ${j + 1}">
@@ -1599,6 +1613,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('moveList').addEventListener('input', e => {
     const t = e.target;
     if (t.dataset.mvName != null) { state.moves[+t.dataset.mvName].name = t.value.slice(0, 60); touch(); return; }
+    if (t.dataset.mvDesc != null) { state.moves[+t.dataset.mvDesc].desc = t.value.slice(0, 400); touch(); return; }
     if (t.dataset.mvText != null) { const [i, j] = mvAt(t.dataset.mvText), st = state.moves[i].steps[j]; st.text = t.value.slice(0, 80); touch(); $(`mvh-${i}-${j}`).textContent = stepHint(st); }
   });
   $('moveList').addEventListener('change', e => {
@@ -1785,13 +1800,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const more = allCombos.length > 12 ? `<div class="row" style="margin-top:8px"><span class="muted" style="font-size:.9rem">Showing ${combos.length} of ${allCombos.length}${allCombos.length > 80 && pmAll ? ' (the best 80)' : ''} combinations, fewest side effects first.</span><button class="btn quiet" id="pmMore">${pmAll ? 'Show fewer' : 'Show more'}</button></div>` : '';
       $('pmResults').innerHTML = combos.length ? `<div class="combos">${combos.map((c, k) => `<div class="combo"><div><div class="ingr">${c.ids.map(ingName).join(' + ')}</div><div class="effs">${effChips(c.p, want)}</div>
           <details class="src"><summary>Where to find these</summary>${c.ids.map(id => `<p><strong>${esc(ING[id].name)}:</strong> ${esc(ING[id].source || 'See UESP.')}</p>`).join('')}</details></div>
-        <div class="save-row"><select id="pmM-${k}" aria-label="Milestone for this potion">${MS.map(m => `<option value="${m}">By ${m}</option>`).join('')}</select><button class="btn ghost" data-save="${k}">Save</button></div></div>`).join('')}</div>`
+        <div class="save-row">${state.potions.some(x => x.ingredients.slice().sort().join('|') === c.ids.slice().sort().join('|')) ? '<span class="tagd fit">★ Favorite</span>' : `<button class="btn ghost" data-save="${k}" aria-label="Save ${esc(c.ids.map(id => ING[id].name).join(' and '))} as a favorite">☆ Favorite</button>`}</div></div>`).join('')}</div>`
         + more : `<p class="muted" style="margin:0">${pmIng ? `No combination with ${esc(ING[pmIng].name)} makes all of these. Try another ingredient or fewer effects.` : 'No two or three ingredients make all of these together. Try fewer effects.'}</p>`;
       $('pmResults')._combos = combos; $('pmResults')._want = want;
     }
     $('potionList').innerHTML = state.potions.length ? state.potions.map((x, k) => `<div class="perk taken"><div><div class="pn">${esc(potionName(x.effects))}</div>
         <div class="ingr" style="font-weight:400">${x.ingredients.map(ingName).join(' + ')}</div><div class="effs">${effChips(produced(x.ingredients), x.effects)}</div></div>
-        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="on" id="pf-${k}" data-pot="${k}" aria-label="${esc(potionName(x.effects))}: milestone">${MS.map(m => `<option value="${m}"${x.m === m ? ' selected' : ''}>By ${m}</option>`).join('')}<option value="remove">Remove</option></select></label></div></div>`).join('')
+        <div class="ranks"><button class="btn quiet" id="pf-${k}" data-pot="${k}" aria-label="Remove ${esc(potionName(x.effects))} from favorites">Remove</button></div></div>`).join('')
       : '<p class="muted" style="margin:12px 0">No favorite potions yet. Use the potion maker and save a combination.</p>';
   }
   [0, 1, 2].forEach(i => $('pe-' + i).addEventListener('change', e => { pmWant[i] = e.target.value; pmAll = false; renderPotions(); }));
@@ -1821,14 +1836,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const c = $('pmResults')._combos[+b.dataset.save], want = $('pmResults')._want;
     const key = c.ids.slice().sort().join('|');
     if (!state.potions.some(x => x.ingredients.slice().sort().join('|') === key && x.effects.join() === want.join())) {
-      state.potions.push({ effects: want, ingredients: c.ids, m: +$('pmM-' + b.dataset.save).value });
+      state.potions.push({ effects: want, ingredients: c.ids });
       touch(); renderPotions(); renderSubtabs();
     }
     b.textContent = 'Saved'; b.disabled = true;
   });
-  $('potionList').addEventListener('change', e => {
-    const el = e.target.closest('select[data-pot]'); if (!el) return;
-    if (el.value === 'remove') state.potions.splice(+el.dataset.pot, 1); else state.potions[+el.dataset.pot].m = +el.value;
+  $('potionList').addEventListener('click', e => {
+    const el = e.target.closest('button[data-pot]'); if (!el) return;
+    state.potions.splice(+el.dataset.pot, 1);
     touch(); renderPotions(); renderSubtabs();
   });
 
@@ -1843,15 +1858,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="pn">${esc(r.name)}${r.method !== 'cook' ? `<span class="tagd">${r.method === 'bake' ? 'Hearthfire' : 'Survival'}</span>` : ''}</div>
         <div class="pe">${esc(r.effects.join('; '))}</div>
         <div class="pr">${esc(METHOD[r.method])} · ${esc(r.ingredients.join(', '))}</div></div>
-        <div class="ranks">${msSelect('fd-' + r.id, state.food[r.id], r.name, `data-food="${r.id}"`)}</div></div>`;
+        <div class="ranks"><label class="check fav"><input type="checkbox" id="fd-${r.id}" data-food="${r.id}" ${state.food[r.id] ? 'checked' : ''}> Favorite</label></div></div>`;
     const FG = { cook: 'Cooking', bake: 'Baking (Hearthfire)', soup: 'Hot soups (Survival)' };
     const fg = Object.keys(FG).map(k => [k, list.filter(r => r.method === k)]).filter(([, l]) => l.length);
     $('foodList').innerHTML = fg.length ? (fg.length > 1 ? foldBar('foodList') : '') + fg.map(([k, l]) => fold(`food-${k}`, FG[k], `<div class="perks">${l.map(foodRow).join('')}</div>`, { count: l.length, chosen: l.filter(r => state.food[r.id] != null).length, open: k === 'cook', force: !!q || foodFilter !== 'all' })).join('')
-      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : 'No food chosen yet. Pick some from All.'}</p></div>`;
+      : `<div class="box"><p class="muted" style="margin:0">${q ? `Nothing matches "${esc(q)}".` : 'No favorite food yet. Mark some from All.'}</p></div>`;
   }
   $('foodList').addEventListener('change', e => {
-    const el = e.target.closest('select[data-food]'); if (!el) return;
-    if (el.value === '') delete state.food[el.dataset.food]; else state.food[el.dataset.food] = +el.value;
+    const el = e.target.closest('input[data-food]'); if (!el) return;
+    if (el.checked) state.food[el.dataset.food] = 1; else delete state.food[el.dataset.food];
     touch(); renderFood(); renderSubtabs(); $(el.id)?.focus();
   });
   $('foodSearch').addEventListener('input', renderFood);
@@ -1932,6 +1947,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const out = [], problems = [];
     for (const g of GEAR) {
       const m = state.gear[g.id]; if (m == null) continue;
+      if (g.staffCraft && state.mods[g.id]?.how === 'crafted') {   // crafted staves need Neloth's Staff Enchanter, not the staff's own quest
+        const q = pickAlt(['Reluctant Steward']);
+        if (q) out.push({ q, m, label: `${g.name} (Staff Enchanter)` }); else problems.push(`${g.name}: crafting needs Reluctant Steward, which your plan leaves out.`);
+        continue;
+      }
       const cands = g.quest ? [g.quest] : (QREWARD[g.name.toLowerCase()] || []).map(q => q.name);
       if (!cands.length) continue;
       const q = pickAlt(cands);
@@ -2146,14 +2166,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const FRONT = ['heavyArmor', 'block', 'oneHanded', 'twoHanded'], RANGED = ['archery', 'destruction'], SUPPORT = ['restoration', 'conjuration'];
   const COMBAT = new Set([...FRONT, ...RANGED, ...SUPPORT, 'lightArmor', 'illusion', 'alteration', 'sneak']);   // what matters in a fighting companion
   function followerScores() {
-    const pc = perkCounts(), mine = new Set(Object.keys(pc).filter(k => pc[k] > 0));
-    const has = list => list.some(k => mine.has(k));
+    const pc = perkCounts(), mine = new Set(Object.keys(pc).filter(k => pc[k] >= 3));   // a skill counts as covered once it has a few perks
+    // a role is thin when the plan puts only a few perks into it, not just when it has none
+    const weak = list => list.reduce((a, k) => a + pc[k], 0) < 6;
     return FOLS.filter(f => f.skills.length).map(f => {
-      const gaps = f.skills.filter(k => COMBAT.has(k) && !mine.has(k)), shared = f.skills.filter(k => COMBAT.has(k) && mine.has(k));
-      let gapScore = gaps.length * 0.5, why = [];
-      if (!has(FRONT) && f.skills.some(k => FRONT.includes(k))) { gapScore += 3; why.push('holds the front line'); }
-      if (!has(RANGED) && f.skills.some(k => RANGED.includes(k))) { gapScore += 2; why.push('attacks from range'); }
-      if (!has(SUPPORT) && f.skills.some(k => SUPPORT.includes(k))) { gapScore += 2; why.push('heals or summons'); }
+      const gaps = f.skills.filter(k => COMBAT.has(k) && !mine.has(k)), shared = f.skills.filter(k => COMBAT.has(k) && pc[k] > 0);
+      let gapScore = gaps.length * 0.75, why = [];
+      if (weak(FRONT) && f.skills.some(k => FRONT.includes(k))) { gapScore += 3; why.push('holds the front line'); }
+      if (weak(RANGED) && f.skills.some(k => RANGED.includes(k))) { gapScore += 2; why.push('attacks from range'); }
+      if (weak(SUPPORT) && f.skills.some(k => SUPPORT.includes(k))) { gapScore += 2; why.push('heals or summons'); }
       const clash = folClash(f);
       return { f, gapScore, gaps, shared, why, clash, likeScore: shared.reduce((a, k) => a + pc[k], 0) };
     });
@@ -2178,10 +2199,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const sc = followerScores();
     const planned = ALL_RANKS.some(r => takenBy(state.picks, r.key, 60));
     const list2 = (a) => a.length > 1 ? `${a.slice(0, -1).join(', ')} and ${a.at(-1)}` : a[0];
-    const gaps = sc.filter(x => x.gapScore > 2 && !x.clash).sort((a, b) => b.gapScore - a.gapScore).slice(0, 4);
+    const gaps = sc.filter(x => x.gapScore >= 2 && x.gaps.length && !x.clash).sort((a, b) => b.gapScore - a.gapScore).slice(0, 4);
     const like = sc.filter(x => x.likeScore > 0 && !x.clash).sort((a, b) => b.likeScore - a.likeScore).slice(0, 3);
-    $('folGaps').innerHTML = planned && gaps.length ? gaps.map(x => folRow(x.f, esc(`${x.why.length ? list2(x.why).replace(/^./, c => c.toUpperCase()) + '. ' : ''}Strong in ${list2(x.gaps.map(k => SK[k].name))}, which you haven't planned.`))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
-    $('folLike').innerHTML = planned && like.length ? like.map(x => folRow(x.f, esc(`Shares your ${x.shared.map(k => SK[k].name).join(', ')}.`))).join('') : '<p class="muted" style="margin:12px 0">Plan some perks first.</p>';
+    const none = msg => `<p class="muted" style="margin:12px 0">${msg}</p>`;
+    $('folGaps').innerHTML = !planned ? none('Plan some perks first.') : gaps.length ? gaps.map(x => folRow(x.f, esc(`${x.why.length ? list2(x.why).replace(/^./, c => c.toUpperCase()) + '. ' : ''}Strong in ${list2(x.gaps.map(k => SK[k].name))}, which your plan barely touches.`))).join('')
+      : none(sc.some(x => x.gapScore >= 2 && x.clash) ? 'The followers who would cover your gaps clash with your alignment. Browse all followers below.' : 'Your perk plan already covers the front line, ranged attacks and support, so no follower stands out for filling gaps.');
+    $('folLike').innerHTML = !planned ? none('Plan some perks first.') : like.length ? like.map(x => folRow(x.f, esc(`Shares your ${x.shared.map(k => SK[k].name).join(', ')}.`))).join('') : none('No follower shares your main combat skills.');
     const q = ($('folSearch').value || '').trim().toLowerCase();
     const list = FOLS.filter(f => (folFilter === 'all' || (folFilter === 'wanted' ? state.followers[f.id] != null : f[folFilter])) && (!q || [f.name, f.group, f.skillsText, f.description].some(t => t && t.toLowerCase().includes(q))));
     const fgs = [...new Set(FOLS.map(f => f.group))].map(g => [g, list.filter(f => f.group === g)]).filter(([, l]) => l.length);
@@ -2278,8 +2301,28 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('spFilter').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (!b) return; spFilter = b.dataset.f; $('spFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b))); renderMarriage(); });
 
   // ---------- Summary ----------
-  const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
-  const decode = c => JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
+  // Build codes: "S2" + base64url of the build, compressed, with empty fields left out.
+  // Older uncompressed codes (plain base64) still load.
+  const strip = o => Array.isArray(o) ? o.map(strip) : o && typeof o === 'object'
+    ? Object.fromEntries(Object.entries(o).filter(([k, v]) => k !== 'example' && v !== null && v !== '' && v !== false && !(typeof v === 'object' && !Array.isArray(v) && !Object.keys(v).length) && !(Array.isArray(v) && !v.length)).map(([k, v]) => [k, strip(v)]))
+    : o;
+  const b64url = bytes => { let s = ''; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); };
+  const unb64url = t => Uint8Array.from(atob(t.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((t.length + 3) % 4)), c => c.charCodeAt(0));
+  const pipe = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
+  const legacy = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
+  async function encode(s) {
+    const json = JSON.stringify(strip(s));
+    if (typeof CompressionStream === 'undefined') return legacy(s);
+    return 'S2' + b64url(await pipe(new TextEncoder().encode(json), new CompressionStream('deflate-raw')));
+  }
+  async function decode(c) {
+    c = c.trim(); const m = c.match(/[#&?]b=([A-Za-z0-9_\-]+)/); if (m) c = m[1];   // a whole share link works too
+    c = c.replace(/\s+/g, '');
+    if (c.startsWith('S2')) return JSON.parse(new TextDecoder().decode(await pipe(unb64url(c.slice(2)), new DecompressionStream('deflate-raw'))));
+    return JSON.parse(decodeURIComponent(escape(atob(c))));
+  }
+  const SITE = 'https://t1redhands.github.io/skyrim-planner/';
+  const shareBase = () => /^https?:$/.test(location.protocol) && (/github\.io$/.test(location.hostname) || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) ? location.origin + location.pathname : SITE;
   const perkLabel = (p, n) => p.ranks.length > 1 ? `${p.name} ${n}/${p.ranks.length}` : p.name;
   function perksAddedAt(m) {
     const out = [];
@@ -2293,8 +2336,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd><dt>Potions</dt><dd>${state.potions.filter(x => x.m <= m).map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Food</dt><dd>${RECIPES.filter(r => state.food[r.id] != null && state.food[r.id] <= m).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id] != null && state.scrolls[s.id] <= m).map(s => s.name), ...SPIDERS.filter(s => state.spiders[s.id] != null && state.spiders[s.id] <= m).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}</dl></div>`; }).join('');
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd><dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
     $('sumOnly').checked = only;
@@ -2313,7 +2356,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const added = perksAddedAt(m);
       return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${added.length ? added.map(a => `${esc(a.text)} <span class="muted">(${a.skill})</span>`).join(', ') : '<span class="muted">none</span>'}</p>`;
     }).join('');
-    $('sheetMoves').innerHTML = state.moves.length ? state.moves.map(mv => `<p class="move-line"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet')}</p>`).join('') : '<p class="muted">None yet. Add them under Loadout, Signature moves.</p>';
+    $('sheetMoves').innerHTML = state.moves.length ? state.moves.map(mv => `<p class="move-line"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet')}${mv.desc?.trim() ? `<br><span class="muted">${esc(mv.desc.trim())}</span>` : ''}</p>`).join('') : '<p class="muted">None yet. Add them under Loadout, Signature moves.</p>';
     $('sheetNotes').innerHTML = state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="muted">None yet. Add them on the Identity step.</p>';
     const { plan: qp, order: qo } = buildQuestPlan();
     $('sheetQuests').innerHTML = qo.length ? TIERS.map((tier, t) => {
@@ -2321,7 +2364,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       return `<h4>${tier.title} <span class="muted num">(${ids.length})</span></h4><ol class="qcheck">${ids.map(id => { const { q, m } = qp[id];
         return `<li class="${state.done[id] ? 'done' : ''}"><span class="box-glyph" aria-hidden="true">${state.done[id] ? '☑' : '☐'}</span><span>${esc(q.name)}${state.done[id] ? '<span class="sr-only"> (done)</span>' : ''} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by level ${m}` : ''}${q.giver ? ` · ${esc(q.giver)}` : ''}</span></span></li>`; }).join('')}</ol>`;
     }).join('') : '<p class="muted" style="margin:0">No quests in the plan yet.</p>';
-    $('codeOut').value = encode(state);
+    encode(state).then(c => { $('codeOut').value = c; $('codeLen').textContent = `(${c.length.toLocaleString()} characters)`; });
     renderSaved();
   }
   // ---------- Printable build sheet ----------
@@ -2343,6 +2386,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="meta">Skyrim Character Planner<br>${new Date().toLocaleDateString()}</div></div>
       <dl class="ps-ident">
         <div><dt>Followers</dt><dd>${list(Object.keys(state.followers).map(id => FOL[id].name))}</dd></div>
+        ${state.potions.length ? `<div><dt>Favorite potions</dt><dd>${list(state.potions.map(x => `${potionName(x.effects)} (${x.ingredients.map(i => ING[i].name).join(' + ')})`))}</dd></div>` : ''}
+        ${Object.keys(state.food).length ? `<div><dt>Favorite food</dt><dd>${list(RECIPES.filter(r => state.food[r.id]).map(r => r.name))}</dd></div>` : ''}
         <div><dt>Spouse</dt><dd>${state.spouse ? `${esc(SPO[state.spouse.id].name)}, by level ${state.spouse.m}` : '<span class="none">None</span>'}</dd></div>
         <div><dt>Homes</dt><dd>${list(Object.keys(state.homes).map(id => HOM[id].name))}</dd></div>
         ${scrollsOn ? `<div><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd></div><div><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd></div>` : ''}
@@ -2358,12 +2403,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${row('New shouts', MS.map(m => list(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'expedite' && state.shouts[s.id].m === m).map(shoutLabel))))}
         ${row('New spells', MS.map(m => list(SPELLS.filter(s => state.spells[s.id]?.tier === 'expedite' && state.spells[s.id].m === m).map(s => s.name))))}
         ${row('New gear', MS.map(m => list(GEAR.filter(g => state.gear[g.id] === m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')))))}
-        ${row('New potions', MS.map(m => list(state.potions.filter(x => x.m === m).map(x => potionName(x.effects)))))}
-        ${row('New food', MS.map(m => list(newAt(state.food, RECIPES, m))))}
         ${scrollsOn ? row('New scrolls', MS.map(m => list([...newAt(state.scrolls, SCROLLS, m), ...newAt(state.spiders, SPIDERS, m)]))) : ''}
       </tbody></table>
       ${state.moves.length || state.notes.trim() ? `<div class="ps-two ps-rp">
-        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}</p>`).join('') : '<p class="none">None</p>'}</div>
+        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}${mv.desc?.trim() ? `<br><em>${esc(mv.desc.trim())}</em>` : ''}</p>`).join('') : '<p class="none">None</p>'}</div>
         <div><h2>Role-play notes</h2>${state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p class="ps-move">${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="none">None</p>'}</div>
       </div>` : ''}
       <div class="ps-two">
@@ -2400,14 +2443,19 @@ footer p { margin: 4px 0; max-width: 80ch; }
     setStatus(store.set('skp.saved', list) ? `Saved "${state.name}" in this browser.` : 'This browser blocked saving. Copy the build code instead.', true);
     renderSaved();
   });
+  $('linkBtn').addEventListener('click', async () => {
+    const link = shareBase() + '#b=' + await encode(state);
+    const fallback = () => { const t = $('codeOut'); t.value = link; t.focus(); t.select(); setStatus('Share link selected. Copy it with your keyboard.'); };
+    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(link).then(() => setStatus(`Share link copied (${link.length.toLocaleString()} characters). Opening it loads this build.`), fallback); else fallback();
+  });
   $('copyBtn').addEventListener('click', () => {
     const t = $('codeOut');
     const fallback = () => { t.focus(); t.select(); setStatus('Build code selected. Copy it with your keyboard.'); };
     if (navigator.clipboard?.writeText) navigator.clipboard.writeText(t.value).then(() => setStatus('Build code copied.'), fallback); else fallback();
   });
   $('loadCode').addEventListener('click', () => {
-    try { const s = normalize(decode($('codeIn').value)); if (!s) throw 0; state = s; touch(); renderAll(); $('codeIn').value = ''; setStatus(`Loaded "${state.name}".`); }
-    catch { setStatus("That code didn't load. Check that you copied the whole code.", false); }
+    decode($('codeIn').value).then(d => { const s = normalize(d); if (!s) throw 0; state = s; touch(); renderAll(); $('codeIn').value = ''; setStatus(`Loaded "${state.name}".`); })
+      .catch(() => setStatus("That code didn't load. Check that you copied the whole code or link.", false));
   });
   $('newBuild').addEventListener('click', () => { state = blankState(state.race); touch(); renderAll(); showStep('identity'); });
   $('savedList').addEventListener('click', e => {
@@ -2448,6 +2496,23 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
   function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); }
   renderAll();
+  // a share link (#b=...) offers to open that build without overwriting this one silently
+  async function checkShared() {
+    const m = location.hash.match(/[#&]b=([A-Za-z0-9_\-]+)/); if (!m) return;
+    $('sharedLoad').hidden = $('sharedSave').hidden = false; $('sharedIgnore').textContent = 'Keep working on mine';
+    let shared = null; try { shared = normalize(await decode(m[1])); } catch {}
+    const clear = () => { try { history.replaceState(null, '', location.pathname + location.search); } catch {} $('sharedBanner').hidden = true; };
+    if (!shared) { $('sharedText').textContent = "This link holds a build that couldn't be read. It may have been cut short when it was copied."; $('sharedBanner').hidden = false; $('sharedLoad').hidden = $('sharedSave').hidden = true; $('sharedIgnore').textContent = 'Close'; $('sharedIgnore').onclick = clear; return; }
+    $('sharedText').innerHTML = `Someone shared a build with you: <strong>${esc(shared.name)}</strong>, ${RC[shared.race].name} ${ST[shared.style].name}.`;
+    $('sharedBanner').hidden = false;
+    const open = keep => {
+      if (keep && !state.example) { const list = store.get('skp.saved') || []; const copy = JSON.parse(JSON.stringify(state)); const at = list.findIndex(x => x.name === copy.name); if (at >= 0) list[at] = copy; else list.push(copy); store.set('skp.saved', list); }
+      state = shared; touch(); renderAll(); clear(); showStep('summary'); setStatus(`Opened "${state.name}"${keep ? '. Your own build is under Saved builds.' : '.'}`);
+    };
+    $('sharedLoad').onclick = () => open(false); $('sharedSave').onclick = () => open(true); $('sharedIgnore').onclick = clear;
+    $('sharedLoad').focus();
+  }
+  checkShared(); window.addEventListener('hashchange', checkShared);
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
   showStep(['identity','skills','attributes','loadout','household','quests','summary'].includes(step) ? step : 'identity');
 })();
