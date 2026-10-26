@@ -191,8 +191,6 @@ tbody tr:last-child td { border-bottom: 0; }
 .pe { font-size: .9rem; color: var(--ink-2); }
 .pr { font-size: .82rem; color: var(--ink-2); }
 .pw { font-size: .85rem; color: var(--bad); }
-.shared-banner { border-color: var(--accent); background: var(--accent-soft); }
-.move-desc { width: 100%; min-height: 54px; padding: 6px 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); resize: vertical; font-size: .92rem; }
 textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); line-height: 1.5; resize: vertical; }
 .moves { display: grid; gap: 14px; }
 .move-head { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -445,10 +443,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
 </header>
 
 <main class="wrap" id="main" tabindex="-1">
-  <div class="box shared-banner" id="sharedBanner" role="region" aria-label="Shared build" hidden>
-    <p style="margin:0" id="sharedText"></p>
-    <div class="row"><button class="btn" id="sharedLoad">Open this build</button><button class="btn quiet" id="sharedSave">Open it and keep mine saved</button><button class="btn quiet" id="sharedIgnore">Keep working on mine</button></div>
-  </div>
   <!-- 1. Identity -->
   <section class="panel" id="p-identity" role="tabpanel" aria-labelledby="tab-identity">
     <div class="intro">
@@ -783,7 +777,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   <section class="panel" id="p-summary" role="tabpanel" aria-labelledby="tab-summary" hidden>
     <div class="intro">
       <h2>Build sheet</h2>
-      <p class="muted">Everything about this build on one page. Copy the share link or the build code to keep it or send it to someone, and paste a code or link to load one.</p>
+      <p class="muted">Everything about this build on one page. Copy the build code to keep it or share it, and paste a code to load one.</p>
     </div>
     <div class="grid-2">
       <div class="box sheet" id="sheet"></div>
@@ -791,15 +785,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <h3>Save and share</h3>
         <div class="row">
           <button class="btn" id="saveBtn">Save in this browser</button>
-          <button class="btn ghost" id="linkBtn">Copy share link</button>
           <button class="btn ghost" id="copyBtn">Copy build code</button>
           <button class="btn ghost" id="printBtn">Print build sheet</button>
         </div>
         <div class="status" id="saveStatus" role="status"></div>
-        <label class="label" for="codeOut">Build code <span class="muted" id="codeLen" style="text-transform:none;letter-spacing:0"></span></label>
+        <label class="label" for="codeOut">Build code</label>
         <textarea class="code" id="codeOut" readonly></textarea>
-        <label class="label" for="codeIn">Load from a build code or share link</label>
-        <textarea class="code" id="codeIn" placeholder="Paste a build code or share link here"></textarea>
+        <label class="label" for="codeIn">Load from a build code</label>
+        <textarea class="code" id="codeIn" placeholder="Paste a build code here"></textarea>
         <div class="row"><button class="btn quiet" id="loadCode">Load this build</button><button class="btn quiet" id="newBuild">Start a blank build</button></div>
         <h3 style="margin-top:6px">Saved builds</h3>
         <div class="saved" id="savedList"></div>
@@ -949,7 +942,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // only items that carry no enchantment of their own can be enchanted
   const canEnchant = g => !!enchSlot(g) && (g.set === 'standard' || (g.set === 'specialty' && g.faction !== 'Amulets of the Divines') || g.effect === 'No enchantment.');
   const forgeable = f => !!(f && f.perk && !/^(n\/a|cannot)/i.test(f.perk));
-  const canCraft = g => !!g.staffCraft || forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
+  const canCraft = g => forgeable(g.forge) || (g.set === 'standard' && (g.sub === 'Rings' || g.sub === 'Amulets') && /^(gold|silver)\b/i.test(g.name));
   const enchFor = g => ENCH.filter(e => e.slots.includes(enchSlot(g)));
   function modText(id) {
     const md = state.mods[id]; if (!md) return '';
@@ -1115,7 +1108,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
-      name: String(x.name || '').slice(0, 60), desc: String(x.desc || '').slice(0, 400),
+      name: String(x.name || '').slice(0, 60),
       steps: (Array.isArray(x.steps) ? x.steps : []).slice(0, 12).filter(st => st && typeof st === 'object').map(st => ({ kind: MOVE_KINDS.some(([k]) => k === st.kind) ? st.kind : 'other', text: String(st.text || '').slice(0, 80) })),
     })) : [];
     // spells: { tier: 'expedite' (with milestone m) | 'selected' }
@@ -1425,12 +1418,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const planned = skill => skill && perksIn(skill).some(p => state.picks[rankKey(p.id, 0)] != null);
   function gearIssues(g, v) {
     const out = [];
-    if (v != null && v < g.minLevel && state.mods[g.id]?.how !== 'crafted') out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
+    if (v != null && v < g.minLevel) out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
     const md = v != null && state.mods[g.id];
-    if (md && md.how === 'crafted' && g.staffCraft) {
-      const sp = SPELLS.find(s => s.name.toLowerCase() === g.staffCraft.spell.toLowerCase()), sv = sp && state.spells[sp.id];
-      if (sp && !(sv && (sv.tier === 'selected' || sv.m <= v))) out.push(`Crafting this needs the spell ${sp.name}${sv ? `, which your plan has by level ${sv.m}` : ', which isn\'t in your spells yet'}.`);
-    }
     if (md && md.how === 'crafted') {
       const fp = forgePerk(g.forge);
       if (fp && (!fp.m || fp.m > v)) out.push(`Forging this needs ${fp.name}, which isn't in your perk plan by level ${v}.`);
@@ -1496,7 +1485,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
-          ${g.staffCraft ? `<div class="pr">Craft at the Staff Enchanter in Tel Mithryn <span class="muted">(Dragonborn, after Reluctant Steward)</span>: knowing ${esc(g.staffCraft.spell)}, an Unenchanted ${esc(SK[g.staffCraft.school]?.name || '')} Staff and ${g.staffCraft.hearts} Heart Stone${g.staffCraft.hearts === 1 ? '' : 's'}.</div>` : ''}
           ${g.forge && g.forge.perk && !/^(n\/a|cannot)/i.test(g.forge.perk) ? (() => { const fp = forgePerk(g.forge); return `<div class="pr">Forge: ${esc(/no perk/i.test(g.forge.perk) ? 'no perk needed' : g.forge.perk)}${g.forge.temper && !/n\/a/i.test(g.forge.temper) ? ` · improve with ${esc(g.forge.temper)}` : ''}${fp ? (fp.m ? ` · <span class="why">${esc(fp.name)} is in your plan by level ${fp.m}</span>` : ` · <span class="muted">${esc(fp.name)} isn't in your perk plan</span>`) : ''}</div>`; })() : ''}
           ${v != null && (canCraft(g) || canEnchant(g)) ? modControls(g) : ''}
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
@@ -1597,7 +1585,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('moveList').innerHTML = state.moves.length ? state.moves.map((mv, i) => `<div class="box" data-move-i="${i}">
       <div class="move-head"><label class="sr-only" for="mvn-${i}">Name of signature move ${i + 1}</label><input id="mvn-${i}" data-mv-name="${i}" value="${esc(mv.name)}" placeholder="Name it, such as Aspect of Elements" maxlength="60">
         <button class="btn quiet" data-mv-del="${i}">${'Delete move'}</button></div>
-      <label class="sr-only" for="mvd-${i}">Description of ${esc(mv.name || 'this move')}</label><textarea class="move-desc" id="mvd-${i}" data-mv-desc="${i}" maxlength="400" placeholder="What it's for and when to use it, such as: opener against a group of melee enemies">${esc(mv.desc || '')}</textarea>
       <ol class="move-steps">${mv.steps.map((st, j) => { const hint = stepHint(st); return `<li class="move-step">
         <select id="mvk-${i}-${j}" data-mv-kind="${i}.${j}" aria-label="Step ${j + 1}: kind">${MOVE_KINDS.map(([k, l]) => `<option value="${k}"${st.kind === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
         <input id="mvt-${i}-${j}" data-mv-text="${i}.${j}" value="${esc(st.text)}" ${st.kind !== 'other' ? `list="dl-${st.kind}"` : ''} placeholder="${{ shout: 'Whirlwind Sprint', spell: 'Flame Cloak', potion: 'Potion of Fortify Illusion', poison: 'Poison of Paralysis', enchant: 'Fortify Destruction', power: 'Highborn', scroll: 'Scroll of Fireball', gear: 'Chillrend', other: 'Sneak behind the target' }[st.kind]}" maxlength="80" aria-label="Step ${j + 1}">
@@ -1612,7 +1599,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('moveList').addEventListener('input', e => {
     const t = e.target;
     if (t.dataset.mvName != null) { state.moves[+t.dataset.mvName].name = t.value.slice(0, 60); touch(); return; }
-    if (t.dataset.mvDesc != null) { state.moves[+t.dataset.mvDesc].desc = t.value.slice(0, 400); touch(); return; }
     if (t.dataset.mvText != null) { const [i, j] = mvAt(t.dataset.mvText), st = state.moves[i].steps[j]; st.text = t.value.slice(0, 80); touch(); $(`mvh-${i}-${j}`).textContent = stepHint(st); }
   });
   $('moveList').addEventListener('change', e => {
@@ -1946,11 +1932,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const out = [], problems = [];
     for (const g of GEAR) {
       const m = state.gear[g.id]; if (m == null) continue;
-      if (g.staffCraft && state.mods[g.id]?.how === 'crafted') {   // crafted staves need Neloth's Staff Enchanter, not the staff's own quest
-        const q = pickAlt(['Reluctant Steward']);
-        if (q) out.push({ q, m, label: `${g.name} (Staff Enchanter)` }); else problems.push(`${g.name}: crafting needs Reluctant Steward, which your plan leaves out.`);
-        continue;
-      }
       const cands = g.quest ? [g.quest] : (QREWARD[g.name.toLowerCase()] || []).map(q => q.name);
       if (!cands.length) continue;
       const q = pickAlt(cands);
@@ -2297,28 +2278,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('spFilter').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (!b) return; spFilter = b.dataset.f; $('spFilter').querySelectorAll('[data-f]').forEach(x => x.setAttribute('aria-checked', String(x === b))); renderMarriage(); });
 
   // ---------- Summary ----------
-  // Build codes: "S2" + base64url of the build, compressed, with empty fields left out.
-  // Older uncompressed codes (plain base64) still load.
-  const strip = o => Array.isArray(o) ? o.map(strip) : o && typeof o === 'object'
-    ? Object.fromEntries(Object.entries(o).filter(([k, v]) => k !== 'example' && v !== null && v !== '' && v !== false && !(typeof v === 'object' && !Array.isArray(v) && !Object.keys(v).length) && !(Array.isArray(v) && !v.length)).map(([k, v]) => [k, strip(v)]))
-    : o;
-  const b64url = bytes => { let s = ''; for (let i = 0; i < bytes.length; i += 0x8000) s += String.fromCharCode(...bytes.subarray(i, i + 0x8000)); return btoa(s).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); };
-  const unb64url = t => Uint8Array.from(atob(t.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((t.length + 3) % 4)), c => c.charCodeAt(0));
-  const pipe = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
-  const legacy = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
-  async function encode(s) {
-    const json = JSON.stringify(strip(s));
-    if (typeof CompressionStream === 'undefined') return legacy(s);
-    return 'S2' + b64url(await pipe(new TextEncoder().encode(json), new CompressionStream('deflate-raw')));
-  }
-  async function decode(c) {
-    c = c.trim(); const m = c.match(/[#&?]b=([A-Za-z0-9_\-]+)/); if (m) c = m[1];   // a whole share link works too
-    c = c.replace(/\s+/g, '');
-    if (c.startsWith('S2')) return JSON.parse(new TextDecoder().decode(await pipe(unb64url(c.slice(2)), new DecompressionStream('deflate-raw'))));
-    return JSON.parse(decodeURIComponent(escape(atob(c))));
-  }
-  const SITE = 'https://t1redhands.github.io/skyrim-planner/';
-  const shareBase = () => /^https?:$/.test(location.protocol) && (/github\.io$/.test(location.hostname) || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) ? location.origin + location.pathname : SITE;
+  const encode = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
+  const decode = c => JSON.parse(decodeURIComponent(escape(atob(c.trim()))));
   const perkLabel = (p, n) => p.ranks.length > 1 ? `${p.name} ${n}/${p.ranks.length}` : p.name;
   function perksAddedAt(m) {
     const out = [];
@@ -2352,7 +2313,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const added = perksAddedAt(m);
       return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${added.length ? added.map(a => `${esc(a.text)} <span class="muted">(${a.skill})</span>`).join(', ') : '<span class="muted">none</span>'}</p>`;
     }).join('');
-    $('sheetMoves').innerHTML = state.moves.length ? state.moves.map(mv => `<p class="move-line"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet')}${mv.desc?.trim() ? `<br><span class="muted">${esc(mv.desc.trim())}</span>` : ''}</p>`).join('') : '<p class="muted">None yet. Add them under Loadout, Signature moves.</p>';
+    $('sheetMoves').innerHTML = state.moves.length ? state.moves.map(mv => `<p class="move-line"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet')}</p>`).join('') : '<p class="muted">None yet. Add them under Loadout, Signature moves.</p>';
     $('sheetNotes').innerHTML = state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="muted">None yet. Add them on the Identity step.</p>';
     const { plan: qp, order: qo } = buildQuestPlan();
     $('sheetQuests').innerHTML = qo.length ? TIERS.map((tier, t) => {
@@ -2360,7 +2321,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       return `<h4>${tier.title} <span class="muted num">(${ids.length})</span></h4><ol class="qcheck">${ids.map(id => { const { q, m } = qp[id];
         return `<li class="${state.done[id] ? 'done' : ''}"><span class="box-glyph" aria-hidden="true">${state.done[id] ? '☑' : '☐'}</span><span>${esc(q.name)}${state.done[id] ? '<span class="sr-only"> (done)</span>' : ''} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by level ${m}` : ''}${q.giver ? ` · ${esc(q.giver)}` : ''}</span></span></li>`; }).join('')}</ol>`;
     }).join('') : '<p class="muted" style="margin:0">No quests in the plan yet.</p>';
-    encode(state).then(c => { $('codeOut').value = c; $('codeLen').textContent = `(${c.length.toLocaleString()} characters)`; });
+    $('codeOut').value = encode(state);
     renderSaved();
   }
   // ---------- Printable build sheet ----------
@@ -2402,7 +2363,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${scrollsOn ? row('New scrolls', MS.map(m => list([...newAt(state.scrolls, SCROLLS, m), ...newAt(state.spiders, SPIDERS, m)]))) : ''}
       </tbody></table>
       ${state.moves.length || state.notes.trim() ? `<div class="ps-two ps-rp">
-        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}${mv.desc?.trim() ? `<br><em>${esc(mv.desc.trim())}</em>` : ''}</p>`).join('') : '<p class="none">None</p>'}</div>
+        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}</p>`).join('') : '<p class="none">None</p>'}</div>
         <div><h2>Role-play notes</h2>${state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p class="ps-move">${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="none">None</p>'}</div>
       </div>` : ''}
       <div class="ps-two">
@@ -2439,19 +2400,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
     setStatus(store.set('skp.saved', list) ? `Saved "${state.name}" in this browser.` : 'This browser blocked saving. Copy the build code instead.', true);
     renderSaved();
   });
-  $('linkBtn').addEventListener('click', async () => {
-    const link = shareBase() + '#b=' + await encode(state);
-    const fallback = () => { const t = $('codeOut'); t.value = link; t.focus(); t.select(); setStatus('Share link selected. Copy it with your keyboard.'); };
-    if (navigator.clipboard?.writeText) navigator.clipboard.writeText(link).then(() => setStatus(`Share link copied (${link.length.toLocaleString()} characters). Opening it loads this build.`), fallback); else fallback();
-  });
   $('copyBtn').addEventListener('click', () => {
     const t = $('codeOut');
     const fallback = () => { t.focus(); t.select(); setStatus('Build code selected. Copy it with your keyboard.'); };
     if (navigator.clipboard?.writeText) navigator.clipboard.writeText(t.value).then(() => setStatus('Build code copied.'), fallback); else fallback();
   });
   $('loadCode').addEventListener('click', () => {
-    decode($('codeIn').value).then(d => { const s = normalize(d); if (!s) throw 0; state = s; touch(); renderAll(); $('codeIn').value = ''; setStatus(`Loaded "${state.name}".`); })
-      .catch(() => setStatus("That code didn't load. Check that you copied the whole code or link.", false));
+    try { const s = normalize(decode($('codeIn').value)); if (!s) throw 0; state = s; touch(); renderAll(); $('codeIn').value = ''; setStatus(`Loaded "${state.name}".`); }
+    catch { setStatus("That code didn't load. Check that you copied the whole code.", false); }
   });
   $('newBuild').addEventListener('click', () => { state = blankState(state.race); touch(); renderAll(); showStep('identity'); });
   $('savedList').addEventListener('click', e => {
@@ -2492,23 +2448,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
   function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); }
   renderAll();
-  // a share link (#b=...) offers to open that build without overwriting this one silently
-  async function checkShared() {
-    const m = location.hash.match(/[#&]b=([A-Za-z0-9_\-]+)/); if (!m) return;
-    $('sharedLoad').hidden = $('sharedSave').hidden = false; $('sharedIgnore').textContent = 'Keep working on mine';
-    let shared = null; try { shared = normalize(await decode(m[1])); } catch {}
-    const clear = () => { try { history.replaceState(null, '', location.pathname + location.search); } catch {} $('sharedBanner').hidden = true; };
-    if (!shared) { $('sharedText').textContent = "This link holds a build that couldn't be read. It may have been cut short when it was copied."; $('sharedBanner').hidden = false; $('sharedLoad').hidden = $('sharedSave').hidden = true; $('sharedIgnore').textContent = 'Close'; $('sharedIgnore').onclick = clear; return; }
-    $('sharedText').innerHTML = `Someone shared a build with you: <strong>${esc(shared.name)}</strong>, ${RC[shared.race].name} ${ST[shared.style].name}.`;
-    $('sharedBanner').hidden = false;
-    const open = keep => {
-      if (keep && !state.example) { const list = store.get('skp.saved') || []; const copy = JSON.parse(JSON.stringify(state)); const at = list.findIndex(x => x.name === copy.name); if (at >= 0) list[at] = copy; else list.push(copy); store.set('skp.saved', list); }
-      state = shared; touch(); renderAll(); clear(); showStep('summary'); setStatus(`Opened "${state.name}"${keep ? '. Your own build is under Saved builds.' : '.'}`);
-    };
-    $('sharedLoad').onclick = () => open(false); $('sharedSave').onclick = () => open(true); $('sharedIgnore').onclick = clear;
-    $('sharedLoad').focus();
-  }
-  checkShared(); window.addEventListener('hashchange', checkShared);
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
   showStep(['identity','skills','attributes','loadout','household','quests','summary'].includes(step) ? step : 'identity');
 })();

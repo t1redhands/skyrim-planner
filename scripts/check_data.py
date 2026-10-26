@@ -25,7 +25,7 @@ PAGES = {
     'Skyrim_Unique_Clothing': 'gear', 'Skyrim_Artifacts': 'gear', 'Skyrim_Leveled_Items': 'gear',
     'Skyrim_Weapons': 'gear', 'Skyrim_Armor': 'gear', 'Skyrim_Clothing': 'gear', 'Skyrim_Jewelry': 'gear',
     'Skyrim_Followers': 'household', 'Skyrim_Marriage': 'household', 'Skyrim_Houses': 'household',
-    'Skyrim_Specialty_Gear': 'gear', 'Skyrim_Vigil_Armor': 'gear', 'Skyrim_Amulets_of_the_Divines': 'gear', 'Skyrim_Staves': 'gear',
+    'Skyrim_Specialty_Gear': 'gear', 'Skyrim_Vigil_Armor': 'gear', 'Skyrim_Amulets_of_the_Divines': 'gear',
     'Skyrim_Ingredients': 'alchemy', 'Skyrim_Food': 'alchemy', 'Skyrim_Enchantments': 'enchantments', 'Skyrim_Spells': 'spells',
 }
 
