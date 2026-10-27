@@ -184,7 +184,7 @@ DUMP_PAGES = [
     "Skyrim:Weapons", "Skyrim:Armor", "Skyrim:Clothing", "Skyrim:Jewelry", "Skyrim:Enchantments",
     "Skyrim:Ingredients", "Skyrim:Alchemy Effects", "Skyrim:Food",
     "Skyrim:Followers", "Skyrim:Marriage", "Skyrim:Houses",
-    "Skyrim:Specialty Gear", "Skyrim:Vigil Armor", "Skyrim:Amulets of the Divines", "Skyrim:Spells", "Skyrim:Staves", "Skyrim:The Cause Items", "Skyrim:Civil War Champions Items", "Skyrim:Greenhouse", "Skyrim:Powers", "Skyrim:Blessings",
+    "Skyrim:Specialty Gear", "Skyrim:Vigil Armor", "Skyrim:Amulets of the Divines", "Skyrim:Spells", "Skyrim:Staves", "Skyrim:The Cause Items", "Skyrim:Civil War Champions Items", "Skyrim:Greenhouse", "Skyrim:Powers", "Skyrim:Blessings", "Skyrim:Ghosts of the Tribunal Items", "Skyrim:Vampirism", "Skyrim:Lycanthropy", "Skyrim:Vampire Lord", "Skyrim:Werewolf", "Skyrim:Vampire Royal Armor",
 ]
 
 

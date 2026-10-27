@@ -245,6 +245,19 @@
  "Skyrim_Civil_War_Champions_Items": [
   "tempering"
  ],
+ "Skyrim_Ghosts_of_the_Tribunal_Items": [
+  "enchantment",
+  "notes",
+  "tempering",
+  "unenchanted weapon",
+  "unique apparel",
+  "unique weapons"
+ ],
+ "Skyrim_Vampire_Royal_Armor": [
+  "female",
+  "male",
+  "tempering"
+ ],
  "Skyrim_Ingredients": [],
  "Skyrim_Food": [
   "ash yam",

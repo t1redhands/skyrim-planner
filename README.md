@@ -12,12 +12,12 @@ You plan in three milestones: **by level 20**, **by level 40** and **by level 60
 
 | Step | What you plan |
 | --- | --- |
-| 1. Identity | Name, race, alignment and combat style, plus free-form role-play notes. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in a starting build for the chosen style. |
+| 1. Identity | Name, race, alignment and combat style, whether the character becomes a werewolf or vampire (with matching quests, gear, buffs and stone), plus free-form role-play notes. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in a starting build for the chosen style. |
 | 2. Perk plan | Perks in all 18 skill trees and the milestone for each. You get one perk per level, and the planner works out the skill levels each perk needs. |
 | 3. Attributes | How your level-ups split between Health, Magicka and Stamina. |
 | 4. Loadout | Standing Stones, shouts (how many words, and where you'll get them), spells, weapons, apparel (including faction and specialty gear), potions with a full ingredient list, food, scrolls and spider scrolls, and signature moves: named combinations of shouts, spells, potions and enchantments. Standard gear can be marked as found or crafted, and given one or two enchantments. |
 | 5. Household | Followers, a spouse and homes, with the ones that suit your build marked. |
-| 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Prerequisites are added automatically, and quests your Civil War or Dawnguard side locks out are left out. |
+| 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Prerequisites are added automatically, and quests your Civil War or Dawnguard side locks out are left out. A quest browser filters every quest by questline, place, add-on, status and level. |
 | 7. Summary | The whole build on one page, a printable build sheet with a quest checklist, and a build code to save or share. |
 
 Warnings marked ⚠ flag anything that can't happen as planned, such as gear that isn't available by its milestone or a shout whose words come from a quest your side skips.

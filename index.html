@@ -212,6 +212,13 @@ textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px soli
   .move-steps { gap: 12px; }
 }
 .move-line { margin: 0 0 4px; }
+.cr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 20px; margin-top: 6px; }
+.cr-grid h4 { margin: 0 0 4px; font-family: var(--display); font-weight: 400; color: var(--accent); }
+.cr-grid ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .92rem; }
+.cr-grid .btn { padding: 2px 8px; font-size: .8rem; margin-left: 4px; }
+.cr-facts { margin: 6px 0 0; padding-left: 18px; font-size: .92rem; display: grid; gap: 3px; }
+.qb-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 14px; }
+.qb-filters select, .qb-filters .search { width: 100%; max-width: none; padding: 7px 8px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); }
 .plant { color: var(--good); }
 ul.shop { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; font-size: .92rem; }
 ul.shop li { break-inside: avoid; margin-bottom: 3px; }
@@ -467,12 +474,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="fold-body">
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
-          <li><strong>Identity.</strong> Name, race, alignment and combat style. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
+          <li><strong>Identity.</strong> Name, race, alignment, combat style, and whether the character becomes a werewolf or vampire. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
           <li><strong>Perk plan.</strong> Pick perks in each skill tree and the milestone for each. You get one perk per level, and the planner works out the skill levels you'll need.</li>
           <li><strong>Attributes.</strong> Split your level-ups between Health, Magicka and Stamina.</li>
           <li><strong>Loadout.</strong> Standing Stones, shouts, weapons, apparel, potions, food and scrolls. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
-          <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Choose your Civil War and Dawnguard sides here, and tick quests off as you play.</li>
+          <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Choose your Civil War and Dawnguard sides here, browse every quest by questline, place or add-on, and tick quests off as you play.</li>
           <li><strong>Summary.</strong> The whole build on one page, ready to print, plus a build code to save or share.</li>
         </ol>
         <p class="muted" style="margin:0">Red warnings marked ⚠ mean something can't happen as planned, such as gear you can't get by that level or a quest your chosen side locks out. Your build saves automatically in this browser; use the build code on the Summary step to move it to another device.</p>
@@ -511,6 +518,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <button class="btn quiet" id="suggestNo">Keep current plan</button>
         </div>
       </div>
+    </div>
+    <div class="box">
+      <h3>Werewolf or vampire</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Will this character carry the beast blood or the vampire's curse? The planner recommends the quests, gear, buffs and stone that go with it, and adds the quest that changes you to your plan.</p>
+      <div class="row">
+        <div class="styles" id="creature" role="radiogroup" aria-label="Werewolf or vampire"><button class="chip" data-v="">Neither</button><button class="chip" data-v="werewolf">Werewolf</button><button class="chip" data-v="vampire">Vampire</button></div>
+        <label class="rank" id="creatureWhen"><span class="rl">From level</span><select id="creatureM" aria-label="Become one by level"></select></label>
+      </div>
+      <div id="creatureRec"></div>
     </div>
     <div class="box">
       <h3><label for="rpNotes">Role-play notes</label></h3>
@@ -792,9 +808,24 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div id="questProblems"></div>
     <div id="questPlan" class="quest-plan"></div>
     <div class="box">
-      <h3>Add a quest</h3>
-      <div class="field"><label class="label" for="questSearch">Search all quests</label><input type="search" id="questSearch" class="search" placeholder="Quest, questline or place, such as Companions or Riften" autocomplete="off"></div>
+      <h3>Browse quests</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Every quest in the data. Narrow it down, then add quests to your Priority or Selected tiers. Places are matched from where each quest starts and takes place, so a city filter also catches quests in that city's hold landmarks.</p>
+      <div class="qb-filters">
+        <div class="field"><label class="label" for="questSearch">Search</label><input type="search" id="questSearch" class="search" placeholder="Quest, giver or place" autocomplete="off"></div>
+        <div class="field"><label class="label" for="qbType">Questline or type</label><select id="qbType"></select></div>
+        <div class="field"><label class="label" for="qbPlace">Place</label><select id="qbPlace"></select></div>
+        <div class="field"><label class="label" for="qbDlc">Game or add-on</label><select id="qbDlc"><option value="">All</option><option value="base">Base game</option><option value="dawnguard">Dawnguard</option><option value="hearthfire">Hearthfire</option><option value="dragonborn">Dragonborn</option><option value="cc">Creation Club</option></select></div>
+        <div class="field"><label class="label" for="qbStatus">Status</label><select id="qbStatus"><option value="">Any</option><option value="out">Not in my plan</option><option value="in">In my plan</option><option value="done">Done</option></select></div>
+        <div class="field"><label class="label" for="qbLevel">Can start by level</label><select id="qbLevel"><option value="">Any level</option><option value="10">10</option><option value="20">20</option><option value="30">30</option><option value="40">40</option><option value="60">60</option></select></div>
+      </div>
+      <div class="row">
+        <label class="check"><input type="checkbox" id="qbFits" checked> Hide quests my sides leave out</label>
+        <label class="check"><input type="checkbox" id="qbAlign"> Hide quests that clash with my alignment</label>
+        <label class="check"><input type="checkbox" id="qbMinor"> Include small tasks and favors</label>
+      </div>
+      <div class="muted" id="qbCount" style="font-size:.9rem" aria-live="polite"></div>
       <div class="perks" id="questResults"></div>
+      <div class="row"><button class="btn quiet" id="qbMore" hidden>Show more</button></div>
     </div>
   </section>
 
@@ -1096,7 +1127,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -1134,6 +1165,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     const keep = (src, ok) => Object.fromEntries(Object.entries(src && typeof src === 'object' ? src : {}).filter(([k, v]) => ok[k] && MS.includes(v)));
     out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
+    out.creature = s.creature && ['werewolf', 'vampire'].includes(s.creature.kind) && MS.includes(s.creature.m) ? { kind: s.creature.kind, m: s.creature.m } : null;
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
       name: String(x.name || '').slice(0, 60), desc: String(x.desc || '').slice(0, 400),
@@ -1208,6 +1240,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function renderIdentity() {
     $('buildName').value = state.name;
     if (document.activeElement !== $('rpNotes')) $('rpNotes').value = state.notes;
+    renderCreature();
     $('rpCount').textContent = state.notes.length > 5000 ? `${6000 - state.notes.length} characters left` : '';
     $('races').innerHTML = RACES.map(r => `<button class="race" role="radio" aria-checked="${r.id === state.race}" data-race="${r.id}"><span class="rn">${r.name}</span><span class="rb">+10 ${SK[r.p10].name}</span></button>`).join('');
     const r = RC[state.race];
@@ -1665,6 +1698,70 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const f = d.mvRm != null ? `mvt-${i}-${Math.max(0, j - 1)}` : `mvt-${i}-${d.mvUp != null ? j - 1 : j + 1}`; $(f)?.focus();
   });
   const moveText = mv => `${mv.name || 'Unnamed move'}: ${mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || 'no steps yet'}`;
+  // ---------- Werewolf or vampire ----------
+  // gathered from UESP's Lycanthropy and Vampirism pages; the stone picks are the planner's own rule of thumb
+  const CREATURE = {
+    werewolf: { name: 'Werewolf', become: 'The Silver Hand', how: 'You drink werewolf blood during the Companions quest The Silver Hand.',
+      facts: ['Beast Form, a greater power: become a werewolf once a day for 150 seconds; feeding on corpses keeps the form going.', '100% resistance to disease.', 'No resting bonuses: you never get Rested, Well Rested or Lover\'s Comfort, so skills level a little more slowly.', 'Dawnguard adds a werewolf perk tree that you unlock by feeding.', 'Cure it at Ysgramor\'s Tomb after Glory of the Dead; with Dawnguard, Aela can restore it once.'],
+      quests: ['The Silver Hand', 'Purity of Revenge', 'Glory of the Dead', 'Ill Met By Moonlight'],
+      gear: ['spc-wolf-armor', 'spc-wolf-boots', 'spc-wolf-gauntlets', 'spc-wolf-helmet', 'saviors-hide', 'ring-of-hircine', 'ring-of-bloodlust', 'ring-of-the-hunt', 'ring-of-instinct', 'ring-of-the-moon'],
+      buffs: ['howl-of-the-pack', 'additional-werewolf-transformations', 'frostmoon-instinct'],
+      stone: ['lady', 'Health and Stamina regenerate faster, which keeps Beast Form fights going.'],
+      clash: ['rested', 'well-rested', 'lovers-comfort', 'mothers-love', 'fathers-love'] },
+    vampire: { name: 'Vampire', become: 'Bloodline', how: 'Accept Lord Harkon\'s gift during the Dawnguard quest Bloodline (Volkihar side), let Serana turn you after Chasing Echoes, or catch Sanguinare Vampiris from any vampire and leave it uncured for three days.',
+      facts: ['Champion of the Night: Illusion spells are 25% stronger.', 'Nightstalker\'s Footsteps: 25% harder to detect while sneaking.', '100% resistance to disease and poison; weakness to fire and to sunlight, both worse the longer you go without feeding.', 'With Dawnguard, Harkon\'s or Serana\'s gift lets you become a Vampire Lord, with its own perk tree.', 'Cure it with the quest Rising at Dawn, or by becoming a werewolf.'],
+      quests: ['Bloodline', 'The Bloodstone Chalice', 'Ancient Power', 'Rising at Dawn'],
+      gear: ['vamp-vampire-royal-armor', 'std-vampire-armor', 'std-vampire-boots', 'std-vampire-gauntlets', 'vamp-vampire-robes', 'vamp-vampire-hood', 'vamp-vampire-gloves', 'vamp-vampire-leather-hood', 'amulet-of-bats', 'amulet-of-the-gargoyle', 'ring-of-the-beast', 'ring-of-the-erudite', 'vampiric-ring'],
+      buffs: ['blood-of-the-ancients', 'vampiric-blood-rested'],
+      stone: ['lord', 'Magic resistance and extra armor help against the vampire\'s weakness to fire spells.'],
+      clash: [] },
+  };
+  // the quest that turns you, which depends on the Dawnguard side for vampires
+  const becomeQuest = kind => kind === 'werewolf' ? 'The Silver Hand' : state.dgSide === 'volkihar' ? 'Bloodline' : state.dgSide === 'dawnguard' ? 'Kindred Judgment' : null;
+  function creatureNotes() {
+    const c = state.creature; if (!c) return [];
+    const out = [];
+    if (c.kind === 'werewolf' && state.dgSide === 'volkihar') out.push('Siding with the Volkihar means accepting Harkon\'s gift in Bloodline, which cures lycanthropy. With Dawnguard, Aela can restore it once.');
+    if (c.kind === 'vampire' && state.dgSide === 'dawnguard') out.push('On the Dawnguard side you turn down Harkon in Bloodline, but you can ask Serana to turn you after Kindred Judgment, which also gives Vampire Lord form, or catch the disease from a vampire.');
+    if (c.kind === 'vampire' && state.dgSide === 'none') out.push('Without Dawnguard you become a vampire only by catching the disease from a vampire, and there is no Vampire Lord form.');
+    const bad = CREATURE.werewolf.clash.filter(id => c.kind === 'werewolf' && state.buffs[id]).map(id => BF[id]?.name).filter(Boolean);
+    if (bad.length) out.push(`Werewolves never get ${bad.join(', ')}, which you've chosen as buffs.`);
+    return out;
+  }
+  function renderCreature() {
+    const c = state.creature, kind = c?.kind || '';
+    $('creature').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === kind)));
+    $('creatureM').innerHTML = MS.map(m => `<option value="${m}"${c?.m === m ? ' selected' : ''}>By ${m}</option>`).join('');
+    $('creatureWhen').hidden = !c;
+    if (!c) { $('creatureRec').innerHTML = ''; return; }
+    const C = CREATURE[kind], has = (bag, id) => bag[id] != null;
+    const item = (label, added, btn) => `<li>${label}${added ? ' <span class="tagd fit">In your plan</span>' : btn}</li>`;
+    $('creatureRec').innerHTML = `<p style="margin:8px 0 0">${esc(C.how)}${becomeQuest(kind) && pickAlt([becomeQuest(kind)]) ? ` <strong>${esc(becomeQuest(kind))}</strong> goes into your quest plan, needed by level ${c.m}.` : kind === 'vampire' ? ' Choose a Dawnguard side on the Quest plan step to plan the quest route; otherwise it comes from catching the disease.' : ''}</p>
+      <ul class="cr-facts">${C.facts.map(f => `<li>${esc(f)}</li>`).join('')}</ul>
+      ${creatureNotes().map(t => `<div class="pw">${esc(t)}</div>`).join('')}
+      <div class="cr-grid">
+        <div><h4>Quests</h4><ul>${(() => { const { plan } = buildQuestPlan(); return [...new Set([becomeQuest(kind), ...C.quests].filter(Boolean))].map(n => { const q = findQuest(n); if (!q) return ''; const blocked = sideBlock(q);
+          return blocked ? `<li class="muted">${esc(n)} <span class="tagd warn">Left out</span> <small>${esc(blocked)}</small></li>` : item(esc(n), plan[q.id], ` <button class="btn quiet" data-cr-quest="${q.id}">Add to Priority</button>`); }).join(''); })()}</ul></div>
+        <div><h4>Gear</h4><ul>${C.gear.filter(id => GR[id]).map(id => item(esc(GR[id].name), has(state.gear, id), ` <button class="btn quiet" data-cr-gear="${id}">Add by ${c.m}</button>`)).join('')}</ul></div>
+        <div><h4>Buffs</h4><ul>${C.buffs.filter(id => BF[id]).map(id => item(esc(BF[id].name), state.buffs[id], ` <button class="btn quiet" data-cr-buff="${id}">Add</button>`)).join('')}</ul></div>
+        <div><h4>Standing Stone</h4><ul>${item(`${esc(STN[C.stone[0]].name)} <span class="muted">· ${esc(C.stone[1])}</span>`, MS.some(m => state.stones[m] === C.stone[0]), ` <button class="btn quiet" data-cr-stone="${C.stone[0]}">Use from level ${c.m}</button>`)}</ul></div>
+      </div>`;
+  }
+  $('creature').addEventListener('click', e => {
+    const b = e.target.closest('[data-v]'); if (!b) return;
+    state.creature = b.dataset.v ? { kind: b.dataset.v, m: state.creature?.m || 20 } : null;
+    touch(); renderCreature();
+  });
+  $('creatureM').addEventListener('change', e => { if (state.creature) { state.creature.m = +e.target.value; touch(); renderCreature(); } });
+  $('creatureRec').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b || !state.creature) return;
+    const m = state.creature.m, d = b.dataset;
+    if (d.crQuest) state.quests[d.crQuest] = 'priority';
+    if (d.crGear) state.gear[d.crGear] = m;
+    if (d.crBuff) state.buffs[d.crBuff] = { tier: 'selected' };
+    if (d.crStone) MS.filter(x => x >= m).forEach(x => state.stones[x] = d.crStone);
+    touch(); renderCreature(); renderSubtabs();
+  });
   // ---------- Loadout: buffs ----------
   const BUFF_KINDS = [['all', 'All'], ['Ability', 'Abilities'], ['power', 'Powers'], ['blessing', 'Blessings'], ['quest', 'From quests'], ['wanted', 'Chosen']];
   let buffFilter = 'all';
@@ -1673,6 +1770,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const v = state.buffs[b.id]; if (!v) return [];
     const out = [];
     if (b.group) { const rival = BUFFS.find(o => o.group === b.group && o.id !== b.id && state.buffs[o.id]); if (rival) out.push(`You can only have one from ${b.group}; you also chose ${rival.name}.`); }
+    if (state.creature?.kind === 'werewolf' && CREATURE.werewolf.clash.includes(b.id)) out.push('Werewolves never get this; you chose to be a werewolf on the Identity step.');
     for (const n of b.quests) if (!pickAlt([n])) { const any = findQuest(n); out.push(`Comes from ${n}, which is left out: ${any ? sideBlock(any) || questConflict(any) : 'not in the quest data.'}`); }
     if (b.dlc === 'dawnguard' && state.dgSide === 'none') out.push('Dawnguard content; you chose not to play Dawnguard.');
     return out;
@@ -2058,6 +2156,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       hm.quests.forEach(n => { const q = pickAlt([n]); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); else problems.push(`${hm.name} needs ${n}, which your sides or alignment leave out.`); });
       if (hm.questsAny) { const q = pickAlt(hm.questsAny); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); }
     }
+    if (state.creature) { const C = CREATURE[state.creature.kind], n = becomeQuest(state.creature.kind), q = n && pickAlt([n]); if (q) out.push({ q, m: state.creature.m, label: `Becoming a ${C.name.toLowerCase()}` }); }
     for (const b of BUFFS) {
       const v = state.buffs[b.id]; if (!v) continue;
       for (const n of b.quests) { const q = pickAlt([n]); if (!q) { problems.push(`${b.name} comes from ${n}, which your sides or alignment leave out.`); continue; } (v.tier === 'selected' ? selectedShouts : out).push({ q, m: v.tier === 'selected' ? Infinity : v.m, label: `Buff: ${b.name}` }); }
@@ -2210,18 +2309,58 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     renderQuestSearch();
   }
+  // places a quest mentions, from its location and giver text; landmarks count for their city
+  const PLACES = [
+    ['Whiterun', /whiterun|dragonsreach|jorrvaskr|bannered mare|riverwood|rorikstead|sleeping giant|bleak falls|halted stream|greymoor|honningbrew/],
+    ['Solitude', /solitude|blue palace|castle dour|winking skeever|bards college|dragon bridge|east empire|katla's farm|wolfskull/],
+    ['Windhelm', /windhelm|palace of the kings|candlehearth|grey quarter|kynesgrove|ysgramor's tomb/],
+    ['Riften', /riften|mistveil|ragged flagon|ratway|bee and barb|honorhall|black-briar|ivarstead|shor's stone|goldenglow|mercer's house/],
+    ['Markarth', /markarth|understone|cidhna|silver-blood|karthwasten|old hroldan|reach/],
+    ['Falkreath', /falkreath|dead man's drink|helgen|lakeview|pinewatch|dark brotherhood sanctuary/],
+    ['Morthal', /morthal|highmoon|moorside|stonehills|windstad/],
+    ['Dawnstar', /dawnstar|white hall|windpeak|nightcaller|dawnstar sanctuary/],
+    ['Winterhold', /winterhold|college of winterhold|arcanaeum|hall of attainment|hall of the elements|saarthal|midden|frozen hearth/],
+    ['Solstheim', /solstheim|raven rock|skaal|tel mithryn|apocrypha|thirsk|kolbjorn|castle karstaag/],
+    ['Fort Dawnguard and Castle Volkihar', /fort dawnguard|castle volkihar|soul cairn|forgotten vale|icewater jetty/],
+    ['High Hrothgar and the Throat of the World', /high hrothgar|throat of the world|sky haven|sovngarde/],
+  ];
+  const placesOf = x => { const t = `${x.loc || ''} ${x.giver || ''} ${x.name}`.toLowerCase(); return PLACES.filter(([, re]) => re.test(t)).map(([n]) => n); };
+  const QTYPES = [['', 'All quests'], ['faction', 'All guilds and factions'], ['story', 'All main stories'],
+    ['Main quest', 'Main quest'], ['Dawnguard main quest', 'Dawnguard main quest'], ['Dragonborn main quest', 'Dragonborn main quest'],
+    ['Companions', 'Companions'], ['College of Winterhold', 'College of Winterhold'], ['Thieves Guild', 'Thieves Guild'], ['Dark Brotherhood', 'Dark Brotherhood'], ['Bards College', 'Bards College'],
+    ['Imperial Legion', 'Imperial Legion'], ['Stormcloaks', 'Stormcloaks'], ['Dawnguard', 'Dawnguard'], ['Volkihar Vampire Clan', 'Volkihar Vampire Clan'],
+    ['Daedric quest', 'Daedric quests'], ['Divine quest', 'Divine quests'], ['side', 'Side quests (all)'], ['Dungeon quest', 'Dungeon quests'], ['Hearthfire', 'Hearthfire'], ['Creation Club', 'Creation Club'], ['Miscellaneous', 'Miscellaneous']];
+  const FACTION_LINES = ['Companions', 'College of Winterhold', 'Thieves Guild', 'Dark Brotherhood', 'Bards College', 'Imperial Legion', 'Stormcloaks', 'Dawnguard', 'Volkihar Vampire Clan'];
+  const typeMatch = (x, t) => !t || (t === 'faction' ? FACTION_LINES.includes(x.line) : t === 'story' ? /main quest$/i.test(x.line) : t === 'side' ? /side (quest|task)/i.test(x.line) : x.line === t);
+  let qbShown = 30;
   function renderQuestSearch() {
-    const q = ($('questSearch').value || '').trim().toLowerCase();
-    if (q.length < 2) { $('questResults').innerHTML = '<p class="muted" style="margin:12px 0">Type at least two letters.</p>'; return; }
-    const hits = QUESTS.filter(x => [x.name, x.line, x.loc, x.giver].some(t => t && t.toLowerCase().includes(q)))
-      .map(x => ({ x, r: (x.name.toLowerCase().includes(q) ? 0 : 2) + (x.minor ? 1 : 0) }))
-      .sort((a, b) => a.r - b.r || (a.x.prev.length ? 1 : 0) - (b.x.prev.length ? 1 : 0)).slice(0, 12).map(o => o.x);
-    $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.line)}</span>${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : ''}</div>
-        <div class="pe">${esc(x.description)}</div>${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
+    if (!$('qbType').options.length) {
+      $('qbType').innerHTML = QTYPES.map(([v, l]) => `<option value="${esc(v)}">${esc(l)}</option>`).join('');
+      $('qbPlace').innerHTML = '<option value="">Anywhere</option>' + PLACES.map(([n]) => `<option>${esc(n)}</option>`).join('');
+    }
+    const q = ($('questSearch').value || '').trim().toLowerCase(), t = $('qbType').value, pl = $('qbPlace').value, dlc = $('qbDlc').value, st = $('qbStatus').value, lv = +$('qbLevel').value || 0;
+    const { plan } = buildQuestPlan();
+    const all = QUESTS.filter(x => (!q || [x.name, x.line, x.loc, x.giver, x.description].some(s => s && s.toLowerCase().includes(q)))
+      && typeMatch(x, t) && (!pl || placesOf(x).includes(pl)) && (!dlc || x.dlc === dlc)
+      && (!st || (st === 'done' ? state.done[x.id] : st === 'in' ? plan[x.id] : !plan[x.id]))
+      && (!lv || (x.reqLevel || 0) <= lv)
+      && (!$('qbFits').checked || !sideBlock(x)) && (!$('qbAlign').checked || !questConflict(x))
+      && ($('qbMinor').checked || !x.minor || q || t === 'Miscellaneous'))
+      .map(x => ({ x, r: (q && x.name.toLowerCase().includes(q) ? 0 : 2) + (x.minor ? 1 : 0) + (x.dlc === 'cc' ? 0.5 : 0) }))
+      .sort((a, b) => a.r - b.r || a.x.line.localeCompare(b.x.line) || (a.x.prev.length ? 1 : 0) - (b.x.prev.length ? 1 : 0) || a.x.name.localeCompare(b.x.name)).map(o => o.x);
+    const hits = all.slice(0, qbShown);
+    $('qbCount').textContent = `${all.length} quest${all.length === 1 ? '' : 's'}${all.length > hits.length ? `, showing ${hits.length}` : ''}.`;
+    $('qbMore').hidden = all.length <= hits.length;
+    $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.line)}</span>${x.dlc !== 'base' && !x.line.includes(DLC[x.dlc] || '~') ? `<span class="tagd">${DLC[x.dlc] || x.dlc}</span>` : ''}${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : x.suggLevel ? `<span class="tagd">Suggested ${x.suggLevel}</span>` : ''}${plan[x.id] && !state.quests[x.id] ? '<span class="tagd need">In plan</span>' : ''}${state.done[x.id] ? '<span class="tagd good">Done</span>' : ''}${questConflict(x) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+        <div class="pe">${esc(x.description)}</div>
+        <div class="pr">${[x.giver ? `Start: ${esc(x.giver)}` : '', x.loc ? esc(x.loc) : '', x.prev.length ? `After ${esc(x.prev.join(x.prevAny ? ' or ' : ', '))}` : ''].filter(Boolean).join(' · ')}</div>
+        ${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
         <div class="ranks"><label class="rank"><span class="rl">Add as</span><select class="${state.quests[x.id] ? 'on' : ''}" id="qa-${x.id}" data-addq="${x.id}" aria-label="Add ${esc(x.name)} as"><option value="">Not added</option><option value="priority"${state.quests[x.id] === 'priority' ? ' selected' : ''}>Priority</option><option value="selected"${state.quests[x.id] === 'selected' ? ' selected' : ''}>Selected</option></select></label></div></div>`).join('')
-      : `<p class="muted" style="margin:12px 0">No quest matches "${esc(q)}".</p>`;
+      : '<p class="muted" style="margin:12px 0">No quests match these filters.</p>';
   }
-  $('questSearch').addEventListener('input', renderQuestSearch);
+  $('questSearch').addEventListener('input', () => { qbShown = 30; renderQuestSearch(); });
+  ['qbType', 'qbPlace', 'qbDlc', 'qbStatus', 'qbLevel', 'qbFits', 'qbAlign', 'qbMinor'].forEach(id => $(id).addEventListener('change', () => { qbShown = 30; renderQuestSearch(); }));
+  $('qbMore').addEventListener('click', () => { qbShown += 30; renderQuestSearch(); });
   $('questResults').addEventListener('change', e => {
     const el = e.target.closest('select[data-addq]'); if (!el) return;
     if (el.value === '') delete state.quests[el.dataset.addq]; else state.quests[el.dataset.addq] = el.value;
@@ -2419,7 +2558,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Buffs</dt><dd>${buffBy(m).map(b => b.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd><dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd><dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
     $('sumOnly').checked = only;
@@ -2480,7 +2619,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const unused = SKILLS.filter(s => !used.includes(s));
     const qn = t => order.filter(id => plan[id].tier === t);
     $('printSheet').innerHTML = `<div class="ps">
-      <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${r.name} ${ST[state.style].name} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}</div></div>
+      <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${r.name} ${ST[state.style].name}${state.creature ? ` · ${CREATURE[state.creature.kind].name} by level ${state.creature.m}` : ''} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}</div></div>
         <div class="meta">Skyrim Character Planner<br>${new Date().toLocaleDateString()}</div></div>
       <dl class="ps-ident">
         <div><dt>Followers</dt><dd>${list(Object.keys(state.followers).map(id => FOL[id].name))}</dd></div>
