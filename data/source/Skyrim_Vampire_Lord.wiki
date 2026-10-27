@@ -1,0 +1,235 @@
+{{Mod Header|Dawnguard}}{{Trail|Powers|nocat=1}}[[Category:Skyrim-Dawnguard]][[Category:Skyrim-Magic-Lesser_Powers]][[File:SR-skill-Vampire Lord (Male).jpg|thumb|Male Vampire Lord]]
+'''Vampire Lord''' is a [[Skyrim:Powers#Lesser Powers|lesser power]] added by the [[Skyrim:Dawnguard|Dawnguard]] [[Skyrim:Add-ons|add-on]] that allows players with [[Skyrim:Vampirism|vampirism]] to turn into a powerful Vampire Lord: a large humanoid creature with sharp claws and bat-like wings. In order to gain this ability, you must accept [[Skyrim:Lord Harkon|Lord Harkon]]'s gift during the [[Skyrim:Bloodline|Bloodline]] quest or receive it from [[Skyrim:Serana|Serana]] after [[Skyrim:Chasing Echoes|Chasing Echoes]]. She also offers the option to infect you after completing Destroying the Dawnguard or Kindred Judgment. The ability can be used an unlimited number of times per day and at any point during normal gameplay. While not in Vampire Lord form, you will still have all the characteristics of a normal [[Skyrim:Vampirism|vampire]].
+
+As a Vampire Lord, you will be able to use blood magic and other dark powers, and can either levitate and use spells or remain on the ground and fight with deadly claws. In [[Skyrim:Skyrim|Skyrim]], only the more pure-blooded vampires such as those of [[Skyrim:Lord_Harkon|Lord Harkon]]'s [[Skyrim:Volkihar Vampire Clan|court]] have this ability and, according to him, the family's vampirism was a gift directly from [[Lore:Molag_Bal|Molag Bal]] himself.
+
+Accepting Harkon's gift will permanently align you with the [[Skyrim:Volkihar Vampire Clan|Volkihar]]; the only way to become a Vampire Lord and side with the [[Skyrim:Dawnguard (faction)|Dawnguard]] is to wait for the option to be infected by Serana.
+
+==Vampire Lord Form==
+The Vampire Lord power has the following effects (a few of these are from the [[#Skill Perks|'''skill tree''']] below:
+* You will retain the '''"Vampire's Sight"''' ability from your ordinary vampirism, but all other effects are either removed for the duration of your Vampire Lord form or replaced with a Vampire Lord version of the same effect.
+* Your '''health, magicka, and stamina increase''' by a level-dependent value each.
+* '''Magicka regenerates''' 2% faster.
+* You gain the same unarmed damage as Khajiit and Argonians (10). Khajiit will, however, lose their Claws ability.
+* When outside during the day, your '''health, magicka, and stamina decrease''' by a set amount based on your vampire stage.
+* When outside during the day, health, magicka, and stamina '''regeneration is reduced''' by 90%.
+* Ability to use the Vampire Lord version of '''[[Skyrim:Vampiric Drain|Vampiric Drain]]''', which has a [[Skyrim:Damage Health|Damage Health]] effect in addition to draining health, magicka, and stamina from your target (see details below).
+* '''"Vampire Claws"''' constant effect, which gives you additional health, magicka, and stamina, increased [[Skyrim:Fortify Unarmed Damage|unarmed damage]], damage resistance, and [[Skyrim:Waterwalking|waterwalking]] (see table).
+* '''"Bats"''' special ability, which allows you to transform into a swarm of bats for two seconds in order to evade damage (costs 25 magicka).
+* The '''Raise Dead''' spell (similar to the "Vampire's Servant" spell granted with ordinary vampirism), which allows you to reanimate a fallen corpse to fight for you (see table).
+
+[[File:SR-creature-Bats 02.jpg|thumb|Using the "Bats" ability]]
+While you are in Vampire Lord form, only the [[Skyrim:Amulet of Bats|Amulet of Bats]], [[Skyrim:Amulet of The Gargoyle|Amulet of The Gargoyle]], [[Skyrim:Ring of The Beast|Ring of The Beast]],  or [[Skyrim:Ring of the Erudite|Ring of the Erudite]] can be used; all of your other equipment is removed automatically. You also will not be able to use your normal [[Skyrim:Spells|spells]], [[Skyrim:Dragon_Shouts|dragon shouts]], or [[Skyrim:Powers|powers]], but your attacks increase in power and speed. You will move more quickly as well, but since the "Vampire Claws" constant effect gives you the waterwalking ability, you cannot swim as a Vampire Lord. Once you transform, all summoned creatures (including dead thralls) will immediately die. Your [[Skyrim:Races|racial abilities]] do not carry over into Vampire Lord form, but existing spell effects do. This includes passive abilities such as [[Skyrim:The Lord Stone|The Lord Stone]], the [[Skyrim:Blessing of Mara|Blessing of Mara]], and the [[Skyrim:Magic Resistance|Magic Resistance]] perks from the [[Skyrim:Alteration|Alteration]] skill tree. It also includes the [[Skyrim:Destruction|Destruction]] Cloak spells and the Alteration Flesh spells.
+
+Vampire Lords are dangerous, fearsome creatures, and you will be attacked on sight if you are seen in this form. However, since NPCs will not recognize you, crimes committed in Vampire Lord form will not be attributed to you and will not increase your bounty. If you are seen transforming, 1000 gold will be added to your bounty, plus 1000 gold for any kills witnessed by anyone.
+
+The world was not built for Vampire Lords, so you may get stuck in some small doorways while in this form. To avoid this, try turning sideways so that your wings go through the doorway first. In most cases, you can get through. When all else fails, the Bats ability will get you out of tight jams fairly well.
+
+While in Vampire Lord form, you can choose to either levitate or walk normally; you can only cast your spells while levitating, and will need to stop levitating in order to fight with your claws. When levitating, your right hand is automatically equipped with the Vampiric Drain spell and cannot be changed. Your left hand is used for your blood magic spells, such as Summon Gargoyle or Raise Dead. By bringing up the in-game favorites menu, you can switch the spell in your left hand and your active vampire power. You will take damage as normal from long falls while in levitation mode.
+
+To descend to the ground and enter melee mode, press the sneak button. In this mode, you fight using your claws in a similar fashion to [[SR:Lycanthropy|werewolves]]. You can also perform a "power bite" attack that will count toward your perk progress in the Vampire perk tree. To perform a power bite, use a [[Skyrim:Combat#Power Attacks|power attack]] against a humanoid target when their health is extremely low. The power bite will not work if you do not have enough stamina to perform the attack, and it will work on any [[Skyrim:NPCs|NPCs]] (including other vampires), but not on [[Skyrim:Creatures|creatures]]. You can switch between modes as often as necessary while in this form. Your active vampire power can be used in either mode by pressing the shout button, though powers must be briefly recharged before they can be used again.
+
+You will have a forced third-person view while you are a Vampire Lord, and you will not be able to access character menus or maps. Opening the character menu will open the Vampire [[#Skill Perks|perk tree]] instead of your normal menus. You will not be able to pick up any items or start conversations, but you can activate [[Skyrim:Switches|switches]] (such as levers and pull chains) to progress through dungeons (though you will be unable to interact with objects preventing the use of switches, e.g. the bones or scraps that must be removed to use certain switches in [[Skyrim:Raldbthar Deep Market|Raldbthar Deep Market]]). 
+
+You can use the "Revert Form" ability to return to your normal form at any time. If you have summoned a [[Skyrim:Gargoyle|gargoyle]] while in Vampire Lord form, it will not disappear when you use Revert Form.
+
+===Abilities===
+Unlike regular vampire abilities, which are determined by the stage of your vampirism, Vampire Lord abilities and enhancements are level-dependent. The following abilities are granted automatically by the Vampire Lord form, along with the Bats ability, which is the same regardless of your level. Other powers and spells can be added by unlocking [[#Skill Perks|perks]] in the Vampire skill tree.
+
+{|class=wikitable
+!colspan=6| Vampire Claws !! Raise Dead !!colspan=2|Vampiric Drain{{intnote|Range|[1]}}{{intnote|Serana|[2]}}
+|-style="background-color:#F7E9CD; font-weight:bold; text-align:center;"
+|Level || {{Damage Icon}} || {{Health Icon}} || {{Magicka Icon}} || {{Stamina Icon}} || [[File:ArmorIcon_Small.png|Resist Damage]] || [[Skyrim:Reanimate|Reanimate]] || [[Skyrim:Drain Health|Drain Health]], [[Skyrim:Drain Magicka|Magicka]], and [[Skyrim:Drain Stamina|Stamina]] || [[Skyrim:Damage Health|Damage Health]]
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|1-10 || +0 || +50 || +40 || +0 || 100 || 8 pts for 60 secs || 15 points per second || 50 points
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|11-15 || +5 || +75  || +60|| +10 || 125 ||rowspan=2|16 pts for 60 secs ||rowspan=2| 17.5 points per second ||rowspan=2| 70 points
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|16-20 || +10 || +100 || +80 || +20 || 150
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|21-25 || +15 || +125 || +100 || +30 || 175 ||rowspan=2| 24 pts for 60 secs ||rowspan=2| 20 points per second ||rowspan=2| 90 points
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|26-30 || +20 || +150 || +120 || +40 || 200
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|31-35 || +25 || +175 || +150 || +50 || 225 ||rowspan=2| 30 pts for 60 secs ||rowspan=2| 22.5 points per second ||rowspan=2| 120 points
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|36-40 || +30 || +200 || +160 || +60 || 250
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|41-45 || +35 || +225 || +180 || +80 || 275 ||rowspan=2| 36 pts for 60 secs ||rowspan=2| 25 points per second ||rowspan=2| 150 points
+|-
+|style="background-color:#F7E9CD; font-weight:bold;"|46+ || +40 || +250 || +200 || +100 || 300
+|}
+{{Note|Range|^1|The range of Vampiric Drain is 10 feet.}}
+{{Note|Serana|^2|When Serana is following you, the Vampiric Drain spell's damage decreases dramatically. This is a result of a condition on the Damage Health effect of the spell; if Serana is following you, the Damage Health effect will be reduced to zero points for all levels of the spell.}}
+
+==Skill Perks==
+While in Vampire Lord form, you will have access to a unique skill tree with perks that makes your special abilities more powerful. You gain progress to your next Vampire Lord perk by defeating enemies with Vampiric Drain or a "power bite" attack. The Vampiric Drain attack counts toward a perk when it kills all but the smallest of living creatures (birds, chickens, fish, foxes, and rabbits). Draugr and vampires will also advance your perk progress. Most other undead (skeletons, spirits, and dragon priests) do not give any progress gains, nor do constructs and summoned creatures.
+
+Each new perk requires a few more kills than the last. The first perk requires 5 kills with Vampiric Drain or a "power bite" attack, the second 7, the third 9, and so forth. Each new perk requires two more kills than the last (up to 25 required to progress from the tenth perk to the eleventh). You will need a total of 165 kills to complete the entire tree.
+{{Perk Tree Setup|width=630}}
+{{Perk Tree||image=SR-perktree-Vampirism.jpg|perks=
+{{Image Mark|498|407|Power of the Grave|Power of the Grave: 50 point bonus to health, magicka and stamina as Vampire Lord|position=bottom}}
+{{Image Mark|430|241|Blood Healing|Blood Healing: Killing a person with a power attack bite restores all your health.|position=bottom}}
+{{Image Mark|569|242|Unearthly Will|Unearthly Will: Night Powers and Blood Magic cost 33% less.|position=bottom}}
+{{Image Mark|499|170|Poison Talons|Poison Talons: Melee attacks do 20 points of poison damage.|position=bottom}}
+{{Image Mark|500|110|Night Cloak|Night Cloak: In combat you are surrounded by a cloud of bats that feed on enemies within melee range.|position=bottom}}
+{{Image Mark|313|332|Detect All Creatures|Detect All Creatures: Night Power: Detect all creatures, even Dwarven Automatons.|position=bottom}}
+{{Image Mark|243|239|Mist Form|Mist Form: Night Power: Transform into an invulnerable mist, while health, magicka, and stamina regenerate.|position=bottom}}
+{{Image Mark|163|217|Supernatural Reflexes|Supernatural Reflexes: Night Power: Everything slows down while you move faster.|position=left}}
+{{Image Mark|672|332|Vampiric Grip|Vampiric Grip: Blood Magic: Can pull a creature to you from a distance, and do choking damage once it's close.|position=bottom}}
+{{Image Mark|745|242|Summon Gargoyle|Summon Gargoyle: Blood Magic: Can conjure a gargoyle to fight for you|position=bottom}}
+{{Image Mark|837|217|Corpse Curse|Corpse Curse: Blood Magic: Target is paralyzed.|position=right}}
+}}
+{{NewLine}}
+{|class="wikitable sortable"
+!Perk
+!class=unsortable|Description
+!class=unsortable|[[Skyrim:Form ID|ID]]
+!Perk Req.
+|-
+|''{{Anchor|Power of the Grave}}''
+| 50 point bonus to health, magicka and stamina as Vampire Lord.
+| {{ID|xx005998}}
+|
+|-
+|''{{Anchor|Blood Healing}}''
+| Killing a person with a power attack bite restores all your health.
+| {{ID|xx005994}}
+| Power of the Grave
+|-
+|''{{Anchor|Detect All Creatures}}''
+| Night Power: Detect all creatures, even [[Skyrim:Dwarven_Automatons|Dwarven Automatons]].
+| {{ID|xx00599b}}
+| Power of the Grave
+|-
+|''{{Anchor|Mist Form}}''
+| Night Power: Transform into an invulnerable mist, while health, magicka, and stamina regenerate.
+| {{ID|xx00599c}}
+| Detect All Creatures
+|-
+|''{{Anchor|Supernatural Reflexes}}''
+| Night Power: Everything slows down while you move faster.
+| {{ID|xx00599e}}
+| Mist Form
+|-
+|''{{Anchor|Unearthly Will}}''
+| Night Powers and Blood Magic cost 33% less.
+| {{ID|xx005995}}
+| Power of the Grave
+|-
+|''{{Anchor|Poison Talons}}''
+| Melee attacks do 20 points of poison damage.
+| {{ID|xx005996}}
+| Blood Healing ''or'' Unearthly Will
+|-
+|''{{Anchor|Night Cloak}}''
+| In combat you are surrounded by a cloud of bats that feed on enemies within melee range.
+| {{ID|xx005997}}
+| Poison Talons
+|-
+|''{{Anchor|Vampiric Grip}}''
+| Blood Magic: Can pull a creature to you from a distance, and do choking damage once it's close.
+| {{ID|xx00599a}}
+| Power of the Grave
+|-
+|''{{Anchor|Summon Gargoyle}}''
+| Blood Magic: Can conjure a [[Skyrim:Gargoyle|gargoyle]] to fight for you.
+| {{ID|xx016908}}
+| Vampiric Grip
+|-
+|''{{Anchor|Corpse Curse}}''
+| Blood Magic: Target is paralyzed.
+| {{ID|xx008a70}}
+| Summon Gargoyle
+|}
+
+== Reactions ==
+If you wander around [[Skyrim:Volkihar Keep|Volkihar Keep]] in Vampire Lord form, some of the inhabitants may comment on it:
+{| class="wikitable"
+! Speaker !! Comment
+|-
+| [[Skyrim:Feran Sadri|Feran Sadri]] || ''I find it tiring to converse with someone in that form. Too much effort.''
+|-
+| [[Skyrim:Fura Bloodmouth|Fura Bloodmouth]] || ''Parading around in that form won't do you any good here.''
+|-
+| [[Skyrim:Garan Marethi|Garan Marethi]] || ''Yes, yes. Aren't you lovely looking like that. Do you mind?''
+|-
+| [[Skyrim:Hestla|Hestla]] || ''It's difficult to have a conversation with you like that. Would you mind changing back?''
+|-
+| [[Skyrim:Orthjolf|Orthjolf]] || ''You realize that doesn't impress anyone here.''
+|-
+| [[Skyrim:Rargal Thrallmaster|Rargal Thrallmaster]] || ''Mind yourself in that form. Don't go damaging my thralls.''
+|-
+| [[Skyrim:Ronthil|Ronthil]] || ''I hope you're not trying to lord your abilities over me.''
+|-
+| [[Skyrim:Vingalmo|Vingalmo]] || ''You realize it's not really necessary to take on that form here.''
+|}
+
+== Achievements ==
+One [[Skyrim:Achievements|achievement]] is related to being a Vampire Lord:
+* {{achievement|Vampire Mastered}}
+** There are 11 available perks, so all of the vampire perks must be unlocked for this achievement.
+
+==Gallery==
+<gallery>
+File:SR-skill-Vampire Lord (Female).jpg|A female Vampire Lord
+File:SR-prerelease-Dawnguard 08.jpg|A male Vampire Lord using Vampiric Grip
+File:SR-skill-Vampire Lord (Hover).jpg|A male Vampire Lord levitating
+</gallery>
+
+==Notes==
+* Unarmed damage, armor, and attribute bonuses are affected by the ''Necromage'' perk. This means that at level 46, with the ''Power of the Grave'' perk (add to based value), you will gain 312.5 (437.5 with the Ring of the Erudite) magicka, 375 (500 with the Ring of The Beast) health and 187.5 stamina, it's only available without unofficial patch.
+* The ''Night Cloak'' perk heals you for the amount of damage dealt. It also stacks if there are multiple enemies surrounding you. It should be noted that the bats only appear when an enemy detects you (even from a long distance) and they will disappear sometime after there is no enemy around anymore.
+* Vampiric Grip has a very long potential range, but with no projectile to track, aiming at a distant target can be difficult. For best results, point the crosshair at a humanoid target's head, and position yourself so there are no obstacles even partially in the way.
+* Vampiric Grip allows for easy kills against tough opponents by utilizing surrounding drops and cliffs. Drawing an opponent towards you before launching them off a cliff will result in an easy kill. The "choking damage" even applies to undead such as [[Skyrim:Draugr|Draugr]] and fellow vampires.
+* When transforming into Vampire Lord form, first your maximum health will be increased 50 points from the ''Power of the Grave'' perk, then you will gain the additional level-dependent attributes. This means health can be healed up to 300 at level 46 by transforming.
+* Transforming into a Vampire Lord in view of the [[Skyrim:Guards|guards]] of a [[Skyrim:Holds|Hold]] is a handy way to quickly achieve the [[File:SR-achievement-Master Criminal.png|18px]] [[Skyrim:Crime#Achievements|Master Criminal]] achievement. Being seen reverting to your original form is another way.
+* You will not lose any Vampire Lord perks if you cure yourself of vampirism and then ask Serana to restore it.
+* The only time you will ever face another Vampire Lord in combat is during the quest [[Skyrim:Kindred Judgment|Kindred Judgment]]. Harkon is also the only Vampire Lord to appear in the game; while others in his court are said to be Vampire Lords (such as his wife and daughter), they are never seen transforming or in the alternate form otherwise.
+* If you are either a vampire or a Vampire Lord, [[Skyrim:Galathil|Galathil]] will refuse to change your appearance, claiming that her techniques only work on the living, and that being undead doesn't count.
+* Vampire Lords were originally developed as part of the [[Skyrim:Game Jam|Game Jam]]. They had the ability to summon [[Lore:Imp|imp]] minions.
+* If [[Skyrim:Survival Mode|Survival Mode]] is active, freezing to death is impossible while in Vampire Lord Form.
+* If you choose to become a vampire in the middle of being with the Dawnguard, you will have to cure yourself before being accepted back into the Dawnguard ranks.
+* If you transform into a Vampire Lord at [[Skyrim:High Hrothgar|High Hrothgar]], the [[Skyrim:Greybeards|Greybeards]] there will attack immediately.
+* For best results when using the power bite attack, your opponent should be standing, not blocking, and you should be still and directly face your target or be directly behind your target. Your opponent can attack you and the bite will still work, and the range of the attack is unknown.
+* At one point during development it was planned for the Vampire Lord form to last only for a limited time span, akin to werewolves. Audio with Lord Harkon advising you about this was recorded but for obvious reasons not implemented in the final release.
+*The poison damage from the Poisoned Talons perk acts like a [[Skyrim:Lingering Damage Health|lingering damage health]] poison, not an instant poison, so the 20 damage in the perk description is 2 damage ''per second'', applied over 10 seconds. The poison damage also stacks, the more the target is attacked.
+*Killing an enemy with the Power Bite attack does not count towards the "Necks Bitten" stat in the main menu, even though its obvious you have bitten someone on the neck. It also does not count towards feeding for the purpose of vampire stages and upkeep of them.
+* You can view progress to the next perk point using the console command <code>show DLC1VampireBloodPoints</code>. To see the number of points needed, use <code>show DLC1VampireNextPerk</code>.
+*The red ghostly "trail" beneath your feet when levitating will point in whatever direction you turn the camera when not moving. This is only notable when your spells are sheathed (arms down at your sides).
+*In addition to [[Skyrim:Rabbit|rabbits]], [[Skyrim:Fox|foxes]], [[Skyrim:Slaughterfish|slaughterfish]] and specific undead (such as those in the [[Skyrim:Soul Cairn|Soul Cairn]] or zombies raised with reanimation spells), [[Skyrim:Horker|horkers]] also do not give vampiric experience when killing them with Vampiric Drain.
+*Unlike the [[Skyrim:Lycanthropy|werewolf transformation]], it is entirely possible to be overencumbered as a Vampire Lord; as you are not given the +2,000 fortify carry weight effect a werewolf does. Transforming when vastly overencumbered will result in a slowly moving Vampire Lord.
+*You can easily farm Vampire Lord perks by killing the infinitely respawning decoys during the battle with [[Skyrim:Sigdis Gauldurson|Sigdis Gauldurson]]. Just be careful not to accidentally kill Sigdis himself until you have the perks you need.
+*[[Skyrim:Froki Whetted-Blade|Froki Whetted-Blade]], [[Skyrim:Haming|Haming]], [[Skyrim:Illia|Illia]], [[Skyrim:Julienne Lylvieve|Julienne Lylvieve]] and [[Skyrim:Michel Lylvieve|Michel Lylvieve]] have no crime factions assigned and will therefore talk to you in Vampire Lord form.
+*If you equip a [[Skyrim:Scrolls|scroll]], transform into a Vampire Lord, then drop the scroll after transforming back, the scroll will remain equipped and you can cast it as many times as you like.
+
+==Bugs==
+{{Bug|When first changing into the Vampire Lord and entering spell mode, the Raise Dead spell that is automatically equipped to the left hand may not work on any creature or person.|confirmed=1|dlc=DG}}
+** Equipping the spell from the Favorites menu will fix this.
+{{Bug|If you use the Revert Form power, and then use a perk before returning to non-vampire form, you will retain the Vampiric Drain spell in the right hand, which still leads to skill increase for the Vampire Lord form if used to kill enemies, but NPCs will not be hostile to you.|confirmed=1|dlc=DG}}
+** This can be easily fixed by equipping a spell or a weapon in the right hand.
+{{Bug|Sometimes when you are made a Vampire Lord by either Harkon or Serana you will not be able to use the Vampire Lord power to turn into one.|confirmed=1|dlc=DG}}
+** {{pc22}} This can by fixed by typing <code>set dlc1vampirelorddisallow to 0</code> in the console.
+{{Bug|Using Vampiric Grip can prevent swimming animations from playing afterwards.|OSP|1.7}}
+{{Bug|Using Vampiric Grip can cause the game to crash.|OSP|1.8}}
+{{Bug|If [[Skyrim: Survival Mode|Survival Mode]] is active, you may be unable to warm up while in warm weather or in warm interiors while in Vampire Lord form. Cold penalties on your health meter also will not update immediately after transforming back.|OSSEP|1.6}}
+{{Bug|The <code>showracemenu</code> face complexion choice applies the selected change, but the choice does not save in many cases and is reset to a default on the next load. Only the last three complexions available work for a Vampire Lord.|confirmed=1|dlc=DG}}
+{{Bug|Sometimes when changing into a Vampire Lord, you cannot switch to melee mode, use the Revert Form ability, or use any spells.|confirmed=1|dlc=DG}}
+{{Bug|Using Revert Form may cause you to lose your vampirism.|confirmed=1|dlc=DG}}
+{{Bug|When you revert back to normal form, the game will try to equip the armor and/or clothing you were wearing, but may equip similar items instead (e.g. an unimproved pair of Vampire Boots instead of your tempered, enchanted pair), and won't equip your jewelry.|confirmed=1|dlc=DG}}
+{{Bug|When using the Amulet of the Gargoyle, if the "extra" gargoyle dies before the main one, its corpse may persist for some seconds, and will be lootable.|vn=1|dlc=DG}}
+{{Bug|Sometimes while in Vampire Lord form, the game will indicate getting werewolf progress as you kill people.|confirmed=1|dlc=DG}}
+{{Bug|Sometimes the bounty from transforming into a Vampire Lord will not disappear after killing all of the nearby witnesses.|confirmed=1|dlc=DG}}
+{{Bug|The Khajiit lesser power [[Skyrim:Powers#Lesser Powers|Night Eye]] is removed from the Favorites list after each transformation.|confirmed=1|dlc=DG}}
+{{Bug|When Harkon gives you the vampire lord form his bite may kill you, forcing you to return to a previous save.|confirmed=1|dlc=DG}}
+**Stand on or just behind one of the tables on either side of him. He won't lunge and bite you, but you will still be transformed.
+{{Bug|Sometimes the roar sound from transforming into a vampire lord fails to play.|confirmed=1|dlc=DG}}
+{{Bug|While in Vampire Lord form, if game is saved and then later loaded, you may be stuck in Vampire Lord form and unable to cast spells or use powers. (revert power selected prior to save, unable to change/use power)|confirmed=1|dlc=DG}}
+{{Bug|When you become Vampire Lord for the first time and you have all perks enabled, you may experience that certain perks that stack points no longer function. This can be fixed by saving your game while in normal form and reloading.|vn=1|dlc=DG}}
+{{Bug|Becoming Vampire Lord or reverting form does not affect the hostility of the NPCs in Thieves Guild.|confirmed=1|dlc=DG}}
+{{Bug|Although killing undead enemies with Vampiric Drain isn't supposed to count, killing draugr, Nightingale ghosts in the thieves' guild questline, and other vampires will still advance your perk progress.|confirmed=1|dlc=DG}}
+{{Bug|While in possession of the Vampire Lord lesser power, hoods may become invisible and permanently reveal most of the player character's scalp. Loading an earlier save is the only known way to fix this.|confirmed=1|dlc=DG}}
+{{Bug|If you use conjure sword/dagger in both hands before transforming into a vampire lord, then before reverting, select a spell in the favorite menu while a vampire lord and use it before reverting, you will have the same spells you had equipped from the vampire lord form in your default form.|confirmed=0|dlc=DG}}
+{{Bug|The additional Gargoyle summoned by the Amulet of the Gargoyle will advance progress towards your next Vampire Lord perk if killed by the player.|confirmed=1|dlc=DG}}
+{{Bug|Although your equipment is reapplied after you transform back, the game doesn't check for the ''exact same'' apparel you were wearing; if, for example, you have two or more sets of Tavern Clothes in your inventory but one is enchanted and renamed, the game might not equip the enchanted one and instead it will be an unenchanted one.|confirmed=0}}
+{{Bug|Sometimes trying to do a power bite on a low health enemy will instead result in the ''normal'' power attack of a claw swipe, giving no experience for the Vampire Lord, and no unique animation.|confirmed=0|dlc=DG}}

@@ -1,0 +1,230 @@
+{{Trail|Creatures|Monsters}}
+{{About|enemies who are werewolves|the condition lycanthropy, in particular the effects it has on you|Skyrim:Lycanthropy}} 
+[[File:SR-creature-Werewolf 02.jpg|right|thumb|Werewolf]]
+'''Werewolves''' are monstrous, wolf-like creatures that roam Skyrim. They are taller and broader than men and mer, and are capable of moving on two limbs or sprinting on all four. They have a weakness to [[Skyrim:Silver|silver]] weapons, but are incredibly strong, very fast, and are immune to [[Skyrim:Disease|diseases]] and [[Skyrim:Paralysis|paralysis]] effects. You can become a werewolf through a ritual during [[Skyrim:The Companions|The Companions]] questline.
+
+In Skyrim, several named [[Skyrim:NPCs|NPCs]] are werewolves. The [[Skyrim:Silver Hand|Silver Hand]] faction is known to hunt them and werewolves are often found in their encampments locked in cells (as in [[Skyrim:Gallows Rock|Gallows Rock]] and [[Skyrim:Driftshade Refuge|Driftshade Refuge]]); you can recognize a Silver Hand base by the presence of werewolf heads on pikes. Many werewolves in Skyrim are seen in both human and werewolf form, such as the members of The Companions or the Frostmoon Pack on Solstheim in ''[[Skyrim:Dragonborn|Dragonborn]]'', while werewolves encountered in the wild are always seen in their beast form, with the exception of two [[Skyrim:World Interactions#Hostile Encounters|random encounters]]. Hostile werewolves can only be encountered in the wild through the ''[[Skyrim:Dawnguard|Dawnguard]]'' [[Skyrim:Add-ons|add-on]].
+
+Werewolves in Skyrim are strongly tied to the Daedric Lord [[Skyrim:Hircine|Hircine]]; in fact, the members of [[Skyrim:The Circle|The Circle]] were turned into werewolves by the [[Skyrim:Glenmoril Witch|Glenmoril witches]], who serve Hircine. Those with the beast blood are prone to violence, whether accidental or intentional, as they live with a constant bloodlust which drives them to kill and devour their enemies. Werewolves are widely feared and hated in Skyrim as in other provinces, and will be attacked on sight if spotted in beast form. They possess deadly armor-piercing claws and incredible strength, and are capable of easily knocking most creatures they encounter to the ground.
+
+==Werewolf Types==
+The werewolves listed below can be found in cages in Silver Hand lairs and will become hostile when released. If ''Dawnguard'' is installed, they can also be encountered in the wild along roads and in the wilderness at night, or as part of random encounters.
+{{NewLine}}
+{{SkyrimBox/Start|text-color=black|main-color=#FBEFD5}}
+===Werewolves===
+Werewolves carry no weapons and wear no armor, but there is a 50% chance they will be wearing a pair of [[Skyrim:Ragged_Trousers#0008f19a|ragged trousers]].  If ''Dawnguard'' is installed, werewolves will drop a [[Skyrim:Wolf Pelt|wolf pelt]] and [[Skyrim:Human Flesh|human flesh]], and have a small chance of dropping a random assortment of [[Skyrim:Gems|gems]], [[Skyrim:Ring|rings]], and a few pieces of [[Skyrim:Gold|gold]] when killed.
+
+The "Werewolf Claws" spell used by the werewolves listed below is unique to non-player werewolves. It is a constant-effect spell that gives werewolves a [[Skyrim:Fortify Unarmed Damage|Fortify Unarmed Damage]] bonus, which becomes increasingly powerful for higher-level werewolves.
+
+All of the werewolves listed below are members of the [[Skyrim:EncClassWerewolf|Werewolf]] NPC class.
+[[File:SR-creature-Werewolf 03.jpg|thumb|A werewolf out for a nighttime hunt]]
+{| class="wikitable"
+! Name !! {{Hover|PC and NPC Level|Level}} !! {{Gender}} !! [[Skyrim:Form ID|ID]] !! {{Health Icon}} !! {{Magicka Icon}} !! {{Stamina Icon}} !! Spells
+|-
+|Werewolf
+|align=center|1
+|{{M}}
+|{{ID|00023abc}}
+|100
+|align=center|0
+|100
+|style="font-size:90%"| ''None''
+|-
+|Werewolf Savage
+|align=center|6
+|{{M}}
+|{{ID|000a092b}}
+|150
+|align=center|0
+|125
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 5 pts)
+|-
+|Werewolf Brute{{intnote|PackMember|[1]}}
+|align=center|12
+|{{M}}
+|{{ID|000a092c}}
+|210
+|align=center|0
+|155
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 10 pts)
+|-
+|Werewolf Skinwalker
+|align=center|20
+|{{M}}
+|{{ID|000a092d}}
+|290
+|align=center|0
+|195
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 15 pts)
+|-
+|Werewolf Beastmaster
+|align=center|28
+|{{M}}
+|{{ID|000a092e}}
+|370
+|align=center|0
+|235
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 20 pts)
+|-
+|Werewolf Vargr
+|align=center|38
+|{{M}}
+|{{ID|000a092f}}
+|470
+|align=center|0
+|285
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 25 pts)
+|}
+{{Note|PackMember|^1|This Werewolf Brute is also the template used by the [[SR:Pack Member|Pack Members]] summoned with the Totem of the Moon perk.}}
+
+===Werewolf Bosses===
+These boss-level werewolves are equipped with level-dependent armor ([[SR:Banded Iron Armor|banded iron armor]], [[SR:Steel Armor|steel armor]], [[SR:Steel Plate Armor|steel plate armor]], [[SR:Orcish Armor|Orcish armor]], or [[SR:Ebony Armor|ebony armor]]). Werewolf bosses of level 23 and higher also carry a leveled two-handed weapon:
+* '''Battleaxe:''' [[SR:Iron Battleaxe|iron battleaxe]], [[SR:Steel Battleaxe|steel battleaxe]], [[SR:Orcish Battleaxe|Orcish battleaxe]], [[SR:Dwarven Battleaxe|Dwarven battleaxe]], [[SR:Elven Battleaxe|elven battleaxe]], [[SR:Glass Battleaxe|glass battleaxe]], or [[SR:Ebony Battleaxe|ebony battleaxe]]
+* '''Greatsword:''' [[SR:Iron Greatsword|iron greatsword]], [[SR:Steel Greatsword|steel greatsword]], [[SR:Orcish Greatsword|Orcish greatsword]], [[SR:Dwarven Greatsword|Dwarven greatsword]], [[SR:Elven Greatsword|elven greatsword]], [[SR:Glass Greatsword|glass greatsword]], or [[SR:Ebony Greatsword|ebony greatsword]]
+* '''Warhammer:''' [[SR:Iron Warhammer|iron warhammer]], [[SR:Steel Warhammer|steel warhammer]], [[SR:Orcish Warhammer|Orcish warhammer]], [[SR:Dwarven Warhammer|Dwarven warhammer]], [[SR:Elven Warhammer|elven warhammer]], [[SR:Glass Warhammer|glass warhammer]], or [[SR:Ebony Warhammer|ebony warhammer]]
+
+If ''Dawnguard'' is installed, werewolves carry no weapons and the leveled armor is replaced with the same outfit as their generic counterparts (a 50% chance of a pair of ragged trousers). They will also drop the same items as generic werewolves (''Dawnguard'' only).
+
+All of the werewolves listed below are members of the "boss" version of the [[Skyrim:EncClassWerewolfBoss|Werewolf]] NPC class.
+[[File:SR-creature-Werewolf 04.jpg|thumb|A savage Werewolf Brute freed from his cage]]
+{| class="wikitable"
+! Name !! PC Level !! NPC Level !! {{Gender}} !! [[Skyrim:Form ID|ID]] !! {{Health Icon}} !! {{Magicka Icon}} !! {{Stamina Icon}} !! Spells
+|-
+|Werewolf Savage
+|align=center|1, 6, 12
+|align=center|7
+|{{M}}
+|{{ID|000a1972}}
+|185
+|align=center|0
+|155
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 5 pts)
+|-
+|Werewolf Brute
+|align=center|20
+|align=center|14
+|{{M}}
+|{{ID|000a1973}}
+|255
+|align=center|0
+|190
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 10 pts)
+|-
+|Werewolf Skinwalker
+|align=center|28
+|align=center|23
+|{{M}}
+|{{ID|000a1974}}
+|345
+|align=center|0
+|235
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 15 pts)
+|-
+|Werewolf Beastmaster
+|align=center|38
+|align=center|31
+|{{M}}
+|{{ID|000a1975}}
+|425
+|align=center|0
+|275
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 20 pts)
+|-
+|Werewolf Vargr
+|align=center|48
+|align=center|42
+|{{M}}
+|{{ID|000a1976}}
+|535
+|align=center|0
+|330
+|style="font-size:90%"| Werewolf Claws (Fortify Unarmed Damage, 25 pts)
+|}
+{{NewLine}}
+{{SkyrimBox/End}}
+
+==Named Werewolves==
+{|class=wikitable
+!Name !! Location !! Description
+|-
+|[[Skyrim:Aela the Huntress|Aela the Huntress]]
+|[[SR:Jorrvaskr|Jorrvaskr]]
+|A member of [[SR:The Circle|The Circle]] of the [[SR:Companions|Companions]]
+|-
+|[[Skyrim:Akar|Akar]]{{DB|par=1}}
+|[[Skyrim:Frostmoon Crag|Frostmoon Crag]]
+|A tight-lipped member of the Frostmoon pack and brother of Majni
+|-
+|[[Skyrim:Arnbjorn|Arnbjorn]]
+|[[SR:Dark Brotherhood Sanctuary|Dark Brotherhood Sanctuary]]
+|A former Companion and an assassin of the [[SR:Dark Brotherhood|Dark Brotherhood]]
+|-
+|[[Skyrim:Farkas|Farkas]]
+|Jorrvaskr
+|Twin brother of Vilkas and a member of The Circle of the Companions
+|-
+|[[Skyrim:Hjordis|Hjordis]]{{DB|par=1}}
+|Frostmoon Crag
+|A Nord member of the Frostmoon pack on [[Skyrim:Solstheim|Solstheim]]
+|-
+|[[Skyrim:Kodlak Whitemane|Kodlak Whitemane]]
+|Jorrvaskr
+|The Harbinger of the Companions in Skyrim
+|-
+|[[Skyrim:Majni|Majni]]{{DB|par=1}}
+|Frostmoon Crag
+|The leader of Frostmoon pack who sells [[Skyrim:Unique Items#Unique Jewelry|unique rings]] for werewolves
+|-
+|[[Skyrim:Rakel|Rakel]] {{DB|par=1}}
+|Frostmoon Crag
+|A female Nord member of the Frostmoon pack
+|-
+|[[Skyrim:Sinding|Sinding]] 
+|[[SR:Falkreath Jail|Falkreath Jail]]
+|A Nord werewolf imprisoned for [[SR:Ill Met By Moonlight|killing a child]] in Falkreath
+|-
+|[[Skyrim:Skjor|Skjor]] 
+|Jorrvaskr
+|A proud member of The Circle of the Companions
+|-
+|[[Skyrim:Vilkas|Vilkas]]
+|Jorrvaskr
+|A member of The Circle of the Companions and twin brother of Farkas
+|}
+
+==Related Quests==
+* {{Quest Link|The Silver Hand}}
+* {{Quest Link|Ill Met By Moonlight}}
+* {{Quest Link|Totems of Hircine}}
+
+===World Interactions===
+* '''[[SR:World Interactions#Human changing into werewolf|Human changing into werewolf]]'''{{DG}}
+* '''[[SR:World Interactions#Werewolf Kills Loved One|Werewolf Kills Loved One]]'''{{DG}}
+* '''[[SR:World Interactions#Werewolves|Werewolves]]'''{{DG}}
+* '''[[SR:World Interactions#Werewolves VS Vampires|Werewolves VS Vampires]]'''{{DG}}
+
+==Notes==
+* Dead werewolves cannot be raised with [[Skyrim:Dead Thrall|Dead Thrall]], but can be raised multiple times with [[Skyrim:The Ritual Stone|the Ritual Stone]].
+* The ''[[Skyrim:Dragonborn|Dragonborn]]'' add-on adds [[Skyrim:Werebear|werebears]], a new type of lycanthrope. However, players cannot transform into these creatures.
+* [[Skyrim:Patch|Official Skyrim Patch]] 1.9 reduces the percentage chance of getting a werewolf loading screen if you are a werewolf yourself.
+
+==Bugs==
+{{Bug|Werewolf kill moves may occasionally not finish animating properly.|OSP|1.6}}
+{{Bug|Werewolves entering bleedout mode may simply stand in place and not move.|USKP|2.0.9|This was due to an idle animation oversight that left the proper event out.}}
+
+==See Also==
+For more information on werewolves of the Elder Scrolls universe, see the [[Lore:Werewolf|lore article]].
+* [[Skyrim:Farmer (Werewolf)|Farmer (Werewolf)]] {{DG}} — a male Nord encountered in the wilderness that will transform and attack you on sight
+===Books===
+* {{Book Link|Charwich-Koniinge Letters, v1|ns_base=Skyrim}}
+* {{Book Link|Charwich-Koniinge Letters, v4|ns_base=Skyrim}}
+* {{Book Link|Lycanthropic Legends of Skyrim|ns_base=Skyrim}}
+* {{Book Link|Physicalities of Werewolves|ns_base=Skyrim}}
+* {{Book Link|The Totems of Hircine|ns_base=Skyrim}}
+* {{Book Link|The Wolf Queen, v1|ns_base=Skyrim}}
+* {{Book Link|The Wolf Queen, v3|ns_base=Skyrim}}
+* {{Book Link|The Wolf Queen, v8|ns_base=Skyrim}}
+
+
+[[Category:Skyrim-Creatures-Monsters-Werewolf]]
+[[Category:Skyrim-Creatures-All]][[Category:Skyrim-Factions-Creature Faction]][[Category:Skyrim-Factions-Werewolf Faction]][[Category:Skyrim-Any Crime]][[Category:Skyrim-Souls-Lesser]]

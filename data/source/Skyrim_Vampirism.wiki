@@ -1,0 +1,346 @@
+{{Trail|Disease}}
+[[File:SR-npc-Vampirism Comparison Nord Male.jpg|thumb|A male Nord: normal, non-Dawnguard vampire, and Dawnguard vampire]]
+{{About|the disease Vampirism, in particular the effects it has on the player|NPCs who are vampires|Skyrim:Vampire}}
+'''Vampirism''' in [[Skyrim:Skyrim|Skyrim]] is a [[Skyrim:Disease|disease]] that transforms players infected with ''[[Skyrim:Sanguinare Vampiris|Sanguinare Vampiris]]'' into vampires: feared, blood-drinking creatures of the night. If the [[Skyrim:Dawnguard|Dawnguard]] [[Skyrim:Add-ons|add-on]] is installed, and you have been granted vampirism from Serana or Lord Harkon, you will be able to transform into a powerful [[Skyrim:Vampire Lord|Vampire Lord]] with a [[Skyrim:Powers#Lesser Powers|lesser power]].
+
+''Sanguinare Vampiris'' is contracted from encounters with vampires: whenever a vampire casts [[Skyrim:Vampiric Drain|Vampiric Drain]] on you, there is a 10% chance for you to be infected with the disease. Initially, this is a normal disease that reduces your total health by 25 points and can be easily cured with a [[Skyrim:Potions|potion]] of [[Skyrim:Cure Disease|Cure Disease]], a [[Skyrim:Vigilant of Stendarr|Vigilant of Stendarr]], or by visiting a [[Skyrim:Shrines|shrine]]. At sunrise of the first day after contracting ''Sanguinare Vampiris'', a message will appear saying ''"You feel strangely weakened by the sunrise"''. At sunset of that day, ''"You feel a strange thirst come over you"''. If the disease is not cured within three days, it will progress to full vampirism, and the effects can no longer be reversed with a normal cure (see [[#Curing Vampirism|below]]).
+
+If Dawnguard is installed, you can also gain vampirism by letting [[Skyrim:Lord Harkon|Lord Harkon]] infect you during the [[Skyrim:Bloodline|Bloodline]] quest. Alternatively, you can activate the Bloodspring in [[Skyrim:Redwater Den|Redwater Den]] or let [[Skyrim:Serana|Serana]] infect you, either at the end of the [[Skyrim:Chasing Echoes|Chasing Echoes]] quest or after the core Dawnguard questline is complete.
+
+Vampirism takes a toll on its victims' appearances; when a human or elf becomes a vampire, their eyes become black with reddish irises, their skin pales, they grow fangs, and their faces become gaunt. [[Skyrim:Argonian|Argonians]] and [[Skyrim:Khajiit|Khajiit]] eyes will have slitted pupils upon transformation. Argonians will have two sets of fangs, and Khajiit will have fangs like a [[Skyrim:Sabre Cat|sabre cat]]. Argonians and Khajiit will have paler scales and fur. With Dawnguard installed, vampire eyes will glow yellow-orange. Some vampire faces also appear more "bat-like" or monstrous, with a slit running through their lip and a bat-like nose. Argonian and Khajiit vampires look the same with or without Dawnguard.
+
+Vampires are hated and feared by the general population and stage four vampires will be attacked on sight. The four major joinable [[Skyrim:Factions#Joinable Factions|factions]] will not be hostile toward stage four vampires so long as you join before you reach stage four and are not caught feeding on any of their members. With Dawnguard installed, NPCs will only attack you if you are in [[Skyrim:Vampire Lord|Vampire Lord]] form.
+
+== Stages of Vampirism ==
+Full vampirism is made up of four distinct stages, starting at stage one and progressing to stage four. You advance one stage for every 24 hours you go without feeding on a sleeping NPC. Feeding always returns you to stage one.
+
+As a vampire, you will experience both beneficial and detrimental changes depending on your current stage. The longer you go without blood, the more extreme these changes will become. In addition, as you progress through the stages you gain several unique powers and spells, some of which will grow more powerful with each stage. Returning to stage one will remove the higher level powers and reset the remaining ones to their original strength.
+
+{|class=wikitable
+! !! Stage One !! Stage Two !! Stage Three !! Stage Four
+|-
+!Resistances and Weaknesses
+|
+• [[Skyrim:Resist Disease|Resist Disease]] 100%<br>
+• [[Skyrim:Resist Poison|Resist Poison]] 100%<br>
+• [[Skyrim:Resist Frost|Resist Frost]] 25% <small>([[Skyrim:Dawnguard|DG]]: 20%)</small><br>
+• [[Skyrim:Weakness to Fire|Weakness to Fire]] 25% <small>([[Skyrim:Dawnguard|DG]]: 20%)</small>
+|
+• Resist Disease 100%<br>
+• Resist Poison 100%<br>
+• Resist Frost 50% <small>([[Skyrim:Dawnguard|DG]]: 30%)</small><br>
+• Weakness to Fire 50% <small>([[Skyrim:Dawnguard|DG]]: 30%)</small>
+|
+• Resist Disease 100%<br>
+• Resist Poison 100%<br>
+• Resist Frost 75% <small>([[Skyrim:Dawnguard|DG]]: 40%)</small><br>
+• Weakness to Fire 75% <small>([[Skyrim:Dawnguard|DG]]: 40%)</small>
+|
+• Resist Disease 100%<br>
+• Resist Poison 100%<br>
+• Resist Frost 100% <small>([[Skyrim:Dawnguard|DG]]: 50%)</small><br>
+• Weakness to Fire 100% <small>([[Skyrim:Dawnguard|DG]]: 50%)</small>
+|-
+!Active Effects
+|
+• [[#Champion of the Night|Champion of the Night]]<br>
+• [[#Nightstalker's Footsteps|Nightstalker's Footsteps]]<br>
+• [[#Weakness to Sunlight|Weakness to Sunlight]]<br><small>&nbsp;&nbsp;&nbsp;(-15 to all attributes)</small>
+|
+• Champion of the Night<br>
+• Nightstalker's Footsteps<br>
+• Weakness to Sunlight<br><small>&nbsp;&nbsp;&nbsp;(-30 to all attributes)</small>
+|
+• Champion of the Night<br>
+• Nightstalker's Footsteps<br>
+• Weakness to Sunlight<br><small>&nbsp;&nbsp;&nbsp;(-45 to all attributes)</small>
+|
+• Champion of the Night<br>
+• Nightstalker's Footsteps<br>
+• Weakness to Sunlight<br><small>&nbsp;&nbsp;&nbsp;(-60 to all attributes)</small>
+|-
+!Abilities
+|valign=top|
+• [[#Vampiric Drain|Vampiric Drain]]<br>
+• [[#Vampire's Servant|Vampire's Servant]]<br>
+• [[#Vampire's Sight|Vampire's Sight]]
+|valign=top|
+• Vampiric Drain<br>
+• Vampire's Servant<br>
+• Vampire's Sight<br>
+• [[#Vampire's Seduction|Vampire's Seduction]]
+
+|valign=top|
+• Vampiric Drain<br>
+• Vampire's Servant<br>
+• Vampire's Sight<br>
+• Vampire's Seduction
+|
+• Vampiric Drain<br>
+• Vampire's Servant<br>
+• Vampire's Sight<br>
+• Vampire's Seduction<br>
+• [[#Embrace of Shadows|Embrace of Shadows]]
+|}
+
+=== Active Effects and Abilities ===
+'''{{Anchor|Champion of the Night}}'''<br>
+A permanent active effect you gain from stage one onward that increases the potency of your [[Skyrim:Illusion|Illusion]] spells by 25%.
+
+'''{{Anchor|Nightstalker's Footsteps}}'''<br>
+A permanent active effect you gain from stage one onward that makes you 25% harder to detect while [[Skyrim:Sneak|sneaking]].
+
+'''{{Anchor|Weakness to Sunlight}}'''<br>
+While outside during the day, [[Skyrim:Health|health]], [[Skyrim:Magicka|magicka]], and [[Skyrim:Stamina|stamina]] are reduced, and the regeneration for each of these stats is reduced by 100%. The reduction increases with each stage of vampirism, as indicated in the table above. Day begins at 5am and ends at 7pm regardless of the visibility of the sun.
+
+'''{{Anchor|[[Skyrim:Vampiric Drain|Vampiric Drain]]}}''' <br>
+Vampiric Drain is a unique Novice [[Skyrim:Destruction|Destruction]] spell that continuously [[Skyrim:Drain Health|absorbs]] a small amount of health from a single target and adds it to your own. While Vampiric Drain can be dual-cast with the corresponding Destruction skill perk, its cost is not reduced by any Destruction proficiency perks and using it does not train your Destruction skill. However, equipment and apparel reducing Destruction skill costs will still have effect, making it possible to cast Vampiric Drain for free. Unfortunately, this spell is not as powerful as the version cast by [[Skyrim:Vampire|vampire]] NPCs (which can reach up to over 20 HP per second), but it can be useful to damage an enemy while healing yourself, especially at lower levels, avoiding the inconvenience of having to switch to individual spells.
+
+If Dawnguard is installed, Vampiric Drain can drain health, magicka, and stamina from the target if a Volkihar optional quest is completed and the [[Skyrim:Bloodstone Chalice|Bloodstone Chalice]] is used.
+
+*Stage 1: Drains 2 health per second. Costs 6 magicka per second.
+*Stage 2: Drains 3 health per second. Costs 10 magicka per second.
+*Stage 3: Drains 4 health per second. Costs 13 magicka per second.
+*Stage 4: Drains 5 health per second. Costs 17 magicka per second.
+
+'''[[SR:Vampire's Servant|Vampire's Servant]]'''<br>
+This power allows you to [[Skyrim:Reanimate|reanimate]] a dead body to fight for you for one minute, once per day. It increases in power with every stage of vampirism. Note that servants raised with this power may not always disintegrate to ash as with the standard [[Skyrim:Conjuration|Conjuration]] spells (they retain normal form when the timer runs out, but if they are killed in combat, or if you fast travel/change instance, they will disintegrate).
+
+*Stage 1: Reanimate a weak dead body for 60 seconds.
+*Stage 2: Reanimate an average dead body for 60 seconds.
+*Stage 3: Reanimate a strong dead body for 60 seconds.
+*Stage 4: Reanimate a very strong dead body for 60 seconds.
+
+'''{{Anchor|Vampire's Sight}}'''<br>
+Vampire's Sight is a lesser power giving you [[Skyrim:Night Eye (effect)|Night Eye]] for 60 seconds.
+
+'''{{Anchor|Vampire's Seduction}}''' <br>
+This power is similar to the [[Skyrim:Calm|Calm]] spell and can be used once a day. Once the Dawnguard add-on is installed, Vampire's Seduction will allow you to feed on NPCs at any time, regardless of whether they are sleeping. If you do not possess this power during the vampire version of the quest [[Skyrim:Prophet (Vampire)|Prophet]]{{DG}}, you will temporarily receive it in order to enthrall [[Skyrim:Dexion Evicus|Dexion Evicus]], only to have it disappear after use.
+
+'''{{Anchor|Embrace of Shadows}}''' <br>
+Embrace of Shadows is a power similar to the [[Skyrim:Invisibility (effect)|Invisibility]] spell that can be used once per day. While this power is active, you will be invisible and have Night Eye for 180 seconds. Interacting with the environment or attacking will make you visible again.
+
+== Vampire Lord ==
+''See [[Skyrim:Vampire Lord|Vampire Lord]] for more information''
+<br><br>
+With Dawnguard one can join the Volkihar Vampires and gain access to more powerful vampiric abilities, the most notable of which is the Vampire Lord. This form gives access to a lesser power that lets you change into a powerful bat-like form that has unique spells and abilities.
+
+== Feeding ==
+[[File:SR-npc-Vampire Feeding on Sigrid.jpg|thumb|Feeding on [[Skyrim:Sigrid|Sigrid]]]]
+In order to remain at, or return to, the first stage of vampirism, you must feed on a sleeping NPC. To do this press "Use" while crouching or standing over them and select "Feed". Feeding should be done with caution, as witnesses will immediately become hostile. You can feed on almost any NPC that sleeps in a bed, including all races and even ghosts and other vampires, but not children. A sleeping NPC may become hostile if they wake while feeding and detect one of your followers. This can be avoided by having your follower wait outside or providing them with a [[Skyrim:Muffle (effect)|muffle]] enchantment. The most effective and safe way to feed is to use an Invisibility effect from either a [[Skyrim:Potions|potion]], [[Skyrim:Spells|spell]], or the Embrace of Shadows ability, since feeding is one of the few actions that ''does not'' cancel the effect. Followers can be fed on with total impunity, so long as there are no other witnesses. The [[Skyrim:Vampire Cattle|Vampire Cattle]] {{DG|1}} are free to use for feeding.
+
+== Curing Vampirism ==
+If you contract ''Sanguinare Vampiris'' during battle with a vampire, you won't become a vampire yourself for three days. Until then, you can rid yourself of the disease with a Cure Disease potion, any [[Skyrim:Blessings|blessing]], or by consuming [[Skyrim:Hawk Feathers|Hawk Feathers]].
+
+After the first three days of infection, or if you obtained your vampirism from Lord Harkon or Serana, the task of finding a cure becomes more complex. While visiting any inn, talk to the innkeeper, or talk to one of the  members of the [[Skyrim:Dawnguard (faction)|Dawnguard]]. Ask them for rumors and they will send you to [[Skyrim:Morthal|Morthal]] to speak to a man named [[Skyrim:Falion|Falion]]. This will start the quest [[Skyrim:Rising at Dawn|Rising at Dawn]]. However, if you are in the last stage of vampirism (and do not have Dawnguard DLC are installed), the innkeepers may attack you on sight, so you may need to feed in order to lessen the effects of your vampirism, making NPCs friendly again. With Dawnguard DLC installed, curing yourself of vampirism is required to continue the Dawnguard storyline if you chose to side with the [[Skyrim:Dawnguard (faction)|Dawnguard]]. However, if you side with the [[Skyrim:Volkihar Vampire Clan|Volkihar family]] and cure yourself later, they won't talk to you until your vampirism is restored.
+
+You can also cure your vampirism by becoming a werewolf through the [[Skyrim:Companions|Companions]] faction. Once you contract lycanthropy, you gain a 100% resistance to disease and cannot be re-infected with ''Sanguinare Vampiris'' by normal means while a werewolf.
+
+With Dawnguard installed, if you were previously a werewolf at some point prior to becoming a vampire, you can ask [[Skyrim:Aela the Huntress|Aela]] to restore your lycanthropy once.
+
+== Equipment and Items==
+Various vampire related equipment can be gotten, some of which enhances your vampiric abilities. Vampiric clothes and armor were added by the Dawnguard expansion, they can be found on the bodies of vampires as well as bought from certain Volkihar vendors. There are also certain rings and necklaces with unique enchantments that enhance vampiric abilities. Most of those are obtained by quests during the Dawnguard questline, but one can be gotten during the [[Skyrim:Fishing|Fishing]] questline added with the [[Skyrim:Creation Club|Creation Club]].
+
+=== Clothing and Armor ===
+*[[Skyrim:Vampire Armor|Vampire Armor]] {{DG}}
+*[[Skyrim:Vampire Royal Armor|Vampire Royal Armor]] {{DG}}
+*[[Skyrim:Vampire Robes|Vampire Robes]] {{DG}}
+*[[Skyrim:Vampire Boots|Vampire Boots]] {{DG}}
+*[[Skyrim:Vampire Gauntlets|Vampire Gauntlets]] {{DG}}
+*[[Skyrim:Vampire Boots|Vampire Boots]] {{DG}}
+*[[Skyrim:Vampire Gloves|Vampire Gloves]] {{DG}}
+*[[Skyrim:Vampire Hood|Vampire Hood]] {{DG}}
+*[[Skyrim:Vampire Leather Hood|Vampire Leather Hood]] {{CC}}
+
+===Jewelry===
+*[[Skyrim:Amulet of Bats|Amulet of Bats]] {{DG}}
+*[[Skyrim:Amulet of The Gargoyle|Amulet of The Gargoyle]] {{DG}}
+*[[Skyrim:Ring of The Beast|Ring of The Beast]] {{DG}}
+*[[Skyrim:Ring of the Erudite|Ring of the Erudite]] {{DG}}
+*[[Skyrim:Vampiric Ring|Vampiric Ring]] {{CC}}
+
+===Other===
+*[[Skyrim:Bloodstone Chalice|Bloodstone Chalice]] {{DG}}
+*[[Skyrim:Ancient Vampire Head|Ancient Vampire Head]] {{DG}}
+*[[Skyrim:Ancient Vampire Ribcage|Ancient Vampire Ribcage]] {{DG}}
+*[[Skyrim:Ancient Vampire Arm|Ancient Vampire Arm]] {{DG}}
+*[[Skyrim:Ancient Vampire Leg|Ancient Vampire Leg]] {{DG}}
+*[[Skyrim:Vampire Doll|Vampire Doll]] {{CC}}
+
+==Vampire Locations==
+Vampires are typically found in caves and certain ruins. They can be encountered randomly in the world as well in certain locations. The following are locations where vampires can be found, should one want to gain vampirism.
+
+*[[Skyrim:Bloodlet Throne|Bloodlet Throne]]
+*[[Skyrim:Bloodchill Cavern|Bloodchill Cavern]] {{CC}}
+*[[Skyrim:Broken Fang Cave|Broken Fang Cave]]
+*[[Skyrim:Cronvangr Cave|Cronvangr Cave]]
+*[[Skyrim:Dimhollow Crypt|Dimhollow Crypt]] {{DG}}
+*[[Skyrim:Haemar's Shame|Haemar's Shame]]
+*[[Skyrim:Mara's Eye Den|Mara's Eye Den]]
+*[[Skyrim:Moldering Ruins|Moldering Ruins]] {{DG}}
+*[[Skyrim:Movarth's Lair|Movarth's Lair]]
+*[[Skyrim:Pinemoon Cave|Pinemoon Cave]]
+*[[Skyrim:Potema's Catacombs|Potema's Catacombs]]
+*[[Skyrim:Redwater Den|Redwater Den]] {{DG}}
+*[[Skyrim:Shriekwind Bastion|Shriekwind Bastion]]
+*[[Skyrim:Volkihar Keep|Volkihar Keep]] {{DG}}
+
+==Related Quests==
+===World Interactions===
+* '''[[Skyrim:World Interactions#Dawnguard vs Player Vampire|Dawnguard vs Player Vampire]]'''{{DG}}
+
+==Comparison Gallery==
+{|
+|
+{|class=wikitable
+! !! Male !! Female
+|-
+!Altmer
+|
+[[File:SR-npc-Vampirism Comparison Altmer Male.jpg|165px|A male Altmer, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Altmer Female.jpg|165px|A female Altmer, before and after becoming a vampire]]
+|-
+!Argonian
+|
+[[File:SR-npc-Vampirism Comparison Argonian Male.jpg|165px|A male Argonian, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Argonian Female.jpg|165px|A female Argonian, before and after becoming a vampire]]
+|-
+!Bosmer
+|
+[[File:SR-npc-Vampirism Comparison Bosmer Male.jpg|165px|A male Bosmer, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Bosmer Female.jpg|165px|A female Bosmer, before and after becoming a vampire]]
+|-
+!Breton
+|
+[[File:SR-npc-Vampirism Comparison Breton Male.jpg|165px|A male Breton, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Breton Female.jpg|165px|A female Breton, before and after becoming a vampire]]
+|-
+!Dunmer
+|
+[[File:SR-npc-Vampirism Comparison Dunmer Male.jpg|165px|A male Dunmer, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Dunmer Female.jpg|165px|A female Dunmer, before and after becoming a vampire]]
+|}
+|
+{|class=wikitable
+! !! Male !! Female
+|-
+!Imperial
+|
+[[File:SR-npc-Vampirism Comparison Imperial Male.jpg|165px|A male Imperial, before and after becoming a vampire
+]]
+|
+[[File:SR-npc-Vampirism Comparison Imperial Female.jpg|165px|A female Imperial, before and after becoming a vampire]]
+|-
+!Khajiit
+|
+[[File:SR-npc-Vampirism Comparison Khajiit Male.jpg|165px|A male Khajiit, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Khajiit Female.jpg|165px|A female Khajiit, before and after becoming a vampire]]
+|-
+!Nord
+|
+[[File:SR-npc-Vampirism Comparison Nord Male.jpg|165px|A male Nord, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Nord Female.jpg|165px|A female Nord, before and after becoming a vampire]]
+|-
+!Orc
+|
+[[File:SR-npc-Vampirism Comparison Orc Male.jpg|165px|A male Orc, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Orc Female.jpg|165px|A female Orc, before and after becoming a vampire]]
+|-
+!Redguard
+|
+[[File:SR-npc-Vampirism Comparison Redguard Male.jpg|165px|A male Redguard, before and after becoming a vampire]]
+|
+[[File:SR-npc-Vampirism Comparison Redguard Female.jpg|165px|A female Redguard, before and after becoming a vampire]]
+|}
+|}
+
+== Notes ==
+* You can obtain [[Skyrim:Auriel's_Bow|Auriel's Bow]] through the [[Skyrim:Dawnguard|Dawnguard]] questline to block out the sun and counter its effects.
+* Even if you are a vampire, [[Skyrim:Meridia|Meridia]] will still recruit you for [[Skyrim:The Break of Dawn|The Break of Dawn]] and declare you her champion, despite her hatred for the undead.
+* Vampirism and [[Skyrim:Lycanthropy|lycanthropy]] cannot co-exist in Skyrim; one cannot be both a werewolf and a vampire at the same time. After becoming a werewolf, a vampire is cured of ''Sanguinare Vampiris''. Because lycanthropy provides total disease immunity, this prevents you from becoming infected with ''Sanguinare Vampiris'' while the ''Beast Blood'' ability is present. Note that you can, however, cure lycanthropy (just as you can cure vampirism), so you will be able to become a vampire again should you choose to forgo your ''Beast Blood''.
+* With the vampiric power ''Champion of the Night'', you can effectively raise the cap for Illusion spells to over level 70, provided you have all relevant perks and the spell is dual-cast. This can make almost every opponent susceptible to Calm, Fear, and Fury spells. Note that Master level Illusion spells do not gain the power increase of dual-casting, and therefore will not affect higher level enemies.
+* The ''Champion of the Night'' power also causes the Muffled Movement perk in the Sneak skill tree to reduce movement noise by 62% instead of just 50%, if the perk is chosen after becoming a vampire. This is because the Muffled Movement perk functions like a weaker, yet permanent version of the Illusion spell Muffle.
+* Though vampirism gives 100% resistance to [[Skyrim:Poison|poison]], the actual poison resistance is capped at 85% and will not protect you from the poison gas in [[Skyrim:Calcelmo's Laboratory|Calcelmo's Laboratory]] (the poison damage is scripted and cannot be resisted).
+* As a vampire, you'll gain the ability to use [[Skyrim:Potion of Blood|blood potions]]{{DG}} as another way to restore your health.
+** If you are a vampire and [[Skyrim:Survival Mode|survival mode]] is active, blood potions can also be used to restore Hunger with version 1.6 of the [[Skyrim:Special Edition Patch|Official Skyrim Special Edition Patch]].
+* Drinking the blood of an NPC that you know to be a werewolf will not infect you with lycanthropy and does not provide you with any special benefits.
+* If you are a vampire and have [[Skyrim:Hearthfire|Hearthfire]] installed, you can add a coffin to use for sleeping in the cellar of [[Skyrim:Heljarchen Hall|Heljarchen Hall]], [[Skyrim:Lakeview Manor|Lakeview Manor]], and [[Skyrim:Windstad Manor|Windstad Manor]].
+** Ordinary vampirism is sufficient: one does not need to be a Vampire Lord, or to even have Dawnguard installed at all.
+* Vampirism is considered an individual race in the game. It is evidently visible when an NPC would comment based on the player's race, would not choose the correct racial option. Examples are: [[Skyrim:Bolund|Bolund]] in Falkreath and [[Skyrim:Vulwulf Snow-Shod|Vulwulf Snow-Shod]] in Riften. They will think the player is not a Nord if they are a Nord Vampire.
+* [[Skyrim:Illusion|Master of the Mind]] is also used by the ''Vampire's Seduction'' calm effect.
+* If you are playing as a [[Skyrim:Dark Elf|Dunmer]], the weakness to fire will be negated by your natural [[Skyrim:Resist Fire|resistance to fire]]. However, unlike your stunted magicka, health, and stamina that only occur while under direct sunlight, your partial weakness to fire will be permanent.
+* If you are playing as a [[Skyrim:Nord|Nord]], the resistance to frost will add to your natural resistance to it.
+* If you are either a vampire or a Vampire Lord, [[Skyrim:Galathil|Galathil]] will refuse to change your appearance, claiming that her techniques only work on the living, and that being undead doesn't count.
+* When becoming a vampire, you're supposed to inherit the lightest skin tone for your race, but this is impossible since the settings are identical to the non-vampire skin tone defaults.
+* Vampiric Drain after Stage Three counts towards the Spells Learned stat. Even if you get cured of Vampirism, losing the ability to cast the spell, the stat won't decrease. In addition, if you equip Vampire Drain before Falion cures you, it will remain equipped, allowing you to still use it.
+* In [[Skyrim:Vampire Lord|Vampire Lord]] form, killing [[Skyrim:Rabbit|rabbits]], [[Skyrim:Fox|foxes]], [[Skyrim:Horker|horkers]], [[Skyrim:Slaughterfish|slaughterfish]], and specific undead (such as those in the [[Skyrim:Soul Cairn|Soul Cairn]] or zombies raised with reanimation spells) with Vampiric Drain will not give vampiric experience.
+* The book ''[[Skyrim:Notes On The Lunar Forge|Notes On The Lunar Forge]]'' incorrectly states that Lunar weapons give you a vampire-like effect that transfers health from the victim to the user like [[Skyrim:Absorb Health|absorb health]], when their [[Skyrim:Light Damage|real enchantment]] doesn't absorb health at all.
+* Although attribute regeneration is set to 0% when outside during the day, you can circumvent this by wearing something with over 100% regeneration for magicka (such as Adept Robes and an Amulet of Akatosh: 125% regeneration) and over 30% for health and stamina to null the penalties.
+* Some coffins are present in vampire lairs without Hearthfire, but you still cannot sleep in these, even after the add-on is installed. The only coffins you can sleep in have hinged lids and a red interior.
+
+==Bugs==
+{{Cleanup|Various fixes need to be tested and condensed where possible}}
+{{Bug|At stage three of vampirism, the stunted regeneration effect while in sunlight has a magnitude of 75%, even though all other stages have a magnitude of 100%.|OSP}}
+** The fix was reverted by Dawnguard; with the add-on installed, your health, magicka, and stamina regeneration are damaged only 75% at stage three vampirism.
+{{Bug|When playing as a female vampire, quitting the game and reloading the vampire save can result in a burnt or dirty face effect that does not go away on its own. The visual bug is different than the normal facial changes that occur when becoming a vampire.|confirmed=1}}
+** The problem is caused by a texture issue that occurs if the character was created using eye liner.  If you plan on becoming a vampire, you should make sure that the eye liner setting is set all the way to the left so that it is disabled.{{vn|Needs source/CK confirmation}}
+** If the problem has already occurred to you and a return to a save game is not possible, it can be corrected with the following procedure. 
+**# Finish the [[Skyrim:Rising at Dawn|Rising at Dawn]] quest to cure vampirism and become a normal human.
+**# Go to the [[Skyrim:Surgery|Face Sculptor]] in Riften to edit your character's appearance.  The Face Sculptor will not operate on vampires, which is why you must become human first.
+**# In the customization screen, disable the Eye Shadow by pushing the slider all the way to the left.
+**# Become a vampire again through any of the normal methods.
+**''Note that if you have already joined the [[Skyrim:Volkihar_Vampire_Clan|Volkihar vampires]], you will not be able to rejoin them after becoming human again.''
+**'' This can also be done through console commands so the player doesn't have to leave Volkihar Vampires. 
+**# To become human use 'player.setrace Xrace' (replace X with whatever race the player is e.g. nordrace). 
+**# Use 'showracemenu' to remove the eye liner. 
+**# 'player.setrace Xracevampire' to switch back to vampire  (Works with vampire lord) 
+{{Bug|Attempting to feed on an NPC sleeping in a bed with something next to it (such as a table or chest) can cause the feeding sequence to not animate correctly. The screen will still glow red and you will revert to stage one vampirism, but your character will be stuck in place, unable to move.|confirmed=1}}
+{{Bug|Becoming a vampire will reset your skin tone to the default for your race.|confirmed=1}}
+{{Bug|Both ebony and Blades shields become invisible when equipped as a vampire.|USKP|1.0}}
+{{Bug|Numerous dialogues that have race checks attached to them don't work for the vampire versions of those races.}}
+{{Bug|[[Skyrim:Nord|Nords]] will not get the glowing yellow eyes that all other races get when becoming a vampire after Dawnguard is installed; they instead get a glowing version of their old vampire eyes.|confirmed=1|dlc=DG}}
+{{Bug|Vampire's Servant, Vampire's Sight, Vampire's Seduction, Embrace of Shadows incorrectly permanently increase the Spells Learned stat even if they are considered to be Powers. Even if you get cured of Vampirism, losing the ability to use the powers, the stat won't decrease.|vn=1}}
+{{Bug|[[Skyrim:Khajiit|Khajiit]] will not get the glowing yellow eyes that the other races get when becoming a vampire after Dawnguard has been installed. Their appearance remains that of a regular Khajiit vampire: pinkish eyes, light fur, and saber cat-like fangs.|confirmed=1}}
+{{Bug|If your character is a vampire and a [[Skyrim:Followers|follower]] is present, the follower may use anti-vampire taunts while in combat even if you're the only vampire around.|USKP|2.0.1}}
+{{Bug|If your character is a vampire and you give a [[Skyrim:Potion of Blood|Potion of Blood]] to a follower, if the follower drinks the potion, your character will revert to stage 1 of vampirism.|vn=1}}
+{{Bug|Sometimes if you drink a potion of blood, which can be obtained if you side with the vampires during the Dawnguard questline, you turn into a stage four vampire.|vn=1|dlc=DG}}
+{{Bug|As a vampire, you may be unable to feed off NPCs affected by the Vampire's Seduction power in [[Skyrim:Dawnguard|Dawnguard]]; clicking "Feed" has no effect.|confirmed=1}}
+{{Bug|While a vampire, sometimes wearing the [[Skyrim:Blackguard's Hood|Blackguard's Hood]], [[Skyrim:Thieves Guild Hood|Thieves Guild Hood]], or [[Skyrim:Guild Master's Hood|Guild Master's hood]] makes the top of your head bald and the hood doesn't show. This enables vampires to equip those hoods together with other headgear. A vampire can thus wear up to three pieces of headgear simultaneously: the Blackguard's, Thieves Guild or Guild Master's hood; any [[Skyrim:Circlet|circlet]] or [[Skyrim:Dragon Priest Mask|dragon priest mask]]; and a [[Skyrim:Penitus Oculatus Helmet|Penitus Oculatus helmet]], [[Skyrim:Falmer Helmet|Falmer helmet]], or the [[Skyrim:Jagged Crown|Jagged Crown]]. Note that version 1.2 of the [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]] will prevent you from wearing circlets or dragon priest masks with other headgear.|confirmed=1}}
+{{Bug|Sometimes, you will be made a vampire and have all the effects, but the game will not recognize it and you will be unable to feed or cure vampirism.|confirmed=1}}
+**{{Pc22}} To fix this, use the [[Skyrim:Console|console]] command <code>player.setrace [playerrace]racevampire</code> (e.g., <code>player.setrace highelfracevampire</code>).
+**It may be possible to cure yourself by becoming a vampire lord or werewolf.
+**Simply being a werewolf will not prevent you from contracting this bugged version of vampirism. A Necklace of Disease Immunity (with 100% immunity bonus) will, however, prevent it.
+{{Bug|Falion's cure when applied to Volkihar vampires does not set their faction (xx003376) to -1.  As a result any NPCs remaining in Fort Dawnguard may attack on sight even though you have been "cured" of vampirism.|confirmed=1|dlc=DG}}
+**{{Pc22}} To fix this, use the console command <code>addfac xx003376 -1</code>.
+{{Bug|The 100% disease immunity does not prevent contracting diseases from traps due to a script oversight.|USSEP|4.2.5}}
+{{Bug|In [[Skyrim:Survival Mode|Survival Mode]], the 100% disease immunity does not prevent contracting diseases added by the CC.|USSEP|4.2.7}}
+{{Bug|Becoming a vampire will flag you as undead, so the effects of the [[Skyrim:Restoration|Restoration]] perk [[Skyrim:Necromage (perk)|Necromage]] will affect you too. Shouts, spells, and equipment will all receive boosts to their magnitudes (25% to power and 50% to duration). Taking the Necromage perk before taking both Atronach Perk and Atronach Stone can give you a permanent 100% [[Skyrim:Spell_Absorption|Spell Absorption]], thus making you immune to all spells affected by Spell Absorption. Necromage also increases Health, magicka and stamina reduction penalties by 25%, thus increasing stage 4 vampire stat reductions to 75. This effect will first take place only after reverting from Vampire Lord form. Curing vampirism after obtaining the Necromage perk does not remove these bonuses, nor does it remove bonuses to enchantments, as long as they are not unequipped afterwards.
+**[[Skyrim: Mora's Grasp|Mora's Grasp]] permanently gains +50% duration (assuming it's never swapped out).
+**The following perks will also receive a 25% bonus to their power: [[Skyrim:Steady Hand|Steady Hand]], [[Skyrim:Power Shot|Power Shot]], [[Skyrim:Quick Shot|Quick Shot]], [[Skyrim:Fists of Steel|Fists of Steel]], [[Skyrim:Quick Reflexes|Quick Reflexes]], [[Skyrim:Dual Flurry|Dual Flurry]], [[Skyrim:Wind Walker|Wind Walker]], [[Skyrim:Muffled Movement|Muffled Movement]], [[Skyrim:Extra Pockets|Extra Pockets]], [[Skyrim:Recovery|Recovery]], [[Skyrim:Avoid Death|Avoid Death]], [[Skyrim:Snakeblood|Snakeblood]], [[Skyrim:Magic Resistance|Magic Resistance]], [[Skyrim:Atronach (perk)|Atronach]].|USKP|1.2.3|''Necromage'' no longer boosts the power of perks, spells, and enchantments used on a vampire player.}}
+***Some perks gain an additive +25% bonus (i.e. Quick Shot, Quick Reflexes, Muffled Movement) and some gain a multiplicative x1.25 bonus (i.e. Magic Resistance, Avoid Death, Atronach). For other perks, a noticeable increase occurs but it may be difficult to determine how the bonus is implemented.
+****It's also very likely other perks can also be affected (possible examples include [[Skyrim:Treasure Hunter|Treasure Hunter]] and [[Skyrim:Reflect Blows|Reflect Blows]]) but very difficult to verify due to the low bonus gained (if any). For Reflect Blows' case, if it were affected, then its 10% chance would be bumped to 12.5%.
+***Taking the 2nd rank of Steady Hand alongside this bug will effectively break your arrows, causing them all to plop in front of your feet, for as long as time stays slowed down.
+***Although this bug affects the Snakeblood perk, as a vampire you have 100% resistance to poison. However, the bonus resistance will stay even after curing vampirism (assuming the perk isn't removed).
+***The 5 [[Skyrim:Lockpicking|Lockpicking]] perks that make the corresponding lock difficulties easier seem to also be affected.
+{{Bug|Nightstalker's Footsteps claims to provide a 25% improvement to sneaking as a vampire but only gives a 20% improvement.|USSEP|4.1.8}}
+{{Bug|Thieves Guild Hoods may disappear from your inventory if you are a vampire.|OSSEP|1.5.73}}
+{{Bug|With the [[Skyrim:Bone Wolf|Bone Wolf]] Creation, the "Revenge" perk will cause you to take extra damage as an undead if you are a vampire.|OSSEP|1.6}}
+{{Bug|If you are a vampire, the Twins Souls perk may fail to take that into account.|OSSEP|1.6.629}}
+{{Bug|Ebony shields may be invisible when equipped on vampire players.|OSSEP|1.6.1130.0}}
+{{Bug|Blades shields may be invisible when equipped on vampire players.|OSSEP|1.7}}
+{{Bug|Female Argonians use the same posture and running animations as female Orcs after becoming a vampire, whereas beforehand they used the normal posturing and running/walking animations of the other female races.|vn=1}}
+{{Bug|Imperial vampires lose the unarmed combat punch sound effect.|vn=1}}
+{{Bug|A gold ring worn by Khajiit vampires is invisible, and allows you to wear another ring with it.|vn=1}}
+{{Bug|There is no separate animation for feeding on someone sleeping on a bedroll or hay pile, so when an NPC sleeping so is fed upon, you still rise up like feeding on someone in a regular bed and end up hovering a foot over the NPC in question.|confirmed=0}}
+
+==See Also==
+*For more information about vampirism in the Elder Scrolls universe, see the [[Lore:Vampirism|lore article]].
+*{{Place Link|Bloodchill Cavern}}

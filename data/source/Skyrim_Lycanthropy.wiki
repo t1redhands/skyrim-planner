@@ -1,0 +1,262 @@
+{{Trail|Powers|nocat=1}} [[Category:Skyrim-Magic-Greater Powers]]
+{{About|the condition lycanthropy, in particular the effects it has on the player|enemies and NPCs who are werewolves|Skyrim:Werewolf}}
+[[File:SR-power-Lycanthropy.jpg|right|thumb|Transforming into a werewolf]]
+'''Lycanthropy''' is a condition in Skyrim that gives you the [[Skyrim:Powers#Beast Form|Beast Form]] [[Skyrim:Powers|greater power]], which allows you to take on the form of a [[Skyrim:Werewolf|werewolf]]. Becoming a werewolf adds the ''Beast Blood'' constant effect, which grants a 100% [[Skyrim:Resist Disease|resistance]] to all [[Skyrim:Disease|diseases]], but also prevents you from gaining [[Skyrim:Sleeping|resting bonuses]]. Werewolves can deal lethal damage with their claw attacks, move swiftly, and have increased health and stamina. You can become a werewolf by drinking werewolf blood during [[Skyrim:The Companions|The Companions]] questline.
+
+In the ''[[Skyrim:Dawnguard|Dawnguard]]'' [[Skyrim:Add-ons|add-on]], a skill tree is added for werewolves, with perks that will increase your damage, health, and stamina as a werewolf, and even enhance your howl abilities. In order to unlock new perks, you must feed on corpses of non-undead [[Skyrim:NPCs|NPCs]].
+
+As a werewolf, you can also draw power from the [[Skyrim:Totems of Hircine|Totems of Hircine]] to give your [[Skyrim:Dragon Shouts|shout]]-like "howl" ability new powers, although you may only use the howl related to the particular totem you have activated.
+
+==Beast Form==
+The Beast Form greater power can be used once per day to transform into a werewolf for 150 seconds. You can keep Beast Form active longer by feeding on humanoid corpses (with the Savage Feeding perk, you can feed on almost any dead creature). Every feeding restores 50 points of health and adds an additional 30 seconds of time in Beast Form. The [[Skyrim:Ring of Hircine|Ring of Hircine]] provides an alternative unlimited means of transformation for werewolves.
+{|class=wikitable style="float:right; margin:0 0 0.5em 1em;"
+!colspan=3| Werewolf Claws
+|-
+! Level !! {{Damage Icon}} !! {{Armor Rating Icon}} {{DG|1}}
+|-
+|1–10 || +0 || 0
+|-
+|11–15 || +5 || 50
+|-
+|16–20 || +15 || 100
+|-
+|21–25 || +25 || 150
+|-
+|26–30 || +30 || 200
+|-
+|31–35 || +35 || 250
+|-
+|36–40 || +40 || 300
+|-
+|41–45 || +50 || 350
+|-
+|46+ || +60 || 400
+|-
+|}
+The Beast Form power has the following effects:
+* Your health increases by 50 and stamina increases by 100 (with a ''Dawnguard'' added perk, health increases by 150 and stamina by 200).
+* Stamina regeneration increases from 5% of your total stamina per second to 20%.
+* Carrying capacity increases by 2000 points.
+* Ability to use shout-like howls with the [[Skyrim:Controls#Combat|Power / Dragon Shout]] key or button:
+** '''Howl of Terror:''' enemies flee in [[Skyrim:Fear (effect)|fear]] for 60 seconds and nearby wolves come to your aid.
+** '''Totem of Brotherhood:''' summons two red [[Skyrim:Pack Member|pack members]] to aid you in combat for a limited time.
+** '''Totem of The Hunt:''' reveals nearby prey, similar to a [[Skyrim:Detect Life (spell)|Detect Life]] spell.
+** '''Totem of Fear:''' grants a higher-level fear howl.
+* Base unarmed damage increases to 20 points and reach to 150 points (most [[Skyrim:Races|races]] have a base unarmed damage of 4 and a reach of 96).
+* Werewolf Claws: a constant [[Skyrim:Fortify Unarmed Damage|Fortify Unarmed Damage]] effect that increases with your level (and gives you [[Skyrim:Resist Damage|Resist Damage]] if ''Dawnguard'' is installed)—see table.
+* Base health regeneration is set to 0 (unless the [[Skyrim:Ring of the Hunt|Ring of the Hunt]]{{DB}} is equipped).
+
+The first time you transform using Beast Form, you will immediately be cured of all diseases, including any stage of [[Skyrim:Vampirism|vampirism]]. This means you cannot be a vampire and a werewolf at the same time. The Beast Form power also automatically removes all of your equipment. Summoned thralls, such as [[Skyrim:Dead Thrall|dead thralls]], will immediately die. However, other summoned creatures will remain until their timer expires.
+
+While you are in beast form, you cannot use any of your equipment, [[Skyrim:Spells|spells]], [[Skyrim:Dragon_Shouts|dragon shouts]], or [[Skyrim:Powers|powers]], but your attacks increase in power and speed, and you may execute one of four "kill cam" moves. Pressing a single attack button may have you leaping on your enemy and savagely slashing their chests, or biting their throats. Pressing both attack buttons simultaneously may have you throwing your enemy a great distance, or lifting them off their feet and decapitating them. Your move speed will increase as well, and you will not be staggered by attacks or by attacking an enemy with a raised shield. Since you cannot use spells or items, the only way to heal yourself is to feed on corpses.
+
+[[Skyrim:Races|Racial abilities]] do not carry over into your beast form, but existing spell effects do. This includes passive abilities such as [[Skyrim:The Lord Stone|The Lord Stone]], the [[Skyrim:Blessing of Mara|Blessing of Mara]], and the [[Skyrim:Magic Resistance|Magic Resistance]] perks from the [[Skyrim:Alteration|Alteration]] skill tree. It also includes the [[Skyrim:Destruction|Destruction]] Cloak spells and the Alteration Flesh spells. However, effects that change health regeneration rates, such as [[Skyrim:The Lady Stone|The Lady Stone]] or [[Skyrim:Regenerate Health|Regenerate Health]] potions, will do nothing unless you have equipped the [[Skyrim:Ring of the Hunt|Ring of the Hunt]]{{DB}}. This is because werewolves that are not wearing this ring have their base health regeneration set to 0 points, so any effect that multiplies this rate will result in a health regeneration rate of 0.
+
+[[File:SR-power-Lycanthropy 02.jpg|thumb|A werewolf]]As a werewolf in Skyrim, you will be hated and feared by almost any NPC that sees you in your beast form, and most will attack you on sight (exceptions include other werewolves, [[Skyrim:M'aiq_the_Liar|M'aiq the Liar]], members of the [[Skyrim:Dark_Brotherhood|Dark Brotherhood]], [[Skyrim:The_Circle|The Circle]], [[Skyrim:Followers|followers]] currently in your service, members of the [[Skyrim:Thieves Guild (faction)|Thieves Guild]], and the heroes of [[Skyrim:Sovngarde (place)|Sovngarde]], but ''not'' your [[Skyrim:Marriage|spouse]], unless your spouse is one of these). Your [[Skyrim:Wolf|wolf]] cousins will not attack you, and may even come to your aid if you use your Howl of Terror ability. However, [[Skyrim:Werebear|werebears]] will attack you on sight. Crimes committed in beast form will not be attributed to you and will not increase your bounty, unless someone sees you transform. If you are seen turning into your beast form, 1000 gold will be added to your bounty (unless the person is one of those that won't attack you). Eorlund Gray-Mane will publicly defend the Dragonborn, if the transformation occurs in Whiterun.
+
+You will have a forced third-person view while Beast Form is active and will not be able to access character menus or maps. If ''Dawnguard'' is installed, opening the character menu will open the Werewolf [[#Skill Perks|skill tree]]. You will not be able to pick up any items, pick locks, activate containers, or initiate conversation while in beast form, but you can activate [[Skyrim:Switches|switches]] (such as levers and pull chains) to progress through dungeons (though you will be unable to interact with objects preventing the use of switches, e.g. the bones or scraps that must be removed to use certain switches in [[Skyrim:Raldbthar Deep Market|Raldbthar Deep Market]]). You can command followers by pointing your crosshair at them and holding down your [[Skyrim:Controls#Activate|activate/use]] control. Followers cannot be commanded to pick up items while you are in beast form, however—they will interpret any such order as simply "move there".
+
+You cannot consciously choose to deactivate Beast Form once you have transformed. The only way to return to your human form is to wait for the Beast Form to end or to use the "[[Skyrim:Controls#Wait|wait]]" function.  In Skyrim Special Edition, anything you had equipped while transforming is automatically re-equipped.  In the original release, you have to re-equip your equipment manually.
+
+All howls except for Howl of Terror have to be unlocked via a quest that is available when you have completed the Companions questline, as long as you remain a werewolf. You can only have one howl active at a time. You can choose which howl you wish to select by visiting the [[Skyrim:The Underforge|Underforge]] and praying at the totem that corresponds to the howl you want. Only three totems are available; once you have selected a new howl by praying at a totem, the Howl of Terror becomes permanently unavailable, although the Howl of Fear, which is available from the third totem, is very similar.
+
+{{NewLeft}}
+{{Mod Note|Dawnguard}}
+
+== Skill Perks ==
+The ''Dawnguard'' add-on adds a perk tree for werewolves. The skill tree is simply called "Werewolf" and perks are earned through feeding on the corpses of fallen NPCs (or creatures after the Savage Feeding perk has been unlocked). It is not necessary to feed on fresh kills—you can also feed on bodies that are already dead. Opening the character menu while transformed will instead open this skill tree. The totem-related perks will only apply if you currently have the respective totem active. Unlike the [[Skyrim:Vampire Lord|Vampire Lord]], you cannot change your shout power while transformed.
+
+Acquiring new perks requires more feedings each time. The first perk requires five feedings; after that, each new perk requires two more feedings than the last (up to 25 required to progress from the 10th perk to the 11th). You will need to feed a total of 165 times to complete the entire tree.
+
+{{Perk Tree Setup|width=630}}
+{{Perk Tree|image=SR-perktree-Werewolf.jpg|perks=
+{{Image Mark|567|525|Bestial Strength|mark_alt= Bestial Strength (4 ranks): Do 25/50/75/100% more damage as a werewolf.|position=bottom}}
+{{Image Mark|669|453|Animal Vigor|Animal Vigor: 100 point bonus to health and stamina in beast form.|position=bottom}}
+{{Image Mark|800|421|Gorging|Gorging: Feeding heals twice as much health.|position=bottom}}
+{{Image Mark|803|312|Savage Feeding|Savage Feeding: Able to feed off most dead creatures. Feeding off creatures instead of people only provides half the extended time.|position=top}}
+{{Image Mark|632|315|Totem of Terror|Totem of Terror: Werewolf Howl of Terror affects even higher level creatures.|position=bottom}}
+{{Image Mark|507|250|Totem of the Predator|Totem of the Predator: Werewolf Totem of the Hunt howl has extended range, and shows whether the targets are not in combat, searching, or actively in combat.|position=top}}
+{{Image Mark|364|419|Totem of Ice Brothers|Totem of Ice Brothers: Werewolf Totem of Brotherhood howl calls Ice Wolves.|position=bottom}}
+{{Image Mark|257|339|Totem of the Moon|Totem of the Moon: Werewolf Totem of Brotherhood howl calls werewolves.|position=top}}
+}}
+{{NewLine}}
+{|class="wikitable sortable"
+!Perk
+!class=unsortable|Rank
+!class=unsortable|Description
+!class=unsortable|[[Skyrim:Form ID|ID]]
+!Perk Req
+|-
+|rowspan=4|''{{Anchor|Bestial Strength}}''
+| 1
+| Do 25% more damage as a werewolf.
+| {{ID|xx0059a4}}
+|
+|-
+| 2
+| Do 50% more damage as a werewolf.
+| {{ID|xx007a3f}}
+|
+|-
+| 3
+| Do 75% more damage as a werewolf.
+| {{ID|xx011cfa}}
+|
+|-
+| 4
+| Do 100% more damage as a werewolf.
+| {{ID|xx011cfb}}
+|
+|-
+|colspan=2|''{{Anchor|Animal Vigor}}''
+| 100 point bonus to health and stamina in beast form.
+| {{ID|xx0059a5}}
+| Bestial Strength
+|-
+|colspan=2|''{{Anchor|Gorging}}''
+| Feeding heals twice as much health.
+| {{ID|xx0059a7}}
+| Animal Vigor
+|-
+|colspan=2|''{{Anchor|Savage Feeding}}''
+| Able to feed off most dead creatures. Feeding off creatures instead of people only provides half the extended time.
+| {{ID|xx0059a6}}
+| Gorging
+|-
+|colspan=2|''{{Anchor|Totem of Ice Brothers}}''
+| Werewolf Totem of Brotherhood howl calls Ice Wolves.
+| {{ID|xx0059aa}}
+| Bestial Strength
+|-
+|colspan=2|''{{Anchor|Totem of the Moon}}''
+| Werewolf Totem of Brotherhood howl calls werewolves.
+| {{ID|xx0059ab}}
+| Totem of Ice Brothers
+|-
+|colspan=2|''{{Anchor|Totem of Terror}}''
+| Werewolf Howl of Terror affects even higher level creatures.
+| {{ID|xx0059a8}}
+| Bestial Strength
+|-
+|colspan=2|''{{Anchor|Totem of the Predator}}''
+| Werewolf Totem of the Hunt howl has extended range, and shows whether the targets are not in combat, searching, or actively in combat.
+| {{ID|xx0059a9}}
+| Bestial Strength
+|}
+
+==Curing Lycanthropy==
+To cure yourself in the base game, you must complete the Companions quest line. After you have completed [[Skyrim:Glory of the Dead|Glory of the Dead]], you may cure yourself of lycanthropy by returning to [[Skyrim:Ysgramor's Tomb|Ysgramor's Tomb]], although you will need another [[Skyrim:Glenmoril Witch Head|Glenmoril Witch's head]]. If you need another Glenmoril Witch's head you can wait until either Vilkas or Farkas ask for help to be cleansed of lycanthropy, and complete the quest [[Skyrim:Purity|Purity]] (make sure to grab an extra Glenmoril Witch's head for yourself). Then you can use the Flame of the Harbinger to cure yourself.
+
+Once cured you will no longer have access to [[Skyrim:the Underforge|the Underforge]] (until the Glory of the Dead quest), and you will not be able to complete the [[Skyrim:Totems of Hircine|Totems of Hircine]] quests if you have not already done so. You will also be unable to complete the ''[[Skyrim:Dragonborn|Dragonborn]]'' quest [[Skyrim:Visit the hunters at Frostmoon Crag|Visit the hunters at Frostmoon Crag]].
+
+The ''Dawnguard'' add-on allows you to restore your lycanthropy with help from [[Skyrim:Aela the Huntress|Aela the Huntress]]. You can do this only once; if you cure it again, you ''cannot'' regain your lycanthropy from Aela, since the required dialogue option will no longer be available. However, you may reset this option as many times as desired by using the command resetquest DLC1RegiftingLycanthropy. If you restore your lycanthropy, you will keep all of the werewolf perks you had before, and will also keep the same totem benefit that you had active when you were a werewolf previously.
+
+Accepting [[Skyrim:Lord_Harkon|Lord Harkon]]'s gift of vampirism during the [[Skyrim:Bloodline|Bloodline]] quest or asking [[Skyrim:Serana|Serana]] to make you a vampire (either during the [[Skyrim:Chasing Echoes|Chasing Echoes]] quest or after the end of the Dawnguard questline) will also cure you of lycanthropy.
+
+== Equipment and Items==
+There are a number of werewolf-related items that can be obtained, most of which are rings with unique enchantments. The [[Skyrim:Ring of Hircine|Ring of Hircine]] can be obtained during the [[Skyrim:Daedric Quests|Daedric quest]] [[Skyrim:Ill Met By Moonlight|Ill Met By Moonlight]]; this ring allows an unlimited number of werewolf transformations per day. ''Dawnguard'' adds four more rings which can be purchased from the Frostmoon Pack at [[Skyrim:Frostmoon Crag|Frostmoon Crag]] on [[Skyrim:Solstheim|Solstheim]]. These rings are only available if you are a werewolf, otherwise the members of the Frostmoon Pack will not deal with you and will warn you away. Each ring enhances certain werewolf abilities: The [[Dragonborn:Ring of Bloodlust|Ring of Bloodlust]] increases both damage and damage taken in Beast Form by 50%, the [[Dragonborn:Ring of the Hunt|Ring of the Hunt]] allows for the regeneration of health in Beast Form, the [[Dragonborn:Ring of Instinct|Ring of Instinct]] provides an effect similar to the [[Skyrim:Slow Time|Slow Time]] shout for 20 seconds upon transformation into Beast Form, and the [[Dragonborn:Ring of the Moon|Ring of the Moon]] increases the duration of Howls by 25%.
+
+There are also a few werewolf-related armors, one of which is Savior's Hide obtained during Ill Met By Moonlight, the other being [[Skyrim:Wolf Armor|Wolf Armor]].
+
+===Armor and Clothing===
+*[[Skyrim:Wolf Armor|Wolf Armor]]
+*[[Skyrim:Wolf Boots|Wolf Boots]]
+*[[Skyrim:Wolf Gauntlets|Wolf Gauntlets]]
+*[[Skyrim:Wolf Helmet|Wolf Helmet]]
+*[[Skyrim:Savior's Hide|Savior's Hide]]
+
+===Jewelry===
+*[[Skyrim:Ring of Hircine|Ring of Hircine]]
+*[[Skyrim:Ring of Bloodlust|Ring of Bloodlust]] {{DB}}
+*[[Skyrim:Ring of the Hunt|Ring of the Hunt]] {{DB}}
+*[[Skyrim:Ring of Instinct|Ring of Instinct]] {{DB}}
+*[[Skyrim:Ring of the Moon|Ring of the Moon]] {{DB}}
+
+===Other===
+*[[Skyrim:Sinding's Skin|Sinding's Skin]]
+*[[Skyrim:Werewolf Pelt|Werewolf Pelt]]
+*[[Skyrim:Werewolf Totem|Werewolf Totem]]
+
+== Achievements ==
+One [[Skyrim:Achievements#Dawnguard|achievement]] is related to being a werewolf:
+* {{achievement|Werewolf Mastered}}
+** There are 11 available perks, so all of the werewolf perks must be unlocked for this achievement.
+Several other achievements are obtained from the [[Skyrim:Companions|Companions]] questline.
+
+==Related Quests==
+* '''[[Skyrim:Ill Met By Moonlight|Ill Met By Moonlight]]'''
+===World Interactions===
+* '''[[Skyrim:World Interactions#Frostmoon Invitation|Frostmoon Invitation]]''' {{DB}}
+
+==Notes==
+* You will have 0 base armor while in beast form, but you do count as unarmored for the purposes of the [[Skyrim:Mage Armor|Mage Armor]] perk.
+** Before patch 1.3.10, armor rating in beast form is affected by the [[Skyrim:Light Armor|Light Armor]] skill and will be increased by the [[Skyrim:Agile Defender|Agile Defender]] perk.
+* Werewolf howls count as shouts for the purposes of the General Statistics screen; each time you howl adds to your total number of shouts and it is possible for a howl to show up as your favorite shout.
+* Transforming into a werewolf in view of the [[Skyrim:Guards|guards]] of a [[Skyrim:Holds|Hold]] is a handy way to quickly achieve the [[File:SR-achievement-Master Criminal.png|18px]] [[Skyrim:Crime#Achievements|Master Criminal]] achievement. Being seen reverting to your original form is another way.
+* Reverting manually or letting your werewolf form expire in the original version would cause you to appear naked and unarmed, requiring you to physically re-equip your weapons and armor. This was changed in the ''[[Skyrim:Special Edition|Special Edition]]''; any weapons and armor you previously had equipped will now automatically re-equip themselves.
+* Though the character model for beast form werewolves is the same regardless of gender, males are taller than females. Game data sets the height scale at 1 for females and 1.13 for males.
+* ''{{Anchor|Full Moon Rising}}'' is in game data as a constant effect that enhances stats while the moons are full; however, it does not actually appear in normal gameplay.
+* The [[Skyrim:Fear (effect)|Fear]] shouts are not affected by the [[Skyrim:Master of the Mind|Master of the Mind]] perk.
+* Time still passes while the perk tree is displayed (though nothing moves outside of the menu). If you take too long perusing the perk tree, your Beast Form might wear off and you won't be able to select one. As soon as you close the menu, you'll immediately change back. You'll need to transform again in order to access the skill tree and select your new perk.
+* The werewolf perk tree was originally developed as part of the [[Skyrim:Game Jam|Game Jam]].
+* While you can't initiate conversation in beast form, most scripted conversations (like running into [[Skyrim:Eisa Blackthorn|Eisa Blackthorn]] which starts [[Skyrim:The Pale Lady|The Pale Lady]] quest) will still happen, and the NPC will converse with you like normal.
+*Using the special ability of the [[Skyrim:Ring of Namira|Ring of Namira]] to feed on a corpse will make it impossible to feed on it in beast form. The reverse is also true, corpses fed on in beast form cannot be cannibalized with the Ring of Namira.
+* It is not necessary to kill an enemy while in beast form in order to feed on the corpse. Enemies can be killed in humanoid form, then you can transform into a werewolf to feed. This makes it possible to clear a location in humanoid form, then transform and feed on many corpses at once without engaging in combat.
+* The Totem of the Predator perk grants a modified "Detect Life" ability: it 'paints' all targets in the area affected by the howl. Said effect lasts for one minute, even if the target(s) leave the howl radius, though new targets entering the range are not affected until the howl is repeated.
+*As well as being unable to interact with certain objects, you are also unable to destroy spiderweb barriers while in beast form as attacks seem to go straight through. This can make it difficult to progress though certain locations where spiders reside. Transforming back to human form will allow you to destroy the barrier and proceed.
+* You are unable to breathe underwater as a werewolf, even if you are an Argonian.
+* If [[Skyrim:Survival Mode|Survival Mode]] is active, freezing to death is impossible while in Beast Form.
+* In Survival Mode, your Beast Blood will prevent you from having the Rested or Well Rested bonus. However, after a full sleep it takes the same amount of time for your [[Skyrim:Fatigue|Fatigue]] to fall to Drained as a non-werewolf from a Well Rested state.
+* The name used internally for the highest level of Werewolf Claws suggests that it was intended for level 50 and above, but in reality, it takes effect at level 46.
+* It is possible to get ragdolled as a werewolf (such as when facing [[Skyrim:Draugr Deathlord|Draugr Deathlords]] or [[Skyrim:Draugr Death Overlord|Draugr Death Overlords]]), which will result in a series of odd animations as you come back onto your feet: first is your werewolf form crawling onto all fours, followed by the final animation normally seen when the werewolf transformation is completed.
+*Werewolf one-handed and two-handed sprinting and moving attacks will stagger [[Skyrim:Mammoth|mammoths]] and even a [[Skyrim:Dragon|Dragon]], once it has landed.
+**Most werewolf power attacks will stagger or knock down enemies (depending on their size), but all of them deal varying amounts of damage: the sprinting two-handed power attack deals the most damage, followed by the sprinting/moving one-handed attack, then the stationary two-handed attack which throws most enemies quite a long distance, but does little damage. The power attack that results in three slashes of your hands does not stagger at all.
+* You can view progress to the next perk point using the console command <code>show DLC1WerewolfFeedPoints</code>. To see the number of points needed, use <code>show DLC1WerewolfNextPerk</code>.
+* [[Skyrim:Froki Whetted-Blade|Froki Whetted-Blade]], [[Skyrim:Haming|Haming]], [[Skyrim:Illia|Illia]], [[Skyrim:Julienne Lylvieve|Julienne Lylvieve]] and [[Skyrim:Michel Lylvieve|Michel Lylvieve]] have no crime factions assigned and will therefore talk to you in werewolf form.
+* It can be challenging to use Beast Form and have the Savage Feeding perk if a powerful blood mage like [[Skyrim:Serana|Serana]] is your follower as they tend to raise corpses in battle. This can prevent you from feeding unless you manage to feed on raised corpses after they die again but before they turn into a pile of ash.
+* The ''[[Skyrim:Dragonborn|Dragonborn]]'' add-on adds [[Skyrim:Werebear|werebears]], a new type of lycanthrope. However, you cannot transform into those creatures.
+* [[Skyrim:Patch|Official Skyrim Patch]] 1.9 reduces the percentage chance of getting a werewolf loading screen when you are a werewolf yourself.
+* If you equip a [[Skyrim:Scrolls|scroll]], transform into a werewolf, then drop the scroll after the transformation expires, the scroll will remain equipped and you can cast it as many times as you like.
+* With the ''[[Skyrim:Dawnguard|Dawnguard]]'' add-on, [[Skyrim:Death Hound|Death Hounds]] will flee in terror if they see you in Beast Form. Whether or not you use the Howl of Terror in their presence is irrelevant.
+
+==Bugs==
+{{Bug|Reverting from Beast Form back to your original form may cause the game to crash.|OSP|1.4}}
+{{Bug|Werewolf kill moves may occasionally not finish animating properly.|OSP|1.6}}
+{{Bug|NPCs may still make mention of your "wolfish grin" or the "fur growing out of your ears" or "you smell like a wet dog" even after you are cured of lycanthropy, because the only condition for these remarks is the completion of The Silver Hand, not your werewolf status. Similarly, in the statistics section of the menu, the "days as a werewolf" statistic may continue to increase even after lycanthropy is cured.|USKP|1.2.2}}
+**{{pc22}} You can input <code>set playeriswerewolf to 0</code> in the console to fix the statistic increase but not the NPC comments.
+{{Bug|The 100% disease immunity does not prevent contracting diseases from traps due to a script oversight.|USSEP|4.2.5}}
+{{Bug|In [[Skyrim:Survival Mode|Survival Mode]], the 100% disease immunity does not prevent contracting diseases added by the CC.|USSEP|4.2.7}}
+{{Bug|Using [[Skyrim:Soul Trap (spell)|Soul Trap]] on a corpse you have already eaten as a werewolf gives you another heart from the victim. You can progress werewolf perks, but you have to wait to transform again to actually unlock them. [[Skyrim:Savage Feeding|Savage Feeding]] benefits from this bug as well.|dlc=DG|USKP|2.0.1}}
+{{Bug|Radiant [[Skyrim:World Interactions|world encounters]] for the Companions can cause the involved members to get pulled out of their normal crime factions which would then cause them to become permanently hostile to player werewolves even though they aren't supposed to be.|USLEEP|3.0.1}}
+{{Bug|[[Skyrim:Burnt Spriggan|Burnt Spriggans]] don't have the proper keyword set to exclude them from being fed on by werewolves with the Savage Feeding perk. All other spriggans in the game have this keyword.|USSEP|4.2.5}}
+{{Bug|Werewolf players may be unable to tear through spider webs and other similarly constructed objects with their hands while in Beast Form due to the frontal collision capsule being too far away from the body.|USSEP|4.3.1}}
+{{Bug|In the [[Skyrim:Special Edition|Special Edition]], reverting from Beast Form back to your original form may cause the game to crash.|OSSEP|1.2}}
+{{Bug|If [[Skyrim: Survival Mode|Survival Mode]] is active, you may be unable to warm up while in warm weather or in warm interiors while in Beast Form. Cold penalties on your health meter also will not update immediately after transforming back.|OSSEP|1.6}}
+{{Bug|Sometimes equipment is not fully removed after transforming. If you retain a weapon after transforming, this can cause you to be unable to attack with the weapon-equipped hand and causes strange animations, since werewolves do not have animations for wielding weapons.|confirmed=1}}
+{{Bug|You may be unable to cure yourself using the blue flame immediately after curing Kodlak in the Companions quest line.|confirmed=1}}
+** This may be fixed by doing radiant quests for the Companions until a Purity mission comes up, after which you can use the flame again. You may need to complete both Purity quests (for both Farkas and Vilkas) before you can cure yourself.
+{{Bug|You may be similarly unable to use the blue flame if you have previously cured yourself, completed both Purity quests, then later asked Aela to regain the gift of beast blood, even with a Glenmoril witch head in your inventory.|confirmed=1}}
+**The simple solution for you to fully get rid of your lycanthropy is through console commands. You can input <code>player.removespell 00092C48,  player.setstage F6090 0, player.setstage F6090 100, set playeriswerewolf to 0</code> This will not only get rid of the Beast Form but will also remove the message "Your beast blood prevents restful sleep" whenever you rest.
+{{Bug|Right before you turn back into a humanoid after using Beast Form, you may get a message saying that you are over encumbered, and you may be unable to run or sprint, even though you aren't.|confirmed=1}}
+**Opening your inventory and closing it again may fix this.
+{{Bug|After reverting back to human form, the forced third-person camera sometimes persists.|confirmed=1}}
+{{Bug|Interrupting the feeding animation (such as by howling) will successfully complete the feeding immediately. Being mid-air (i.e. jumping) when activating the feeding will likewise cancel the animation, but otherwise lead to a successful feeding.|confirmed=1}}
+{{Bug|While in werewolf form, it is possible to get stuck in it well over the time limit.|confirmed=1}}
+** This can be fixed by using the wait function for 24 in-game hours, though this might not always work. It may work best if you wait multiple one hour periods than just one 24 hour period.
+{{Bug|When transforming into a werewolf, there is a brief period between when the cutscene ends, and when you regain the ability to move and attack. If you feed on a corpse in this narrow window of time, the werewolf transformation may be very short (a few seconds). Using this glitch in combination with the Ring of Hircine allows you to make several kills and feed on the corpses one by one for skill tree progress, without having to remain in beast form for a long time afterward (and without having to wait).|confirmed=1}}
+{{Bug|Sometimes while in beast form, the sprinting power attack may not execute despite holding the sprinting and attack buttons.|confirmed=1}}
+** Exiting and reentering sprint mode usually fixes this.
+{{Bug|Sometimes, when reverting back to human form, part of the werewolf skin will form over your equipment. The werewolf head will have no teeth, and will clip into your first-person view.|confirmed=1}}
+{{Bug|Despite the fact that powers are inactive, the Orcs can activate Berserker Rage before transforming, thus allowing their attack damage to be doubled|vn=1}}
+{{Bug|It is possible to be a werewolf and (non-vampire lord) vampire at the same time, although the Dragonborn's appearance will revert to normal after exiting beast form. You will need to have late stage sanguinare vampiris and ask Aela to restore your lycanthropy. Time it such that the screen darkening (beast form) and the screen going red (vampirism) happen at the same time. Thus, you will receive beast form at the same time as the script for adding vampirism runs, resulting in a hybrid.|confirmed=1}}
+{{Bug|It is also possible to have vampire lord and werewolf powers. While in the Chasing Echoes quest in the ''Dawnguard'' questline, open the portal to the Soul Cairn but leave the castle with Serana still as your follower. In the Companions questline, you will need to be within The Silver Hand and enter the Underforge when lycanthropy is offered to you. When activating the fountain to accept the Beast Form, you must trigger Vampire Lord form at the exact same time. This timing can be difficult to pull off so quicksaving beforehand is recommended. If the screen blurs from activating the Vampire Lord form and your character begins the animation to drink from the fountain, you are almost finished with triggering this bug. Your game will load back in Whiterun as a Werewolf, and in moments your Vampire Lord form will take over. Here bugs are possible that may require reloading your quicksave from before. If your Vampire Lord form is missing design elements and seems "bare" you will need to reload. If the full Vampire Lord design renders, use Revert Form to become human again and prompt Serana (who is still following you at this point outside of the Underforge) to restore your vampirism. Then use Beast Form to complete the werewolf attack event in Whiterun. One last visual bug that is common is after you are moved to Gallow's Rock to complete The Silver Hand quest, sometimes the Werewolf meshes apply to your human character. I have not found a direct way to fix these other than reloading back to the original quicksave. This bug has been reperformed on several vanilla playthroughs on multiple PC and console platforms. |confirmed=1}}
+{{Bug|Although in the Special Edition your equipment is reapplied after you transform back, the game doesn't check for the ''exact same'' apparel you were wearing; if you have two or more sets of Tavern Clothes in your inventory but one is enchanted and renamed, the game might not equip the enchanted one and instead it will be an unenchanted one.|confirmed=0}}
+
+==See Also==
+*For more information about lycanthropes of the Elder Scrolls universe, see the [[Lore:Lycanthropy|lore article]].
+
+==Gallery==
+<gallery>
+File:SR-misc-Werewolf Power Attack.jpg|Performing a power attack as a werewolf
+File:SR-misc-Werewolf Power Attack 02.jpg|Performing a power attack as a werewolf
+</gallery>

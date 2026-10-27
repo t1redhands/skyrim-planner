@@ -1,0 +1,290 @@
+{{CC Header|Ghosts of the Tribunal}}{{Trail|Ghosts of the Tribunal}}
+This page documents the '''new items''' added by the [[Skyrim:Ghosts of the Tribunal|Ghosts of the Tribunal]] [[Skyrim:Creation Club|Creation]].
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+!{{Warmth Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+| {{nowrap|{{icon|c|Common Robes}}<br>{{icon|c|Common Robes 02}}<br>{{icon|c|Common Robes 03}}}}
+| {{Anchor|Common Robes}}<br>{{ID|xx145430|par=1}}<br>{{ID|xx05C48B|par=1}}<br>{{ID|xx0DAE36|par=1}} || Clothing || N/A || 1 || 10 || N/A ||  ||
+|-
+| {{nowrap|{{icon|c|Extravagant Robes}}<br>{{icon|c|Extravagant Robes 02}}<br>{{icon|c|Extravagant Robes 03}}}}
+| {{Anchor|Extravagant Robes}}<br>{{ID|xx145435|par=1}}<br>{{ID|xx145436|par=1}}<br>{{ID|xx145437|par=1}} || Clothing || N/A || 1 || 10 || N/A || 54 ||
+|-
+| {{icon|a|Her Hand Armor}}
+| {{Anchor|Her Hand Armor}}<br>{{ID|xx00081C|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 36 || 1600 || 43 ||  ||
+|-
+| {{icon|a|Her Hand Armor}}
+| {{Anchor|Her Hand Armor}}<br>{{ID|xx000B80|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 36 || 2152 || 43 ||  || ''Increases Heavy Armor skill by 25 points.''
+|-
+| {{icon|a|Her Hand Boots}}
+| {{Anchor|Her Hand Boots}}<br>{{ID|xx00081B|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 300 || 16 ||  ||
+|-
+| {{icon|a|Her Hand Boots}}
+| {{Anchor|Her Hand Boots}}<br>{{ID|xx000CE4|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 942 || 16 ||  || ''Increases your stamina by 70 points.''
+|-
+| {{icon|a|Her Hand Gauntlets}}
+| {{Anchor|Her Hand Gauntlets}}<br>{{ID|xx00081D|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 300 || 16 ||  ||
+|-
+| {{icon|a|Her Hand Gauntlets}}
+| {{Anchor|Her Hand Gauntlets}}<br>{{ID|xx000A4B|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 1573 || 16 ||  || ''One-handed attacks do 40% more damage.''
+|-
+| {{icon|a|Her Hand Helmet}}
+| {{Anchor|Her Hand Helmet}}<br>{{ID|xx00081E|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 8 || 300 || 21 ||  ||
+|-
+| {{icon|a|Her Hand Helmet}}
+| {{Anchor|Her Hand Helmet}}<br>{{ID|xx000E6E|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 8 || 1110 || 21 ||  || ''Block 40% more damage with your shield.''
+|-
+| {{icon|a|Indoril Armor}}
+| {{Anchor|Indoril Armor}}<br>{{ID|xx000818|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 38 || 325 || 40 ||  ||
+|-
+| {{icon|a|Indoril Boots}}
+| {{Anchor|Indoril Boots}}<br>{{ID|xx000817|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 9 || 125 || 14 ||  ||
+|-
+| {{icon|a|Indoril Gauntlets}}
+| {{Anchor|Indoril Gauntlets}}<br>{{ID|xx000819|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 125 || 14 ||  ||
+|-
+| {{icon|a|Indoril Helmet}}
+| {{Anchor|Indoril Helmet}}<br>{{ID|xx00081A|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 300 || 19 ||  ||
+|-
+| {{icon|a|Ordinator Shield}}
+| {{Anchor|Ordinator Shield}}<br>{{ID|xx06668E|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 8 || 500 || 26 || 0 ||
+|-
+| {{icon|a|Redoran Watchman's Helmet}}
+| {{Anchor|Redoran Watchman's Helmet}}<br>{{ID|xx04D170|par=1}} || Light Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 300 || 19 ||  ||
+|-
+| {{icon|c|Temple Priest Robes}}
+| {{Anchor|Tribunal Priest Robes}}<br>{{ID|xx00082B|par=1}} || Clothing || N/A || 1 || 75 || N/A ||  || ''Increases your Magicka by 20 points.''<br>Unobtainable in-game.
+|}
+<gallery caption="Male [[Skyrim:Nord|Nord]]" perrow=5>
+File:SR-item-Common Robes Male.jpg|Common Robes
+File:SR-item-Common Robes Male 02.jpg|Common Robes
+File:SR-item-Common Robes Male 03.jpg|Common Robes
+File:SR-item-Extravagant Robes Male.jpg|Extravagant Robes
+File:SR-item-Extravagant Robes Male 02.jpg|Extravagant Robes
+File:SR-item-Extravagant Robes Male 03.jpg|Extravagant Robes
+File:SR-item-Her Hand Armor Male.jpg|Her Hand Armor
+File:SR-item-Indoril Armor Male.jpg|Indoril Armor
+File:SR-item-Redoran Watchman's Helmet Male.jpg|Redoran Watchman's Helmet
+File:SR-item-Temple Priest Robes Male.jpg|Tribunal Priest Robes
+</gallery>
+<gallery caption="Female [[Skyrim:Imperial|Imperial]]" perrow=5>
+File:SR-item-Common Robes Female.jpg|Common Robes
+File:SR-item-Common Robes Female 02.jpg|Common Robes
+File:SR-item-Common Robes Female 03.jpg|Common Robes
+File:SR-item-Extravagant Robes Female.jpg|Extravagant Robes
+File:SR-item-Extravagant Robes Female 02.jpg|Extravagant Robes
+File:SR-item-Extravagant Robes Female 03.jpg|Extravagant Robes
+File:SR-item-Her Hand Armor Female.jpg|Her Hand Armor
+File:SR-item-Indoril Armor Female.jpg|Indoril Armor
+File:SR-item-Redoran Watchman's Helmet Female.jpg|Redoran Watchman's Helmet
+File:SR-item-Temple Priest Robes Female.jpg|Tribunal Priest Robes
+</gallery>
+
+===Unique Apparel===
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+!{{Warmth Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+| {{icon|a|Indoril Helmet}}
+| {{Anchor|Kenro's Helmet}}<br>{{ID|xx15E949|par=1}} || Heavy Armor || [[Skyrim:Chitin Plate|Chitin Plate]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 6 || 1227 || 19 ||  || ''One-handed attacks do 30% more damage.''
+|-
+| {{icon|c|Common Robes 03}}
+| {{Anchor|Kenro's Robes}}<br>{{ID|xx15E948|par=1}} || Clothing || N/A || 1 || 10 || N/A ||  ||
+|-
+| {{icon|c|Mask of Almalexia}}
+| {{Anchor|[[Skyrim:Mask of Almalexia|Mask of Almalexia]]}}<br>{{ID|xx00081F|par=1}} || Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: ''none'' || 6 || 300 || 19 ||  ||
+|-
+| {{icon|c|Mask of Dagoth Ur}}
+| {{Anchor|[[Skyrim:Mask of Dagoth Ur|Mask of Dagoth Ur]]}}<br>{{ID|xx000821|par=1}} || Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: ''none'' || 6 || 300 || 19 ||  ||
+|-
+| {{icon|c|Mask of Sotha Sil}}
+| {{Anchor|[[Skyrim:Mask of Sotha Sil|Mask of Sotha Sil]]}}<br>{{ID|xx000820|par=1}} || Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: ''none'' || 6 || 300 || 19 ||  ||
+|-
+| {{icon|c|Mask of Vivec}}
+| {{Anchor|[[Skyrim:Mask of Vivec|Mask of Vivec]]}}<br>{{ID|xx000822|par=1}} || Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: ''none'' || 6 || 300 || 19 ||  ||
+|-
+| {{icon|c|Robe of the Lich}}
+| {{Anchor|[[Skyrim:Robe of the Lich|Robe of the Lich]]}}<br>{{ID|xx0C1929|par=1}} || Clothing || N/A || 2 || 175 || N/A ||  || ''Magicka regenerates 150% faster.''
+|}
+<gallery caption="Male [[Skyrim:Nord|Nord]]" perrow=5>
+File:SR-item-Mask of Almalexia Male.jpg|Mask of Almalexia
+File:SR-item-Mask of Dagoth Ur Male.jpg|Mask of Dagoth Ur
+File:SR-item-Mask of Sotha Sil Male.jpg|Mask of Sotha Sil
+File:SR-item-Mask of Vivec Male.jpg|Mask of Vivec
+File:SR-item-Robe of the Lich Male.jpg|Robe of the Lich
+</gallery>
+<gallery caption="Female [[Skyrim:Imperial|Imperial]]" perrow=5>
+File:SR-item-Mask of Almalexia Female.jpg|Mask of Almalexia
+File:SR-item-Mask of Dagoth Ur Female.jpg|Mask of Dagoth Ur
+File:SR-item-Mask of Sotha Sil Female.jpg|Mask of Sotha Sil
+File:SR-item-Mask of Vivec Female.jpg|Mask of Vivec
+File:SR-item-Robe of the Lich Female.jpg|Robe of the Lich
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Ebony Mace 02}}
+| {{Anchor|Ebony Mace}}<br>{{ID|xx000E37|par=1}} || 19 || 1000 || 17 || 8 || 0.8 || 1
+|-
+| {{AL|C}}|{{icon|w|Ebony Scimitar}}
+| {{Anchor|Ebony Scimitar}}<br>{{ID|xx000E38|par=1}} || 14 || 800 || 15 || 6 || 1 || 1
+|}
+
+===Unique Weapons===
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Speed
+!Reach
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+| {{AL|C}}|{{icon|w|Cleaver of St. Felms}}
+| {{Anchor|[[Skyrim:Cleaver of St. Felms|Cleaver of St. Felms]]}}<br>{{ID|xx057384|par=1}} || [[Skyrim:One-handed|One-handed]] [[Skyrim:War Axe|War Axe]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || 17 || 2508 || 14 || 0.9 || 1 || ''Burns the target for 30 points. Targets on fire take extra damage. Absorb 25 points of magicka.''
+|-
+| {{AL|C}}|{{icon|w|Hopesfire}}
+| {{Anchor|[[Skyrim:Hopesfire|Hopesfire]]}}<br>{{ID|xx000c28|par=1}} || [[Skyrim:One-handed|One-handed]] [[Skyrim:Sword|Sword]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || 12 || 2235 || 17 || 1 || 1 || ''Target takes 30 points of shock damage, and half as much Magicka damage.''
+|-
+| {{AL|C}}|{{icon|w|Light of Day}}
+| {{Anchor|[[Skyrim:Light of Day|Light of Day]]}}<br>{{ID|xx13101E|par=1}} || [[Skyrim:One-handed|One-handed]] [[Skyrim:Mace|Mace]] || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none'' || 20 || 1614 || 16 || 0.8 || 1 || ''{{hover|actually 15|30}} points of [[Skyrim:Sun Damage|sun damage]]. [[Skyrim:Undead|Undead]] targets take triple damage.''
+|-
+| {{AL|C}}|{{icon|w|Magebane}}
+| {{Anchor|[[Skyrim:Magebane|Magebane]]}}<br>{{ID|xx13101B|par=1}} || [[Skyrim:Two-handed|Two-handed]] [[Skyrim:Greatsword|Greatsword]] || [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]] || 20 || 1938 || 22 || 0.7 || 1.3 || ''Does 60 points of Magicka damage.''
+|-
+| {{AL|C}}|{{icon|w|Skull Crusher}}
+| {{Anchor|[[Skyrim:Skull Crusher|Skull Crusher]]}}<br>{{ID|xx11CBF0|par=1}} || [[Skyrim:Two-handed|Two-handed]] [[Skyrim:Warhammer|Warhammer]] || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel Smithing]] || 15 || 2365 || 28 || 0.6 || 1.3 || ''Does 30 points of Stamina damage.''
+|-
+| {{AL|C}}|{{icon|w|Trueflame}}
+| {{Anchor|[[Skyrim:Trueflame|Trueflame]]}}<br>{{ID|xx00083A|par=1}} || [[Skyrim:One-handed|One-handed]] [[Skyrim:Sword|Sword]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || 12 || 1360 || 16 || 1 || 1 || ''Burns the target for 30 points. Targets on fire take extra damage.''
+|-
+| {{AL|C}}|{{icon|w|Unenchanted Weapon}}
+| {{Anchor|[[Skyrim:Unenchanted Weapon|Unenchanted Weapon]]}}<br>{{ID|xx00083B|par=1}} || [[Skyrim:One-handed|One-handed]] [[Skyrim:Sword|Sword]] || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]] || 12 || 135 || 10 || 1 || 1 || 
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Hand Indobar's Journal}}
+{{Book Normal|Heretic Dossier: Blacksmith's Confessional}}
+{{Book Normal|Matriarch Drevlan's Journal}}
+{{Book Normal|Priest Drureth's Journal}}
+{{Book Normal|Reclamation Priest's Journal}}
+{{Book Normal|Sculptor Visthar's Journal}}
+{{Book Normal|Vesparth's Journal}}
+|}
+===Notes===
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Curate Melita's Plea}}
+{{Book Normal|Erden Relvel's Note}}
+{{Book Normal|Hand Kenro's Note}}
+{{Book Normal|Letter from Matriarch Drevlan}}
+{{Book Normal|Masks of the Tribunal}}
+{{Book Normal|Matriarch Drevlan's Note}}
+{{Book Normal|Note on the Target}}
+{{Book Normal|Priest Arthamis' Note}}
+{{Book Normal|Propaganda Letter}}
+{{Book Normal|Redoran Guard's Note}}
+|}
+
+==Potions==
+{| class="wikitable"
+!width=48|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!Notes
+|-
+| {{icon|misc|PestPoison}}
+| {{Anchor|Pyroil Tar}}<br>{{ID|xx0b9587|par=1}}
+| 0.5 || 0
+| ''A highly flammable substance used for enchanting weapons.''
+* [[Skyrim:Slow|Slow]], 1 pts for 1 secs
+|
+* 4 found at [[SR:Fahlbtharz|Fahlbtharz]] Forge (3 on desk to the north of the room, 1 in chest; respawning)
+* 1 found in [[SR:Hand Kenro Hlan|Hand Kenro Hlan]]'s inventory
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_02.png
+ |name=Attius Farm Cellar Key
+ |displayname=[[Skyrim:Attius Farm Cellar Key|Attius Farm Cellar Key]]
+ |id=xx000F29|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key_02.png
+ |name=Tribunal Armory Key
+ |displayname=[[Skyrim:Tribunal Armory Key|Tribunal Armory Key]]
+ |id=xx000C2A|weight=0|value=0}}
+|}
+
+==Miscellaneous Items==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+{{Item Data
+ |icon=SR-icon-misc-Kagrumez Resonance Gem.png
+ |name=Dwarven Forge Gem
+ |id=xx0990F0,xx0990F1,xx0990F2|weight=0.2|value=500
+ |idsep=<br>
+ |notes=Sources:
+* Unobtainable
+}}
+{{Item Data
+ |icon=SR-icon-misc-Kagrumez Resonance Gem.png
+ |name=Fahlbtharz Forge Gem
+ |id=xx0990ED|weight=0.2|value=500
+ |notes=Sources:
+* [[Skyrim:Fahlbtharz#Fahlbtharz_Forge|Fahlbtharz Forge]]
+* Inventory of the Buyer during [[Skyrim:Buyer Beware|Buyer Beware]]
+* [[Skyrim:Ashfall's Tear|Ashfall's Tear]] Armory, unlocked during [[Skyrim:Ashen Heart|Ashen Heart]]
+* Inventory of [[Skyrim:Erden Relvel|Erden Relvel]]
+}}
+{{Item Data
+ |icon=SR-icon-misc-PestPoison.png
+ |name=Pyroil Tar
+ |id=xx00082F|weight=0.5|value=0
+ |notes=Sources:
+* Several found within [[Skyrim:Fahlbtharz#Fahlbtharz_Forge|Fahlbtharz Forge]]
+}}
+|}
