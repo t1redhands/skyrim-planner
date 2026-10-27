@@ -1,0 +1,127 @@
+{{Trail2|Items}}{{Mod Header|Dawnguard}}[[Category:Skyrim-Dawnguard]][[Category:Skyrim-Dawnguard-Items]]
+{| class="wikitable sortable"
+!class=unsortable width=96| 
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-Vampire Armor xx0191f3 (m).png|48px]][[File:SR-icon-armor-Vampire Armor xx0191f3 (f).png|48px]]<br>[[File:SR-icon-armor-Vampire Armor xx0142c7 (m).png|48px]][[File:SR-icon-armor-Vampire Armor xx0142c7 (f).png|48px]]<br>[[File:SR-icon-armor-Vampire Armor xx0191f2 (m).png|48px]][[File:SR-icon-armor-Vampire Armor xx0191f2 (f).png|48px]]
+| {{Anchor|Vampire Armor}}<br>{{ID|xx0191f3|Red|par=1}}<br>{{ID|xx0142c7|Black|par=1}}<br>{{ID|xx0191f2|Gray|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 5 || 175 || 25
+|
+*Three colors are available; they are otherwise the same.
+*Worn by vampires, otherwise they wear Vampire Robes.
+*Can be bought from [[Skyrim:Hestla|Hestla]] if the [[Skyrim:Volkihar Vampire Clan|Volkihar Vampires]] are joined.
+*Two (red and light grey) are in the coffin room of Castle Volkihar. Two more (dark grey and red) are in the reading room with the Arcane Enchanter, above [[Skyrim:Feran Sadri|Feran Sadri's]] alchemy laboratory.
+*Can be found inside [[Skyrim:Bloodchill Cavern|Bloodchill Cavern]]{{CC|Bloodchill Cavern}}.
+|-
+|{{AL|C}}| [[File:SR-icon-armor-Vampire Boots.png|48px]]
+| {{Anchor|Vampire Boots}}<br>{{ID|xx00b5de|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 2 || 25 || 7
+|
+*One set can be looted off the [[Skyrim:Traveler|Traveler]] when encountered.
+*Worn by all vampires.
+*Can be bought from Hestla if the Volkihar are joined.
+|-
+|{{AL|C}}| [[File:SR-icon-armor-Vampire Gauntlets.png|48px]]
+| {{Anchor|Vampire Gauntlets}}<br>{{ID|xx01a51f|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 1.5 || 25 || 8
+|
+*One set can be looted off the [[Skyrim:Traveler|Traveler]] when encountered.
+*One set can be found in [[Skyrim:Castle Volkihar#Volkihar Undercroft|Volkihar Undercroft]].
+*One set can be found in [[Skyrim:Volkihar_Keep|Volkihar Keep]].
+*Can be bought from Hestla if the Volkihar Vampires are joined.
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Vampire Boots.png|48px]]
+| {{Anchor|Vampire Boots}}<br>{{ID|xx019ae1|par=1}} || Clothing
+| Not possible
+| 1 || 2 || 0
+|
+*Two are found in the coffin room of Volkihar Castle, on each side of the table.
+*One can be found inside [[Skyrim:Bloodchill Cavern|Bloodchill Cavern]]{{CC|Bloodchill Cavern}}.
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Vampire Gloves.png|48px]]
+| {{Anchor|Vampire Gloves}}<br>{{ID|xx019ae3|par=1}} || Clothing
+| Not possible
+| 0.5 || 1 || 0
+|
+*A pair is worn by the Advisor during [[Skyrim:A Jarl's Justice|A Jarl's Justice]] if you joined the Dawnguard.
+*A pair can be found on [[Skyrim:Tusked_Terror|Fangtusk]]{{CC|Fishing}}.
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Vampire Hood.png|48px]]
+| {{Anchor|Vampire Hood}}<br>{{ID|xx019ade|par=1}} || Clothing
+| Not possible
+| 0.5 || 1 || 0
+|
+*Worn by the Advisor during the quest "A Jarl's Justice", otherwise they are unavailable if you join the Volkihar.
+*One can be found inside [[Skyrim:Bloodchill Cavern|Bloodchill Cavern]]{{CC|Bloodchill Cavern}}.
+|-
+|{{AL|C}}| [[File:SR-icon-clothing-Vampire Leather Hood.png|48px]]
+| {{Anchor|Vampire Leather Hood}}{{CC|Bloodchill Manor}}<br>{{ID|0d089eef|par=1}} || Clothing
+| Not possible
+| 1 || 1 || 0
+|
+*One can be found inside [[Skyrim:Bloodchill Cavern|Bloodchill Cavern]]{{CC|Bloodchill Cavern}}.
+|-
+| [[File:SR-icon-armor-Vampire Royal Armor (m).png|48px]][[File:SR-icon-armor-Vampire Royal Armor xx00b5db (f).png|48px]]
+| {{Anchor|Vampire Lord Armor}}<br>{{ID|xx011a84|par=1}} || Clothing
+| Not possible
+| 1 || 250 || 0
+|
+*Only equippable through the console.
+**If Vampire Lord is activated at the same time as interacting with a follower, a set can be found in your inventory and given to them. It is able to be enchanted and also able to be worn with other armors in human form, but if you are wearing this item when you transform back, it gets deleted. The armor is invisible in your regular form; in Vampire Lord form, it's the pieces of gold and loincloth.
+|-
+| [[File:SR-icon-clothing-Vampire Robes (m).png|48px]][[File:SR-icon-clothing-Vampire Robes (f).png|48px]]
+| {{Anchor|Vampire Robes}}<br>{{ID|xx019adf|par=1}} || Clothing
+| Not possible
+| 1 || 5 || 0
+|
+*Worn by the Advisor during "A Jarl's Justice"; otherwise, may be worn by vampires instead of Vampire Armor.
+*The male version is a knee-length tunic with no pants.
+|-
+| [[File:SR-icon-armor-Vampire Royal Armor (m).png|48px]][[File:SR-icon-armor-Vampire Royal Armor xx00b5db (f).png|48px]]<br>[[File:SR-icon-armor-Vampire Royal Armor (m).png|48px]][[File:SR-icon-armor-Vampire Royal Armor xx0194c5 (f).png|48px]]
+| {{Anchor|Vampire Royal Armor}}<br>{{ID|xx00b5db|Red|par=1}}<br>{{ID|xx0194c5|Valerica|par=1}}<br>{{ID|xx011a85|Vampire Lord|par=1}}|| Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;[[Skyrim:Advanced Armors|Advanced]]
+| 9 || 655 || 30
+| Magicka regenerates 125% faster.
+*The first version {{ID|xx00b5db|par=1}} can be found in [[Skyrim:Castle Volkihar|Castle Volkihar]].
+{{bug|The second version {{ID|xx0194c5|par=1}} cannot be tempered.|dlc=DG|confirmed=yes|modnotes=Tempering recipe missing from files.}}
+*The third version {{ID|xx011a85|par=1}} cannot be worn by the player.
+*One can be found inside [[Skyrim:Bloodchill Cavern|Bloodchill Cavern]]{{CC|Bloodchill Cavern}}.
+|}
+
+==Notes==
+*The Vampire Gauntlets are the only piece of vampire-specific, non-unique equipment to be worn by only the randomly encountered Traveler. All other vampires (both named and generic) do not wear them. Similarly, the gloves, boots and hood are the only vampire equipment worn by the Advisor, who is only encountered if you join the Dawnguard.
+
+*The Vampire Hood can be found in the Bloodchill Manor, along with the Vampire Leather Hood.
+
+==Bugs==
+{{Bug|Wearing the red armor and being in first person will show your arms with the sleeves of the light grey armor, instead of the proper red and black ones.|confirmed=0}}
+{{Bug|The sleeves of vampire armor will clip notably through most close-fitting gauntlets and bracers, such as Elven Gauntlets, Leather Bracers, Glass Gauntlets, etc.|confirmed=0}}
+
+==Gallery==
+===Male===
+<gallery>
+File:SR-item-Vampire Armor Male.jpg|Vampire Armor (Black)
+File:SR-item-Vampire Armor Male 02.jpg|Vampire Armor (Gray)
+File:SR-item-Vampire Armor Male 03.jpg|Vampire Armor (Red)
+File:SR-item-Vampire Royal Armor Male.jpg|Vampire Royal Armor
+File:SR-item-Vampire Robes Male.jpg|Vampire Robes
+</gallery>
+===Female===
+<gallery>
+File:SR-item-Vampire Armor Female.jpg|Vampire Armor (Black)
+File:SR-item-Vampire Armor Female 02.jpg|Vampire Armor (Gray)
+File:SR-item-Vampire Armor Female 03.jpg|Vampire Armor (Red)
+File:SR-item-Vampire Royal Armor Female.jpg|Vampire Royal Armor
+File:SR-item-Vampire Royal Armor Female 02.jpg|Vampire Royal Armor (Valerica)
+File:SR-item-Vampire Robes Female.jpg|Vampire Robes
+</gallery>
+{{Skyrim Materials and Styles}}
