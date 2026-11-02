@@ -23,6 +23,7 @@ if [ -x .venv/bin/python ]; then PY=.venv/bin/python; else PY=python3; fi
 
 # 2. Rebuild the quest list
 "$PY" scripts/build_quests.py || { echo "Quest rebuild failed. Nothing was pushed."; exit 1; }
+"$PY" scripts/update_ids.py   # new ids get share-link numbers; old ones never change
 
 # 3. Checks: problems are reported, not fatal
 NOTES=""

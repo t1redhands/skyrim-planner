@@ -82,6 +82,7 @@ nav.steps button:hover { color: var(--ink); }
 
 main { padding-block: 24px 48px; display: grid; gap: 24px; }
 main:focus { outline: none; }
+hr.step-split { border: 0; border-top: 1px solid var(--rule); margin: 8px 0; }
 @media (max-width: 640px) {
   .top-row { padding-block: 8px; }
   .top-row h1 { font-size: 1.3rem; }
@@ -212,11 +213,16 @@ textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px soli
   .move-steps { gap: 12px; }
 }
 .move-line { margin: 0 0 4px; }
+.coll-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 18px; }
+.coll-item { display: flex; gap: 8px; align-items: flex-start; font-size: .92rem; }
+.coll-item input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--accent); }
+.coll-item.done strong { text-decoration: line-through; color: var(--ink-2); }
 .cr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 20px; margin-top: 6px; }
 .cr-grid h4 { margin: 0 0 4px; font-family: var(--display); font-weight: 400; color: var(--accent); }
 .cr-grid ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .92rem; }
 .cr-grid .btn { padding: 2px 8px; font-size: .8rem; margin-left: 4px; }
 .cr-facts { margin: 6px 0 0; padding-left: 18px; font-size: .92rem; display: grid; gap: 3px; }
+.ql-head { margin: 10px 0 2px; font-family: var(--display); font-weight: 400; color: var(--accent); }
 .qb-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 14px; }
 .qb-filters select, .qb-filters .search { width: 100%; max-width: none; padding: 7px 8px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); }
 .plant { color: var(--good); }
@@ -432,6 +438,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
   .ps-q ol { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; }
   .ps-q li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
   .ps-q li .muted { color: #555; }
+  .ps-lists { break-before: page; }
+  .ps-lists > div:first-child h2 { margin-top: 0; }
+  .ps-coll h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
+  .ps-coll h3 .muted { font-family: var(--body); font-weight: 400; font-size: 7.5pt; color: #555; }
+  .ps-coll ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 12pt; }
+  .ps-coll ul.many { columns: 4; font-size: 7.6pt; }
+  .ps-coll li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1pt; }
+  .ps-coll li .muted { color: #555; }
+  .ps-coll li.grp { padding-left: 0; text-indent: 0; font-weight: 700; color: #3d2c0b; margin-top: 2pt; break-after: avoid; }
   .ps-q li.done { color: #666; text-decoration: line-through; }
   .ps a { color: inherit; text-decoration: none; }
 }
@@ -447,10 +462,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <nav class="steps" role="tablist" aria-label="Planner steps">
       <button role="tab" id="tab-identity" aria-controls="p-identity" aria-selected="true" data-step="identity"><span class="n">1</span> Identity</button>
-      <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perk plan</button>
-      <button role="tab" id="tab-attributes" aria-controls="p-attributes" aria-selected="false" data-step="attributes"><span class="n">3</span> Attributes</button>
-      <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">4</span> Loadout</button>
-      <button role="tab" id="tab-household" aria-controls="p-household" aria-selected="false" data-step="household"><span class="n">5</span> Household</button>
+      <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perks and attributes</button>
+      <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">3</span> Loadout</button>
+      <button role="tab" id="tab-household" aria-controls="p-household" aria-selected="false" data-step="household"><span class="n">4</span> Household</button>
+      <button role="tab" id="tab-collections" aria-controls="p-collections" aria-selected="false" data-step="collections"><span class="n">5</span> Collections</button>
       <button role="tab" id="tab-quests" aria-controls="p-quests" aria-selected="false" data-step="quests"><span class="n">6</span> Quest plan</button>
       <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">7</span> Summary</button>
     </nav>
@@ -475,10 +490,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
           <li><strong>Identity.</strong> Name, race, alignment, combat style, and whether the character becomes a werewolf or vampire. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
-          <li><strong>Perk plan.</strong> Pick perks in each skill tree and the milestone for each. You get one perk per level, and the planner works out the skill levels you'll need.</li>
-          <li><strong>Attributes.</strong> Split your level-ups between Health, Magicka and Stamina.</li>
-          <li><strong>Loadout.</strong> Standing Stones, shouts, weapons, apparel, potions, food and scrolls. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
+          <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need.</li>
+          <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
+          <li><strong>Collections.</strong> Checklists for things to collect, such as skill books, Daedric artifacts and Dragon Priest masks. Collections you take on add their quests to the plan.</li>
           <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Choose your Civil War and Dawnguard sides here, browse every quest by questline, place or add-on, and tick quests off as you play.</li>
           <li><strong>Summary.</strong> The whole build on one page, ready to print, plus a build code to save or share.</li>
         </ol>
@@ -560,11 +575,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
         </table>
       </div>
     </div>
-  </section>
+    <hr class="step-split">
 
-  <!-- 3. Attributes -->
-  <section class="panel" id="p-attributes" role="tabpanel" aria-labelledby="tab-attributes" hidden>
-    <div class="intro">
+    <div class="intro" id="attrs">
       <h2>Health, Magicka and Stamina</h2>
       <p class="muted">Every level-up adds 10 to one attribute. Split the level-ups in each stretch of play; each point of Stamina also adds 5 carry weight.</p>
     </div>
@@ -577,7 +590,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <h3>Totals at each milestone</h3>
       <div class="ratio" id="ratio"></div>
     </div>
-  </section>
+    </section>
+
+  <!-- 3. Attributes -->
+
 
   <!-- 4. Loadout -->
   <section class="panel" id="p-loadout" role="tabpanel" aria-labelledby="tab-loadout" hidden>
@@ -778,6 +794,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
+  <section class="panel" id="p-collections" role="tabpanel" aria-labelledby="tab-collections" hidden>
+    <div class="intro">
+      <h2>Collections</h2>
+      <p class="muted">Take on collection challenges and tick items off as you find them. Collections you take on add the quests their items need to your quest plan.</p>
+    </div>
+    <div id="collTally" class="milestones"></div>
+    <div class="gear-sets" id="collList"></div>
+  </section>
+
   <!-- 6. Quest plan -->
   <section class="panel" id="p-quests" role="tabpanel" aria-labelledby="tab-quests" hidden>
     <div class="intro">
@@ -807,6 +832,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <div id="questProblems"></div>
     <div id="questPlan" class="quest-plan"></div>
+    <div class="box">
+      <h3>Add a whole questline</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">Add every quest in a line at once, then change any single quest's tier in the plan above. Quests that others depend on move up automatically, so a prerequisite is always at least as urgent as the quest that needs it. Lines your sides leave out are skipped.</p>
+      <div class="perks" id="questLines"></div>
+    </div>
     <div class="box">
       <h3>Browse quests</h3>
       <p class="muted" style="margin:0;font-size:.9rem">Every quest in the data. Narrow it down, then add quests to your Priority or Selected tiers. Places are matched from where each quest starts and takes place, so a city filter also catches quests in that city's hold landmarks.</p>
@@ -875,6 +905,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="box"><h3>Role-play notes</h3><div id="sheetNotes" class="perk-list"></div></div>
     </div>
     <div class="box"><h3>Shopping list</h3><p class="muted" style="margin:0;font-size:.9rem">Ingredients for your favorite potions and food, also printed on the build sheet.</p><div id="sheetShop" class="perk-list"></div></div>
+    <div class="box"><h3>Collections</h3><p class="muted" style="margin:0;font-size:.9rem">Collections you've taken on. The build sheet prints a checklist for each.</p><div id="sheetColl" class="perk-list"></div></div>
     <div class="box quest-check">
       <h3>Quest checklist</h3>
       <p class="muted" style="margin:0;font-size:.9rem">In play order within each tier. Prerequisites come before the quests that need them.</p>
@@ -980,10 +1011,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household', 'spells', 'buffs'].map(n => get(n + '.json')));
+    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household', 'spells', 'buffs', 'ids', 'collections'].map(n => get(n + '.json')));
   } catch (e) {
     document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads eight files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code>, <code>quests.json</code> and <code>household.json</code>. Check that all eight are there and reload the page.</p></div>`;
     return;
@@ -992,6 +1023,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const SHOUTS = SHOUTDATA.shouts, SH = Object.fromEntries(SHOUTS.map(s => [s.id, s]));
   const SPELLS = SPELLDATA.spells, SPL = Object.fromEntries(SPELLS.map(s => [s.id, s]));
   const BUFFS = BUFFDATA.buffs, BF = Object.fromEntries(BUFFS.map(b => [b.id, b]));
+  const COLLS = COLLDATA.collections, CL = Object.fromEntries(COLLS.map(c => [c.id, c]));
   const MOVE_KINDS = [['shout', 'Shout'], ['spell', 'Spell'], ['potion', 'Potion'], ['poison', 'Poison'], ['enchant', 'Enchantment'], ['power', 'Power'], ['scroll', 'Scroll'], ['gear', 'Weapon or gear'], ['other', 'Other']];
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   // enchanting and crafting plans for chosen gear
@@ -1127,7 +1159,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- State ----------
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -1165,6 +1197,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     const keep = (src, ok) => Object.fromEntries(Object.entries(src && typeof src === 'object' ? src : {}).filter(([k, v]) => ok[k] && MS.includes(v)));
     out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
+    // collections you've taken on, and the items you've found ("collection/item")
+    out.collections = {};
+    if (s.collections && typeof s.collections === 'object') for (const [k, v] of Object.entries(s.collections)) {
+      if (!CL[k] || !v) continue;
+      out.collections[k] = v.tier === 'expedite' && MS.includes(v.m) ? { tier: 'expedite', m: v.m } : { tier: 'selected' };
+    }
+    out.got = Object.fromEntries(Object.keys(s.got && typeof s.got === 'object' ? s.got : {}).filter(k => { const [c, i] = k.split('/'); return CL[c]?.items.some(x => x.id === i); }).map(k => [k, true]));
     out.creature = s.creature && ['werewolf', 'vampire'].includes(s.creature.kind) && MS.includes(s.creature.m) ? { kind: s.creature.kind, m: s.creature.m } : null;
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
@@ -1191,7 +1230,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.cwSide = ['imperial', 'stormcloak', 'none'].includes(s.cwSide) ? s.cwSide : 'none';
     out.dgSide = ['dawnguard', 'volkihar', 'none'].includes(s.dgSide) ? s.dgSide : 'none';
     out.skipConflicts = !!s.skipConflicts;
-    out.quests = Object.fromEntries(Object.entries(s.quests && typeof s.quests === 'object' ? s.quests : {}).filter(([k]) => QID[k]).map(([k, v]) => [k, v === 'priority' ? 'priority' : 'selected']));
+    // your own quest tiers: 'priority', 'selected', or 'e20' / 'e40' / 'e60' for Expedite by that level
+    out.quests = Object.fromEntries(Object.entries(s.quests && typeof s.quests === 'object' ? s.quests : {}).filter(([k]) => QID[k]).map(([k, v]) => [k, ['priority', 'e20', 'e40', 'e60'].includes(v) ? v : 'selected']));
     out.followers = keep(s.followers, FOL); out.homes = keep(s.homes, HOM);
     out.spouse = s.spouse && SPO[s.spouse.id] && MS.includes(s.spouse.m) ? { id: s.spouse.id, m: s.spouse.m } : null;
     out.done = Object.fromEntries(Object.entries(s.done && typeof s.done === 'object' ? s.done : {}).filter(([k, v]) => QID[k] && v === true));
@@ -1225,12 +1265,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
-    ['identity','skills','attributes','loadout','household','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    if (step === 'attributes') step = 'skills';   // attributes now live on the perk step
+    ['identity','skills','loadout','household','collections','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
     if (step === 'household') renderHousehold();
     if (step === 'quests') renderQuests();
     if (step === 'skills') renderSkills();
     if (step === 'loadout') renderLoadout();
-    if (step === 'attributes') renderAttributes();
+    if (step === 'skills') renderAttributes();
+    if (step === 'collections') renderCollections();
     if (step === 'summary') renderSummary();
     try { localStorage.setItem('skp.step', step); } catch {}
     window.scrollTo({ top: 0 });
@@ -2157,6 +2199,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (hm.questsAny) { const q = pickAlt(hm.questsAny); if (q) out.push({ q, m, label: `Home: ${hm.name}` }); }
     }
     if (state.creature) { const C = CREATURE[state.creature.kind], n = becomeQuest(state.creature.kind), q = n && pickAlt([n]); if (q) out.push({ q, m: state.creature.m, label: `Becoming a ${C.name.toLowerCase()}` }); }
+    for (const c of COLLS) {
+      const v = state.collections[c.id]; if (!v) continue;
+      const names = [...new Set([c.quest, ...c.items.filter(i => !i.ref && !state.got[`${c.id}/${i.id}`]).map(itemQuest)].filter(Boolean))];
+      for (const n of names) { const q = pickAlt([n]); if (!q) continue; (v.tier === 'selected' ? selectedShouts : out).push({ q, m: v.tier === 'selected' ? Infinity : v.m, label: `Collection: ${c.name}` }); }
+    }
     for (const b of BUFFS) {
       const v = state.buffs[b.id]; if (!v) continue;
       for (const n of b.quests) { const q = pickAlt([n]); if (!q) { problems.push(`${b.name} comes from ${n}, which your sides or alignment leave out.`); continue; } (v.tier === 'selected' ? selectedShouts : out).push({ q, m: v.tier === 'selected' ? Infinity : v.m, label: `Buff: ${b.name}` }); }
@@ -2168,7 +2215,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     out.forEach(t => { t.tier = 0; });   // everything above is needed by the build
     selectedShouts.forEach(t => { t.tier = 2; out.push(t); });   // shouts and spells with no deadline go in Selected
-    for (const [id, v] of Object.entries(state.quests)) out.push({ q: QID[id], m: Infinity, tier: v === 'priority' ? 1 : 2, label: v === 'priority' ? 'Added to Priority' : 'Added by you' });
+    for (const [id, v] of Object.entries(state.quests)) out.push(v[0] === 'e' ? { q: QID[id], m: +v.slice(1), tier: 0, label: `You set this to Expedite by ${v.slice(1)}` } : { q: QID[id], m: Infinity, tier: v === 'priority' ? 1 : 2, label: v === 'priority' ? 'Added to Priority' : 'Added by you' });
     return { targets: out, problems };
   }
   const TIERS = [
@@ -2176,6 +2223,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     { id: 'priority', title: 'Priority', blurb: 'Role-play quests that suit this character. Add them from the suggestions above, or from the search below.' },
     { id: 'selected', title: 'Selected', blurb: "Other quests you've chosen to do. Add them with the search below." },
   ];
+  // tier choices for any quest in the plan; "As needed" leaves it where the build puts it
+  const tierOptions = cur => [['', cur ? 'Remove from my picks' : 'As needed'], ...MS.map(m => ['e' + m, `Expedite by ${m}`]), ['priority', 'Priority'], ['selected', 'Selected']]
+    .map(([v, l]) => `<option value="${v}"${(cur || '') === v ? ' selected' : ''}>${l}</option>`).join('');
   function buildQuestPlan() {
     const { targets, problems } = questTargets();
     const plan = {};   // id -> { q, m, tier, why:Set, leadsTo:Set }; tier 0 Expedite, 1 Priority, 2 Selected
@@ -2303,11 +2353,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
             <div class="pr">${[q.giver ? `Start: ${esc(q.giver)}` : '', q.loc ? esc(q.loc) : ''].filter(Boolean).concat(`<a href="https://en.uesp.net/wiki/${encodeURI(q.page.replace(/ /g, '_'))}" target="_blank" rel="noopener">UESP</a>`).join(' · ')}</div>
             ${q.reward ? `<div class="pr">Reward: ${esc(q.reward)}</div>` : ''}
             ${warn.map(x => `<div class="pw">${esc(x)}</div>`).join('')}
-            ${mine ? `<div class="row" style="margin-top:4px"><button class="btn quiet" data-move="${id}" data-to="${mine === 'priority' ? 'selected' : 'priority'}">Move to ${mine === 'priority' ? 'Selected' : 'Priority'}</button><button class="btn quiet" data-remove="${id}">Remove</button></div>` : ''}</div></li>`;
+            <div class="row" style="margin-top:4px"><label class="rank"><span class="rl">Tier</span><select id="qt-${id}" data-qtier="${id}" class="${mine ? 'on' : ''}" aria-label="Tier for ${esc(q.name)}">${tierOptions(mine)}</select></label></div></div></li>`;
         }).join('')}</ol>` : ''}`, { cls: `qms tier-${tier.id}`, chosen: 0, count: ids.length ? `${done} of ${ids.length} done` : 'none yet' });
       }).join('');
     }
     renderQuestSearch();
+    renderQuestLines();
   }
   // places a quest mentions, from its location and giver text; landmarks count for their city
   const PLACES = [
@@ -2355,9 +2406,71 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="pe">${esc(x.description)}</div>
         <div class="pr">${[x.giver ? `Start: ${esc(x.giver)}` : '', x.loc ? esc(x.loc) : '', x.prev.length ? `After ${esc(x.prev.join(x.prevAny ? ' or ' : ', '))}` : ''].filter(Boolean).join(' · ')}</div>
         ${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
-        <div class="ranks"><label class="rank"><span class="rl">Add as</span><select class="${state.quests[x.id] ? 'on' : ''}" id="qa-${x.id}" data-addq="${x.id}" aria-label="Add ${esc(x.name)} as"><option value="">Not added</option><option value="priority"${state.quests[x.id] === 'priority' ? ' selected' : ''}>Priority</option><option value="selected"${state.quests[x.id] === 'selected' ? ' selected' : ''}>Selected</option></select></label></div></div>`).join('')
+        <div class="ranks"><label class="rank"><span class="rl">Add as</span><select class="${state.quests[x.id] ? 'on' : ''}" id="qa-${x.id}" data-addq="${x.id}" aria-label="Add ${esc(x.name)} as">${tierOptions(state.quests[x.id]).replace('>As needed<', '>Not added<')}</select></label></div></div>`).join('')
       : '<p class="muted" style="margin:12px 0">No quests match these filters.</p>';
   }
+  // ---------- Collections ----------
+  const itemQuest = it => it.quest || (it.gear && (GR[it.gear]?.quest || (QREWARD[GR[it.gear]?.name.toLowerCase()] || [])[0]?.name)) || null;
+  const collProgress = c => { const real = c.items.filter(i => !i.ref); return [real.filter(i => state.got[`${c.id}/${i.id}`]).length, real.length]; };
+  let collHideFound = false;
+  function renderCollections() {
+    const taken = COLLS.filter(c => state.collections[c.id]);
+    $('collTally').innerHTML = taken.length ? taken.map(c => { const [g, n] = collProgress(c), v = state.collections[c.id];
+      return `<div class="ms${g === n ? ' ok' : ''}"><div class="ms-head"><span class="ms-level" style="font-size:1.05rem">${esc(c.name)}</span>${g === n ? '<span class="pill ok">Complete</span>' : ''}</div>
+        <div class="xpbar"><i style="width:${n ? Math.round(g / n * 100) : 0}%"></i></div>
+        <div class="ms-stats"><span><strong class="num">${g}</strong> of ${n} found</span><span>${v.tier === 'expedite' ? `by level ${v.m}` : 'no deadline'}</span></div></div>`; }).join('')
+      : '<div class="ms"><div class="ms-note">No collections taken on yet. Choose one below.</div></div>';
+    const row = (c, it) => {
+      const key = `${c.id}/${it.id}`, q = itemQuest(it), g = it.gear && GR[it.gear];
+      if (it.ref) { const rc = CL[it.ref]; const [a, n] = rc ? collProgress(rc) : [0, 0];
+        return `<li class="coll-item"><span class="box-glyph" aria-hidden="true">${rc && a === n ? '☑' : '▣'}</span><div><strong>${esc(it.name)}</strong> <span class="muted">· ${rc ? `${a} of ${n} found in ${esc(rc.name)}` : esc(it.where || '')}</span>${it.where && rc ? `<div class="pr">${esc(it.where)}</div>` : ''}</div></li>`; }
+      if (collHideFound && state.got[key]) return '';
+      return `<li class="coll-item${state.got[key] ? ' done' : ''}"><input type="checkbox" id="cg-${c.id}-${it.id}" data-got="${key}" ${state.got[key] ? 'checked' : ''}><div><label for="cg-${c.id}-${it.id}"><strong>${esc(it.name)}</strong></label>${q ? `<span class="tagd q">${esc(q)}</span>` : ''}${g && state.gear[g.id] != null ? '<span class="tagd fit">In your gear plan</span>' : ''}
+        ${it.where ? `<div class="pr">${esc(it.where)}</div>` : ''}</div></li>`;
+    };
+    const body = c => {
+      const groups = [...new Set(c.items.map(i => i.group || ''))];
+      return groups.map(gname => { const list = c.items.filter(i => (i.group || '') === gname).map(it => row(c, it)).join(''); return list ? `${gname ? `<h4 class="ql-head">${esc(gname)}</h4>` : ''}<ul class="coll-list">${list}</ul>` : ''; }).join('');
+    };
+    $('collList').innerHTML = `<div class="row"><label class="check"><input type="checkbox" id="collHide" ${collHideFound ? 'checked' : ''}> Hide items I've found</label></div>` + foldBar('collList') + COLLS.map(c => {
+      const v = state.collections[c.id], cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m, [g, n] = collProgress(c);
+      const qs = [...new Set([c.quest, ...c.items.filter(i => !i.ref).map(itemQuest)].filter(Boolean))];
+      return fold(`coll-${c.id}`, `${esc(c.name)}${c.dlc ? ` <span class="tagd">${DLC[c.dlc]}</span>` : ''}${v ? ' <span class="tagd fit">Taken on</span>' : ''}`, `<p class="muted" style="margin:0">${esc(c.blurb)} <a href="${c.source}" target="_blank" rel="noopener">UESP</a></p>
+        <div class="row"><label class="rank"><span class="rl">Take it on</span><select class="${v ? 'on' : ''}" id="co-${c.id}" data-coll="${c.id}" aria-label="${esc(c.name)}: take it on"><option value="">Not taking it on</option>${MS.map(m => `<option value="e${m}"${cur === 'e' + m ? ' selected' : ''}>Expedite by ${m}</option>`).join('')}<option value="sel"${cur === 'sel' ? ' selected' : ''}>Selected</option></select></label>
+          <span class="muted" style="font-size:.9rem">${qs.length ? `${qs.length} quest${qs.length === 1 ? '' : 's'} go into your plan when you take it on.` : 'No quests needed.'}</span></div>${body(c)}`,
+        { count: `${g} of ${n}`, chosen: 0, open: false, force: false });
+    }).join('');
+  }
+  $('collList').addEventListener('change', e => {
+    const t = e.target;
+    if (t.id === 'collHide') { collHideFound = t.checked; renderCollections(); $('collHide')?.focus(); return; }
+    if (t.dataset.got) { if (t.checked) state.got[t.dataset.got] = true; else delete state.got[t.dataset.got]; touch(); renderCollections(); $(t.id)?.focus(); return; }
+    if (t.dataset.coll) { if (!t.value) delete state.collections[t.dataset.coll]; else state.collections[t.dataset.coll] = t.value === 'sel' ? { tier: 'selected' } : { tier: 'expedite', m: +t.value.slice(1) }; touch(); renderCollections(); $(t.id)?.focus(); }
+  });
+  // ---------- Whole questlines ----------
+  const LINE_GROUPS = [['Main stories', ['Main quest', 'Dawnguard main quest', 'Dragonborn main quest']], ['Factions', FACTION_LINES], ['Other questlines', ['Daedric quest', 'Divine quest', 'Dawnguard side quest', 'Dragonborn side quest', 'Side quest', 'Dungeon quest', 'Hearthfire']]];
+  const lineQuests = line => QUESTS.filter(x => x.line === line && !x.minor && !sideBlock(x));
+  function renderQuestLines() {
+    const { plan } = buildQuestPlan();
+    $('questLines').innerHTML = LINE_GROUPS.map(([g, lines]) => `<h4 class="ql-head">${g}</h4>` + lines.map(line => {
+      const all = QUESTS.filter(x => x.line === line && !x.minor), ok = lineQuests(line);
+      if (!all.length) return '';
+      const inPlan = ok.filter(x => plan[x.id]).length, mine = ok.filter(x => state.quests[x.id]).length, done = ok.filter(x => state.done[x.id]).length;
+      const blocked = !ok.length;
+      return `<div class="perk"><div><div class="pn">${esc(line)}</div>
+        <div class="pr">${blocked ? `<span class="pw" style="display:inline">${esc(sideBlock(all[0]) || 'Left out by your plan.')}</span>` : `${ok.length} quests · ${inPlan} in your plan${done ? ` · ${done} done` : ''}${all.length > ok.length ? ` · ${all.length - ok.length} left out by your sides` : ''}`}</div></div>
+        <div class="ranks">${blocked ? '' : `<label class="rank"><span class="rl">Add all as</span><select id="ql-${slugify(line)}" data-line="${esc(line)}" aria-label="Add all ${esc(line)} quests as"><option value="">Choose…</option>${MS.map(m => `<option value="e${m}">Expedite by ${m}</option>`).join('')}<option value="priority">Priority</option><option value="selected">Selected</option>${mine ? '<option value="remove">Remove my picks</option>' : ''}</select></label>`}</div></div>`;
+    }).join('')).join('');
+  }
+  const slugify = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  $('questLines').addEventListener('change', e => {
+    const el = e.target.closest('select[data-line]'); if (!el || !el.value) return;
+    const qs = lineQuests(el.dataset.line);
+    // keep tiers you already set by hand: a whole-line add never lowers a quest you've marked more urgent
+    const rank = v => !v ? 9 : v[0] === 'e' ? +v.slice(1) / 100 : v === 'priority' ? 1 : 2;
+    qs.forEach(x => { if (el.value === 'remove') delete state.quests[x.id]; else if (rank(el.value) < rank(state.quests[x.id])) state.quests[x.id] = el.value; });
+    touch(); renderQuests(); $(el.id)?.focus();
+  });
   $('questSearch').addEventListener('input', () => { qbShown = 30; renderQuestSearch(); });
   ['qbType', 'qbPlace', 'qbDlc', 'qbStatus', 'qbLevel', 'qbFits', 'qbAlign', 'qbMinor'].forEach(id => $(id).addEventListener('change', () => { qbShown = 30; renderQuestSearch(); }));
   $('qbMore').addEventListener('click', () => { qbShown += 30; renderQuestSearch(); });
@@ -2372,6 +2485,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (rm) { delete state.quests[rm.dataset.remove]; touch(); renderQuests(); }
   });
   $('questPlan').addEventListener('change', e => {
+    const t = e.target.closest('select[data-qtier]');
+    if (t) { if (t.value) state.quests[t.dataset.qtier] = t.value; else delete state.quests[t.dataset.qtier]; touch(); renderQuests(); $(t.id)?.focus(); return; }
     const el = e.target.closest('input[data-done]'); if (!el) return;
     if (el.checked) state.done[el.dataset.done] = true; else delete state.done[el.dataset.done];
     touch(); renderQuests(); $(el.id)?.focus();
@@ -2531,7 +2646,65 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const unb64url = t => Uint8Array.from(atob(t.replace(/-/g, '+').replace(/_/g, '/') + '==='.slice((t.length + 3) % 4)), c => c.charCodeAt(0));
   const pipe = async (bytes, stream) => new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer());
   const legacy = s => btoa(unescape(encodeURIComponent(JSON.stringify({ ...s, example: false }))));
+  // Share links v3: ids are replaced by their position in data/ids.json (an append-only list), written in base 36
+  const IDL = IDDATA.lists, IDX = Object.fromEntries(Object.entries(IDL).map(([k, l]) => [k, new Map(l.map((id, i) => [id, i.toString(36)]))]));
+  const toI = (kind, id) => IDX[kind]?.get(id), fromI = (kind, t) => IDL[kind]?.[parseInt(t, 36)];
+  const mapKeys = (o, kind, val = v => v) => Object.fromEntries(Object.entries(o || {}).map(([k, v]) => [toI(kind, k), val(v)]).filter(([k]) => k != null));
+  const unKeys = (o, kind, val = v => v) => Object.fromEntries(Object.entries(o || {}).map(([k, v]) => [fromI(kind, k), val(v)]).filter(([k]) => k != null));
+  // milestones and tiers in one or two characters
+  const tierPack = v => v?.tier === 'selected' ? 's' : v?.tier === 'expedite' ? 'e' + v.m : v;
+  const tierUnpack = t => t === 's' ? { tier: 'selected' } : typeof t === 'string' && t[0] === 'e' ? { tier: 'expedite', m: +t.slice(1) } : t;
+  function pack(s) {
+    const byM = obj => { const o = {}; for (const [k, m] of Object.entries(obj || {})) (o[m] ||= []).push(k); return o; };
+    return strip({
+      n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands,
+      p: Object.fromEntries(Object.entries(byM(s.picks)).map(([m, ks]) => [m, ks.map(k => toI('perk', k)).filter(x => x != null).join(',')])),
+      sn: Object.fromEntries(Object.entries(s.stones || {}).map(([m, id]) => [m, id && toI('stone', id)])),
+      g: Object.fromEntries(Object.entries(byM(s.gear)).map(([m, ks]) => [m, ks.map(k => toI('gear', k)).filter(x => x != null).join(',')])),
+      md: mapKeys(s.mods, 'gear', md => strip({ h: md.how?.[0], e: (md.ench || []).map(e => e ? toI('ench', e) ?? '' : '') })),
+      sh: mapKeys(s.shouts, 'shout', v => strip({ t: tierPack(v), w: v.words === 3 ? null : v.words, k: v.skip })),
+      sp: mapKeys(s.spells, 'spell', tierPack), bf: mapKeys(s.buffs, 'buff', tierPack),
+      po: (s.potions || []).map(x => [x.effects.map(e => toI('effect', e)).join('.'), x.ingredients.map(i => toI('ingredient', i)).join('.')].join('-')),
+      fd: Object.keys(s.food || {}).map(k => toI('recipe', k)).filter(x => x != null).join(','),
+      sc: Object.keys(s.scrolls || {}).map(k => toI('scroll', k)).filter(x => x != null).join(','),
+      sd: Object.keys(s.spiders || {}).map(k => toI('spider', k)).filter(x => x != null).join(','),
+      su: s.scrollUse === 'none' ? null : s.scrollUse, du: s.spiderUse === 'none' ? null : s.spiderUse,
+      cw: s.cwSide === 'none' ? null : s.cwSide[0], dg: s.dgSide === 'none' ? null : s.dgSide[0], sk: s.skipConflicts ? 1 : null,
+      q: mapKeys(s.quests, 'quest', v => v === 'priority' ? 'p' : v === 'selected' ? 's' : v),
+      dn: Object.keys(s.done || {}).map(k => toI('quest', k)).filter(x => x != null).join(','),
+      f: mapKeys(s.followers, 'follower'), hm: mapKeys(s.homes, 'home'), sw: s.spouse ? [toI('spouse', s.spouse.id), s.spouse.m] : null,
+      cr: s.creature ? [s.creature.kind[0], s.creature.m] : null,
+      co: s.collections ? mapKeys(s.collections, 'collection', v => strip({ t: tierPack(v.tier === 'expedite' || v.tier === 'selected' ? v : null) })) : null,
+      cg: s.got ? Object.keys(s.got).map(k => toI('citem', k)).filter(x => x != null).join(',') : null,
+      nt: s.notes, mv: s.moves?.length ? s.moves.map(m => strip({ n: m.name, d: m.desc, s: m.steps.map(st => [st.kind[0] + st.kind.slice(1, 2), st.text]) })) : null,
+    });
+  }
+  const KIND2 = Object.fromEntries(['shout', 'spell', 'potion', 'poison', 'enchant', 'power', 'scroll', 'gear', 'other'].map(k => [k.slice(0, 2), k]));
+  function unpack(o) {
+    const fromM = (obj, kind) => { const out = {}; for (const [m, list] of Object.entries(obj || {})) String(list).split(',').filter(Boolean).forEach(t => { const id = fromI(kind, t); if (id) out[id] = +m; }); return out; };
+    const list = (str, kind) => Object.fromEntries(String(str || '').split(',').filter(Boolean).map(t => [fromI(kind, t), 1]).filter(([k]) => k));
+    return {
+      v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b,
+      picks: fromM(o.p, 'perk'), stones: Object.fromEntries(MS.map(m => [m, o.sn?.[m] != null ? fromI('stone', o.sn[m]) : null])),
+      gear: fromM(o.g, 'gear'),
+      mods: unKeys(o.md, 'gear', md => ({ how: md.h === 'c' ? 'crafted' : md.h === 'f' ? 'found' : undefined, ench: md.e ? md.e.map(t => t === '' ? '' : fromI('ench', t) || '') : undefined })),
+      shouts: unKeys(o.sh, 'shout', v => ({ ...tierUnpack(v.t), words: v.w || 3, skip: v.k })),
+      spells: unKeys(o.sp, 'spell', tierUnpack), buffs: unKeys(o.bf, 'buff', tierUnpack),
+      potions: (o.po || []).map(x => { const [e, i] = x.split('-'); return { effects: e.split('.').map(t => fromI('effect', t)), ingredients: i.split('.').map(t => fromI('ingredient', t)) }; }),
+      food: list(o.fd, 'recipe'), scrolls: list(o.sc, 'scroll'), spiders: list(o.sd, 'spider'),
+      scrollUse: o.su || 'none', spiderUse: o.du || 'none',
+      cwSide: { i: 'imperial', s: 'stormcloak' }[o.cw] || 'none', dgSide: { d: 'dawnguard', v: 'volkihar' }[o.dg] || 'none', skipConflicts: !!o.sk,
+      quests: unKeys(o.q, 'quest', v => v === 'p' ? 'priority' : v === 's' ? 'selected' : v),
+      done: Object.fromEntries(Object.keys(list(o.dn, 'quest')).map(k => [k, true])),
+      followers: unKeys(o.f, 'follower'), homes: unKeys(o.hm, 'home'), spouse: o.sw ? { id: fromI('spouse', o.sw[0]), m: o.sw[1] } : null,
+      creature: o.cr ? { kind: o.cr[0] === 'w' ? 'werewolf' : 'vampire', m: o.cr[1] } : null,
+      collections: o.co ? unKeys(o.co, 'collection', v => tierUnpack(v.t) || { tier: 'selected' }) : {},
+      got: Object.fromEntries(Object.keys(list(o.cg, 'citem')).map(k => [k, true])),
+      notes: o.nt || '', moves: (o.mv || []).map(m => ({ name: m.n || '', desc: m.d || '', steps: (m.s || []).map(([k, t]) => ({ kind: KIND2[k] || 'other', text: t })) })),
+    };
+  }
   async function encode(s) {
+    if (typeof CompressionStream !== 'undefined') return 'S3' + b64url(await pipe(new TextEncoder().encode(JSON.stringify(pack(s))), new CompressionStream('deflate-raw')));
     const json = JSON.stringify(strip(s));
     if (typeof CompressionStream === 'undefined') return legacy(s);
     return 'S2' + b64url(await pipe(new TextEncoder().encode(json), new CompressionStream('deflate-raw')));
@@ -2539,6 +2712,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   async function decode(c) {
     c = c.trim(); const m = c.match(/[#&?]b=([A-Za-z0-9_\-]+)/); if (m) c = m[1];   // a whole share link works too
     c = c.replace(/\s+/g, '');
+    if (c.startsWith('S3')) return unpack(JSON.parse(new TextDecoder().decode(await pipe(unb64url(c.slice(2)), new DecompressionStream('deflate-raw')))));
     if (c.startsWith('S2')) return JSON.parse(new TextDecoder().decode(await pipe(unb64url(c.slice(2)), new DecompressionStream('deflate-raw'))));
     return JSON.parse(decodeURIComponent(escape(atob(c))));
   }
@@ -2581,6 +2755,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('sheetNotes').innerHTML = state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="muted">None yet. Add them on the Identity step.</p>';
     const sl = shoppingList();
     $('sheetShop').innerHTML = sl.length ? `<ul class="shop">${sl.map(r => `<li><strong>${esc(r.name)}</strong>${r.plant ? ' <span class="tagd good">Can be planted</span>' : ''} <span class="muted">· for ${esc(r.uses.join(', '))}</span></li>`).join('')}</ul>` : '<p class="muted">Mark some potions or food as favorites to build a list.</p>';
+    const tk = COLLS.filter(c => state.collections[c.id]);
+    $('sheetColl').innerHTML = tk.length ? `<ul class="shop">${tk.map(c => { const [g, n] = collProgress(c), v = state.collections[c.id]; return `<li><strong>${esc(c.name)}</strong> <span class="muted">· ${g} of ${n} found · ${v.tier === 'expedite' ? `by level ${v.m}` : 'no deadline'}</span></li>`; }).join('')}</ul>` : '<p class="muted">None yet. Take some on in the Collections step.</p>';
     const { plan: qp, order: qo } = buildQuestPlan();
     $('sheetQuests').innerHTML = qo.length ? TIERS.map((tier, t) => {
       const ids = qo.filter(id => qp[id].tier === t); if (!ids.length) return '';
@@ -2656,11 +2832,22 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="ps-perks"><h2>Perks by milestone</h2>
           ${MS.map((m, k) => { const a = perksAddedAt(m); return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${a.length ? a.map(x => `${esc(x.text)} <span class="muted">(${x.skill})</span>`).join(', ') : '<span class="none">none</span>'}</p>`; }).join('')}</div>
       </div>
+      <div class="ps-lists">
       ${(() => { const sl = shoppingList(); return sl.length ? `<div class="ps-shop"><h2>Shopping list</h2><p class="ps-note" style="margin-top:0">Ingredients for your favorite potions and food.${sl.some(r => r.plant) ? ' ✿ can be grown in a Hearthfire garden.' : ''}</p><ul>${sl.map(r => `<li>☐ <strong>${esc(r.name)}</strong>${r.plant ? ' ✿' : ''} <span class="muted">· for ${esc(r.uses.join(', '))}${r.ing?.source && firstSentence(r.ing.source).length > 12 ? ` · ${esc(firstSentence(r.ing.source).slice(0, 90))}` : ''}</span></li>`).join('')}</ul></div>` : ''; })()}
       <div class="ps-q"><h2>Quest checklist</h2>
         ${order.length ? TIERS.map((tier, t) => { const ids = qn(t); if (!ids.length) return '';
           return `<h3>${tier.title} (${ids.length})</h3><ol>${ids.map(id => { const { q, m } = plan[id], giver = short(q.giver);
             return `<li class="${state.done[id] ? 'done' : ''}">${state.done[id] ? '☑' : '☐'} ${esc(q.name)} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by ${m}` : ''}${giver ? ` · ${esc(giver)}` : ''}</span></li>`; }).join('')}</ol>`; }).join('') : '<p class="none">No quests in the plan yet.</p>'}
+      </div>
+      ${(() => { const tk = COLLS.filter(c => state.collections[c.id]); if (!tk.length) return '';
+        return `<div class="ps-coll"><h2>Collections</h2>${tk.map(c => { const [g, n] = collProgress(c), v = state.collections[c.id], groups = [...new Set(c.items.map(i => i.group || ''))], many = c.items.length > 20;
+          return `<h3>${esc(c.name)} <span class="muted">· ${g} of ${n} found${v.tier === 'expedite' ? ` · by level ${v.m}` : ''}${c.home ? ` · displays in ${esc(c.home)}` : ''}</span></h3><ul class="${many ? 'many' : ''}">${groups.map(gn => (gn && groups.length > 1 ? `<li class="grp">${esc(gn)}</li>` : '') + c.items.filter(i => (i.group || '') === gn).map(it => {
+            const got = it.ref ? (CL[it.ref] && collProgress(CL[it.ref])[0] === collProgress(CL[it.ref])[1]) : state.got[`${c.id}/${it.id}`], q = it.ref ? '' : itemQuest(it);
+            const bare = it.name.replace(/^Stone \d+: /, ''), placeOnly = gn && bare === gn;   // stones are named by town; print where in town instead
+            const where = it.where && !(q && it.where.startsWith(`During ${q}`)) ? short(it.where) : '';
+            const label = placeOnly ? (short(it.where) || bare) : bare;
+            const sub = it.ref ? (CL[it.ref] ? `see ${CL[it.ref].name}` : '') : many ? '' : [q, placeOnly ? '' : where].filter(Boolean).join(' · ');
+            return `<li>${got ? '☑' : '☐'} ${esc(label)}${sub ? ` <span class="muted">· ${esc(sub)}</span>` : ''}</li>`; }).join('')).join('')}</ul>`; }).join('')}</div>`; })()}
       </div>
     </div>`;
   }
@@ -2708,7 +2895,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
 
   // ---------- About and credits ----------
-  const DATAFILES = [['Buffs', BUFFDATA], ['Spells', SPELLDATA], ['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA]];
+  const DATAFILES = [['Buffs', BUFFDATA], ['Spells', SPELLDATA], ['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA], ['Collections', COLLDATA]];
   const linkify = t => esc(t).replace(/https?:\/\/[^\s,;)]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${decodeURIComponent(u.replace(/^https?:\/\/(en\.uesp\.net\/wiki\/|elderscrolls\.fandom\.com\/wiki\/)?/, '')).replace(/_/g, ' ')}</a>`);
   $('credits').innerHTML = DATAFILES.map(([name, d]) => `<li><strong>${name}</strong>${d.asOf ? ` <span class="muted">· data from ${esc(d.asOf)}</span>` : ''}<div class="src">${linkify(d.license || '')}</div></li>`).join('');
   const openAbout = () => { const d = $('about'); if (d.showModal) d.showModal(); else d.setAttribute('open', ''); $('aboutClose').focus(); };
@@ -2753,6 +2940,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   checkShared(); window.addEventListener('hashchange', checkShared);
   let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
-  showStep(['identity','skills','attributes','loadout','household','quests','summary'].includes(step) ? step : 'identity');
+  showStep(['identity','skills','attributes','loadout','household','collections','quests','summary'].includes(step) ? step : 'identity');
 })();
 </script>

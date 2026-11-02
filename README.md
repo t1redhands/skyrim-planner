@@ -13,12 +13,12 @@ You plan in three milestones: **by level 20**, **by level 40** and **by level 60
 | Step | What you plan |
 | --- | --- |
 | 1. Identity | Name, race, alignment and combat style, whether the character becomes a werewolf or vampire (with matching quests, gear, buffs and stone), plus free-form role-play notes. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in a starting build for the chosen style. |
-| 2. Perk plan | Perks in all 18 skill trees and the milestone for each. You get one perk per level, and the planner works out the skill levels each perk needs. |
-| 3. Attributes | How your level-ups split between Health, Magicka and Stamina. |
-| 4. Loadout | Standing Stones, shouts (how many words, and where you'll get them), spells, weapons, apparel (including faction and specialty gear), potions with a full ingredient list, food, scrolls and spider scrolls, and signature moves: named combinations of shouts, spells, potions and enchantments. Standard gear can be marked as found or crafted, and given one or two enchantments. |
-| 5. Household | Followers, a spouse and homes, with the ones that suit your build marked. |
-| 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Prerequisites are added automatically, and quests your Civil War or Dawnguard side locks out are left out. A quest browser filters every quest by questline, place, add-on, status and level. |
-| 7. Summary | The whole build on one page, a printable build sheet with a quest checklist, and a build code to save or share. |
+| 2. Perks and attributes | Perks in all 18 skill trees and the milestone for each, and how your level-ups split between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels each perk needs. |
+| 3. Loadout | Standing Stones, shouts (how many words, and where you'll get them), spells, weapons, apparel (including faction and specialty gear), potions with a full ingredient list, food, scrolls and spider scrolls, and signature moves: named combinations of shouts, spells, potions and enchantments. Standard gear can be marked as found or crafted, and given one or two enchantments. |
+| 4. Household | Followers, a spouse and homes, with the ones that suit your build marked. |
+| 5. Collections | Checklists for skill books, Dragon Priest masks, Daedric artifacts, other artifacts, dragon claws, the Stones of Barenziah, the Black Books, and the display spots in the Creation Club homes Myrwatch, Tundra Homestead and Bloodchill Cavern. Take a collection on by a milestone (or with no deadline), and the quests for the items you haven't found yet go into the quest plan. |
+| 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Add a whole questline at once (the main story, a faction, an add-on), then change any single quest's priority. Prerequisites are added automatically and move up with the quests that need them, and quests your Civil War or Dawnguard side locks out are left out. A quest browser filters every quest by questline, place, add-on, status and level. |
+| 7. Summary | The whole build on one page, a printable build sheet, and a build code to save or share. The build sheet puts the build on page one and the checklists (shopping list, quests and collections) on the pages after. |
 
 Warnings marked ⚠ flag anything that can't happen as planned, such as gear that isn't available by its milestone or a shout whose words come from a quest your side skips.
 
@@ -27,6 +27,7 @@ Warnings marked ⚠ flag anything that can't happen as planned, such as gear tha
 - Your current build saves automatically in your browser.
 - **Save in this browser** keeps a named copy you can reload later.
 - **Copy build code** gives you a block of text that holds the whole build. Paste it into **Load from a build code** on any device to open the same build.
+- **Copy share link** gives you a link that opens the build directly. Links are kept short by storing each item as its position in `data/ids.json` instead of by name. That list only ever grows, so old links keep working after the data is refreshed.
 
 Builds are stored only in your own browser. Nothing is sent anywhere.
 
@@ -40,7 +41,7 @@ The game data in `data/` is the exception. It's summarized from wiki text licens
 
 Game data comes from community wikis and is summarized:
 
-- **[UESP, the Unofficial Elder Scrolls Pages](https://en.uesp.net/wiki/Skyrim:Skyrim)**, used under [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). This covers perks, leveling, races, Standing Stones, spells, gear, enchantments, alchemy, food, scrolls, followers, marriage, homes and quests.
+- **[UESP, the Unofficial Elder Scrolls Pages](https://en.uesp.net/wiki/Skyrim:Skyrim)**, used under [CC BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/). This covers perks, leveling, races, Standing Stones, spells, gear, enchantments, alchemy, food, scrolls, followers, marriage, homes, quests and collections.
 - **[The Elder Scrolls Wiki](https://elderscrolls.fandom.com/wiki/Dragon_Shouts)**, used under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). This covers shout word locations and Daedric artifact quests.
 
 Each data file in `data/` names the pages it came from. Because the source text is CC BY-SA, the data files are shared under the same terms. The planner's **About and credits** button lists every source with the date of its data.
@@ -57,6 +58,7 @@ data/                   Game data the planner loads (JSON)
 scripts/
   build_quests.py       Rebuilds data/quests.json from the saved quest pages
   check_data.py         Lists anything new on UESP that the planner doesn't have yet
+  update_ids.py         Adds new ids to data/ids.json, the append-only list share links use
 uesp_ingest.py          Downloads UESP pages and checks races and perks against them
 update-data.sh          Monthly refresh: download, rebuild, check, push
 ```
@@ -76,7 +78,7 @@ Then open <http://localhost:8000>.
 `update-data.sh` runs once a month from cron on the maintainer's server. It:
 
 1. downloads fresh copies of the UESP pages the planner uses, and every Skyrim quest page
-2. rebuilds `data/quests.json`
+2. rebuilds `data/quests.json` and adds any new ids to `data/ids.json`
 3. checks races and perks against UESP, and writes `data/source/CHECK_REPORT.md` listing any new items, followers, homes, ingredients or enchantments that UESP has and the planner doesn't
 4. commits and pushes the results
 
