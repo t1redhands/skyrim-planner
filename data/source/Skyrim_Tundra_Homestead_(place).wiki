@@ -1,0 +1,100 @@
+{{CC Header|Tundra Homestead}}{{Trail|Places|Houses}}[[Category:Skyrim-Tundra Homestead]][[Category:Skyrim-Creation Club-Places]]<noinclude>{{Cleanup-shrp
+|writtenby=Dillonn241
+|checkedby=Imperialbattlespire
+}}</noinclude>{{Place Summary
+|type=House
+|region=Whiterun Hold
+|image=SR-place-Tundra Homestead.jpg
+|imgdesc=Tundra Homestead
+|description=a cottage that can be purchased in [[Skyrim:Whiterun Hold|Whiterun Hold]], located just northeast of [[Skyrim:Battle-Born Farm|Battle-Born Farm]].
+|marker_id=Town
+|locationcode=0EEJSSE001House, 0EEJSSE001HouseBasement
+|zones=2
+|alchemy=1
+|cooking=1
+|enchanting=1
+|forge=1
+|grindstone=1
+|smelter=1
+|tanning=1
+|workbench=1
+|oven=1
+|respawn=never
+|location=East of [[SR:Whiterun|Whiterun]]
+|orenum=1
+|oretype=Corundum
+|mapname=Tundra Homestead (CC)
+|mod=[[Skyrim:Tundra Homestead|Tundra Homestead]]
+}}
+A note from the previous owner titled ''[[Skyrim:Homestead For Sale|Homestead For Sale]]'' is posted next to the door. The note directs you to the steward of [[Skyrim:Whiterun|Whiterun]], either [[Skyrim:Proventus Avenicci|Proventus Avenicci]] or [[Skyrim:Brill|Brill]], to buy the house for 7,500 gold.
+
+The cottage consists of two areas, ''[[#Tundra Homestead|Tundra Homestead]]'' and ''[[#Tundra Homestead, Cellar|Tundra Homestead, Cellar]].
+{{NewLeft}}
+<!-- ==Property Summary== -->
+<includeonly><onlyinclude>
+{| class="wikitable" style="margin-right:0;margin-top:0;width:100%"
+|colspan=4 {{BG|#ffdd66}}|<center>'''[[Skyrim:Tundra Homestead (place)|Tundra Homestead]]'''</center>
+|-
+!Home purchased from
+|height=40px; colspan=1|[[SR:Proventus Avenicci|Proventus Avenicci]] or [[Skyrim:Brill|Brill]]
+!Price to purchase Home
+|colspan=1|{{Value Icon}} <font style="font-size: 110%;"> 7,500 </font>
+|}</onlyinclude></includeonly>
+==Related Quests==
+* {{Quest Link|Bandit Attack}}
+* {{Quest Link|Build Your Own Home}}
+
+==Walkthrough==
+===Exterior===
+The property includes several outdoor features. Behind the cottage there is a garden with eight open plots of [[SR:Fertile Soil|Fertile Soil]], three [[Skyrim:Potato|potato]] plants, two [[Skyrim:Cabbage|cabbages]], two [[Skyrim:Gourd|gourds]], and two [[Skyrim:Leek|leeks]]. Nearby are two [[Skyrim:Apiary|apiaries]] that work the same way as the one at [[Skyrim:Lakeview Manor|Lakeview Manor]]. Two covered areas are in front of the house, and the one to the east has almost all the necessary [[Skyrim:Smithing|Smithing]] tools: a [[Skyrim:Smelter|smelter]], [[Skyrim:Anvil|anvil]], [[Skyrim:Grindstone|grindstone]], [[Skyrim:Tanning Rack|tanning rack]], and [[Skyrim:Workbench|workbench]]. The property itself does not include a [[Skyrim:Wood Chopping Block|wood chopping block]] (useful for [[Skyrim:Ammunition|ammunition]] crafting), but those can easily be found nearby in both [[Skyrim:Battle-Born Farm|Battle-Born Farm]] and [[Skyrim:Chillfurrow Farm|Chillfurrow Farm]].
+
+===Tundra Homestead===
+[[File:SR-interior-Tundra Homestead.jpg|Tundra Homestead interior|thumb|left]]
+The large room you enter into features a fireplace on the opposite wall with a [[Skyrim:Cooking Pot|cooking pot]] and a baking surface that functions as an [[Skyrim:Oven|oven]]. This room also contains several storage [[SR:Safe|safe]]s and a copy of [[SR:The Aetherium Wars|''The Aetherium Wars'']]. The bedroom on the left contains a double bed and two single beds intended for children, as well as shrines to [[SR:Shrine of Akatosh|Akatosh]] and [[SR:Shrine of Mara|Mara]]. On the right, there is a smaller circular room with an [[Skyrim:Alchemy Labs|alchemy lab]], an [[Skyrim:Arcane Enchanter|arcane enchanter]], and a [[SR:Shrine of Julianos|Shrine of Julianos]]. Notably, the [[Skyrim:Alchemy|Alchemy]] [[Skyrim:Skill Books|skill book]] ''[[Skyrim:A Game at Dinner|A Game at Dinner]]'' and [[Skyrim:Enchanting|Enchanting]] skill book ''[[Skyrim:Enchanter's Primer|Enchanter's Primer]]'' are found next to their respective crafting stations. A [[Skyrim:Bone Hawk Skull|Bone Hawk Skull]] can be found next to the arcane enchanter. This room has a trapdoor down to the cellar. 
+{{NewLeft}}
+
+===Tundra Homestead, Cellar===
+[[File:SR-interior-Tundra Homestead, Cellar.jpg|Tundra Homestead, Cellar|thumb|left]]
+At the bottom of the ladder, you find yourself in a circular room similar to the top level. Directly ahead is a large trophy room filled with display cases, mannequins, weapon racks, weapon plaques, and holders for various unique items. Four display cases and two mannequins in the center take up the majority of the space. Starting on the left, there is a wooden board with places to hold all ten [[Skyrim:Dragon Claw|dragon claws]]. Four mannequins, three display cases, and three weapon plaques cover the north wall. The east wall has two high shelves; one holds the five [[Skyrim:Miscellaneous Items#Bugs in a Jar|bugs in a jar]], [[Skyrim:Torsten's Skull Key|Torsten's Skull Key]], and [[SR:Saerek's Skull Key|Saerek's Skull Key]], while the other holds the five [[Skyrim:Other Unique Items|paragons]] from the [[Skyrim:Forgotten Vale|Forgotten Vale]], [[Skyrim:Auriel's Shield|Auriel's Shield]], and the [[Skyrim:Initiate's Ewer|Initiate's Ewer]]. Between these two shelves is a set of busts to hold all of the [[Skyrim:Dragon Priest Mask|dragon priest masks]] except [[Skyrim:Miraak (item)|Miraak]]. There are also weapon racks below the high shelves. Finally, the south wall is lined with four more mannequins.
+{{NewLeft}}
+
+==Notes==
+*The house contains many unique static objects, such as new paintings and decorative items.
+*The exterior is close to several spawn points, which can result in attacks from [[SR:Dragons|dragons]] and wild animals. A [[SR:World Interactions|World Interaction]] spawn point is located on the road right beside the house.
+*A [[Skyrim:Corundum Ore|corundum ore]] vein can be found outside. It is also present without the Creation installed.
+*The exterior barrels and single small sack are not safe for storage.
+*The stables are too small to put a horse inside, making them decorative only. note-these now are able to hold horses
+*The house has the signature Whiterun Dragonhead decor upon the roof.
+
+*potential bug? - Static Potato, Leek, Cabbage, Gourd in Garden area may not re-grow after being harvested,{needs verification i.e. is there a days past in game reset?} leaving the garden soil plots barren.
+
+==Bugs==
+{{bug|This location is marked as undiscovered on your map from the start of the game.|confirmed=1}}
+{{bug|Spouses and children sometimes will not move to Tundra Homestead, but instead be stuck in place where you first told them to move there, or disappear from the game entirely. Check the basement for your missing family.|confirmed=1}}
+{{bug|The [[SR:Golden Claw|Golden Claw]] may fall off the wall each time you enter the cellar. This seems to happen because it's marked stolen.|confirmed=1}}
+**{{Pc22}} In the console, selecting the claw on the floor and then entering<code>setownership</code> can be used to fix this.
+**Another option is to store it in a container you own and have a no-crime follower take everything out of it, then take the claw from their inventory. The claw will be marked as stolen if you take it from its holder or drop it, and consequently it gets the red steal text when selecting it, but it won't actually be considered stolen until you take it from its holder ensuring it stays in place.
+{{Bug|The [[Skyrim:Initiate's Ewer|Initiate's Ewer]] will not sit on top of the cellar shelf where its stand is located, but will appear to clip halfway through the shelf or even float under the shelf upon subsequent visits.|confirmed=1}}
+{{Bug|The [[Skyrim:Quest_Items#Dragon_Claws|dragon claws]] will not stay in a set location, and will float in front of the cellar display.|confirmed=1}}
+{{bug|A few books and a [[Skyrim:Dwemer Cup|Dwemer cup]] on the desk to the right of the front door may fall off or fly across the room when the zone loads.|confirmed=1}}
+{{bug|The three barrels in the smithing area are not safe for storage.|confirmed=1|OSSEP|1.6.318|dlc=CC}}
+{{Bug|The [[Skyrim:Wooden Mask|Wooden Mask]] or other dragon priest masks may become stuck inside of its bust instead of on top of it. The dragon priest masks may also not be placed properly on their respective busts. A possible fix is to position yourself next to the bust and look towards the wall, slowly drift your look towards the mask and the option to take it will show.|confirmed=1}}
+{{Bug|{{Ns22}}{{ps22}} Mannequins downstairs will sometimes create previously equipped clothing and equip it, unequipping armor that was placed on it.|confirmed=1}}
+{{bug|The [[Skyrim:Greater Soul Gem|greater soul gem]] on display by the [[Skyrim:Arcane Enchanter|arcane enchanter]] will move, fall off the table, or fly across the room when interacting with the enchanter or loading the zone. There is a chance the [[Skyrim:Lesser Soul Gem|lesser soul gem]] will also move, fall off the table, and fly across the room too.|vn=1}}
+*{{bug|Additionally, when interacting the enchanter, sounds of items colliding with one another or a surface may occur to the left of the enchanter, despite nothing moving at all.|confirmed=1}}
+{{Bug|When interacting with the display items in the cellar, the game may freeze.|vn=1}}
+{{bug|{{ps22}} Reinstalling the game causes all items stored in the Tundra Homestead to be lost.}}
+
+==Gallery==
+<gallery>
+File:SR-activity-Baking Surface.jpg|Baking Surface
+File:SR-place-Tundra Homestead 02.jpg|The exterior crafting area
+File:SR-place-Tundra Homestead 03.jpg|The stables
+File:SR-interior-Tundra Homestead 02.jpg|One of the unique paintings
+File:SR-interior-Tundra Homestead, Cellar Dragon Priest Masks.jpg|The [[SR:Dragon Priest Masks|Dragon Priest Mask]] display
+File:SR-interior-Tundra Homestead, Cellar Dragon Claws.jpg|The [[SR:Dragon Claw|Dragon Claw]] display
+File:SR-interior-Tundra Homestead, Cellar Misc Collectibles.jpg|The shelf for displaying miscellaneous collectibles
+File:SR-interior-Tundra Homestead, Cellar Dawnguard Collectibles.jpg|The shelf for displaying Dawnguard collectibles
+</gallery>
+
+{{Skyrim Houses}}

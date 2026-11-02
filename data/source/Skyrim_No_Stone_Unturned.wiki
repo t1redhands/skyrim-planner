@@ -1,0 +1,242 @@
+<noinclude>{{Cleanup-srqrp
+|writtenBy=Multiple
+|checkedBy=Beezer1029
+|reward=Multiple
+|rewardChecked=Beezer1029
+}}</noinclude>{{Trail2|Quests|Thieves Guild|link2=Thieves Guild (faction)}}
+{{Quest Header
+|notrail=1
+|Giver= Quest received upon finding the first "Unusual Gem".
+|Reward=[[Skyrim:Prowler's_Profit|Prowler's Profit]]
+|Loc= [[Skyrim:Skyrim (place)|Skyrim]]
+|Image=SR-item-Crown_of_Barenziah.jpg
+|ImgDesc=The Crown of Barenziah restored
+|description=Find the [[Skyrim:Unusual_Gem|24 gems]] to restore the Crown of Barenziah.
+|ID=TGCrownMisc, TGCrown
+|Icon=SR-qico-Thieves Guild.png
+|SuggLevel=18 (for the final part)
+}}
+
+==Quick Walkthrough==
+# Find one of the 24 "[[Skyrim:Unusual Gem|Unusual Gem]]s" scattered throughout Skyrim.
+# Become a full member of the Thieves Guild (if not one already).
+# Have the gem appraised by [[Skyrim:Vex|Vex]] at [[Skyrim:The Ragged Flagon|The Ragged Flagon]] in [[Skyrim:Riften|Riften]].
+# Collect the remaining stones of a full set and return to Vex.
+# Retrieve the Crown of Barenziah and return to Vex.
+
+==Detailed Walkthrough==
+[[File:SR-quest-No Stone Unturned.jpg|thumb|right|An Unusual Gem]]
+===What Do We Have Here?===
+In your travels about Skyrim, you will come upon an ornate jewel (one of twenty-four spread across Skyrim) called an [[Skyrim:Unusual Gem#Unusual Gem|Unusual Gem]]. Subsequent actions after you acquire one of these gems depends on your membership status with the [[Skyrim:Thieves Guild (faction)|Thieves Guild]].
+
+====Not a Member of the Thieves Guild====
+If you are not a member of the Thieves Guild, picking up the first Unusual Gem you encounter will activate the miscellaneous quest objective: ''"Bring the Unusual Gem to an appraiser"''. 
+
+Depending on your past travels and interactions, following your objective marker will likely take you to [[Skyrim:Maul|Maul]], a [[Skyrim:Nord|Nord]] [[Skyrim:CombatThief|thief]] in [[Skyrim:Riften|Riften]]. If you have not yet spoken with Maul, he will seek you out with some unsolicited advice. After the conversation, ask him what he knows about the gem. He will tell you that you need to show it to [[Skyrim:Vex|Vex]] of the Thieves Guild, to find out what the gem is worth. Maul will also tell you that to get to Vex, you must first become a member of the Thieves Guild.
+If you press for information on the guild, you will be told to find [[Skyrim:Brynjolf|Brynjolf]] in Riften's marketplace. You can find him as suggested, or in the [[Skyrim:The Bee and Barb|Bee and Barb]] at night. Talking to him will activate the quest [[Skyrim:A Chance Arrangement|A Chance Arrangement]], which is the first step towards becoming a member of the Guild. Once you have access to [[Skyrim:The Ragged Flagon|The Ragged Flagon]], seek out Vex for her appraisal of the gem. She will tell you that it is one of twenty-four stones that were pried from the [[Skyrim:Crown_of_Barenziah#Crown_of_Barenziah|crown]] of [[Lore:Barenziah|Queen Barenziah]] by a thief in an attempt to cover his tracks, and that only the complete set of twenty-four stones would be worth anything.
+If Maul does not tell you to find Brynjolf, you can seek him out yourself.
+
+====Already a Member of the Thieves Guild====
+If you are a full member of the Thieves Guild when you pick up the first stone, the quest is immediately activated with the objective: ''"Bring the Unusual Gem to Vex in the Thieves Guild"''. Find Vex in The Ragged Flagon. She will tell you that it is one of twenty-four stones that were pried from the crown of Queen Barenziah by a thief in an attempt to cover his tracks. She will further inform you that the stone is worthless on its own, but that if you can find the other twenty-three, the collection would be worth a substantial sum.
+
+===Finding the Gems===
+After showing the Unusual Gem to Vex, the gems are renamed "Stones of Barenziah," and will appear as such in your inventory when in your possession. You must now find all twenty-four stones. 
+
+You'll need to complete some other tasks before you have access to all locations where the gems are to be found:
+* Begin the [[Skyrim:Dark Brotherhood|Dark Brotherhood questline]] or start the [[Skyrim:Destroy the Dark Brotherhood!|Destroy the Dark Brotherhood!]] quest.
+* Purchase [[Skyrim:Proudspire Manor|Proudspire Manor]] in [[Skyrim:Solitude|Solitude]]. (25,000 gold)
+* Join the [[Skyrim:College of Winterhold (faction)|College of Winterhold]] by completing [[Skyrim:First Lessons|First Lessons]]. You must also start [[Skyrim:Under Saarthal|Under Saarthal]] and progress at least to the point where Tolfdir tells you to speak with the Arch-Mage; until this point, the Arch-Mage's Quarters are locked behind an inaccessible door.
+
+Aside from those, most other gems can actually be obtained at any point in the game. Many are located in places that you will be sent to during other quests, so you may want to consider getting the stone concurrently with the quest.
+
+The stones are located in the following places:
+
+{| class="wikitable sortable striped"
+! Location
+!class=unsortable| Notes
+!Related Quest
+!RefID
+|-
+| [[Skyrim:Whiterun|Whiterun]] ([[:File:SR-place-WhiterunCatacombs StoneLocation.jpg|image]])
+| [[Skyrim:Hall of the Dead (Whiterun)|Hall of the Dead]] ([[Skyrim:Whiterun|Whiterun]]). Inside the Catacombs; go down the left stairs and it will be to your left, next to a skeleton.
+| [[Skyrim:Andurs' Arkay Amulet|Andurs' Arkay Amulet]]
+| {{ID|0007f956}}
+|-
+| [[Skyrim:Whiterun|Whiterun]]<sup>†</sup> ([[:File:SR-place-Dragonsreach StoneLocation.jpg|image]])
+| [[Skyrim:Dragonsreach|Dragonsreach]], the Jarl's bedroom, on the right-hand end table.
+| [[Skyrim:Imitation Amnesty|Imitation Amnesty]]
+| {{ID|0007f95d}}
+|-
+| [[Skyrim:Whiterun|Whiterun]]<sup>†</sup> ([[:File:SR-place-Jorrvaskr StoneLocation.jpg|image]])
+| [[Skyrim:Jorrvaskr|Jorrvaskr]]'s living quarters, on the bookshelf in Kodlak's room.
+| [[Skyrim:Glory of the Dead|Glory of the Dead]]
+| {{ID|0007f923}}
+|-
+| [[Skyrim:Solitude|Solitude]]<sup>†</sup> ([[:File:SR-place-BluePalace StoneLocation.jpg|image]])
+| [[Skyrim:Blue Palace|Blue Palace]], Jarl's bedroom, right side of the bed on top of the wardrobe.
+|
+| {{ID|0007f926}}
+|-
+| [[Skyrim:Solitude|Solitude]] ([[:File:SR-place-ProudspireManor (before) StoneLocation.jpg|image]]/<br>[[:File:SR-place-ProudspireManor (after) StoneLocation.jpg|image]])
+| [[Skyrim:Proudspire Manor|Proudspire Manor]]. You must first purchase the house for a hefty sum of 25,000 coins. The stone is found on the top floor in the master bedroom, on top of the wardrobe behind the door. (It's there with or without the bedroom upgrade.)
+| [[Skyrim:The Man Who Cried Wolf|The Man Who Cried Wolf]] and [[Skyrim:Elisif's Tribute|Elisif's Tribute]]
+| {{ID|0007fb3a}}
+|-
+| [[Skyrim:Riften|Riften]]<sup>†</sup> ([[:File:SR-place-MistveilKeep StoneLocation.jpg|image]])
+| [[Skyrim:Mistveil Keep|Mistveil Keep]], Jarl's bedroom. Go up the stairs and through the locked center door. It will be on the end table left of the bed.
+|
+| {{ID|0007fb55}}
+|-
+| [[Skyrim:Windhelm|Windhelm]]<sup>†</sup> ([[:File:SR-place-PalaceOfTheKings StoneLocation.jpg|image]])
+| [[Skyrim:Palace of the Kings|Palace of the Kings Upstairs]]. Take the first door to the left upon entering the main palace area, then find [[Skyrim:Wuunferth the Unliving|Wuunferth]]'s room with an Alchemy Lab & Arcane Enchanter at the end of the hall. The stone is on a table on the right side of the room.
+| [[Skyrim:Blood on the Ice|Blood on the Ice]]
+| {{ID|0007f962}}
+|-
+| [[Skyrim:Windhelm|Windhelm]]<sup>†</sup> ([[:File:SR-place-Shatter-Shield StoneLocation.jpg|image]])
+| [[Skyrim:House of Clan Shatter-Shield|House of Clan Shatter-Shield]], on a bookshelf in the room to the left of the top of the stairs.
+| [[Skyrim:Mourning Never Comes|Mourning Never Comes]]
+| {{ID|0007f965}}
+|- 
+| [[Skyrim: Markarth|Markarth]]<sup>†</sup> ([[:File:SR-place-TreasuryHouse StoneLocation.jpg|image]])
+| [[Skyrim:The Treasury House|The Treasury House]], on a bedside table in Thonar's bedroom, which is down the hall on the left from where you enter the front door. You may need to pick an apprentice-level door, but no one reacts.
+| [[Skyrim:The Forsworn Conspiracy|The Forsworn Conspiracy]]
+| {{ID|0007f925}}
+|-
+| [[Skyrim: Markarth|Markarth]]<sup>†</sup> ([[:File:SR-place-DwemerMuseum StoneLocation.jpg|image]])
+| [[Skyrim:Understone Keep|Understone Keep]]'s Dwemer Museum, on a table in the first room to the left.
+| [[Skyrim:Hard Answers|Hard Answers]]
+| {{ID|0007f909}}
+|-
+| [[Skyrim:College of Winterhold (place)|College of Winterhold]]<sup>†</sup> ([[:File:SR-place-Arch-Mage'sQuarters StoneLocation.jpg|image]])
+| [[Skyrim:Arch-Mage's Quarters|Arch-Mage's Quarters]]. Access may be gained at the end of the quest [[Skyrim:Under Saarthal|Under Saarthal]].
+| [[Skyrim:Under Saarthal|Under Saarthal]]
+| {{ID|0007f908}}
+|-
+| [[Skyrim:Dead Crone Rock|Dead Crone Rock]] ([[:File:SR-place-DeadCroneRock StoneLocation.jpg|image]])
+| On the stone altar opposite the Word Wall.
+| [[Skyrim:Pieces of the Past|Pieces of the Past]]
+| {{ID|0007fb4f}}
+|- 
+| [[Skyrim:Black-Briar Lodge|Black-Briar Lodge]] ([[:File:SR-place-Black-BriarLodge StoneLocation.jpg|image]])
+| The gem is in the top floor bedroom, next to the bed.
+| [[Skyrim:Promises to Keep|Promises to Keep]]
+| {{ID|0007fb56}}
+|-
+| [[Skyrim:Ansilvund|Ansilvund]] ([[:File:SR-place-Ansilvund StoneLocation.jpg|image]])
+| The gem is on the table at the end of [[Skyrim:Ansilvund Burial Chambers|Ansilvund Burial Chambers]].
+| [[Skyrim:Ansilvund (quest)|Ansilvund (quest)]]
+| {{ID|0007fb5d}}
+|-
+| [[Skyrim:Stony Creek Cave|Stony Creek Cave]] ([[:File:SR-place-StonyCreekCave StoneLocation.jpg|image]])
+| The gem is on the table next to the alchemy lab in the room off to the side.
+| [[Skyrim:Finn's Lute|Finn's Lute]] and [[Skyrim:The_Edge_of_Ruin|The Edge of Ruin]]{{CC}}
+| {{ID|0007fb65}}
+|-
+| [[Skyrim:Rannveig's Fast|Rannveig's Fast]] ([[:File:SR-place-Rannveig'sFast StoneLocation.jpg|image]])
+| After falling down the trapdoor in front of the chest and the Word Wall, the stone is next to the alchemy lab and chest on the right.
+|
+| {{ID|0007fb64}}
+|-
+| [[Skyrim:Fellglow Keep|Fellglow Keep]] ([[:File:SR-place-FellglowKeep StoneLocation.jpg|image]])
+| Head straight up the stairs and to the right.
+| [[Skyrim:Hitting the Books|Hitting the Books]]
+| {{ID|0007fb58}}
+|-
+| [[Skyrim:Dainty Sload|Dainty Sload]] ([[:File:SR-place-DaintySload StoneLocation.jpg|image]])
+| Head down into the waterlogged bowels and up the opposing stairs. In the last room on the table.
+| [[Skyrim:The Dainty Sload|The Dainty Sload]]
+| {{ID|0007f927}}
+|- 
+| [[Skyrim:Sunderstone Gorge|Sunderstone Gorge]] ([[:File:SR-place-SunderstoneGorge StoneLocation.jpg|image]])
+| On the table with two bodies in front of the Word Wall.
+|
+| {{ID|0007fb51}}
+|-
+| [[Skyrim:Yngvild|Yngvild]] ([[:File:SR-place-Yngvild StoneLocation.jpg|image]])
+| The gem is in the bedroom behind the throne in Yngvild Throne room.
+| [[Skyrim:Toying With The Dead|Toying With The Dead]]
+| {{ID|0007fb4a}}
+|- 
+| [[Skyrim:Hob's Fall Cave|Hob's Fall Cave]] ([[:File:SR-place-Hob'sFallCave StoneLocation.jpg|image]])
+| The gem is near the alchemy set under the bridge in the northwestern part of the cave system.
+| [[Skyrim:Pantea's Flute|Pantea's Flute]]
+| {{ID|0007fb63}}
+|-
+| [[Skyrim:Reeking Cave|Reeking Cave]] ([[:File:SR-place-ReekingCave StoneLocation.jpg|image]]) or<br>[[Skyrim:Thalmor Embassy|Thalmor Embassy]] ([[:File:SR-place-ThalmorEmbassy StoneLocation.jpg|image]])
+|  Prior to patch 1.4, the stone is located in the [[Skyrim:Thalmor Embassy|Thalmor Embassy]] in Elenwen's Solar on the second floor. After patch 1.4, inside [[SR:Reeking Cave|Reeking Cave]] next to a corpse in the back.<br> Acquiring the gem during the [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]] quest is advised, since the easiest way to access the cave is during your escape near the end of that quest. However, it is still possible to access Reeking Cave without doing that quest.
+| [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+| {{ID|0007fb54}}
+|-
+| [[Skyrim:Pinewatch|Pinewatch Bandit's Sanctuary]] ([[:File:SR-place-Pinewatch StoneLocation.jpg|image]])
+| Head down to the basement and press the hidden button to the right of the bookcase, providing access to the bandit's hideout. The gem is found in a locked room in the Bandit's Sanctuary.
+| [[Skyrim:Silver Lining|Silver Lining]]
+| {{ID|0007fb45}}
+|-
+| [[Skyrim:Dark Brotherhood Sanctuary|Dark Brotherhood Sanctuary]] ([[:File:SR-place-DarkBrotherhoodSanctuary StoneLocation.jpg|image]])
+| On the dresser in [[Skyrim:Astrid|Astrid]]'s room. It is still accessible after the [[Skyrim:Death Incarnate|Death Incarnate]] quest; however, [[Skyrim:Dark Brotherhood Sanctuary#Bugs|the game may freeze]] when you try to enter the Sanctuary after completing that quest.
+| [[Skyrim:Sanctuary|Sanctuary]] or [[Skyrim:Destroy the Dark Brotherhood!|Destroy the Dark Brotherhood!]]
+| {{ID|0007f901}}
+|}
+
+<sup>†</sup> Will be marked as stolen unless you are of an appropriate faction rank. This doesn't appear to apply to the Special Edition.<br>
+
+===Recovering the Crown===
+[[File:SR-quest-No_Stone_Unturned2.jpg|thumb|Find the Crown within Tolvald's Cave]]
+Show Vex the full set of Stones, and she will have you travel to [[Skyrim:Tolvald's Cave|Tolvald's Cave]] to retrieve the Crown of Barenziah. The cave is three layers deep, and crawling with Falmer, so be sure to prepare yourself. When approaching the crown, three hostile Dunmer Ghosts will appear and attack. After returning with the Crown, you will receive the permanent effect [[Skyrim:Gems#Prowler's Profit|Prowler's Profit]], which significantly increases the chance of finding gems in randomized containers.
+
+==Notes==
+*If you enter Tolvald's Cave without having spoken to Vex about having all the gems, the area where the crown is found will be blocked off by rubble. This will cause you to have to return to Vex and then travel all the way through the cave again to find the crown.
+*The gems that will be marked as stolen may say "steal" instead of "take" when acquiring them; in this case, they will still be marked as stolen and if you're caught taking them, you will be reported. This has been partially modified in the [[Skyrim:Special Edition|Special Edition]]; see [[#Bugs|bugs]] for details.
+*If your game is prior to [[Skyrim:Patch|Patch]] 1.4 and you haven't recovered the stone from within the [[Skyrim:Thalmor Embassy|Thalmor Embassy]], there are multiple workarounds detailed on the location page.
+*There are no quest markers for the stones, so unless you intend to find all the stones by chance, it may be best to print out a list of their locations and cross each one off as you find it.
+*It is impossible to remove this quest from your list without joining the Thieves Guild; if you don't want to do that, you may be better off ignoring any Unusual Gems you come across, as they have no other use in the game and cannot be removed from your inventory without Vex.
+*The stone in the Dark Brotherhood Sanctuary is not generated by the game until either of the related quest lines is started.
+*Text in the game code suggests that you were originally supposed to see Tonilia about the gems. The dialogue about buying the gems would have made much more sense in that context.
+*Unlike loose gems (such as amethysts, rubies, etc.), the Stones are immovable where they are placed in the environment, so you don't have to worry about them getting knocked off and lost in the game world.
+*With the [[Skyrim:Dragonborn|Dragonborn]] add-on, the draugrs in each blue ice deposit at the [[Skyrim:Stalhrim Source|Stalhrim Source]] and all other blue [[Skyrim:Stalhrim|Stalhrim]] deposits on [[Skyrim:Solstheim|Solstheim]] will have up to 5 gems, usually of flawless quality once the quest is finished.
+*Version 2.0.9 of the [[Skyrim Mod:Unofficial Skyrim Patch|Unofficial Skyrim Patch]] removes the objective to "Become a full member of the Thieves Guild" from your journal once you speak to Vex about the unusual gems.
+
+==Bugs==
+{{Bug|If you gather all 24 stones before getting Vex to identify them it won't advance to the stage where you need to turn them back in to her and your journal will still say to recover the gems (24/24).|OSP|1.9.26.0.8}}
+**{{Pc22}} To fix this, type these console commands: <code>setobjectivecompleted TGCrown 20 1</code>, followed by <code>setstage TGCrown 30</code>.
+{{Bug|The ''Prowler's Profit'' may not appear in the Active Effects menu, but it should still be in effect.|USKP|1.3.0}}
+{{Bug|Although the prompt to collect the Unusual Gems says "take" in the [[Skyrim:Special Edition|Special Edition]], NPCs may still report you if you're caught and you'll get a [[Skyrim:Crime|bounty]] for theft if that is the case.|confirmed=1}}
+{{Bug|The activator script for the Unusual Gems generates a script error and is unable to trigger the theft alarm due to a bad use of linked references.}}
+{{Bug|Once you've learned that these ''Unusual Gems'' are actually ''Stones of Barenziah'' any new stones will no longer stack in your inventory, previously collected stones will stack when presented to Vex however.|confirmed=1}}
+{{Bug|Repeatedly pressing the activate button while picking up a Stone may shortcut this quest. Your inventory will only increase by one Stone, but your quest progress will increase by more than one, allowing you to return to Vex and move onto recovering the Crown before visiting all 24 Stone locations. This is most easily performed with all the words of Slow Time.|confirmed=1}}
+**You can also repeatedly and quickly press the activate button while slowly approaching a gem; this will work if you haven't yet learned a word for the Slow Time shout or haven't yet reached the stage in the main questline where you can learn shouts.
+{{Bug|Sometimes the gems that are supposed to be in [[Skyrim:Fellglow Keep|Fellglow Keep]] and [[Skyrim:Pinewatch|Pinewatch]] Sanctuary don't appear and will prevent progress with the quest.|confirmed=1}}
+**{{Pc22}} Type the following three commands into the console for a workaround: <code>set TGCrownGemsFound to 24</code>; <code>set TGCrownGemsTotal to 24</code>; <code>setstage TGCrown 30</code>. This will not update the journal entry with the correct number of gems found but it will unlock Vex's dialogue to proceed with the quest.
+{{Bug|The finished crown has 25 stones in it, even though only 24 exist. When found without the stones, all 25 of the crown's slots are empty.|USKP|2.0.6}}
+{{Bug|The [[Skyrim: Dunmer_Ghost|Dunmer Ghosts]] in [[Skyrim:Tolvald's_Cave|Tolvald's Cave]] may become hostile to each other due to an improper faction setup.|USKP|2.1.0}}
+{{Bug|There's a chance only a single male [[Skyrim: Dunmer_Ghost|Dunmer Ghost]] shows up by the crown and that it's not hostile. When talked to, he may say something along the lines of "It's been so many years...", or he may not speak at all.  He can also be pickpocketed for an [[Skyrim:Elven_Shield|Elven Shield]].|USKP|2.0.1}}
+{{Bug|If you've angered Maul, he will not speak with you about the Unusual Gem, even though he's the quest target.|confirmed=1}}
+** As noted in the text, this can be bypassed by simply joining the Thieves Guild and ignoring Maul.
+{{Bug|You may collect all 24 stones but the journal entry may say you have 23 and only 23 may show in your inventory.|confirmed=1}}
+
+==Quest Stages==
+{{Journal Entries
+|name=No Stone Unturned Misc Handler
+|id=TGCrownMisc
+|10||{{Journal Hidden|I've found an unusual gem which seems to exhibit magical properties. I should bring it to someone knowledgeable in such goods for appraisal.}}
+{{Quest Objective|10|Bring the Unusual Gem to an appraiser}}
+|20||{{Journal Hidden|With Maul in Riften no longer speaking to me, I'm going to have to continue my search for someone who can identify my unusual gem.}}
+{{Quest Objective|20|Find someone who can identify the Unusual Gem}}
+|200|fin|
+|!|No Stone Unturned|TGCrown
+|5||It was suggested that I show my Unusual Gem to Vex, a member of the Thieves Guild in Riften. However, I'll need to wait until I'm full member of the Guild before she'll be able to assist me.
+{{Quest Objective|5|Become a full member of the Thieves Guild}}
+|10||I've found an unusual gem which seems to exhibit magical properties. I should bring it to Vex at the Thieves Guild for an appraisal.
+{{Quest Objective|10|Bring the Unusual Gem to Vex in the Thieves Guild}}
+|20||The unusual gem has turned out to be one of twenty-four "Stones of Barenziah." According to Vex, they have little value unless the set is complete.
+{{Quest Objective|20|Recover the Stones of Barenziah  (<Global&#61;TGCrownGemsFound>/24)}}
+|30||{{Quest Objective|30|Speak to Vex}}
+|40||Vex has revealed to me that the Crown of Barenziah is actually a paragon for the Thieves Guild. If I can recover the crown from Tolvald's Cave, she should be able to restore our paragon to its full strength.
+{{Quest Objective|40|Recover the Crown of Barenziah}}
+|50||{{Quest Objective|50|Return to Vex}}
+|200|fin|I've brought the Crown of Barenziah back to Vex, who has restored it to its original condition where it now serves as a paragon for the Thieves Guild.
+|missing=
+** TGCrownMisc: 0.
+** TGCrown: 0
+}}
+{{Skyrim Quest Stages Notes}}

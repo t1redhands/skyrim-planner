@@ -1,0 +1,99 @@
+{{CC Header|Myrwatch}}{{Trail|Places|Houses}}[[Category:Skyrim-Myrwatch]][[Category:Skyrim-Creation Club-Places]]<noinclude>{{Cleanup-shrp
+|writtenby=Dillonn241
+|checkedby=Legoless
+}}</noinclude>{{Place Summary
+|type=House
+|marker_id=Nordic Tower
+|mod=[[Skyrim:Myrwatch|Myrwatch]]
+|mapname=Myrwatch (CC)
+|zones=2
+|treasure=''[[SR:Catalogue of Weapon Enchantments|Catalogue of Weapon Enchantments]]''
+|respawn=never
+|locationcode=ccEEJSSE002MageTowerMain, ccEEJSSE002MageTowerSecond
+|region=Hjaalmarch
+|location=East of [[SR:Morthal|Morthal]]<br>West of [[Skyrim:Stonehills|Stonehills]]
+|alchemy=1
+|enchanting=1
+|tanning=1
+|smelter=1
+|forge=1
+|grindstone=1
+|workbench=1
+|cooking=1
+|oven=1
+|staffenchanter=1
+|image=SR-place-Myrwatch.jpg
+|imgdesc=Myrwatch
+|description=a mage tower player home east of [[SR:Morthal|Morthal]].
+|addbelow=It contains two zones connected by portal, ''[[#Myrwatch|Myrwatch]]'' and ''[[#Myrwatch Gallery|Myrwatch Gallery]]''.
+}}
+The tower was built in the [[Lore:Third Era|Third Era]] by rogue mages from the [[SR:College of Winterhold (place)|College of Winterhold]], and closely resembles College architecture. The bottom level has beds for your [[Skyrim:Marriage|spouse]] and [[Skyrim:Adoption|children]].
+{{NewLeft}}
+==Related Quests==
+*{{Quest Link|Myrwatch (quest)}}
+
+==Walkthrough==
+===Exterior===
+The tower is built partially in the water, with a small bridge crossing over to a narrow stretch of swampy land. The body of [[Skyrim:Hans|Hans]] lies against a tree stump to the north, next to an [[Skyrim:Empty Wine Bottle|empty wine bottle]], [[Skyrim:Woodcutter's Axe|woodcutter's axe]], [[Skyrim:Torch|torch]], and ''[[Skyrim:Sindnar's Tower Notes|Sindnar's Tower Notes]]''. A leveled [[Skyrim:Chaurus|chaurus]] guards this area and presumably killed Hans.
+
+The bridge has a seal depicting the [[Lore:Eye of Magnus|Eye of Magnus]]. When you light it with a fire spell, the door to the tower unlocks and the magic beacon nearby is lit.
+
+[[File:SR-interior-Myrwatch 07.jpg|thumb|right|The main chamber]]
+
+===Myrwatch===
+The main chamber is divided into a central area and two side areas. The central area is dominated by an open fireplace. A piece of [[Skyrim:Stalhrim|stalhrim]] can be found on a table against the left wall; maps of [[Skyrim:Solstheim|Solstheim]] and [[Lore:Skyrim|Skyrim]] are posted above, to the left is a [[SR:Shrines#Shrine_of_Stendarr|Shrine of Stendarr]]. The right wall includes a table holding the ordinary book ''[[Skyrim:Chimarvamidium|Chimarvamidium]]'' and a display case in the bookshelf containing a [[Skyrim:Glass Dagger|glass dagger]], [[Skyrim:Flawless Emerald|flawless emerald]], [[Skyrim:Flawless Sapphire|flawless sapphire]], and Ring of Illusion. [[Skyrim:Anora's Journal|''Anora's Journal'']] lies on a table here.
+
+The side area right of the door has two bookshelves you can fill, two beds, and a chest above the bookshelf farther from the door. In the back of the chamber, there is a long dining table flanked by a [[Skyrim:Cooking|cooking pot]] on the right and an [[Skyrim:Baking|oven]] on the left. The side area left of the door is more interesting. Just left of the oven is a small display area, with a mannequin, weapon plaque, safe, and chest. A double bed splits the side area in two, above the bed is a [[SR:Shrines#Shrine_of_Mara|Shrine of Mara]]. Left of this is a portal to the gallery above and farther left is another empty bookshelf. On the inner wall across from the bookshelf is a [[Skyrim:Cure Disease Potion Recipe|Cure Disease Potion Recipe]].
+
+[[File:SR-interior-Myrwatch.jpg|thumb|right|Myrwatch Gallery]]
+
+===Myrwatch Gallery===
+Activate the portal and you'll be transported to another circular chamber. A large glowing blue orb hangs from the ceiling. The gallery is a crafting and display room. Immediately in front of you is a green [[Skyrim:Arcane Enchanter|arcane enchanter]]. Just above it is a [[Skyrim:Grand Soul Gem|grand soul gem]] and a holder for [[Skyrim:Saerek's Skull Key|Saerek's Skull Key]] and [[Skyrim:Torsten's Skull Key|Torsten's Skull Key]]. A number of smaller soul gems, the [[Skyrim:Enchanting|Enchanting]] skill book ''[[Skyrim:Catalogue of Weapon Enchantments|Catalogue of Weapon Enchantments]]'', and a [[Skyrim:Spell Tome: Sparks|Spell Tome: Sparks]] sit on the enchanter table.
+
+The center of the gallery has an alchemy garden on the near side and an equipment crafting area opposite it. The garden has eleven empty plots of [[SR:Fertile Soil|Fertile Soil]] for gardening, and many more plants in between these. The crafting area consists of a [[Skyrim:Tanning Rack|tanning rack]], [[Skyrim:Grindstone|grindstone]], [[Skyrim:Workbench|workbench]], smelting pot (same as a [[Skyrim:Smelter|smelter]]), and the "[[SR:All Forge|All Forge]]". The All Forge functions identically to a [[Skyrim:Forge|forge]], but allows for crafting of items usually restricted to the [[SR:Skyforge|Skyforge]] and [[Skyrim:Forge#Smithing Forges|Gunmar's forge]]. A variety of relevant materials sit on the shelves above.
+
+A multitude of displays can be found as you move counterclockwise from the portal. The first wall has three weapon plaques and a display case. Two mannequins flank the second wall; in the middle are weapon plaques and racks designed to hold [[Skyrim:Dragonborn|Dragonborn]] items: [[Skyrim:Champion's Cudgel|Champion's Cudgel]] and [[Skyrim:Bloodskal Blade|Bloodskal Blade]] above and [[Skyrim:Glass Bow of the Stag Prince|Glass Bow of the Stag Prince]], [[Skyrim:Soulrender|Soulrender]], [[Skyrim:Bloodscythe|Bloodscythe]], and [[Skyrim:Dwarven Black Bow of Fate|Dwarven Black Bow of Fate]] below. The inner side of the next section has an extremely rare [[Skyrim:Staff Enchanter|staff enchanter]], with six [[Skyrim:Heart Stone|heart stones]] on the shelves behind it and unenchanted illusion and destruction staves in a basket on the ground. The outer wall opposite the enchanter has two more mannequins and two weapon plaques between them.
+
+Continuing counterclockwise, the next section has two display cases on the inner wall as well as two mannequins and five weapon plaques on the outer wall. The fifth wall right of the portal has a row of holders for each [[Skyrim:Miscellaneous Items#Bugs in a Jar|bug in a jar]]; a weapon plaque is posted on the inner and outer walls and the inner wall has a grand total of six weapon racks lining it. The next wall, directly across from the portal, features the same setup as [[Skyrim:Tundra Homestead (place)|Tundra Homestead]] for the [[Skyrim:Dragon Priest Masks|dragon priest masks]] (i.e. a bust for each mask aside from [[Skyrim:Miraak (item)|Miraak]]).
+
+Six more weapon racks and a single weapon plaque line the next inner wall, across from which are racks for staves: the [[Skyrim:Skull of Corruption|Skull of Corruption]], [[Skyrim:Wabbajack|Wabbajack]], [[Skyrim:Sanguine Rose|Sanguine Rose]], [[Skyrim:Spider Control Rod|Spider Control Rod]], [[Skyrim:Staff of Magnus|Staff of Magnus]], and [[Skyrim:Staff of Jyrik Gauldurson|Staff of Jyrik Gauldurson]]. A wooden panel above these holds daggers: the [[Skyrim:Blade of Woe|Blade of Woe]], [[Skyrim:Kahvozein's Fang|Kahvozein's Fang]], [[Skyrim:Nettlebane|Nettlebane]], [[Skyrim:Blade of Sacrifice|Blade of Sacrifice]], [[Skyrim:Mehrunes' Razor|Mehrunes' Razor]], and [[Skyrim:Keening|Keening]]. The next section, now the fourth left of the portal, has two more display cases on the inner wall, two mannequins on the outer wall, and between the mannequins four plaques meant to hold the [[Skyrim:Shield of Ysgramor|Shield of Ysgramor]], [[Skyrim:Wuuthrad|Wuuthrad]], [[Skyrim:Spellbreaker|Spellbreaker]], [[Skyrim:Targe of the Blooded|Targe of the Blooded]], and [[Skyrim:Aetherial Shield|Aetherial Shield]].
+
+An alchemy lab sits at the end of the inner wall. Dozens of ingredients and potions are scattered on the table and shelves, most notably two samples of [[Skyrim:Fire Salts|fire salts]] and one of [[Skyrim:Frost Salts|frost salts]]. An expensive [[Skyrim:Deadly Recovery Poison|deadly recovery poison]] sits atop the shelf. Across from the lab are two additional mannequins guarding plaques for [[Skyrim:Dawnguard|Dawnguard]] items: [[Skyrim:Dawnguard Rune Shield|Dawnguard Rune Shield]], [[Skyrim:Harkon's Sword|Harkon's Sword]], [[Skyrim:Dawnguard Rune Axe|Dawnguard Rune Axe]], and [[Skyrim:Dawnguard Rune Hammer|Dawnguard Rune Hammer]]. The penultimate wall holds a plaque for [[Skyrim:Auriel's Bow|Auriel's Bow]]; holders for the five [[Skyrim:Other Unique Items|paragons]] sit below, beside static cupboards on which you can place the [[Skyrim:Initiate's Ewer|Initiate's Ewer]] and [[Skyrim:Auriel's Shield|Auriel's Shield]]. The final wall has three generic weapon plaques and a display case.
+
+{{NewLine}}
+
+==Bugs==
+{{bug|Both the leveled chaurus enemy and ''[[Skyrim:Sindnar's Tower Notes|Sindnar's Tower Notes]]'' respawn.|confirmed=1}}
+{{bug|Many of the items in Myrwatch Gallery have a tendency to fall over or fly off their shelves upon entering the area.|confirmed=1}}
+{{bug|The staff enchanter in Myrwatch is bugged and grants 20 times the [[SR:Enchanting|Enchanting]] experience it is supposed to. This is due to the staff enchanter in Tel Mithryn having a hidden perk (<code>DLC2StaffEnchantingMult</code>) that reduces the experience gained by 95%; the staff enchanter in Myrwatch has a different Editor ID and thus is unaffected by the perk.|confirmed=1|OSSEP|1.6.318|dlc=CC}}
+{{bug|A section of the water surrounding the path outside clips through the ground.|confirmed=1}}
+{{bug|The strongbox on the arcane enchanter table is not safe for storage.}}
+{{bug|Placing some dragon priest masks on its respective pedestal may cause it to disappear.|confirmed=1}}
+{{bug|The weapon plaques are heavily bugged, removing weapons may result in the plaque activators deactivating. This can be fixed by using the [[SR:Console|console]] command <code>resetinterior ccEEJSSE002MageTowerSecond</code>, make sure to remove all weapons in advance, or they'll be lost after the reset.|confirmed=1}}
+{{Bug|Weapons loaded into plaques may appear floating in mid-air in random angles rather than appear in their proper place.|confirmed=1}}
+{{bug|Your child or a [[SR:Courier|courier]] may sometimes end up underground when spawning outside the house. Leaving the cell will resolve this.|confirmed=1}}
+{{bug|When saving the game, picking up an item in Myrwatch and reloading the save, the item has disappeared from Myrwatch and is not in the inventory. |confirmed=1}}
+*On the Bugs in a Jar displays it incorrectly say "Firefly" instead of "Torchbug"
+{{bug|Keening may fall off its holder each time you enter the gallery.}}
+{{bug|The urn on the enchanting table is not safe to store items in for longer than 3-4 game days.}}
+{{bug|When selecting this location for home after adopting a child, the child may remain where they are originally found and will only repeat the dialogue of gathering their things, rendering interacting with the adopted child impossible. Rarely, their dialogue will act as if they've arrived at the home (while still in the cell in which they're originally found), but the child cannot be spoken to beyond this point. Attempting to adopt a second child will cause dialogue to exit out by itself before fully adopting the second child.|confirmed=1}}
+{{bug|If you kill Astrid during the quest [[Skyrim:With Friends Like These...|With Friends Like These...]] and loot her body for the Blade of Woe, it cannot be placed in the holder.|confirmed=1}}
+{{bug|Adopting more than one child for a family at Myrwatch will cause one of the children to sometimes fail to go to sleep. Since children at Myrwatch will try to sleep on the closest child bed, if both children are closer to one of the beds, only one can sleep, the other will stand all night. |confirmed=1}}
+{{bug|One of the large bookcase shelves only holds 6 books instead of 12.|confirmed=1}}
+{{bug|The Spider Control Rod is unable to go on its respective plaque.|confirmed=1}}
+
+==Gallery==
+<gallery>
+File:SR-interior-Myrwatch 02.jpg|Portal to the gallery
+File:SR-interior-Myrwatch 08.jpg|Maps of Solstheim and Skyrim
+File:SR-interior-Myrwatch 03.jpg|The oven
+File:SR-interior-Myrwatch 04.jpg|The arcane enchanter
+File:SR-interior-Myrwatch 05.jpg|The "All Forge" and smelting pot
+File:SR-interior-Myrwatch 06.jpg|The staff enchanter
+File:SR-interior-Myrwatch 09.jpg|The Dragonborn display
+File:SR-interior-Myrwatch 10.jpg|The staff and dagger display
+File:SR-interior-Myrwatch 11.jpg|The shield display
+File:SR-interior-Myrwatch 12.jpg|The Dawnguard display
+</gallery>
+
+{{Skyrim Houses}}
