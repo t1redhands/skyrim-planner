@@ -1,0 +1,124 @@
+{{Ingredient Summary
+|id=00059b86
+|value=10
+|weight=0.2
+|eff1=Damage Health
+|type1=neg
+|extra1={{Effect Mult|val|12.6}}
+|eff2=Damage Stamina
+|type2=neg
+|eff3=Invisibility (effect)
+|eff4=Resist Magic
+|nsamples=22
+|plant=Nirnroot
+|nplants=161
+|merchant=Rare
+|icon=SR-icon-ingredient-Nirnroot.png
+|image=SR-flora-Nirnroot.jpg
+|imgdesc=A Nirnroot plant
+}}__NOTOC__
+'''Nirnroot''' is a bright green plant normally found growing near water. Nirnroot plants glow, making them easier to locate at night, and also emit a unique chiming sound. While in-game text claims Nirnroot does not regrow, it actually does regrow normally like other plants (unlike its behavior in ''[[Oblivion:Nirnroot|Oblivion]]''). A related plant is [[Skyrim:Crimson Nirnroot|Crimson Nirnroot]], which has nearly identical alchemical properties, with only certain differences in the Damage Health and Damage Stamina effects. Nirnroot and Crimson Nirnroot can be combined to make a four-effect potion, as shown [[#4 Effects|below]].
+
+[[Skyrim:Damage Health|Damage Health]] poisons made using Nirnroot have the same strength as those made using standard Damage Health ingredients. However, the gold value of such poisons is 12.6 times greater than those made using standard ingredients. See the effect page for details.
+
+==Combinations==
+In terms of combinations of two ingredients, Nirnroot can be combined with 63 other ingredients.
+
+===4 Effects===
+{|class=wikitable width=60%
+!colspan=4|Desired Effect!!Combine with:
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Health}}'''
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Stamina}}'''
+|class=EffectPos width=20%|'''{{Effect Link|Invisibility (effect)}}'''
+|class=EffectPos width=20%|'''{{Effect Link|Resist Magic}}'''
+|[[Skyrim:Crimson Nirnroot|Crimson Nirnroot]] ({{Effect Mult|mag|3.0}}) ({{Effect Mult|mag|3.0}})
+|}
+
+===2 Effects===
+{|class=wikitable width=60%
+!colspan=2|Desired Effect!!Combine with:
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Health}}'''
+|class=EffectPos width=20%|'''{{Effect Link|Invisibility (effect)}}'''
+|[[Skyrim:Redwort Flower|Redwort Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}) ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}})
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Health}}'''
+|class=EffectPos width=20%|'''{{Effect Link|Resist Magic}}'''
+|[[Skyrim:Void Salts|Void Salts]]
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Stamina}}'''
+|class=EffectPos width=20%|'''{{Effect Link|Invisibility (effect)}}'''
+|[[Skyrim:Ash Creep Cluster|Ash Creep Cluster]]{{DB}}
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Health}}'''
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Stamina}}'''
+|[[Skyrim:Jarrin Root|Jarrin Root]] ({{Effect Mult|mag|100}})
+|}
+
+===1 Effect===
+{|class=wikitable width=60%
+!Desired Effect!!Combine with:
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Health}}'''
+|[[Skyrim:Chokeberry|Chokeberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Coda Flower|Coda Flower]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Deathbell|Deathbell]] ({{Effect Mult|mag|1.5}}), [[Skyrim:Ectoplasm|Ectoplasm]], [[Skyrim:Emperor Parasol Moss|Emperor Parasol Moss]]{{DB}}, [[Skyrim:Falmer Ear|Falmer Ear]], [[Skyrim:Fire Petal|Fire Petal]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Gnarl Bark|Gnarl Bark]]{{CC|Rare Curios}} {{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}, [[Skyrim:Human Flesh|Human Flesh]], [[Skyrim:Human Heart|Human Heart]], [[Skyrim:Imp Gall|Imp Gall]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Imp Stool|Imp Stool]], [[Skyrim:Mort Flesh|Mort Flesh]]{{CC|Plague of the Dead}}, [[Skyrim:Nightshade|Nightshade]], [[Skyrim:Poison Bloom|Poison Bloom]]{{DG}} ({{Effect Mult|mag|1.5}}), [[Skyrim:Red Mountain Flower|Red Mountain Flower]], [[Skyrim:River Betty|River Betty]] ({{Effect Mult|mag|2.5}}), [[Skyrim:Scalon Fin|Scalon Fin]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Skeever Tail|Skeever Tail]], [[Skyrim:Small Antlers|Small Antlers]], [[Skyrim:Troll Fat|Troll Fat]], [[Skyrim:Wisp Stalk Caps|Wisp Stalk Caps]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.5}},{{Effect Mult|val|1.56}})
+|-
+|class=EffectNeg width=20%|'''{{Effect Link|Damage Stamina}}'''
+|[[Skyrim:Ancestor Moth Wing|Ancestor Moth Wing]]{{DG}}, [[Skyrim:Blisterwort|Blisterwort]], [[Skyrim:Blue Butterfly Wing|Blue Butterfly Wing]], [[Skyrim:Bog Beacon|Bog Beacon]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}}), [[Skyrim:Bone Meal|Bone Meal]], [[Skyrim:Canis Root|Canis Root]], [[Skyrim:Chaurus Hunter Antennae|Chaurus Hunter Antennae]]{{DG}}, [[Skyrim:Comberry|Comberry]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}}), [[Skyrim:Cyrodilic Spadetail|Cyrodilic Spadetail]], [[Skyrim:Giant's Toe|Giant's Toe]], [[Skyrim:Marshmerrow|Marshmerrow]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.33}},{{Effect Mult|val|1.36}}), [[Skyrim:Rock Warbler Egg|Rock Warbler Egg]], [[Skyrim:Spider Egg|Spider Egg]]
+|-
+|class=EffectPos width=20%|'''{{Effect Link|Invisibility (effect)}}'''
+|[[Skyrim:Bittergreen Petals|Bittergreen Petals]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Blister Pod Cap|Blister Pod Cap]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Chaurus Eggs|Chaurus Eggs]], [[Skyrim:Daedra Silk|Daedra Silk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Elytra Ichor|Elytra Ichor]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Flame Stalk|Flame Stalk]]{{CC|Rare Curios}} ({{Effect Mult|dur|1.5}},{{Effect Mult|val|1.56}}), [[Skyrim:Green Butterfly Wing|Green Butterfly Wing]]{{CC|Saints & Seducers}}, [[Skyrim:Ice Wraith Teeth|Ice Wraith Teeth]], [[Skyrim:Luna Moth Wing|Luna Moth Wing]], [[Skyrim:Screaming Maw|Screaming Maw]]{{CC|Saints & Seducers}} ({{Effect Mult|dur|4}},{{Effect Mult|val|4.6}}), [[Skyrim:Vampire Dust|Vampire Dust]]
+|-
+|class=EffectPos width=20%|'''{{Effect Link|Resist Magic}}'''
+|[[Skyrim:Aster Bloom Core|Aster Bloom Core]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}}), [[Skyrim:Bleeding Crown|Bleeding Crown]], [[Skyrim:Bungler's Bane|Bungler's Bane]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}}), [[Skyrim:Chicken's Egg|Chicken's Egg]], [[Skyrim:Felsaad Tern Feathers|Felsaad Tern Feathers]]{{DB}}, [[Skyrim:Gleamblossom|Gleamblossom]]{{DG}}, [[Skyrim:Hagraven Claw|Hagraven Claw]], [[Skyrim:Hawk's Egg|Hawk's Egg]]{{HF}}, [[Skyrim:Hypha Facia|Hypha Facia]]{{CC|Rare Curios}} ({{Effect Mult|mag|1.2}},{{Effect Mult|val|1.22}}), [[Skyrim:Lavender|Lavender]], [[Skyrim:Tundra Cotton|Tundra Cotton]], [[Skyrim:Wisp Wrappings|Wisp Wrappings]]
+|}
+
+==Ingredients==
+22 guaranteed samples can be found in 19 different locations. Locations with multiple samples are:
+* 3 on an island north of [[Skyrim:Dawnstar|Dawnstar]] ([[Skyrim:The Pale|The Pale]])
+* 2 in [[Skyrim:Angeline's Aromatics|Angeline's Aromatics]] ([[Skyrim:Solitude|Solitude]])
+* 2 in [[Skyrim:Sarethi Farm|Sarethi Farm]] ([[Skyrim:The Rift|The Rift]])
+* 2 in [[Skyrim:Sinderion's Field Laboratory|Sinderion's Field Laboratory]] ([[Skyrim:Blackreach|Blackreach]])
+It is categorized as a rare ingredient, meaning that most apothecary merchants have a 21% chance of carrying 1-4 samples. In addition, it may be randomly found only in rare-type [[Skyrim:Apothecary's Satchel|apothecary's satchels]]. Other possible locations for already-harvested samples include:
+* 1-2 guaranteed samples are found on several dead [[Skyrim:Alchemist|alchemists]], including the one found at [[Skyrim:Clearpine Pond|Clearpine Pond]].
+
+==Plants==
+[[File:SR-Skyrim-Map-Nirnroot.png|200px|thumb|right|Map of all Nirnroot plants in Skyrim's overworld]]
+166 Nirnroot plants can be found in 85 different locations. Locations with the greatest numbers are:
+* 13 around [[Skyrim:Northwatch Keep|Northwatch Keep]] ([[Skyrim:Haafingar|Haafingar]])
+* 9 around [[Skyrim:Sarethi Farm|Sarethi Farm]] ([[Skyrim:The Rift|The Rift]])
+* 6 around [[Skyrim:Steepfall Burrow|Steepfall Burrow]] ([[Skyrim:Haafingar|Haafingar]])
+* 5 around the [[Skyrim:Dawnstar Sanctuary|Dawnstar Sanctuary]] ([[Skyrim:The Pale|The Pale]])
+* 4 around [[Skyrim:Bruca's Leap Redoubt|Bruca's Leap Redoubt]] ([[Skyrim:The Reach|The Reach]])
+* 4 around [[Skyrim:Evergreen Grove|Evergreen Grove]] ([[Skyrim:Falkreath Hold|Falkreath Hold]])
+* 3 around the [[Skyrim:Abandoned Shack|Abandoned Shack]] ([[Skyrim:Hjaalmarch|Hjaalmarch]])
+* 3 around [[Skyrim:Bleakcoast Cave|Bleakcoast Cave]] ([[Skyrim:Winterhold (region)|Winterhold]])
+* 3 around [[Skyrim:Bleakwind Basin|Bleakwind Basin]] ([[Skyrim:Whiterun Hold|Whiterun Hold]])
+* 3 around [[Skyrim:Brinewater Grotto|Brinewater Grotto]] ([[Skyrim:Haafingar|Haafingar]])
+* 3 around [[Skyrim:Broken Oar Grotto|Broken Oar Grotto]] ([[Skyrim:Haafingar|Haafingar]])
+* 3 around [[Skyrim:Gloomreach|Gloomreach]] ([[Skyrim:The Reach|The Reach]])
+* 3 around [[Skyrim:Heartwood Mill|Heartwood Mill]] ([[Skyrim:The Rift|The Rift]])
+* 3 centered 1120 feet northwest of [[Skyrim:Mor Khazgur|Mor Khazgur]] ([[Skyrim:The Reach|The Reach]]) {{Map Link|x=-166846|y=100414}}
+* 3 around [[Skyrim:Ravenscar Hollow|Ravenscar Hollow]] ([[Skyrim:Haafingar|Haafingar]])
+* 3 around [[Skyrim:Redoran's Retreat|Redoran's Retreat]] ([[Skyrim:Whiterun Hold|Whiterun Hold]])
+* 3 centered 870 feet west-northwest of [[Skyrim:Rimerock Burrow|Rimerock Burrow]] ([[Skyrim:Haafingar|Haafingar]]) {{Map Link|x=-161516|y=110049}}
+* 3 around the [[Skyrim:Wreck Of The Brinehammer|Wreck Of The Brinehammer]] ([[Skyrim:The Pale|The Pale]])
+* 3 around the [[Skyrim:Wreck of the Icerunner|Wreck of the Icerunner]] ([[Skyrim:Hjaalmarch|Hjaalmarch]])
+
+==Related Quests==
+* {{Quest Link|Few and Far Between}}
+** 20 samples are needed for this quest.
+
+==Notes==
+* Nirnroot can be sold to [[Skyrim:Avrusa Sarethi|Avrusa Sarethi]] at [[Skyrim:Sarethi Farm|Sarethi Farm]] for the quest [[Skyrim:Gather Wheat|Gather Wheat]] for 10 gold each.
+* Nirnroot and Crimson Nirnroot are not affected by the [[Skyrim:Alchemy|Alchemy]] perk [[Skyrim:Green Thumb|Green Thumb]]; therefore, even with the perk, you will still only collect a single sample from each plant. However, with the [[Skyrim:Dragonborn|Dragonborn]] add-on installed, several regular Nirnroot plants can be found in [[Skyrim:Solstheim|Solstheim]] which yield multiple samples of the ingredient.
+* With the [[Skyrim:Hearthfire|Hearthfire]] add-on, you cannot plant Nirnroot at the [[Skyrim:Greenhouse|greenhouse or garden]] of your [[Skyrim:Construction|player-built property]].
+* Although [[Skyrim:Gianna|Gianna]] claims during the quest [[Skyrim:To Kill an Empire|To Kill an Empire]] that Nirnroot can be added to soups as "a special seasoning", you cannot do this yourself when cooking.
+
+==Bugs==
+{{Bug|An otherwise typical Nirnroot plant within a hollow log on a small island east-southeast of the [[Skyrim:Wreck of The Pride of Tel Vos|Wreck of The Pride of Tel Vos]] and due west of Winterhold cannot be harvested.|USKP|1.0}}
+{{Bug|At times, the glow emitted by a Nirnroot may not disappear.|OSP|1.6.87}}
+{{Bug|Sometimes Nirnroot becomes unharvestable; even though the sound of being picked will play, it will not be added to your inventory, nor will the plant disappear.|vn=1}}
+** Saving and then reloading the game may make the plant harvestable again.
+
+[[Category:Skyrim-Flora]]

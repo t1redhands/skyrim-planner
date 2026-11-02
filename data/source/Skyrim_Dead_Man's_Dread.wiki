@@ -1,0 +1,70 @@
+{{CC Header|Dead Man's Dread|shortcut={{CC|Dead Man's Dread}}|icon=SR-icon-Dead Man's Dread.png}}{{Trail|Creation Club}}{{About|the Creation|the place|Dead Man&#39;s Dread (place)}}{{Content Summary
+|image=SR-menu-Dead Man's Dread.jpg
+|imgdesc=Dead Man's Dread
+|title=[[Skyrim:Creation Club|Creation]]:<br>Dead Man's Dread
+|notrail=1
+|released=November 20, 2019
+|size=138 MB
+|filename=ccbgssse031-advcyrus.esm
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''750 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.97.0.8|Special Edition Version 1.5.97.0.8]]
+}}__NOTOC__
+'''Dead Man's Dread''' is a [[Skyrim:Creation Club|Creation]] that adds two pirate swords, new outfits, and a pirate ship player home.
+{{NewLeft}}
+
+==Official Summary==
+;Creation Club
+:''Shanties from across Tamriel sing of Cyrus, the hero of Stros M'Kai. Some believe he ventured north, on the legendary ship Dead Man's Dread. Find the lost ship, retrieve the treasures of Cyrus, and learn the fate of its crew. Includes two weapons, multiple new outfits, as well as naval home. Quest created by Kris Takahashi. Additional art support by Elianora. (Quest "The Restless" starts by reading the book The Restless at The Winking Skeever in Solitude.)''
+
+;Sneak Peek - November 2019
+:''"There once was a hardy young lad of the sea... A Redguard of courage and honor was he... Sail on, my Cyrus, sail on..."<br>Shanties from across Tamriel sing of Cyrus, the hero of Stros M'Kai, who sailed on long after his story was done. Stories differ, but some say he ventured north, drawn by the tales of Tobias, on the legendary ship Dead Man's Dread.<br>Find the lost ship, retrieve the treasures of Cyrus, and learn the fate of its crew. The Dead Man's Dread Creation includes two swords, multiple outfits and a custom naval home.''
+
+:''"Despite his fame, not all of Cyrus' accomplishments are known. Discovering his equipment may suggest one lost tale, or did these go on adventures of their own, separate from the man? Perhaps you will never know.<br>This quest gives you the opportunity to obtain two classic pirate swords, an assortment of outfits, and a unique player home.''
+
+;Sneak Peek - August 2019
+:''...seek out the sword of the famed Redguard, Cyrus, rumored to be on a lost pirate ship.''
+
+==Overview==
+This Creation adds the quest '''[[Skyrim:The Restless|The Restless]]''', which will lead you to a subterranean [[Skyrim:Dead Man's Dread (place)|ship]] on an [[Skyrim:Blackbone Isle|island]] in the [[Skyrim:Sea of Ghosts|Sea of Ghosts]]. Within this haunted wreck you will find relics of [[Lore:Cyrus|Cyrus]], the protagonist of ''[[Redguard:Redguard|Redguard]]''. After you have cleared the island of its undead inhabitants, you can claim the ship as your [[SR:Houses|player home]]. It comes fully furnished with [[SR:Crafting|crafting]] stations, a mannequin, and plenty of storage.
+
+This Creation also adds the [[SR:Blackwater Blade|Blackwater Blade]], an artifact that previously [[OB:Blackwater Blade|appeared]] in ''[[OB:Oblivion|Oblivion]]''.
+
+==Content==
+:;Books
+:*[[Skyrim:Captain's Journal|Captain's Journal]]
+:*[[Skyrim:The Restless (book)|The Restless]]
+:*[[Skyrim:Kevon's Note|Kevon's Note]]
+:*[[Skyrim:Forebear's Note|Forebear's Note]]
+:*[[Skyrim:Celeste's Note|Celeste's Note]]
+:*[[Skyrim:Pirate's Note|Pirate's Note]]
+
+:;[[Skyrim:Dead Man's Dread Items|Items]]
+:*[[Skyrim:Blackwater Blade|Blackwater Blade]]
+:*[[Skyrim:Boatswain Clothes|Boatswain Clothes]]
+:*[[Skyrim:Boatswain Shoes|Boatswain Shoes]]
+:*[[Skyrim:Captain Boots|Captain Boots]]
+:*[[Skyrim:Captain Clothes|Captain Clothes]]
+:*[[Skyrim:Cyrus' Boots|Cyrus' Boots]]
+:*[[Skyrim:Cyrus' Clothes|Cyrus' Clothes]]
+:*[[Skyrim:Cyrus' Sabre|Cyrus' Sabre]]
+:*[[Skyrim:Scrub Clothes|Scrub Clothes]]
+
+:;Places
+:*[[Skyrim:Blackbone Isle|Blackbone Isle]]
+:**[[Skyrim:Blackbone Isle Grotto|Blackbone Isle Grotto]]
+:**[[Skyrim:Dead Man's Dread (place)|Dead Man's Dread]]
+
+:;NPCs
+:*[[Skyrim:Blackwater Brigand|Blackwater Brigand]]
+:*[[Skyrim:Celeste|Celeste]]
+:*[[Skyrim:Ghost Captain|Ghost Captain]]
+:*[[Skyrim:Ghost Sailor|Ghost Sailor]]
+:*[[Skyrim:Kevon|Kevon]]
+
+:;Quests
+:*[[Skyrim:The Restless|The Restless]]
+
+==Notes==
+* This Creation received an update which modified the textures for Cyrus' Boots.
+* Upon completion of [[Skyrim:The Restless|The Restless]], the ship contains a map on a table which serves as a fast travel system, taking the player to the different ports.

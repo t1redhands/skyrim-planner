@@ -1,0 +1,56 @@
+{{CC Header|Gallows Hall|shortcut={{CC|Gallows Hall}}|icon=SR-icon-Gallows Hall.png}}{{Trail|Creation Club}}{{About|the Creation|the place|Gallows Hall (place)}}{{Content Summary
+|image=SR-menu-Gallows Hall.jpg
+|imgdesc=Gallows Hall
+|title=[[Skyrim:Creation Club|Creation]]:<br>Gallows Hall
+|notrail=1
+|released=November 11, 2021
+|size=49.1 MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=ccrmssse001-necrohouse.esl
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''400 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]], PlayStation 5, Xbox Series X<nowiki>|</nowiki>S
+|patch=[[Skyrim:Special Edition Patch#Version 1.6|Special Edition Version 1.6]]
+}}[[File:SR-prerelease-Gallows Hall.png|thumb|right|Gallows Hall]]__NOTOC__
+'''Gallows Hall''' is a necromancer themed [[Skyrim:Creation Club|Creation]] with a Necromancer-themed home located in Eastmarch, just north of [[SR:Mara's Eye Pond|Mara's Eye Pond]].
+
+It provides the ability to get an extra permanent conjured skeleton follower via the [[Skyrim:Bone Forge|Bone Forge]], a powerful staff that can summon permanent dead thralls as well as a light helmet that applies a second Necromage perk when worn.
+
+You will also be able to transform greater or grand soul gems into black soul gems via the altar inside the new home.
+{{NewLeft}}
+
+==Official Summary==
+:''Old forts have long been bastions for the dead, as mortals both wicked and misunderstood have hung from their gallows. Here, a necromancer can find a home filling its coffers with treasures that suit the morbid and macabre - provided they survive it. Claim the legendary Bloodworm Helm, Helm of Oreyn Bearclaw, and the Staff of Worms to wield the power of Mannimarco himself! Created by Rich Marin. (The "Dreams of the Dead" quest starts by reading Naara's Journal within the abandoned fort on the northern edge of Mara's Eye Pond.)''
+
+==Content==
+See '''[[Skyrim:Gallows Hall Items|Gallows Hall Items]]''' for a detailed list of items added by the creation.
+:;Items
+:*[[Skyrim:Bloodworm Helm|Bloodworm Helm]]
+:*[[Skyrim:Dreamer's Greater Soul Gem|Dreamer's Greater Soul Gem]]
+:*[[Skyrim:Helm of Oreyn Bearclaw|Helm of Oreyn Bearclaw]]
+:*[[Skyrim:Staff of Worms|Staff of Worms]]
+:;Books
+:*[[Skyrim:Arch Necromancer's Final Instructions|Arch Necromancer's Final Instructions]]
+:*[[Skyrim:Arch Necromancer's First Clue|Arch Necromancer's First Clue]]
+:*[[Skyrim:Arch Necromancer's Second Clue|Arch Necromancer's Second Clue]]
+:*[[Skyrim:Helm of Oreyn Bearclaw (book)|Helm of Oreyn Bearclaw]]
+:*[[Skyrim:Hooded Skeleton|Hooded Skeleton]]
+:*[[Skyrim:Letter to Naara|Letter to Naara]]
+:*[[Skyrim:Naara's Journal|Naara's Journal]]
+:*[[Skyrim:Naara's Plea|Naara's Plea]]
+:*[[Skyrim:Notes on the Bone Forge|Notes on the Bone Forge]]
+:;Keys
+:*[[Skyrim:Arch Necromancer's Key|Arch Necromancer's Key]]
+:;NPCs
+:*[[Skyrim:Boneman|Boneman]]
+:*[[Skyrim:Mistman|Mistman]]
+:*[[Skyrim:Naara|Naara]]
+:*[[Skyrim:Necromancer|Necromancer]]
+:*[[Skyrim:Skeleton|Skeleton]]
+:*[[Skyrim:Wrathman|Wrathman]]
+:;Places
+:*[[SR:Gallows Hall (place)|Gallows Hall]]
+:**[[Skyrim:Bone Forge|Bone Forge]]
+:;Quests
+:*[[Skyrim:Dreams of the Dead|Dreams of the Dead]]
+
+==Notes==
+* The <code>.esl</code> name of the Creation was added in July 2019 with [[Skyrim:Special Edition Patch#Version 1.5.80.0.8|Patch 1.5.80]], but its release was postponed in March 2020 due to the [[wikipedia:COVID-19 pandemic|COVID-19 pandemic]].

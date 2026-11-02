@@ -1,0 +1,120 @@
+{{Trail|Items}}{{#addtotrail:Books}}[[Category:Skyrim-Books| ]]
+'''Skill books''' are special books that permanently increase a [[Skyrim:Skills|skill]] by one point for free. There are five different books for each of the 18 skills, with 90 in total. Unlike [[Skyrim:Trainers|trainers]], there is no limit to how many skill books you can read at one character level. 
+
+* When you pick up a skill book, you automatically start to read it, and therefore immediately obtain the skill bonus. As with all books, you can read skill books without it being considered [[Skyrim:Crime|theft]]; theft only occurs if you select to "Take" an owned book while reading it. If you want to save a skill book for later, you can ask your [[Skyrim:Followers|follower]] to take or steal it for you.
+* Reading a new skill book awards sufficient experience to raise the skill to the next level (though see [[#Bugs|bugs]]). Therefore, to gain maximum experience, avoid reading skill books when your skill is about to level up. 
+* As with skill trainers, experience gained from skill books is increased with standing stone effects and other xp modifiers making it possible to earn over 2 levels worth of xp (however, it is not possible to level up a skill 3 times with one book) at a time while using scholar’s insight, an appropriate guardian stone, any of the bed rested bonuses, and the lovers stone on the Aetherial Crown. This will allow for “bonus” levels to be earned if xp bar growth is tracked and the appropriate skill is used in its normal fashion in instances where the xp bar progression reaches or nearly reaches the end of that levels bar but hasn’t moved to the next level. Performing this tedium when skills are level 85 or so can nearly max a skill after 5 skill books.
+* Reading another copy of a skill book that you have already read will not award any additional experience in that skill.
+* Generally speaking, it's more efficient to read skill books when you are at a fairly high level in that skill, as the time and effort required to increase skills at high levels is much greater. For example, leveling Archery from level 15 to level 16 can be achieved with just a few attacks; thus, using a skill book at this point is a waste. In contrast, leveling Archery from level 60 to 61 requires significantly more attacks, so reading a skill book at this point is more efficient.
+* Making a skill Legendary does not reset skill books, so after a skill has been made Legendary, you will not receive any experience for that skill from any of its skill books that have already been read.
+* Each newly read skill book awards two skill level increases when the [[SR:Scholar's Insight|Scholar's Insight]] ability obtained from the ''[[SR:Dragonborn|Dragonborn]]'' quest [[SR:Black Book: The Winds of Change (quest)|The Winds of Change]] is active.
+
+==Locations==
+Skill book locations are listed in the following table. With the exception of skill books found on the remains of [[Skyrim:Seeker|Seekers]] in [[Skyrim:Apocrypha|Apocrypha]] (which will never include unread skill books), they are never found in random loot, and they are never part of a merchant's inventory. Skill books can be easily distinguished from most other books by their value, which is usually at least 50 gold, substantially higher than the value of most other books. They can be sold to any merchants who trade in books, including spell and general goods merchants.
+{{#define:showid|1}}{{#define:showskill|1}}{{#define:showloc|1}}{{#define:showicon|1}}
+{| class="wikitable sortable"
+!class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Skill !! Author !! Description !!class=unsortable|Location
+{{Book Normal|A Game at Dinner}}
+{{Book Normal|De Rerum Dirennis}}
+{{Book Normal|Herbalist's Guide to Skyrim}}
+{{Book Normal|Mannimarco, King of Worms}}
+{{Book Normal|Song of the Alchemists}}
+{{Book Normal|Breathing Water}}
+{{Book Normal|Daughter of the Niben}}
+{{Book Normal|Reality & Other Falsehoods}}
+{{Book Normal|Sithis}}
+{{Book Normal|The Lunar Lorkhan}}
+{{Book Normal|Father Of The Niben}}
+{{Book Normal|The Black Arrow, v2}}
+{{Book Normal|The Gold Ribbon of Merit}}
+{{Book Normal|The Marksmanship Lesson}}
+{{Book Normal|Vernaccus and Bourlor|icon2=|id2=}}
+{{Book Normal|A Dance in Fire, v2}}
+{{Book Normal|Battle of Red Mountain}}
+{{Book Normal|Death Blow of Abernanit}}
+{{Book Normal|The Mirror}}
+{{Book Normal|Warrior (book)}}
+{{Book Normal|2920, Frostfall, v10}}
+{{Book Normal|2920, Hearth Fire, v9}}
+{{Book Normal|Liminal Bridges}}
+{{Book Normal|The Doors of Oblivion}}
+{{Book Normal|The Warrior's Charge}}
+{{Book Normal|A Hypothetical Treachery}}
+{{Book Normal|Horror of Castle Xyr}}
+{{Book Normal|Mystery of Talara, v3}}
+{{Book Normal|Response to Bero's Speech}}
+{{Book Normal|The Art of War Magic}}
+{{Book Normal|A Tragedy in Black}}
+{{Book Normal|Catalogue of Armor Enchantments}}
+{{Book Normal|Catalogue of Weapon Enchantments}}
+{{Book Normal|Enchanter's Primer}}
+{{Book Normal|Twin Secrets}}
+{{Book Normal|2920, MidYear, v6}}
+{{Book Normal|Chimarvamidium|id2=}}
+{{Book Normal|Hallgerd's Tale}}
+{{Book Normal|Orsinium and the Orcs}}
+{{Book Normal|The Knights of the Nine}}
+{{Book Normal|2920, Sun's Dawn, v2}}
+{{Book Normal|Before the Ages of Man}}
+{{Book Normal|Incident at Necrom}}
+{{Book Normal|Mystery of Talara, Part 4}}
+{{Book Normal|The Black Arts On Trial}}
+{{Book Normal|Ice and Chitin}}
+{{Book Normal|Jornibret's Last Dance}}
+{{Book Normal|Rislav The Righteous}}
+{{Book Normal|The Rear Guard}}
+{{Book Normal|The Refugees}}
+{{Book Normal|Advances in Lockpicking}}
+{{Book Normal|Proper Lock Design}}
+{{Book Normal|Surfeit of Thieves}}
+{{Book Normal|The Locked Room}}
+{{Book Normal|The Wolf Queen, v1}}
+{{Book Normal|2920, Morning Star, v1}}
+{{Book Normal|Fire and Darkness}}
+{{Book Normal|Mace Etiquette}}
+{{Book Normal|Night Falls on Sentinel}}
+{{Book Normal|The Importance of Where}}
+{{Book Normal|Aevar Stone-Singer}}
+{{Book Normal|Beggar (book)}}
+{{Book Normal|Guide to Better Thieving}}
+{{Book Normal|Purloined Shadows}}
+{{Book Normal|Thief (book)}}
+{{Book Normal|2920, Rain's Hand, v4}}
+{{Book Normal|Mystery of Talara, v 2}}
+{{Book Normal|Racial Phylogeny}}
+{{Book Normal|The Exodus}}
+{{Book Normal|Withershins}}
+{{Book Normal|Cherim's Heart}}
+{{Book Normal|Heavy Armor Forging}}
+{{Book Normal|Last Scabbard of Akrash}}
+{{Book Normal|Light Armor Forging}}
+{{Book Normal|The Armorer's Challenge}}
+{{Book Normal|2920, Last Seed, v8}}
+{{Book Normal|Legend of Krately House}}
+{{Book Normal|Sacred Witness}}
+{{Book Normal|The Red Kitchen Reader}}
+{{Book Normal|Three Thieves}}
+{{Book Normal|2920, Second Seed, v5}}
+{{Book Normal|A Dance in Fire, v6}}
+{{Book Normal|A Dance in Fire, v7}}
+{{Book Normal|Biography of the Wolf Queen}}
+{{Book Normal|The Buying Game}}
+{{Book Normal|Battle of Sancre Tor}}
+{{Book Normal|King}}
+{{Book Normal|Song Of Hrormir}}
+{{Book Normal|The Legendary Sancre Tor}}
+{{Book Normal|Words and Philosophy}}
+|}
+
+==Achievements==
+The [[Skyrim:Achievements|achievement]] related to skill books is:
+* {{achievement|Reader}}
+** To unlock this achievement, 50 different skill books must be read out of the 90 available. 
+** Books count towards this achievement even if they are read after the related skill has reached 100. In this case, no message appears on screen informing you that you have read a new skill book, but the game's counter is still increased.
+** You can track your progress towards the achievement using the "Skill Books Read" statistic on the General page of your journal's General Stats.
+
+==Bugs==
+{{Bug|On rare occasions, reading a skill book will report the skill being leveled, but not actually increase the skill's level. Being close to leveling the skill may increase the likelihood of this happening.|confirmed=1}}
+** Save your game and check the skill's value before reading any books. If it doesn't increase after reading, reload the save and increase the level of the skill before reading the book.
+{{Bug|Some skill books will not appear unless you have already found a different copy of that skill book, and some skill books will not appear if you have already found a different copy of that skill book.}}
+{{Bug|The copy of The Art of War Magic that is north of Fallowstone Cave is inaccessible.|confirmed=1}}

@@ -1,0 +1,160 @@
+{{CC Header|Farming}}{{Place Summary
+|mod=[[SR:Farming|Farming]]
+|type=Farm
+|zones=1
+|description=An abandoned [[SR:Farms|farm]] east of [[SR:Rorikstead|Rorikstead]].
+|region=Whiterun Hold
+|location=East of [[SR:Rorikstead|Rorikstead]]
+|locationcode=ccVSVSSE004FarmhouseInterior
+|treasure=''[[Skyrim:Song_of_the_Alchemists|Song of the Alchemists]]''
+|marker_id=Farm
+|dungeon=
+|clearable=
+|level=
+|occupants=
+|respawn=
+|alchemy=1
+|enchanting=1
+|tanning=1
+|smelter=1
+|forge=1
+|grindstone=1
+|workbench=1
+|cooking=1
+|oven=1
+|lumber=1
+|stone=1
+|image=SR-place-Goldenhills Plantation.jpg
+|imgdesc=Goldenhills Plantation
+|mapname=Goldenhills Plantation (CC)
+}} The farm is initially haunted, but you will be able to claim it as your own once you've put the spirits to rest as part of the quest [[Skyrim:The Unquiet Dead|The Unquiet Dead]]{{CC|Farming}}. The farm has various exterior [[Skyrim:Farming Construction|construction]] options, and you can hire a [[Skyrim:Personal Steward|personal steward]] to manage the farm's production and buy upgrades for the farmhouse interior. You are also able to set any [[Skyrim:Followers#Creatures|pet]] capable of combat (with the exceptions of [[SR:Meeko|Meeko]] and [[SR:Gogh|Gogh]]) to guard the farm. Like the steward, these can be swapped out at any time.
+
+The interior of the farmhouse consists of 5 rooms across three floors, including a two-room basement and a large master bedroom/loft. There's a skill book [[Skyrim:Song_of_the_Alchemists|Song of the Alchemists]] on the shelf in the basement.
+{{NewLeft}}
+
+==[[Skyrim:Goldenhills Plantation People|Goldenhills Plantation Residents]]==
+{{Skyrim:Goldenhills Plantation People}}
+
+==Related Quests==
+* {{Quest Link|The Unquiet Dead}}
+* {{Quest Link|A Farmer's Life For Me}}
+{{NewLine}}
+==Costs and Upgrades==
+See '''[[Skyrim:Farming Construction|Farming Construction]]''' for exterior upgrades.
+<onlyinclude>
+{| class="wikitable" style="width:100%; margin-right:0; margin-top:0;"
+!colspan=8 style="background-color:#FFDD66"|[[Skyrim:Goldenhills Plantation|Goldenhills Plantation]]
+|-
+!rowspan=2|Upgrades<br>purchased from
+|colspan=2 rowspan=2|[[Skyrim:Personal Steward|Personal Steward]]
+!colspan=1|Price to purchase home
+|colspan=1| {{Value Icon}} <font style="font-size: 110%;">0</font>
+|colspan=2 rowspan=2|
+|-
+!colspan=1| Total cost of all upgrades
+| {{Value Icon}} <font style="font-size: 110%;">4,000 to 4,750</font>
+|-
+!colspan=7 style="background-color:#FFDD66"|Upgrades
+|-
+|width=18%|{{Anchor|Kitchen furnishings}}
+|{{Anchor|Dining area}}
+|{{Anchor|Alchemy and enchanting lab}}
+|{{Anchor|Loft}}
+|{{Anchor|Master Bedroom}}
+|{{Anchor|Child's Bedroom}}{{Intnote|Library|‡}}
+|{{Anchor|Library and display room}}{{Intnote|Library|‡}}
+|-
+|{{ID|FExxx934|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx933|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx932|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx931|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx930|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx945|par=1|addbefore=ID:&#32;}}
+|{{ID|FExxx94A|par=1|addbefore=ID:&#32;}}
+|-
+| 750 gold
+| 500 gold
+| 1000 gold
+| 500 gold
+| 750 gold
+| 500 gold
+| 750 gold
+|- valign=top
+!colspan=3 style="background-color:#FFDD66"|Livestock
+|-
+| Cow
+| Goats
+| Chickens
+|-
+| 300 gold
+| 200 gold
+| 100 gold
+|- 
+|}
+{{note|Library|‡|The Child's Bedroom and the Library/Display Room are exclusive, as they occupy the same room. You can switch from the Library/Display Room to the Child's Bedroom for 500 gold. However, once selected, you cannot change the Child's Bedroom to the Library/Display Room.}}</onlyinclude>
+
+==Income==
+One farmhand increases income by 12.5%, while two farmhands increase it by 25%. The [[SR:Farming_Construction|Bunkhouse]] increases income by a further 15%, and its benefit applies even if no farmhands are hired. The Bunkhouse bonus stacks with the farmhand bonuses, giving a maximum multiplier of 1.25*1.15=1.4375 compared to the base income.
+
+Income appears to include a fractional component that is not displayed directly in the game.
+
+Although gold cannot be collected without a steward, profits will continue to accumulate while no steward is assigned. Hiring a steward will allow all accumulated gold to be collected.
+
+The plantation has a total of 38 plots of [[SR:Fertile Soil|Fertile Soil]] (27 in front of the house and 11 on the side of the house). Building the [[SR:Farming_Construction|Exterior Decoration]] adds another 6 plots of Fertile Soil, bringing the total to 44.
+{| class="wikitable"
+! Project !! Base income per day
+|-
+| Plant any ingredient || Ingredient value × number planted
+|-
+| Cow || 50
+|-
+| Goats ×2 || 2×20=40
+|-
+| Chickens ×3 || 3×10=30
+|-
+| [[SR:Farming_Construction|Apiary]] || 50
+|-
+| [[SR:Farming_Construction|Windmill]] || 100
+|-
+| '''Total''' || '''270'''
+|}
+
+For alchemy, planting 12 [[SR:Creep Cluster|Creep Cluster]], 20 [[SR:Mora Tapinella|Mora Tapinella]], and 12 [[SR:Scaly Pholiota|Scaly Pholiota]] produces 60 of each ingredient. This is the most valuable three-ingredient combination of plantable ingredients. The resulting potions will sell for a minimum of 7885 gold with Alchemy and Speech both starting at 15. The Pantry Cupboard inside the house provides a random number of additional ingredients for each planted crop, allowing for even more income.
+
+For passive income, planting all 44 fertile soils with [[SR:Blisterwort|Blisterwort]] provides the highest automatic profit. With all projects in the table above, (44*12+270)*1.4375=1147 gold/day can be collected from the steward.
+
+==Notes==
+*Personally hired farmhands listed above have higher combat stats than those hired by the steward, however only Brenuin is proficient with the weapon in his inventory. 
+*[[Skyrim:Whiterun Imperial Camp|Whiterun Imperial Camp]] is northeast of this farm.
+*A [[Skyrim:Stone Quarry|stone quarry]] is located on the rock outcropping a few feet west of the wood chopping block.
+*There's a [[SR:Unobtainable_Items#Nord_War_Horn|Nord War Horn]] in Rin's room, which is unobtainable otherwise, a unique Alembic in [[SR:Jonquil|Jonquil]]'s secret lab, a [[SR:Ores_and_Ingots#Broken_Iron_War_Axe_Head|Broken Iron War Axe Head]] and a [[SR:Ores_and_Ingots#Broken_Iron_War_Axe_Handle|Broken Iron War Axe Handle]] in the box on the second floor. They will disappear once the rooms are renovated.
+*After completing [[SR:A Farmer's Life For Me|A Farmer's Life For Me]], the steward can be fired and rehired as much as you like. An active steward cannot be asked to follow you (as opposed to [[Skyrim:Hearthfire|Hearthfire]] [[Skyrim:Personal Steward|stewards]]), so they must be fired to do so. The same is true with the guard pet.
+*Unlike at your [[Skyrim:Construction|player-built homes]]{{HF}}, you can create butter by placing milk into the butter churn here, and you don't need to wait for it to replenish.
+*Not all containers can be used as safe storage. The two barrels at left side when enter the cellar and the Fish Barrels behind the workbench are all respawning containers.
+**{{USKP|barrels in the house don't respawn anymore}}
+*[[SR:Armored Troll|Armored Trolls]] that are told to guard the farm cannot be taken as followers again. Once dismissed as a guard, you cannot ask it to follow and you will have to buy a new one.
+*You can use console commands to swap the children's room for the library. Select the addition you currently have using <code>prid <RefID></code>, then type <code>disable</code> to remove it. Then type <code>prid <RefID></code> to select the addition you want, and type <code>enable</code> to enable it instead. The RefID for the children’s room is <code>{{ID|FExxx945}}</code> and the library is <code>{{ID|FExxx94A}}</code>.
+*Changing the shrine in your library via console commands is possible.{{vn|what's the default?}} First, remove your current shrine by typing <code>prid <RefID></code> then <code>disable</code>, and place the new one by typing <code>prid <RefID></code> then <code>enable</code>. The RefIDs for the shrines are Akatosh: <code>{{ID|FExxxD96}}</code>, Arkay: <code>{{ID|FExxxD7E}}</code>, Azura: <code>{{ID|FExxx8FC}}</code>, Boethiah: <code>{{ID|FExxxD94}}</code>, Dibella: <code>{{ID|FExxx90C}}</code>, Julianos: <code>{{ID|FExxxBFC}}</code>, Kynareth: <code>{{ID|FExxxC86}}</code>, Mara: <code>{{ID|FExxxC54}}</code>, Mephala: <code>{{ID|FExxxBD6}}</code>, Stendarr: <code>{{ID|FExxxC51}}</code>, Talos: <code>{{ID|FExxxD8F}}</code>, and Zenithar: <code>{{ID|FExxxD75}}</code>.
+
+==Bugs==
+{{bug|Purchasing the alchemy and enchanting lab and entering the house may crash the game.|confirmed=1}}
+**Purchasing this upgrade last seems to prevent this. If this happens, try to purchase the upgrade, then fast travel away and back before entering the house for the first time.
+{{bug|Children and pets may not recognize the farm as a home. However, [[Skyrim:Hilda|Hilda]] (the pet goat) goes there if the player commands it.|confirmed=1}}
+{{bug|Children may freeze in place at the spot they are adopted.|confirmed=1}}
+{{bug|If children are adopted before Grelod the Kind is killed, your child might get stuck at the orphanage. Even if you tell them "it's time for bed". They still have all of the regular dialogue they would at your home, however they will not leave the orphanage.}}
+{{bug|Once the Dawnguard quest line is started random groups of three vampires will attack the farm. Farm animals including horses will protect the farm.}}
+{{Bug|The cupboard at the bottom of the stairs will be replaced by a Pantry Cupboard later, leaving any stored items in the original cupboard permanently inaccessible.}}
+**To recover the items, use the following console command: <code>"{{ID|FExxxDB9}}".removeallitems player</code>.
+
+==Gallery==
+<gallery>
+File:SR-interior-Goldenhills Plantation.jpg|Interior, prior to upgrades
+File:SR-interior-Goldenhills Plantation 02.jpg|Interior, after upgrades
+File:SR-interior-Goldenhills Plantation 03.jpg|The enchanting table upgrade
+File:SR-interior-Goldenhills Plantation 04.jpg|The alchemy area upgrade
+File:SR-place-Goldenhills Plantation 02.jpg|The camp for hired help prior to constructing the [[SR:Goldenhills Farm Bunkhouse|bunkhouse]]
+</gallery>
+{{Skyrim Houses}}
+{{Skyrim Construction}}
+{{Skyrim Settlements}}
+[[Category:Skyrim-Farming]][[Category:Skyrim-Creation Club-Places]]

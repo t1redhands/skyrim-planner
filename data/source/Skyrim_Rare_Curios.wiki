@@ -1,0 +1,43 @@
+{{CC Header|Rare Curios|shortcut={{CC|Rare Curios}}|icon=SR-icon-Rare Curios.png}}{{Trail|Creation Club}}{{Content Summary
+|image=SR-menu-Rare Curios.jpg
+|imgdesc=Rare Curios
+|title=[[Skyrim:Creation Club|Creation]]:<br>Rare Curios
+|notrail=1
+|released=August 29, 2018
+|size=108.9 MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=ccbgssse037-curios.esl
+|pc='''Free''' on [[Skyrim:Special Edition|Special Edition]]<br /><s><span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''100 Creation Credits'''</span></s> (formerly)
+|other=Also available on [[Skyrim:Xbox|Xbox One]], [[Skyrim:PS4|PS4]], and [[Skyrim:Switch|Switch]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.50.0|Special Edition Version 1.5.50.0]]
+}}__NOTOC__[[File:SR-prerelease-Rare Curios.jpg|thumb|right|A selection of the new items]]
+'''Rare Curios''' is a [[Skyrim:Creation Club|Creation]] that adds 51 ingredients from ''[[Morrowind:Morrowind|Morrowind]]'', ''[[Oblivion:Oblivion|Oblivion]]'', and ''[[Shivering:Shivering Isles|Shivering Isles]]''. Some of these ingredients have new effects from the previous games. The Creation also includes poisoned apples, Ayleid treasures, and new arrows and bolts.
+
+It was released on August 29, 2018 for 100 Creation Credits, and was later included as part of the [[SR:Saints & Seducers|Saints & Seducers]] Creation. Both Creations were made available for free to all [[SR:Special Edition|Special Edition]] players with the release of the [[SR:Anniversary Edition|Anniversary Edition]] on November 11, 2021.
+
+{{NewLeft}}
+
+==Official Summary==
+;Creation Club
+:''Alchemists have always known that the rarest ingredients bring life to the most powerful potions. This is why Khajiit caravans have brought along rare imports from the far reaches of Tamriel, from the Ashlands of Morrowind to the twisted gardens of the Shivering Isles. With these ingredients in hand, you can craft new potions, arrows, and poisons, including the poisoned apple favored by assassins. You can also find rare stones crafted by the Ayleids, as things exotic and foreign make their way to Skyrim. (Items added to Khajiit merchant vendors.)''
+
+;Sneak Peek - Aug 2018
+:''A large collection of classic items come to Skyrim! This includes over 50 alchemical ingredients from the lands of Morrowind, Cyrodiil, and beyond. There are also returning potion effects, expanded crossbow bolts, and a few lost treasures of the Ayleids. None of these are commonly found in the lands of Skyrim, but the traveling Khajiit caravans are likely your best bet to find some.''
+
+==Overview==
+This Creation adds a huge number of new '''[[Skyrim:Rare Curios Items|items]]''', the majority of which can only be obtained from [[SR:Khajiit Traders|Khajiit caravan traders]]. True to name, these items are quite rare and difficult to obtain, as the traders will only have a limited selection of items available at any given time. Many of the new items are [[SR:Ingredients|ingredients]], some with effects which are otherwise unavailable through [[SR:Alchemy|alchemy]] (for example, [[SR:Cure Poison|Cure Poison]], [[SR:Light|Light]], [[SR:Night Eye (effect)|Night Eye]], [[SR:Spell Absorption|Spell Absorption]]).
+
+The Creation also adds new crafting recipes. The new [[SR:Chokeberry|Chokeberry]] ingredient can be used to [[SR:Cooking|cook]] powerful [[Skyrim:Rare_Curios_Items#Food|poisoned apples]], and several new types of [[SR:Ammunition|ammunition]] can now be [[SR:Forge|forged]].
+
+In addition to Khajiit caravans, chokeberries can be purchased from [[Skyrim:Babette|Babette]], the new ammunition can be purchased from archery shops, and the Ayleid stones can be found as loot in boss chests. If Saints & Seducers is installed, many of the enemies in the questline drop Shivering Isles-related ingredients, and several can be found as loot or growing in the [[SR:Solitude Sewers|Solitude Sewers]].
+
+==Content==
+:;[[Skyrim:Rare Curios Items|Items]]
+:*[[Skyrim:Rare Curios Items#Ammunition|Arrows and Bolts]]
+:*[[Skyrim:Rare Curios Items#Food|Poisoned Apples]]
+:*[[Skyrim:Rare Curios Items#Ingredients|Ingredients]]
+:*[[Skyrim:Rare Curios Items#Miscellaneous Items|Ayleid Treasures]]
+
+==Notes==
+*The new bolts are made of specific materials because they are recreations of the types of [[Morrowind:Marksman#Crossbows and Bolts|bolts]] in ''[[Morrowind:Morrowind|Morrowind]]''.
+* There are now new ways to fall from any height. Originally the ingredient [[SR:Netch Jelly|Netch Jelly]] was a life-saver when eaten mid-fall, unlike the [[SR:Become Ethereal|Become Ethereal]] shout that cannot be activated mid-fall. The Rare Curios Creation adds a couple of new ingredients with a similar effect: [[SR:Corkbulb Root|Corkbulb Root]] and [[SR:Gold Kanet|Gold Kanet]], with Corkbulb Roots being a lot more common. As all of these ingredients cause [[SR:Paralysis|paralysis]] when eaten, they can be eaten shortly before impact to negate the [[Skyrim:Damage#Fall Damage|fall damage]].
+** Similarly, these ingredients can be used for "jelly clipping" - paralyzing yourself during certain types of third-person power attack to clip through walls.

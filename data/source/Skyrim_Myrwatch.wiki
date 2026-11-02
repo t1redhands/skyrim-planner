@@ -1,0 +1,55 @@
+{{CC Header|Myrwatch|shortcut={{CC|Myrwatch}}|icon=SR-icon-Myrwatch.png}}{{Trail|Creation Club}}{{About|the Creation|the place|Myrwatch (place)|the quest|Myrwatch (quest)}}{{Content Summary
+|image=SR-menu-Myrwatch.jpg
+|imgdesc=Myrwatch
+|title=[[Skyrim:Creation Club|Creation]]:<br>Myrwatch
+|notrail=1
+|released=August 29, 2018
+|size=65.0 MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=cceejsse002-tower.esl
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''400 Creation Credits''' or through the [[Skyrim: Anniversary Edition]]</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.50.0|Special Edition Version 1.5.50.0]]
+}}[[File:SR-interior-Myrwatch.jpg|thumb|right|The tower's interior]]__NOTOC__
+'''Myrwatch''' is a [[Skyrim:Creation Club|Creation]] that adds a player home in [[Skyrim:Hjaalmarch|Hjaalmarch]]. Like [[Skyrim:Tundra Homestead (place)|Tundra Homestead]], it contains an area for displaying unique items. It also includes a [[Skyrim:Staff Enchanter|staff enchanter]] from [[Skyrim:Dragonborn|Dragonborn]]. It was released on August 29, 2018 for 400 Creation Credits. On November 11, 2021 it was re-released as a part of the Anniversary Edition.
+
+This Creation was made by [https://www.nexusmods.com/skyrimspecialedition/users/3231858 Elianora], the same author as [[Skyrim:Tundra Homestead|Tundra Homestead]].
+{{NewLeft}}
+
+==Official Summary==
+;Creation Club
+:''Deep in the heart of Hjaalmarch lies a tower of unknown provenance. Legends say it was a home and hearth, an exquisitely decorated residence built by mages who defected from the College of Winterhold. But whatever its secrets, the truth can only be known by finding a way in. Created by Elianora. (Quest "Myrwatch" starts by traveling to the tower east of Morthal, and reading "Hans's Journal" nearby.)''
+
+;Sneak Peek - Aug 2018
+:''Myrwatch is a remote, but lavishly appointed, new player home deep in the fens of Hjaalmarch. The second floor contains a broad array of displays, allowing collectors to show off many of the unique items found across the land. More magically inclined characters will also find a rare staff enchanter here.''
+
+==Overview==
+This creation adds '''[[Skyrim:Myrwatch (place)|Myrwatch]]''', a mage tower east of [[SR:Morthal|Morthal]]. The tower is originally locked, but can be unsealed by completing a short [[Skyrim:Myrwatch (quest)|quest]]. It can then be used as a free player home.
+
+The tower comes fully-furnished and consists of two interior spaces separated by a magic portal. It contains many [[SR:Crafting|crafting]] stations, including an [[SR:Oven|oven]], a [[Skyrim:Staff Enchanter|staff enchanter]] (one of two outside [[Skyrim:Tel Mithryn (settlement)|Tel Mithryn]]), and an "[[SR:All Forge|All Forge]]" which allows you access to crafting options usually exclusively available at the [[SR:Skyforge|Skyforge]] and [[Skyrim:Forge#Gunmar.27s_Forge|Gunmar's forge]]. The upper floor houses an indoor alchemy garden, with eleven plots of [[SR:Fertile Soil|Fertile Soil]] for gardening. The property also possesses a large numbers of display cases and racks, with places to store unique [[SR:artifacts|artifacts]] and items such as [[Skyrim:Dragon Priest Mask|dragon priest masks]] and [[Skyrim:Miscellaneous Items#Bugs in a Jar|bugs in a jar]].
+
+==Content==
+:;Books
+:*[[Skyrim:Anora's Journal|Anora's Journal]]
+:*[[Skyrim:Hans's Journal|Hans's Journal]]
+:*[[Skyrim:Sindnar's Tower Notes|Sindnar's Tower Notes]]
+
+:;Creatures
+:*[[Skyrim:Elianora|Elianora]]
+
+:;Items
+:*Urns
+
+:;NPCs
+:*[[Skyrim:Hans|Hans]]
+
+:;Places
+:*[[Skyrim:Myrwatch (place)|Myrwatch]]
+
+:;Quests
+:*[[Skyrim:Myrwatch (quest)|Myrwatch]]
+
+==Notes==
+*A [[Lore:Anora's Journal (old)|previous version of ''Anora's Journal'']] made reference to the [[SR:Warlock's Ring|Warlock's Ring]], which was supposedly stored in Myrwatch by its original inhabitants. However, the ring was not included with Myrwatch, and the Creation was updated shortly after release to remove all mention of it. The free [[SR:Fishing|Fishing]] Creation released on November 11, 2021 made the ring available via the quest [[Skyrim:No Contest|No Contest]] by fishing at a spot close to Myrwatch.
+*The unique Smelting Pot can also be found in Bloodchill Manor. It functions exactly the same as a smelter.
+*The Arcane Enchanter within the Gallery has a unique look to it featuring a skull.
+*There's an abundance of the useful ingredient Hanging Moss all around the rooms.

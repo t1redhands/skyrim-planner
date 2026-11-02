@@ -1,0 +1,108 @@
+{{CC Header|Bloodchill Manor}}{{Trail|Places|Houses}}[[Category:Skyrim-Bloodchill Manor]][[Category:Skyrim-Creation Club-Places]]<noinclude>{{cleanup|Needs cleanup of placeholder text, addition of further notable treasure (e.g., skill book) in info box, addition of relevant links throughout, confirmation/editing of various bugs, etc.}}</noinclude>{{Place Summary
+|type=House
+|marker_id=Cave
+|mapname=Bloodchill Cavern (CC)
+|mod=[[Skyrim:Bloodchill Manor|Bloodchill Manor]]
+|zones=1
+|respawn=Never
+|treasure=''[[Skyrim:Spell Tome: Conjure Mistman|Spell Tome: Conjure Mistman]]''<br>''[[Skyrim:Spell Tome: Necromantic Healing|Spell Tome: Necromantic Healing]]''<br>''[[Skyrim:Last_Scabbard_of_Akrash|Last Scabbard of Akrash]]''<br>''[[Skyrim:The_Warrior%27s_Charge|The Warrior's Charge]]''
+|locationcode=ccEEJSSE005Interior01
+|region=Winterhold (region)
+|location=Southwest of [[Skyrim:Winterhold|Winterhold]]<br>East-southeast of [[Skyrim:Snowpoint Beacon|Snowpoint Beacon]]
+|alchemy=1
+|enchanting=1
+|tanning=1
+|smelter=1
+|forge=1
+|grindstone=1
+|workbench=1
+|cooking=1
+|oven=1
+|staffenchanter=1
+|lumber=1
+|image=SR-place-Bloodchill Cavern 02.jpg
+|imgdesc=Bloodchill Cavern
+|description=A small cave southwest of [[Skyrim:Winterhold|Winterhold]] containing a subterranean vampiric player [[Skyrim:Houses|home]].
+|addbelow=It contains only one zone, ''[[#Bloodchill Manor|Bloodchill Manor]]''.
+}} 
+<!--History introduction goes here-->
+{{NewLeft}}
+==Residents==
+The residents listed below are only present during the quest [[Skyrim:Guests for Dinner|Guests for Dinner]].
+{|class=wikitable
+!Residents
+|-
+|
+;[[SR:Bard|Bard]]
+;[[SR:Durian|Durian]] <sup>†</sup>
+;[[SR:Galtius|Galtius]]
+;[[SR:Igrit|Igrit]]
+;[[SR:Leyathil|Leyathil]]
+;[[SR:Marina|Marina]]
+;[[SR:Parven|Parven]]
+;[[SR:Porter|Porter]]
+;[[SR:Verin|Verin]]
+;[[SR:Waiter|Waiter]]
+;[[SR:Gargoyle|Gargoyle]] <sup>†</sup>
+;[[SR:Dawnguard (NPC)|Dawnguard]] <sup>‡</sup>
+|}
+<sup>'''†'''</sup> Will not be present if you do the quest as a vampire.<br>
+<sup>'''‡'''</sup> Will not be present if you do the quest as a non-vampire.
+
+{{NewLeft}}
+==Related Quests==
+*{{Quest Link|Guests for Dinner}}
+
+==Walkthrough==
+===Exterior===
+The exterior of the cave is barren except for three plots of Fertile Soil with [[Skyrim:snowberry|snowberry]] plants that can be harvested. These can be replaced with plants of your own choice from [[Skyrim:Greenhouse#Food and Ingredients|this list]].
+
+===Bloodchill Manor===
+[[File:SR-place-Bloodchill Cavern.jpg|right|thumb|Manor in the cave]]
+From the cave entrance, a path extends downward across a bridge over water to the front terrace of a building set into the rock. The cavern chamber is tall and mostly enclosed, with a small opening at the top revealing a bit of sky. Waterfalls lie to the right, and hanging moss grows in abundance around the terrace. Two gargoyle statues sit above the building's main doorway. A skeleton next to a [[Skyrim:Chest|chest]] can be found in the water beneath the bridge.
+<!--
+*Small stables with multiple sacks and barrels.
+*Multiple harvestable items hanging directly outside the door.
+*Forge, smelter, workbench, grindstone, and wood chopping block near the rear of the building, accompanied by a chest and some barrels.
+-->
+
+The manor itself is in the same zone as the surrounding cave. Just inside the front door on the left are a wood chopping block with a woodcutter's axe, two fish barrels, and four sacks. On the right are four small garden planters with three plots each.
+
+Down a long stairway is the main landing, around which are five rooms which all open up after the quest has been completed.
+
+First on the left is a workshop area with a grindstone, tanning rack, workbench, smelting pot, anvil, two weapon racks, three chests, three sacks, a barrel, a strongbox, and a cupboard holding a Smithing skill book, a ruby, an amethyst, and a sapphire. At the end of this room is a small dungeon with a hay pile usable for sleeping.
+
+Continuing clockwise from the left, the next room is a kitchen and dining area with a large dining table, bar, cooking pot, oven, four cupboards, two barrels, and twelve sacks.
+
+Next, at the far end of the landing in the center, is an armory room holding seventeen mannequins, eight weapon racks, six weapon plaques, four shield plaques, and dedicated displays for these unique items: eleven claws (including both halves of the amethyst claw), five paragons, five jars, fourteen masks, Auriel's Bow, Auriel's Shield, Dawnguard Rune Axe, Dawnguard Rune Hammer, Dawnguard Rune Shield, Zephyr, Initiate's Ewer, Draw Knife, Vale Deer Hide, and Harkon's Sword.
+
+[[File:SR-prerelease-Bloodchill Manor 03.png|left|thumb|Enchanting area in the manor]]
+The next room is a split-level library/alchemy-enchanting area/master bedroom. It holds vampire armor and clothing items, an alchemy lab with various ingredients, an arcane enchanter with several soul gems, a staff enchanter with two heart stones, two coffins usable for sleeping, a bed, eight mannequins, and numerous chests, bookcases, cupboards, and shelves. Upstairs, on a shelf is a ''[[Skyrim:Spell Tome: Conjure Mistman|Spell Tome: Conjure Mistman]]'' and a ''[[Skyrim:Spell Tome: Necromantic Healing|Spell Tome: Necromantic Healing]]''.
+
+The final room holds two children's beds, a mannequin, a training dummy, several bookcases, and multiple cupboards.
+
+{{NewLeft}}
+==Notes==
+* Respawning items include: vampire armor and clothing, other armor pieces on shelves, alchemy ingredients, soul gems, heart stones, foods and beverages, and smithing materials.
+* The training dummy in the children's room wears a Dawnguard helmet and holds a Dawnguard shield to look like the "enemy." The dummy is always equipped in this way regardless of whether you are a member of the Dawnguard.
+* East of the cave entrance is a world interaction point; as you travel the area, you may be attacked by random encounter enemies, including werewolves and giants. The large area means that some of the largest random encounters may spawn ([[Skyrim:World Interactions#Zombie Attack|seven zombies]] if [[Skyrim:Plague of the Dead|Plague of the Dead]]{{CC}} is installed, or the [[Skyrim:World Interactions#Giants fending off bandits|four bandits fighting two giants and a mammoth]]).
+* Even if you have not joined the Dawnguard, if you sided against the vampires to claim the home, vampires, death hounds, or gargoyles may attack you outside the cave to avenge their allies.
+
+==Bugs==
+{{Bug|The cave can be glitchy. Entering with certain followers, storing items, and relocating a family to the manor may cause the game to crash upon entering the cave.|confirmed=1}}
+{{Bug|When entering the cave with a pet follower and a humanoid follower, they may experience a pathfinding issue and become stuck in the cave entrance, running in place indefinitely. A simple fix is to leave and re-enter the cave, or to walk down the main hallway of the manor and wait for an hour; doing so should teleport the followers out of their bugged state.|confirmed=1}}
+{{Bug|Some spouses ([[Skyrim:Lydia|Lydia]], for example) will not move to Bloodchill Manor despite the option appearing in dialogue.|vn=1}}
+{{Bug|Many of the manor decorations, especially those in the master bedroom, float slightly. Touching them sends them flying.|vn=1}}
+{{Bug|If you sit in the left chair in front of the master bedroom fireplace, you can become stuck endlessly in the sitting animation, forcing you to reload the game.|vn=1}}
+{{Bug|The alchemy lab surface may be invisible, but the lab can still be used as normal. This bug can occur with a few other alchemy labs in the game (such as those in Saarthal and the Midden Dark).|confirmed=1}}
+{{Bug|After leaving and returning to the cave, weapons stored on the wall racks in the armory may not be retrievable. This bug also occurs in the basement armory of Hendraheim.|confirmed=1}}
+**{{Pc22}} To fix this bug, use console commands such as <code>MoveTo Player</code> or <code>ToggleCollision</code>.
+**Additional fixes include using a double weapon power attack to move past the rack to grab the stuck weapon, or placing another weapon in the same spot as the stuck weapon which then allows you to grab the stuck weapon and the newly placed weapon
+{{Bug|Placing a small dagger (example: Nettlebane) in any of the dagger cases on the top level of the master bedroom (the 4 at the top of the stairs and the 1 by the bed) can cause it to glitch and will be unable to be removed from the case. Larger daggers (example: Dragon Priest Dagger) with more surface area can still be selected and removed.|confirmed=1}}
+{{Bug|The [[SR:Wooden Mask|Wooden Mask]] and [[SR:Dawnguard Rune Hammer|Dawnguard Rune Hammer]] may disappear when placed on its stand. There is no way to retrieve it and you'll have to reload the last save made before then to keep it.}}
+{{Bug|There is an extra Emerald Paragon holder here when a Sapphire Paragon holder is missing.|OSSEP|1.6.1130}}
+{{Bug|When you complete the quest here as a non-vampire, the doors may be permanently closed with no way to open it next time you return to the cavern. This leaves you stuck with the Dawnguard Orc following you around and being unkillable.}}
+{{Bug|Leaving and returning to the cave after a certain period of time causes surfaces to reset and some items to fall out of their display racks. Some surface items may not reset properly causing them to fall to the floor or be scattered about.|confirmed=1}}
+
+{{Stub|Place}}
+{{Skyrim Houses}}

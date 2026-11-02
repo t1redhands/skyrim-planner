@@ -1,0 +1,41 @@
+{{CC Header|Hendraheim|shortcut={{CC|Hendraheim}}|icon=SR-icon-Hendraheim.png}}{{Trail|Creation Club}}{{About|the Creation|the place|Hendraheim (place)|the quest|Hendraheim (quest)}}{{Content Summary
+|image=SR-menu-Hendhraheim.jpg
+|imgdesc=Hendraheim
+|title=[[Skyrim:Creation Club|Creation]]:<br>Hendraheim
+|notrail=1
+|released=November 20, 2019
+|size=57.1 MB
+|filename=cceejsse004-hall.esl
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''400 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.97.0.8|Special Edition Version 1.5.97.0.8]]
+}}__NOTOC__
+'''Hendraheim''' is a [[Skyrim:Creation Club|Creation]] that adds a player home in the Reach.
+{{NewLeft}}
+==Official Summary==
+;Creation Club
+:''In the mountains of the Reach is a grand Nordic hall, built in a tradition befitting the warriors of old. The walls are decorated in triumph, each piece a memory of its owner's lasting valor. Created by Elianora. (Quest "Hendraheim" starts by reading the Warrior's Challenge delivered by courier upon reaching level 10.)''
+
+;Sneak Peek - November 2019
+:''In the mountains of the Reach is a grand Nordic hall, built in a tradition befitting the warriors of old. The walls are decorated in triumph, each piece a memory of its owner's lasting valor. The key to such a home is not bought with coin, but courage in combat. Hendraheim is no exception to this rule.''
+
+;Sneak Peek - August 2019
+:''We also have a new player home, a Nordic hall found in the mountains of the Reach.''
+
+==Content==
+:;Books
+:*[[Skyrim:Eydvina's Note|Eydvina's Note]]
+:*[[Skyrim:Warrior's Challenge|Warrior's Challenge]]
+:;Items
+:*Vases
+:;Keys
+:*[[Skyrim:Key to Hendraheim|Key to Hendraheim]]
+:;NPCs
+:*[[SR:Eydvina Shield-Hearth|Eydvina Shield-Hearth]]
+:;Places
+:*[[Skyrim:Hendraheim (place)|Hendraheim]]
+:;Quests
+:*[[Skyrim:Hendraheim (quest)|Hendraheim]]
+
+==Notes==
+* The in-game Creation Club at first spelled the Creation as "Hendhraheim". This was a typo, as the quest, location, and virtually every other mention of the house in the game spell it as "Hendraheim". The Sneak Peak article also spelled it this way and as "Hedhraheim". It was fixed on November 15, 2021, after nearly two years.

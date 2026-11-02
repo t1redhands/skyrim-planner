@@ -1,0 +1,41 @@
+{{CC Header|Tundra Homestead|shortcut={{CC|Tundra Homestead}}|icon=SR-icon-Tundra Homestead.png}}{{Trail|Creation Club}}{{About|the Creation|the place|Tundra Homestead (place)}}{{Content Summary
+|image=SR-menu-Tundra Homestead.jpg
+|imgdesc=Tundra Homestead
+|title=[[Skyrim:Creation Club|Creation]]:<br>Tundra Homestead
+|notrail=1
+|released=April 5, 2018
+|size=28.2 MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=cceejsse001-hstead.esm
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''300 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.39|Special Edition Version 1.5.39]]
+}}__NOTOC__[[File:SR-interior-Tundra Homestead 02.jpg|thumb|right|One of several unique static objects that decorate the house]]
+'''Tundra Homestead''' is a [[Skyrim:Creation Club|Creation]] that adds a cottage east of [[Skyrim:Whiterun|Whiterun]], which can be purchased from the city's steward. It was released on April 5, 2018 for 300 Creation Credits.
+
+This Creation was made by [https://www.nexusmods.com/skyrimspecialedition/users/3231858 Elianora], the author of many Skyrim housing mods.
+{{NewLeft}}
+
+==Official Summary==
+:''Tundra Homestead provides a cozy cottage just outside Whiterun. Complete with crafting stations and fully furnished, this home is a quiet getaway from adventuring. Full support for spouses and adopted children included.  Created by Elianora. (House outside the city is purchased from the Jarl's Steward in Dragonsreach.)''
+
+==Overview==
+This Creation adds '''[[Skyrim:Tundra Homestead (place)|Tundra Homestead]]''' east of [[Skyrim:Whiterun|Whiterun]]. The cottage is initially locked, and there is a [[Skyrim:Homestead For Sale|note]] outside that tells you to buy it from the city's steward. Buying the property gives you the typical objective to visit your new home.
+
+Tundra Homestead comes fully furnished, unlike all other houses except [[Skyrim:Severin Manor|Severin Manor]] in [[Skyrim:Raven Rock|Raven Rock]]. It is a small house with two floors and an exterior estate. There is no prerequisite quest, making it the simplest house to obtain, though at 7,500 gold it is slightly more expensive than a fully furnished [[Skyrim:Breezehome|Breezehome]] at 6,800 gold. The property contains many [[SR:Crafting|crafting]] stations, including a "Baking Surface" which acts as an [[SR:Oven|oven]] for access to the [[SR:Baking|baking]] recipes added by [[SR:Hearthfire|Hearthfire]]. It also possesses a large display room in the cellar, with places to store unique items such as [[Skyrim:Dragon Priest Mask|dragon priest masks]] and [[Skyrim:Miscellaneous Items#Bugs in a Jar|bugs in a jar]].
+
+==Content==
+:;Books
+:*[[Skyrim:Homestead For Sale|Homestead For Sale]]
+
+:;[[Skyrim:Tundra Homestead Items|Items]]
+:*[[Skyrim:Key to Tundra Homestead|Key to Tundra Homestead]]
+
+:;Places
+:*[[Skyrim:Tundra Homestead (place)|Tundra Homestead]]
+
+==Notes==
+* This Creation uses an <code>.esm</code> file rather than <code>.esl</code> to store its data.
+*Speak with the current steward of Dragonsreach with 7500 gold in your inventory. Choose the option to purchase the home. Quickly back out of the dialogue and activate any nearby container (or follower) and store all your gold within it before the house key is given. Once the dialogue ends go back in and take your gold back. The key to Tundra Homestead will now be in your possession free of charge.
+
+==See Also==
+* [https://bethesda.net/en/article/6VgEkdHqTecgYwSCkiqyeq/creator-spotlight-elianora "Creator Spotlight – Elianora" on Bethesda.net]

@@ -1,0 +1,41 @@
+{{CC Header|shortcut={{CC|Shadowfoot Sanctum}}|icon=SR-icon-Shadowfoot Sanctum.jpg}}{{Trail|Creation Club}}{{About|the Creation|the place|Shadowfoot Sanctum (place)|the quest|Shadowfoot Sanctum (quest)}}{{Content Summary
+|image=SR-menu-Shadowfoot Sanctum.jpg
+|imgdesc=Shadowfoot Sanctum
+|title=[[Skyrim:Creation Club|Creation]]:<br>Shadowfoot Sanctum
+|notrail=1
+|released=March 14, 2019
+|size=27.4 MB (PC) / {{huh}} (Xbox One) / {{huh}} (PS4)
+|filename=cceejsse003-hollow.esl
+|pc=<span class="plainlinks">Available from [[Skyrim:Creation Club|Creation Club]] for '''400 Creation Credits'''</span>
+|other=Also available on [[Skyrim:Xbox|Xbox One]] and [[Skyrim:PS4|PS4]]
+|patch=[[Skyrim:Special Edition Patch#Version 1.5.73.0.8|Special Edition Version 1.5.73.0.8]]
+}}__NOTOC__
+'''Shadowfoot Sanctum''' is a [[Skyrim:Creation Club|Creation]] that adds a new player home in the [[Skyrim:Riften|Riften]] [[Skyrim:The Ratway|Ratway]], intended primarily for thief characters. It was released on March 14, 2019 for 400 Creation Credits.
+
+This Creation was made by [https://www.nexusmods.com/skyrimspecialedition/users/3231858 Elianora], the same author as [[Skyrim:Tundra Homestead|Tundra Homestead]] and [[Skyrim:Myrwatch|Myrwatch]].
+{{NewLeft}}
+
+==Official Summary==
+:''A thief does not fear the dark, for they call the shadows home. Shadowfoot Sanctum is a brand new player domicile nestled in the dark underbelly of the Riften Ratways. With a secret sewer entrance and easy access to the Thieves Guild, Shadowfoot Sanctum provides both convenience and concealment for any aspiring thief, as well as a secret room to display your spoils with discretion. Created by Elianora. (House can be purchased from Vekel the Man in the Ragged Flagon in the Riften Ratway.)''
+
+==Content==
+:;Books
+:*[[Skyrim:Note to Vekel|Note to Vekel]]
+
+:;Items
+:*[[Skyrim:Glass Jar|Glass Jar]]
+:*Jeweled Goblet
+:*Jeweled Pitcher
+:*Jeweled Ship Model
+:*[[Skyrim:Key to Shadowfoot Sanctum|Key to Shadowfoot Sanctum]]
+
+:;Places
+:*[[Skyrim:Riften Docks|Riften Docks]] map marker
+:*[[Skyrim:Shadowfoot Sanctum (place)|Shadowfoot Sanctum]]
+
+:;Quests
+:*[[Skyrim:Shadowfoot Sanctum (quest)|Shadowfoot Sanctum]]
+
+==Notes==
+* Despite the promotional image for this Creation showing a dark key shaped like the [[Skyrim:Shadowmarks (Thieves Guild)|Guild Shadowmark]], the actual in-game key uses a vanilla model.
+*The Key to Shadowfoot Sanctum can be acquired for free. The asking price in gold (7,500) is required to pull this off. Head down to the Ragged Flagon and speak with the Ragged Flagon Bartender "Vekel The Man." Be sure to have 7,500 gold in your inventory beforehand. Select the option to purchase the home and quickly back out of the dialogue. Turn and place all your gold within any nearby container (or follower) before being handed the "Key to Shadowfoot Sanctum." If done correctly the key will be added and the dialogue will end. Simply get in whatever container used and retrieve the gold back!
