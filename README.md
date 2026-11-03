@@ -20,6 +20,17 @@ You plan in three milestones: **by level 20**, **by level 40** and **by level 60
 | 6. Quest plan | A quest list built from your choices: **Expedite** quests give something the build needs, **Priority** quests suit the character, and **Selected** are your own extras. Add a whole questline at once (the main story, a faction, an add-on), then change any single quest's priority. Prerequisites are added automatically and move up with the quests that need them, and quests your Civil War or Dawnguard side locks out are left out. A quest browser filters every quest by questline, place, add-on, status and level. |
 | 7. Summary | The whole build on one page, a printable build sheet, and a build code to save or share. The build sheet puts the build on page one and the checklists (shopping list, quests and collections) on the pages after. |
 
+## Play mode
+
+When the character is ready, **Play mode** in the header turns the planner into a play-through guide. **Back to plan** returns to the plan at any time, and edits there show up in Play mode straight away.
+
+- **Now** shows your level, your attributes and perks so far, and the in-game date. It lists what's due before your next milestone: perks, quests to expedite, gear, Standing Stones and collection items. Overdue items are flagged, and the next quests in your plan come after.
+- **Level up** asks which attribute you raised (suggesting the one your plan needs next) and which perk you took. The perk list starts with your plan's perks, and a perk you take that isn't in the plan can be added to it. You can also save a perk for later and record it when you spend it.
+- **Journal** keeps a dated log. Level-ups, finished quests and finds are written in as you mark them, and you can add your own entries and edit any of them. Each entry has an in-game date (day, month, year and time); the weekday fills in from the date, counting from the game's start on Sundas, 17th of Last Seed, 4E 201.
+- **Download as text** saves the journal as a plain text file to edit in a word processor. **Export journal file** saves the whole character, plan and journal as a `.json` file that **Import a journal file** loads on another device.
+
+Share links and build codes carry your progress (level, perks and attributes taken, quests done, items found, the in-game date) but not the journal.
+
 Warnings marked ⚠ flag anything that can't happen as planned, such as gear that isn't available by its milestone or a shout whose words come from a quest your side skips.
 
 ## Saving and sharing builds

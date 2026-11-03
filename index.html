@@ -213,6 +213,24 @@ textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px soli
   .move-steps { gap: 12px; }
 }
 .move-line { margin: 0 0 4px; }
+.play-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.play-cards .big { font-family: var(--display); font-size: 1.6rem; line-height: 1.1; }
+.gdate { border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; display: flex; flex-wrap: wrap; gap: 8px 14px; margin: 0; }
+.gdate legend { font-size: .85rem; padding: 0 4px; }
+.gdate label, .pfield { display: grid; gap: 3px; font-size: .82rem; color: var(--ink-2); }
+.gdate input, .gdate select, .pfield input, .pfield select, .pfield textarea { padding: 6px 8px; border: 1px solid var(--field); border-radius: 4px; background: var(--bg); color: var(--ink); font: inherit; font-size: .95rem; }
+.gdate input[type=number] { width: 5.5em; }
+.pfield textarea { min-height: 110px; line-height: 1.5; resize: vertical; }
+.pfield.wide input, .pfield.wide select { width: 100%; }
+.chip:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.chip input { accent-color: var(--accent); margin: 0 4px 0 0; }
+.pwarn { color: var(--warn); font-size: .9rem; margin: 0; }
+.due h4 { margin: 4px 0 6px; font-size: .95rem; }
+.due-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 18px; }
+.journal { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.jentry .jhead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px; font-size: .85rem; color: var(--ink-2); }
+.jentry h3 { margin: 0; font-size: 1.05rem; }
+.jentry p { margin: 0; white-space: pre-wrap; }
 .coll-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 6px 18px; }
 .coll-item { display: flex; gap: 8px; align-items: flex-start; font-size: .92rem; }
 .coll-item input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--accent); }
@@ -458,9 +476,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="top-row">
       <h1>Skyrim Character Planner</h1>
       <div class="build-tag" id="buildTag"></div>
+      <button class="btn ghost" id="modeBtn">Play mode</button>
       <button class="btn quiet" id="aboutBtn" aria-haspopup="dialog">About<span class="long"> and credits</span></button>
     </div>
-    <nav class="steps" role="tablist" aria-label="Planner steps">
+    <nav class="steps" id="planNav" role="tablist" aria-label="Planner steps">
       <button role="tab" id="tab-identity" aria-controls="p-identity" aria-selected="true" data-step="identity"><span class="n">1</span> Identity</button>
       <button role="tab" id="tab-skills" aria-controls="p-skills" aria-selected="false" data-step="skills"><span class="n">2</span> Perks and attributes</button>
       <button role="tab" id="tab-loadout" aria-controls="p-loadout" aria-selected="false" data-step="loadout"><span class="n">3</span> Loadout</button>
@@ -468,6 +487,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button role="tab" id="tab-collections" aria-controls="p-collections" aria-selected="false" data-step="collections"><span class="n">5</span> Collections</button>
       <button role="tab" id="tab-quests" aria-controls="p-quests" aria-selected="false" data-step="quests"><span class="n">6</span> Quest plan</button>
       <button role="tab" id="tab-summary" aria-controls="p-summary" aria-selected="false" data-step="summary"><span class="n">7</span> Summary</button>
+    </nav>
+    <nav class="steps" id="playNav" role="tablist" aria-label="Play-through" hidden>
+      <button role="tab" id="tab-play" aria-controls="p-play" aria-selected="false" data-step="play">Now</button>
+      <button role="tab" id="tab-journal" aria-controls="p-journal" aria-selected="false" data-step="journal">Journal</button>
     </nav>
   </div>
 </header>
@@ -794,6 +817,27 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
   </section>
 
+  <section class="panel" id="p-play" role="tabpanel" aria-labelledby="tab-play" hidden>
+    <div class="intro">
+      <h2>Play-through</h2>
+      <p class="muted">Track the game as you play it: your level, the perks and attributes you take, what's due before your next milestone, and a journal of the journey. Your plan stays as it is; <strong>Back to plan</strong> in the header returns to it.</p>
+    </div>
+    <div id="playBody"></div>
+  </section>
+  <section class="panel" id="p-journal" role="tabpanel" aria-labelledby="tab-journal" hidden>
+    <div class="intro">
+      <h2>Journal</h2>
+      <p class="muted">Level-ups, finished quests and finds are written here as you mark them. Add your own entries, edit any entry, and download the journal as a text file to edit in a word processor.</p>
+    </div>
+    <div class="box">
+      <div class="row"><button class="btn" id="jAdd">Add an entry</button>
+        <label class="rank"><span class="rl">Show</span><select id="jFilter" aria-label="Show entries"><option value="">Everything</option><option value="level">Level-ups and perks</option><option value="quest">Quests</option><option value="item">Finds</option><option value="note">My entries</option></select></label></div>
+      <div class="row"><button class="btn ghost" id="jText">Download as text</button><button class="btn quiet" id="jExport">Export journal file</button><label class="btn quiet" for="jImport">Import a journal file</label><input type="file" id="jImport" accept=".json,application/json" class="sr-only"></div>
+      <p class="muted" style="margin:0;font-size:.9rem">The text file opens in any word processor. The journal file (.json) holds the whole character, plan and journal, so you can load it on another device. Share links and build codes carry your progress but not the journal.</p>
+      <div class="status" id="jStatus" role="status"></div>
+    </div>
+    <ol class="journal" id="jList"></ol>
+  </section>
   <section class="panel" id="p-collections" role="tabpanel" aria-labelledby="tab-collections" hidden>
     <div class="intro">
       <h2>Collections</h2>
@@ -923,6 +967,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
 <div id="printSheet" aria-hidden="true"></div>
 
+<dialog class="about" id="pdlg" aria-labelledby="pdlgTitle">
+  <div class="about-head"><h2 id="pdlgTitle"></h2><button class="btn quiet" id="pdlgClose">Cancel</button></div>
+  <div class="about-body" id="pdlgBody"></div>
+</dialog>
 <dialog class="about" id="about" aria-labelledby="aboutTitle">
   <div class="about-head"><h2 id="aboutTitle">About and credits</h2><button class="btn quiet" id="aboutClose">Close</button></div>
   <div class="about-body">
@@ -932,7 +980,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <p>Game data is gathered from the community wikis below and summarized. Their text is shared under Creative Commons Attribution-ShareAlike licenses (<a href="https://creativecommons.org/licenses/by-sa/2.5/" target="_blank" rel="noopener">CC BY-SA 2.5</a> for UESP, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a> for the Elder Scrolls Wiki), so this planner's data files are shared under the same terms. Leveling formulas, races, skills and Standing Stones come from UESP's <a href="https://en.uesp.net/wiki/Skyrim:Leveling" target="_blank" rel="noopener">Leveling</a>, <a href="https://en.uesp.net/wiki/Skyrim:Races" target="_blank" rel="noopener">Races</a> and <a href="https://en.uesp.net/wiki/Skyrim:Skills" target="_blank" rel="noopener">Skills</a> pages.</p>
     <ul class="credits" id="credits"></ul>
     <h3>Your data</h3>
-    <p>Builds are kept only in this browser on this device. Nothing is sent anywhere. Use the build code on the Summary step to move a build to another device or share it.</p>
+    <p>Builds and journals are kept only in this browser on this device. Nothing is sent anywhere. Use the build code on the Summary step to move a build to another device or share it, and the journal file on the Journal page to move a play-through.</p>
     <h3>License</h3>
     <p>The planner's code and original content are in the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener">CC0 1.0</a>: use, change and share them freely. The game data stays under the CC BY-SA terms of the wikis it came from.</p>
     <p class="muted" id="repoNote">Source code and data: <a href="https://github.com/t1redhands/skyrim-planner" target="_blank" rel="noopener">github.com/t1redhands/skyrim-planner</a>.</p>
@@ -1158,8 +1206,22 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const suggestStones = (picks, race) => Object.fromEntries(MS.map(m => { const f = fastestStone(stretchIncreases(picks, race, m)); return [m, f && f.gain > 0 ? f.s.id : null]; }));
 
   // ---------- State ----------
+  // ---------- In-game calendar (UESP: Skyrim:Calendar). The game starts on Sundas, 17th of Last Seed, 4E 201 ----------
+  const GMONTHS = [['Morning Star', 31], ["Sun's Dawn", 28], ['First Seed', 31], ["Rain's Hand", 30], ['Second Seed', 31], ['Midyear', 30], ["Sun's Height", 31], ['Last Seed', 31], ['Hearthfire', 30], ['Frostfall', 31], ["Sun's Dusk", 30], ['Evening Star', 31]];
+  const GDAYS = ['Sundas', 'Morndas', 'Tirdas', 'Middas', 'Turdas', 'Fredas', 'Loredas'];
+  const dayNum = g => g.y * 365 + GMONTHS.slice(0, g.mo).reduce((n, [, d]) => n + d, 0) + g.d;
+  const weekdayOf = g => (((dayNum(g) - dayNum({ y: 201, mo: 7, d: 17 })) % 7) + 7) % 7;
+  const START_DATE = { d: 17, mo: 7, y: 201, w: 0, t: '' };
+  const okDate = g => g && Number.isInteger(g.mo) && g.mo >= 0 && g.mo < 12 && Number.isInteger(g.d) && g.d >= 1 && g.d <= GMONTHS[g.mo][1] && Number.isInteger(g.y) && g.y > 0 && g.y < 1000
+    ? { d: g.d, mo: g.mo, y: g.y, w: Number.isInteger(g.w) && g.w >= 0 && g.w < 7 ? g.w : weekdayOf(g), t: /^\d\d:\d\d$/.test(g.t || '') ? g.t : '' } : null;
+  const ordinal = n => n + ([11, 12, 13].includes(n % 100) ? 'th' : ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th'));
+  const time12 = t => { const [hh, mm] = t.split(':').map(Number); return `${(hh % 12) || 12}:${String(mm).padStart(2, '0')} ${hh < 12 ? 'AM' : 'PM'}`; };
+  const fmtDate = g => `${GDAYS[g.w]}, ${ordinal(g.d)} of ${GMONTHS[g.mo][0]}, 4E ${g.y}${g.t ? `, ${time12(g.t)}` : ''}`;
+  const RANK = Object.fromEntries(ALL_RANKS.map(r => [r.key, r]));
+  const J_KINDS = { start: 'Beginning', level: 'Level-up', perk: 'Perk', quest: 'Quest', item: 'Find', note: 'Entry' };
+  const blankPlay = () => ({ on: false, start: 1, ups: [], date: { ...START_DATE } });
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, play: blankPlay(), journal: [], has: { gear: {}, stone: {} }, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -1195,6 +1257,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (canEnchant(g) && Array.isArray(md.ench)) o.ench = md.ench.slice(0, 2).map(e => ENB[e] && ENB[e].slots.includes(enchSlot(g)) ? e : '');
       if (o.how || o.ench) out.mods[k] = o;
     }
+    const favs = (src, ok) => Object.fromEntries(Object.keys(src && typeof src === 'object' ? src : {}).filter(k => ok[k] && src[k]).map(k => [k, 1]));   // favorites; older builds stored a milestone
     const keep = (src, ok) => Object.fromEntries(Object.entries(src && typeof src === 'object' ? src : {}).filter(([k, v]) => ok[k] && MS.includes(v)));
     out.notes = typeof s.notes === 'string' ? s.notes.slice(0, 6000) : '';
     // collections you've taken on, and the items you've found ("collection/item")
@@ -1204,6 +1267,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
       out.collections[k] = v.tier === 'expedite' && MS.includes(v.m) ? { tier: 'expedite', m: v.m } : { tier: 'selected' };
     }
     out.got = Object.fromEntries(Object.keys(s.got && typeof s.got === 'object' ? s.got : {}).filter(k => { const [c, i] = k.split('/'); return CL[c]?.items.some(x => x.id === i); }).map(k => [k, true]));
+    // play-through: level-ups ({ a: attribute 0-2 or null if not recorded, p: perk rank, 'save' for a perk kept for later, or null }), the in-game date, and the journal
+    const pl = s.play && typeof s.play === 'object' ? s.play : null;
+    out.play = pl && pl.on ? { on: true, start: Math.min(Math.max(parseInt(pl.start) || 1, 1), 81),
+      ups: (Array.isArray(pl.ups) ? pl.ups : []).slice(0, 300).map(u => ({ a: [0, 1, 2].includes(u?.a) ? u.a : null, p: u?.p === 'save' || RANK[u?.p] ? u.p : null })),
+      date: okDate(pl.date) || { ...START_DATE } } : blankPlay();
+    out.journal = (Array.isArray(s.journal) ? s.journal : []).slice(-3000).filter(e => e && typeof e === 'object').map(e => ({
+      id: String(e.id || Math.random().toString(36).slice(2)).slice(0, 24), k: J_KINDS[e.k] ? e.k : 'note', at: typeof e.at === 'string' ? e.at.slice(0, 30) : new Date().toISOString(),
+      g: okDate(e.g) || { ...START_DATE }, title: String(e.title || '').slice(0, 160), text: String(e.text || '').slice(0, 20000), ref: e.ref ? String(e.ref).slice(0, 80) : undefined }));
+    out.has = { gear: favs(s.has?.gear, GR), stone: favs(s.has?.stone, STN) };
     out.creature = s.creature && ['werewolf', 'vampire'].includes(s.creature.kind) && MS.includes(s.creature.m) ? { kind: s.creature.kind, m: s.creature.m } : null;
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
@@ -1222,7 +1294,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (v.tier === 'selected') out.spells[k] = { tier: 'selected' }; else if (MS.includes(v.m)) out.spells[k] = { tier: 'expedite', m: v.m };
     }
     out.food = Object.fromEntries(Object.keys(s.food && typeof s.food === 'object' ? s.food : {}).filter(k => RC_[k] && s.food[k]).map(k => [k, 1]));   // favorites; older builds stored a milestone
-    const favs = (src, ok) => Object.fromEntries(Object.keys(src && typeof src === 'object' ? src : {}).filter(k => ok[k] && src[k]).map(k => [k, 1]));   // favorites; older builds stored a milestone
     out.scrolls = favs(s.scrolls, SCR); out.spiders = favs(s.spiders, SPD);
     out.scrollUse = ['none', 'some', 'main'].includes(s.scrollUse) ? s.scrollUse : 'none';
     out.spiderUse = ['none', 'some', 'main'].includes(s.spiderUse) ? s.spiderUse : 'none';
@@ -1266,7 +1337,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
     if (step === 'attributes') step = 'skills';   // attributes now live on the perk step
-    ['identity','skills','loadout','household','collections','quests','summary'].forEach(p => $('p-' + p).hidden = p !== step);
+    ['identity','skills','loadout','household','collections','quests','summary','play','journal'].forEach(p => $('p-' + p).hidden = p !== step);
+    const playing = step === 'play' || step === 'journal';
+    if (playing !== (MODE === 'play')) setMode(playing ? 'play' : 'plan', false);
+    if (step === 'play') renderPlay();
+    if (step === 'journal') renderJournal();
     if (step === 'household') renderHousehold();
     if (step === 'quests') renderQuests();
     if (step === 'skills') renderSkills();
@@ -1274,9 +1349,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (step === 'skills') renderAttributes();
     if (step === 'collections') renderCollections();
     if (step === 'summary') renderSummary();
-    try { localStorage.setItem('skp.step', step); } catch {}
+    try { localStorage.setItem(playing ? 'skp.pstep' : 'skp.step', step); } catch {}
     window.scrollTo({ top: 0 });
   }
+  let MODE = 'plan'; try { MODE = localStorage.getItem('skp.mode') === 'play' ? 'play' : 'plan'; } catch {}
+  function setMode(m, go = true) {
+    MODE = m; try { localStorage.setItem('skp.mode', m); } catch {}
+    $('planNav').hidden = m === 'play'; $('playNav').hidden = m !== 'play';
+    $('modeBtn').textContent = m === 'play' ? 'Back to plan' : 'Play mode';
+    document.body.dataset.mode = m;
+    if (go) { let s = null; try { s = localStorage.getItem(m === 'play' ? 'skp.pstep' : 'skp.step'); } catch {} showStep(m === 'play' ? (s === 'journal' ? 'journal' : 'play') : (s && !['play', 'journal'].includes(s) ? s : 'identity')); }
+  }
+  $('modeBtn').addEventListener('click', () => setMode(MODE === 'play' ? 'plan' : 'play'));
 
   // ---------- Identity ----------
   function renderIdentity() {
@@ -2444,7 +2528,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('collList').addEventListener('change', e => {
     const t = e.target;
     if (t.id === 'collHide') { collHideFound = t.checked; renderCollections(); $('collHide')?.focus(); return; }
-    if (t.dataset.got) { if (t.checked) state.got[t.dataset.got] = true; else delete state.got[t.dataset.got]; touch(); renderCollections(); $(t.id)?.focus(); return; }
+    if (t.dataset.got) { if (t.checked) state.got[t.dataset.got] = true; else delete state.got[t.dataset.got]; autoLog('item', 'c:' + t.dataset.got, t.checked, foundTitle(t.dataset.got)); touch(); renderCollections(); $(t.id)?.focus(); return; }
     if (t.dataset.coll) { if (!t.value) delete state.collections[t.dataset.coll]; else state.collections[t.dataset.coll] = t.value === 'sel' ? { tier: 'selected' } : { tier: 'expedite', m: +t.value.slice(1) }; touch(); renderCollections(); $(t.id)?.focus(); }
   });
   // ---------- Whole questlines ----------
@@ -2489,6 +2573,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (t) { if (t.value) state.quests[t.dataset.qtier] = t.value; else delete state.quests[t.dataset.qtier]; touch(); renderQuests(); $(t.id)?.focus(); return; }
     const el = e.target.closest('input[data-done]'); if (!el) return;
     if (el.checked) state.done[el.dataset.done] = true; else delete state.done[el.dataset.done];
+    autoLog('quest', 'q:' + el.dataset.done, el.checked, `Completed ${QID[el.dataset.done].name}`);
     touch(); renderQuests(); $(el.id)?.focus();
   });
   $('cwSide').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.cwSide = b.dataset.v; touch(); renderQuests(); });
@@ -2676,6 +2761,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
       cr: s.creature ? [s.creature.kind[0], s.creature.m] : null,
       co: s.collections ? mapKeys(s.collections, 'collection', v => strip({ t: tierPack(v.tier === 'expedite' || v.tier === 'selected' ? v : null) })) : null,
       cg: s.got ? Object.keys(s.got).map(k => toI('citem', k)).filter(x => x != null).join(',') : null,
+      pl: s.play?.on ? [s.play.ups.map(u => (u.a == null ? 'x' : 'hms'[u.a]) + (u.p === 'save' ? '-' : u.p ? toI('perk', u.p) ?? '' : '')).join(','), s.play.start, [s.play.date.d, s.play.date.mo, s.play.date.y, s.play.date.w, s.play.date.t]] : null,
+      hg: s.has && Object.keys(s.has.gear).length ? Object.keys(s.has.gear).map(k => toI('gear', k)).filter(x => x != null).join(',') : null,
+      hs: s.has && Object.keys(s.has.stone).length ? Object.keys(s.has.stone).map(k => toI('stone', k)).filter(x => x != null).join(',') : null,
       nt: s.notes, mv: s.moves?.length ? s.moves.map(m => strip({ n: m.name, d: m.desc, s: m.steps.map(st => [st.kind[0] + st.kind.slice(1, 2), st.text]) })) : null,
     });
   }
@@ -2700,6 +2788,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
       creature: o.cr ? { kind: o.cr[0] === 'w' ? 'werewolf' : 'vampire', m: o.cr[1] } : null,
       collections: o.co ? unKeys(o.co, 'collection', v => tierUnpack(v.t) || { tier: 'selected' }) : {},
       got: Object.fromEntries(Object.keys(list(o.cg, 'citem')).map(k => [k, true])),
+      play: o.pl ? { on: true, start: o.pl[1], ups: String(o.pl[0] || '').split(',').filter(Boolean).map(t => ({ a: 'hms'.indexOf(t[0]) < 0 ? null : 'hms'.indexOf(t[0]), p: t.slice(1) === '-' ? 'save' : t.length > 1 ? fromI('perk', t.slice(1)) : null })),
+        date: o.pl[2] ? { d: o.pl[2][0], mo: o.pl[2][1], y: o.pl[2][2], w: o.pl[2][3], t: o.pl[2][4] } : null } : null,
+      has: { gear: list(o.hg, 'gear'), stone: list(o.hs, 'stone') }, journal: [],
       notes: o.nt || '', moves: (o.mv || []).map(m => ({ name: m.n || '', desc: m.d || '', steps: (m.s || []).map(([k, t]) => ({ kind: KIND2[k] || 'other', text: t })) })),
     };
   }
@@ -2894,6 +2985,261 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
   });
 
+  // ---------- Play-through ----------
+  const ATTR_NAMES = ['Health', 'Magicka', 'Stamina'];
+  const level = () => state.play.ups.length + 1;
+  const nextMilestone = L => MS.find(m => L < m) ?? null;
+  const takenSet = () => new Set(state.play.ups.map(u => u.p).filter(p => p && p !== 'save'));
+  const savedPerks = () => state.play.ups.filter(u => u.p === 'save').length;
+  const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  const rankText = r => `${perkLabel(r.perk, r.i + 1)} (${SK[r.perk.skill].name})`;
+  function addEntry(e) { const x = { id: newId(), at: new Date().toISOString(), g: { ...state.play.date }, title: '', text: '', ...e }; state.journal.push(x); return x; }
+  function autoLog(k, ref, on, title) {
+    if (!state.play.on) return;
+    if (on) { if (!state.journal.some(e => e.ref === ref)) addEntry({ k, ref, title }); }
+    else { const i = state.journal.map(e => e.ref).lastIndexOf(ref); if (i >= 0 && !state.journal[i].text.trim()) state.journal.splice(i, 1); }
+  }
+  const foundTitle = key => { const [c, i] = key.split('/'), it = CL[c]?.items.find(x => x.id === i); return `Found ${it ? it.name.replace(/^Stone \d+: /, 'a Stone of Barenziah in ') : 'an item'}${CL[c] ? ` (${CL[c].name})` : ''}`; };
+  const jSort = list => [...list].sort((a, b) => (dayNum(a.g) * 1440 + (a.g.t ? +a.g.t.slice(0, 2) * 60 + +a.g.t.slice(3) : 0)) - (dayNum(b.g) * 1440 + (b.g.t ? +b.g.t.slice(0, 2) * 60 + +b.g.t.slice(3) : 0)) || a.at.localeCompare(b.at));
+  function actualAttrs() {
+    const n = [0, 1, 2].map(i => state.play.ups.filter(u => u.a === i).length);
+    return { n, h: 100 + 10 * n[0], m: RC[state.race].magicka + 10 * n[1], s: 100 + 10 * n[2], unknown: state.play.ups.filter(u => u.a == null).length };
+  }
+  // the attribute the plan wants next: the one with the most planned level-ups still to take in this band
+  function attrAdvice(n) {
+    const band = BANDS.find(([, from, to]) => n >= Math.max(from, 2) && n <= to);
+    if (!band) return { pick: 0, text: 'Past level 60, so your plan has no split for this level-up.' };
+    const [m, from, to] = band, plan = state.bands[m];
+    const so = [0, 1, 2].map(i => state.play.ups.filter((u, k) => k + 2 >= Math.max(from, 2) && k + 2 <= to && u.a === i).length);
+    const left = plan.map((v, i) => v - so[i]), pick = left.indexOf(Math.max(...left));
+    return { pick, text: `Your plan for levels ${Math.max(from, 2)}–${to}: ${plan.map((v, i) => `${v} ${ATTR_NAMES[i]}`).join(', ')}. Taken so far: ${so.map((v, i) => `${v} ${ATTR_NAMES[i]}`).join(', ')}.` };
+  }
+  function perkChoices() {
+    const tk = takenSet(), next = [];
+    for (const p of Object.values(PERKS)) { const i = p.ranks.findIndex((_, k) => !tk.has(rankKey(p.id, k))); if (i >= 0) next.push(RANK[rankKey(p.id, i)]); }
+    const planned = next.filter(r => state.picks[r.key] != null).sort((a, b) => state.picks[a.key] - state.picks[b.key] || a.req - b.req);
+    return { tk, planned, other: next.filter(r => state.picks[r.key] == null) };
+  }
+  const prereqOk = (r, tk) => r.i > 0 || !r.perk.prereq.length || r.perk.prereq.some(pid => tk.has(rankKey(pid, 0)));
+  function perkSelect(withSave) {
+    const { tk, planned, other } = perkChoices();
+    const first = planned.find(r => prereqOk(r, tk));
+    const opt = (r, extra = '') => `<option value="${r.key}"${first && r.key === first.key ? ' selected' : ''}>${esc(rankText(r))}${r.req > 15 ? ` · skill ${r.req}` : ''}${extra}</option>`;
+    return `<label class="pfield wide">Perk<select id="pPerk">${withSave ? `<option value="save"${first ? '' : ' selected'}>Save the perk for later</option>` : ''}
+      ${planned.length ? `<optgroup label="In your plan">${planned.map(r => opt(r, ` · plan: by ${state.picks[r.key]}${prereqOk(r, tk) ? '' : ' · needs an earlier perk'}`)).join('')}</optgroup>` : ''}
+      ${SKILLS.map(s => { const l = other.filter(r => r.perk.skill === s.id); return l.length ? `<optgroup label="${s.name} (not in your plan)">${l.map(r => opt(r)).join('')}</optgroup>` : ''; }).join('')}</select></label>
+      <div id="pPerkNote"></div>`;
+  }
+  function perkNote() {
+    const v = $('pPerk')?.value, box = $('pPerkNote'); if (!box) return;
+    if (!v || v === 'save') { box.innerHTML = ''; return; }
+    const r = RANK[v], tk = takenSet(), M = nextMilestone(level()) || 60;
+    const need = prereqOk(r, tk) ? '' : `<p class="pwarn">⚠ Needs ${r.perk.prereq.map(id => PERKS[id]?.name).filter(Boolean).join(' or ')} first, and you haven't recorded taking it.</p>`;
+    box.innerHTML = need + (state.picks[v] == null ? `<p class="pwarn">⚠ Not in your plan.</p><label class="check"><input type="checkbox" id="pAddPlan" checked> Add it to my plan by level ${M}</label>` : '');
+  }
+  function dateFields(pre, g) {
+    return `<fieldset class="gdate"><legend>In-game date</legend>
+      <label>Day<input type="number" id="${pre}-d" min="1" max="31" value="${g.d}"></label>
+      <label>Month<select id="${pre}-mo">${GMONTHS.map(([n], i) => `<option value="${i}"${i === g.mo ? ' selected' : ''}>${n}</option>`).join('')}</select></label>
+      <label>Year (4E)<input type="number" id="${pre}-y" min="1" max="999" value="${g.y}"></label>
+      <label>Weekday<select id="${pre}-w">${GDAYS.map((n, i) => `<option value="${i}"${i === g.w ? ' selected' : ''}>${n}</option>`).join('')}</select></label>
+      <label>Time<input type="time" id="${pre}-t" value="${g.t}"></label></fieldset>
+      <p class="muted" style="margin:0;font-size:.85rem">The weekday fills in from the date. Change it if your game shows a different one.</p>`;
+  }
+  const readDate = pre => okDate({ d: parseInt($(pre + '-d').value), mo: +$(pre + '-mo').value, y: parseInt($(pre + '-y').value), w: +$(pre + '-w').value, t: $(pre + '-t').value });
+  document.addEventListener('input', e => {   // the weekday follows the date
+    const m = e.target.id?.match(/^(.+)-(d|mo|y)$/); if (!m || !$(m[1] + '-w')) return;
+    const g = { d: parseInt($(m[1] + '-d').value), mo: +$(m[1] + '-mo').value, y: parseInt($(m[1] + '-y').value) };
+    if (g.d >= 1 && g.y > 0) $(m[1] + '-w').value = weekdayOf(g);
+  });
+  // one dialog for level-ups, saved perks, journal entries and the date
+  let dlgOk = null;
+  function openDlg(title, body, okText, onOk) {
+    $('pdlgTitle').textContent = title;
+    $('pdlgBody').innerHTML = body + `<div class="status bad" id="pdlgErr" role="alert"></div><div class="row"><button class="btn" id="pdlgOk">${okText}</button></div>`;
+    dlgOk = onOk; const d = $('pdlg'); if (d.showModal) d.showModal(); else d.setAttribute('open', '');
+    ($('pdlgBody').querySelector('input:not([type=hidden]), select, textarea') || $('pdlgOk')).focus();
+  }
+  const closeDlg = () => { const d = $('pdlg'); d.close ? d.close() : d.removeAttribute('open'); };
+  $('pdlgClose').addEventListener('click', closeDlg);
+  $('pdlg').addEventListener('click', e => { if (e.target === $('pdlg')) closeDlg(); if (e.target.id === 'pdlgOk') { const err = dlgOk(); if (err) $('pdlgErr').textContent = err; else closeDlg(); } });
+  $('pdlg').addEventListener('change', e => { if (e.target.id === 'pPerk') perkNote(); });
+  const takePerk = v => { if (v && v !== 'save' && $('pAddPlan')?.checked) state.picks[v] = nextMilestone(level()) || 60; };
+  function levelUpDlg() {
+    const n = level() + 1, adv = attrAdvice(n);
+    openDlg(`Level ${n}`, `<p style="margin:0">${esc(adv.text)}</p>
+      <div class="row" role="radiogroup" aria-label="Attribute">${ATTR_NAMES.map((a, i) => `<label class="chip"><input type="radio" name="pAttr" value="${i}"${i === adv.pick ? ' checked' : ''}>${a}</label>`).join('')}</div>
+      ${perkSelect(true)}${dateFields('pd', state.play.date)}
+      <label class="pfield wide">Journal note (optional)<textarea id="pNote" placeholder="What happened on the way to this level"></textarea></label>`, 'Level up', () => {
+      const g = readDate('pd'); if (!g) return 'Check the in-game date.';
+      const a = +document.querySelector('input[name=pAttr]:checked').value, v = $('pPerk').value;
+      takePerk(v); state.play.ups.push({ a, p: v }); state.play.date = g;
+      addEntry({ k: 'level', ref: 'lv:' + n, g, title: `Reached level ${n} · +10 ${ATTR_NAMES[a]} · ${v === 'save' ? 'perk saved for later' : rankText(RANK[v])}`, text: $('pNote').value.trim() });
+      touch(); renderPlay();
+    });
+    perkNote();
+  }
+  function spendDlg() {
+    openDlg('Record a saved perk', `<p style="margin:0">You have ${savedPerks()} perk${savedPerks() === 1 ? '' : 's'} not yet recorded: saved for later, or from before you started tracking.</p>${perkSelect(false)}${dateFields('pd', state.play.date)}
+      <label class="pfield wide">Journal note (optional)<textarea id="pNote"></textarea></label>`, 'Record perk', () => {
+      const g = readDate('pd'); if (!g) return 'Check the in-game date.';
+      const v = $('pPerk').value; takePerk(v);
+      state.play.ups[state.play.ups.findIndex(u => u.p === 'save')].p = v; state.play.date = g;
+      addEntry({ k: 'perk', g, title: `Took ${rankText(RANK[v])}`, text: $('pNote').value.trim() });
+      touch(); renderPlay();
+    });
+    perkNote();
+  }
+  function entryDlg(e) {
+    const isNew = !e; e = e || { k: 'note', title: '', text: '', g: { ...state.play.date } };
+    openDlg(isNew ? 'New journal entry' : 'Edit entry', `<label class="pfield wide">Title<input type="text" id="pTitle" maxlength="160" value="${esc(e.title)}"></label>${dateFields('pd', e.g)}
+      <label class="pfield wide">Entry<textarea id="pNote" style="min-height:200px">${esc(e.text)}</textarea></label>`, isNew ? 'Add entry' : 'Save changes', () => {
+      const g = readDate('pd'); if (!g) return 'Check the in-game date.';
+      const title = $('pTitle').value.trim(), text = $('pNote').value.trim(); if (!title && !text) return 'Write a title or some text.';
+      if (isNew) { addEntry({ k: 'note', g, title, text }); if (dayNum(g) >= dayNum(state.play.date)) state.play.date = g; }
+      else Object.assign(state.journal.find(x => x.id === e.id), { g, title, text });
+      touch(); renderJournal(); renderPlay();
+    });
+  }
+  function dateDlg() {
+    openDlg("Today's in-game date", dateFields('pd', state.play.date), 'Save date', () => { const g = readDate('pd'); if (!g) return 'Check the in-game date.'; state.play.date = g; touch(); renderPlay(); });
+  }
+
+  function renderPlay() {
+    const P = state.play, box = $('playBody');
+    if (!P.on) {
+      box.innerHTML = `<div class="box"><h3>Start the play-through</h3>
+        <p class="muted" style="margin:0">Starting partway through a game? Enter your current level, and record the perks you already have afterwards.</p>
+        <div class="row"><label class="pfield">Current level<input type="number" id="psLevel" min="1" max="81" value="1" style="width:6em"></label></div>
+        ${dateFields('ps', START_DATE)}
+        <label class="pfield wide">First journal entry (optional)<textarea id="psNote" placeholder="Crossing into Skyrim…"></textarea></label>
+        <div class="status bad" id="psErr" role="alert"></div>
+        <div class="row"><button class="btn" id="psGo">Start playing</button></div></div>`;
+      return;
+    }
+    const L = level(), M = nextMilestone(L), prev = [...MS].reverse().find(m => m <= L) || 1, at = actualAttrs(), tk = takenSet();
+    const planBy = M || 60, pt = totals(planBy);
+    const onPlan = [...tk].filter(k => state.picks[k] != null).length, sv = savedPerks();
+    const cards = `<div class="play-cards">
+      <div class="ms ok"><div class="ms-head"><span class="ms-level">Level</span></div><div class="big num">${L}</div>
+        ${M ? `<div class="xpbar"><i style="width:${Math.round((L - prev) / (M - prev) * 100)}%"></i></div><div class="ms-note">Next milestone: level ${M}</div>` : '<div class="ms-note">Past your last milestone.</div>'}
+        <div class="row"><button class="btn" id="pLevel">Level up</button>${P.ups.length > P.start - 1 ? `<button class="btn quiet" id="pUndo">Undo last level-up</button>` : ''}</div></div>
+      <div class="ms"><div class="ms-head"><span class="ms-level">Attributes</span></div>
+        <div class="ms-stats"><span>Health <strong class="num">${at.h}</strong></span><span>Magicka <strong class="num">${at.m}</strong></span><span>Stamina <strong class="num">${at.s}</strong></span></div>
+        <div class="ms-note">Plan by level ${planBy}: ${pt.h} · ${pt.m} · ${pt.s}${at.unknown ? `. ${at.unknown} earlier level-up${at.unknown === 1 ? ' is' : 's are'} not counted.` : ''}</div></div>
+      <div class="ms"><div class="ms-head"><span class="ms-level">Perks</span></div>
+        <div class="ms-stats"><span><strong class="num">${tk.size}</strong> taken</span><span><strong class="num">${onPlan}</strong> from the plan</span>${sv ? `<span><strong class="num">${sv}</strong> to record</span>` : ''}</div>
+        ${sv ? '<div class="row"><button class="btn ghost" id="pSpend">Record a saved perk</button></div>' : ''}</div>
+      <div class="ms"><div class="ms-head"><span class="ms-level">In-game date</span></div><div>${esc(fmtDate(P.date))}</div>
+        <div class="row"><button class="btn quiet" id="pDate">Change date</button><button class="btn quiet" id="pNoteBtn">Add a journal entry</button></div></div></div>`;
+    // what's due before the next milestone (and anything overdue)
+    const by = M || Infinity, flag = m => m <= L ? ' <span class="pill under">Overdue</span>' : '';
+    const { plan, order } = buildQuestPlan();
+    const perksDue = ALL_RANKS.filter(r => state.picks[r.key] != null && state.picks[r.key] <= by && !tk.has(r.key)).sort((a, b) => state.picks[a.key] - state.picks[b.key]);
+    const qDue = order.filter(id => plan[id].tier === 0 && plan[id].m <= by && !state.done[id]);
+    const gDue = GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= by && !state.has.gear[g.id]);
+    const sDue = MS.filter(m => m <= by && state.stones[m] && !state.has.stone[state.stones[m]]);
+    const cDue = COLLS.filter(c => state.collections[c.id]?.tier === 'expedite' && state.collections[c.id].m <= by);
+    const li = (input, label, sub) => `<li class="coll-item">${input}<div>${label}${sub ? `<div class="pr">${sub}</div>` : ''}</div></li>`;
+    const sec = (title, items) => items ? `<div class="due"><h4>${title}</h4><ul class="due-list">${items}</ul></div>` : '';
+    const due = [
+      sec(`Perks (${perksDue.length})`, perksDue.slice(0, 24).map(r => li('<span class="box-glyph" aria-hidden="true">◇</span>', esc(rankText(r)) + flag(state.picks[r.key]), `By level ${state.picks[r.key]}${r.req > 15 ? ` · needs skill ${r.req}` : ''}`)).join('') + (perksDue.length > 24 ? `<li class="muted">and ${perksDue.length - 24} more</li>` : '')),
+      sec(`Quests to expedite (${qDue.length})`, qDue.map(id => { const { q, m } = plan[id]; return li(`<input type="checkbox" id="pq-${id}" data-pdone="${id}">`, `<label for="pq-${id}"><strong>${esc(q.name)}</strong></label>${flag(m)}`, `${esc(q.line)} · by level ${m}${q.giver ? ` · ${esc(firstSentence(q.giver).slice(0, 80))}` : ''}`); }).join('')),
+      sec(`Gear (${gDue.length})`, gDue.map(g => li(`<input type="checkbox" id="pg-${g.id}" data-hasg="${g.id}">`, `<label for="pg-${g.id}"><strong>${esc(g.name)}</strong></label>${flag(state.gear[g.id])}`, `By level ${state.gear[g.id]}${g.where ? ` · ${esc(firstSentence(g.where).slice(0, 90))}` : ''}`)).join('')),
+      sec('Standing Stones', sDue.map(m => { const s = STN[state.stones[m]]; return li(`<input type="checkbox" id="ps-${s.id}" data-hass="${s.id}">`, `<label for="ps-${s.id}"><strong>${esc(s.name)}</strong></label>${flag(m)}`, `For levels up to ${m}${s.place ? ` · ${esc(s.place)}` : ''}`); }).join('')),
+      ...cDue.map(c => { const left = c.items.filter(i => !i.ref && !state.got[`${c.id}/${i.id}`]); if (!left.length) return '';
+        return sec(`${esc(c.name)} (${left.length} to find by level ${state.collections[c.id].m})${flag(state.collections[c.id].m)}`, left.slice(0, 8).map(it => li(`<input type="checkbox" id="pc-${c.id}-${it.id}" data-pgot="${c.id}/${it.id}">`, `<label for="pc-${c.id}-${it.id}"><strong>${esc(it.name)}</strong></label>`, it.where ? esc(it.where.slice(0, 110)) : '')).join('') + (left.length > 8 ? `<li class="muted">and ${left.length - 8} more on the Collections step</li>` : '')); }),
+    ].filter(Boolean).join('');
+    const nextQ = order.filter(id => !state.done[id] && !qDue.includes(id)).slice(0, 10);
+    const recent = jSort(state.journal).slice(-3).reverse();
+    box.innerHTML = cards + `<div class="box"><h3>${M ? `Before level ${M}` : 'Still to do'}</h3>${due || '<p class="muted" style="margin:0">Nothing due. You\'re on track.</p>'}</div>
+      <div class="box"><h3>${qDue.length ? 'After those, next in your plan' : 'Next quests'}</h3><p class="muted" style="margin:0;font-size:.9rem">The next unfinished quests in your plan, in order. Prerequisites come first.</p>
+        ${nextQ.length ? `<ul class="due-list">${nextQ.map(id => { const { q, tier, m } = plan[id]; return li(`<input type="checkbox" id="pn-${id}" data-pdone="${id}">`, `<label for="pn-${id}"><strong>${esc(q.name)}</strong></label>`, `${TIERS[tier].title}${tier === 0 && m !== Infinity ? ` by level ${m}` : ''} · ${esc(q.line)}`); }).join('')}</ul>` : '<p class="muted" style="margin:0">Every quest in your plan is done.</p>'}</div>
+      <div class="box"><h3>Latest in the journal</h3>${recent.length ? recent.map(e => `<div><div class="muted" style="font-size:.85rem">${esc(fmtDate(e.g))}</div><strong>${esc(e.title || J_KINDS[e.k])}</strong></div>`).join('') : '<p class="muted" style="margin:0">No entries yet.</p>'}
+        <div class="row"><button class="btn quiet" data-step-go="journal">Open the journal</button></div></div>`;
+  }
+  $('playBody').addEventListener('click', e => {
+    const t = e.target;
+    if (t.id === 'psGo') {
+      const lv = parseInt($('psLevel').value), g = readDate('ps');
+      if (!(lv >= 1 && lv <= 81)) { $('psErr').textContent = 'Enter a level from 1 to 81.'; return; }
+      if (!g) { $('psErr').textContent = 'Check the in-game date.'; return; }
+      state.play = { on: true, start: lv, ups: Array.from({ length: lv - 1 }, () => ({ a: null, p: 'save' })), date: g };
+      addEntry({ k: 'start', ref: 'start', g, title: lv === 1 ? `${state.name} begins the journey` : `${state.name} picks up the journey at level ${lv}`, text: $('psNote').value.trim() });
+      touch(); renderPlay(); $('pLevel')?.focus(); return;
+    }
+    if (t.id === 'pLevel') return levelUpDlg();
+    if (t.id === 'pSpend') return spendDlg();
+    if (t.id === 'pDate') return dateDlg();
+    if (t.id === 'pNoteBtn') return entryDlg();
+    if (t.id === 'pUndo') {
+      if (!t.dataset.armed) { t.dataset.armed = '1'; t.textContent = 'Confirm undo'; return; }
+      const n = level(); state.play.ups.pop();
+      const i = state.journal.findIndex(x => x.ref === 'lv:' + n); if (i >= 0) state.journal.splice(i, 1);
+      touch(); renderPlay(); $('pLevel')?.focus(); return;
+    }
+    if (t.dataset.stepGo) showStep(t.dataset.stepGo);
+  });
+  $('playBody').addEventListener('change', e => {
+    const t = e.target, d = t.dataset;
+    if (d.pdone) { state.done[d.pdone] = true; autoLog('quest', 'q:' + d.pdone, true, `Completed ${QID[d.pdone].name}`); }
+    else if (d.hasg) { state.has.gear[d.hasg] = 1; autoLog('item', 'g:' + d.hasg, true, `Got ${GR[d.hasg].name}`); }
+    else if (d.hass) { state.has.stone[d.hass] = 1; autoLog('item', 's:' + d.hass, true, `Activated ${STN[d.hass].name}`); }
+    else if (d.pgot) { state.got[d.pgot] = true; autoLog('item', 'c:' + d.pgot, true, foundTitle(d.pgot)); }
+    else return;
+    touch(); renderPlay(); $('pLevel')?.focus();
+  });
+
+  // ---------- Journal ----------
+  function renderJournal() {
+    const f = $('jFilter').value, show = jSort(state.journal).reverse().filter(e => !f || (f === 'level' ? ['level', 'perk', 'start'].includes(e.k) : e.k === f));
+    $('jAdd').disabled = !state.play.on;
+    $('jList').innerHTML = !state.play.on && !state.journal.length ? '<li class="box muted">Start the play-through on the Now page and the journal begins.</li>'
+      : show.length ? show.map(e => `<li class="box jentry"><div class="jhead"><span>${esc(fmtDate(e.g))}</span><span class="tagd">${J_KINDS[e.k]}</span></div>
+        ${e.title ? `<h3>${esc(e.title)}</h3>` : ''}${e.text ? e.text.split(/\n{2,}/).map(pp => `<p>${esc(pp)}</p>`).join('') : ''}
+        <div class="row"><button class="btn quiet" data-jedit="${e.id}">Edit</button><button class="btn quiet" data-jdel="${e.id}">Delete</button></div></li>`).join('')
+      : '<li class="box muted">No entries match.</li>';
+  }
+  $('jFilter').addEventListener('change', renderJournal);
+  $('jAdd').addEventListener('click', () => entryDlg());
+  $('jList').addEventListener('click', e => {
+    const ed = e.target.closest('[data-jedit]'), dl = e.target.closest('[data-jdel]');
+    if (ed) entryDlg(state.journal.find(x => x.id === ed.dataset.jedit));
+    if (dl) {
+      if (!dl.dataset.armed) { dl.dataset.armed = '1'; dl.textContent = 'Confirm delete'; return; }
+      state.journal = state.journal.filter(x => x.id !== dl.dataset.jdel); touch(); renderJournal(); $('jStatus').textContent = 'Entry deleted.';
+    }
+  });
+  const fileName = ext => `${state.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'character'}-journal.${ext}`;
+  async function download(name, text, type) {
+    // inside the Claude artifact viewer, files go through its save prompt; everywhere else, a normal download
+    const dl = window.claude?.use ? await window.claude.use('downloads').catch(() => null) : null;
+    if (dl) { try { await dl.save({ filename: name, data: text }); return true; } catch (e) { return false; } }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name;
+    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); return true;
+  }
+  function journalText() {
+    const r = RC[state.race], side = `${{ imperial: 'Imperial Legion', stormcloak: 'Stormcloaks', none: 'No Civil War side' }[state.cwSide]}; ${{ dawnguard: 'Dawnguard', volkihar: 'Volkihar vampires', none: 'no Dawnguard' }[state.dgSide]}`;
+    const L = [state.name, `${r.name} ${ST[state.style].name} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment} · ${side}`];
+    if (state.play.on) L.push(`Level ${level()} · ${fmtDate(state.play.date)}`);
+    L.push(`Journal exported ${new Date().toLocaleDateString(undefined, { dateStyle: 'long' })} from the Skyrim Character Planner`, '');
+    for (const e of jSort(state.journal)) L.push('* * *', '', fmtDate(e.g), ...(e.title ? [e.title] : []), '', ...(e.text ? [e.text, ''] : []));
+    return '﻿' + L.join('\n').replace(/\n/g, '\r\n');
+  }
+  $('jText').addEventListener('click', async () => { $('jStatus').textContent = await download(fileName('txt'), journalText(), 'text/plain;charset=utf-8') ? 'Text file downloaded.' : 'The text file was not saved.'; });
+  $('jExport').addEventListener('click', async () => {
+    const ok = await download(fileName('json'), JSON.stringify({ format: 'skyrim-planner-journal', version: 1, exported: new Date().toISOString(), build: { ...state, example: false } }, null, 1), 'application/json');
+    $('jStatus').textContent = ok ? 'Journal file downloaded. Import it on another device to carry on.' : 'The journal file was not saved.';
+  });
+  $('jImport').addEventListener('change', async e => {
+    const f = e.target.files[0]; e.target.value = ''; if (!f) return;
+    let s = null; try { const o = JSON.parse(await f.text()); if (o.format === 'skyrim-planner-journal') s = normalize(o.build); } catch {}
+    if (!s) { $('jStatus').textContent = "That file isn't a journal file from this planner."; return; }
+    const kept = !state.example;
+    if (kept) { const list = store.get('skp.saved') || [], copy = JSON.parse(JSON.stringify(state)), at = list.findIndex(x => x.name === copy.name); if (at >= 0) list[at] = copy; else list.push(copy); store.set('skp.saved', list); }
+    state = s; touch(); renderAll(); renderJournal();
+    $('jStatus').textContent = `Loaded "${state.name}" with ${state.journal.length} journal entr${state.journal.length === 1 ? 'y' : 'ies'}.${kept ? ' Your previous character is under Saved builds on the Summary step.' : ''}`;
+  });
   // ---------- About and credits ----------
   const DATAFILES = [['Buffs', BUFFDATA], ['Spells', SPELLDATA], ['Perk trees', PERKDATA], ['Standing Stones', STONEDATA], ['Shouts', SHOUTDATA], ['Weapons and apparel', GEARDATA], ['Alchemy and food', ALCHDATA], ['Scrolls', SCROLLDATA], ['Quests', QUESTDATA], ['Followers, spouses and homes', HOUSEDATA], ['Collections', COLLDATA]];
   const linkify = t => esc(t).replace(/https?:\/\/[^\s,;)]+/g, u => `<a href="${u}" target="_blank" rel="noopener">${decodeURIComponent(u.replace(/^https?:\/\/(en\.uesp\.net\/wiki\/|elderscrolls\.fandom\.com\/wiki\/)?/, '')).replace(/_/g, ' ')}</a>`);
@@ -2920,7 +3266,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     // some groups redraw when a choice changes: put focus back on the same choice
     if (!document.contains(items[i]) && group.id) { const g2 = $(group.id); const again = g2 && [...g2.querySelectorAll('[role="radio"], [role="tab"], button')].filter(b => b.offsetParent !== null)[i]; again?.focus(); }
   });
-  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); }
+  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); if (MODE === 'play') { renderPlay(); renderJournal(); } }
   renderAll();
   // a share link (#b=...) offers to open that build without overwriting this one silently
   async function checkShared() {
@@ -2939,7 +3285,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('sharedLoad').focus();
   }
   checkShared(); window.addEventListener('hashchange', checkShared);
-  let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
-  showStep(['identity','skills','attributes','loadout','household','collections','quests','summary'].includes(step) ? step : 'identity');
+  if (MODE === 'play') setMode('play'); else {
+    let step = 'identity'; try { step = localStorage.getItem('skp.step') || 'identity'; } catch {}
+    showStep(['identity','skills','attributes','loadout','household','collections','quests','summary'].includes(step) ? step : 'identity');
+  }
 })();
 </script>
