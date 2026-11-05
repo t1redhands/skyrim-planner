@@ -45,6 +45,7 @@ def current():
         'follower': [f['id'] for f in hh['followers']],
         'spouse': [s['id'] for s in hh['spouses']],
         'home': [h['id'] for h in hh['homes'] + hh['factionHomes']],
+        'pet': [x['id'] for x in hh.get('pets', [])],
         'collection': [c['id'] for c in load('collections')['collections']] if (DATA / 'collections.json').exists() else [],
         'citem': [f"{c['id']}/{it['id']}" for c in load('collections')['collections'] for it in c['items']] if (DATA / 'collections.json').exists() else [],
     }
