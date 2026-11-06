@@ -301,6 +301,8 @@ ul.shop li { break-inside: avoid; margin-bottom: 3px; }
 .subtabs { display: flex; gap: 4px; overflow-x: auto; border-bottom: 1px solid var(--rule); padding-bottom: 8px; }
 .subtabs button { flex: 0 0 auto; border: 1px solid transparent; background: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; color: var(--ink-2); display: flex; gap: 6px; align-items: baseline; }
 .subtabs button[aria-pressed="true"] { color: var(--ink); border-color: var(--rule); background: var(--panel); }
+.ps-sec { display: grid; gap: 20px; }
+.ps-sec[hidden] { display: none; }
 .subtabs .cnt { font-family: var(--mono); font-size: .78rem; color: var(--accent); }
 .sub { display: grid; gap: 20px; }
 .pm-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
@@ -596,6 +598,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   <!-- 2. Perks -->
   <section class="panel" id="p-skills" role="tabpanel" aria-labelledby="tab-skills" hidden>
+    <nav class="subtabs" id="pstabs" aria-label="Perks and attributes sections">
+      <button data-ps="perks" aria-pressed="true">Perks</button>
+      <button data-ps="attrs" aria-pressed="false">Attributes</button>
+    </nav>
+    <div class="ps-sec" data-ps="perks">
     <div class="intro">
       <h2>Perk plan at levels 20, 40 and 60</h2>
       <p class="muted">Choose the perks you want and the milestone you want each one by. You get one perk point per level, so level 20 allows 19 perks, level 40 allows 39 and level 60 allows 59. Each perk sets the skill level you need, and those skill levels set how far your character has leveled.</p>
@@ -618,8 +625,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
         </table>
       </div>
     </div>
-    <hr class="step-split">
-
+    </div>
+    <div class="ps-sec" data-ps="attrs" hidden>
     <div class="intro" id="attrs">
       <h2>Health, Magicka and Stamina</h2>
       <p class="muted">Every level-up adds 10 to one attribute. Split the level-ups in each stretch of play; each point of Stamina also adds 5 carry weight.</p>
@@ -632,6 +639,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="box">
       <h3>Totals at each milestone</h3>
       <div class="ratio" id="ratio"></div>
+    </div>
     </div>
     </section>
 
@@ -812,7 +820,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="box"><h3>Fights like you</h3><div class="perks" id="folLike"></div></div>
       </div>
       <div class="row" id="folFilter" role="radiogroup" aria-label="Show followers">
-        <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="marry" aria-checked="false">Can marry</button><button class="chip" data-f="steward" aria-checked="false">Can be a steward</button><button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
+        <button class="chip" data-f="all" aria-checked="true">All</button><button class="chip" data-f="marry" aria-checked="false">Can marry</button><button class="chip" data-f="steward" aria-checked="false">Can be a steward</button><button class="chip" data-f="trainer" aria-checked="false">Trainers</button><button class="chip" data-f="wanted" aria-checked="false">Chosen</button>
       </div>
       <div class="field"><label class="label" for="folSearch">Search followers</label><input type="search" id="folSearch" class="search" placeholder="Name, skill or group, such as Lydia, Destruction or Housecarls" autocomplete="off"></div>
       <div class="gear-sets" id="folList"></div>
@@ -1390,7 +1398,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
-    if (step === 'attributes') step = 'skills';   // attributes now live on the perk step
+    if (step === 'attributes') { step = 'skills'; psTab = 'attrs'; }   // attributes now live on the perk step
     ['identity','skills','loadout','household','collections','quests','summary','play','pcoll','journal'].forEach(p => $('p-' + p).hidden = p !== step);
     const playing = step === 'play' || step === 'journal' || step === 'pcoll';
     if (step === 'pcoll') renderPlayColl();
@@ -1401,7 +1409,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (step === 'quests') renderQuests();
     if (step === 'skills') renderSkills();
     if (step === 'loadout') renderLoadout();
-    if (step === 'skills') renderAttributes();
+    if (step === 'skills') { renderAttributes(); renderPsTabs(); }
     if (step === 'collections') renderCollections();
     if (step === 'summary') renderSummary();
     try { localStorage.setItem(playing ? 'skp.pstep' : 'skp.step', step); } catch {}
@@ -1430,6 +1438,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const warn = [state.allies.thieves && law === 'Lawful' ? 'the Thieves Guild is lawless' : '', state.allies.db === 'join' && (good === 'Good' || law === 'Lawful') ? 'the Dark Brotherhood is evil and lawless' : ''].filter(Boolean);
     $('allyNote').innerHTML = (warn.length ? `<span class="pw">For a ${esc(state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment)} character, ${warn.join(' and ')}.</span> ` : '') + 'Destroying the Dark Brotherhood leaves out its contracts after Sanctuary falls; sparing Paarthurnax leaves out the Blades\' quest to kill him.';
   }
+  // ---------- Perks and attributes tabs ----------
+  let psTab = 'perks'; try { psTab = localStorage.getItem('skp.ps') === 'attrs' ? 'attrs' : 'perks'; } catch {}
+  function renderPsTabs() {
+    const n = Object.keys(state.picks).length;
+    $('pstabs').querySelectorAll('[data-ps]').forEach(b => { b.setAttribute('aria-pressed', String(b.dataset.ps === psTab)); if (b.dataset.ps === 'perks') b.innerHTML = `Perks${n ? ` <span class="cnt">${n}</span>` : ''}`; });
+    document.querySelectorAll('#p-skills .ps-sec').forEach(s => s.hidden = s.dataset.ps !== psTab);
+  }
+  $('pstabs').addEventListener('click', e => { const b = e.target.closest('[data-ps]'); if (!b) return; psTab = b.dataset.ps; try { localStorage.setItem('skp.ps', psTab); } catch {} renderPsTabs(); });
   // ---------- Identity ----------
   function renderIdentity() {
     renderSides();
@@ -2730,7 +2746,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return '';
   };
   const folRow = (f, extra = '') => `<div class="perk${state.followers[f.id] != null ? ' taken' : ''}"><div>
-      <div class="pn">${esc(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+      <div class="pn">${esc(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${f.trainer ? `<span class="tagd">Trains ${esc(f.trainer)}</span>` : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
       ${extra ? `<div class="why">${extra}</div>` : ''}
       <div class="pe">${esc(f.description)}</div>
       <div class="pr">Skills: ${esc(f.skillsText)} · Up to level ${esc(f.maxLevel || '?')} · ${esc(f.moral)}</div>
@@ -2770,7 +2786,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const spRow = (s, extra = '') => {
     const chosen = state.spouse && state.spouse.id === s.id;
     return `<div class="perk${chosen ? ' taken' : ''}"><div>
-      <div class="pn">${esc(s.name)}<span class="tagd">${s.role === 'wife' ? 'Wife' : 'Husband'}</span><span class="tagd">${esc(s.race)}</span>${s.follower ? '<span class="tagd good">Follower</span>' : ''}${s.trainer ? `<span class="tagd">Trains ${esc(s.trainer)}</span>` : ''}${s.merchant ? `<span class="tagd">${esc(s.merchant)}</span>` : ''}</div>
+      <div class="pn">${esc(s.name)}<span class="tagd">${esc(s.race)}</span>${s.follower ? '<span class="tagd good">Follower</span>' : ''}${s.trainer ? `<span class="tagd">Trains ${esc(s.trainer)}</span>` : ''}${s.merchant ? `<span class="tagd">${esc(s.merchant)}</span>` : ''}</div>
       ${extra ? `<div class="why">${extra}</div>` : ''}
       <div class="pr">${esc(s.location)}${s.home ? ` · Home: ${esc(s.home)}` : ''}</div>
       ${s.condition ? `<div class="pr">To marry: ${esc(s.condition)}</div>` : ''}</div>
@@ -2788,10 +2804,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const q = ($('spSearch').value || '').trim().toLowerCase();
     const list = SPS.filter(s => (spFilter === 'all' || (spFilter === 'husband' || spFilter === 'wife' ? s.role === spFilter : spFilter === 'follower' ? s.follower : spFilter === 'trainer' ? !!s.trainer : !!s.merchant))
       && (!q || [s.name, s.race, s.location, s.home].some(t => t && t.toLowerCase().includes(q))));
-    const town = s => (s.location || 'Elsewhere').split(/\s*[(,]/)[0].trim() || 'Elsewhere';
-    const towns = [...new Set(SPS.map(town))].sort((a, b) => a.localeCompare(b));
-    const sgs = towns.map(t => [t, list.filter(s => town(s) === t)]).filter(([, l]) => l.length);
-    $('spList').innerHTML = sgs.length ? (sgs.length > 1 ? foldBar('spList') : '') + sgs.map(([label, l]) => fold(`spt-${label}`, esc(label), `<div class="perks">${l.map(s => spRow(s)).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.spouse && state.spouse.id === s.id).length, open: false, force: !!q || spFilter !== 'all' })).join('')
+    const sgs = [['husband', 'Husbands'], ['wife', 'Wives']].map(([r, label]) => [label, list.filter(s => s.role === r)]).filter(([, l]) => l.length);
+    $('spList').innerHTML = sgs.length ? (sgs.length > 1 ? foldBar('spList') : '') + sgs.map(([label, l]) => fold(`sp-${label}`, label, `<div class="perks">${l.map(s => spRow(s)).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.spouse && state.spouse.id === s.id).length, open: false, force: !!q || spFilter !== 'all' })).join('')
       : `<div class="box"><p class="muted" style="margin:0">Nothing matches "${esc(q)}".</p></div>`;
   }
   // ---------- Pets ----------

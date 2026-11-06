@@ -89,7 +89,7 @@ Then open <http://localhost:8000>.
 
 `update-data.sh` runs once a month from cron on the maintainer's server. It:
 
-1. downloads fresh copies of the UESP pages the planner uses, and every Skyrim quest page
+1. downloads fresh copies of the UESP pages the planner uses, every Skyrim quest page, and the items page of every Creation Club Creation
 2. rebuilds `data/quests.json` and adds any new ids to `data/ids.json`
 3. checks races and perks against UESP, and writes `data/source/CHECK_REPORT.md` listing any new items, followers, homes, ingredients or enchantments that UESP has and the planner doesn't
 4. commits and pushes the results

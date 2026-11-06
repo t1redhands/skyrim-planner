@@ -26,7 +26,14 @@ SIDE = {'A New Order': 'dawnguard', 'Prophet (Dawnguard)': 'dawnguard', 'The Blo
 MINOR = ('Radiant','Miscellaneous','Non-Journal','Favors','Bounty','Tutorials','Thane','World Interactions')
 def field(h, k):
     m = re.search(r'^\|\s*' + k + r'\s*=(.*?)(?=^\||^\}\})', h, re.S | re.M | re.I)
-    return m.group(1).strip() if m else ''
+    if not m: return ''
+    v, depth = m.group(1), 0
+    for i in range(len(v) - 1):   # the header can close on the same line as its last field: stop at the unmatched "}}"
+        if v[i:i + 2] == '{{': depth += 1
+        elif v[i:i + 2] == '}}':
+            if depth == 0: v = v[:i]; break
+            depth -= 1
+    return v.strip()
 def links(s): return [x for x in (re.sub(r'#.*$', '', l).split(':', 1)[-1].replace('_', ' ').strip() for l in re.findall(r'\[\[([^\]|]+)(?:\|[^\]]*)?\]\]', s)) if x]
 def plain(s):
     s = re.sub(r'\[\[(?:[^\]|]*\|)?([^\]]*)\]\]', r'\1', s); s = re.sub(r'\{\{[^{}]*\}\}', '', s)

@@ -247,6 +247,18 @@ def category_members(session, category, kind):
         cont = {"cmcontinue": data["continue"]["cmcontinue"]}
 
 
+def cc_item_pages(session):
+    """The "<Creation> Items" pages for every Creation listed on Skyrim:Creation Club that has one."""
+    data = api_get(session, action="parse", page="Skyrim:Creation Club", prop="links")
+    names = sorted({l["title"] for l in data["parse"]["links"] if l.get("ns") == 0 and l["title"].startswith("Skyrim:")})
+    cands = [f"{n} Items" for n in names if not n.endswith(" Items")] + [n for n in names if n.endswith(" Items")]
+    found = []
+    for i in range(0, len(cands), 50):
+        q = api_get(session, action="query", titles="|".join(cands[i:i + 50]), redirects=1)
+        found += [pg["title"] for pg in q["query"]["pages"] if not pg.get("missing") and not pg.get("invalid")]
+    return sorted(set(found))
+
+
 def dump_quests(session, root="Category:Skyrim-Quests", max_depth=3):
     """Walk the quest category tree and save every quest page's wikitext to data/source/quests.json."""
     seen_cats, pages = set(), {}
@@ -296,12 +308,17 @@ def main():
     ap.add_argument("--all", action="store_true", help="with --perks, also recheck trees already marked verified")
     ap.add_argument("--dump", nargs="*", metavar="PAGE", help="save UESP pages to data/source/ (default: the planner's page list)")
     ap.add_argument("--quests", action="store_true", help="save every Skyrim quest page to data/source/quests.json")
+    ap.add_argument("--cc-items", action="store_true", help="save the items page of every Creation Club Creation to data/source/")
     args = ap.parse_args()
 
     session = requests.Session()
     session.headers["User-Agent"] = USER_AGENT
     if args.quests:
         sys.exit(0 if dump_quests(session) else 1)
+    if args.cc_items:
+        pages = cc_item_pages(session)
+        print(f"{len(pages)} Creation items pages found.")
+        sys.exit(0 if dump_pages(session, pages) else 1)
     if args.dump is not None:
         sys.exit(0 if dump_pages(session, args.dump or DUMP_PAGES) else 1)
     if args.perks:

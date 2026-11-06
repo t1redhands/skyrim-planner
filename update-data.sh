@@ -20,6 +20,7 @@ if [ -x .venv/bin/python ]; then PY=.venv/bin/python; else PY=python3; fi
 # 1. Downloads: stop here if any fail
 "$PY" uesp_ingest.py --dump   || { echo "Page download failed. Nothing was pushed."; exit 1; }
 "$PY" uesp_ingest.py --quests || { echo "Quest download failed. Nothing was pushed."; exit 1; }
+"$PY" uesp_ingest.py --cc-items || echo "Some Creation Club item pages didn't download; the check below skips them."
 
 # 2. Rebuild the quest list
 "$PY" scripts/build_quests.py || { echo "Quest rebuild failed. Nothing was pushed."; exit 1; }

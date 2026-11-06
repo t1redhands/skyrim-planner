@@ -1,6 +1,6 @@
 {
 "license": "CC BY-SA 2.5; quest details from UESP (https://en.uesp.net/wiki/Skyrim:Quests), summarized.",
-"asOf": "2026-10-23",
+"asOf": "2026-11-06",
 "quests": [
 {
 "id": "finns-lute",
@@ -4896,7 +4896,7 @@
 "line": "Dragonborn side quest",
 "dlc": "dragonborn",
 "giver": "Neloth",
-"description": "Retrieve the Black Books for Neloth.}} == Quick Walkthrough == #Talk to Neloth about finding more Black Books. #Go to the dungeon where the book is located. #Find the book in the dungeon. #Read the book and obtain its kn",
+"description": "Retrieve the Black Books for Neloth.",
 "reward": "3x 1000 gold",
 "rewardLinks": [],
 "prev": [
@@ -5190,7 +5190,7 @@
 "line": "Dragonborn side task",
 "dlc": "dragonborn",
 "giver": "Edla",
-"description": "Counsel a young Skaal on the dangers of life as an adventurer.}} \"I know it must be hard for an adventurer such as you to understand this, but we Skaal live very boring lives.\" == Quick Walkthrough == # Talk to Edla abou",
+"description": "Counsel a young Skaal on the dangers of life as an adventurer.",
 "reward": "5 Ashen Grass Pod, 5 Emperor Parasol Moss, 5 Scathecraw",
 "rewardLinks": [
 "Ashen Grass Pod",
@@ -5342,7 +5342,7 @@
 "line": "Dragonborn side task",
 "dlc": "dragonborn",
 "giver": "Elynea Mothren",
-"description": "Collect a rare alchemy ingredient for Elynea Mothren.}} == Quick Walkthrough == # Speak to Elynea Mothren in the Tel Mithryn Apothecary. # Find the rare alchemy ingredient she requests. # Return to Elynea. == Detailed Wa",
+"description": "Collect a rare alchemy ingredient for Elynea Mothren.",
 "reward": "Variable amount of gold",
 "rewardLinks": [],
 "prev": [
@@ -5426,7 +5426,7 @@
 "line": "Dragonborn side task",
 "dlc": "dragonborn",
 "giver": "Ancarion",
-"description": "Sell stalhrim equipment to Ancarion.}} ==Quick Walkthrough== #Agree to sell stalhrim equipment to Ancarion. #Sell stalhrim equipment. ==Detailed Walkthrough== thumb|right|The [[Skyrim:Thalmor|Thalmor ship at Northshore L",
+"description": "Sell stalhrim equipment to Ancarion.",
 "reward": "Varying amount of gold",
 "rewardLinks": [],
 "prev": [
@@ -5443,7 +5443,7 @@
 "line": "Dragonborn side task",
 "dlc": "dragonborn",
 "giver": "Morwen",
-"description": "Take Bera's necklace to Runil in Falkreath.}} == Quick Walkthrough == # Speak to Morwen in Skaal Village. # Take her mother's necklace to Runil in Falkreath. # Return to Morwen. == Detailed Walkthrough == If you return t",
+"description": "Take Bera's necklace to Runil in Falkreath.",
 "reward": "Nordic carved helmet, Morwen as potential spouse",
 "rewardLinks": [
 "Marriage",
@@ -5501,7 +5501,7 @@
 "line": "Dragonborn side task",
 "dlc": "dragonborn",
 "giver": "Geldis Sadri",
-"description": "Talk to the hunters at Frostmoon Crag.}} == Quick Walkthrough == # Talk to the innkeeper of The Retching Netch in Raven Rock. # Talk to Majni in Frostmoon Crag. == Detailed Walkthrough == right|thumb|The Frostmoon Pack Y",
+"description": "Talk to the hunters at Frostmoon Crag.",
 "reward": "Ability to buy four unique rings from Majni (if you are a werewolf)",
 "rewardLinks": [
 "Lycanthropy",

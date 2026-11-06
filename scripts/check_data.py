@@ -77,6 +77,9 @@ def known():
 
 def main():
     have, found, missing_pages = known(), {}, []
+    # every Creation Club "<Creation> Items" page saved by uesp_ingest.py --cc-items is compared with the gear list too
+    for f in sorted(SRC.glob('Skyrim_*_Items.wiki')):
+        PAGES.setdefault(f.stem, 'gear')
     for page, kind in PAGES.items():
         f = SRC / f'{page}.wiki'
         if not f.exists():
