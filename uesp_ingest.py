@@ -250,7 +250,7 @@ def category_members(session, category, kind):
 def cc_item_pages(session):
     """The "<Creation> Items" pages for every Creation listed on Skyrim:Creation Club that has one."""
     data = api_get(session, action="parse", page="Skyrim:Creation Club", prop="links")
-    names = sorted({l["title"] for l in data["parse"]["links"] if l.get("ns") == 0 and l["title"].startswith("Skyrim:")})
+    names = sorted({l["title"] for l in data["parse"]["links"] if l["title"].startswith("Skyrim:")})   # Skyrim: is its own namespace on UESP, not the main one
     cands = [f"{n} Items" for n in names if not n.endswith(" Items")] + [n for n in names if n.endswith(" Items")]
     found = []
     for i in range(0, len(cands), 50):
