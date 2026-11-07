@@ -509,7 +509,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   <section class="panel" id="p-identity" role="tabpanel" aria-labelledby="tab-identity">
     <div class="intro">
       <h2>Who is this character?</h2>
-      <p class="muted">Race sets your starting skills. Combat style can fill in a starting plan for you, which you can then adjust skill by skill.</p>
+      <p class="muted">Race sets your starting skills. Your class can fill in a starting plan for you, which you can then adjust skill by skill.</p>
       <p id="exampleNote" hidden><span class="example-note">Example build loaded. Change anything to make it yours.</span></p>
     </div>
     <details class="box fold guide" data-fold="guide" open>
@@ -517,7 +517,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="fold-body">
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
-          <li><strong>Identity.</strong> Name, race, alignment, combat style, and whether the character becomes a werewolf or vampire. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
+          <li><strong>Identity.</strong> Name, race, alignment, class, and whether the character becomes a werewolf or vampire. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
           <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need.</li>
           <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
@@ -549,11 +549,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <p class="muted" style="margin:0;font-size:.9rem">Alignment flags quests on the Quest plan that don't fit this character. It has no effect on the numbers here.</p>
       </div>
       <div class="box">
-        <h3>Combat style</h3>
-        <div class="styles" id="styles" role="radiogroup" aria-label="Combat style"></div>
+        <h3>Class</h3>
+        <div class="styles" id="styles" role="radiogroup" aria-label="Class"></div>
         <p class="muted" id="styleDesc" style="margin:0;font-size:.95rem"></p>
         <div class="row">
-          <button class="btn" id="suggestBtn">Suggest a plan for this style</button>
+          <button class="btn" id="suggestBtn">Suggest a plan for this class</button>
         </div>
         <div class="confirm" id="suggestConfirm" hidden>
           <span>This replaces your current perk plan, attribute split and Standing Stones.</span>
@@ -632,7 +632,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <p class="muted">Every level-up adds 10 to one attribute. Split the level-ups in each stretch of play; each point of Stamina also adds 5 carry weight.</p>
     </div>
     <div class="row">
-      <button class="btn ghost" id="applyRatio">Use the combat style's split</button>
+      <button class="btn ghost" id="applyRatio">Use the class's split</button>
       <button class="btn quiet" id="evenRatio">Split evenly</button>
     </div>
     <div class="bands" id="bands"></div>
@@ -1064,17 +1064,32 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const ALIGN_COLS = ['Good', 'Neutral', 'Evil'];
 
   // weights steer the plan suggester; ratio = Health : Magicka : Stamina
+  // classes: descriptions and Magicka/Health/Stamina spreads adapted from The Skyforge's "Character Build Classes of the Elder Scrolls"
+  // (w = how much each skill matters; ratio = Health, Magicka, Stamina level-ups)
   const STYLES = [
-    { id:'warrior', name:'Warrior', desc:'Sword and shield in heavy armor, forging your own gear.', w:{ oneHanded:3, block:2, heavyArmor:3, smithing:2 }, ratio:[2,0,1] },
-    { id:'barbarian', name:'Barbarian', desc:'Big two-handed weapons, heavy armor, and a lot of Health.', w:{ twoHanded:3, heavyArmor:3, smithing:2, block:1 }, ratio:[2,0,1] },
-    { id:'archer', name:'Archer', desc:'Bows from range and from the shadows, light armor.', w:{ archery:3, sneak:2, lightArmor:2, alchemy:1 }, ratio:[1,0,1] },
-    { id:'assassin', name:'Assassin', desc:'Sneak attacks with daggers and bows, poisons from alchemy.', w:{ sneak:3, oneHanded:2, archery:2, lightArmor:1, alchemy:1 }, ratio:[1,0,1] },
-    { id:'mage', name:'Mage', desc:'Destruction spells, healing, wards and enchanted robes.', w:{ destruction:3, restoration:2, alteration:2, enchanting:1, conjuration:1 }, ratio:[1,3,0] },
+    { id:'acrobat', name:'Acrobat', desc:'Unarmored and quick: dodges rather than blocks, fights with daggers and a bow, and slips past locks and pockets. No Alteration.', w:{ sneak:3, oneHanded:2, archery:2, lockpicking:2, pickpocket:2 }, ratio:[1,0,2] },
+    { id:'agent', name:'Agent', desc:'A deceiver and spy who sneaks, steals, picks locks, talks and charms with Illusion, and draws a bow only when needed.', w:{ sneak:3, illusion:3, pickpocket:2, lockpicking:2, speech:2, archery:1 }, ratio:[1,2,2] },
+    { id:'archer', name:'Archer', desc:'A marksman with poisoned arrows from alchemy, a dagger to fall back on, and gear forged by hand.', w:{ archery:3, sneak:2, alchemy:2, lightArmor:1, oneHanded:1, smithing:1 }, ratio:[1,0,1] },
+    { id:'assassin', name:'Assassin', desc:'Kills from the shadows with bows and daggers, poisons brewed by alchemy, light armor and lockpicking.', w:{ sneak:3, archery:2, oneHanded:2, alchemy:2, lightArmor:1, lockpicking:1 }, ratio:[1,0,1] },
+    { id:'barbarian', name:'Barbarian', desc:'All offense: a battleaxe, light armor and blocking, with speech to intimidate and no healing spells.', w:{ twoHanded:3, lightArmor:2, block:2, speech:1 }, ratio:[2,0,1] },
+    { id:'bard', name:'Bard', desc:'Bends minds with Speech and Illusion, fights with a blade in light armor, and dabbles in alchemy.', w:{ speech:3, illusion:3, oneHanded:2, lightArmor:2, alchemy:1 }, ratio:[3,1,2] },
+    { id:'battlemage', name:'Battlemage', desc:'Two-handed weapons mixed with Destruction, Conjuration, Alteration and Restoration, and gear they enchant themselves.', w:{ twoHanded:3, destruction:3, conjuration:2, alteration:2, restoration:1, enchanting:1, heavyArmor:1 }, ratio:[2,2,1] },
     { id:'conjurer', name:'Conjurer', desc:'Summoned atronachs and bound weapons do the fighting.', w:{ conjuration:3, alteration:2, restoration:1, enchanting:1, illusion:1 }, ratio:[1,3,0] },
-    { id:'spellsword', name:'Spellsword', desc:'A blade in one hand, a spell in the other.', w:{ oneHanded:3, destruction:2, restoration:2, lightArmor:2 }, ratio:[1,1,1] },
-    { id:'battlemage', name:'Battlemage', desc:'Destruction spells cast from inside heavy armor.', w:{ destruction:3, heavyArmor:2, alteration:1, restoration:1, smithing:1 }, ratio:[1,1,0] },
+    { id:'crusader', name:'Crusader', desc:'A holy warrior against daedra and the undead: enchanted mace, shield and heavy armor, with fire, Turn Undead and healing.', w:{ oneHanded:3, heavyArmor:2, block:2, restoration:2, destruction:1, enchanting:1 }, ratio:[3,2,1] },
+    { id:'healer', name:'Healer', desc:'Keeps a follower fighting with Restoration, Illusion rally spells and Alteration wards, backed by alchemy, speech and a little Destruction.', w:{ restoration:3, illusion:2, alteration:2, alchemy:2, destruction:1, speech:1 }, ratio:[1,1,0] },
+    { id:'knight', name:'Knight', desc:'An honorable sword-and-shield fighter in heavy armor who forges their gear and persuades with speech and a touch of Illusion.', w:{ oneHanded:3, heavyArmor:3, block:2, smithing:2, speech:1, illusion:1 }, ratio:[3,1,2] },
+    { id:'mage', name:'Mage', desc:'Fire, frost and shock, summoned familiars, flesh spells for armor, healing and enchanting.', w:{ destruction:3, conjuration:2, alteration:2, restoration:2, enchanting:1 }, ratio:[1,1,0] },
+    { id:'monk', name:'Monk', desc:'Fights with bare fists, shoots and sneaks, guards with Alteration, heals with Restoration, and enchants and picks locks.', w:{ alteration:2, restoration:2, archery:2, sneak:2, enchanting:1, lockpicking:1 }, ratio:[2,1,1] },
+    { id:'nightblade', name:'Nightblade', desc:'A mage-assassin: Illusion and sneak attacks first, then a sword and Destruction once discovered.', w:{ illusion:3, sneak:3, oneHanded:2, destruction:2, lightArmor:1 }, ratio:[3,3,1] },
     { id:'paladin', name:'Paladin', desc:'Sword, shield and healing magic.', w:{ oneHanded:3, block:2, heavyArmor:2, restoration:2, smithing:1 }, ratio:[2,1,0] },
-    { id:'thief', name:'Thief', desc:'Locks, pockets and silver tongues; fights only when cornered.', w:{ sneak:3, lockpicking:2, pickpocket:2, speech:1, lightArmor:1, archery:1 }, ratio:[1,0,1] }
+    { id:'pilgrim', name:'Pilgrim', desc:'A wanderer with a mace, shield and light armor who talks their way through, forges gear and picks locks.', w:{ speech:3, oneHanded:2, block:2, lightArmor:2, smithing:1, lockpicking:1 }, ratio:[2,0,1] },
+    { id:'rogue', name:'Rogue', desc:'An agile swordfighter in light armor who blocks and parries, with alchemy and Illusion tricks.', w:{ oneHanded:3, lightArmor:2, block:2, alchemy:1, illusion:1 }, ratio:[3,1,2] },
+    { id:'scout', name:'Scout', desc:'An agile, nature-minded fighter with sword, shield and bow, light armor, smithing and alchemy.', w:{ archery:3, oneHanded:2, block:2, lightArmor:2, smithing:1, alchemy:1 }, ratio:[1,0,1] },
+    { id:'sorcerer', name:'Sorcerer', desc:'A mage who wears heavy armor: Destruction, Alteration, Conjuration, Restoration and Enchanting.', w:{ destruction:3, heavyArmor:2, alteration:2, conjuration:2, restoration:1, enchanting:1 }, ratio:[1,1,0] },
+    { id:'spellsword', name:'Spellsword', desc:'Sword, shield and heavy armor with Destruction, Restoration and Illusion; more melee than a Battlemage.', w:{ oneHanded:3, block:2, heavyArmor:2, destruction:2, restoration:2, illusion:1 }, ratio:[2,1,1] },
+    { id:'thief', name:'Thief', desc:'Avoids fights to steal: sneaking, pickpocketing, lockpicking, speech, light armor, alchemy and poisoned daggers.', w:{ sneak:3, pickpocket:2, lockpicking:2, speech:2, alchemy:2, lightArmor:1, oneHanded:1 }, ratio:[1,0,1] },
+    { id:'warrior', name:'Warrior', desc:'A pure fighter who switches between axes, sword and board, warhammer and bow, in heavy armor they forge themselves.', w:{ oneHanded:3, heavyArmor:3, twoHanded:2, block:2, smithing:2, archery:1 }, ratio:[2,0,1] },
+    { id:'witchhunter', name:'Witchhunter', desc:'Hunts from range with a bow, adding Destruction walls and runes, summons, alchemy, enchanting and lockpicking.', w:{ archery:3, destruction:2, conjuration:2, alchemy:1, enchanting:1, lockpicking:1 }, ratio:[2,1,1] }
   ];
   const ST = Object.fromEntries(STYLES.map(s => [s.id, s]));
   const MS = [20, 40, 60];
@@ -1467,7 +1482,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     });
     $('alignGrid').innerHTML = g;
     $('styles').innerHTML = STYLES.map(s => `<button class="chip" role="radio" aria-checked="${s.id === state.style}" data-style="${s.id}">${s.name}</button>`).join('');
-    $('styleDesc').textContent = ST[state.style].desc + ' Focus: ' + Object.keys(ST[state.style].w).map(id => SK[id].name).join(', ') + '.';
+    $('styleDesc').innerHTML = esc(ST[state.style].desc + ' Focus: ' + Object.keys(ST[state.style].w).map(id => SK[id].name).join(', ') + '.') + ' <span class="muted" style="font-size:.85rem">Class descriptions adapted from <a href="https://theskyforge.ning.com/groups/tes-character-building/forum/character-build-classes-of-the-elder-scrolls" target="_blank" rel="noopener">The Skyforge</a>.</span>';
   }
   $('buildName').addEventListener('input', e => { state.name = e.target.value.trim() || 'Unnamed build'; touch(); });
   $('rpNotes').addEventListener('input', e => { state.notes = e.target.value.slice(0, 6000); touch(); $('rpCount').textContent = state.notes.length > 5000 ? `${6000 - state.notes.length} characters left` : ''; });
@@ -2982,7 +2997,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Buffs</dt><dd>${buffBy(m).map(b => b.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Combat style</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Class</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
     $('sumOnly').checked = only;
