@@ -51,7 +51,11 @@ def listed(wiki):
         m = re.match(r'^[|!]\s*(?:[^|\[]*\|)?\s*' + LINK, line)
         if m:
             out.add(norm(m.group(2) or m.group(1)))
-    return {n for n in out if n and len(n) < 60}
+    # section headings on the Creation items pages that aren't item names
+    generic = {'tempering', 'enchantment', 'notes', 'id', 'hunger', 'spell tomes', 'unique apparel', 'unique weapons', 'magic apparel', 'gallery',
+               'female imperial gallery', 'male nord gallery', 'templates', 'raw food', 'cooked food', 'baked food', 'beverages', 'arrows', 'bolts',
+               'creation club items', 'resist frost'}
+    return {n for n in out if n and len(n) < 60 and n not in generic}
 
 
 def known():
