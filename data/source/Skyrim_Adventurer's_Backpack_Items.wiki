@@ -1,0 +1,113 @@
+{{CC Header}}{{Trail|Adventurer's Backpack}}
+This page documents the '''new items''' added by the [[Skyrim:Adventurer's Backpack|Adventurer's Backpack]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+<onlyinclude>
+{| class="wikitable sortable"
+!rowspan=2 class=unsortable width=120|
+!rowspan=2|Name ([[Skyrim:Form ID|ID]])
+!rowspan=2 width=22|{{Weight Icon}}
+!rowspan=2 width=22|{{Value Icon}}
+!style="border-left-width:medium; border-left-color:black;" colspan=2 class=unsortable|Raw Materials
+!style="border-left-width:medium; border-left-color:black;" rowspan=2 class="unsortable"|Notes
+|-
+!style="border-left-width:medium; border-left-color:black;"|{{icon|ingot|Corundum Ingot|24}} [[Skyrim:Corundum Ingot|Corundum]]
+!{{icon|m|Leather|24}} [[Skyrim:Leather|Leather]]
+|-
+|{{HE|FExxx801}} {{AL|C}}| {{icon|c|Leather Backpack|60}}
+| {{Anchor|Leather Backpack}}<br>{{ID|FExxx801|par=1}}
+| 1 || 40
+|style="border-left-width:medium; border-left-color:black;"| 1 || 3 
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx802}} {{AL|C}}| {{icon|c|Leather Backpack with Bedroll|60}}
+| {{Anchor|Leather Backpack with Bedroll}}<br>{{ID|FExxx802|par=1}}
+| 1 || 40
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4 
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx803}} {{AL|C}}| {{icon|c|Fine Leather Backpack|60}}
+| {{Anchor|Fine Leather Backpack}}<br>{{ID|FExxx803|par=1}}
+| 1 || 45
+|style="border-left-width:medium; border-left-color:black;"| 1 || 3
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx804}} {{AL|C}}| {{icon|c|Fine Leather Backpack with Bedroll|60}}
+| {{Anchor|Fine Leather Backpack with Bedroll}}<br>{{ID|FExxx804|par=1}}
+| 1 || 45
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4 
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx805}} {{AL|C}}| {{icon|c|Dark Leather Backpack|60}}
+| {{Anchor|Dark Leather Backpack}}<br>{{ID|FExxx805|par=1}}
+| 1 || 45
+|style="border-left-width:medium; border-left-color:black;"| 1 || 3
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx806}} {{AL|C}}| {{icon|c|Dark Leather Backpack with Bedroll|60}}
+| {{Anchor|Dark Leather Backpack with Bedroll}}<br>{{ID|FExxx806|par=1}}
+| 1 || 45
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx807}} {{AL|C}}| {{icon|c|Fur Backpack|60}}
+| {{Anchor|Fur Backpack}}<br>{{ID|FExxx807|par=1}}
+| 1 || 50
+|style="border-left-width:medium; border-left-color:black;"| 1 || 3
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx808}} {{AL|C}}| {{icon|c|Fur Backpack with Bedroll|60}}
+| {{Anchor|Fur Backpack with Bedroll}}<br>{{ID|FExxx808|par=1}}
+| 1 || 50
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points.''
+|-
+|{{HE|FExxx809}} {{AL|C}}| {{icon|c|Adventurer Backpack|60}}
+| {{Anchor|Adventurer Backpack}}<br>{{ID|FExxx809|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Increases your Stamina by 20 points.''
+|-
+|{{HE|FExxx80A}} {{AL|C}}| {{icon|c|Adventurer Backpack with Bedroll|60}}
+| {{Anchor|Adventurer Backpack with Bedroll}}<br>{{ID|FExxx80A|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 5
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Increases your Stamina by 20 points.''
+|-
+|{{HE|FExxx80B}} {{AL|C}}| {{icon|c|Mage Backpack|60}}
+| {{Anchor|Mage Backpack}}<br>{{ID|FExxx80B|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Increases your Magicka by 20 points.''
+|-
+|{{HE|FExxx80C}} {{AL|C}}| {{icon|c|Mage Backpack with Bedroll|60}}
+| {{Anchor|Mage Backpack with Bedroll}}<br>{{ID|FExxx80C|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 5
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Increases your Magicka by 20 points.''
+|-
+|{{HE|FExxx80D}} {{AL|C}}| {{icon|c|Hunter Backpack|60}}
+| {{Anchor|Hunter Backpack}}<br>{{ID|FExxx80D|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Bows do 10% more damage.''
+|-
+|{{HE|FExxx80E}} {{AL|C}}| {{icon|c|Hunter Backpack with Bedroll|60}}
+| {{Anchor|Hunter Backpack with Bedroll}}<br>{{ID|FExxx80E|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 5
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Bows do 10% more damage.''
+|-
+|{{HE|FExxx80F}} {{AL|C}}| {{icon|c|Thief Backpack|60}}
+| {{Anchor|Thief Backpack}}<br>{{ID|FExxx80F|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Lockpicking is 15% easier.''
+|-
+|{{HE|FExxx810}} {{AL|C}}| {{icon|c|Thief Backpack with Bedroll|60}}
+| {{Anchor|Thief Backpack with Bedroll}}<br>{{ID|FExxx810|par=1}}
+| 1 || 80
+|style="border-left-width:medium; border-left-color:black;"| 1 || 5
+|style="border-left-width:medium; border-left-color:black;"|''Carrying capacity increased by 75 points. Lockpicking is 15% easier.''
+|}
+</onlyinclude>

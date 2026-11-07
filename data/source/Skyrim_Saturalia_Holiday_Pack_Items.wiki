@@ -1,0 +1,57 @@
+{{CC Header|Saturalia Holiday Pack}}{{Trail|Saturalia Holiday Pack}}
+This page documents the '''new items''' added by the [[Skyrim:Saturalia Holiday Pack|Saturalia Holiday Pack]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|c|Saturalia Boots|60}}
+|{{Anchor|Saturalia Boots}}<br>{{ID|FExxx803|par=1}}
+|2
+|35
+|24
+|
+*Available for purchase from [[SR:Agrane Peryval|Agrane Peryval]]
+|-
+|{{AL|C}}|{{icon|c|Saturalia Clothes|60}}
+|{{Anchor|Saturalia Clothes}}<br>{{ID|FExxx807|par=1}}
+|5
+|100
+|54
+|
+*Available for purchase from [[SR:Agrane Peryval|Agrane Peryval]]
+|-
+|{{AL|C}}|{{icon|c|Saturalia Gloves|60}}
+|{{Anchor|Saturalia Gloves}}<br>{{ID|FExxx805|par=1}}
+|1
+|25
+|24
+|
+*Available for purchase from [[SR:Agrane Peryval|Agrane Peryval]]
+|-
+|{{AL|C}}|{{icon|c|Saturalia Hat|60}}
+|{{Anchor|Saturalia Hat}}<br>{{ID|FExxx806|par=1}}
+|1
+|35
+|29
+|
+*Available for purchase from [[SR:Agrane Peryval|Agrane Peryval]]
+|}
+<gallery>
+File:SR-item-Saturalia Clothes Male.jpg|<center>Saturalia Clothes (male Nord)</center>
+File:SR-item-Saturalia Clothes Female.jpg|<center>Saturalia Clothes (female Imperial)</center>
+</gallery>
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Reindeer Bill of Sale}}
+|}

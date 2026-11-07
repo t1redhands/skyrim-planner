@@ -1,0 +1,719 @@
+{{CC Header|Fishing}}{{Trail|Fishing}}
+This page documents the '''new items''' added by the [[Skyrim:Fishing|Fishing]] [[Skyrim:Creation Club|Creation]].
+==Apparel==
+{| class="wikitable sortable striped"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!Weight
+!Value
+!Warmth
+|-
+|{{AL|C}}|{{icon|j|Crabber's Charm}}|||Crabber's Charm<br>{{ID|xx1D8FF2|par=1}} || 1 || 8 || 0
+|-
+|{{AL|C}}|{{icon|c|Fishing Boots}}|||Fishing Boots<br>{{ID|xx0008E1|par=1}} || 1 || 2 || 13
+|-
+|{{AL|C}}|{{icon|c|Fishing Clothes}}|||Fishing Clothes<br>{{ID|xx0008E2|par=1}} || 1 || 2 || 27
+|-
+|{{AL|C}}|{{icon|c|Fishing Hat}}|||Fishing Hat<br>{{ID|xx0008E4|par=1}} || 0.5 || 1 || 18
+|-
+|{{AL|C}}|{{icon|c|Vagrant Boots}}|||Vagrant Boots{{Intnote|Vagrant Boots}}<br>{{ID|xx000E4C|par=1}} || 2 || 1 || 24
+|-
+|{{AL|C}}|{{icon|c|Vagrant Hood}}|||Vagrant Hood<br>{{ID|xx000E4B|par=1}} || 1 || 1 || 29
+|-
+|{{AL|C}}|{{icon|c|Vagrant Robes}}|||Vagrant Robes<br>{{ID|xx000E4A|par=1}} || 1 || 5 || 54
+|-
+|}
+{{Note|Vagrant Boots||{{Bug|''Vagrant Boots'' are considered [[Skyrim:Light Armor|Light Armor]] in the game data, due to the wrong keywords being assigned.|nobullet=1|USSEP|4.2.8}}}}
+
+<gallery>
+File:SR-item-Crabber's Charm.jpg|Crabber's Charm
+File:SR-item-Fishing Clothes Male.jpg|Fishing Clothes worn by a male [[Skyrim:Nord|Nord]]
+File:SR-item-Fishing Clothes Female.jpg|Fishing Clothes worn by a female [[Skyrim:Imperial|Imperial]]
+File:SR-item-Vagrant Robes Male.jpg|Vagrant Robes worn by a male [[Skyrim:Nord|Nord]]
+File:SR-item-Vagrant Robes Female.jpg|Vagrant Robes worn by a female [[Skyrim:Imperial|Imperial]]
+</gallery>
+
+===Unique Apparel===
+{| class="wikitable sortable striped"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!Weight
+!Value
+!Warmth
+!class="unsortable"|[[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+|{{AL|C}}|{{icon|j|Denstagmer's Ring}}|||[[Skyrim:Denstagmer's Ring|Denstagmer's Ring]]<br>{{ID|xx000B2B|par=1}}|| 0.25 || 1254 || 0 ||''Resistance against fire, frost, and shock is improved by 20%.''
+|-
+|{{AL|C}}|{{icon|j|AmuletOfDibella}}|||[[Skyrim:Lynea's Amulet of Dibella|Lynea's Amulet of Dibella]]<br>{{ID|xx000C66|par=1}} || 1 || 475 || 0 || ''Increases Speech skill by 15 points. Increases your Stamina by 40 points.''
+|-
+|{{AL|C}}|{{icon|j|AmuletOfDibella}}|||[[Skyrim:Lynea's Amulet of Dibella|Lynea's Amulet of Dibella]]<br>{{ID|xx000E61|par=1}} || 1 || 475 || 0 ||
+*''Increases Speech skill by 15 points. Increases your Stamina by 40 points.''
+*This version is worn by [[Skyrim:Lynea|Lynea]] and cannot be worn or obtained.
+|-
+|{{AL|C}}|{{icon|c|Fishing Hat}}|||[[Skyrim:Lucky Fishing Hat|Lucky Fishing Hat]]<br>{{ID|xx000A6F|par=1}} || 0.5 || 1 || 18 ||''When worn, rainstorms occur whilst fishing at temperate lakes and streams.''
+|-
+|{{AL|C}}|{{icon|j|Mentor's Ring}}|||[[Skyrim:Mentor's Ring|Mentor's Ring]]<br>{{ID|xx000B29|par=1}} || 0.25 || 2092 || 0 || ''All spells cost 10% less magicka to cast.''
+|-
+|{{AL|C}}|{{icon|j|Ring of Khajiit}}|||[[Skyrim:Ring of Khajiit|Ring of Khajiit]]<br>{{ID|xx000B94|par=1}} || 0.25 || 650 || 0 || ''You move 10% faster. Allows you to cast the spell Hide.''
+|-
+|{{AL|C}}|{{icon|j|Ring of Kynareth}}|||[[Skyrim:Ring of Kynareth|Ring of Kynareth]]<br>{{ID|xx0EA5CC|par=1}} || 0.25 || 320 || 0 || ''When worn, rainstorms occur whilst fishing at temperate lakes and streams.''
+|-
+|{{AL|C}}|{{icon|j|Ring of Phynaster}}|||[[Skyrim:Ring of Phynaster|Ring of Phynaster]]<br>{{ID|xx0008E3|par=1}} || 0.25 || 1347 || 0 || ''Resistance to magic, shock, and poison is improved by 20%.''
+|-
+|{{AL|C}}|{{icon|j|Ring of Surroundings}}|||[[Skyrim:Ring of Surroundings|Ring of Surroundings]]<br>{{ID|xx000BC0|par=1}} || 0.25 || 1554 || 0 || ''You are 20% harder to detect.''
+|-
+|{{AL|C}}|{{icon|j|Ring of the Wind}}|||[[Skyrim:Ring of the Wind|Ring of the Wind]]<br>{{ID|xx000BA0|par=1}}  || 0.25 || 650 || 0 || ''You move 15% faster.''
+|-
+|{{AL|C}}|{{icon|j|Vampiric Ring}}|||[[Skyrim:Vampiric Ring|Vampiric Ring]]<br>{{ID|xx000C07|par=1}} || 0.25 || 400 || 0 || ''Allows you to cast the spell Drain Life.''
+|-
+|{{AL|C}}|{{icon|j|Crabber's Charm}}|||[[Skyrim:Viriya's Charm|Viriya's Charm]]<br>{{ID|xx000F07|par=1}} || 0.5 || 944 || 0 || ''Can swim underwater without drowning. Increases Light Armor skill by 22 points. Increases Heavy Armor skill by 22 points.''
+|-
+|{{AL|C}}|{{icon|j|Warlock's Ring}}|||[[Skyrim:Warlock's Ring|Warlock's Ring]]<br>{{ID|xx000B2A|par=1}} || 0.25 || 1392 || 0 || ''While blocking, creates a ward that protects against spells for up to 25 points. Health regenerates 30% faster. You move 5% faster.''
+|}
+<gallery>
+File:SR-item-Denstagmer's Ring 02.jpg|Denstagmer's Ring
+File:SR-item-Mentor's Ring 02.jpg|Mentor's Ring
+File:SR-item-Ring of Khajiit 02.jpg|Ring of Khajiit
+File:SR-item-Ring of Kynareth 02.jpg|Ring of Kynareth
+File:SR-item-Ring of Phynaster 02.jpg|Ring of Phynaster
+File:SR-item-Ring of Surroundings 02.jpg|Ring of Surroundings
+File:SR-item-Ring of the Wind 02.jpg|Ring of the Wind
+File:SR-item-Vampiric Ring 02.jpg|Vampiric Ring
+File:SR-item-Warlock's Ring 02.jpg|Warlock's Ring
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|Weight
+!width=22|Value
+!width=22|Damage
+!class="unsortable"|Description
+|-
+{{Item Data|icon=SR-icon-weapon-Alikri Fishing Rod.png|name=Alik'ri Fishing Rod|displayname=[[Skyrim:Alik'ri Fishing Rod|Alik'ri Fishing Rod]]|id=xx00084D|type=1 Hand Sword|temp=N/A|weight=2|value=75|damage=4|enchantment=''Greatly improves the chance of catching small fish when fishing.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Argonian Fishing Rod.png|name=Argonian Fishing Rod|displayname=[[Skyrim:Argonian Fishing Rod|Argonian Fishing Rod]]|id=xx000850|type=1 Hand Sword|temp=N/A|weight=3.5|value=55|damage=4|enchantment=''Greatly improves the chance of catching large fish when fishing.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Dagger.png|name=Ancient Nord Dagger|displayname=[[Skyrim:Ancient Nord Dagger|Ancient Nord Dagger]]|id=xx000E44|type=1 Hand Dagger|temp=Steel Ingot|perk=Steel Smithing|weight=3.5|value=5|damage=5}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Mace.png|name=Ancient Nord Mace|displayname=[[Skyrim:Ancient Nord Mace|Ancient Nord Mace]]|id=xx000E46|type=1 Hand Mace|temp=Steel Ingot|perk=Steel Smithing|weight=16|value=17|damage=10}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Warhammer.png|name=Ancient Nord Warhammer|displayname=[[Skyrim:Ancient Nord Warhammer|Ancient Nord Warhammer]]|id=xx000E47|type=2 Hand Warhammer|temp=Steel Ingot|perk=Steel Smithing|weight=26|value=42|damage=20}}
+|-
+{{Item Data|icon=SR-icon-weapon-Dwarven Fishing Rod.png|name=Dwarven Fishing Rod|displayname=[[Skyrim:Dwarven Fishing Rod|Dwarven Fishing Rod]]|id=xx00084E|type=1 Hand Sword|temp=N/A|weight=6|value=110|damage=5|enchantment=''Greatly improves the chance of catching items when fishing.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Fang of Haynekhtnamet.png|name=Fang of Haynekhtnamet|displayname=[[Skyrim:Fang of Haynekhtnamet|Fang of Haynekhtnamet]]|id=xx000ED3|type=1 Hand Dagger|temp=Dragon Bone|perk=Dragon Smithing|weight=6.5|value=1446|damage=13|enchantment=''Target takes 25 points of shock damage, and half as much Magicka damage.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Fishing Rod.png|name=Fishing Rod|displayname=[[Skyrim:Fishing Rod|Fishing Rod]]|id=xx00084F|type=1 Hand Sword|temp=N/A|weight=3|value=10|damage=3|enchantment=}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Dagger.png|name=Honed Ancient Nord Dagger|displayname=[[Skyrim:Honed Ancient Nord Dagger|Honed Ancient Nord Dagger]]|id=xx08A1ED|type=1 Hand Dagger|temp=Steel Ingot|perk=Dwarven Smithing|weight=4.5|value=9|damage=8}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Mace.png|name=Honed Ancient Nord Mace|displayname=[[Skyrim:Honed Ancient Nord Mace|Honed Ancient Nord Mace]]|id=xx08A1EE|type=1 Hand Mace|temp=Steel Ingot|perk=Dwarven Smithing|weight=18|value=31|damage=13}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Warhammer.png|name=Honed Ancient Nord Warhammer|displayname=[[Skyrim:Honed Ancient Nord Warhammer|Honed Ancient Nord Warhammer]]|id=xx08A1EF|type=2 Hand Warhammer|temp=Steel Ingot|perk=Dwarven Smithing|weight=29|value=76|damage=23}}
+|-
+{{Item Data|icon=SR-icon-weapon-Irkngthand War Axe.png|name=Irkngthand War Axe|displayname=[[Skyrim:Irkngthand War Axe|Irkngthand War Axe]]|id=xx07AED6|type=1 Hand War Axe|temp=Dwarven Metal Ingot|perk=Dwarven Smithing|weight=16|value=265|damage=13}}
+|-
+{{Item Data|icon=SR-icon-weapon-Irkngthand War Axe.png|name=Irkngthand War Axe of Fire|displayname=[[Skyrim:Irkngthand War Axe of Fire|Irkngthand War Axe of Fire]]|id=xx0009D9|type=1 Hand War Axe|temp=Dwarven Metal Ingot|perk=Dwarven Smithing|weight=16|value=699|damage=13|enchantment=''Burns the target for 20 points. Targets on fire take extra damage.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Irkngthand War Axe.png|name=Irkngthand War Axe of Freezing|displayname=[[Skyrim:Irkngthand War Axe of Freezing|Irkngthand War Axe of Freezing]]|id=xx04D05E|type=1 Hand War Axe|temp=Dwarven Metal Ingot|perk=Dwarven Smithing|weight=16|value=742|damage=13|enchantment=''Target takes 20 points of frost damage to Health and Stamina.''}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Dagger.png|name=Nord Hero Dagger|displayname=[[Skyrim:Nord Hero Dagger|Nord Hero Dagger]]|id=xx08A1E4|type=1 Hand Dagger|temp=Steel Ingot|perk=Steel Smithing|weight=2|value=55|damage=8}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Mace.png|name=Nord Hero Mace|displayname=[[Skyrim:Nord Hero Mace|Nord Hero Mace]]|id=xx08A1E5|type=1 Hand Mace|temp=Steel Ingot|perk=Steel Smithing|weight=13|value=195|damage=13}}
+|-
+{{Item Data|icon=SR-icon-weapon-Ancient Nord Warhammer.png|name=Nord Hero Warhammer|displayname=[[Skyrim:Nord Hero Warhammer|Nord Hero Warhammer]]|id=xx08A1E6|type=2 Hand Warhammer|temp=Steel Ingot|perk=Steel Smithing|weight=24|value=350|damage=23}}
+|}
+
+==Food==
+===Raw Food===
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|Weight
+!width=22|Value
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Notes
+|-{{HE|Angler}}
+|[[File:SR-icon-food-Angler.png|48px]]
+|Angler<br>{{ID|xx000890|par=1}}
+|2||30||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Rare
+Sources:
+* Freezing waters only while using the [[SR:Argonian Fishing Rod|Argonian Fishing Rod]].
+* [[SR:Pilgrim's Trench|Pilgrim's Trench]], small cavern on the ocean floor
+|-{{HE|Arctic Char}}
+|[[File:SR-icon-food-Arctic Char.png|48px]]
+|Arctic Char<br>{{ID|xx0008A4|par=1}}
+|1||10||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Uncommon, Any Weather
+Sources:
+* Freezing waters
+* [[SR:Hela's Folly|Hela's Folly]]
+* [[SR:Orphan's Tear|Orphan's Tear]] (within the sunken deck)
+* [[SR:Pilgrim's Trench|Pilgrim's Trench]]
+|-{{HE|Arctic Grayling}}
+|[[File:SR-icon-food-Arctic Grayling.png|48px]]
+|Arctic Grayling<br>{{ID|xx0008A3|par=1}}
+|0.5||5||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Any Weather
+Sources:
+* Freezing waters; e.g. [[SR:Dawnstar|Dawnstar]] fishing spot near the boat.
+|-{{HE|Brook Bass}}
+|[[File:SR-icon-food-Brook Bass.png|48px]]
+|Brook Bass<br>{{ID|xx00089C|par=1}}
+|0.5||1||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Any Weather
+Sources:
+* Outside [[SR:Mixwater Mill|Mixwater Mill]]
+* Temperate Lakes and Rivers
+|-{{HE|Carp}}
+|[[File:SR-icon-food-Carp.png|48px]]
+|Carp<br>{{ID|xx000898|par=1}}
+|0.5||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Any Weather
+Sources:
+* Outside [[SR:East Empire Company Warehouse|East Empire Company Warehouse]]
+* Under Dragonsreach bridge. 
+* Temperate Lakes
+|-{{HE|Catfish}}
+|[[File:SR-icon-food-Catfish.png|48px]]
+|Catfish<br>{{ID|xx000897|par=1}}
+|1||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Rainy Weather
+Sources:
+* Temperate Lakes; e.g. Near [[SR:Geirmund's Hall|Geirmund's Hall]], [[SR:Riften|Riften]], or [[SR:Falkreath|Falkreath]]
+|-{{HE|Cod}}
+|[[File:SR-icon-food-Cod.png|48px]]
+|Cod<br>{{ID|xx0008A2|par=1}}
+|1||15||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Any Weather
+Sources:
+* Freezing waters
+* Outside [[SR:Anga's Mill|Anga's Mill]]
+* Outside [[SR: Bronze Water Cave|Bronze Water Cave]]
+|-{{HE|Direfish}}
+|[[File:SR-icon-food-Direfish.png|48px]]
+|Direfish<br>{{ID|xx000896|par=1}}
+|1||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common
+Sources:
+* Underground fishing spots
+* Inside [[SR:Broken Oar Grotto|Broken Oar Grotto]]
+* [[SR:Embershard Mine|Embershard Mine]]
+|-{{HE|Glass Catfish}}
+|[[File:SR-icon-food-Glass Catfish.png|48px]]
+|Glass Catfish<br>{{ID|xx0008A0|par=1}}
+|0.5||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common
+Sources:
+* Underground fishing spots
+* [[Skyrim:Blackreach|Blackreach]]
+* [[SR:Lost Knife Hideout|Lost Knife Hideout]]
+* [[Skyrim:Reachwater Rock|Reachwater Rock]]
+|-{{HE|Pogfish}}
+|[[File:SR-icon-food-Pogfish.png|48px]]
+|Pogfish<br>{{ID|xx000891|par=1}}
+|1||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Uncommon, Any Weather
+Sources:
+* [[Skyrim:Riverwood|Riverwood]] fishing spot
+* Temperate Rivers
+* Markarth Stables pond
+|-{{HE|Salmon}}
+|[[File:SR-icon-food-Salmon.png|48px]]
+|Salmon<br>{{ID|xx00089B|par=1}}
+|0.5||3||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Very Common, Any Weather
+*Can also be used to make [[SR:Salmon Steak|Salmon Steak]]
+Sources: 
+* Everywhere
+|-{{HE|Scorpion Fish}}
+|[[File:SR-icon-food-Scorpion Fish.png|48px]]
+|Scorpion Fish<br>{{ID|xx0008A1|par=1}}
+|1||30||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Rare
+Sources:
+* Eleven underground fishing [[Skyrim:Fishing_(activity)#Fishing_Locations|spots]] only while using the [[SR:Argonian Fishing Rod|Argonian Fishing Rod]].  
+* [[SR:Darkfall Cave|Darkfall Cave]] One (which respawns rarely) to catch by hand.
+|-{{HE|Slaughterfish}}
+|[[File:SR-icon-food-Slaughterfish.png|48px]]
+|Slaughterfish<br>{{ID|xx000F25|par=1}}
+|0.5||5||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Common, Any Weather
+Sources:
+* Temperate Lakes and Streams
+|-{{HE|Tripod Spiderfish}}
+|[[File:SR-icon-food-Tripod Spiderfish.png|48px]]
+|Tripod Spiderfish<br>{{ID|xx00089E|par=1}}
+|0.5||10||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Uncommon
+Sources:
+* Underground fishing spots
+* [[Skyrim:Blackreach|Blackreach]]
+* Inside [[SR:Broken Oar Grotto|Broken Oar Grotto]] - 19 in total.
+* [[SR:Embershard Mine|Embershard Mine]]
+* [[Skyrim:Reachwater Rock|Reachwater Rock]]
+* [[Skyrim:Lost Prospect Mine|Lost Prospect Mine]]
+* [[Skyrim:Shadowgreen Cavern|Shadowgreen Cavern]], under a rock in the pool of water
+|-{{HE|Vampire Fish}}
+|[[File:SR-icon-food-Vampire Fish.png|48px]]
+|Vampire Fish<br>{{ID|xx00088B|par=1}}
+|1||10||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Details:
+* Large Fish, Uncommon
+Sources:
+* Underground fishing spots
+* [[SR:Castle Volkihar|Castle Volkihar]] - 10 can be found in the surrounding waters.
+* [[SR:Lost Knife Hideout|Lost Knife Hideout]]
+* [[Skyrim:Reachwater Rock|Reachwater Rock]]
+* [[Skyrim:Dead Drop Falls|Dead Drop Falls]]
+* [[Skyrim:Dimhollow Crypt|Dimhollow Crypt]] - 5 can be found in the water surrounding [[Skyrim:Serana|Serana]]'s coffin. 
+|-{{HE|Crab Meat}}
+|[[File:SR-icon-food-Crab Meat.png|48px]]
+|Crab Meat<br>{{ID|xx000EFE|par=1}}
+|0.1||2||Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+|Sources:
+* [[SR:Mudcrab|Mudcrab]]s
+* Fish Barrels; e.g. Outside the [[SR:Riften Fishery|Riften Fishery]] on the docks.
+|}
+
+===Baked Food===
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|Weight
+!width=22|Value
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Ingredients
+|-{{HE|Crab Cakes}}
+|[[File:SR-icon-food-Crab Cakes.png|48px]]
+|Crab Cakes<br>{{ID|xx000F78|par=1}}
+|0.1||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Fortify Block|Fortify Block]], 5 pts for 60 seconds
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Sack of Flour|Sack of Flour]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|}
+
+===Cooked Food===
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|Weight
+!width=22|Value
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Ingredients
+|-{{HE|Cooked Cod}}
+|[[File:SR-icon-food-Cooked Cod.png|48px]]
+|Cooked Cod<br>{{ID|xx00087A|par=1}}
+|1||18||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Cod|Cod]]
+|-{{HE|Cooked Pearlfish}}
+|[[File:SR-icon-food-Cooked Pearlfish.png|48px]]
+|Cooked Pearlfish<br>{{ID|xx00087B|par=1}}
+|0.2||18||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Pearlfish|Pearlfish]]
+|-{{HE|Cooked Brook Bass}}
+|[[File:SR-icon-food-Cooked Brook Bass.png|48px]]
+|Cooked Brook Bass<br>{{ID|xx00087C|par=1}}
+|0.5||2||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Brook Bass|Brook Bass]]
+|-{{HE|Cooked Scorpion Fish}}
+|[[File:SR-icon-food-Cooked Scorpion Fish.png|48px]]
+|Cooked Scorpion Fish<br>{{ID|xx00087D|par=1}}
+|1||40||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Scorpion Fish|Scorpion Fish]]
+|-{{HE|Cooked Carp}}
+|[[File:SR-icon-food-Cooked Carp.png|48px]]
+|Cooked Carp<br>{{ID|xx00087E|par=1}}
+|0.5||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Carp|Carp]]
+|-{{HE|Cooked Catfish}}
+|[[File:SR-icon-food-Cooked Catfish.png|48px]]
+|Cooked Catfish<br>{{ID|xx00087F|par=1}}
+|1||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Catfish|Catfish]]
+|-{{HE|Cooked Direfish}}
+|[[File:SR-icon-food-Cooked Direfish.png|48px]]
+|Cooked Direfish<br>{{ID|xx000880|par=1}}
+|1||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Direfish|Direfish]]
+|-{{HE|Cooked Angelfish}}
+|[[File:SR-icon-food-Cooked Angelfish.png|48px]]
+|Cooked Angelfish<br>{{ID|xx000881|par=1}}
+|0.2||40||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Angelfish|Angelfish]]
+|-{{HE|Cooked Glass Catfish}}
+|[[File:SR-icon-food-Cooked Glass Catfish.png|48px]]
+|Cooked Glass Catfish<br>{{ID|xx000882|par=1}}
+|0.5||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Glass Catfish|Glass Catfish]]
+|-{{HE|Cooked Goldfish}}
+|[[File:SR-icon-food-Cooked Goldfish.png|48px]]
+|Cooked Goldfish<br>{{ID|xx000883|par=1}}
+|0.2||15||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Goldfish|Goldfish]]
+|-{{HE|Cooked Lyretail Anthias}}
+|[[File:SR-icon-food-Cooked Lyretail Anthias.png|48px]]
+|Cooked Lyretail Anthias<br>{{ID|xx000884|par=1}}
+|0.2||40||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Lyretail Anthias|Lyretail Anthias]]
+|-{{HE|Cooked Pygmy Sunfish}}
+|[[File:SR-icon-food-Cooked Pygmy Sunfish.png|48px]]
+|Cooked Pygmy Sunfish<br>{{ID|xx000885|par=1}}
+|0.2||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Pygmy Sunfish|Pygmy Sunfish]]
+|-{{HE|Cooked Spadefish}}
+|[[File:SR-icon-food-Cooked Spadefish.png|48px]]
+|Cooked Spadefish<br>{{ID|xx000886|par=1}}
+|0.2||18||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Spadefish|Spadefish]]
+|-{{HE|Cooked Tripod Spiderfish}}
+|[[File:SR-icon-food-Cooked Tripod Spiderfish.png|48px]]
+|Cooked Tripod Spiderfish<br>{{ID|xx000887|par=1}}
+|0.5||15||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Tripod Spiderfish|Tripod Spiderfish]]
+|-{{HE|Cooked Vampire Fish}}
+|[[File:SR-icon-food-Cooked Vampire Fish.png|48px]]
+|Cooked Vampire Fish<br>{{ID|xx000888|par=1}}
+|1||18||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Vampire Fish|Vampire Fish]]
+|-{{HE|Cooked Pogfish}}
+|[[File:SR-icon-food-Cooked Pogfish.png|48px]]
+|Cooked Pogfish<br>{{ID|xx00088A|par=1}}
+|1||5||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Pogfish|Pogfish]]
+|-{{HE|Cooked Arctic Grayling}}
+|[[File:SR-icon-food-Cooked Arctic Grayling.png|48px]]
+|Cooked Arctic Grayling<br>{{ID|xx00088C|par=1}}
+|0.5||8||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Arctic Grayling|Arctic Grayling]]
+|-{{HE|Cooked Arctic Char}}
+|[[File:SR-icon-food-Cooked Arctic Char.png|48px]]
+|Cooked Arctic Char<br>{{ID|xx00088D|par=1}}
+|1||15||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Arctic Char|Arctic Char]]
+|-{{HE|Cooked Angler Larvae}}
+|[[File:SR-icon-food-Cooked Angler Larvae.png|48px]]
+|Cooked Angler Larvae<br>{{ID|xx00088E|par=1}}
+|0.2||2||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Angler Larvae|Angler Larvae]]
+|-{{HE|Cooked Glassfish}}
+|[[File:SR-icon-food-Cooked Glassfish.png|48px]]
+|Cooked Glassfish<br>{{ID|xx00088F|par=1}}
+|0.2||2||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Glassfish|Glassfish]]
+|-{{HE|Cooked Juvenile Mudcrab}}
+|[[File:SR-icon-food-Cooked Juvenile Mudcrab.png|48px]]
+|Cooked Juvenile Mudcrab<br>{{ID|xx00089A|par=1}}
+|0.2||15||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Juvenile Mudcrab|Juvenile Mudcrab]]
+|-{{HE|Cooked Angler}}
+|[[File:SR-icon-food-Cooked Angler.png|48px]]
+|Cooked Angler<br>{{ID|xx0008A5|par=1}}
+|2||40||Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 5 pts
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Angler|Angler]]
+|-{{HE|Creamy Crab Bisque}}
+|[[File:SR-icon-food-Creamy Crab Bisque.png|48px]]
+|Creamy Crab Bisque<br>{{ID|xx000F02|par=1}}
+|0.5||8||Large
+|
+* [[Skyrim:Fortify Stamina|Fortify Stamina]], 25 pts for 720 seconds
+* [[Skyrim:Restore Stamina|Restore Stamina]], 2 pts for 720 seconds
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Sack of Flour|Sack of Flour]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Roasted Tomato Crab Bisque}}
+|[[File:SR-icon-food-Roasted Tomato Crab Bisque.png|48px]]
+|Roasted Tomato Crab Bisque<br>{{ID|xx000F04|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 seconds
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Tomato|Tomato]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Potato Crab Chowder}}
+|[[File:SR-icon-food-Potato Crab Chowder.png|48px]]
+|Potato Crab Chowder<br>{{ID|xx000F06|par=1}}
+|0.5||8||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Stamina|Restore Stamina]], 5 pts
+|[[Skyrim:Potato|Potato]]<br>[[Skyrim:Jug of Milk|Jug of Milk]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Hot Creamy Crab Bisque}}
+|[[File:SR-icon-food-Creamy Crab Bisque.png|48px]]
+|Hot Creamy Crab Bisque<br>{{ID|xx000F0A|par=1}}
+|0.5||8||Large
+|
+* [[Skyrim:Fortify Stamina|Fortify Stamina]], 25 pts for 720 seconds
+* [[Skyrim:Restore Stamina|Restore Stamina]], 2 pts for 720 seconds
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 seconds
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Sack of Flour|Sack of Flour]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Hot Potato Crab Chowder}}
+|[[File:SR-icon-food-Potato Crab Chowder.png|48px]]
+|Hot Potato Crab Chowder<br>{{ID|xx000F0B|par=1}}
+|0.5||8||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Stamina|Restore Stamina]], 5 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 seconds
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Potato|Potato]]<br>[[Skyrim:Jug of Milk|Jug of Milk]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Hot Roasted Tomato Crab Bisque}}
+|[[File:SR-icon-food-Roasted Tomato Crab Bisque.png|48px]]
+|Hot Roasted Tomato Crab Bisque<br>{{ID|xx000F0C|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 seconds
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 seconds
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Tomato|Tomato]]<br>[[Skyrim:Butter|Butter]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Crab Stew}}
+|[[File:SR-icon-food-Crab Stew.png|48px]]
+|Crab Stew<br>{{ID|xx000F76|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 seconds
+* [[Skyrim:Restore Stamina|Restore Stamina]], 2 pts for 720 seconds
+|[[Skyrim:Garlic|Garlic]]<br>[[Skyrim:Potato|Potato]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|-{{HE|Hot Crab Stew}}
+|[[File:SR-icon-food-Crab Stew.png|48px]]
+|Hot Crab Stew<br>{{ID|xx000F77|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 seconds
+* [[Skyrim:Restore Stamina|Restore Stamina]], 2 pts for 720 seconds
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 seconds
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|[[Skyrim:Garlic|Garlic]]<br>[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Potato|Potato]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Crab Meat|Crab Meat]]
+|}
+===Beverages===
+{| class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|Weight
+!width=22|Value
+!Effect(s)
+!class="unsortable"|Notes
+|-{{HE|Aged Flin}}
+|[[File:SR-icon-food-Flin.png|48px]]
+|Aged Flin<br>{{ID|xx000C2D|par=1}}
+|0.5||180
+|
+* [[Skyrim:Restore Stamina|Restore Stamina]], 40 pts
+* [[Skyrim:Damage Stamina Regen|Damage Stamina Regen]], 40 pts for 120 seconds
+|Sources:
+* Quest items for [[Skyrim:Spirits Away|Spirits Away]].
+|}
+
+==Ingredients==
+{{#define:noharvest|1}}
+{| class="wikitable"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+|-
+{{Ingredient Entry|ing=Angelfish|description=}}
+{{Ingredient Entry|ing=Angler Larvae|description=}}
+{{Ingredient Entry|ing=Glassfish|description=}}
+{{Ingredient Entry|ing=Goldfish|description=}}
+{{Ingredient Entry|ing=Juvenile Mudcrab|description=}}
+{{Ingredient Entry|ing=Lyretail Anthias|description=}}
+{{Ingredient Entry|ing=Pearlfish|description=}}
+{{Ingredient Entry|ing=Pygmy Sunfish|description=}}
+{{Ingredient Entry|ing=Spadefish|description=}}
+|}
+
+==Keys==
+{{Key Table
+|Key to Mila's Strong Box||xx0008F9|Gained during [[Skyrim:Two of a Kind|Two of a Kind]]|Mila's Strong Box
+|Viriya's Market Key||xx000EB7|Can be pickpocketed from [[Skyrim:Viriya|Viriya]] after building a market stall during [[Skyrim:End of the Line|End of the Line]]|Viriya's Market Stall
+}}
+
+==Miscellaneous Items==
+{|class="wikitable sortable"
+!class="unsortable"|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|m|Aetherium Dynamo Core}}
+|Aetherium Dynamo Core<br>{{ID|xx000B16|par=1}} || 4 || 131
+|
+*Obtained from the two fishing spots outside [[SR:Bronze Water Cave|Bronze Water Cave]] during the quest [[SR:Beneath Bronze Waters|Beneath Bronze Waters]].
+*Must be placed into the nearby dynamo actuators to progress the quest, although they can be recovered afterwards.
+|-
+|{{AL|C}}|{{icon|m|Schematic}}
+|Dwarven Fishing Rod Schematic<br>{{ID|xx000AE4|par=1}} || 0 || 100
+|
+*Located in [[SR:Alftand Ruined Tower|Alftand Ruined Tower]].
+*Needed for the quest [[SR:Beneath Bronze Waters|Beneath Bronze Waters]].
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class="unsortable"| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class="unsortable"|Description !!class="unsortable"|Location
+|-
+{{Book Normal|Brutius's Journal}}
+{{Book Normal|Fisherman's Journal (Fishing)}}
+{{Book Normal|Fishing Mastery, v1}}
+{{Book Normal|Fishing Mastery, v2}}
+{{Book Normal|Fishing Mastery, v3}}
+{{Book Normal|Fishing Mastery, v4}}
+{{Book Normal|Fishing Mastery, v5}}
+{{Book Normal|Line and Lure}}
+{{Book Normal|Seviur's Journal}}
+{{Book Normal|Tolif's Journal}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class="unsortable"| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class="unsortable"|Description !!class="unsortable"|Location
+|-
+{{Book Normal|Bounty: Angler Larvae Specimen}}
+{{Book Normal|Bounty: Cleaning Our Waterways}}
+{{Book Normal|Bounty: Dwarven Investigation}}
+{{Book Normal|Bounty: Fangtusk}}
+{{Book Normal|Bounty: Glassfish}}
+{{Book Normal|Bounty: Goldfish!}}
+{{Book Normal|Bounty: Juvenile Mudcrab}}
+{{Book Normal|Bounty: Lost Wares}}
+{{Book Normal|Bounty: Pearlfish Specimen}}
+{{Book Normal|Bounty: Pygmy Sunfish Specimen}}
+{{Book Normal|Bounty: Spadefish Specimen}}
+{{Book Normal|Bounty: Supply of Arctic Grayling}}
+{{Book Normal|Bounty: Supply of Brook Bass}}
+{{Book Normal|Bounty: Supply of Catfish}}
+{{Book Normal|Bounty: Supply of Salmon}}
+{{Book Normal|Fishing Map - Eastmarch}}
+{{Book Normal|Fishing Map - Falkreath}}
+{{Book Normal|Fishing Map - Haafingar}}
+{{Book Normal|Fishing Map - Hjaalmarch}}
+{{Book Normal|Fishing Map - Solstheim}}
+{{Book Normal|Fishing Map - The Pale}}
+{{Book Normal|Fishing Map - The Reach}}
+{{Book Normal|Fishing Map - The Rift}}
+{{Book Normal|Fishing Map - Whiterun}}
+{{Book Normal|Fishing Map - Winterhold}}
+{{Book Normal|Fishing Work}}
+{{Book Normal|Gisli's Note}}
+{{Book Normal|Letter from Mila Valentia}}
+{{Book Normal|Letter from Viriya}}
+{{Book Normal|Letter on Mudcrab Attacks}}
+{{Book Normal|List of Arctic Fish}}
+{{Book Normal|List of Fair Weather Fish}}
+{{Book Normal|List of Rainy Weather Fish}}
+{{Book Normal|List of Rare Fish}}
+{{Book Normal|List of Underground Fish}}
+{{Book Normal|Fish Out of Water}}
+{{Book Normal|Mila's Note on Very Secret Treasure}}
+{{Book Normal|Notice: Fishing Contest}}
+{{Book Normal|The Fisher King}}
+{{Book Normal|The Fisher Queen}}
+{{Book Normal|Viriya's Hastily Written Letter}}
+{{Book Normal|Wanted: A Seafood Feast}}
+{{Book Normal|Wanted: Fishing Tutor}}
+{{Book Normal|Zaria's Note from Jarl}}
+|}

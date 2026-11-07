@@ -1,0 +1,27 @@
+{{CC Header|Dwarven Armored Mudcrab}}{{Trail|Dwarven Armored Mudcrab}}
+This page documents the '''new items''' added by the [[Skyrim:Dwarven Armored Mudcrab|Dwarven Armored Mudcrab]] [[Skyrim:Creation Club|Creation]].
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Notice of Sale - Dwarven Mudcrab|showid=1|par=1}}
+{{Book Normal|Ownership Deed - Mudcrab|showid=1|par=1}}
+|}
+
+==Spell Tomes==
+
+Like all books, this spell tome has a weight of 1.
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeAlteration|60}}
+|{{Anchor|Spell Tome: Teleport Pet Mudcrab}}<br>{{ID|FExxx811|par=1}}
+|50
+|''Teleports Dwarven Mudcrab''
+|-
+|}

@@ -1,0 +1,218 @@
+{{CC Header|Netch Leather Armor}}{{Trail|Netch Leather Armor}}
+This page documents the '''new items''' added by the [[Skyrim:Netch Leather Armor|Netch Leather Armor]] [[Skyrim:Creation Club|Creation]]. For more detailed information on the craftable equipment, see [[Skyrim:Netch Leather|this page]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Boiled Netch Leather Armor}}
+|{{Anchor|Boiled Netch Leather Armor}}<br>{{ID|FExxx807|par=1}}
+|Light Armor || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|6||300||35
+|
+|-
+|{{Icon|a|Boiled Netch Leather Helmet}}
+|{{Anchor|Boiled Netch Leather Helmet}}<br>{{ID|FExxx804|par=1}}
+|Light Helmet || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||150||20
+|
+|-
+|{{Icon|a|Netch Leather Boots}}
+|[[SR:Boots of Blinding Speed|{{Anchor|Boots of Blinding Speed}}]]<br>{{ID|FExxx92B|par=1}}
+|Light Boots || Not possible
+|2||500||11
+|
+*''Provides the wearer with blinding speed.''
+|-
+|{{Icon|a|Netch Leather Armor}}
+|{{Anchor|Netch Leather Armor|Netch Leather Armor (item)}}<br>{{ID|FExxx801|par=1}}
+|Light Armor || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|6||250||32
+|
+|-
+|{{Icon|a|Netch Leather Boots}}
+|{{Anchor|Netch Leather Boots}}<br>{{ID|FExxx800|par=1}}
+|Light Boots || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||50||11
+|
+|-
+|{{Icon|a|Netch Leather Bracers}}
+|{{Anchor|Netch Leather Bracers}}<br>{{ID|FExxx802|par=1}}
+|Light Gauntlets || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||50||11
+|
+|-
+|{{Icon|a|Netch Leather Helmet}}
+|{{Anchor|Netch Leather Helmet}}<br>{{ID|FExxx803|par=1}}
+|Light Helmet || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||100||16
+|
+|-
+|{{Icon|a|Netch Leather Shield}}
+|{{Anchor|Netch Leather Shield}}<br>{{ID|FExxx806|par=1}}
+|Light Shield || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|4||150||18
+|
+|-
+|{{Icon|a|Netch Leather Tower Shield}}
+|{{Anchor|Netch Leather Tower Shield}}<br>{{ID|FExxx805|par=1}}
+|Light Shield || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|8||200||24
+|
+|-
+|{{Icon|a|Painted Netch Leather Armor}}
+|{{Anchor|Painted Netch Leather Armor}}<br>{{ID|FExxx911|par=1}}
+|Light Armor || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>Perk: ''none''
+|6||300||35
+|
+|-
+|{{Icon|a|Painted Netch Leather Boots}}
+|{{Anchor|Painted Netch Leather Boots}}<br>{{ID|FExxx941|par=1}}
+|Light Boots || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>Perk: ''none''
+|2||50||11
+|
+|-
+|{{Icon|a|Painted Netch Leather Bracers}}
+|{{Anchor|Painted Netch Leather Bracers}}<br>{{ID|FExxx93C|par=1}}
+|Light Gauntlets || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>Perk: ''none''
+|2||50||11
+|
+|-
+|{{Icon|a|Painted Netch Leather Helmet}}
+|{{Anchor|Painted Netch Leather Helmet}}<br>{{ID|FExxx938|par=1}}
+|Light Helmet || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>Perk: ''none''
+|2||150||20
+|
+|-
+|{{Icon|a|Shadowed Boiled Netch Leather Armor}}
+|{{Anchor|Shadowed Boiled Netch Leather Armor}}<br>{{ID|FExxx974|par=1}}
+|Light Armor || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|6||300||36
+|
+|-
+|{{Icon|a|Shadowed Boiled Netch Leather Helmet}}
+|{{Anchor|Shadowed Boiled Netch Leather Helmet}}<br>{{ID|FExxx973|par=1}}
+|Light Helmet || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||150||22
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Armor}}
+|{{Anchor|Shadowed Netch Leather Armor}}<br>{{ID|FExxx951|par=1}}
+|Light Armor || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|6||250||33
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Boots}}
+|{{Anchor|Shadowed Netch Leather Boots}}<br>{{ID|FExxx952|par=1}}
+|Light Boots || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||50||12
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Bracers}}
+|{{Anchor|Shadowed Netch Leather Bracers}}<br>{{ID|FExxx958|par=1}}
+|Light Gauntlets || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||50||12
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Helmet}}
+|{{Anchor|Shadowed Netch Leather Helmet}}<br>{{ID|FExxx95A|par=1}}
+|Light Helmet || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|2||100||17
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Shield}}
+|{{Anchor|Shadowed Netch Leather Shield}}<br>{{ID|FExxx950|par=1}}
+|Light Shield || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|4||150||19
+|
+|-
+|{{Icon|a|Shadowed Netch Leather Tower Shield}}
+|{{Anchor|Shadowed Netch Leather Tower Shield}}<br>{{ID|FExxx94F|par=1}}
+|Light Shield || 1 [[Skyrim:Tanned Netch Leather|Tanned Netch Leather]];<br>perk: ''none''
+|8||200||25
+|
+|-
+|}
+
+<gallery>
+File:SR-item-Painted Netch Leather Armor Male.jpg|A male Nord wearing painted Netch leather armor
+File:SR-item-Painted Netch Leather Armor Female.jpg|A female Imperial wearing painted Netch leather armor
+</gallery>
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Crafting with Netch Leather}}
+{{Book Normal|Peddler's Journal}}
+|}
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Key to Riekling Chest
+ |displayname=[[Skyrim:Key to Riekling Chest|Key to Riekling Chest]]
+ |id=FExxx882|weight=0|value=0}}
+|}
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Netch Leather.png
+ |name=Giant Betty Netch Leather
+ |id=FExxx893|weight=4|value=20}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Netch Leather.png
+ |name=Giant Bull Netch Leather
+ |id=FExxx892|weight=4|value=20}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Netch Leather.png
+ |name=Imitation Netch Leather
+ |id=FExxx8A3|weight=4|value=20}}
+ |
+{{Item Data
+ |icon=SR-icon-potion-SleepingTreeSap.png
+ |name=Purple Dye
+ |id=FExxx8A4|weight=1|value=3}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Netch Leather.png
+ |name=Tanned Netch Leather
+ |id=FExxx909|weight=2|value=10}}
+ |
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Riekling Hunting Party Sketch}}
+|}
+
+[[Category:Skyrim-Creation Club-Items]]

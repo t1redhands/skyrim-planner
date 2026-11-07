@@ -1,0 +1,20 @@
+{{CC Header|Camping}}{{Trail|Camping}}
+This page documents the '''new item''' added by the [[Skyrim:Camping|Camping]] [[Skyrim:Creation Club|Creation]].
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Camping Supplies.png
+ |name=Camping Supplies
+ |displayname=[[Skyrim:Camping Supplies|Camping Supplies]]
+ |id=FExxx801|weight=9|value=10
+ |notes=*Can be crafted at an anvil or forge with three pieces of firewood and one piece of leather.
+* Despite being sorted as a miscellaneous item, this is actually a potion in the [[Skyrim Mod:Creation Kit|Creation Kit]].}}
+|}

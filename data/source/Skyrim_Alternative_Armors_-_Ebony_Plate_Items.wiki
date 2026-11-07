@@ -1,0 +1,93 @@
+{{CC Header|Alternative Armors - Ebony Plate}}{{Trail|Alternative Armors - Ebony Plate}}
+This page documents the '''new items''' added by the [[Skyrim:Alternative Armors - Ebony Plate|Alternative Armors - Ebony Plate]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!colspan=2; class="unsortable"|Notes
+|-
+|{{Icon|a|BladesShield}}
+|{{Anchor|Blades Ebony Shield}}<br>{{ID|FExxx804|par=1}}
+|Heavy Shield || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|14||750||34
+| colspan=2; |
+*Distributed through leveled lists containing heavy armor.
+{{Bug|Despite being found in loot, this shield has a quest script attached to it, causing the quest to advance if it is looted.|dlc=CC}}
+|-
+|{{Icon|c|Moth Priest Blindfold}}
+|{{Anchor|Blindfold}}<br>{{ID|FExxx84B|par=1}}
+|Clothing || N/A
+|1||1||-
+| colspan=2; |
+*Unobtainable.
+*Cannot be worn by the player.
+|-
+|{{Icon|a|Ebony Plate Armor}}
+|{{Anchor|Ebony Plate Armor}}<br>{{ID|FExxx86B|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|38||2155||44
+|
+*''Increases your health by 50 points.''
+| rowspan=4 |
+*Worn by [[Skyrim:Tyra Blood-Fire|Tyra Blood-Fire]] at the end of [[Skyrim:Heart of Crimson|Heart of Crimson]].
+|-
+|{{Icon|a|Ebony Plate Boots}}
+|{{Anchor|Ebony Plate Boots}}<br>{{ID|FExxx86C|par=1}}
+|Heavy Boots || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||772||17
+|
+*''Stamina regenerates 30% faster.''
+|-
+|{{Icon|a|Ebony Plate Gauntlets}}
+|{{Anchor|Ebony Plate Gauntlets}}<br>{{ID|FExxx86A|par=1}}
+|Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||1277||18
+|
+*''One-handed attacks do 30% more damage.''
+|-
+|{{Icon|a|Ebony Plate Helmet}}
+|{{Anchor|Ebony Plate Helmet}}<br>{{ID|FExxx869|par=1}}
+|Heavy Helmet || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|10||1282||22
+|
+*''Increases Heavy Armor skill by 20 points.''
+|-
+|{{Icon|a|Ebony Plate Armor}}
+|{{Anchor|Ebony Plate Armor}}<br>{{ID|FExxx801|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|38||1600||44
+| colspan=2; rowspan=4 |
+*Distributed through leveled lists containing heavy armor.
+*Can be crafted after completion of Heart of Crimson.
+|-
+|{{Icon|a|Ebony Plate Boots}}
+|{{Anchor|Ebony Plate Boots}}<br>{{ID|FExxx800|par=1}}
+|Heavy Boots || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||350||17
+|-
+|{{Icon|a|Ebony Plate Gauntlets}}
+|{{Anchor|Ebony Plate Gauntlets}}<br>{{ID|FExxx802|par=1}}
+|Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||350||17
+|-
+|{{Icon|a|Ebony Plate Helmet}}
+|{{Anchor|Ebony Plate Helmet}}<br>{{ID|FExxx803|par=1}}
+|Heavy Helmet || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|10||850||22
+|-
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Letter from Tyra Blood-Fire}}
+{{Book Normal|The Crimson Dirks, v1}}
+{{Book Normal|To (Player)|To ''<Player>}}
+|}

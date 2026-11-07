@@ -1,0 +1,65 @@
+{{CC Header|Staff of Sheogorath}}{{Trail|Staff of Sheogorath}}
+This page documents the '''new items''' added by the [[Skyrim:Staff of Sheogorath|Staff of Sheogorath]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+{| class="wikitable sortable"
+!class="unsortable"|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!class="sort_str"|Type
+!width=100|[[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!width=200|Enchantment
+!class="unsortable"|Acquisition
+!class="unsortable"|Notes
+|-
+| {{icon|w|Fork of Horripilation}}
+| {{Anchor|[[SR:Fork of Horripilation|Fork of Horripilation]]}}<br/>{{ID|FExxx801|par=1}} || Dagger
+| No
+| 6 || 500 || 1
+| 
+
+| See Quest: '''[[SR:Put A Fork In It|Put A Fork In It]]'''
+| 
+|-
+| {{icon|w|Staff of Sheogorath}}
+| {{Anchor|[[Skyrim:Staff of Sheogorath (item)|Staff of Sheogorath]]}}<br/>{{ID|FExxxd62|par=1}} || Staff
+| No
+| 8 || 3965 || 0
+| ''Targets that fail to resist are paralyzed for 10 seconds.''
+* [[Skyrim:Paralyze (effect)|Paralyze]] in 75 ft for 10 seconds
+* [[Skyrim:Stagger|Stagger Push]], 100 points
+| See Quest: '''[[SR:Put A Fork In It|Put A Fork In It]]'''
+| Can be crafted at a [[Skyrim:Staff Enchanter|Staff Enchanter]]
+|}
+
+==Notes==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Mysterious Note (Staff of Sheogorath)}}
+|}
+
+==Quest Items==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Quest/Notes
+{{Item Data
+ |icon=SR-icon-misc-Branch of the Tree of Shades.png
+ |name=Branch of the Tree of Shades
+ |id=FExxx80F|weight=0|value=1
+ |quest=Put A Fork In It
+ |notes=Appeared in [[SI:Shivering Isles|''Shivering Isles'']] as the [[SI:Screaming Branch|Screaming Branch]].
+}}
+{{Item Data
+ |icon=SR-icon-misc-Ciirta's Eye.png
+ |name=Ciirta's Eye
+ |id=FExxx80E|weight=0|value=100
+ |quest=Put A Fork In It
+ |notes=[[SI:Ciirta's Eye|Appeared]] in [[SI:Shivering Isles|''Shivering Isles'']].
+}}
+|}

@@ -1,0 +1,90 @@
+{{CC Header|Pets of Skyrim}}{{Trail|Pets of Skyrim}}
+This page documents the '''new items''' added by the [[Skyrim:Pets of Skyrim|Pets of Skyrim]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Halvar's Journal}}
+{{Book Normal|Pickpocket's Journal}}
+{{Book Normal|Thief's Journal}}
+{{Book Normal|Vampire Naturalist's Journal}}
+|}
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Skeever Cage Key
+ |displayname=[[Skyrim:Skeever Cage Key|Skeever Cage Key]]
+ |id=FExxx833|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Spider Cage Key
+ |displayname=[[Skyrim:Spider Cage Key|Spider Cage Key]]
+ |id=FExxx832|weight=0|value=0}}
+|}
+
+==Miscellaneous Items==
+{| class="wikitable sortable"
+!rowspan=2 class=unsortable|
+!rowspan=2|Name ([[Skyrim:Form ID|ID]])
+!width=22 rowspan=2|{{Weight Icon}}
+!width=22 rowspan=2|{{Value Icon}}
+!style="border-left-width:medium; border-left-color:black;" colspan=2 class=unsortable|Raw Materials
+!style="border-left-width:medium; border-left-color:black;" rowspan=2 class=unsortable|Notes
+|-
+!style="border-left-width:medium; border-left-color:black;"|{{icon|m|Leather|24}}[[Skyrim:Leather|Leather]]
+!{{icon|m|LeatherStrips|24}} [[Skyrim:Leather Strips|Strips]]
+|-
+|[[File:SR-icon-misc-Animal Collar.png|48px]]
+|{{Anchor|Animal Collar}}<br>{{ID|FExxx871|par=1}}
+|{{AL|C}}|0.5
+|{{AL|C}}|15
+|style="border-left-width:medium; border-left-color:black; text-align:center"| 1 ||{{AL|C}}| 1
+|style="border-left-width:medium; border-left-color:black;"|Can be given to [[SR:Hilda|Hilda]], [[SR:Skritch|Skritch]], [[SR:Thistle (creature)|Thistle]], and [[SR:Sweet Roll (creature)|Sweet Roll]]. Purely visual.
+|-
+|[[File:SR-icon-misc-Animal Pack.png|48px]]
+|{{Anchor|Animal Pack}}<br>{{ID|FExxx851||par=1}}
+|{{AL|C}}|1
+|{{AL|C}}|35
+|style="border-left-width:medium; border-left-color:black; text-align:center"| 3 ||{{AL|C}}| 3
+|style="border-left-width:medium; border-left-color:black;"|Can be given to [[SR:Hilda|Hilda]] and [[SR:Skritch|Skritch]]. Increases the pet's carrying capacity by 40 (effectively 39 due to the pack's weight of 1).
+*''Equip on a pet goat or skeever to increase its carryweight by 40.''
+|-
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|For Sale}}
+{{Book Normal|Notes on Tamed Rabbit}}
+|}
+
+==Potions==
+
+{| class="wikitable sortable"
+!width=48 class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+|{{icon|poi|FrostbiteVenom}}
+|{{Anchor|Potent Frostbite Venom}}<br>{{ID|FExxx834|par=1}}
+|0.5||45
+|''A blood-freezing poison that does 10 points damage to Health and Stamina for 4 seconds.''
+* [[Skyrim:Frostbite Venom|Frostbite Venom]], 10 pts for 4 secs
+|
+*Can be harvested from [[SR:Arachnia|Arachnia]] periodically.
+|}

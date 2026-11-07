@@ -1,0 +1,53 @@
+{{CC Header|Elite Crossbows}}{{Trail|Elite Crossbows}}
+This page documents the '''new items''' added by the [[Skyrim:Elite Crossbows|Elite Crossbows]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Speed
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Crossbow.png
+ |name=Ebony Crossbow
+ |displayname=[[Skyrim:Ebony Crossbow|Ebony Crossbow]]
+ |id=FExxx8A6|weight=23|value=610|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Ebony Crossbow.png
+ |name=Enhanced Ebony Crossbow
+ |displayname=[[Skyrim:Enhanced Ebony Crossbow|Enhanced Ebony Crossbow]]
+ |id=FExxx8AE|weight=24|value=870|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Elven Crossbow.png
+ |name=Elven Crossbow
+ |displayname=[[Skyrim:Elven Crossbow|Elven Crossbow]]
+ |id=FExxx801|weight=21|value=480|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Elven Crossbow.png
+ |name=Enhanced Elven Crossbow
+ |displayname=[[Skyrim:Enhanced Elven Crossbow|Enhanced Elven Crossbow]]
+ |id=FExxx809|weight=22|value=630|damage=23|notes=1}}
+|}
+
+==Notes==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Kragrash's Letter}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key 03.png
+ |name=Ironback Hideout Cellar Key
+ |displayname=[[Skyrim:Ironback Hideout Cellar Key|Ironback Hideout Cellar Key]]
+ |id=FExxx80A|weight=0|value=0}}
+|}

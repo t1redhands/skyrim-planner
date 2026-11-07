@@ -1,0 +1,85 @@
+{{CC Header|Nix-Hound}}{{Trail|Nix-Hound}}
+This page documents the '''new items''' added by the [[Skyrim:Nix-Hound|Nix-Hound]] [[Skyrim:Creation Club|Creation]].
+
+==Food==
+
+===Raw Food===
+
+The Creation takes care to add the raw Nix-Hound Meat to [[SR:Survival Mode|Survival Mode]]'s raw food table, so you can contract [[Skyrim:Disease#Food Poisoning|Food Poisoning]] by consuming the uncooked variant.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Notes
+|-
+|[[File:SR-icon-food-DogMeat.png|48px]]
+|{{Anchor|Nix-Hound Meat}}<br>{{ID|FExxx819|par=1}}
+|0.2
+|3
+|Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 2 pts
+| Sources:
+* Dropped by all [[SR:Nix-Hound (creature)|Nix-Hounds]]
+Uses:
+* Used for cooking [[SR:Cooked Nix-Hound Meat|Cooked Nix-Hound Meat]]
+|}
+
+===Cooked Food===
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!width=11|Heal /{{Weight Icon}}
+!width=11|Heal /{{Value Icon}}
+!width=11|Stam /{{Weight Icon}}
+!width=11|Stam /{{Value Icon}}
+!class="unsortable"|Ingredients
+!class="unsortable"|Notes
+|-
+|{{nowrap|[[File:SR-icon-food-CookedNix-HoundMeat.png|48px]]}}
+|{{Anchor|Cooked Nix-Hound Meat}}<br>{{ID|FExxx81B|par=1}}
+|1
+|15
+|Medium
+|
+* [[Skyrim:Restore Health|Restore Health]], 12 pts
+|12
+|0.8
+|0
+|0
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[SR:Nix-Hound Meat|Nix-Hound Meat]]
+|
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Notice of Sale - Nix-Hound (Geldis)}}
+{{Book Normal|Notice of Sale - Nix-Hound (Revus)}}
+|}
+
+==Spell Tomes==
+
+Like all books, this spell tome has a weight of 1.
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeAlteration|60}}
+|{{Anchor|Spell Tome: Teleport Pet Nix-Hound}}<br>{{ID|FExxx813|par=1}}
+|50
+|''Teleports Nix-Hound''
+|-
+|}

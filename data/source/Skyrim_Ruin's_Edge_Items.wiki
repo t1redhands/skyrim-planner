@@ -1,0 +1,17 @@
+{{CC Header|Ruin's Edge}}{{Trail|Ruin's Edge}}
+This page documents the '''new items''' added by the [[Skyrim:Ruin's Edge|Ruin's Edge]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Ruin's Edge.png|name=Ruin's Edge|displayname=[[Skyrim:Ruin's Edge (item)|Ruin's Edge]]|id=FExxxD63|type=Bow|temp=Daedra Heart|perk=Daedric Smithing|weight=7|value=750|damage=12|enchantment=''Randomly applies one of these effects to the target: Frost, Demoralize, Frenzy, Drain Magicka, Paralyze.''|quest=The Edge of Ruin}}
+|}

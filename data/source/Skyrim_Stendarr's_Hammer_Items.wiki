@@ -1,0 +1,18 @@
+{{CC Header|Stendarr's Hammer}}{{Trail|Stendarr's Hammer}}
+This page documents the '''new items''' added by the [[Skyrim:Stendarr's Hammer|Stendarr's Hammer]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Stendarr's Hammer.png|name=Stendarr's Hammer|displayname=[[Skyrim:Stendarr's Hammer (item)|Stendarr's Hammer]]|id=FExxxD62|type=2 Hand Warhammer|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=100|value=4000|damage=28|enchantment=''Damages the target for 22 points. Depletes 20 Stamina from the wielder per hit.''
+*[[Skyrim:Smite Damage|Smite Damage]]}}
+|}

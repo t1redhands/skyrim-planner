@@ -1,0 +1,45 @@
+{{CC Header|Staff of Hasedoki}}{{Trail|Staff of Hasedoki}}
+This page documents the '''new items''' added by the [[Skyrim:Staff of Hasedoki|Staff of Hasedoki]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Ivara's Notes|showid=1|par=1}}
+{{Book Normal|Smuggler's Ledger|showid=1|par=1}}
+{{Book Normal|Smuggler's Trade Notes|showid=1|par=1}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Arkay the Enemy|showid=1|par=1}}
+{{Book Normal|The Light and the Dark|showid=1|par=1}}
+{{Book Normal|To Raise the Living|showid=1|par=1}}
+|}
+
+==Weapons==
+
+{| class="wikitable sortable"
+!class="unsortable"|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!class="sort_str"|Type
+!width=100|[[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!width=200|Enchantment
+!class="unsortable"|Acquisition
+!class="unsortable"|Notes
+|-
+|{{icon|w|Staff of Hasedoki}}
+|{{Anchor|[[Skyrim:Staff of Hasedoki (item)|Staff of Hasedoki]]}}<br/>{{ID|FExxx806|par=1}} || Staff
+|{{huh}}
+|8||1000||0
+|''If target dies within 60 seconds, fills a soul gem. Knocks back the target on impact. While not attacking, creates a ward that protects against spells for up to 40 points.''
+|Found on [[Skyrim:Ivara of Olenveld|Ivara of Olenveld]]
+|
+|}

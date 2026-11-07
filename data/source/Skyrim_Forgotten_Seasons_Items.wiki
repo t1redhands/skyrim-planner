@@ -1,0 +1,363 @@
+{{CC Header|Forgotten Seasons}}{{Trail|Forgotten Seasons}}
+This page documents the '''new items''' added by the [[Skyrim:Forgotten Seasons|Forgotten Seasons]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Dwarven Autumn Visage}}
+|{{Anchor|Dwarven Autumn Visage}}<br>{{ID|xx000890|par=1}}
+|Heavy Helmet || 
+|5||1327||8
+|
+*''Increases your Magicka by 25 points. Restoration spells cost 10% less to cast. Illusion spells cost 10% less to cast.''
+|-
+|{{Icon|a|Dwarven Crown}}
+|{{Anchor|Dwarven Crown}}<br>{{ID|xx00089E|par=1}}
+|Heavy Helmet || 
+|9||1000||16
+|
+*Can clip with beards.
+|-
+|{{Icon|a|Dwarven Crown of Autumn}}
+|{{Anchor|Dwarven Crown of Autumn}}<br>{{ID|xx00088F|par=1}}
+|Heavy Helmet || 
+|12||2466||22
+|
+*''Increases your Magicka by 50 points. Restoration spells cost 15% less to cast. Illusion spells cost 15% less to cast. Magicka regenerates 10% faster.''
+|-
+|{{Icon|a|Dwarven Crown of Spring}}
+|{{Anchor|Dwarven Crown of Spring}}<br>{{ID|xx000892|par=1}}
+|Heavy Helmet || 
+|12||2192||22
+|
+*''Increases your health by 50 points. Increases Light Armor skill by 10 points. Increases Heavy Armor skill by 10 points. Health regenerates 10% faster.''
+*None of these effects are normally allowed on helmets.
+|-
+|{{Icon|a|Dwarven Crown of Winter}}
+|{{Anchor|Dwarven Crown of Winter}}<br>{{ID|xx00089F|par=1}}
+|Heavy Helmet || 
+|12||2346||22
+|
+*''Increases your stamina by 40 points. One-handed attacks do 15% more damage. Two-handed attacks do 15% more damage. Stamina regenerates 10% faster.''
+*None of these effects are normally allowed on helmets.
+|-
+|{{Icon|a|Dwarven Spring Visage}}
+|{{Anchor|Dwarven Spring Visage}}<br>{{ID|xx000894|par=1}}
+|Heavy Helmet || 
+|5||935||8
+|
+*''Increases your health by 25 points. Increases Light Armor skill by 5 points. Increases Heavy Armor skill by 5 points.''
+|-
+|{{Icon|a|Dwarven Winter Visage}}
+|{{Anchor|Dwarven Winter Visage}}<br>{{ID|xx000895|par=1}}
+|Heavy Helmet || 
+|5||1261||8
+|
+*''Increases your stamina by 25 points. One-handed attacks do 10% more damage. Two-handed attacks do 10% more damage.''
+|-
+|{{Icon|a|DwarvenArmor}}
+|{{Anchor|Ward of the Seasons}}<br>{{ID|xx000893|par=1}}
+|Heavy Armor || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven]]
+|45||1684||34
+|
+*''Increases Fire Resistance by 10%. Increases Frost Resistance by 10%. Increases Shock Resistance by 10%. Increases Poison Resistance by 10%.''
+*Pairs well with [[Skyrim:Wraithguard|Wraithguard]]{{CC|Sunder & Wraithguard}} as the gauntlets provide the same bonuses.
+|-
+|}
+<gallery>
+File:SR-item-Dwarven Autumn Visage.jpg|Dwarven Autumn Visage
+File:SR-item-Dwarven Spring Visage.jpg|Dwarven Spring Visage
+File:SR-item-Dwarven Winter Visage.jpg|Dwarven Winter Visage
+File:SR-item-Dwarven Crown.jpg|Dwarven Crown
+File:SR-item-Dwarven Crown of Autumn.jpg|Dwarven Crown of Autumn
+File:SR-item-Dwarven Crown of Spring.jpg|Dwarven Crown of Spring
+File:SR-item-Dwarven Crown of Winter.jpg|Dwarven Crown of Winter
+</gallery>
+===Male Nord Gallery===
+<gallery style="text-align: center>
+File:SR-item-Dwarven Autumn Visage Male.jpg|Dwarven Autumn Visage
+File:SR-item-Dwarven Spring Visage Male.jpg|Dwarven Spring Visage
+File:SR-item-Dwarven Winter Visage Male.jpg|Dwarven Winter Visage
+File:SR-item-Dwarven Crown Male.jpg|Dwarven Crown
+File:SR-item-Dwarven Crown of Autumn Male.jpg|Dwarven Crown of Autumn
+File:SR-item-Dwarven Crown of Spring Male.jpg|Dwarven Crown of Spring
+File:SR-item-Dwarven Crown of Winter Male.jpg|Dwarven Crown of Winter
+</gallery>
+===Female Imperial Gallery===
+<gallery style="text-align: center>
+File:SR-item-Dwarven Autumn Visage Female.jpg|Dwarven Autumn Visage
+File:SR-item-Dwarven Spring Visage Female.jpg|Dwarven Spring Visage
+File:SR-item-Dwarven Winter Visage Female.jpg|Dwarven Winter Visage
+File:SR-item-Dwarven Crown Female.jpg|Dwarven Crown
+File:SR-item-Dwarven Crown of Autumn Female.jpg|Dwarven Crown of Autumn
+File:SR-item-Dwarven Crown of Spring Female.jpg|Dwarven Crown of Spring
+File:SR-item-Dwarven Crown of Winter Female.jpg|Dwarven Crown of Winter
+</gallery>
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Dwarven Crown Journal|showid=1|par=1}}
+{{Book Normal|Elberon's Journal|showid=1|par=1}}
+{{Book Normal|Forgotten Seasons, v1|showid=1|par=1}}
+{{Book Normal|Log of Elberon the Great, Vol 2|showid=1|par=1}}
+{{Book Normal|Log of Elberon the Great, Vol 3|showid=1|par=1}}
+{{Book Normal|Log of Elberon the Great, Vol 4|showid=1|par=1}}
+{{Book Normal|Log of Elberon the Great, Vol 5|showid=1|par=1}}
+|}
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+!Location
+|-
+{{Item Data
+ |icon=SR-icon-book-Turn of the Seasons.png
+ |name=Turn of the Seasons
+ |displayname=[[Skyrim:Turn of the Seasons|Turn of the Seasons]]
+ |id=xx0DF813|weight=1|value=80
+ |notes=*''Barter prices are 10% better when raining. With a full set of Light Armor equipped, stamina regenerates 5% faster in clear or clement weather. 10% chance of a critical hit that does 10% more critical damage with bows when overcast. With a full set of Heavy Armor equipped, armor rating increased by 10% when snowing.''}}
+|
+*[[SR:Runoff Caverns|Runoff Caverns]], Vardnknd Skykiller Gallery
+|}
+
+==Food==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Notes
+|-
+|[[File:SR-icon-food-Wild Gourd.png|48px]]
+|{{Anchor|Wild Gourd}}<br>{{ID|xx019D20|par=1}}
+|0.3
+|3
+|Very Small
+|
+* [[Skyrim:Restore Health|Restore Health]], 3 pts
+| Sources:
+* Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells in Runoff Caverns]]
+Uses:
+* {{huh}}
+|}
+
+==Ingredients==
+
+{| class="wikitable sortable striped"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+|-
+{{Ingredient Entry|ing=Wild Grass Pod|merchant={{huh}}|description=Harvested from Wild Spiky Grass, found in the Autumn's Bell section of [[SR:Runoff Caverns|Runoff Caverns]].|par=1}}
+|}
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Runoff Caverns Gate Key
+ |displayname=[[Skyrim:Runoff Caverns Gate Key|Runoff Caverns Gate Key]]
+ |id=xx00090B|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Vardnknd Spring Key
+ |displayname=[[Skyrim:Vardnknd Spring Key|Vardnknd Spring Key]]
+ |id=xx00090C|weight=0|value=0}}
+|}
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Blue Luminous Wheat.png
+ |name=Blue Luminous Wheat
+ |displayname=[[Skyrim:Blue Luminous Wheat|Blue Luminous Wheat]]
+ |id=xx0008B9, xx0008BE|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+{{Item Data
+ |icon=SR-icon-misc-Dwarven Drone Fly.png
+ |name=Dwarven Drone Fly
+ |displayname=[[Skyrim:Dwarven Drone Fly|Dwarven Drone Fly]]
+ |id=xx03326A|weight=0.2|value=299
+ |notes=
+*Can be activated from your inventory, causing the drone fly to follow you for 60 seconds. While it is active, you will be granted 50% [[Skyrim:Resist Poison|resistance to poison]] and 30% improved [[Skyrim:Regenerate Stamina|stamina regeneration]].
+*It cannot be duplicated by a follower, even if told to pick it up in the deactivated state, nor will any follower actively use the device. It will hover in place when dropped, and can be used as decoration over an interior planter or fertile soil patch in a greenhouse.
+*Found in [[Skyrim:Runoff Caverns#Spring's Symphony|Spring's Symphony]]}}
+{{Item Data
+ |icon=SR-icon-misc-Glowing Red Wheat.png
+ |name=Glowing Red Wheat
+ |displayname=[[Skyrim:Glowing Red Wheat|Glowing Red Wheat]]
+ |id=xx0008B2, xx0008C5|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+{{Item Data
+ |icon=SR-icon-misc-Horse Head.png
+ |name=Horse Head
+ |displayname=[[Skyrim:Horse Head|Horse Head]]
+ |id=xx0008C2|weight=0|value=1500
+ |quest=The Dwarven Horse}}
+{{Item Data
+ |icon=SR-icon-misc-Horse Left Back Leg.png
+ |name=Horse Left Back Leg
+ |displayname=[[Skyrim:Horse Left Back Leg|Horse Left Back Leg]]
+ |id=xx0008B1|weight=0|value=1500
+ |quest=The Dwarven Horse}}
+{{Item Data
+ |icon=SR-icon-misc-Horse Left Front Leg.png
+ |name=Horse Left Front Leg
+ |displayname=[[Skyrim:Horse Left Front Leg|Horse Left Front Leg]]
+ |id=xx0008C8|weight=0|value=1500
+ |quest=The Dwarven Horse}}
+{{Item Data
+ |icon=SR-icon-misc-Horse Right Back Leg.png
+ |name=Horse Right Back Leg
+ |displayname=[[Skyrim:Horse Right Back Leg|Horse Right Back Leg]]
+ |id=xx0008B5|weight=0|value=1500
+ |quest=The Dwarven Horse}}
+{{Item Data
+ |icon=SR-icon-misc-Horse Right Front Leg.png
+ |name=Horse Right Front Leg
+ |displayname=[[Skyrim:Horse Right Front Leg|Horse Right Front Leg]]
+ |id=xx0008B4|weight=0|value=1500
+ |quest=The Dwarven Horse}}
+{{Item Data
+ |icon=SR-icon-misc-Off-Color Wheat.png
+ |name=Off-Color Wheat
+ |displayname=[[Skyrim:Off-Color Wheat|Off-Color Wheat]]
+ |id=xx0008BB, xx0008C3|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+{{Item Data
+ |icon=SR-icon-misc-Orange-Encrusted Wheat.png
+ |name=Orange-Encrusted Wheat
+ |displayname=[[Skyrim:Orange-Encrusted Wheat|Orange-Encrusted Wheat]]
+ |id=xx0008BA, xx0008BF|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+{{Item Data
+ |icon=SR-icon-misc-Sickly Green Wheat.png
+ |name=Sickly Green Wheat
+ |displayname=[[Skyrim:Sickly Green Wheat|Sickly Green Wheat]]
+ |id=xx0008BC, xx0008C4|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+{{Item Data
+ |icon=SR-icon-misc-Vardnknd Conduit Gem.png
+ |name=Vardnknd Conduit Gem
+ |displayname=[[Skyrim:Vardnknd Conduit Gem|Vardnknd Conduit Gem]]
+ |id=xx130891|weight=0.2|value=1000
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Spring's Symphony|Spring's Symphony]], [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]] and [[Skyrim:Runoff Caverns#Winter's Chimes|Winter's Chimes]]}}
+{{Item Data
+ |icon=SR-icon-misc-White Molded Wheat.png
+ |name=White Molded Wheat
+ |displayname=[[Skyrim:White Molded Wheat|White Molded Wheat]]
+ |id=xx0008B8, xx0008BD|idsep=<br>|weight=0|value=0
+ |quest=Forgotten Seasons (quest)
+ |notes=Found in [[Skyrim:Runoff Caverns#Autumn's Bells|Autumn's Bells]]}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Mercenary's Note|showid=1|par=1}}
+{{Book Normal|Note on Autumn|showid=1|par=1}}
+{{Book Normal|Note on Spring|showid=1|par=1}}
+{{Book Normal|Note on Summer|showid=1|par=1}}
+{{Book Normal|Note on Winter|showid=1|par=1}}
+{{Book Normal|Note on the Dwarven Drone Fly|showid=1|par=1}}
+|}
+
+==Weapons==
+
+{| class="wikitable sortable"
+!class="unsortable"|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!class="sort_str"|Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!width=200|Enchantment
+!class="unsortable"|Acquisition
+!class="unsortable"|Notes
+|-
+|{{icon|w|Karstangz}}
+|{{Anchor|[[Skyrim:Karstangz-Gravuun|Karstangz-Gravuun]]}}<br/>{{ID|xx0008DE|par=1}} || Staff
+|8||1426||0
+|''Does 45 points of shock damage. Target is 50% weaker to shock spells for the next 10 seconds.''
+|Unobtainable
+|
+|-
+|{{icon|w|Karstangz}}
+|{{Anchor|[[Skyrim:Karstangz-Koor|Karstangz-Koor]]}}<br/>{{ID|xx0008DD|par=1}} || Staff
+|8||1426||0
+|''Does 45 points of fire damage. Target is 50% weaker to fire for 10 seconds.''
+|Unobtainable
+|
+|-
+|{{icon|w|Karstangz}}
+|{{Anchor|[[Skyrim:Karstangz-Odus|Karstangz-Odus]]}}<br/>{{ID|xx0008DF|par=1}} || Staff
+|8||1426||0
+|''Does 45 points of ice damage. Target is 50% weaker to frost damage for 10 seconds.''
+|Unobtainable
+|
+|-
+|{{icon|w|Karstangz}}
+|{{Anchor|[[Skyrim:Karstangz-Vah|Karstangz-Vah]]}}<br/>{{ID|xx0008E2|par=1}} || Staff
+|8||1426||0
+|''Does 45 points of poison damage. Target is 50% weaker to poison for the next 10 seconds.''
+|Unobtainable
+|
+|-
+|{{icon|w|Spider Control Rod 02}}
+|{{Anchor|[[Skyrim:Spider Control Rod (Forgotten Seasons)|Spider Control Rod]]}}<br/>{{ID|xx0008E0|par=1}} || Staff
+|8||153||1
+|''Directs the repair spider to the target.''
+|Near entrance to [[Skyrim:Runoff Caverns#Summer's Chords|Summer's Chords in Runoff Caverns]]
+|After completing puzzle in this section, turns into [[Skyrim:Spider Control Rod (Forgotten Seasons)|Spider Control Rod]] with [[Skyrim:Pacify (effect)|Calm]] effect on [[Skyrim:Dwarven Automatons#Dwarven Spider|dwarven spiders]]
+|-
+|{{icon|w|Spider Control Rod 02}}
+|{{Anchor|[[Skyrim:Spider Control Rod (Forgotten Seasons)|Spider Control Rod]]}}<br/>{{ID|xx0008E1|par=1}} || Staff
+|8||7869||1
+|''Calms dwarven spiders for 30 seconds.''
+|Received after completing puzzle in [[Skyrim:Runoff Caverns#Summer's Chords|Summer's Chords in Runoff Caverns]]
+|
+|}

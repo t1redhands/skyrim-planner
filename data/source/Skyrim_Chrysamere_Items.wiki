@@ -1,0 +1,20 @@
+{{CC Header|Chrysamere}}{{Trail|Chrysamere}}
+This page documents the '''new items''' added by the [[Skyrim:Chrysamere|Chrysamere]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Chrysamere.png|name=Chrysamere|displayname=[[Skyrim:Chrysamere (item)|Chrysamere]]|id=FExxxD63|type=2 Hand Greatsword|temp=[[Skyrim:Ebony Ingot|Ebony Ingot]], [[Skyrim:Ruby|Ruby]]|perk=Ebony Smithing|weight=20|value=3000|damage=25|enchantment=''When equipped grants 15% resist fire, 10% absorb magic, slow health regen during combat:''
+*[[Skyrim:Resist Fire|Resist Fire]], 15 pts
+*[[Skyrim:Absorb Magicka|Absorb Magicka]], 10 pts
+*[[Skyrim:Fortified Combat Healing|Fortified Combat Healing]], 1 pt|quest=The Lost Paladin}}
+|}

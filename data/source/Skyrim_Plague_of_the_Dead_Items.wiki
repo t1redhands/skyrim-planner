@@ -1,0 +1,81 @@
+{{CC Header|Plague of the Dead}}{{Trail|Plague of the Dead}}
+This page documents the '''new items''' added by the [[Skyrim:Plague of the Dead|Plague of the Dead]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Necromancer's Journal (Plague of the Dead)}}
+|}
+
+==Ingredients==
+
+{| class="wikitable sortable striped"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+|-
+{{Ingredient Entry|ing=Mort Flesh|merchant={{huh}}|description={{huh}}}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Anonymous Letter (Plague of the Dead)}}
+|}
+
+==Spell Tomes==
+
+Like all books, these spell tomes have a weight of 1.
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Foul Zombie}}<br>{{ID|FExxx86F|par=1}}
+|99
+|''Summons a Foul Zombie for 60 seconds wherever the caster is pointing.''
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Malignant Zombie}}<br>{{ID|FExxx871|par=1}}
+|690
+|''Summons a Malignant Zombie for 60 seconds wherever the caster is pointing.''
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Putrid Zombie}}<br>{{ID|FExxx870|par=1}}
+|340
+|''Summons a Putrid Zombie for 60 seconds wherever the caster is pointing.''
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Zombie}}<br>{{ID|FExxx86E|par=1}}
+|49
+|''Summons a Zombie for 60 seconds wherever the caster is pointing.''
+|-
+|}
+
+==Weapons==
+
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class=unsortable|Notes
+{{Item Data
+ |icon=SR-icon-weapon-AncientNordGreatsword.png
+ |name=Ancient Nord Greatsword
+ |displayname=[[Skyrim:Ancient Nord Greatsword|Ancient Nord Greatsword]]
+ |id=FExxx880|weight=18|value=35|damage=17}}
+ |
+|}

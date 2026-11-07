@@ -1,0 +1,87 @@
+{{CC Header|Alternative Armors - Orcish Plate}}{{Trail|Alternative Armors - Orcish Plate}}
+This page documents the '''new items''' added by the [[Skyrim:Alternative Armors - Orcish Plate|Alternative Armors - Orcish Plate]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!colspan=2; class="unsortable"|[[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+|{{Icon|a|Orcish Plate Armor}}
+|{{Anchor|Orcish Plate Armor}}<br>{{ID|FExxx801|par=1}}
+|Heavy Armor || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|35||1100||41
+| rowspan=4 colspan=2 |
+*Appears in random loot, on NPCs, and in vendor lists.
+|-
+|{{Icon|a|Orcish Plate Boots}}
+|{{Anchor|Orcish Plate Boots}}<br>{{ID|FExxx800|par=1}}
+|Heavy Boots || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|7||225||16
+|-
+|{{Icon|a|Orcish Plate Gauntlets}}
+|{{Anchor|Orcish Plate Gauntlets}}<br>{{ID|FExxx802|par=1}}
+|Heavy Gauntlets || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|7||225||16
+|-
+|{{Icon|a|Orcish Plate Helmet}}
+|{{Anchor|Orcish Plate Helmet}}<br>{{ID|FExxx803|par=1}}
+|Heavy Helmet || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|8||550||20
+|-
+|{{Icon|a|Orcish Plate Armor}}
+|{{Anchor|Orcish Plate Armor}}<br>{{ID|FExxx83D|par=1}}
+|Heavy Armor || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|35||1583||41
+|
+*''Block 25% more damage with your shield.''
+| rowspan=4 |
+*Worn by one of the bandits during [[Skyrim:Smith 'N Slash|Smith 'N Slash]].
+|-
+|{{Icon|a|Orcish Plate Boots}}
+|{{Anchor|Orcish Plate Boots}}<br>{{ID|FExxx83C|par=1}}
+|Heavy Boots || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|7||1224||16
+|
+*''Carrying capacity increased by 35 points.''
+|-
+|{{Icon|a|Orcish Plate Gauntlets}}
+|{{Anchor|Orcish Plate Gauntlets}}<br>{{ID|FExxx83E|par=1}}
+|Heavy Gauntlets || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|7||1053||16
+|
+*''Weapons and armor can be improved 25% better.''
+|-
+|{{Icon|a|Orcish Plate Helmet}}
+|{{Anchor|Orcish Plate Helmet}}<br>{{ID|FExxx83F|par=1}}
+|Heavy Helmet || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish]]
+|8||911||20
+|
+*''Increases Heavy Armor skill by 17 points.''
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Guard's Dossier: Yakhtu gra-Orkulg}}
+{{Book Normal|Yakhtu's Journal}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Yakhtu's Key
+ |id=FExxx81D|weight=0|value=0}}
+|}

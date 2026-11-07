@@ -1,0 +1,43 @@
+{{CC Header|The Contest}}{{Trail|The Contest}}
+This page documents the '''new items''' added by [[Skyrim:The Contest|The Contest]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+|{{icon|a|Fists of Randagulf}}
+| {{Anchor|[[Skyrim:Fists of Randagulf|Fists of Randagulf]]}}<br>{{ID|FExxx813|par=1}} || Heavy Armor ||[[Skyrim:Steel_Ingot|Steel Ingots]]|| 8 || 2970 || 15 || ''Melee and unarmed attacks do 20% more damage. Block 20% more damage with your shield.''
+|}
+<gallery>
+File:SR-item-Fists of Randagulf 02.jpg|Fists of Randagulf
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|Weight
+!width=22|Value
+!width=22|Damage
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+{{Item Data|icon=SR-icon-weapon-Ice Blade of the Monarch.png|name=[[Skyrim:Ice Blade of the Monarch|Ice Blade of the Monarch]]|id=FExxx815|type=2 Hand Greatsword|temp=Steel Ingot|perk=Steel Smithing|weight=17|value=1360|damage=17|enchantment=''Target takes 30 points of frost damage to Health and Stamina.''}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Adonato Leotelli's Journal}}
+{{Book Normal|Grenwulf's Note}}
+{{Book Normal|Holrik's Note}}
+|}

@@ -1,0 +1,28 @@
+{{CC Header|Wild Horses}}{{Trail|Wild Horses}}
+This page documents the '''new items''' added by the [[Skyrim:Wild Horses|Wild Horses]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Soran's Journal}}
+{{Book Normal|Wild Horse Notes}}
+|}
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Map of Wild Horses.png
+ |name=Map of Wild Horses
+ |id=FExxxD67|weight=0|value=50}}
+ |
+*Available from [[Skyrim:Stables|stables]] for 250 gold
+|}

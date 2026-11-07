@@ -1,0 +1,190 @@
+{{CC Header|Nordic Jewelry}}{{Trail|Nordic Jewelry}}
+This page documents the '''new items''' added by the [[Skyrim:Nordic Jewelry|Nordic Jewelry]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+[[File:SR-item-Nordic Jewelry.jpg|thumb|right|A male [[Skyrim:Nord|Nord]] wearing a Nordic circlet and amulet]]
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|j|Nordic Amulet|60}}
+|{{Anchor|Nordic Amulet}}<br>{{ID|FExxx801|par=1}}
+|0.5
+|325
+|[[Skyrim:Resist Frost|Resist frost]] enchantments are 25% stronger due to [[Skyrim:Stalhrim|stalhrim]]
+|-
+|{{AL|C}}|{{icon|j|Nordic Circlet|60}}
+|{{Anchor|Nordic Circlet}}<br>{{ID|FExxxD62|par=1}}
+|2
+|325
+|
+|-
+|{{AL|C}}|{{icon|j|Nordic Ring|60}}
+|{{Anchor|Nordic Ring}}<br>{{ID|FExxx800|par=1}}
+|0.25
+|270
+|
+|}
+
+===Nordic Amulets of Health===
+
+{| class="wikitable sortable SRMagicRes"
+!Name
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class=sort_num|Level
+|-
+!colspan=6|"<Apparel> {{Anchor|of Minor Health}}"<br/>''Increases your health by 20 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 20 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Minor Health
+|{{ID|FExxx818}}||0.5||250||0||1
+|-
+!colspan=6|"<Apparel> {{Anchor|of Health}}"<br/>''Increases your health by 30 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 30 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Health
+|{{ID|FExxx819}}||0.5||250||0||8
+|-
+!colspan=6|"<Apparel> {{Anchor|of Major Health}}"<br/>''Increases your health by 40 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 40 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Major Health
+|{{ID|FExxx81D}}||0.5||250||0||16
+|-
+!colspan=6|"<Apparel> {{Anchor|of Eminent Health}}"<br/>''Increases your health by 50 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 50 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Eminent Health
+|{{ID|FExxx81C}}||0.5||250||0||24
+|-
+!colspan=6|"<Apparel> {{Anchor|of Extreme Health}}"<br/>''Increases your health by 60 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 60 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Extreme Health
+|{{ID|FExxx81B}}||0.5||250||0||32
+|-
+!colspan=6|"<Apparel> {{Anchor|of Peerless Health}}"<br/>''Increases your health by 70 points.''
+[[Skyrim:Fortify Health|Fortify Health]], 70 pts
+|-
+|[[Skyrim:Nordic Amulet|Nordic Amulet]] of Peerless Health
+|{{ID|FExxx81A}}||0.5||250||0||40
+|-
+|}
+
+===Nordic Circlets of Magicka===
+
+{| class="wikitable sortable SRMagicRes"
+!Name
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class=sort_num|Level
+|-
+!colspan=6|"<Apparel> {{Anchor|of Minor Magicka}}"<br/>''Increases your Magicka by 20 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 20 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Minor Magicka
+|{{ID|FExxx812}}||2||250||0||1
+|-
+!colspan=6|"<Apparel> {{Anchor|of Magicka}}"<br/>''Increases your Magicka by 30 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 30 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Magicka
+|{{ID|FExxx811}}||2||250||0||8
+|-
+!colspan=6|"<Apparel> {{Anchor|of Major Magicka}}"<br/>''Increases your Magicka by 40 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 40 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Major Magicka
+|{{ID|FExxx810}}||2||250||0||16
+|-
+!colspan=6|"<Apparel> {{Anchor|of Eminent Magicka}}"<br/>''Increases your Magicka by 50 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 50 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Eminent Magicka
+|{{ID|FExxx80F}}||2||250||0||24
+|-
+!colspan=6|"<Apparel> {{Anchor|of Extreme Magicka}}"<br/>''Increases your Magicka by 60 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 60 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Extreme Magicka
+|{{ID|FExxx80E}}||2||250||0||32
+|-
+!colspan=6|"<Apparel> {{Anchor|of Peerless Magicka}}"<br/>''Increases your Magicka by 70 points.''
+[[Skyrim:Fortify Magicka|Fortify Magicka]], 70 pts
+|-
+|[[Skyrim:Nordic Circlet|Nordic Circlet]] of Peerless Magicka
+|{{ID|FExxx80D}}||2||250||0||40
+|-
+|}
+
+===Nordic Rings of Stamina===
+[[File:SR-item-Nordic Ring.jpg|thumb|right|A male wearing a Nordic ring]]
+{| class="wikitable sortable SRMagicRes"
+!Name
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class=sort_num|Level
+|-
+!colspan=6|"<Apparel> {{Anchor|of Minor Stamina}}"<br/>''Increases your stamina by 20 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 20 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Minor Stamina
+|{{ID|FExxx81E}}||0.25||250||0||1
+|-
+!colspan=6|"<Apparel> {{Anchor|of Stamina}}"<br/>''Increases your stamina by 30 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 30 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Stamina
+|{{ID|FExxx813}}||0.25||250||0||8
+|-
+!colspan=6|"<Apparel> {{Anchor|of Major Stamina}}"<br/>''Increases your stamina by 40 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 40 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Major Stamina
+|{{ID|FExxx814}}||0.25||250||0||16
+|-
+!colspan=6|"<Apparel> {{Anchor|of Eminent Stamina}}"<br/>''Increases your stamina by 50 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 50 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Eminent Stamina
+|{{ID|FExxx815}}||0.25||250||0||24
+|-
+!colspan=6|"<Apparel> {{Anchor|of Extreme Stamina}}"<br/>''Increases your stamina by 60 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 60 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Extreme Stamina
+|{{ID|FExxx816}}||0.25||250||0||32
+|-
+!colspan=6|"<Apparel> {{Anchor|of Peerless Stamina}}"<br/>''Increases your stamina by 70 points.''
+[[Skyrim:Fortify Stamina|Fortify Stamina]], 70 pts
+|-
+|[[Skyrim:Nordic Ring|Nordic Ring]] of Peerless Stamina
+|{{ID|FExxx817}}||0.25||250||0||40
+|-
+|}
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Hugin Ice-Shaper's Notebook|showid=1|par=1}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Certificate of Authenticity|showid=1|par=1}}
+|}

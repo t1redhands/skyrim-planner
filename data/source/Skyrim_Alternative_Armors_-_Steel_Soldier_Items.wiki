@@ -1,0 +1,88 @@
+{{CC Header|Alternative Armors - Steel Soldier}}{{Trail|Alternative Armors - Steel Soldier}}
+This page documents the '''new items''' added by the [[Skyrim:Alternative Armors - Steel Soldier|Alternative Armors - Steel Soldier]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!colspan=2; class="unsortable"|Notes
+|-
+|{{Icon|a|BladesShield}}
+|{{Anchor|Blades Steel Shield}}<br>{{ID|FExxx804|par=1}}
+|Heavy Shield || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|12||150||26
+| colspan=2; |
+*Unobtainable.
+|-
+|{{Icon|a|Steel Soldier Armor}}
+|{{Anchor|Steel Soldier Armor}}<br>{{ID|FExxx83B|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|35||674||32
+|
+*''Increases Magic Resistance by 15%.''
+*Armor and clothing chestpieces cannot be enchanted with [[Skyrim:Resist_Magic|Resist Magic]] by the Player,
+*Only two other chest pieces, [[Skyrim:Savior's Hide|Savior's Hide]] and the [[Skyrim:Lord's Mail (item)|Lord's Mail]]{{CC|Lord's Mail}}, have the [[Skyrim:Resist_Magic|Resist Magic]] enchantment in Skyrim.
+| rowspan=4 |
+*Worn by [[Skyrim:Peladius|Peladius]] at the end of [[Skyrim:Over the Edge|Over the Edge]].
+|-
+|{{Icon|a|Steel Soldier Boots}}
+|{{Anchor|Steel Soldier Boots}}<br>{{ID|FExxx83E|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|8||345||13
+|
+*''Stamina regenerates 20% faster.''
+|-
+|{{Icon|a|Steel Soldier Gauntlets}}
+|{{Anchor|Steel Soldier Gauntlets}}<br>{{ID|FExxx83C|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|4||558||13
+|
+*''Block 25% more damage with your shield.''
+|-
+|{{Icon|a|Steel Soldier Helmet}}
+|{{Anchor|Steel Soldier Helmet}}<br>{{ID|FExxx83D|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||671||18
+|
+*''Increases Fire Resistance by 40%.''
+*Headpieces cannot be enchanted with [[Skyrim:Resist_Fire|Resist Fire]] by the player.
+*Only three other headpieces, [[Skyrim:Ancient Helmet of the Unburned|Ancient Helmet of the Unburned]], [[Skyrim:Ahzidal (item)|Ahzidal]]{{DB}} and [[Skyrim:Otar|Otar]], have [[Skyrim:Resist_Fire|Resist Fire]] enchantment in Skyrim.
+|-
+|{{Icon|a|Steel Soldier Armor}}
+|{{Anchor|Steel Soldier Armor}}<br>{{ID|FExxx801|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|35||300||32
+| colspan=2; rowspan=4 |
+*Distributed through leveled lists containing heavy armor.
+*Can be crafted.
+|-
+|{{Icon|a|Steel Soldier Boots}}
+|{{Anchor|Steel Soldier Boots}}<br>{{ID|FExxx800|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|8||75||13
+|-
+|{{Icon|a|Steel Soldier Gauntlets}}
+|{{Anchor|Steel Soldier Gauntlets}}<br>{{ID|FExxx802|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|4||75||13
+|-
+|{{Icon|a|Steel Soldier Helmet}}
+|{{Anchor|Steel Soldier Helmet}}<br>{{ID|FExxx803|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||150||18
+|-
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Aldepius' Confession}}
+{{Book Normal|Guard's Note on Aldepius}}
+{{Book Normal|Suicide at Dragon Bridge}}
+|}

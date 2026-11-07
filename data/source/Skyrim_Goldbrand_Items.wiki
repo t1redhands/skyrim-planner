@@ -1,0 +1,54 @@
+{{CC Header|Goldbrand}}{{Trail|Goldbrand}}
+This page documents the '''new items''' added by the [[Skyrim:Goldbrand|Goldbrand]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!{{Weight Icon}}
+!{{Value Icon}}
+!Notes
+|-
+|{{icon|j|GoldNecklace}}
+| {{Anchor|Sivdur's Amulet}}<br>{{ID|FExxx807|par=1}} || Jewelry || 1 || 100 ||
+|}
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|Weight
+!width=22|Value
+!width=22|Damage
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+{{Item Data|icon=SR-icon-Goldbrand.png|name=[[Skyrim:Goldbrand (item)|Goldbrand]]|id=FExxxD61|type=1 Hand Sword|temp=Gold Ingot|perk=Daedric Smithing|weight=17|value=3413|damage=15|enchantment=''Burns the target for 30 points. Targets on fire take extra damage.''}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Cultist's Note}}
+{{Book Normal|Eranya's Journal}}
+{{Book Normal|Eranya's Notes on Sivdur's Tomb}}
+{{Book Normal|Eranya's Research Notes}}
+|}
+
+==Miscellaneous Items==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+{{Item Data
+ |icon=SR-icon-misc-Skull.png
+ |name=Magrathi's Skull
+ |id=FExxx80A|weight=2|value=5
+ |notes=
+}}
+|}

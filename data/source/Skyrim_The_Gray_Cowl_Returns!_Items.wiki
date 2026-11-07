@@ -1,0 +1,112 @@
+{{CC Header|The Gray Cowl Returns!}}{{Trail|The Gray Cowl Returns!}}
+This page documents the '''new items''' added by [[Skyrim:The Gray Cowl Returns!|The Gray Cowl Returns!]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Enchantment
+|-
+|{{Icon|a|Gray Cowl of Nocturnal}}
+|{{Anchor|[[Skyrim:Gray Cowl of Nocturnal|Gray Cowl of Nocturnal]]}}<br>{{ID|FExxxD62|par=1}}
+|Light Helmet || ''Not possible'';<br>Perk: ''None''
+|2||1050||13
+|''Sneaking is 25% better. Nearby living creatures, but not undead, machines or daedra, can be seen through walls. Turns guards hostile.''
+*[[Skyrim:Fortify Sneak|Fortify Sneak]], 25 pts
+*[[Skyrim:Fortify Carry Weight|Fortify Carry Weight]], 50 pts
+*[[Skyrim:Detect Life (effect)|Detect Life Base]]
+|-
+|}
+<gallery>
+File:SR-item-Gray Cowl of Nocturnal Male.jpg|<center>As worn by a male Nord</center>
+File:SR-item-Gray Cowl of Nocturnal Female.jpg|<center>As worn by a female Imperial</center>
+</gallery>
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Nivenor's Journal}}
+{{Book Normal|Stranger's Journal}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Location
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Nivenor's Strongbox Key
+ |displayname=Nivenor's Strongbox Key
+ |id=FExxx85A|weight=0|value=0
+ |notes=*[[SR:Nivenor|Nivenor]]}}
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Silverdrift Chest Key
+ |displayname=Silverdrift Chest Key
+ |id=FExxx84F|weight=0|value=0
+ |notes=*On the body of a dead [[SR:draugr|draugr]] within [[SR:Silverdrift Lair|Silverdrift Lair]], marked by two {{Shadowmark|Loot}} [[Skyrim:Shadowmarks (Thieves Guild)|shadowmarks]]}}
+|}
+
+==Miscellaneous==
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Child's Doll.png
+ |name=Antique Nordic Doll
+ |displayname=Antique Nordic Doll
+ |id=FExxx822|weight=2|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-Scroll-03.png
+ |name=Forged Deed
+ |displayname=Forged Deed
+ |id=FExxx81C|weight=0.5|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-Scroll-03.png
+ |name=Land Title and Deed
+ |displayname=Land Title and Deed
+ |id=FExxx81B|weight=0.5|value=0}}
+ |
+|}
+
+==Notes==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Letter to Gisli}}
+{{Book Normal|Stranger's Final Instructions (pickpocket)}}
+{{Book Normal|Stranger's Final Instructions (alternate)}}
+{{Book Normal|Stranger's Instructions}}
+{{Book Normal|Stranger's Note}}
+{{Book Normal|The Sword of Clan Ice-Blade}}
+{{Book Normal|Thief's Note}}
+|}
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Nordic Sword.png|name=Ancestral Sword of Clan Ice-Blade|displayname=[[Skyrim:Ancestral Sword of Clan Ice-Blade|Ancestral Sword of Clan Ice-Blade]]|id=fexxx850|type=1 Hand Sword|weight=12|value=1000|damage=0|enchantment=}}
+|}

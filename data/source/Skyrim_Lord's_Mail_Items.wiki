@@ -1,0 +1,109 @@
+{{CC Header|Lord's Mail}}{{Trail|Lord's Mail}}
+This page documents the '''new items''' added by the [[Skyrim:Lord's Mail|Lord's Mail]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Lord's Mail(m) 02|60}}{{Icon|a|Lord's Mail(f) 02|60}}
+|[[Skyrim:Lord's Mail (item)|{{Anchor|Lord's Mail}}]]<br>{{ID|FExxxD63|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|32||6000||45||27
+|
+*''Opponents in melee range have 5 points of health absorbed per second.  Increases Poison Resistance by 75%.  Increases Magic Resistance by 17%.''
+|-
+|{{Icon|a|Lord's Mail(m) 02|60}}{{Icon|a|Lord's Mail(f) 02|60}}
+|[[Skyrim:Lord's Mail (Cursed)|{{Anchor|Lord's Mail (Cursed)}}]]<br>{{ID|FExxx804|par=1}}
+|Heavy Armor || 
+|32||6000||45||27
+|
+*''Wearer suffers a reduction of 50 points to Health, Stamina, and Magicka.''
+|-
+|}
+<gallery>
+File:SR-item-Lord's Mail Male.jpg|<center>Lord's Mail with [[Skyrim:Penitus Oculatus Armor|Penitus Oculatus gear]] (male Nord)</center>
+File:SR-item-Lord's Mail Female.jpg|<center>Lord's Mail with Penitus Oculatus gear (female Imperial)</center>
+</gallery>
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Warmth Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|c|Redguard Clothes 02|60}}
+|{{Anchor|Redguard Clothes}}<br>{{ID|FExxx82D|par=1}}
+|1
+|5
+|27
+|
+|-
+|{{AL|C}}|{{icon|c|Redguard Clothes 03|60}}
+|{{Anchor|Redguard Clothes}}<br>{{ID|FExxx82E|par=1}}
+|1
+|5
+|27
+|
+|-
+|{{AL|C}}|{{icon|c|RedguardHood|60}}
+|{{Anchor|Redguard Hood}}<br>{{ID|FExxxDA0|par=1}}
+|0.5
+|2
+|18
+|
+*The only notable difference with [[Skyrim:Redguard Hood|Redguard Hood]] from the base game is that this model covers up long hair.
+|-
+|{{AL|C}}|{{icon|c|Redguard Hood 02|60}}
+|{{Anchor|Redguard Hood}}<br>{{ID|FExxx82F|par=1}}
+|0.5
+|2
+|18
+|
+|-
+|{{AL|C}}|{{icon|c|Redguard Hood 03|60}}
+|{{Anchor|Redguard Hood}}<br>{{ID|FExxx830|par=1}}
+|0.5
+|2
+|18
+|
+|}
+<gallery>
+File:SR-item-Redguard Clothes Male 02.jpg|<center>Green Redguard Clothes (male Nord)</center>
+File:SR-item-Redguard Clothes Male 03.jpg|<center>Tan Redguard Clothes (male Nord)</center>
+File:SR-item-Redguard Clothes Female 02.jpg|<center>Green Redguard Clothes (female Imperial)</center>
+File:SR-item-Redguard Clothes Female 03.jpg|<center>Tan Redguard Clothes (female Imperial)</center>
+</gallery>
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Key to Alik'r Mercenary Chest
+ |displayname=[[Skyrim:Key to Alik'r Mercenary Chest|Key to Alik'r Mercenary Chest]]
+ |id=FExxx826|weight=0|value=0}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Letter to General Tullius}}
+{{Book Normal|Majid - Please Read}}
+|}

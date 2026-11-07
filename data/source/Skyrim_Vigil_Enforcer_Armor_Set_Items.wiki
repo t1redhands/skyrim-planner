@@ -1,0 +1,174 @@
+{{CC Header|Vigil Enforcer Armor Set}}{{Trail|Vigil Enforcer Armor Set}}
+This page documents the '''new items''' added by the [[Skyrim:Vigil Enforcer Armor Set|Vigil Enforcer Armor Set]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Vigil Corrupted Armor}}
+|{{Anchor|Vigil Corrupted Armor}}<br>{{ID|FExxxD7F|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|{{Icon|a|Vigil Corrupted Boots}}
+|{{Anchor|Vigil Corrupted Boots}}<br>{{ID|FExxxD7E|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|9||125||14
+|
+|-
+|{{Icon|a|Vigil Corrupted Gauntlets}}
+|{{Anchor|Vigil Corrupted Gauntlets}}<br>{{ID|FExxxD80|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||125||14
+|
+|-
+|{{Icon|a|Vigil Corrupted Helmet}}
+|{{Anchor|Vigil Corrupted Helmet}}<br>{{ID|FExxxD82|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||300||19
+|
+|-
+|{{Icon|a|Vigil Corrupted Open Helmet}}
+|{{Anchor|Vigil Corrupted Open Helmet}}<br>{{ID|FExxxD81|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||125||17
+|
+|-
+|{{Icon|a|Vigil Corrupted Sashed Armor}}
+|{{Anchor|Vigil Corrupted Sashed Armor}}<br>{{ID|FExxx803|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|{{Icon|a|Vigil Enforcer Armor}}
+|{{Anchor|Vigil Enforcer Armor}}<br>{{ID|FExxxD61|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|{{Icon|a|Vigil Enforcer Boots}}
+|{{Anchor|Vigil Enforcer Boots}}<br>{{ID|FExxxD63|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|9||125||14
+|
+|-
+|{{Icon|a|Vigil Enforcer Gauntlets}}
+|{{Anchor|Vigil Enforcer Gauntlets}}<br>{{ID|FExxxD62|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||125||14
+|
+|-
+|{{Icon|a|Vigil Enforcer Helmet}}
+|{{Anchor|Vigil Enforcer Helmet}}<br>{{ID|FExxxD65|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||125||17
+|
+|-
+|{{Icon|a|Vigil Silver Hand Armor}}
+|{{Anchor|Vigil Silver Hand Armor}}<br>{{ID|FExxxD84|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|{{Icon|a|Vigil Silver Hand Boots}}
+|{{Anchor|Vigil Silver Hand Boots}}<br>{{ID|FExxxD83|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|9||125||14
+|
+|-
+|{{Icon|a|Vigil Silver Hand Gauntlets}}
+|{{Anchor|Vigil Silver Hand Gauntlets}}<br>{{ID|FExxxD85|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||125||14
+|
+|-
+|{{Icon|a|Vigil Silver Hand Helmet}}
+|{{Anchor|Vigil Silver Hand Helmet}}<br>{{ID|FExxxD86|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||125||17
+|
+|-
+|{{Icon|a|Vigil Veteran Armor}}
+|{{Anchor|Vigil Veteran Armor}}<br>{{ID|FExxxD7B|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|{{Icon|a|Vigil Veteran Boots}}
+|{{Anchor|Vigil Veteran Boots}}<br>{{ID|FExxxD7A|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|9||125||14
+|
+|-
+|{{Icon|a|Vigil Veteran Gauntlets}}
+|{{Anchor|Vigil Veteran Gauntlets}}<br>{{ID|FExxxD7C|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||125||14
+|
+|-
+|{{Icon|a|Vigil Veteran Helmet}}
+|{{Anchor|Vigil Veteran Helmet}}<br>{{ID|FExxxD64|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|6||300||19
+|
+|-
+|{{Icon|a|Vigil Veteran Open Helmet}}
+|{{Anchor|Vigil Veteran Open Helmet}}<br>{{ID|FExxxD7D|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||125||17
+|
+|-
+|{{Icon|a|Vigil Veteran Sashed Armor}}
+|{{Anchor|Vigil Veteran Sashed Armor}}<br>{{ID|FExxx800|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|38||625||40
+|
+|-
+|}
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Azarain's Journal}}
+{{Book Normal|Fenrik's Journal}}
+{{Book Normal|Galur Rithari's Papers}}
+|}
+
+==Miscellaneous==
+
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+|icon=SR-icon-misc-Elven Dagger.png
+|name=Elven Dagger
+|id=FExxx97C|weight=0|value=3}}
+|
+*Found in the data, but unused.
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Letter to Keeper Carcette}}
+{{Book Normal|Miner's Note}}
+{{Book Normal|Mysterious Note (Vigil Enforcer Armor Set)}}
+{{Book Normal|Notes on Dissection}}
+|}

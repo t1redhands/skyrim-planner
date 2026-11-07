@@ -1,0 +1,223 @@
+{{CC Header|Arcane Accessories}}{{Trail|Arcane Accessories}}
+This page documents the '''new items''' added by the [[Skyrim:Arcane Accessories|Arcane Accessories]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+All versions of Robes of Destruction & Alteration and Robes of Conjuration & Illusion are distributed through leveled lists that contain enchanted robes.
+
+===Robes of Destruction & Alteration===
+[[File:SR-item-Robes of Destruction & Alteration Male.jpg|thumb|right|A male [[Skyrim:Nord|Nord]] wearing robes of Destruction & Alteration]]
+[[File:SR-item-Robes of Destruction & Alteration Female.jpg|thumb|right|A female [[Skyrim:Imperial|Imperial]] wearing robes of Destruction & Alteration]]
+{| class="wikitable sortable SRMagicRes" style="width: 50%"
+!Name
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class=sort_num|Level
+|-
+!colspan=6|"{{Anchor|Novice Robes of Destruction & Alteration}}"<br>''Destruction spells cost 12% less to cast. Magicka regenerates 50% faster. Alteration spells cost 12% less to cast.
+[[Skyrim:Fortify Destruction|Fortify Destruction]], 12 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 50 pts<br>
+[[Skyrim:Fortify Alteration|Fortify Alteration]], 12 pts
+|-
+|Novice Robes of Destruction & Alteration
+|FExxx827||1||877||0||1
+|-
+!colspan=6|"{{Anchor|Apprentice Robes of Destruction & Alteration}}"<br>''Destruction spells cost 15% less to cast. Magicka regenerates 75% faster. Alteration spells cost 15% less to cast.
+[[Skyrim:Fortify Destruction|Fortify Destruction]], 15 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts<br>
+[[Skyrim:Fortify Alteration|Fortify Alteration]], 15 pts
+|-
+|Apprentice Robes of Destruction & Alteration
+|FExxx829||1||1116||0||8
+|-
+!colspan=6|"{{Anchor|Adept Robes of Destruction & Alteration}}"<br>''Destruction spells cost 17% less to cast. Magicka regenerates 100% faster. Alteration spells cost 17% less to cast.
+[[Skyrim:Fortify Destruction|Fortify Destruction]], 17 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 100 pts<br>
+[[Skyrim:Fortify Alteration|Fortify Alteration]], 17 pts
+|-
+|Adept Robes of Destruction & Alteration
+|FExxx82A||1||1279||0||16
+|-
+!colspan=6|"{{Anchor|Expert Robes of Destruction & Alteration}}"<br>''Destruction spells cost 20% less to cast. Magicka regenerates 125% faster. Alteration spells cost 20% less to cast.
+[[Skyrim:Fortify Destruction|Fortify Destruction]], 20 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 125 pts<br>
+[[Skyrim:Fortify Alteration|Fortify Alteration]], 20 pts
+|-
+|Expert Robes of Destruction & Alteration
+|FExxx82B||1||1526||0||24
+|-
+!colspan=6|"{{Anchor|Master Robes of Destruction & Alteration}}"<br>''Destruction spells cost 22% less to cast. Magicka regenerates 150% faster. Alteration spells cost 22% less to cast.
+[[Skyrim:Fortify Destruction|Fortify Destruction]], 22 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 150 pts<br>
+[[Skyrim:Fortify Alteration|Fortify Alteration]], 22 pts
+|-
+|Master Robes of Destruction & Alteration
+|FExxx82C||1||1693||0||32
+|}
+
+===Robes of Conjuration & Illusion===
+[[File:SR-item-Robes of Conjuration & Illusion Male.jpg|thumb|right|A male [[Skyrim:Nord|Nord]] wearing robes of Conjuration & Illusion]]
+[[File:SR-item-Robes of Conjuration & Illusion Female.jpg|thumb|right|A female [[Skyrim:Imperial|Imperial]] wearing robes of Conjuration & Illusion]]
+{| class="wikitable sortable SRMagicRes" style="width: 50%"
+!Name
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class=sort_num|Level
+|-
+!colspan=6|"{{Anchor|Novice Robes of Conjuration & Illusion}}"<br>''Conjuration spells cost 12% less to cast. Magicka regenerates 50% faster. Illusion spells cost 12% less to cast.
+[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 12 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 50 pts<br>
+[[Skyrim:Fortify Illusion|Fortify Illusion]], 12 pts
+|-
+|Novice Robes of Conjuration & Illusion
+|FExxx835||1||892||0||1
+|-
+!colspan=6|"{{Anchor|Apprentice Robes of Conjuration & Illusion}}"<br>''Conjuration spells cost 15% less to cast. Magicka regenerates 75% faster. Illusion spells cost 15% less to cast.
+[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 15 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts<br>
+[[Skyrim:Fortify Illusion|Fortify Illusion]], 15 pts
+|-
+|Apprentice Robes of Conjuration & Illusion
+|FExxx836||1||1136||0||8
+|-
+!colspan=6|"{{Anchor|Adept Robes of Conjuration & Illusion}}"<br>''Conjuration spells cost 17% less to cast. Magicka regenerates 100% faster. Illusion spells cost 17% less to cast.
+[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 17 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 100 pts<br>
+[[Skyrim:Fortify Illusion|Fortify Illusion]], 17 pts
+|-
+|Adept Robes of Conjuration & Illusion
+|FExxx837||1||1301||0||16
+|-
+!colspan=6|"{{Anchor|Expert Robes of Conjuration & Illusion}}"<br>''Conjuration spells cost 20% less to cast. Magicka regenerates 125% faster. Illusion spells cost 20% less to cast.
+[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 20 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 125 pts<br>
+[[Skyrim:Fortify Illusion|Fortify Illusion]], 20 pts
+|-
+|Expert Robes of Conjuration & Illusion
+|FExxx838||1||1553||0||24
+|-
+!colspan=6|"{{Anchor|Master Robes of Conjuration & Illusion}}"<br>''Conjuration spells cost 22% less to cast. Magicka regenerates 150% faster. Illusion spells cost 22% less to cast.
+[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 22 pts<br>
+[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 150 pts<br>
+[[Skyrim:Fortify Illusion|Fortify Illusion]], 22 pts
+|-
+|Master Robes of Conjuration & Illusion
+|FExxx839||1||1723||0||32
+|}
+
+===Templates===
+These are [[Skyrim:Template Items|template items]] for the enchanted versions of the robes, and are not found in-game.
+{| class="wikitable sortable" style="width: 50%"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|c|Mage Robes02(m)|60}}{{icon|c|Mage Robes02(f)|60}}
+|{{Anchor|Mage Robes}}<br>{{ID|FExxx826|par=1}}
+|1
+|15
+|
+Used by Robes of Conjuration & Illusion
+|-
+|{{AL|C}}|{{icon|c|Mage Robes(m)|60}}{{icon|c|Mage Robes(f)|60}}
+|{{Anchor|Mage Robes}}<br>{{ID|FExxx82D|par=1}}
+|1
+|15
+|
+Used by Robes of Destruction & Alteration.
+|}
+
+==Spell Tomes==
+Like all books, these spell tomes have a weight of 1. All tomes are found in the Ancient Tome Chest in [[Skyrim:Hob's Fall Cave|Hob's Fall Cave]], and distributed in leveled lists that contain other spell tomes.
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Choking Grasp}}<br>{{ID|FExxx869|par=1}}
+|65
+|''Absorb 8 points of health per second from target, for 3 seconds.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Elemental Blast}}<br>{{ID|FExxx865|par=1}}
+|650
+|''An elemental explosion for 40 points of fire damage, 40 points of shock damage, and half as much damage to stamina.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Elemental Bolt}}<br>{{ID|FExxx863|par=1}}
+|95
+|''An elemental explosion for 20 points of fire damage, 20 points of shock damage, and half as much damage to stamina.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Elemental Burst}}<br>{{ID|FExxx864|par=1}}
+|350
+|''An elemental explosion for 30 points of fire damage, 30 points of shock damage, and half as much damage to stamina.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Elemental Flare}}<br>{{ID|FExxx862|par=1}}
+|65
+|''An elemental explosion for 15 points of fire damage, 15 points of shock damage, and half as much damage to stamina.''
+|-
+|{{icon|b|SpellTomeIllusion 02|60}}
+|{{Anchor|Spell Tome: Fenrik's Welcome}}<br>{{ID|FExxx867|par=1}}
+|350
+|''Caster becomes invisible and can open locks with level Expert and below for 5 seconds. Activating an object or attacking will break the spell.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Hangman's Noose}}<br>{{ID|FExxx86B|par=1}}
+|350
+|''Absorb 26 points of health per second from target, for 3 seconds.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Mara's Wrath}}<br>{{ID|FExxx868|par=1}}
+|650
+|''For 30 seconds, opponents in melee range take 16 points fire damage per second. Undead up to level 26 flee for 30 seconds. Swim unharmed in freezing cold water.''
+|-
+|{{icon|b|SpellTomeIllusion 02|60}}
+|{{Anchor|Spell Tome: Orum's Aquatic Escape}}<br>{{ID|FExxx866|par=1}}
+|350
+|''Caster is invisible for 15 seconds. Activating an object or attacking will break the spell. Can breathe water for 15 seconds. Improved night vision for 15 seconds.''
+|-
+|{{icon|b|SpellTomeAlteration 02|60}}
+|{{Anchor|Spell Tome: Paralysis Rune}}<br>{{ID|FExxx818|par=1}}
+|120
+|''Cast on a nearby surface, it explodes when enemies are nearby, immobilizing them for 8 seconds.''
+|-
+|{{icon|b|SpellTomeConjuration 02|60}}
+|{{Anchor|Spell Tome: Pride of Hirstaang}}<br>{{ID|FExxx861|par=1}}
+|690
+|''Summons a Bear for 60 seconds wherever the caster is pointing. Resist 50% of frost damage for 60 seconds. Health regenerates 50% faster for 60 seconds.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Strangulation}}<br>{{ID|FExxx86A|par=1}}
+|95
+|''Absorb 16 points of health per second from target, for 3 seconds.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Touch of Death}}<br>{{ID|FExxx86C|par=1}}
+|650
+|''Absorb 40 points of health per second from target, for 4 seconds.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Unbounded Flames}}<br>{{ID|FExxx815|par=1}}
+|950
+|''Casts a stream of long-distance fireballs in an arc. Impact creates a wall of fire that does 50 points of fire damage per second.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Unbounded Freezing}}<br>{{ID|FExxx816|par=1}}
+|950
+|''A freezing wind envelops the caster, knocking down nearby enemies and freezing them for 50 points of damage per second to Health and Stamina.''
+|-
+|{{icon|b|SpellTomeDestruction 02|60}}
+|{{Anchor|Spell Tome: Unbounded Storms}}<br>{{ID|FExxx817|par=1}}
+|950
+|''Targets in melee range take 40 points of shock damage per second to Health, and half that to Magicka. Random lightning strikes deal an additional 30 damage.''
+|-
+|}

@@ -1,0 +1,80 @@
+{{CC Header|Alternative Armors - Dragon Plate}}{{Trail|Alternative Armors - Dragon Plate}}
+This page documents the '''new items''' added by the [[Skyrim:Alternative Armors - Dragon Plate|Alternative Armors - Dragon Plate]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+| {{icon|a|FalmerHelmet}}
+| {{Anchor|Dismal Visage}}<br>{{ID|FExxx867|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 5 || 2587 || 12 || ''Conjuration spells cost 25% less to cast. Alteration spells cost 25% less to cast.''
+|-
+| {{icon|a|Dragonplate Insulated Cuirass}}
+| {{Anchor|Dragonbone Mail}}<br>{{ID|FExxx83B|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 40 || 3626 || 48 || ''Increases Fire Resistance by 100%.''
+|-
+| {{icon|a|Dragonplate Insulated Boots}}
+| {{Anchor|Dragonplate Insulated Boots}}<br>{{ID|FExxx800|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 500 || 19 ||
+|-
+| {{icon|a|Dragonplate Insulated Boots}}
+| {{Anchor|Dragonplate Insulated Boots}}<br>{{ID|FExxx83C|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 1657 || 19 || ''Carrying capacity increased by 40 points.''
+|-
+| {{icon|a|Dragonplate Insulated Cuirass}}
+| {{Anchor|Dragonplate Insulated Cuirass}}<br>{{ID|FExxx801|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 40 || 2200 || 48 ||
+|-
+| {{icon|a|Dragonplate Insulated Gauntlets}}
+| {{Anchor|Dragonplate Insulated Gauntlets}}<br>{{ID|FExxx802|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 500 || 19 ||
+|-
+| {{icon|a|Dragonplate Insulated Gauntlets}}
+| {{Anchor|Dragonplate Insulated Gauntlets}}<br>{{ID|FExxx83A|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 1427 || 19 || ''Two-handed attacks do 30% more damage.''
+|-
+| {{icon|a|Dragonplate Insulated Helmet}}
+| {{Anchor|Dragonplate Insulated Helmet}}<br>{{ID|FExxx803|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 1100 || 24 ||
+|-
+| {{icon|a|Dragonplate Insulated Helmet}}
+| {{Anchor|Dragonplate Insulated Helmet}}<br>{{ID|FExxx839|par=1}} || Heavy Armor || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Armor|Dragon Armor]] || 8 || 1655 || 24 || ''Increases your health by 50 points.''
+|}
+<gallery caption>
+File:SR-item-Dragonbone Mail Armor Male.jpg|Male [[Skyrim:Nord|Nord]] wearing the Dragonbone Mail
+File:SR-item-Dragonbone Mail Armor Female.jpg|Female [[Skyrim:Imperial|Imperial]] wearing the Dragonbone Mail
+File:SR-item-Dragonplate Insulated Armor Male.jpg|Male Nord wearing dragonplate insulated armor
+File:SR-item-Dragonplate Insulated Armor Female.jpg|Female Imperial wearing dragonplate insulated armor
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+| {{AL|C}}|{{icon|w|ForswornSword}}
+| {{Anchor|Forsworn Sword}}<br>{{ID|FExxx86A|par=1}} || One-Handed Sword || 13 || 70 || 12 || 5 || 1 || 1 ||
+|-
+| {{AL|C}}|{{icon|w|FalmerWarAxe}}
+| {{Anchor|Namira's Itch}}<br>{{ID|FExxx86B|par=1}} || One-Handed War Axe || 21 || 789 || 12 || 7 || 0.9 || 1 || ''Absorb 30 points of Stamina.''
+|-
+| {{AL|C}}|{{icon|w|FalmerWarAxe}}
+| {{Anchor|Tyrant's Bane}}<br>{{ID|FExxx869|par=1}} || One-Handed War Axe || 15 || 1233 || 12 || 6 || 0.9 || 1 || ''Burns the target for 30 points. Targets on fire take extra damage.''
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Bjormund's Diary}}
+{{Book Normal|Bounty for Crowstooth}}
+{{Book Normal|Guard's Dossier: Bjormund Wind-Strider}}
+{{Book Normal|Linelle's Note}}
+|}

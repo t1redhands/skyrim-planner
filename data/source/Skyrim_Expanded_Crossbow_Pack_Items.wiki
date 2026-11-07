@@ -1,0 +1,92 @@
+{{CC Header|Expanded Crossbow Pack}}{{Trail|Expanded Crossbow Pack}}
+This page documents the '''new items''' added by the [[Skyrim:Expanded Crossbow Pack|Expanded Crossbow Pack]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Speed
+{{Item Data
+ |icon=SR-icon-weapon-Daedric Crossbow.png
+ |name=Daedric Crossbow
+ |displayname=[[Skyrim:Daedric Crossbow|Daedric Crossbow]]
+ |id=FExxx808|weight=20|value=1400|damage=28|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Daedric Crossbow.png
+ |name=Enhanced Daedric Crossbow
+ |displayname=[[Skyrim:Enhanced Daedric Crossbow|Enhanced Daedric Crossbow]]
+ |id=FExxx814|weight=20|value=1700|damage=28|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Crossbow.png
+ |name=Dragonbone Crossbow
+ |displayname=[[Skyrim:Dragonbone Crossbow|Dragonbone Crossbow]]
+ |id=FExxx809|weight=22|value=1500|damage=30|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Dragonbone Crossbow.png
+ |name=Enhanced Dragonbone Crossbow
+ |displayname=[[Skyrim:Enhanced Dragonbone Crossbow|Enhanced Dragonbone Crossbow]]
+ |id=FExxx815|weight=22|value=2000|damage=30|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Crossbow.png
+ |name=Glass Crossbow
+ |displayname=[[Skyrim:Glass Crossbow|Glass Crossbow]]
+ |id=FExxx80A|weight=16|value=800|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Glass Crossbow.png
+ |name=Enhanced Glass Crossbow
+ |displayname=[[Skyrim:Enhanced Glass Crossbow|Enhanced Glass Crossbow]]
+ |id=FExxx816|weight=16|value=1000|damage=25|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Imperial Crossbow.png
+ |name=Imperial Crossbow
+ |displayname=[[Skyrim:Imperial Crossbow|Imperial Crossbow]]
+ |id=FExxx80B|weight=14|value=200|damage=20|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Imperial Crossbow.png
+ |name=Enhanced Imperial Crossbow
+ |displayname=[[Skyrim:Enhanced Imperial Crossbow|Enhanced Imperial Crossbow]]
+ |id=FExxx817|weight=14|value=400|damage=20|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Crossbow.png
+ |name=Nordic Crossbow
+ |displayname=[[Skyrim:Nordic Crossbow|Nordic Crossbow]]
+ |id=FExxx80C|weight=15|value=700|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Nordic Crossbow.png
+ |name=Enhanced Nordic Crossbow
+ |displayname=[[Skyrim:Enhanced Nordic Crossbow|Enhanced Nordic Crossbow]]
+ |id=FExxx818|weight=15|value=900|damage=23|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Orcish Crossbow.png
+ |name=Orcish Crossbow
+ |displayname=[[Skyrim:Orcish Crossbow|Orcish Crossbow]]
+ |id=FExxx80D|weight=15|value=500|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Orcish Crossbow.png
+ |name=Enhanced Orcish Crossbow
+ |displayname=[[Skyrim:Enhanced Orcish Crossbow|Enhanced Orcish Crossbow]]
+ |id=FExxx819|weight=15|value=700|damage=22|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Silver Crossbow.png
+ |name=Silver Crossbow
+ |displayname=[[Skyrim:Silver Crossbow|Silver Crossboww]]
+ |id=FExxx80E|weight=14|value=600|damage=21|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Silver Crossbow.png
+ |name=Enhanced Silver Crossbow
+ |displayname=[[Skyrim:Enhanced Silver Crossbow|Enhanced Silver Crossbow]]
+ |id=FExxx81A|weight=14|value=700|damage=21|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Crossbow.png
+ |name=Stalhrim Crossbow
+ |displayname=[[Skyrim:Stalhrim Crossbow|Stalhrim Crossbow]]
+ |id=FExxx80F|weight=18|value=1100|damage=27|notes=1}}
+{{Item Data
+ |icon=SR-icon-weapon-Stalhrim Crossbow.png
+ |name=Enhanced Stalhrim Crossbow
+ |displayname=[[Skyrim:Enhanced Stalhrim Crossbow|Enhanced Stalhrim Crossbow]]
+ |id=FExxx81B|weight=18|value=1300|damage=27|notes=1}}
+|}

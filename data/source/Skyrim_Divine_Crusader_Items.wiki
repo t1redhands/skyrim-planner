@@ -1,0 +1,118 @@
+{{CC Header|Divine Crusader}}{{Trail|Divine Crusader}}
+This page documents the '''new items''' added by the [[Skyrim:Divine Crusader|Divine Crusader]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!class="unsortable"|Notes
+|-
+|{{Icon|a|Boots of the Crusader}}
+|{{Anchor|[[Skyrim:Boots of the Crusader|Boots of the Crusader]]}}<br>{{ID|FExxx804|par=1}}
+|Heavy Boots || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|7||506||16
+|
+*''Restoration spells cost 8% less to cast.''
+|-
+|{{Icon|a|Cuirass of the Crusader}}
+|{{Anchor|[[Skyrim:Cuirass of the Crusader|Cuirass of the Crusader]]}}<br>{{ID|FExxx800|par=1}}
+|Heavy Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|38||1825||43
+|
+*''10% Armor bonus, and 10% reduced damage from undead while wearing matched set. Increases your health by 10 points. Restoration spells cost 8% less to cast.''
+|-
+|{{Icon|a|Shield of the Crusader}}
+|{{Anchor|[[Skyrim:Fastened Shield of the Crusader|Fastened Shield of the Crusader]]}}<br>{{ID|FExxx809|par=1}}
+|Light Shoulder || [[Skyrim:Corundum Ingot|Corundum Ingot]]
+|6||650||27
+|
+|-
+|{{Icon|a|Gauntlets of the Crusader}}
+|{{Anchor|[[Skyrim:Gauntlets of the Crusader|Gauntlets of the Crusader]]}}<br>{{ID|FExxx802|par=1}}
+|Heavy Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|7||624||16
+|
+*''Restoration spells cost 8% less to cast. Increases Disease Resistance by 50%.''
+|-
+|{{Icon|a|Helm of the Crusader}}
+|{{Anchor|[[Skyrim:Helm of the Crusader|Helm of the Crusader]]}}<br>{{ID|FExxx806|par=1}}
+|Heavy Helmet || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|10||1654||21
+|
+*''Illusion spells cost 10% less to cast. Restoration spells cost 8% less to cast. Prices are 8% better.''
+|-
+|{{Icon|a|Reforged Boots of the Crusader}}
+|{{Anchor|[[Skyrim:Reforged Boots of the Crusader|Reforged Boots of the Crusader]]}}<br>{{ID|FExxx805|par=1}}
+|Light Boots || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|2||456||11
+|
+*''Restoration spells cost 8% less to cast.''
+|-
+|{{Icon|a|Reforged Cuirass of the Crusader}}
+|{{Anchor|[[Skyrim:Reforged Cuirass of the Crusader|Reforged Cuirass of the Crusader]]}}<br>{{ID|FExxx801|par=1}}
+|Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|7||1525||38
+|
+*''10% Armor bonus, and 10% reduced damage from undead while wearing matched set. Increases your health by 10 points. Restoration spells cost 8% less to cast.''
+|-
+|{{Icon|a|Reforged Gauntlets of the Crusader}}
+|{{Anchor|[[Skyrim:Reforged Gauntlets of the Crusader|Reforged Gauntlets of the Crusader]]}}<br>{{ID|FExxx803|par=1}}
+|Light Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|2||574||11
+|
+*''Restoration spells cost 8% less to cast. Increases Disease Resistance by 50%.''
+|-
+|{{Icon|a|Reforged Helm of the Crusader}}
+|{{Anchor|[[Skyrim:Reforged Helm of the Crusader|Reforged Helm of the Crusader]]}}<br>{{ID|FExxx807|par=1}}
+|Light Helmet || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|2||1554||16
+|
+*''Illusion spells cost 10% less to cast. Restoration spells cost 8% less to cast. Prices are 8% better.''
+|-
+|{{Icon|a|Shield of the Crusader}}
+|{{Anchor|[[Skyrim:Shield of the Crusader|Shield of the Crusader]]}}<br>{{ID|FExxx808|par=1}}
+|Heavy Shield || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>Perk: [[Skyrim:Arcane Blacksmith|Arcane Blacksmith]]
+|14||790||32
+|
+*''While blocking, creates a ward that protects against spells for up to 40 points.''
+|-
+|}
+<gallery>
+File:SR-item-Relics of the Crusader Male.jpg|<center>Relics of the Crusader (male Nord)</center>
+File:SR-item-Relics of the Crusader Female.jpg|<center>Relics of the Crusader (female Imperial)</center>
+File:SR-item-Reforged Relics of the Crusader Male.jpg|<center>Reforged Relics of the Crusader (male Nord)</center>
+File:SR-item-Reforged Relics of the Crusader Female.jpg|<center>Reforged Relics of the Crusader (female Imperial)</center>
+</gallery>
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Mace of the Crusader.png|name=Mace of the Crusader|displayname=[[Skyrim:Mace of the Crusader|Mace of the Crusader]]|id=FExxx80D|type=1 Hand Mace|temp=Steel Ingot|perk=Arcane Blacksmith|weight=18|value=2000|damage=16|enchantment=''Burns the target for 15 points. Targets on fire take extra damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 15 pts}}
+|-
+{{Item Data|icon=SR-icon-weapon-Sword of the Crusader.png|name=Sword of the Crusader|displayname=[[Skyrim:Sword of the Crusader|Sword of the Crusader]]|id=FExxx80C|type=1 Hand Sword|temp=Steel Ingot|perk=Arcane Blacksmith|weight=13|value=1500|damage=14|enchantment=''Burns the target for 15 points. Targets on fire take extra damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 15 pts}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Viparth's Journal}}
+|}
+
+==Notes==
+*With version 1.6 of the [[Skyrim:Special Edition Patch|Official Skyrim Special Edition Patch]], committing multiple crimes will cause all Crusader's Relics to receive a penalty until the player completes a pilgrimage to remove them.

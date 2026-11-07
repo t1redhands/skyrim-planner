@@ -1,0 +1,128 @@
+{{CC Header|Arcane Archer Pack}}{{Trail|Arcane Archer Pack}}
+This page documents the '''new items''' added by the [[Skyrim:Arcane Archer Pack|Arcane Archer Pack]] [[Skyrim:Creation Club|Creation]].
+
+==Arrows==
+{{incomplete|Fire and lightning arrows may ignore resistances, needs testing; values need to be confirmed after December 2018 update (specifically the elemental damage for elemental arrows)}}
+{|rowspan=2 class="wikitable sortable"
+!rowspan=2 class=unsortable|
+!rowspan=2|Name ([[Skyrim:Form ID|ID]])
+!rowspan=2 width=22|{{Weight Icon}}
+!rowspan=2 width=22|{{Value Icon}}
+!rowspan=2 width=22|{{Damage Icon}}
+!style="border-left-width:medium; border-left-color:black;" colspan=2 class=unsortable|Raw Materials
+!style="border-left-width:medium; border-left-color:black;" rowspan=2 class="unsortable"|Enchantment/Notes
+|-
+!style="border-left-width:medium; border-left-color:black;"|{{icon|misc|Firewood|24}} [[Skyrim:Firewood|Firewood]]
+!Other
+|-
+|{{icon|w|Telekinesis Arrow}}
+|{{Anchor|Telekinesis Arrow}}<br>{{ID|FExxx800|par=1}} || 0 || 8 || 111
+|style="border-left-width:medium; border-left-color:black;"| 1 || 2 [[Skyrim:Void Salts|Void Salts]]<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"| ''Remains suspended in the air until released using the Lesser Power "Telekinesis Arrows".''
+*Controlled via the [[SR:Telekinesis Arrows|Telekinesis Arrows]] Lesser Power
+*Can be crafted upon picking up [[SR:Telekinesis Arrows Research Notes|Telekinesis Arrows Research Notes]] in [[SR:The Arcanaeum|the Arcanaeum]]
+*These arrows originally had a damage value of 10 before an update for Arcane Archer Pack was released in December 2018. The arrows were changed from a damage value of 30 to 111 in the Anniversary Edition Update.
+*Some NPCS may be equipped with Telekinesis Arrow that the player can't obtain, It can be fired as a regular arrow.
+*On PS5 Anniversary Edition, giving a playable Telekinesis Arrow to an NPC who practices archery allows the NPC to repeatedly fire it. The arrows remain suspended in mid-air and can be picked up by the player. Once ten arrows are suspended, further arrows may be returned directly to the player’s inventory, effectively allowing the arrows to be duplicated.
+
+|-
+|{{icon|w|Soul Stealer Arrow}}
+|{{Anchor|Soul Stealer Arrow}}<br>{{ID|FExxx801|par=1}} || 0 || 4 || 14
+|style="border-left-width:medium; border-left-color:black;"| 1 || 10 [[Skyrim:Soul Gem Arrowhead|Soul Gem Arrowhead]]s<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"| ''On a lethal blow, manifests itself into a soul gem filled with the soul of the target.''
+*Soulsteal, 1 point
+**When a non-essential, non-invulnerable NPC is killed, adds a leveled filled soul gem to its inventory.
+*Can be crafted upon picking up the Soul Stealer Arrows in [[Skyrim:Kagrumez|Kagrumez]]
+|-
+|{{icon|w|Fire Arrows}}
+|{{Anchor|Fire Arrow}}<br>{{ID|FExxx802|par=1}} || 0 || 2 || 8
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4 [[Skyrim:Fire Salts|Fire Salts]]<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"| 
+* 2 points of damage
+* [[Skyrim:Fire Damage|Fire Damage]], 40 points
+* Will ignite oil-based [[Skyrim:Traps|traps]] with Version 1.6 of the [[Skyrim:Special Edition Patch|Official Skyrim Special Edition Patch]].
+|-
+|{{icon|w|Ice Arrows}}
+|{{Anchor|Ice Arrow}}<br>{{ID|FExxx803|par=1}} || 0 || 2 || 8
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4 [[Skyrim:Frost Salts|Frost Salts]]<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"|
+* [[Skyrim:Slow|Slow]], 50 points for 5 seconds
+* [[Skyrim:Frost Damage|Frost Damage]], 40 points
+|-
+|{{icon|w|Lightning Arrows}}
+|{{Anchor|Lightning Arrow}}<br>{{ID|FExxx804|par=1}} || 0 || 2 || 8
+|style="border-left-width:medium; border-left-color:black;"| 1 || 4 [[Skyrim:Void Salts|Void Salts]]<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"|
+* 2 points of damage
+* [[Skyrim:Shock Damage|Shock Damage]], 40 points
+|-
+|
+|{{Anchor|Bound Arrow}}<br>{{ID|FExxx80D|par=1}} || 0 || 0 || 32
+|style="border-left-width:medium; border-left-color:black;"|  || 
+|style="border-left-width:medium; border-left-color:black;"|
+* The Mystic version of [[Skyrim:Bound Arrow|Bound Arrow]]
+* 100 are acquired when casting the Bound Quiver spell with the [[Skyrim:Mystic Binding|Mystic Binding]] perk unlocked, but will disappear once the spell's duration ends.
+|-
+|{{icon|w|Bone Arrow}}
+|{{Anchor|Bone Arrow}}<br>{{ID|FExxx822|par=1}} || 0 || 8 || 26
+|style="border-left-width:medium; border-left-color:black;"| 1 || 10 [[Skyrim:Dragon Bone|Dragon Bone]]s<br/> Makes 10 arrows
+|style="border-left-width:medium; border-left-color:black;"| 
+*Requires [[Skyrim:Dragon Smithing|Dragon Smithing]] perk
+*Note that the same perk allows you to craft 24 [[Skyrim:Dragonbone Arrow|Dragonbone Arrows]]{{DG}} with only 1 dragon bone and 1 firewood
+|}
+
+==Notes==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Dwemer Arrow Diagram}}
+{{Book Normal|Letter from Calcelmo}}
+{{Book Normal|Telekinesis Arrows Research Notes}}
+|}
+
+==Spell Tomes==
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Bound Quiver}}<br>{{ID|FExxx816|par=1}}
+|1
+|335
+|''Creates a magic quiver for 120 seconds.''
+* [[Skyrim:Bound Arrow|Bound Quiver]], for 120 secs
+* With the [[Skyrim:Mystic Binding|Mystic Binding]] perk, changes to [[Skyrim:Arcane Archer Pack Items#Bound Arrow|Mystic Quiver]], for 120 secs
+* Bound Quiver is listed under "Powers", not of any particular spell school or skill, instead of under Conjuration with all the other Bound Weapon skills.
+|-
+|{{icon|b|SpellTomeAlteration|60}}
+|{{Anchor|Spell Tome: Telekinesis Arrows}}<br>{{ID|FExxx82B|par=1}}
+|1
+|341
+|''Releases suspended [[SR:Telekinesis Arrow|Telekinesis Arrows]].''
+* Can be found in the following locations:
+** In the first room of [[SR:Labyrinthian|Labyrinthian]], during the [[SR:Staff of Magnus|Staff of Magnus]] quest
+** On [[SR:Urag gro-Shub|Urag gro-Shub's]] desk in the Arcaneum at the [[SR:College of Winterhold (place)|College of Winterhold]]
+* Telekinesis Arrows is listed under "Powers" in the Magic menu.
+|}
+
+==Miscellaneous items==
+{| class="wikitable"
+!rowspan=2|
+!rowspan=2|Name ([[Skyrim:Form ID|ID]])
+!rowspan=2|{{Weight Icon}}
+!rowspan=2|{{Value Icon}}
+!style="border-left:black solid medium;"|Raw Materials
+!style="border-left:black solid medium;" rowspan=2|Notes
+|-
+!style="border-left:black solid medium;"|[[File:SR-icon-misc-Soul Gem Fragment 00067185.png|24px]] [[Skyrim:Soul Gem Fragment|Soul Gem Fragment]]
+|-
+|[[File:SR-icon-misc-Soul Gem Arrowhead.png|48px]]
+|{{Anchor|Soul Gem Arrowhead}}<br>{{ID|FExxxD62|par=1}} || 0.1 || 5 
+|style="border-left:black solid medium;"| 1
+|style="border-left:black solid medium;"| 
+* Can be crafted after reading the [[Skyrim:Dwemer Arrow Diagram|Dwemer Arrow Diagram]]
+* Used to craft [[SR:Soul Stealer Arrow|Soul Stealer Arrow]]s
+|}

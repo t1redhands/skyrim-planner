@@ -1,0 +1,21 @@
+{{CC Header|Shadowrend}}{{Trail|Shadowrend}}
+This page documents the '''new items''' added by the [[Skyrim:Shadowrend|Shadowrend]] [[Skyrim:Creation Club|Creation]].
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Shadowrend (Battleaxe).png|name=Shadowrend|displayname=[[Skyrim:Shadowrend (item)|Shadowrend]]|id=FExxxD62|type=2 Hand Battleaxe|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=27|value=2750|damage=26|enchantment=''Target is 15% weaker to magic for 30 seconds.''
+*[[Skyrim:Weakness to Magic|Weakness to Magic]], 15 pts}}
+|-
+{{Item Data|icon=SR-icon-weapon-Shadowrend (Claymore).png|name=Shadowrend|displayname=[[Skyrim:Shadowrend (item)|Shadowrend]]|id=FExxxD63|type=2 Hand Greatsword|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=23|value=2500|damage=25|enchantment=''Target is 15% weaker to magic for 30 seconds.''
+*[[Skyrim:Weakness to Magic|Weakness to Magic]], 15 pts}}
+|}

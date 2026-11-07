@@ -1,0 +1,25 @@
+{{CC Header|Tundra Homestead}}{{Trail|Tundra Homestead}}
+This page documents the '''new items''' added by the [[Skyrim:Tundra Homestead|Tundra Homestead]] [[Skyrim:Creation Club|Creation]].
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Key to Tundra Homestead
+ |displayname=[[Skyrim:Key to Tundra Homestead|Key to Tundra Homestead]]
+ |id=xx047E3B|weight=0|value=0}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Homestead For Sale}}
+|}

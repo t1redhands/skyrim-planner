@@ -1,0 +1,495 @@
+{{CC Header|Saints & Seducers}}{{Trail|Saints & Seducers}}
+This page documents the '''new items''' added by the [[Skyrim:Saints & Seducers|Saints & Seducers]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+xx = 06 for Skyrim SE 10th anniversary GoG edition
+
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+|-
+| {{AL|C}}|{{icon|a|Amber Armor Male}}
+| {{Anchor|Amber Armor}}<br>{{ID|000BC3|par=1}} || Light Armor || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]] || 8 || 1750 || 43
+|-
+|{{AL|C}}|{{icon|a|Amber Boots}}
+| {{Anchor|Amber Boots}}<br>{{ID|000BC4|par=1}} || Light Boots || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]] || 2 || 400 || 13.5
+|-
+|{{AL|C}}|{{icon|a|Amber Gauntlets}}
+| {{Anchor|Amber Gauntlets}}<br>{{ID|000BC2|par=1}} || Light Gauntlets || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]] || 2 || 400 || 13.5
+|-
+|{{AL|C}}|{{icon|a|Amber Helmet}}
+| {{Anchor|Amber Helmet}}<br>{{ID|000BC1|par=1}} || Light Helmet || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]] || 3 || 900 || 18
+|-
+|{{AL|C}}|{{icon|a|Amber Shield}}
+| {{Anchor|Amber Shield}}<br>{{ID|000BC0|par=1}} || Light Shield || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]] || 10 || 650 || 31
+|-
+| |{{icon|a|Dark Seducer Armor Male}}{{icon|a|Dark Seducer Armor Female}}
+| {{Anchor|Dark Seducer Armor}}<br>{{ID|000873|par=1}} || Light Armor || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 5 || 650 || 36
+|-
+|{{AL|C}}|{{icon|a|Dark Seducer Boots}}
+| {{Anchor|Dark Seducer Boots}}<br>{{ID|000874|par=1}} || Light Boots || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 1 || 90 || 10
+|-
+|{{AL|C}}|{{icon|a|Dark Seducer Gauntlets}}
+| {{Anchor|Dark Seducer Gauntlets}}<br>{{ID|000872|par=1}} || Light Gauntlets || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 1 || 90 || 10
+|-
+|{{AL|C}}|{{icon|a|Dark Seducer Helmet}}
+| {{Anchor|Dark Seducer Helmet}}<br>{{ID|000871|par=1}} || Light Helmet || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 2 || 195 || 14
+|-
+|{{AL|C}}|{{icon|a|Dark Seducer Shield}}
+| {{Anchor|Dark Seducer Shield}}<br>{{ID|000805|par=1}} || Light Shield || [[Skyrim:Quicksilver Ingot|Quicksilver Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 4 || 250 || 23
+|-
+| {{nowrap|{{icon|a|Golden Saint Armor Male}}{{icon|a|Golden Saint Armor Female}}}}
+| {{Anchor|Golden Saint Armor}}<br>{{ID|000877|par=1}} || Heavy Armor || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 35 || 1250 || 42
+|-
+|{{AL|C}}|{{icon|a|Golden Saint Boots}}
+| {{Anchor|Golden Saint Boots}}<br>{{ID|000878|par=1}} || Heavy Boots || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 6 || 240 || 15
+|-
+|{{AL|C}}|{{icon|a|Golden Saint Gauntlets}}
+| {{Anchor|Golden Saint Gauntlets}}<br>{{ID|000876|par=1}} || Heavy Gauntlets || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 5 || 240 || 15
+|-
+|{{AL|C}}|{{icon|a|Golden Saint Helmet}}
+| {{Anchor|Golden Saint Helmet}}<br>{{ID|000875|par=1}} || Heavy Helmet || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 5 || 650 || 20
+|-
+|{{AL|C}}|{{icon|a|Golden Saint Shield}}
+| {{Anchor|Golden Saint Shield}}<br>{{ID|000800|par=1}} || Heavy Shield || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 12 || 375 || 26
+|-
+|{{AL|C}}|{{icon|a|Madness Armor Male}}
+| {{Anchor|Madness Armor}}<br>{{ID|000BBE|par=1}} || Heavy Armor || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 52 || 4100 || 52
+|-
+|{{AL|C}}|{{icon|a|Madness Boots}}
+| {{Anchor|Madness Boots}}<br>{{ID|000BBF|par=1}} || Heavy Boots || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 11 || 850 || 19
+|-
+|{{AL|C}}|{{icon|a|Madness Gauntlets}}
+| {{Anchor|Madness Gauntlets}}<br>{{ID|000BBD|par=1}} || Heavy Gauntlets || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 8 || 850 || 19
+|-
+|{{AL|C}}|{{icon|a|Madness Helmet}}
+| {{Anchor|Madness Helmet}}<br>{{ID|000BBC|par=1}} || Heavy Helmet || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 17 || 1900 || 24
+|-
+|{{AL|C}}|{{icon|a|Madness Shield}}
+| {{Anchor|Madness Shield}}<br>{{ID|000BC5|par=1}} || Heavy Shield || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 16 || 1800 || 38
+|}
+<gallery caption="These images show a male [[Skyrim:Nord|Nord]]." perrow=5>
+File:SR-item-Amber Armor Male.jpg|Amber Armor
+File:SR-item-Dark Seducer Armor Male.jpg|Dark Seducer Armor
+File:SR-item-Golden Saint Armor Male.jpg|Golden Saint Armor
+File:SR-item-Madness Armor Male.jpg|Madness Armor
+</gallery>
+<gallery caption="These images show a female [[Skyrim:Imperial|Imperial]]." perrow=5>
+File:SR-item-Amber Armor Female.jpg|Amber Armor
+File:SR-item-Dark Seducer Armor Female.jpg|Dark Seducer Armor
+File:SR-item-Golden Saint Armor Female.jpg|Golden Saint Armor
+File:SR-item-Madness Armor Female.jpg|Madness Armor
+</gallery>
+
+===Unique Apparel===
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+|{{AL|C}}|{{icon|c|Arcane Blacksmith's Apron}}
+| {{Anchor|[[Skyrim:Arcane Blacksmith's Apron|Arcane Blacksmith's Apron]]}}<br>{{ID|000AE4|par=1}} || N/A || 1 || 8 || 0
+|''Weapons and armor can be improved 20% better:''
+*[[Skyrim:Fortify Smithing|Fortify Smithing]], 20 pts
+|-
+|{{AL|C}}|{{icon|a|Madness Helmet}}
+| {{Anchor|[[Skyrim:Madness Helmet of Recovery|Madness Helmet of Recovery]]}}<br>{{ID|16075e|par=1}} || [[Skyrim:Madness Ingot|Madness Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]] || 17 || 2217 || 24
+|''Magicka regenerates 100% faster:''
+*[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 100 pts
+|-
+|{{AL|C}}|{{icon|j|Ring of Disrobing}}
+| {{Anchor|[[Skyrim:Ring of Disrobing|Ring of Disrobing]]}}<br>{{ID|183E63|par=1}} || N/A || 0.2 || 200 || 0
+|''Modifies the wearer's worn equipment.''
+|-
+|{{AL|C}}|{{icon|a|Golden Saint Helmet}}
+| {{Anchor|[[Skyrim:Staada's Helmet|Staada's Helmet]]}}<br>{{ID|19D389|par=1}} || [[Skyrim:Gold Ingot|Gold Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 5 || 1292 || 20
+|''Increases your stamina by 70 points:''
+*[[Skyrim:Fortify Stamina|Fortify Stamina]], 70 pts
+|}
+<gallery>
+File:SR-item-Arcane Blacksmith's Apron Male.jpg|A male [[Skyrim:Nord|Nord]] wearing the Arcane Blacksmith's Apron
+File:SR-item-Arcane Blacksmith's Apron Female.jpg|A female [[Skyrim:Imperial|Imperial]] wearing the Arcane Blacksmith's Apron
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Amber Dagger}}
+| {{Anchor|Amber Dagger}}<br>{{ID|000BDD|par=1}} || 4.5 || 700 || 12 || 5 || 1.3 || 0.7
+|-
+| {{AL|C}}|{{icon|w|Amber Sword}}
+| {{Anchor|Amber Sword}}<br>{{ID|000BE0|par=1}} || 14 || 1600 || 15 || 7 || 1 || 1
+|-
+| {{AL|C}}|{{icon|w|Amber War Axe}}
+| {{Anchor|Amber War Axe}}<br>{{ID|000BE1|par=1}} || 16 || 1800 || 16 || 7 || 0.9 || 1
+|-
+| {{AL|C}}|{{icon|w|Amber Mace}}
+| {{Anchor|Amber Mace}}<br>{{ID|000BDF|par=1}} || 18 || 2100 || 17 || 8 || 0.8 || 1
+|-
+| {{AL|C}}|{{icon|w|Amber Greatsword}}
+| {{Anchor|Amber Greatsword}}<br>{{ID|000BDE|par=1}} || 22 || 2925 || 25 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Amber Battleaxe}}
+| {{Anchor|Amber Battleaxe}}<br>{{ID|000BDB|par=1}} || 24 || 1600 || 26 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Amber Warhammer}}
+| {{Anchor|Amber Warhammer}}<br>{{ID|000BE2|par=1}} || 29 || 4475 || 28 || 13 || 0.6 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Amber Bow}}
+| {{Anchor|Amber Bow}}<br>{{ID|000BDC|par=1}} || 14 || 2925 || 20 || 9 || 0.5 || 1
+|-
+| {{AL|C}}|{{icon|w|Amber Arrows}}
+| {{Anchor|Amber Arrow}}<br>{{ID|000BEC|par=1}} || 0.1 || 8 || 25
+|colspan=3 {{Al|C}}| N/A
+|-
+| {{AL|C}}|{{icon|w|Dark Dagger}}
+| {{Anchor|Dark Dagger}}<br>{{ID|000821|par=1}} || 3 || 105 || 9 || 5 || 1.3 || 0.7
+|-
+| {{AL|C}}|{{icon|w|Dark Sword}}
+| {{Anchor|Dark Sword}}<br>{{ID|000823|par=1}} || 11 || 250 || 12 || 7 || 1 || 1
+|-
+| {{AL|C}}|{{icon|w|Dark War Axe}}
+| {{Anchor|Dark War Axe}}<br>{{ID|000829|par=1}} || 13 || 320 || 13 || 7 || 0.9 || 1
+|-
+| {{AL|C}}|{{icon|w|Dark Mace}}
+| {{Anchor|Dark Mace}}<br>{{ID|000824|par=1}} || 15 || 370 || 14 || 8 || 0.8 || 1
+|-
+| {{AL|C}}|{{icon|w|Dark Greatsword}}
+| {{Anchor|Dark Greatsword}}<br>{{ID|000825|par=1}} || 18 || 510 || 20 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Dark Battleaxe}}
+| {{Anchor|Dark Battleaxe}}<br>{{ID|000839|par=1}} || 22 || 575 || 21 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Dark Warhammer}}
+| {{Anchor|Dark Warhammer}}<br>{{ID|000828|par=1}} || 26 || 620 || 23 || 13 || 0.6 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Dark Bow}}
+| {{Anchor|Dark Bow}}<br>{{ID|000802|par=1}} || 10 || 495 || 13 || 9 || 0.5 || 1
+|-
+| {{AL|C}}|{{icon|w|Dark Arrows}}
+| {{Anchor|Dark Arrow}}<br>{{ID|00082A|par=1}} || 0.1 || 6 || 17
+|colspan=3 {{Al|C}}| N/A
+|-
+| {{AL|C}}|{{icon|w|Golden Dagger}}
+| {{Anchor|Golden Dagger}}<br>{{ID|00080E|par=1}} || 3 || 105 || 8 || 5 || 1.3 || 0.7
+|-
+| {{AL|C}}|{{icon|w|Golden Sword}}
+| {{Anchor|Golden Sword}}<br>{{ID|000822|par=1}} || 11 || 250 || 11 || 7 || 1 || 1
+|-
+| {{AL|C}}|{{icon|w|Golden War Axe}}
+| {{Anchor|Golden War Axe}}<br>{{ID|00080A|par=1}} || 13 || 320 || 12 || 7 || 0.9 || 1
+|-
+| {{AL|C}}|{{icon|w|Golden Mace}}
+| {{Anchor|Golden Mace}}<br>{{ID|000827|par=1}} || 15 || 370 || 13 || 8 || 0.8 || 1
+|-
+| {{AL|C}}|{{icon|w|Golden Greatsword}}
+| {{Anchor|Golden Greatsword}}<br>{{ID|000826|par=1}} || 18 || 510 || 21 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Golden Battleaxe}}
+| {{Anchor|Golden Battleaxe}}<br>{{ID|000810|par=1}} || 22 || 575 || 22 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Golden Warhammer}}
+| {{Anchor|Golden Warhammer}}<br>{{ID|000809|par=1}} || 26 || 620 || 24 || 13 || 0.6 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Golden Bow}}
+| {{Anchor|Golden Bow}}<br>{{ID|00080F|par=1}} || 10 || 495 || 11 || 9 || 0.5 || 1
+|-
+| {{AL|C}}|{{icon|w|Golden Arrows}}
+| {{Anchor|Golden Arrow}}<br>{{ID|00082B|par=1}} || 0.1 || 4 || 15
+|colspan=3 {{Al|C}}| N/A
+|-
+| {{AL|C}}|{{icon|w|Madness Dagger}}
+| {{Anchor|Madness Dagger}}<br>{{ID|000BE6|par=1}} || 7 || 800 || 13 || 5 || 1.3 || 0.7
+|-
+| {{AL|C}}|{{icon|w|Madness Sword}}
+| {{Anchor|Madness Sword}}<br>{{ID|000BE9|par=1}} || 20 || 250 || 16 || 7 || 1 || 1
+|-
+| {{AL|C}}|{{icon|w|Madness War Axe}}
+| {{Anchor|Madness War Axe}}<br>{{ID|000BEA|par=1}} || 22 || 1900 || 17 || 7 || 0.9 || 1
+|-
+| {{AL|C}}|{{icon|w|Madness Mace}}
+| {{Anchor|Madness Mace}}<br>{{ID|000BE8|par=1}} || 23 || 2200 || 18 || 8 || 0.8 || 1
+|-
+| {{AL|C}}|{{icon|w|Madness Greatsword}}
+| {{Anchor|Madness Greatsword}}<br>{{ID|000BE7|par=1}} || 28 || 3100 || 26 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Madness Battleaxe}}
+| {{Anchor|Madness Battleaxe}}<br>{{ID|000BE4|par=1}} || 31 || 3300 || 27 || 12 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Madness Warhammer}}
+| {{Anchor|Madness Warhammer}}<br>{{ID|000BEB|par=1}} || 34 || 4600 || 29 || 13 || 0.6 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Madness Bow}}
+| {{Anchor|Madness Bow}}<br>{{ID|000BE5|par=1}} || 21 || 3050 || 21 || 9 || 0.5 || 1
+|-
+| {{AL|C}}|{{icon|w|Madness Arrows}}
+| {{Anchor|Madness Arrow}}<br>{{ID|000BED|par=1}} || 0.1 || 9 || 26
+|colspan=3 {{Al|C}}| N/A
+|}
+
+===Unique Weapons===
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Nerveshatter}}
+| {{Anchor|[[Skyrim:Nerveshatter|Nerveshatter]]}}<br>{{ID|000be3|par=1}} || [[Skyrim:Two-handed|Two-handed]] [[Skyrim:Warhammer|Warhammer]] || [[Skyrim:Refined Amber|Refined Amber]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 29 || 2500 || 29 || 0.7 || 1.3
+|-
+| {{AL|C}}|{{icon|w|Sword of Jyggalag}}
+| {{Anchor|[[Skyrim:Sword of Jyggalag|Sword of Jyggalag]]}}<br>{{ID|00083B|par=1}} || [[Skyrim:Two-handed|Two-handed]] [[Skyrim:Greatsword|Greatsword]] || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]] || 25 || 3200 || 25 || 0.7 || 1.3
+|}
+
+==Ingredients==
+Some of these ingredients are technically part of the base game. See [[Skyrim:Saints & Seducers#Differences|Differences]] for more information.
+{{#define:noharvest|1}}
+{| class="wikitable"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+|-
+{{Ingredient Entry|ing=Bliss Bug Thorax|description=Harvested by catching [[Skyrim:Bliss Bug|Bliss Bugs]].}}
+{{Ingredient Entry|ing=Flame Stalk|description=Harvested from Flame Stalk plants.}}
+{{Ingredient Entry|ing=Green Butterfly Wing|description=Harvested by catching [[Skyrim:Green Butterfly|Green Butterflies]].}}
+{{Ingredient Entry|ing=Purple Butterfly Wing|description=Harvested catching [[Skyrim:Purple Butterfly|Purple Butterflies]].}}
+{{Ingredient Entry|ing=Rot Scale|description=Harvested from Rot Scale plants.}}
+{{Ingredient Entry|ing=Screaming Maw|description=Harvested from Screaming Maw plants.}}
+{{Ingredient Entry|ing=Thorn Hook|description=Harvested from Thorn Hook plants.}}
+|}
+
+==Scrolls==
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Description and Effects
+!class=unsortable|Where to Get
+|-
+|{{AL|C}}|{{icon|sc|01}}
+|{{Anchor|Scroll of Conjure Dark Seducer Archer}}<br>{{ID|000A0D|par=1}} || 0.5 || 250
+|''Summons a Dark Seducer Archer for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Dark Seducer Archer|Conjure Dark Seducer Archer]], for 60 secs
+|
+*Found in [[Skyrim:Svarig|Svarig]]'s Seducers bandit camp south of [[Skyrim:Forsaken Cave|Forsaken Cave]].
+*Found on a table near [[Skyrim:Thoron|Thoron]] in the [[Skyrim:Solitude Sewers|Solitude Sewers]].
+|-
+|{{AL|C}}|{{icon|sc|01}}
+|{{Anchor|Scroll of Conjure Dark Seducer Warrior}}<br>{{ID|000A0F|par=1}} || 0.5 || 250
+|''Summons a Dark Seducer Warrior for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Dark Seducer Warrior|Conjure Dark Seducer Warrior]], for 60 secs
+|
+*Carried by [[Skyrim:Svarig|Svarig]].
+*Found in Svarig's Seducers bandit camp south of [[Skyrim:Forsaken Cave|Forsaken Cave]].
+|-
+|{{AL|C}}|{{icon|sc|01}}
+|{{Anchor|Scroll of Conjure Golden Saint Archer}}<br>{{ID|0008CF|par=1}} || 0.5 || 250
+|''Summons a Golden Saint Archer for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Golden Saint Archer|Conjure Golden Saint Archer]], for 60 secs
+|
+*Found in [[Skyrim:Kinthal|Kinthal]]'s Saints bandit camp northeast of [[Skyrim:Karthwasten|Karthwasten]].
+|-
+|{{AL|C}}|{{icon|sc|01}}
+|{{Anchor|Scroll of Conjure Golden Saint Warrior}}<br>{{ID|0008DE|par=1}} || 0.5 || 250
+|''Summons a Golden Saint Warrior for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Golden Saint Warrior|Conjure Golden Saint Warrior]], for 60 secs
+|
+*Carried by [[Skyrim:Kinthal|Kinthal]].
+*Found in Kinthal's Saints bandit camp northeast of [[Skyrim:Karthwasten|Karthwasten]].
+*Found on a table near [[Skyrim:Thoron|Thoron]] in the [[Skyrim:Solitude Sewers|Solitude Sewers]].
+|-
+|{{AL|C}}|{{icon|sc|01}}
+|{{Anchor|Scroll of Conjure Staada}}<br>{{ID|1B180E|par=1}} || 0.5 || 500
+|''Summons Staada for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Staada|Conjure Staada]], for 60 secs
+|
+*Can be created by combining Sheogorath-Shaped Amber,  a Roll of Paper and Charcoal at the Atronach Forge
+|}
+
+==Poisons==
+{| class="wikitable"
+!width=48|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!Notes
+|-
+| {{icon|poi|FrostbiteVenom}}
+| {{Anchor|Mystic Venom}}<br>{{ID|xx0b9587|par=1}}
+| 0.5 || 21
+| ''A poison that does 5 points damage to Health and Magicka for 4 seconds:''
+* [[Skyrim:Mystic Venom|Mystic Venom]], 5 pts for 4 secs
+|
+* 1 sample each can be harvested once a day from the [[Skyrim:Manic Elytra Nymph|Manic]] and [[Skyrim:Demented Elytra Nymph|Demented Elytra Nymphs]].
+|}
+
+==Soul Gems==
+{| class="wikitable"
+!
+!Name
+!Soul
+![[Skyrim:Form ID|ID]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Capacity
+!Weapon Recharge
+!Notes
+|-
+|rowspan=2|[[File:SR-icon-misc-Soul Tomato.png|48px]]
+|rowspan=2|{{Anchor|Soul Tomato}}
+|none
+|{{ID|000804}}
+|rowspan=2|0.5
+|250
+|rowspan=2|3000 (Grand)
+|rowspan=2|6200 (caps at 3000)
+|rowspan=2|Equivalent to a Grand Soul Gem. Two can be found in [[Skyrim:Kinthal|Kinthal]]'s camp on a stone table, and they do respawn.
+|-
+|Grand
+|{{ID|137F40}}
+|600
+|}
+
+==Keys==
+{{Key Table
+|Saints Bandit's Cage Key||000CC9|Chest in Saints Bandits camp|Cage holding [[Skyrim:Elytra Nymph|Manic Elytra pet]]
+|Seducers Bandit's Cage Key||000D4E|Chest in Seducers Bandits camp|Cage holding [[Skyrim:Elytra Nymph|Demented Elytra pet]]
+}}
+
+==Miscellaneous Items==
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+|{{AL|C}}|{{icon|m|Bliss Bug in a Jar}}
+|[[Skyrim:Bliss Bug in a Jar|Bliss Bug in a Jar]]<br>{{ID|12DD3A|par=1}} || 1 || 1
+|
+*Found in [[Skyrim:Stony Creek Cave|Stony Creek Cave]] where the [[Skyrim:Ruin's Edge|Ruin's Edge]] Creation takes place.
+|-
+|{{AL|C}}|{{icon|m|Green Butterfly in a Jar}}
+|[[Skyrim:Green Butterfly in a Jar|Green Butterfly in a Jar]]<br>{{ID|12DD3B|par=1}} || 1 || 1
+|
+*Found on a table near [[Skyrim:Thoron|Thoron]] in the [[Skyrim:Solitude Sewers|Solitude Sewers]].
+|-
+|{{AL|C}}|{{icon|m|Purple Butterfly in a Jar}}
+|[[Skyrim:Purple Butterfly in a Jar|Purple Butterfly in a Jar]]<br>{{ID|12DD3C|par=1}} || 1 || 1
+|
+*Found in the [[Skyrim:Pelagius Wing|Pelagius Wing]] of the [[Skyrim:Blue Palace|Blue Palace]].
+|-
+|{{AL|C}}|{{icon|m|Sheogorath-Shaped Amber}}
+|[[Skyrim:Sheogorath-Shaped Amber|Sheogorath-Shaped Amber]]<br>{{ID|183E61|par=1}} || 1 || 3000
+|
+*Found on a table near [[Skyrim:Thoron|Thoron]] in the [[Skyrim:Solitude Sewers|Solitude Sewers]].
+*Can be combined with an [[Skyrim:Emerald|emerald]] at the [[Skyrim:Atronach Forge|Atronach Forge]] to resummon [[Skyrim:Staada|Staada]].
+*Can be combined with a [[Skyrim:Ruined Book|ruined book]], [[Skyrim:Bliss Bug Thorax|bliss bug thorax]], and a [[Skyrim:Sabre Cat Pelt|Sabre Cat Pelt]] at the Atronach Forge to create a [[Skyrim:Spell Tome: Conjure Staada|spell tome]] to summon Staada.
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Evethra's Journal}}
+{{Book Normal|Gadnor's Last Wishes}}
+{{Book Normal|Heretical Thoughts}}
+{{Book Normal|Joften's Notes}}
+{{Book Normal|Kinthal's Journal}}
+{{Book Normal|Report on Atronach Forge Experiments}}
+{{Book Normal|Saints and Seducers}}
+{{Book Normal|Saints Bandit Leader's Journal}}
+{{Book Normal|Seducers Bandit Leader's Journal}}
+{{Book Normal|Svarig's Journal}}
+{{Book Normal|The Blessings of Sheogorath}}
+{{Book Normal|Thoron's Journal - Volume 1}}
+{{Book Normal|Thoron's Journal - Volume 2}}
+{{Book Normal|Thoron's Journal - Volume 3}}
+|}
+
+===Spell Tomes===
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Skill Level
+!Description and Effects
+!Where to Get
+|-
+|{{AL|C}}|{{icon|b|SpellTomeConjuration}}
+|{{Anchor|[[Skyrim:Spell Tome: Conjure Dark Seducer Archer|Spell Tome: Conjure Dark Seducer Archer]]}}<br>{{ID|000B0C|par=1}} || 1 || 680 || Adept
+|''Summons a Dark Seducer Archer for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Dark Seducer Archer|Conjure Dark Seducer Archer]], for 60 secs
+|rowspan=4|
+*Carried by [[Skyrim:Thoron|Thoron]].
+*Possible creation at the [[Skyrim:Atronach Forge|Atronach Forge]].
+|-
+|{{AL|C}}|{{icon|b|SpellTomeConjuration}}
+|{{Anchor|[[Skyrim:Spell Tome: Conjure Dark Seducer Warrior|Spell Tome: Conjure Dark Seducer Warrior]]}}<br>{{ID|000B63|par=1}} || 1 || 680 || Adept
+|''Summons a Dark Seducer Warrior for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Dark Seducer Warrior|Conjure Dark Seducer Warrior]], for 60 secs
+|-
+|{{AL|C}}|{{icon|b|SpellTomeConjuration}}
+|{{Anchor|[[Skyrim:Spell Tome: Conjure Golden Saint Archer|Spell Tome: Conjure Golden Saint Archer]]}}<br>{{ID|000AF0|par=1}} || 1 || 680 || Adept
+|''Summons a Golden Saint Archer for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Golden Saint Archer|Conjure Golden Saint Archer]], for 60 secs
+|-
+|{{AL|C}}|{{icon|b|SpellTomeConjuration}}
+|{{Anchor|[[Skyrim:Spell Tome: Conjure Golden Saint Warrior|Spell Tome: Conjure Golden Saint Warrior]]}}<br>{{ID|000AFD|par=1}} || 1 || 680 || Adept
+|''Summons a Golden Saint Warrior for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Golden Saint Warrior|Conjure Golden Saint Warrior]], for 60 secs
+|-
+|{{AL|C}}|{{icon|b|SpellTomeConjuration}}
+|{{Anchor|[[Skyrim:Spell Tome: Conjure Staada|Spell Tome: Conjure Staada]]}}<br>{{ID|19D3F9|par=1}} || 1 || 1350 || Master
+|''Summons Staada for 60 seconds wherever the caster is pointing:''
+*[[Skyrim:Conjure Staada|Conjure Staada]], for 60 secs
+|
+*Created by combining [[Skyrim:Sheogorath-Shaped Amber|Sheogorath-Shaped Amber]] + [[Skyrim:Ruined Book|Ruined Book]] + [[Skyrim:Bliss Bug Thorax|Bliss Bug Thorax]] + [[Skyrim:Sabre Cat Pelt|Sabre Cat Pelt]] at the [[Skyrim:Atronach Forge|Atronach Forge]].
+|}
+
+===Notes===
+{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|A Request to Meet}}
+{{Book Normal|Bandit's Note on Hidden Treasure}}
+{{Book Normal|Note on Amber and Madness Ore}}
+{{Book Normal|Note on Demented Elytra Nymph}}
+{{Book Normal|Note on Manic Elytra Nymph}}
+{{Book Normal|Note on New Wares}}
+{{Book Normal|Note on Revenge for Kinthal}}
+{{Book Normal|Note on Revenge for Svarig}}
+{{Book Normal|Note on Strange Arms and Armor}}
+{{Book Normal|Notes on the Blacksmith}}
+{{Book Normal|Ri'saad's Note on Bandit Attacks}}
+|}

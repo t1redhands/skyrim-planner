@@ -1,0 +1,145 @@
+{{CC Header|Arms of Chaos}}{{Trail|Arms of Chaos}}
+This page documents the '''new items''' added by the [[Skyrim:Arms of Chaos|Arms of Chaos]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Enchantment
+|-
+|{{Icon|j|Sovereign Band}}
+|{{Anchor|[[Skyrim:Sovereign Band|Sovereign Band]]}}<br>{{ID|FExxx813|par=1}}
+|Ring
+|0.25||943
+|''Magicka regenerates 10% faster. Increases your Magicka by 50 points.''
+*[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 10 pts
+*[[Skyrim:Fortify Magicka|Fortify Magicka]], 50 pts
+|-
+|{{Icon|j|Warlock's Mark}}
+|{{Anchor|[[Skyrim:Warlock's Mark|Warlock's Mark]]}}<br>{{ID|FExxx80F|par=1}}
+|Amulet
+|0.5||1304
+|''Conjuration spells cost 30% less to cast.''
+*[[Skyrim:Fortify Conjuration|Fortify Conjuration]], 30 pts
+|-
+|}
+<gallery>
+File:SR-item-Sovereign Band 02.jpg|A female wearing the Sovereign Band
+File:SR-item-Warlock's Mark 02.jpg|A female wearing the Warlock's Mark
+</gallery>
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Hyenril's Journal}}
+{{Book Normal|Loss of the Sea Stallion}}
+{{Book Normal|Master Ellane's Last Words}}
+|}
+
+==Miscellaneous==
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-misc-Arm of the Moon.png
+ |name=Arm of the Moon
+ |displayname=Arm of the Moon
+ |id=FExxx81C|weight=6|value=1}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Arm of the Moon.png
+ |name=Arm of the Moon NonPlayable
+ |displayname=Arm of the Moon
+ |id=FExxx88E|weight=6|value=1}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Arm of the Sun.png
+ |name=Arm of the Sun
+ |displayname=Arm of the Sun
+ |id=FExxx823|weight=6|value=1}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Arm of the Sun.png
+ |name=Arm of the Sun NonPlayable
+ |displayname=Arm of the Sun
+ |id=FExxx88D|weight=6|value=1}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Blue Sigil Stone.png
+ |name=Blue Sigil Stone
+ |displayname=Blue Sigil Stone
+ |id=FExxx814|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Blue Sigil Stone.png
+ |name=Blue Sigil Stone NonPlayable
+ |displayname=Blue Sigil Stone
+ |id=FExxx82C|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Green Sigil Stone.png
+ |name=Green Sigil Stone
+ |displayname=Green Sigil Stone
+ |id=FExxx815|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Green Sigil Stone.png
+ |name=Green Sigil Stone NonPlayable
+ |displayname=Green Sigil Stone
+ |id=FExxx82D|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Orange Sigil Stone.png
+ |name=Orange Sigil Stone
+ |displayname=Orange Sigil Stone
+ |id=FExxx816|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Orange Sigil Stone.png
+ |name=Orange Sigil Stone NonPlayable
+ |displayname=Orange Sigil Stone
+ |id=FExxx883|weight=0|value=0}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Warlock's Mark.png
+ |name=Warlock's Mark
+ |displayname=Warlock's Mark
+ |id=FExxx827|weight=0.4|value=1}}
+ |
+{{Item Data
+ |icon=SR-icon-misc-Warlock's Mark.png
+ |name=Warlock's Mark NonPlayable
+ |displayname=Warlock's Mark
+ |id=FExxx884|weight=0.4|value=1}}
+ |
+|}
+<gallery>
+File:SR-item-Blue Sigil Stone.jpg|Blue Sigil Stone
+File:SR-item-Green Sigil Stone.jpg|Green Sigil Stone
+File:SR-item-Orange Sigil Stone.jpg|Orange Sigil Stone
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Arm of the Moon.png|name=Arm of the Moon|displayname=[[Skyrim:Arm of the Moon|Arm of the Moon]]|id=FExxx80D|type=Staff|weight=8|value=1273|enchantment=''Random chance to demoralize or frenzy a target for 60 seconds.''}}
+{{Item Data|icon=SR-icon-weapon-Arm of the Sun.png|name=Arm of the Sun|displayname=[[Skyrim:Arm of the Sun|Arm of the Sun]]|id=FExxx80B|type=Staff|weight=8|value=627|enchantment=''Burns the target for 20 points. 30% chance for frost and shock to do 20 points of damage.''
+*[[Skyrim:Fire Damage|Fire Damage]], 20 pts
+*[[Skyrim:Frost Damage|Frost Damage]], 20 pts
+*[[Skyrim:Shock Damage|Shock Damage]], 20 pts
+}}
+|}

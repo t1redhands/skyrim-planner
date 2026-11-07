@@ -1,0 +1,266 @@
+{{CC Header|Bittercup}}{{Trail|Bittercup}}
+This page documents the '''new items''' added by the [[Skyrim:Bittercup|Bittercup]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+| {{nowrap|{{icon|c|Clothes1(m)}}{{icon|c|Clothes1(f)}}}}
+| {{Anchor|Clothes}}<br>{{ID|FExxxA68|par=1}} || Clothing || N/A || 1 || 2 || N/A ||
+*Unobtainable
+|-
+| {{AL|C}}|{{icon|c|Boots3}}
+| {{Anchor|Courier's Boots}}<br>{{ID|FExxxF26|par=1}} || Clothing || N/A || 1 || 2 || N/A ||
+|-
+| {{nowrap|{{icon|c|Clothes1(m)}}{{icon|c|Clothes1(f)}}}}
+| {{Anchor|Courier's Clothes}}<br>{{ID|FExxxF2C|par=1}} || Clothing || N/A || 1 || 2 || N/A ||
+|-
+| {{AL|C}}|{{icon|j|SilverRubyRing}}
+| {{Anchor|Cuinanthil's Family Seal}}<br>{{ID|FExxxA67|par=1}} || Jewelry || N/A || 0.25 || 260 || N/A ||
+|-
+| {{AL|C}}|{{icon|j|SilverRing}}
+| {{Anchor|Ferryman's Ring}}<br>{{ID|FExxxFD2|par=1}} || Jewelry || N/A || 0.25 || 130 || N/A || ''Can swim underwater without drowning.''
+*Unobtainable
+|-
+| {{AL|C}}|{{icon|a|Grand Champion's Helm}}
+| {{Anchor|Grand Champion's Helm}}<br>{{ID|FExxxCDC|par=1}} || Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel Smithing]] || 6 || 2000 || 20 ||
+|-
+| {{AL|C}}|{{icon|a|Nordic Shield}}
+| {{Anchor|Skull-Sabre Shield}}<br>{{ID|FExxx899|par=1}} || Heavy Armor || N/A || 10 || 1210 || 28 || ''Block 40% more damage with your shield.''
+*Unobtainable
+|}
+<gallery>
+File:SR-item-Grand Champion's Helm Male.jpg|Male [[Skyrim:Nord|Nord]] wearing the Grand Champion's Helm
+File:SR-item-Grand Champion's Helm Female.jpg|Female [[Skyrim:Imperial|Imperial]] wearing the Grand Champion's Helm
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Damage Icon}}
+!Crit.<br/>{{Damage Icon}}
+!Speed
+!Reach
+|-
+| {{AL|C}}|{{icon|w|Grand Champion's Sword}}
+| {{Anchor|Grand Champion's Sword}}<br>{{ID|FExxx807|par=1}} || One-Handed Sword || 12 || 2500 || 14 || 6 || 1 || 1
+|-
+| {{AL|C}}|{{icon|w|Nordic Dagger}}
+| {{Anchor|Rulnik's Dagger}}<br>{{ID|FExxxECE|par=1}} || Dagger || 3.5 || 115 || 8 || 4 || 1.3 || 0.7
+|}
+
+==Food==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|Weight
+!width=22|Value
+![[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!class="unsortable"|Ingredients
+!Notes
+|-{{HE|Ironwood Soup}}
+|[[File:SR-icon-food-Ironwood Soup.png|48px]]
+|Ironwood Soup<br>{{ID|FExxxF93|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Stamina|Restore Stamina]], 15 pts
+* [[Skyrim:Cure Disease|Cure Disease]]
+|[[Skyrim:Salt Pile|Salt Pile]]<br>[[#Miscellanous Items|Ironwood Fruit]]<br>[[#Miscellanous Items|Charred Skeever Hide]]
+| Quest item for [[Skyrim:A Dying Wish|A Dying Wish]], created with the [[#Miscellaneous Items|miscellaneous items]] versions of its ingredients.
+|-{{HE|Ironwood Soup}}
+|[[File:SR-icon-food-Ironwood Soup.png|48px]]
+|Ironwood Soup<br>{{ID|FExxxF87|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Stamina|Restore Stamina]], 15 pts
+* [[Skyrim:Cure Disease|Cure Disease]]
+|[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]]<br>[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Ironwood Fruit|Ironwood Fruit]]
+|Regular version created outside of the quest.
+|-{{HE|Hot Ironwood Soup}}
+|[[File:SR-icon-food-Ironwood Soup.png|48px]]
+|Hot Ironwood Soup<br>{{ID|FExxxCE5|par=1}}
+|0.5||5||Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Restore Stamina|Restore Stamina]], 15 pts
+* [[Skyrim:Cure Disease|Cure Disease]]
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|[[Skyrim:Charred Skeever Hide|Charred Skeever Hide]]<br>[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Salt Pile|Salt Pile]]<br>[[Skyrim:Ironwood Fruit|Ironwood Fruit]]
+|Only available when [[Skyrim:Survival Mode|Survival Mode]]{{CC|Survival Mode}} is enabled.
+|}
+
+==Ingredients==
+{{#define:noharvest|1}}
+{| class="wikitable"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+|-
+{{Ingredient Entry|ing=Healing Salts|description=Unused, unreferenced, and unobtainable duplicate of a [[Skyrim:Salt Pile|Salt Pile]]. Presumably replaced by the Ironwood Fruit.}}
+{{Ingredient Entry|ing=Ironwood Fruit|description=Harvested from the Ironwood trees in [[Skyrim:Iron Tusk Cave|Iron Tusk Cave]].}}
+|}
+
+==Potions==
+{| class="wikitable"
+!width=48|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!Notes
+|-
+| {{icon|pot|Bittercup}}
+| {{Anchor|Bittercup}}<br>{{ID|FExxx810|par=1}}
+| 0.5 || 5
+| ''Permanently increases the greater of health, magicka or stamina by 20 points and decreases the lesser by 20 points.''
+* Bittercup Effect: Stamina, 1 pt
+|
+*
+|-
+| {{icon|pot|Potion of Blood}}
+| {{Anchor|Potion of Blood}}<br>{{ID|FExxx811|par=1}}
+| 0.5 || 75
+| ''Equivalent to feeding on human blood for vampires. Vampires heal 100 points of Health.''
+* Blood Ingestion
+* [[Skyrim:Restore Health|Restore Health]], 100 pts
+|
+*
+|}
+
+==Poisons==
+{| class="wikitable"
+!width=48|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!Ingredients
+|-
+| {{icon|food|Sujamma}}
+| {{Anchor|Spiked Sujamma}}<br>{{ID|FExxxA6D|par=1}}
+| 0.5 || 10
+| ''Restore 1 points of Stamina. Decrease the target's Stamina regeneration by 50% for 2 hours.''
+* [[Skyrim:Restore Stamina|Restore Stamina]], 1 pt
+* [[Skyrim:Damage Stamina Regeneration|Damage Stamina Regeneration]], 50 pts for 2 secs{{vn|potion says secs, magic effect says hours}}
+|[[Skyrim:Sujamma|Sujamma]]<br>[[Skyrim:Spiked Vial|Spiked Vial]]
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Cuinanthil's Journal}}
+{{Book Normal|Ernanthil's Journal}}
+{{Book Normal|Mysterious Altar}}
+|}
+
+===Spell Tomes===
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Skill Level
+!Description and Effects
+!Where to Get
+|-
+|{{AL|C}}|{{icon|b|SpellTomeAlteration}}
+|{{Anchor|[[Skyrim:Transmute_Mineral_Ore|Spell Tome: Master Transmute]]}}<br>{{ID|FExxxCE1|par=1}} || 1 || 200 || Adept
+|''Transmutes one piece of unrefined Iron or Silver ore to Gold if the caster is carrying any.''
+*[[Skyrim:Master Transmute|Master Transmute]]
+|The safe in Eslaf's room within [[skyrim:The Warrens|The Warrens]] of [[skyrim:Markarth|Markarth]]
+|}
+
+===Notes===
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Fisherman's Note}}
+{{Book Normal|Letter from Cuinanthil's Steward}}
+{{Book Normal|Note from the Temple of Kynareth}}
+{{Book Normal|On the Bittercup}}
+{{Book Normal|Pit Fighter's Note}}
+{{Book Normal|Prisoner's Note}}
+{{Book Normal|Rogue's Instructions}}
+{{Book Normal|Rogue's Job Offer}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_02.png
+ |name=Key to Eslaf's Room
+ |id=FExxxAE3|weight=0|value=0}}
+{{Item Data
+ |icon=SR-icon-key-Key_02.png
+ |name=Pit Key
+ |id=FExxxA89|weight=0|value=0}}
+|}
+
+==Miscellaneous Items==
+{|class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|Form ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+|{{icon|f|CharredSkeeverMeat}}
+|Charred Skeever Hide<br>{{ID|FExxxF0C|par=1}} || 1 || 1
+|
+*
+|-
+|{{icon|pot|Bittercup}}
+|Empty Bittercup<br>{{ID|FExxxA6B|par=1}} || 0 || 0
+|
+*
+|-
+|[[File:SR-item-Gold-heads.png|48px]]
+|Ferry Token<br>{{ID|FExxx81A|par=1}} || 1 || 1
+|
+*
+|-
+|[[File:SR-icon-ingredient-Ironwood Fruit.png|48px]]
+|Ironwood Fruit<br>{{ID|FExxxF7E|par=1}} || 1 || 1
+|
+*
+|-
+|{{icon|f|Soup}}
+|Ironwood Soup Elixir<br>{{ID|FExxxF80|par=1}} || 1 || 1
+|
+*
+|-
+|{{icon|pot|Skill}}
+|Mysterious Potion<br>{{ID|FExxx806|par=1}} || 0 || 0
+|
+*
+|-
+|{{icon|m|PestPoison}}
+|Spiked Vial<br>{{ID|FExxxF04|par=1}}<br>{{ID|FExxxF89|par=1}} || 0.5 || 0
+|
+*
+|}

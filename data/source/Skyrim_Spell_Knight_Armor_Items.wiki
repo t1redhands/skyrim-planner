@@ -1,0 +1,176 @@
+{{CC Header|Spell Knight Armor}}{{Trail|Spell Knight Armor}}
+This page documents the '''new items''' added by the [[Skyrim:Spell Knight Armor|Spell Knight Armor]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!colspan=2; class="unsortable"|Notes
+|-
+|{{Icon|a|Ebony Spell Knight Armor}}
+|{{Anchor|Ebony Spell Knight Armor}}<br>{{ID|FExxx89D|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|38||2551||47
+|
+*''Increases Heavy Armor skill by 25 points.''
+| rowspan=4 |
+*Appears at [[Skyrim:Simon Rodayne|Simon Rodayne's]] grave after cleansing his heart at the end of [[Skyrim:Crypt of the Heart|Crypt of the Heart]].
+|-
+|{{Icon|a|Ebony Spell Knight Boots}}
+|{{Anchor|Ebony Spell Knight Boots}}<br>{{ID|FExxx89C|par=1}}
+|Heavy Boots || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||1042||20
+|
+*''Increases your stamina by 70 points.''
+|-
+|{{Icon|a|Ebony Spell Knight Gauntlets}}
+|{{Anchor|Ebony Spell Knight Gauntlets}}<br>{{ID|FExxx89E|par=1}}
+|Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||1210||20
+|
+*''Restoration spells cost 25% less to cast.''
+|-
+|{{Icon|a|Ebony Spell Knight Helmet}}
+|{{Anchor|Ebony Spell Knight Helmet}}<br>{{ID|FExxx89F|par=1}}
+|Heavy Helmet || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|10||1469||25
+|
+*''Increases Magic Resistance by 22%.''
+|-
+|{{Icon|a|Ebony Spell Knight Armor}}
+|{{Anchor|Ebony Spell Knight Armor}}<br>{{ID|FExxx8A1|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|38||3272||47
+|
+*''One-handed attacks do 40% more damage.''
+| rowspan=4 |
+*Can be taken from the grave after defeating Simon Rodayne's ghost at the end of Crypt of the Heart.
+|-
+|{{Icon|a|Ebony Spell Knight Boots}}
+|{{Anchor|Ebony Spell Knight Boots}}<br>{{ID|FExxx8A0|par=1}}
+|Heavy Boots || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||1878||20
+|
+*''Carrying capacity increased by 50 points.''
+|-
+|{{Icon|a|Ebony Spell Knight Gauntlets}}
+|{{Anchor|Ebony Spell Knight Gauntlets}}<br>{{ID|FExxx8A2|par=1}}
+|Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||1296||20
+|
+*''Destruction spells cost 25% less to cast.''
+|-
+|{{Icon|a|Ebony Spell Knight Helmet}}
+|{{Anchor|Ebony Spell Knight Helmet}}<br>{{ID|FExxx8A3|par=1}}
+|Heavy Helmet || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|10||1649||25
+|
+*''Increases your Magicka by 70 points.''
+|-
+|{{Icon|a|Ebony Spell Knight Armor}}
+|{{Anchor|Ebony Spell Knight Armor}}<br>{{ID|FExxxD7C|par=1}}
+|Heavy Armor || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|38||2000||47
+| colspan=2; rowspan=4 |
+*Can be crafted after completion of Crypt of the Heart.
+|-
+|{{Icon|a|Ebony Spell Knight Boots}}
+|{{Anchor|Ebony Spell Knight Boots}}<br>{{ID|FExxxD7B|par=1}}
+|Heavy Boots || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||400||20
+|-
+|{{Icon|a|Ebony Spell Knight Gauntlets}}
+|{{Anchor|Ebony Spell Knight Gauntlets}}<br>{{ID|FExxxD7D|par=1}}
+|Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|7||400||20
+|-
+|{{Icon|a|Ebony Spell Knight Helmet}}
+|{{Anchor|Ebony Spell Knight Helmet}}<br>{{ID|FExxxD7E|par=1}}
+|Heavy Helmet || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony]]
+|10||900||25
+|-
+|{{Icon|a|Iron Spell Knight Armor}}
+|{{Anchor|Iron Spell Knight Armor}}<br>{{ID|FExxxD78|par=1}}
+|Heavy Armor || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''
+|30||275||29
+| colspan=2; rowspan=8 |
+*Found on one of the dead [[Skyrim:Knight of the Crypt|knights]] at the grave of Simon Rodayne.
+*Can be crafted after completion of Crypt of the Heart.
+|-
+|{{Icon|a|Iron Spell Knight Boots}}
+|{{Anchor|Iron Spell Knight Boots}}<br>{{ID|FExxxD77|par=1}}
+|Heavy Boots || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''
+|6||55||14
+|-
+|{{Icon|a|Iron Spell Knight Gauntlets}}
+|{{Anchor|Iron Spell Knight Gauntlets}}<br>{{ID|FExxxD79|par=1}}
+|Heavy Gauntlets || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''
+|5||55||14
+|-
+|{{Icon|a|Iron Spell Knight Helmet}}
+|{{Anchor|Iron Spell Knight Helmet}}<br>{{ID|FExxxD7A|par=1}}
+|Heavy Helmet || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''
+|5||200||19
+|-
+|{{Icon|a|Steel Spell Knight Armor}}
+|{{Anchor|Steel Spell Knight Armor}}<br>{{ID|FExxxD74|par=1}}
+|Heavy Armor || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|35||350||35
+|-
+|{{Icon|a|Steel Spell Knight Boots}}
+|{{Anchor|Steel Spell Knight Boots}}<br>{{ID|FExxxD73|par=1}}
+|Heavy Boots || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|8||75||16
+|-
+|{{Icon|a|Steel Spell Knight Gauntlets}}
+|{{Anchor|Steel Spell Knight Gauntlets}}<br>{{ID|FExxxD75|par=1}}
+|Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|4||75||16
+|-
+|{{Icon|a|Steel Spell Knight Helmet}}
+|{{Anchor|Steel Spell Knight Helmet}}<br>{{ID|FExxxD76|par=1}}
+|Heavy Helmet || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel]]
+|5||250||21
+|-
+|}
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Crypt of the Heart - Draft}}
+|}
+
+==Ingredients==
+
+{| class="wikitable sortable striped"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Merchant Avail.
+|-
+{{Ingredient Entry|ing=Corrupted Human Heart|merchant={{huh}}|description=Found at [[SR:Karthspire Camp|Karthspire Camp]].}}
+{{Ingredient Entry|ing=Simon Rodayne's Heart|merchant={{huh}}|description=Obtained by activating the [[SR:Shrine of Mara|Shrine of Mara]] during the [[SR:Crypt of the Heart|related quest]].}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Beldama Witch's Note}}
+{{Book Normal|Forsworn Shaman's Note}}
+{{Book Normal|Ghost Sighting}}
+{{Book Normal|Knight Captain's Orders}}
+|}

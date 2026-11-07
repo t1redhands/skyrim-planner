@@ -1,0 +1,72 @@
+{{CC Header|Gallows Hall}}{{Trail|Gallows Hall}}
+This page documents the '''new items''' added by the [[Skyrim:Gallows Hall|Gallows Hall]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+|{{icon|c|Bloodworm Helm}}
+| {{Anchor|[[Skyrim:Bloodworm Helm|Bloodworm Helm]]}}<br>{{ID|FExxxCCF|par=1}} || Light Armor || 2 [[Skyrim:Bone Meal|Bone Meal]];<br>perk: ''none'' || 5 || 1862 || 15 || ''Conjuration spells cost 25% less to cast. Damage against the undead increases by 25%.''
+|-
+|{{icon|c|Helm of Oreyn Bearclaw}}
+| {{Anchor|[[Skyrim:Helm of Oreyn Bearclaw|Helm of Oreyn Bearclaw]]}}<br>{{ID|FExxxD3D|par=1}} || Heavy Armor || 2 [[Skyrim:Bone Meal|Bone Meal]];<br>perk: ''none'' || 8 || 2167 || 22 || ''Stamina regenerates 20% faster. Increases your stamina by 70 points.''
+|}
+<gallery>
+File:SR-item-Bloodworm Helm Male.jpg|A male [[Skyrim:Nord|Nord]] wearing the [[Skyrim:Bloodworm Helm|Bloodworm Helm]]
+File:SR-item-Bloodworm Helm Female.jpg|A female [[Skyrim:Imperial|Imperial]] wearing the Bloodworm Helm
+File:SR-item-Helm of Oreyn Bearclaw Male.jpg|A male Nord wearing the [[Skyrim:Helm of Oreyn Bearclaw|Helm of Oreyn Bearclaw]]
+File:SR-item-Helm of Oreyn Bearclaw Female.jpg|A female Imperial wearing the Helm of Oreyn Bearclaw
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+!width=22|Weight
+!width=22|Value
+!Description
+|-
+{{Item Data|icon=SR-icon-weapon-Staff of Worms.png|name=Staff of Worms|displayname=[[Skyrim:Staff of Worms|Staff of Worms]]|id=FExxxCF2|type=Staff|weight=8|value=2440|enchantment=''Reanimate a dead body permanently to fight for you.''}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Helm of Oreyn Bearclaw (book)}}
+{{Book Normal|Naara's Journal}}
+{{Book Normal|Notes on the Bone Forge}}
+|}
+
+===Notes===
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Arch Necromancer's First Clue}}
+{{Book Normal|Arch Necromancer's Final Instructions}}
+{{Book Normal|Arch Necromancer's Second Clue}}
+{{Book Normal|Hooded Skeleton}}
+{{Book Normal|Letter to Naara}}
+{{Book Normal|Naara's Plea}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Arch Necromancer's Key
+ |id=FExxxCF9|weight=0|value=0}}
+|}

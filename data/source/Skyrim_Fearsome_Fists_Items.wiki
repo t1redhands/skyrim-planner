@@ -1,0 +1,117 @@
+{{CC Header|Fearsome Fists}}{{Trail|Fearsome Fists}}
+This page documents the '''new items''' added by the [[Skyrim:Fearsome Fists|Fearsome Fists]] [[Skyrim:Creation Club|Creation]].
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+|-
+|{{AL|C}}|{{icon|a|Brawler's Hide Bracers}}
+| {{Anchor|[[Skyrim:Brawler's Hide Bracers|Brawler's Hide Bracers]]}}<br>{{ID|FExxx854|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 1 || 10 || 5
+|-
+|{{AL|C}}|{{icon|a|Brawler's Fur Bracers}}
+| {{Anchor|[[Skyrim:Animal Hides#Brawler's Fur Bracers|Brawler's Fur Bracers]]{{Intnote|Fur|†}}}}<br>{{ID|FExxx84B|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 1 || 10 || 6
+|-
+|{{AL|C}}|{{icon|a|Brawler's Leather Bracers}}
+| {{Anchor|[[Skyrim:Animal Hides#Brawler's Leather Bracers|Brawler's Leather Bracers]]}}<br>{{ID|FExxx84C|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 2 || 25 || 7
+|-
+|{{AL|C}}|{{icon|a|Brawler's Elven Gauntlets}}
+| {{Anchor|[[Skyrim:Elven#Brawler's Elven Gauntlets|Brawler's Elven Gauntlets]]}}<br>{{ID|FExxx851|par=1}} || Light Gauntlets || [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]]|| 1 || 45 || 8 
+|-
+|{{AL|C}}|{{icon|a|Brawler's Scaled Bracers}}
+| {{Anchor|[[Skyrim:Advanced Armors#Brawler's Scaled Bracers|Brawler's Scaled Bracers]]}}<br>{{ID|FExxx856|par=1}} || Light Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]]|| 2 || 70 || 9 
+|-
+|{{AL|C}}|{{icon|a|Brawler's Glass Gauntlets}}
+| {{Anchor|[[Skyrim:Malachite#Brawler's Glass Gauntlets|Brawler's Glass Gauntlets]]}}<br>{{ID|FExxx84F|par=1}} || Light Gauntlets || [[Skyrim:Refined Malachite|Refined Malachite]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]]|| 2 || 190 || 11
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dragonscale Gauntlets}}
+| {{Anchor|[[Skyrim:Brawler's Dragonscale Gauntlets|Brawler's Dragonscale Gauntlets]]}}<br>{{ID|FExxx84D|par=1}} || Light Gauntlets || [[Skyrim:Dragon Scales|Dragon Scales]];<br>perk: [[Skyrim:Dragon Smithing|Dragon Smithing]]|| 3 || 300 || 12
+|-
+|{{AL|C}}|{{icon|a|Brawler's Iron Gauntlets}}
+| {{Anchor|[[Skyrim:Iron#Brawler's Iron Gauntlets|Brawler's Iron Gauntlets]]}}<br>{{ID|FExxx852|par=1}} || Heavy Gauntlets || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''|| 5 || 25 || 10
+|-
+|{{AL|C}}|{{icon|a|Brawler's Steel Gauntlets}}
+| {{Anchor|[[Skyrim:Steel#Brawler's Steel Gauntlets|Brawler's Steel Gauntlets]]}}<br>{{ID|FExxx850|par=1}} || Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel Smithing]]|| 4 || 55 || 12
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dwarven Gauntlets}}
+| {{Anchor|[[Skyrim:Dwarven#Brawler's Dwarven Gauntlets|Brawler's Dwarven Gauntlets]]}}<br>{{ID|FExxx853|par=1}} || Heavy Gauntlets || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]]|| 8 || 85 || 13
+|-
+|{{AL|C}}|{{icon|a|Brawler's Steel Plate Gauntlets}}
+| {{Anchor|[[Skyrim:Advanced Armors#Brawler's Steel Plate Gauntlets|Brawler's Steel Plate Gauntlets]]}}<br>{{ID|FExxx859|par=1}} || Heavy Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]]|| 6 || 125 || 14
+|-
+|{{AL|C}}|{{icon|a|Brawler's Orcish Gauntlets}}
+| {{Anchor|[[Skyrim:Orcish#Brawler's Orcish Gauntlets|Brawler's Orcish Gauntlets]]}}<br>{{ID|FExxx857|par=1}} || Heavy Gauntlets || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish Smithing]]|| 7 || 200 || 15
+|-
+|{{AL|C}}|{{icon|a|Brawler's Ebony Gauntlets}}
+| {{Anchor|[[Skyrim:Ebony#Brawler's Ebony Gauntlets|Brawler's Ebony Gauntlets]]}}<br>{{ID|FExxx858|par=1}} || Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]]|| 7 || 275 || 16
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dragonplate Gauntlets}}
+| {{Anchor|[[Skyrim:Brawler's Dragonplate Gauntlets|Brawler's Dragonplate Gauntlets]]}}<br>{{ID|FExxx855|par=1}} || Heavy Gauntlets || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Smithing|Dragon Smithing]]|| 8 || 425 || 17
+|-
+|{{AL|C}}|{{icon|a|Brawler's Daedric Gauntlets}}
+| {{Anchor|[[Skyrim:Brawler's Daedric Gauntlets|Brawler's Daedric Gauntlets]]}}<br>{{ID|FExxx84E|par=1}} || Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]]|| 6 || 625 || 18
+|-
+|}
+{{Note|Fur|†|This item cannot be crafted.}}
+
+==Magic Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable |
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+|-
+|{{AL|C}}|{{icon|a|Brawler's Hide Bracers}}
+| [[Skyrim:Brawler's Hide Bracers|Brawler's Hide Bracers]]<br>{{ID|FExxx80A|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 1 || 199 || 5 || ''Unarmed strikes do 10 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Fur Bracers}}
+| Brawler's Fur Bracers<br>{{ID|FExxx803|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 1 || 158 || 6 || ''Unarmed strikes do 8 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Leather Bracers}}
+| Brawler's Leather Bracers<br>{{ID|FExxx805|par=1}} || Light Gauntlets || [[Skyrim:Leather|Leather]];<br>perk: ''none'' || 2 || 214 || 7 || ''Unarmed strikes do 10 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Elven Gauntlets}}
+| Brawler's Elven Gauntlets<br>{{ID|FExxx800|par=1}} || Light Gauntlets || [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk: [[Skyrim:Elven Smithing|Elven Smithing]]|| 1 || 276 || 8 || ''Unarmed strikes do 12 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Scaled Bracers}}
+| Brawler's Scaled Bracers<br>{{ID|FExxx809|par=1}} || Light Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]]|| 2 || 259 || 9 || ''Unarmed strikes do 10 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Glass Gauntlets}}
+| Brawler's Glass Gauntlets<br>{{ID|FExxx802|par=1}} || Light Gauntlets || [[Skyrim:Refined Malachite|Refined Malachite]];<br>perk: [[Skyrim:Glass Smithing|Glass Smithing]]|| 2 || 463 || 11 || ''Unarmed strikes do 14 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dragonscale Gauntlets}}
+| [[Skyrim:Brawler's Dragonscale Gauntlets|Brawler's Dragonscale Gauntlets]]<br>{{ID|FExxx81F|par=1}} || Light Gauntlets || [[Skyrim:Dragon Scales|Dragon Scales]];<br>perk: [[Skyrim:Dragon Smithing|Dragon Smithing]]|| 3 || 617 || 12 || ''Unarmed strikes do 16 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Iron Gauntlets}}
+| Brawler's Iron Gauntlets<br>{{ID|FExxx80D|par=1}} || Heavy Gauntlets || [[Skyrim:Iron Ingot|Iron Ingot]];<br>perk: ''none''|| 5 || 214 || 10 || ''Unarmed strikes do 10 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Steel Gauntlets}}
+| Brawler's Steel Gauntlets<br>{{ID|FExxx801|par=1}} || Heavy Gauntlets || [[Skyrim:Steel Ingot|Steel Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel Smithing]]|| 4 || 286 || 12 || ''Unarmed strikes do 12 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dwarven Gauntlets}}
+| Brawler's Dwarven Gauntlets<br>{{ID|FExxx80C|par=1}} || Heavy Gauntlets || [[Skyrim:Dwarven Metal Ingot|Dwarven Metal Ingot]];<br>perk: [[Skyrim:Dwarven Smithing|Dwarven Smithing]]|| 8 || 316 || 13 || ''Unarmed strikes do 12 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Steel Plate Gauntlets}}
+| Brawler's Steel Plate Gauntlets<br>{{ID|FExxx806|par=1}} || Heavy Gauntlets || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]]|| 6 || 398 || 14 || ''Unarmed strikes do 14 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Orcish Gauntlets}}
+| Brawler's Orcish Gauntlets<br>{{ID|FExxx808|par=1}} || Heavy Gauntlets || [[Skyrim:Orichalcum Ingot|Orichalcum Ingot]];<br>perk: [[Skyrim:Orcish Smithing|Orcish Smithing]]|| 7 || 473 || 15 || ''Unarmed strikes do 14 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Ebony Gauntlets}}
+| Brawler's Ebony Gauntlets<br>{{ID|FExxx807|par=1}} || Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Ebony Smithing|Ebony Smithing]]|| 7 || 592 || 16 || ''Unarmed strikes do 16 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Dragonplate Gauntlets}}
+| [[Skyrim:Brawler's Dragonplate Gauntlets|Brawler's Dragonplate Gauntlets]]<br>{{ID|FExxx80B|par=1}} || Heavy Gauntlets || [[Skyrim:Dragon Bone|Dragon Bone]];<br>perk: [[Skyrim:Dragon Smithing|Dragon Smithing]]|| 8 || 830 || 17 || ''Unarmed strikes do 20 additional damage.''
+|-
+|{{AL|C}}|{{icon|a|Brawler's Daedric Gauntlets}}
+| [[Skyrim:Brawler's Daedric Gauntlets|Brawler's Daedric Gauntlets]]<br>{{ID|FExxx804|par=1}} || Heavy Gauntlets || [[Skyrim:Ebony Ingot|Ebony Ingot]];<br>perk: [[Skyrim:Daedric Smithing|Daedric Smithing]]|| 6 || 985 || 18 || ''Unarmed strikes do 18 additional damage.''
+|-
+|}

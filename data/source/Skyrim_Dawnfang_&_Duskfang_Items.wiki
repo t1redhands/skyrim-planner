@@ -1,0 +1,54 @@
+{{CC Header|Dawnfang & Duskfang}}{{Trail|Dawnfang & Duskfang}}
+This page documents the '''new items''' added by the [[Skyrim:Dawnfang & Duskfang|Dawnfang & Duskfang]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Sellonus's Confession}}
+{{Book Normal|Sellonus's Journal Vol. 1}}
+{{Book Normal|Sellonus's Journal Vol. 2}}
+{{Book Normal|Sellonus's Journal Vol. 3}}
+|}
+
+==Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Cage Bandit's Note}}
+{{Book Normal|Guild Mage's Last Words}}
+{{Book Normal|Guild Mage's Missive}}
+{{Book Normal|Guild Mage's Note}}
+{{Book Normal|Guild Mage's Scribble}}
+{{Book Normal|Guild Mage's Warning}}
+{{Book Normal|Letter From Home}}
+{{Book Normal|Old Smuggler's Note}}
+{{Book Normal|Public Notice}}
+{{Book Normal|Torn Smuggler's Note}}
+{{Book Normal|Verrick's Note}}
+|}
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Dawnfang.png|name=Dawnfang|displayname=[[Skyrim:Dawnfang and Duskfang|Dawnfang]] or [[Skyrim:Dawnfang and Duskfang|Duskfang]]|id=FExxxD63|type=1 Hand Sword|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=16|value=1250|damage=14|enchantment=''In daytime, deals 7 points of fire damage. At night, deals 7 points of frost damage. After killing 12 creatures, absorbs 5 points of health or magicka. <Number> creatures killed.''
+'''Dawnfang''':
+*[[Skyrim:Fire Damage|Fire Damage]], 7 pts
+*[[Skyrim:Absorb Health|Absorb Health]], 5 pts
+'''Duskfang''':
+*[[Skyrim:Frost Damage|Frost Damage]], 7 pts
+*[[Skyrim:Absorb Stamina|Absorb Stamina]], 5 pts}}
+{{Item Data|icon=SR-icon-weapon-Bloodthirst.png|name=Bloodthirst|displayname=[[Skyrim:Bloodthirst|Bloodthirst]]|id=FExxxC92|type=1 Hand Sword|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=16|value=1000|damage=14|enchantment=''Absorb 15 points of health. Increases speed by 7%. Targets take additional bleed damage.''
+*[[Skyrim:Absorb Health|Absorb Health]], 15 pts}}
+|}

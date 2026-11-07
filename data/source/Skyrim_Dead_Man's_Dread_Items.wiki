@@ -1,0 +1,178 @@
+{{CC Header|Dead Man's Dread}}{{Trail|Dead Man's Dread}}
+This page documents the '''new items''' added by the [[Skyrim:Dead Man's Dread|Dead Man's Dread]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+[[File:SR-item-Cyrus' Clothes Male.jpg|thumb|right|A male [[Skyrim:Nord|Nord]] wearing Cyrus' Clothes]]
+[[File:SR-item-Cyrus' Clothes Female.jpg|thumb|right|A female [[Skyrim:Imperial|Imperial]] wearing Cyrus' Clothes]]
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+|-
+|{{AL|C}}|{{icon|c|Boatswain Clothes|60}}
+|{{Anchor|Boatswain Clothes}}<br>{{ID|xx000896|par=1}}
+|1
+|5
+|
+|-
+|{{AL|C}}|{{icon|c|Boatswain Clothes 02|60}}
+|{{Anchor|Boatswain Clothes}}<br>{{ID|xx00088B|par=1}}
+|1
+|5
+|
+|-
+|{{AL|C}}|{{icon|c|Boatswain Clothes 03|60}}
+|{{Anchor|Boatswain Clothes}}<br>{{ID|xx00087F|par=1}}
+|1
+|5
+|
+|-
+|{{AL|C}}|{{icon|c|Boatswain Shoes|60}}
+|{{Anchor|Boatswain Shoes}}<br>{{ID|xx00087B|par=1}}
+|1
+|3
+|
+|-
+|{{AL|C}}|{{icon|c|Boatswain Shoes 02|60}}
+|{{Anchor|Boatswain Shoes}}<br>{{ID|xx00089F|par=1}}
+|1
+|3
+|
+|-
+|{{AL|C}}|{{icon|c|Boatswain Shoes 03|60}}
+|{{Anchor|Boatswain Shoes}}<br>{{ID|xx0008A1|par=1}}
+|1
+|3
+| Although this item is equipped to the feet, it is enchanted as if it were a chest piece. This has advantages, allowing you to wear five pieces of smithing gear, for example. 
+|-
+|{{AL|C}}|{{icon|c|Captain Boots|60}}
+|{{Anchor|Captain Boots}}<br>{{ID|0A0008C5|par=1}}
+|1
+|4
+| Although this item is equipped to the feet, it is enchanted as if it were a chest piece. This has advantages, allowing you to wear five pieces of smithing gear, for example.
+|-
+|{{AL|C}}|{{icon|c|Captain Boots 02|60}}
+|{{Anchor|Captain Boots}}<br>{{ID|xx0008E2|par=1}}
+|1
+|4
+|
+|-
+|{{AL|C}}|{{icon|c|Captain Clothes|60}}
+|{{Anchor|Captain Clothes}}<br>{{ID|xx0008A8|par=1}}
+|1
+|10
+|
+|-
+|{{AL|C}}|{{icon|c|Captain Clothes 02|60}}
+|{{Anchor|Captain Clothes}}<br>{{ID|xx0008AF|par=1}}
+|1
+|10
+|
+|-
+|{{AL|C}}|{{icon|c|Cyrus' Boots|60}}
+|[[SR:Cyrus' Boots|{{Anchor|Cyrus' Boots}}]]<br>{{ID|xx00089B|par=1}}
+|1
+|300
+|
+|-
+|{{AL|C}}|{{icon|c|Cyrus' Clothes|60}}
+|[[SR:Cyrus' Clothes|{{Anchor|Cyrus' Clothes}}]]<br>{{ID|xx00089E|par=1}}
+|1
+|500
+|
+|-
+| {{AL|C}}|{{Icon|c|HammerfellGarb}}
+| {{Anchor|Cyrus' Outfit}}<br>{{ID|xx000807|par=1}}
+|1
+|500
+|
+*Unobtainable.
+*Looks like the regular [[Skyrim:Hammerfell Garb|Hammerfell Garb]].
+|-
+|{{AL|C}}|{{icon|c|Scrub Clothes|60}}
+|{{Anchor|Scrub Clothes}}<br>{{ID|xx0008E7|par=1}}
+|1
+|5
+|
+|-
+|{{AL|C}}|{{icon|c|Scrub Clothes 02|60}}
+|{{Anchor|Scrub Clothes}}<br>{{ID|xx000875|par=1}}
+|1
+|5
+|
+|}
+===Male Nord Gallery===
+<gallery style="text-align: center>
+File:SR-item-Boatswain Clothes Male.jpg|Boatswain clothes
+File:SR-item-Boatswain Clothes Male 02.jpg|Boatswain clothes
+File:SR-item-Boatswain Clothes Male 03.jpg|Boatswain clothes
+File:SR-item-Captain Clothes Male.jpg|Captain clothes
+File:SR-item-Captain Clothes Male 02.jpg|Captain clothes
+File:SR-item-Scrub Clothes Male.jpg|Scrub clothes
+File:SR-item-Scrub Clothes Male 02.jpg|Scrub clothes
+</gallery>
+
+===Female Imperial Gallery===
+<gallery style="text-align: center>
+File:SR-item-Boatswain Clothes Female.jpg|Boatswain clothes
+File:SR-item-Boatswain Clothes Female 02.jpg|Boatswain clothes
+File:SR-item-Boatswain Clothes Female 03.jpg|Boatswain clothes
+File:SR-item-Captain Clothes Female.jpg|Captain clothes
+File:SR-item-Captain Clothes Female 02.jpg|Captain clothes
+File:SR-item-Scrub Clothes Female.jpg|Scrub clothes
+File:SR-item-Scrub Clothes Female 02.jpg|Scrub clothes
+</gallery>
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Captain's Journal}}
+{{Book Normal|The Restless (book)}}
+|}
+
+==Miscellaneous==
+{| class="wikitable sortable"
+!
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Notes
+|-
+{{Item Data
+ |icon=SR-icon-Scroll-03.png
+ |name=Map to Blackbone Isle
+ |displayname=Map to Blackbone Isle
+ |id=xx00080D|weight=4|value=0}}
+ |
+|}
+
+==Notes==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Celeste's Note}}
+{{Book Normal|Forebear's Note}}
+{{Book Normal|Kevon's Note}}
+{{Book Normal|Pirate's Note}}
+|}
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Blackwater Blade.png|name=Blackwater Blade|displayname=[[Skyrim:Blackwater Blade|Blackwater Blade]]|id=xx000A4B|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=14|value=1949|damage=12|enchantment=''Absorb 30 points of stamina.''
+*[[Skyrim:Absorb Stamina|Absorb Stamina]] for 1 sec}}
+|-
+{{Item Data|icon=SR-icon-weapon-Cyrus' Sabre.png|name=Cyrus' Sabre|displayname=[[Skyrim:Cyrus' Sabre|Cyrus' Sabre]]|id=xx000D63|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=6|value=1500|damage=14|Can be crafted after completing the quest [[Skyrim:The Restless]]
+}}
+|}

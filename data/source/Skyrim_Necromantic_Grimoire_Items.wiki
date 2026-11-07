@@ -1,0 +1,192 @@
+{{CC Header|Necromantic Grimoire}}{{Trail|Necromantic Grimoire}}
+This page documents the '''new items''' added by the [[Skyrim:Necromantic Grimoire|Necromantic Grimoire]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Warmth Icon}}
+!Location
+|-
+|{{AL|C}}|{{icon|c|Masked Necromancer Hood}}
+| {{Anchor|Masked Necromancer Hood}}<br>{{ID|FExxx908|par=1}} || 1 || 15 || 18
+|
+*[[Skyrim:Yngvild|Yngvild]] Throne Room
+|-
+|{{AL|C}}|{{icon|c|Necromancer Hood}}
+| {{Anchor|[[Skyrim:Necromancer Hood|Necromancer Hood]]}}<br>{{ID|FExxx8F6|par=1}} || 1 || 10  || 18
+|
+*[[SR:Fellglow Keep|Fellglow Keep]]
+|-
+|{{AL|C}}|{{icon|c|Necromancer Robes}}
+| {{Anchor|Necromancer Robes}}<br>{{ID|FExxx8F7|par=1}} || 1 || 10 || 27
+|
+*[[SR:Fellglow Keep|Fellglow Keep]]
+|-
+|{{AL|C}}|{{icon|c|Runic Necromancer Robes}}
+| {{Anchor|Runic Necromancer Robes}}<br>{{ID|FExxx909|par=1}} || 1 || 25 || 27
+|
+*[[Skyrim:Yngvild|Yngvild]] Throne Room
+|-
+|}
+<gallery>
+File:SR-item-Runic Necromancer Robes Male.jpg|A male [[Skyrim:Nord|Nord]] wearing the runic necromancer robes
+File:SR-item-Runic Necromancer Robes Female.jpg|A female [[Skyrim:Imperial|Imperial]] wearing the runic necromancer robes
+File:SR-item-Necromancer Robes Male 02.jpg|A male Nord wearing the necromancer robes
+File:SR-item-Necromancer Robes Female 02.jpg|A female Imperial wearing the necromancer robes
+</gallery>
+
+===Magic Apparel===
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Warmth Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]]
+!Known Locations
+|-
+|{{AL|C}}|{{icon|c|Masked Necromancer Hood}}
+| {{Anchor|[[Skyrim:Ascendant Necromancer Hood|Ascendant Necromancer Hood]]}}<br>{{ID|FExxx911|par=1}} || 1 || 1124 || 18 || ''Increases your Magicka by 100 points. Health regeneration decreased by 30%.''<br>Note: magicka effect applies only at night (7pm-5am)||
+|-
+|{{AL|C}}|{{icon|c|Runic Necromancer Robes}}
+| {{Anchor|[[Skyrim:Ascendant Necromancer Robes|Ascendant Necromancer Robes]]}}<br>{{ID|FExxx90F|par=1}} || 1 || 1124 || 27 || ''Conjuration spells last 25% longer. Increases summon limit by 1 for lesser conjured or reanimated undead.''||
+|-
+|{{AL|C}}|{{icon|c|Masked Necromancer Hood}}
+| {{Anchor|Elite Necromancer Hood}}<br>{{ID|FExxx910|par=1}} || 1 || 943 || 18 || ''Increases your Magicka by 85 points. Health regeneration decreased by 30%.''<br>Note: magicka effect applies only at night (7pm-5am)||
+*[[Skyrim:Sunderstone Gorge|Sunderstone Gorge]]. If you are above level 46, there is an [[Skyrim:Arch Necromancer|Arch Necromancer]] standing outside the cave who may carry this item.
+|-
+|{{AL|C}}|{{icon|c|Runic Necromancer Robes}}
+| {{Anchor|Elite Necromancer Robes}}<br>{{ID|FExxx90E|par=1}} || 1 || 943 || 27 || ''Conjuration spells last 20% longer. Increases summon limit by 1 for lesser conjured or reanimated undead.''||
+*Sunderstone Gorge. If you are above level 46, there is an Arch Necromancer standing outside the cave who may carry this item.
+|-
+|{{AL|C}}|{{icon|c|Necromancer Hood}}
+| {{Anchor|Necromancer Hood of Eminent Magicka}}<br>{{ID|FExxx914|par=1}} || 1 || 528 || 18 || ''Increases your Magicka by 50 points.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Hood}}
+| {{Anchor|Necromancer Hood of Extreme Magicka}}<br>{{ID|FExxx915|par=1}} || 1 || 643 || 18 || ''Increases your Magicka by 60 points.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Hood}}
+| {{Anchor|Necromancer Hood of Magicka}}<br>{{ID|FExxx912|par=1}} || 1 || 305 || 18 || ''Increases your Magicka by 30 points.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Hood}}
+| {{Anchor|Necromancer Hood of Major Magicka}}<br>{{ID|FExxx913|par=1}} || 1 || 415 || 27 || ''Increases your Magicka by 40 points.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Robes}}
+| {{Anchor|Necromancer Robes of Quickening}}<br>{{ID|FExxx90A|par=1}} || 1 || 60 || 27 || ''Magicka regenerates 75% faster.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Robes}}
+| {{Anchor|Necromancer Robes of Recharging}}<br>{{ID|FExxx90B|par=1}} || 1 || 85 || 27 || ''Magicka regenerates 100% faster.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Robes}}
+| {{Anchor|Necromancer Robes of Replenishing}}<br>{{ID|FExxx90C|par=1}} || 1 || 110 || 27 || ''Magicka regenerates 125% faster.''||
+|-
+|{{AL|C}}|{{icon|c|Necromancer Robes}}
+| {{Anchor|Necromancer Robes of Resurgence}}<br>{{ID|FExxx90D|par=1}} || 1 || 160 || 27 || ''Magicka regenerates 150% faster.''||
+|-
+|}
+
+==Spell Tomes==
+{| class="wikitable sortable"
+!class=unsortable|
+!Title ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable|Description
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Banish Undead}}<br>{{ID|FExxx889|par=1}}
+|1
+|325
+|''Summoned or raised undead up to level 15 are sent back to the grave.''
+* [[Skyrim:Banish Undead|Banish Undead]], 15 pts
+* [[Skyrim:Stagger|Banish/Command Undead Push]], 100 pts
+* [[Skyrim:Damage Health|Banish - Damage Health]], 20 pts for 1 sec
+* [[Skyrim:Damage Health|Banish - Damage Health]], 1000000 pts for 1 sec
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Ancient Deathpriest}}<br>{{ID|FExxx88B|par=1}}
+|1
+|1150
+|''Summons an Ancient Deathpriest for 60 seconds.''
+* [[Skyrim:Conjure Ancient Deathpriest|Conjure Ancient Deathpriest]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Bone Colossus}}<br>{{ID|FExxx891|par=1}}
+|1
+|1150
+|''Summons a Bone Colossus for 60 seconds. While active, conjured skeletons regenerate health and you can summon 2 additional skeletons. Only 1 colossus can be summoned at a time.''
+* [[Skyrim:Conjure Bone Colossus|Conjure Bone Colossus]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Cursed Spectre}}<br>{{ID|FExxx88E|par=1}}
+|1
+|650
+|''Summons a Cursed Spectre for 60 seconds that drains health and magicka from enemies. ''
+* [[Skyrim:Conjure Cursed Spectre|Conjure Cursed Spectre]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Haunting Spirit}}<br>{{ID|FExxx88F|par=1}}
+|1
+|100
+|''Summons a Haunting Spirit for 60 seconds. When killed, the spirit steals 10 points from the skills of its killer and transfers them to the caster for a short time.''
+* [[Skyrim:Conjure Haunting Spirit|Conjure Haunting Spirit]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Skeleton Champion}}<br>{{ID|FExxx893|par=1}}
+|1
+|345
+|''Summons a Skeleton Champion that gains +10% attack damage for each nearby enemy (up to 5) for 60 seconds.''
+* [[Skyrim:Conjure Skeleton Champion|Conjure Skeleton Champion]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Skeleton Marksman}}<br>{{ID|FExxx894|par=1}}
+|1
+|100
+|''Summons a Skeleton Marksman whose arrows weaken foes for 60 seconds.''
+* [[Skyrim:Conjure Skeleton Marksman|Conjure Skeleton Marksman]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Skeleton Minion}}<br>{{ID|FExxx88C|par=1}}
+|1
+|50
+|''Summons a weak Skeleton warrior for 60 seconds.''
+* [[Skyrim:Conjure Skeleton Minion|Conjure Skeleton Minion]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Skeleton Warlock}}<br>{{ID|FExxx892|par=1}}
+|1
+|650
+|''Summons a Skeleton Warlock that wields powerful shock magic for 60 seconds.''
+* [[Skyrim:Conjure Skeleton Warlock|Conjure Skeleton Warlock]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Tomb Guardian}}<br>{{ID|FExxx890|par=1}}
+|1
+|345
+|''Summons a Tomb Guardian for 60 seconds that conjures a Shade when it kills an enemy.''
+* [[Skyrim:Conjure Tomb Guardian|Conjure Tomb Guardian]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Conjure Undying Ghost}}<br>{{ID|FExxx88A|par=1}}
+|1
+|50
+|''Consumes all magicka and summons an Undying Ghost for 60 seconds. The ghost's attributes are equal to twice the amount of magicka consumed (up to 600).''
+* [[Skyrim:Conjure Undying Ghost|Conjure Undying Ghost]], for 60 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Necromancer's Ritual}}<br>{{ID|FExxx88D|par=1}}
+|1
+|295
+|''Regain 30 health and magicka every time a friendly conjured or reanimated minion dies for 120 seconds.''
+* [[Skyrim:Necromancer's Ritual|Necromancer's Ritual]], for 120 secs
+|-
+|{{icon|b|SpellTomeConjuration|60}}
+|{{Anchor|Spell Tome: Soul Split}}<br>{{ID|FExxx896|par=1}}
+|1
+|90
+|''Sacrifice a friendly conjured or reanimated minion to summon 2 Sundered Shades for <dur> seconds.''
+* [[Skyrim:Soul Split|Soul Split]], for 60 secs
+|}

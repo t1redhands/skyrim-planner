@@ -1,0 +1,91 @@
+{{CC Header|Redguard Elite Armaments}}{{Trail|Redguard Elite Armaments}}
+This page documents the '''new items''' added by the [[Skyrim:Redguard Elite Armaments|Redguard Elite Armaments]] [[Skyrim:Creation Club|Creation]].
+
+==Apparel==
+{| class="wikitable sortable striped"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!{{Weight Icon}}
+!{{Value Icon}}
+!{{Armor Rating Icon}}
+![[Skyrim:Enchanting Effects|Enchantment]] / Notes
+|-
+| {{icon|a|Remnant Armor}}
+| {{Anchor|Remnant Agent Armor}}<br>{{ID|FExxx8A2|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 6 || 746 || 34 || ''Increases Light Armor skill by 17 points.''
+|-
+| {{icon|a|Remnant Boots}}
+| {{Anchor|Remnant Agent Boots}}<br>{{ID|FExxx8A3|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1.5 || 1470 || 8 || Sneaking is 25% better.
+|-
+| {{icon|a|Remnant Gloves}}
+| {{Anchor|Remnant Agent Gloves}}<br>{{ID|FExxx8A4|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1.5 || 849 || 9 || One-handed attacks do 25% more damage.
+|-
+| {{icon|a|Remnant Hood}}
+| {{Anchor|Remnant Agent Hood}}<br>{{ID|FExxx8A5|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1 || 734 || 3 || ''Illusion spells cost 17% less to cast.''
+|-
+| {{icon|a|Remnant Armor}}
+| {{Anchor|[[Skyrim:Remnant Armor|Remnant Armor]]}}<br>{{ID|FExxx80B|par=1}}<br>{{ID|FExxx810|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 6 || 430 || 34
+|rowspan=3|
+*The second version is used by NPCs and is unplayable.
+|-
+| {{icon|a|Remnant Boots}}
+| {{Anchor|[[Skyrim:Remnant Boots|Remnant Boots]]}}<br>{{ID|FExxx80A|par=1}}<br>{{ID|FExxx80F|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1.5 || 90 || 8
+|-
+| {{icon|a|Remnant Gloves}}
+| {{Anchor|[[Skyrim:Remnant Gloves|Remnant Gloves]]}}<br>{{ID|FExxx80D|par=1}}<br>{{ID|FExxx811|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1.5 || 90 || 9
+|-
+| {{icon|a|Remnant Hood}}
+| {{Anchor|[[Skyrim:Remnant Hood|Remnant Hood]]}}<br>{{ID|FExxx80C|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Advanced Armors|Advanced Armors]] || 1 || 215 || 3 ||
+|-
+| {{icon|a|Remnant Shield}}
+| {{Anchor|[[Skyrim:Remnant Shield|Remnant Shield]]}}<br>{{ID|FExxx802|par=1}}<br>{{ID|FExxx80E|par=1}} || Light Armor || [[Skyrim:Corundum Ingot|Corundum Ingot]];<br>perk: [[Skyrim:Steel Smithing|Steel Smithing]] || 6 || 340 || 24 ||
+*The second version is used by NPCs and is unplayable.
+|}
+<gallery>
+File:SR-item-Remnant Armor Male.jpg|Male [[Skyrim:Nord|Nord]] wearing Remnant armor
+File:SR-item-Remnant Armor Female.jpg|Female [[Skyrim:Imperial|Imperial]] wearing the Remnant armor
+</gallery>
+
+==Weapons==
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|Weight
+!width=22|Value
+!width=22|Damage
+!Description
+|-
+{{Item Data|icon=SR-icon-weapon-Boneshaver.png|name=Boneshaver|displayname=[[Skyrim:Boneshaver|Boneshaver]]|id=FExxx8D6|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=9.5|value=605|damage=11|enchantment=''Attacks cause 3 points of extra bleeding damage for 4 seconds.''}}
+{{Item Data|icon=SR-icon-weapon-Remnant Scimitar.png|name=Remnant Scimitar|displayname=[[Skyrim:Remnant Scimitar|Remnant Scimitar]]|id=Fexxx805, FExxx818|type=1 Hand Sword|temp=Corundum Ingot|perk=Steel Smithing|weight=10.5|value=325|damage=12|notes=
+*The second version is used by NPCs and is unplayable.}}
+{{Item Data|icon=SR-icon-weapon-Remnant Scimitar Fire.png|name=Remnant Scimitar of Fire|id=FexxxE44|type=1 Hand Sword|temp=Steel Ingot|perk=Steel Smithing|weight=10.5|value=759|damage=12|enchantment=''Burns the target for 20 points. Targets on fire take extra damage.''}}
+|}
+
+==Books==
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|The Alik'r}}
+{{Book Normal|Azadi's Note}}
+{{Book Normal|Fijeh's Instructions}}
+{{Book Normal|Fijeh's Letter to (Player)}}
+{{Book Normal|Josla's Note}}
+{{Book Normal|Sirayar's Note}}
+{{Book Normal|The Ebon Arm}}
+|}
+
+==Keys==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_03.png
+ |name=Remnant Supply Chest Key
+ |id=xx0A4323|weight=0|value=0}}
+|}

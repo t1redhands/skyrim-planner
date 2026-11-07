@@ -1,0 +1,198 @@
+{{CC Header|Survival Mode}}{{Trail|Survival Mode}}
+This page documents the '''new items''' added by the [[Skyrim:Survival Mode|Survival Mode]] [[Skyrim:Creation Club|Creation]].
+
+==Food==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|[[Skyrim:Hunger|Hunger]]{{Creation Club|Survival Mode}}
+!Effect(s)
+!width=11|Heal /{{Weight Icon}}
+!width=11|Heal /{{Value Icon}}
+!width=11|Stam /{{Weight Icon}}
+!width=11|Stam /{{Value Icon}}
+!class="unsortable"|Ingredients
+|-
+|[[File:SR-icon-food-Hot Apple Cabbage Stew.png|48px]]
+|{{Anchor|Hot Apple Cabbage Stew}}<br>{{ID|FExxx9E6|par=1}}
+|0.5
+|8
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|1.3
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Red Apple|Red Apple]]<br>[[Skyrim:Cabbage|Cabbage]]
+|-
+|[[File:SR-icon-food-Hot Beef Stew.png|48px]]
+|{{Anchor|Hot Beef Stew}}<br>{{ID|FExxx9E7|par=1}}
+|0.5
+|8
+|Large
+|
+* [[Skyrim:Restore Stamina|Restore Stamina]], 25 pts for 720 secs
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|0
+|0
+|50
+|3.1
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Raw Beef|Raw Beef]]<br>[[Skyrim:Carrot|Carrot]]<br>[[Skyrim:Garlic|Garlic]]
+|-
+|[[File:SR-icon-food-Hot Cabbage Potato Soup.png|48px]]
+|{{Anchor|Hot Cabbage Potato Soup}}<br>{{ID|FExxx9E0|par=1}}
+|0.5
+|5
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|2
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Cabbage|Cabbage]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Potato|Potato]]
+|-
+|[[File:SR-icon-food-Hot Cabbage Soup.png|48px]]
+|{{Anchor|Hot Cabbage Soup}}<br>{{ID|FExxx9E1|par=1}}
+|0.5
+|5
+| -380
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|2
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Cabbage|Cabbage]]
+|-
+|[[File:SR-icon-food-Hot Clam Chowder.png|48px]]
+|{{Anchor|Hot Clam Chowder}}<br>{{ID|FExxx9EA|par=1}}
+|0.5
+|5
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|2
+|0
+|0
+| [[Skyrim:Butter|Butter]]<br>[[Skyrim:Jug of Milk|Jug of Milk]]<br>[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Clam Meat|Clam Meat]]<br>[[Skyrim:Potato|Potato]]
+|-
+|[[File:SR-icon-food-Hot Elsweyr Fondue.png|48px]]
+|{{Anchor|Hot Elsweyr Fondue}}<br>{{ID|FExxxA08|par=1}}
+|0.5
+|8
+|Large
+|
+* [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 25 pts for 720 secs
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|0
+|0
+|0
+|0
+| [[Skyrim:Ale|Ale]]<br>[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Eidar Cheese Wheel|Eidar Cheese Wheel]]<br>[[Skyrim:Moon Sugar|Moon Sugar]]
+|-
+|[[File:SR-icon-food-Hot Horker and Ash Yam Stew.png|48px]]
+|{{Anchor|Hot Horker and Ash Yam Stew}}<br>{{ID|FExxx9E5|par=1}}
+|0.5
+|9
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 16 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|32
+|1.8
+|0
+|0
+| [[Skyrim:Ash Yam|Ash Yam]]<br>[[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Horker Meat|Horker Meat]]<br>[[Skyrim:Garlic|Garlic]]
+|-
+|[[File:SR-icon-food-Hot Horker Stew.png|48px]]
+|{{Anchor|Hot Horker Stew}}<br>{{ID|FExxx9E8|par=1}}
+|0.5
+|8
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 15 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|30
+|1.9
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Horker Meat|Horker Meat]]<br>[[Skyrim:Tomato|Tomato]]<br>[[Skyrim:Garlic|Garlic]]<br>[[Skyrim:Lavender|Lavender]]
+|-
+|[[File:SR-icon-food-Hot Potato Soup.png|48px]]
+|{{Anchor|Hot Potato Soup}}<br>{{ID|FExxx9E2|par=1}}
+|0.5
+|5
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|2
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Potato|Potato]]
+|-
+|[[File:SR-icon-food-Hot Tomato Soup.png|48px]]
+|{{Anchor|Hot Tomato Soup}}<br>{{ID|FExxx9E3|par=1}}
+|0.5
+|5
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 10 pts
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|20
+|2
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Tomato|Tomato]]<br>[[Skyrim:Garlic|Garlic]]
+|-
+|[[File:SR-icon-food-Hot Vegetable Soup.png|48px]]
+|{{Anchor|Hot Vegetable Soup}}<br>{{ID|FExxx9E4|par=1}}
+|0.5
+|5
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 secs
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|0
+|0
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Cabbage|Cabbage]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Tomato|Tomato]]<br>[[Skyrim:Potato|Potato]]
+|-
+|[[File:SR-icon-food-Hot Venison Stew.png|48px]]
+|{{Anchor|Hot Venison Stew}}<br>{{ID|FExxx9E9|par=1}}
+|0.5
+|8
+|Large
+|
+* [[Skyrim:Restore Health|Restore Health]], 1 pt for 720 secs
+* [[Skyrim:Fortify Warmth|Fortify Warmth]], 25 pts for 300 secs
+* [[Skyrim:Restore Cold|Restore Cold]], 200 pts
+|0
+|0
+|0
+|0
+| [[Skyrim:Fire Salts|Fire Salts]]<br>[[Skyrim:Leek|Leek]]<br>[[Skyrim:Potato|Potato]]<br>[[Skyrim:Venison|Venison]]
+|}

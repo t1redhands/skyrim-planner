@@ -1,0 +1,199 @@
+{{CC Header|Rare Curios}}{{Trail|Rare Curios}}
+This page documents the '''new items''' added by the [[Skyrim:Rare Curios|Rare Curios]] [[Skyrim:Creation Club|Creation]]. Most can only be obtained from [[SR:Khajiit Traders|Khajiit caravan traders]].
+
+==Ammunition==
+All of these items are crafted at a [[Skyrim:Forge|forge]] with [[Skyrim:Firewood|firewood]] and either the appropriate metal [[Skyrim:Ingots|ingot]] or the noted item.
+
+===Arrows===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+! Notes
+! Speed !! Gravity
+{{Item Data
+ |icon=SR-icon-weapon-Corkbulb Arrows.png
+ |name=Corkbulb Arrow
+ |id=FExxx82F|weight=0|value=6|damage=10
+ |notes=Can be forged using [[Skyrim:Corkbulb Root|corkbulb root]] or purchased from [[Skyrim:Khajiit Traders|Khajiit caravans]]<br>Have a 25% chance to [[Skyrim:Paralyze (effect)|paralyze]] the target for 4 seconds.}}
+| 3600
+| 0.35
+|}
+
+===Bolts===
+Unlike steel and Dwarven bolts, these can be forged anywhere if you have joined the [[Skyrim:Dawnguard (faction)|Dawnguard]]. They can also be purchased from [[SR:Sorine Jurard|Sorine Jurard]] after the quest [[SR:A New Order|A New Order]].
+All bolts can still only be crafted by being a member of the Dawnguard faction and speaking with Sorine after A New Order.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+! Notes
+! Speed !! Gravity
+{{Item Data
+ |icon=SR-icon-weapon-Bonemold Bolt.png
+ |name=Bonemold Bolt
+ |id=FExxx840|weight=0|value=3|damage=15
+ |notes=Can be forged using [[Skyrim:Bonemeal|bonemeal]] and the [[Skyrim:Steel Smithing|Steel Smithing]] perk.}}
+|rowspan=5| 5400
+|rowspan=5| 0.35
+|-
+{{Item Data
+ |icon=SR-icon-weapon-Corkbulb Bolt.png
+ |name=Corkbulb Bolt
+ |id=FExxx832|weight=0|value=6|damage=10
+ |notes=Can be forged using [[Skyrim:Corkbulb Root|corkbulb root]] or purchased from [[Skyrim:Khajiit Traders|Khajiit caravans]]<br>Have a 25% chance to [[Skyrim:Paralyze (effect)|paralyze]] the target for 4 seconds.}}
+|-
+{{Item Data
+ |icon=SR-icon-weapon-Iron Bolt.png
+ |name=Iron Bolt
+ |id=FExxx83A|weight=0|value=1|damage=8
+ |notes=Can be forged at any level, without the need of any perks.}}
+|-
+{{Item Data
+ |icon=SR-icon-weapon-Orcish Bolt.png
+ |name=Orcish Bolt
+ |id=FExxx841|weight=0|value=3|damage=12
+ |notes=Can be forged using the [[Skyrim:Orcish Smithing|Orcish Smithing]] perk.}}
+|-
+{{Item Data
+ |icon=SR-icon-weapon-Silver Bolt.png
+ |name=Silver Bolt
+ |id=FExxx83F|weight=0|value=2|damage=10
+ |notes=Can be forged at any level, without the need of any perks.}}
+|}
+
+==Food==
+Both of these items are created by [[Skyrim:Cooking|cooking]] them in a pot. Chokeberries can be purchased from Babette.
+Placing a poisoned apple in an NPC's inventory and waiting results in the NPC's death. Waiting time varies and occasionally poison fumes become visible. This does not require the [[Skyrim:Poisoned|Poisoned]] Pickpocketing perk.
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Effect(s)
+!class="unsortable"|Ingredients
+!class="unsortable"|Notes
+|-
+|[[File:SR-icon-food-Poisoned Green Apple.png|48px]]
+|{{Anchor|Poisoned Green Apple}}<br>{{ID|FExxx849|par=1}}
+|0.1
+|3
+|
+* [[Skyrim:Lingering Damage Health|Apple Poisoning]], 4 pts for 60 secs
+|[[Skyrim:Chokeberry|Chokeberry]]<br>[[Skyrim:Green Apple|Green Apple]]
+|
+* Silently harm enemies by placing poisoned apples in their pockets.
+|-
+|[[File:SR-icon-food-Poisoned Red Apple.png|48px]]
+|{{Anchor|Poisoned Red Apple}}<br>{{ID|FExxxD98|par=1}}
+|0.1
+|3
+|
+* [[Skyrim:Lingering Damage Health|Apple Poisoning]], 4 pts for 60 secs
+|[[Skyrim:Chokeberry|Chokeberry]]<br>[[Skyrim:Red Apple|Red Apple]]
+|
+* Silently harm enemies by placing poisoned apples in their pockets.
+|}
+
+==Ingredients==
+{{#define:noharvest|1}}
+Most of the effects on these ingredients have either increased magnitude or increased duration compared to the same effects found on common ingredients, making them more valuable in alchemy.
+{| class="wikitable striped2_1"
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+|-
+{{Ingredient Entry|ing=Alocasia Fruit|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Ambrosia|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Aster Bloom Core|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Bittergreen Petals|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Blind Watcher's Eye|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Blister Pod Cap|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Bog Beacon|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Bungler's Bane|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Chokeberry|description=Can be purchased from Khajiit caravans or [[Skyrim:Babette|Babette]].}}
+{{Ingredient Entry|ing=Chokeweed|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Coda Flower|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Comberry|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Congealed Putrescence|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Corkbulb Root|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Daedra Silk|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Daedra Venin|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Daedroth Teeth|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Dreugh Wax|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Elytra Ichor|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Fire Petal|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Flame Stalk|id=FExxx82A|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Fungus Stalk|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Gnarl Bark|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Gold Kanet|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Hackle-Lo Leaf|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Heart of Order|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Hunger Tongue|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Hydnum Azure Giant Spore|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Hypha Facia|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Imp Gall|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Kagouti Hide|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Kresh Fiber|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Lichor|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Luminous Russula|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Marshmerrow|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Minotaur Horn|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Ogre's Teeth|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Red Kelp Gas Bladder|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Redwort Flower|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Roobrush|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Saltrice|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Scalon Fin|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Scrib Jelly|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Scrib Jerky|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Sload Soap|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Stoneflower Petals|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Void Essence|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Watcher's Eye|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Wisp Stalk Caps|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Withering Moon|description=Can be purchased from Khajiit caravans.}}
+{{Ingredient Entry|ing=Worm's Head Cap|description=Can be purchased from Khajiit caravans.}}
+|}
+
+==Miscellaneous Items==
+In addition to the Khajiit caravans, Varla and Welkynd Stones may be found in most boss chests.
+{| class="wikitable sortable"
+!class=unsortable|
+!width=120|Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class="unsortable"|Notes
+{{Item Data
+ |icon=SR-icon-misc-Flawed Varla Stone.png
+ |name=Flawed Varla Stone
+ |id=FExxx801|weight=0.3|value=1000
+ |notes=Sources:
+* Can be purchased from [[Skyrim:Khajiit Traders|Khajiit caravans]]
+Uses:
+* Same as a [[Skyrim:Common Soul Gem|common soul gem]], but reusable like [[Skyrim:Azura's Star|Azura's Star]]
+Bugs:
+{{Bug|Flawed Varla Stones suffer from stacking problems, where a stack functions as though it were a single stone, thereby losing the souls trapped in the rest of the stack.  This can make them unreliable or even non-functional until dropped and picked up. |confirmed=1}}
+}}
+{{Item Data
+ |icon=SR-icon-misc-Welkynd Stone.png
+ |name=Welkynd Stone
+ |id=FExxx800|weight=1|value=50
+ |notes=Sources:
+* Can be purchased from [[Skyrim:Khajiit Traders|Khajiit caravans]]
+Uses:
+* Completely restore magicka
+}}
+|}
+
+==Notes==
+* New alchemical effects include [[Skyrim:Cure Poison|Cure Poison]], [[Skyrim:Light|Light]], [[Skyrim:Night Eye (effect)|Night Eye]], and [[Skyrim:Spell Absorption|Spell Absorption]]. All of these effects have appeared in the game in some form before, but not through ingredients.
+*The Welkynd Stones added by this Creation function identically to the [[Skyrim:The Cause Items#Welkynd Stone|version]] added by [[Skyrim:The Cause|The Cause]].

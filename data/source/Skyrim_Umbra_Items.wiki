@@ -1,0 +1,44 @@
+{{CC Header|Umbra}}{{Trail|Umbra}}
+This page documents the '''new items''' added by the [[Skyrim:Umbra|Umbra]] [[Skyrim:Creation Club|Creation]].
+
+==Books==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+|-
+{{Book Normal|Treasure Hunter's Journal}}
+{{Book Normal|Vigilant's Report}}
+|}
+
+==Keys==
+
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+|-
+{{Item Data
+ |icon=SR-icon-key-Key_01.png
+ |name=Champion's Rest Passage Key
+ |displayname=[[Skyrim:Champion's Rest Passage Key|Champion's Rest Passage Key]]
+ |id=xx015B3B|weight=0|value=0}}
+|}
+
+==Weapons==
+
+{| class="wikitable sortable" 	
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!class="unsortable"|Enchantment/Quest/Notes
+|-
+{{Item Data|icon=SR-icon-weapon-Umbra.png|name=Umbra|displayname=[[Skyrim:Umbra (item)|Umbra]]|id=xx000D62|type=2 Hand Greatsword|temp=Ebony Ingot|perk=Arcane Blacksmith|weight=23|value=2500|damage=24|enchantment=''If target dies within 20 seconds, fills a soul gem. Absorb 25 points of health. Absorb 25 points of stamina.''
+*[[Skyrim:Soul Trap (effect)|Soul Trap]] for 20 secs
+*[[Skyrim:Absorb Health|Absorb Health]] 25 pts
+*[[Skyrim:Absorb Stamina|Absorb Stamina]] 25 pts}}
+|}
