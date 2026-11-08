@@ -434,51 +434,69 @@ footer p { margin: 4px 0; max-width: 80ch; }
   :root, :root[data-theme="dark"], :root:not([data-theme="light"]) { color-scheme: light; }
   html, body { background: #fff !important; }
   body > *:not(#printSheet) { display: none !important; }
-  #printSheet { display: block; color: #000; font-family: var(--body); font-size: 8.6pt; line-height: 1.32; }
-  .ps h1 { font-family: var(--display); font-size: 17pt; margin: 0; letter-spacing: .02em; }
-  .ps h2 { font-family: var(--display); font-size: 10.5pt; margin: 9pt 0 3pt; padding-bottom: 1.5pt; border-bottom: 1.2pt solid #5a4214; color: #3d2c0b; break-after: avoid; }
-  .ps-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 2pt solid #5a4214; padding-bottom: 4pt; }
-  .ps-head .sub { font-size: 9.5pt; }
-  .ps-head .meta { font-size: 7.5pt; color: #555; text-align: right; }
-  .ps-ident { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2pt 14pt; margin: 5pt 0 0; }
-  .ps-ident div { break-inside: avoid; }
-  .ps dt { font-size: 7pt; text-transform: uppercase; letter-spacing: .06em; color: #555; }
-  .ps dd { margin: 0 0 2pt; }
-  .ps table { width: 100%; border-collapse: collapse; font-size: inherit; }
-  .ps th, .ps td { border: .5pt solid #aaa; padding: 2pt 4pt; vertical-align: top; text-align: left; white-space: normal; }
-  .ps thead th { background: #eee6d4; font-size: 8pt; text-transform: none; letter-spacing: 0; color: #000; position: static; }
-  .ps-ms th[scope=row] { width: 13%; font-weight: 700; background: #f6f6f6; }
-  .ps-ms td { width: 29%; }
-  .ps-ms tr { break-inside: avoid; }
-  .ps .none { color: #888; }
-  .ps .ok { color: #1d5a30; } .ps .bad { color: #8f2a22; font-weight: 700; }
-  .ps-two { display: grid; grid-template-columns: minmax(0, 36%) minmax(0, 1fr); gap: 12pt; align-items: start; }
-  .ps-skills td, .ps-skills th { text-align: center; padding: 1.5pt 3pt; }
-  .ps-skills td:first-child, .ps-skills th:first-child { text-align: left; }
-  .ps-skills b { font-weight: 700; }
-  .ps-skills .up { background: #eee6d4; font-weight: 700; }
-  .ps-note { font-size: 7.5pt; color: #444; margin: 3pt 0 0; }
-  .ps-perks p, .ps-move { margin: 0 0 3pt; }
-  .ps-rp { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  .ps-perks strong { color: #3d2c0b; }
-  .ps-shop ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 14pt; }
-  .ps-shop li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
-  .ps-q h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
-  .ps-q ol { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; }
-  .ps-q li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
-  .ps-q li .muted { color: #555; }
-  .ps-lists { break-before: page; }
-  .ps-lists > div:first-child h2 { margin-top: 0; }
-  .ps-coll h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
-  .ps-coll h3 .muted { font-family: var(--body); font-weight: 400; font-size: 7.5pt; color: #555; }
-  .ps-coll ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 12pt; }
-  .ps-coll ul.many { columns: 4; font-size: 7.6pt; }
-  .ps-coll li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1pt; }
-  .ps-coll li .muted { color: #555; }
-  .ps-coll li.grp { padding-left: 0; text-indent: 0; font-weight: 700; color: #3d2c0b; margin-top: 2pt; break-after: avoid; }
-  .ps-q li.done { color: #666; text-decoration: line-through; }
-  .ps a { color: inherit; text-decoration: none; }
+  #printSheet { display: block !important; }
 }
+/* Build sheet. These rules sit outside @media print so page one can be measured off-screen and tightened to fit (see fitPrint). */
+#printSheet { color: #000; background: #fff; font-family: var(--body); font-size: 8.6pt; line-height: 1.32; }
+.ps h1 { font-family: var(--display); font-size: 17pt; margin: 0; letter-spacing: .02em; }
+.ps h2 { font-family: var(--display); font-size: 10.5pt; margin: 9pt 0 3pt; padding-bottom: 1.5pt; border-bottom: 1.2pt solid #5a4214; color: #3d2c0b; break-after: avoid; }
+.ps-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 12pt; border-bottom: 2pt solid #5a4214; padding-bottom: 4pt; }
+.ps-head .sub { font-size: 9.5pt; }
+.ps-head .meta { font-size: 7.5pt; color: #555; text-align: right; }
+.ps-ident { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2pt 14pt; margin: 5pt 0 0; }
+.ps-ident div { break-inside: avoid; }
+.ps dt { font-size: 7pt; text-transform: uppercase; letter-spacing: .06em; color: #555; }
+.ps dd { margin: 0 0 2pt; }
+.ps table { width: 100%; border-collapse: collapse; font-size: inherit; }
+.ps th, .ps td { border: .5pt solid #aaa; padding: 2pt 4pt; vertical-align: top; text-align: left; white-space: normal; }
+.ps thead th { background: #eee6d4; font-size: 8pt; text-transform: none; letter-spacing: 0; color: #000; position: static; }
+.ps-ms th[scope=row] { width: 13%; font-weight: 700; background: #f6f6f6; }
+.ps-ms td { width: 29%; }
+.ps-ms tr { break-inside: avoid; }
+.ps .none { color: #888; }
+.ps .ok { color: #1d5a30; } .ps .bad { color: #8f2a22; font-weight: 700; }
+.ps-two { display: grid; grid-template-columns: minmax(0, 36%) minmax(0, 1fr); gap: 12pt; align-items: start; }
+.ps-skills td, .ps-skills th { text-align: center; padding: 1.5pt 3pt; }
+.ps-skills td:first-child, .ps-skills th:first-child { text-align: left; }
+.ps-skills b { font-weight: 700; }
+.ps-skills .up { background: #eee6d4; font-weight: 700; }
+.ps-note { font-size: 7.5pt; color: #444; margin: 3pt 0 0; }
+.ps-perks p, .ps-move { margin: 0 0 3pt; }
+.ps-cols { columns: 2; column-gap: 14pt; }
+.ps-moves .ps-move { break-inside: avoid; }
+.ps-notes p { margin: 0 0 4pt; text-align: left; }
+.ps-notes-page { break-before: page; }
+.ps-notes-page h2 { margin-top: 0; }
+.ps-notes-page .ps-cols { font-size: 9.2pt; line-height: 1.42; column-gap: 18pt; }
+.ps-perks strong { color: #3d2c0b; }
+.ps-favs h3 { font-size: 9pt; margin: 4pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
+.ps-favs ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 14pt; }
+.ps-favs li { break-inside: avoid; margin-bottom: 1.5pt; }
+.ps-favs li .muted { color: #555; }
+.ps-shop ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 14pt; }
+.ps-shop li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
+.ps-q h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
+.ps-q ol { list-style: none; margin: 0; padding: 0; columns: 3; column-gap: 12pt; }
+.ps-q li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1.5pt; }
+.ps-q li .muted { color: #555; }
+.ps-lists { break-before: page; }
+.ps-lists > div:first-child h2 { margin-top: 0; }
+.ps-coll h3 { font-size: 9pt; margin: 6pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
+.ps-coll h3 .muted { font-family: var(--body); font-weight: 400; font-size: 7.5pt; color: #555; }
+.ps-coll ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 12pt; }
+.ps-coll ul.many { columns: 4; font-size: 7.6pt; }
+.ps-coll li { break-inside: avoid; padding-left: 11pt; text-indent: -11pt; margin-bottom: 1pt; }
+.ps-coll li .muted { color: #555; }
+.ps-coll li.grp { padding-left: 0; text-indent: 0; font-weight: 700; color: #3d2c0b; margin-top: 2pt; break-after: avoid; }
+.ps-q li.done { color: #666; text-decoration: line-through; }
+.ps a { color: inherit; text-decoration: none; }
+#printSheet.fit1 { font-size: 7.9pt; line-height: 1.28; }
+#printSheet.fit1 .ps h2 { margin: 6pt 0 2pt; }
+#printSheet.fit1 .ps th, #printSheet.fit1 .ps td { padding: 1.5pt 3pt; }
+#printSheet.fit1 .ps-ident { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1pt 12pt; }
+#printSheet.fit2 { font-size: 7.3pt; line-height: 1.24; }
+#printSheet.fit2 .ps-ms td { font-size: 7pt; }
+#printSheet.fit2 .ps h1 { font-size: 15pt; }
 </style>
 
 <a class="skip" href="#main">Skip to the current step</a>
@@ -981,6 +999,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <button class="btn ghost" id="copyBtn">Copy build code</button>
           <button class="btn ghost" id="printBtn">Print build sheet</button>
         </div>
+        <p class="muted" style="margin:0;font-size:.85rem">The build sheet puts the build on the first page, then the shopping list, quests and collections, with long role-play notes on a page of their own. For a cleaner printout, turn off "Headers and footers" in the print dialog.</p>
         <div class="status" id="saveStatus" role="status"></div>
         <label class="label" for="codeOut">Build code <span class="muted" id="codeLen" style="text-transform:none;letter-spacing:0"></span></label>
         <textarea class="code" id="codeOut" readonly></textarea>
@@ -3101,8 +3120,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   const firstSentence = t => (t || '').split(/(?<=\.)\s/)[0];
   // ---------- Printable build sheet ----------
+  // measure page one off-screen at letter width and tighten the type until it fits on one page
+  function fitPrint() {
+    const ps = $('printSheet'), b = ps.querySelector('.ps-build'); if (!b) return;
+    ps.classList.remove('fit1', 'fit2');
+    ps.style.cssText = 'display:block;position:absolute;left:-10000px;top:0;width:193.9mm;visibility:hidden';
+    const max = 256.4 / 25.4 * 96;   // letter height minus the 11mm and 12mm margins, in CSS pixels
+    for (const k of ['fit1', 'fit2']) { if (b.offsetHeight <= max) break; ps.classList.add(k); }
+    ps.style.cssText = '';
+  }
   function renderPrint() {
     const r = RC[state.race], list = (a, none = 'None') => a.length ? a.map(esc).join(', ') : `<span class="none">${none}</span>`;
+    const listCap = a => a.length > 12 ? `${a.slice(0, 12).map(esc).join(', ')} <span class="none">and ${a.length - 12} more (see the Loadout step)</span>` : list(a);   // keep page one readable at a glance
     const newAt = (obj, all, m, name = x => x.name) => all.filter(x => obj[x.id] === m).map(name);
     const { plan, order } = buildQuestPlan();
     const lvl = MS.map(m => skillLevels(state.picks, state.race, m));
@@ -3114,21 +3143,20 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const used = SKILLS.filter(s => lvl.some(l => l[s.id] > startOf(state.race, s.id)));
     const unused = SKILLS.filter(s => !used.includes(s));
     const qn = t => order.filter(id => plan[id].tier === t);
-    $('printSheet').innerHTML = `<div class="ps">
+    const longNotes = state.notes.trim().length > 900;   // long backstories get their own page after the checklists
+    $('printSheet').innerHTML = `<div class="ps"><div class="ps-build">
       <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${state.gender ? (state.gender === 'male' ? 'Male ' : 'Female ') : ''}${r.name} ${ST[state.style].name}${state.creature ? ` · ${CREATURE[state.creature.kind].name} by level ${state.creature.m}` : ''} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}${state.survival ? ' · Survival Mode' : ''}</div></div>
         <div class="meta">Skyrim Character Planner<br>${new Date().toLocaleDateString()}</div></div>
       <dl class="ps-ident">
         <div><dt>Followers</dt><dd>${list(Object.keys(state.followers).map(id => FOL[id].name))}</dd></div>
-        ${state.potions.length ? `<div><dt>Favorite potions</dt><dd>${list(state.potions.map(x => `${potionName(x.effects)} (${x.ingredients.map(i => ING[i].name).join(' + ')})`))}</dd></div>` : ''}
-        ${Object.keys(state.food).length ? `<div><dt>Favorite food</dt><dd>${list(RECIPES.filter(r => state.food[r.id]).map(r => r.name))}</dd></div>` : ''}
         <div><dt>Spouse</dt><dd>${state.spouse ? `${esc(SPO[state.spouse.id].name)}, by level ${state.spouse.m}` : '<span class="none">None</span>'}</dd></div>
         <div><dt>Homes</dt><dd>${list(Object.keys(state.homes).map(id => HOM[id].name))}</dd></div>
         ${Object.keys(state.pets).length ? `<div><dt>Pets</dt><dd>${list(Object.keys(state.pets).map(id => PET[id].name))}</dd></div>` : ''}
         ${scrollsOn ? `<div><dt>Scroll use</dt><dd>${USE[state.scrollUse]}; spider scrolls ${SPUSE[state.spiderUse].toLowerCase()}</dd></div><div><dt>Favorite scrolls</dt><dd>${list([...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)])}</dd></div>` : ''}
         <div><dt>Quests</dt><dd>${qn(0).length} expedite, ${qn(1).length} priority, ${qn(2).length} selected</dd></div>
-        ${BUFFS.some(b => state.buffs[b.id]?.tier === 'selected') ? `<div><dt>Buffs, no deadline</dt><dd>${list(BUFFS.filter(b => state.buffs[b.id]?.tier === 'selected').map(b => b.name))}</dd></div>` : ''}
-        ${SPELLS.some(s => state.spells[s.id]?.tier === 'selected') ? `<div><dt>Spells, no deadline</dt><dd>${list(SPELLS.filter(s => state.spells[s.id]?.tier === 'selected').map(s => s.name))}</dd></div>` : ''}
-        ${SHOUTS.some(s => state.shouts[s.id]?.tier === 'selected') ? `<div><dt>Shouts, no deadline</dt><dd>${list(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'selected').map(shoutLabel))}</dd></div>` : ''}
+        ${BUFFS.some(b => state.buffs[b.id]?.tier === 'selected') ? `<div><dt>Buffs, no deadline</dt><dd>${listCap(BUFFS.filter(b => state.buffs[b.id]?.tier === 'selected').map(b => b.name))}</dd></div>` : ''}
+        ${SPELLS.some(s => state.spells[s.id]?.tier === 'selected') ? `<div><dt>Spells, no deadline</dt><dd>${listCap(SPELLS.filter(s => state.spells[s.id]?.tier === 'selected').map(s => s.name))}</dd></div>` : ''}
+        ${SHOUTS.some(s => state.shouts[s.id]?.tier === 'selected') ? `<div><dt>Shouts, no deadline</dt><dd>${listCap(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'selected').map(shoutLabel))}</dd></div>` : ''}
       </dl>
       <h2>Milestones</h2>
       <table class="ps-ms"><thead><tr><th></th>${MS.map((m, k) => `<th>By level ${m} <span style="font-weight:400">(${STRETCH[m].toLowerCase()})</span></th>`).join('')}</tr></thead><tbody>
@@ -3140,10 +3168,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${row('New buffs', MS.map(m => list(BUFFS.filter(b => state.buffs[b.id]?.tier === 'expedite' && state.buffs[b.id].m === m).map(b => b.name))))}
         ${row('New gear', MS.map(m => list(GEAR.filter(g => state.gear[g.id] === m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')))))}
       </tbody></table>
-      ${state.moves.length || state.notes.trim() ? `<div class="ps-two ps-rp">
-        <div><h2>Signature moves</h2>${state.moves.length ? state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}${mv.desc?.trim() ? `<br><em>${esc(mv.desc.trim())}</em>` : ''}</p>`).join('') : '<p class="none">None</p>'}</div>
-        <div><h2>Role-play notes</h2>${state.notes.trim() ? state.notes.trim().split(/\n{2,}/).map(pp => `<p class="ps-move">${esc(pp).replace(/\n/g, '<br>')}</p>`).join('') : '<p class="none">None</p>'}</div>
-      </div>` : ''}
       <div class="ps-two">
         <div><h2>Skills</h2>
           <table class="ps-skills"><thead><tr><th>Skill</th><th>Start</th>${MS.map(m => `<th>${m}</th>`).join('')}</tr></thead><tbody>
@@ -3153,7 +3177,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <div class="ps-perks"><h2>Perks by milestone</h2>
           ${MS.map((m, k) => { const a = perksAddedAt(m); return `<p><strong>${k === 0 ? 'By level 20' : `Levels ${MS[k - 1] + 1}–${m}`}:</strong> ${a.length ? a.map(x => `${esc(x.text)} <span class="muted">(${x.skill})</span>`).join(', ') : '<span class="none">none</span>'}</p>`; }).join('')}</div>
       </div>
+      ${state.moves.length ? `<div class="ps-moves"><h2>Signature moves</h2><div class="ps-cols">${state.moves.map(mv => `<p class="ps-move"><strong>${esc(mv.name || 'Unnamed move')}:</strong> ${esc(mv.steps.filter(s => s.text.trim()).map(s => s.text.trim()).join(' → ') || '—')}${mv.desc?.trim() ? `<br><em>${esc(mv.desc.trim())}</em>` : ''}</p>`).join('')}</div></div>` : ''}
+      ${state.notes.trim() && !longNotes ? `<div class="ps-notes"><h2>Role-play notes</h2><div class="ps-cols">${state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('')}</div></div>` : ''}
+      </div>
       <div class="ps-lists">
+      ${(() => { const pots = state.potions.map(x => `<li><strong>${esc(potionName(x.effects))}</strong> <span class="muted">· ${esc(x.ingredients.map(i => ING[i].name).join(' + '))}</span></li>`), food = RECIPES.filter(r => state.food[r.id]).map(r => `<li><strong>${esc(r.name)}</strong>${r.ingredients?.length ? ` <span class="muted">· ${esc(r.ingredients.join(', '))}</span>` : ''}</li>`);
+        return pots.length || food.length ? `<div class="ps-favs"><h2>Favorite potions and food</h2>${pots.length ? `<h3>Potions (${pots.length})</h3><ul>${pots.join('')}</ul>` : ''}${food.length ? `<h3>Food (${food.length})</h3><ul>${food.join('')}</ul>` : ''}</div>` : ''; })()}
       ${(() => { const sl = shoppingList(); return sl.length ? `<div class="ps-shop"><h2>Shopping list</h2><p class="ps-note" style="margin-top:0">Ingredients for your favorite potions and food.${sl.some(r => r.plant) ? ' ✿ can be grown in a Hearthfire garden.' : ''}</p><ul>${sl.map(r => `<li>☐ <strong>${esc(r.name)}</strong>${r.plant ? ' ✿' : ''} <span class="muted">· for ${esc(r.uses.join(', '))}${r.ing?.source && firstSentence(r.ing.source).length > 12 ? ` · ${esc(firstSentence(r.ing.source).slice(0, 90))}` : ''}</span></li>`).join('')}</ul></div>` : ''; })()}
       <div class="ps-q"><h2>Quest checklist</h2>
         ${order.length ? TIERS.map((tier, t) => { const ids = qn(t); if (!ids.length) return '';
@@ -3170,7 +3199,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
             const sub = it.ref ? (CL[it.ref] ? `see ${CL[it.ref].name}` : '') : many && groups.length > 1 ? '' : [q, placeOnly ? '' : where].filter(Boolean).join(' · ');
             return `<li>${got ? '☑' : '☐'} ${esc(label)}${sub ? ` <span class="muted">· ${esc(sub)}</span>` : ''}</li>`; }).join('') : ''; }).join('')}</ul>`; }).join('')}</div>`; })()}
       </div>
+      ${longNotes ? `<div class="ps-notes ps-notes-page"><h2>Role-play notes: ${esc(state.name)}</h2><div class="ps-cols">${state.notes.trim().split(/\n{2,}/).map(pp => `<p>${esc(pp).replace(/\n/g, '<br>')}</p>`).join('')}</div></div>` : ''}
     </div>`;
+    fitPrint();
   }
   $('printBtn').addEventListener('click', () => { renderPrint(); window.print(); });
   window.addEventListener('beforeprint', () => { renderSummary(); renderPrint(); });   // printing from any step prints a current build sheet
