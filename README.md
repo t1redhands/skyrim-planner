@@ -32,6 +32,8 @@ When the character is ready, **Play mode** in the header turns the planner into 
 
 Share links and build codes carry your progress (level, perks and attributes taken, quests done, items found, the in-game date) but not the journal.
 
+**Survival Mode** can be switched on in the Identity step. The planner then uses Survival's carry weight (150 to start; the Steed Stone and Extra Pockets add 50) and adds notes wherever it changes things: race bonuses, healing, warmth, food, potions, shrines, travel and leveling. Most items, quests, perks, people and places link to their UESP page.
+
 Warnings marked ⚠ flag anything that can't happen as planned, such as gear that isn't available by its milestone or a shout whose words come from a quest your side skips.
 
 ## Saving and sharing builds

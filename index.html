@@ -302,6 +302,13 @@ ul.shop li { break-inside: avoid; margin-bottom: 3px; }
 .subtabs button { flex: 0 0 auto; border: 1px solid transparent; background: none; padding: 6px 12px; border-radius: 6px; cursor: pointer; color: var(--ink-2); display: flex; gap: 6px; align-items: baseline; }
 .subtabs button[aria-pressed="true"] { color: var(--ink); border-color: var(--rule); background: var(--panel); }
 .ps-sec { display: grid; gap: 20px; }
+a.uesp { font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 4px; padding: 1px 5px; margin-left: 6px; color: var(--ink-2); text-decoration: none; vertical-align: 2px; white-space: nowrap; }
+a.uesp:hover, a.uesp:focus-visible { color: var(--accent); border-color: var(--accent); }
+.svbox { border: 1px solid var(--magicka); border-left-width: 4px; border-radius: 8px; padding: 12px 16px; background: var(--panel); display: grid; gap: 6px; font-size: .92rem; }
+.svbox[hidden] { display: none; }
+.svbox h3 { margin: 0; font-size: 1rem; }
+.svbox ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+.svn { font-size: .85rem; color: var(--magicka); }
 .ps-sec[hidden] { display: none; }
 .subtabs .cnt { font-family: var(--mono); font-size: .78rem; color: var(--accent); }
 .sub { display: grid; gap: 20px; }
@@ -517,12 +524,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="fold-body">
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
-          <li><strong>Identity.</strong> Name, race, alignment, class, and whether the character becomes a werewolf or vampire. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
+          <li><strong>Identity.</strong> Name, gender, race, alignment, class, whether the character becomes a werewolf or vampire, and the sides and factions they'll join. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
           <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need.</li>
           <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
           <li><strong>Collections.</strong> Checklists for things to collect, such as skill books, Daedric artifacts and Dragon Priest masks. Collections you take on add their quests to the plan.</li>
-          <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Choose your Civil War and Dawnguard sides here, browse every quest by questline, place or add-on, and tick quests off as you play.</li>
+          <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Browse every quest by questline, place or add-on, and tick quests off as you play.</li>
           <li><strong>Summary.</strong> The whole build on one page, ready to print, plus a build code to save or share.</li>
         </ol>
         <p class="muted" style="margin:0">Red warnings marked ⚠ mean something can't happen as planned, such as gear you can't get by that level or a quest your chosen side locks out. Your build saves automatically in this browser; use the build code on the Summary step to move it to another device.</p>
@@ -533,6 +540,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <label class="label" for="buildName">Build name</label>
         <input type="text" id="buildName" maxlength="60" autocomplete="off">
       </div>
+      <div class="field"><span class="label">Gender</span>
+        <div class="styles" id="gender" role="radiogroup" aria-label="Gender"><button class="chip" data-v="female">Female</button><button class="chip" data-v="male">Male</button><button class="chip" data-v="">Not set</button></div></div>
     </div>
     <div class="box">
       <div class="row" style="justify-content:space-between">
@@ -572,6 +581,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div id="creatureRec"></div>
     </div>
     <div class="box">
+      <h3>Survival Mode</h3>
+      <p class="muted" style="margin:0;font-size:.9rem">The Creation Club's Survival Mode (included with the Anniversary Edition) adds hunger, fatigue and cold, and changes carry weight, healing, travel and leveling. Turning it on here adds notes throughout the planner on what changes. <a href="https://en.uesp.net/wiki/Skyrim:Survival_Mode" target="_blank" rel="noopener">Survival Mode on UESP</a></p>
+      <div class="styles" id="survival" role="radiogroup" aria-label="Survival Mode"><button class="chip" data-v="off">Off</button><button class="chip" data-v="on">On</button></div>
+      <div id="survivalList" hidden></div>
+    </div>
+    <div class="box">
       <h3>Sides and allegiances</h3>
       <p class="muted" style="margin:0;font-size:.9rem">The wars you'll fight on one side of, and the factions you'll join. Quests for a side you don't take are left out of the quest plan, and each faction you join puts its whole questline into the plan as Priority.</p>
       <div class="grid-2">
@@ -602,6 +617,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <button data-ps="perks" aria-pressed="true">Perks</button>
       <button data-ps="attrs" aria-pressed="false">Attributes</button>
     </nav>
+    <div class="svbox" id="sv-skills" hidden></div>
     <div class="ps-sec" data-ps="perks">
     <div class="intro">
       <h2>Perk plan at levels 20, 40 and 60</h2>
@@ -648,6 +664,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   <!-- 4. Loadout -->
   <section class="panel" id="p-loadout" role="tabpanel" aria-labelledby="tab-loadout" hidden>
+    <div class="svbox" id="sv-loadout" hidden></div>
     <nav class="subtabs" id="subtabs" aria-label="Loadout sections">
       <button data-sub="stones" aria-pressed="true">Stones</button>
       <button data-sub="shouts" aria-pressed="false">Shouts</button>
@@ -900,6 +917,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <h2>Quest plan</h2>
       <p class="muted">Your quests in three tiers: Expedite for what the build needs, Priority for role-play that suits the character, and Selected for everything else you want to do. Prerequisites are pulled in automatically and listed first. Tick quests off as you finish them.</p>
     </div>
+    <div class="svbox" id="sv-quests" hidden></div>
     <div class="grid-2">
       <div class="box">
         <h3>Sides and allegiances</h3>
@@ -1059,6 +1077,38 @@ footer p { margin: 4px 0; max-width: 80ch; }
     { id:'woodElf', name:'Wood Elf', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:true }
   ];
   const RC = Object.fromEntries(RACES.map(r => [r.id, r]));
+  // links out to UESP: a page title (such as "Skyrim:Chillrend") or a full URL
+  const uespUrl = t => /^https?:/.test(t) ? t : 'https://en.uesp.net/wiki/' + encodeURI(String(t).replace(/ /g, '_')).replace(/\?/g, '%3F');
+  const ux = (t, label = '') => t ? `<a class="uesp" href="${esc(uespUrl(t))}" target="_blank" rel="noopener" aria-label="${esc(label || String(t).replace(/^.*wiki\/|^Skyrim:/, '').replace(/_/g, ' '))} on UESP">UESP ↗</a>` : '';
+  const sx = name => ux('Skyrim:' + name, name);
+  // ---------- Survival Mode (UESP: Skyrim:Survival Mode) ----------
+  const SURV_URL = 'https://en.uesp.net/wiki/Skyrim:Survival_Mode';
+  const SURV_RACE = { argonian: '25% weakness to cold; can eat raw food without food poisoning.', khajiit: 'Resists cold (+15 Warmth); can eat raw food without food poisoning.', nord: 'Resists cold (+25 Warmth).',
+    orc: 'Resists hunger and fatigue by 15%; resists cold (+10 Warmth).', darkElf: 'Resists fatigue by 25%.', highElf: 'Resists fatigue by 25%.', woodElf: 'Resists fatigue by 25%.' };
+  const SURV = {
+    identity: ['Hunger lowers your Stamina, fatigue lowers your Magicka and weakens potions, and cold lowers your Health and slows you. Cooked food, sleep in a bed and fire or warm gear fix them.',
+      'Health no longer regenerates on its own: heal with Restoration, food, potions or gear.', 'Fast travel is off; carriages, boats and horses still work.',
+      'Carry weight starts at 150 instead of 300. Arrows and lockpicks weigh 0.1 each.', 'You level up by sleeping in a bed.',
+      'Most of it starts once you finish Unbound.'],
+    skills: ['Carry weight starts at 150 instead of 300; Extra Pockets and the Steed Stone add 50 each instead of 100.', 'Health no longer regenerates on its own, so healing (Restoration, Alchemy) matters more. Health regeneration from gear or the Lady Stone still works, at a reduced rate.',
+      'Level-ups and perk points come when you sleep in a bed.', 'Unhindered (Light Armor) and Conditioning (Heavy Armor) make worn armor of that type weightless, which helps with the lower carry weight.'],
+    loadout: ['Warmth on armor and clothing slows the cold: up to 54 for body pieces, 29 for helmets and 24 for gauntlets and boots. A torch adds 50.', 'The Steed Stone adds 50 carry weight instead of 100.',
+      'Food eases hunger as well as healing; cooked food does more than raw, and raw meat can cause food poisoning. Hot soups (made with Fire Salts) also warm you.', 'Fatigue weakens every potion, skill potions included.',
+      'Shrines ask for a gold offering, and their blessings are weaker if you are Drained or worse.', 'Arrows and lockpicks weigh 0.1 each.'],
+    quests: ['Fast travel is off, so allow time to travel between quests: carriages, boats and horses still work, and walled cities can still be reached by dragon.', 'Most Survival features start once you finish Unbound.'],
+    creature: { werewolf: 'Werewolves are no longer immune to disease. Feeding eases hunger, and in beast form you can\'t die of cold.', vampire: 'Feeding eases hunger, and as a Vampire Lord you can\'t die of cold.' },
+  };
+  const svn = t => state.survival ? `<div class="svn">Survival Mode: ${esc(t)}</div>` : '';
+  function renderSurvival() {
+    for (const k of ['identity', 'skills', 'loadout', 'quests']) {
+      const el = $('sv-' + k); if (!el) continue;
+      el.hidden = !state.survival || k === 'identity';
+      el.innerHTML = `<h3>Survival Mode is on ${ux(SURV_URL, 'Survival Mode')}</h3><ul>${SURV[k].map(t => `<li>${esc(t)}</li>`).join('')}</ul>`;
+    }
+    $('survival').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === (state.survival ? 'on' : 'off'))));
+    $('survivalList').innerHTML = `<ul>${SURV.identity.map(t => `<li>${esc(t)}</li>`).join('')}${SURV_RACE[state.race] ? `<li><strong>${RC[state.race].name}:</strong> ${esc(SURV_RACE[state.race])}</li>` : ''}</ul>`;
+    $('survivalList').hidden = !state.survival;
+  }
 
   const ALIGN_ROWS = ['Lawful', 'Neutral', 'Chaotic'];
   const ALIGN_COLS = ['Good', 'Neutral', 'Evil'];
@@ -1353,6 +1403,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
       id: String(e.id || Math.random().toString(36).slice(2)).slice(0, 24), k: J_KINDS[e.k] ? e.k : 'note', at: typeof e.at === 'string' ? e.at.slice(0, 30) : new Date().toISOString(),
       g: okDate(e.g) || { ...START_DATE }, title: String(e.title || '').slice(0, 160), text: String(e.text || '').slice(0, 20000), ref: e.ref ? String(e.ref).slice(0, 80) : undefined }));
     out.has = { gear: favs(s.has?.gear, GR), stone: favs(s.has?.stone, STN) };
+    out.gender = ['male', 'female'].includes(s.gender) ? s.gender : '';
+    out.survival = !!s.survival;
     out.creature = s.creature && ['werewolf', 'vampire'].includes(s.creature.kind) && MS.includes(s.creature.m) ? { kind: s.creature.kind, m: s.creature.m } : null;
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
@@ -1407,7 +1459,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 
   // ---------- Header & steps ----------
   function renderHeader() {
-    $('buildTag').innerHTML = `<strong>${esc(state.name)}</strong> · ${RC[state.race].name} ${ST[state.style].name}`;
+    $('buildTag').innerHTML = `<strong>${esc(state.name)}</strong> · ${state.gender ? (state.gender === 'male' ? 'Male ' : 'Female ') : ''}${RC[state.race].name} ${ST[state.style].name}`;
     $('exampleNote').hidden = !state.example;
   }
   document.querySelectorAll('nav.steps button').forEach(b => b.addEventListener('click', () => showStep(b.dataset.step)));
@@ -1464,6 +1516,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // ---------- Identity ----------
   function renderIdentity() {
     renderSides();
+    $('gender').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === (state.gender || ''))));
     $('buildName').value = state.name;
     if (document.activeElement !== $('rpNotes')) $('rpNotes').value = state.notes;
     renderCreature();
@@ -1471,7 +1524,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('races').innerHTML = RACES.map(r => `<button class="race" role="radio" aria-checked="${r.id === state.race}" data-race="${r.id}"><span class="rn">${r.name}</span><span class="rb">+10 ${SK[r.p10].name}</span></button>`).join('');
     const r = RC[state.race];
     $('raceDetail').innerHTML = `<div><span class="label">Starting bonuses</span> +10 ${SK[r.p10].name}; +5 ${r.p5.map(id => SK[id].name).join(', ')}${r.magicka > 100 ? `; Magicka starts at ${r.magicka}` : ''}</div>
-      <div><span class="label">Power</span> ${esc(r.power)}</div>`;
+      <div><span class="label">Power</span> ${esc(r.power)}</div>${state.survival && SURV_RACE[r.id] ? `<div class="svn">Survival Mode: ${esc(SURV_RACE[r.id])}</div>` : ''}<div>${sx(r.name)}</div>`;
     let g = '<span></span>' + ALIGN_COLS.map(c => `<span class="ax">${c}</span>`).join('');
     ALIGN_ROWS.forEach(row => {
       g += `<span class="ax row">${row}</span>`;
@@ -1484,6 +1537,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('styles').innerHTML = STYLES.map(s => `<button class="chip" role="radio" aria-checked="${s.id === state.style}" data-style="${s.id}">${s.name}</button>`).join('');
     $('styleDesc').innerHTML = esc(ST[state.style].desc + ' Focus: ' + Object.keys(ST[state.style].w).map(id => SK[id].name).join(', ') + '.') + ' <span class="muted" style="font-size:.85rem">Class descriptions adapted from <a href="https://theskyforge.ning.com/groups/tes-character-building/forum/character-build-classes-of-the-elder-scrolls" target="_blank" rel="noopener">The Skyforge</a>.</span>';
   }
+  $('survival').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.survival = b.dataset.v === 'on'; touch(); renderSurvival(); renderIdentity(); renderAttributes(); $('survival').querySelector(`[data-v="${b.dataset.v}"]`)?.focus(); });
+  $('gender').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.gender = b.dataset.v; touch(); renderIdentity(); $('gender').querySelector(`[data-v="${b.dataset.v}"]`)?.focus(); });
   $('buildName').addEventListener('input', e => { state.name = e.target.value.trim() || 'Unnamed build'; touch(); });
   $('rpNotes').addEventListener('input', e => { state.notes = e.target.value.slice(0, 6000); touch(); $('rpCount').textContent = state.notes.length > 5000 ? `${6000 - state.notes.length} characters left` : ''; });
   $('races').addEventListener('click', e => { const b = e.target.closest('[data-race]'); if (!b) return; state.race = b.dataset.race; touch(); renderIdentity(); });
@@ -1533,7 +1588,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const first = state.picks[rankKey(p.id, 0)];
       const pre = p.prereq.map(id => PERKS[id].name).join(' or ');
       const warn = first != null && prereqMissing(state.picks, p, first) ? `<div class="pw">Needs ${esc(pre)} by level ${first}.</div>` : '';
-      html += `<div class="perk${first != null ? ' taken' : ''}"><div><div class="pn">${esc(p.name)}</div><div class="pe">${esc(p.effect)}</div><div class="pr">${pre ? `Requires ${esc(pre)}` : 'Starting perk'}</div>${warn}</div><div class="ranks">`;
+      html += `<div class="perk${first != null ? ' taken' : ''}"><div><div class="pn">${esc(p.name)}${sx(p.name)}</div><div class="pe">${esc(p.effect)}</div>${p.id === 'pickpocket.extra-pockets' ? svn('adds 50 carry weight instead of 100.') : (p.id === 'lightArmor.unhindered' || p.id === 'heavyArmor.conditioning') ? svn('worn armor of this type weighs nothing, which helps with the lower carry weight.') : ''}<div class="pr">${pre ? `Requires ${esc(pre)}` : 'Starting perk'}</div>${warn}</div><div class="ranks">`;
       p.ranks.forEach((req, i) => {
         const v = state.picks[rankKey(p.id, i)];
         const lbl = p.ranks.length > 1 ? `Rank ${i + 1} · ${req}` : `Skill ${req}`;
@@ -1586,8 +1641,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function totals(m) {
     const pts = [0, 0, 0];
     BANDS.forEach(([bm]) => { if (bm <= m) state.bands[bm].forEach((v, i) => pts[i] += v); });
-    const steed = STN[state.stones[m]]?.carryWeight || 0;
-    return { pts, h: 100 + 10 * pts[0], m: RC[state.race].magicka + 10 * pts[1], s: 100 + 10 * pts[2], carry: 300 + 5 * pts[2] + steed, steed };
+    const steed = (STN[state.stones[m]]?.carryWeight || 0) / (state.survival ? 2 : 1);   // Survival Mode halves the Steed Stone and the starting carry weight
+    return { pts, h: 100 + 10 * pts[0], m: RC[state.race].magicka + 10 * pts[1], s: 100 + 10 * pts[2], carry: (state.survival ? 150 : 300) + 5 * pts[2] + steed, steed };
   }
   function renderAttributes() {
     $('bands').innerHTML = BANDS.map(([m, from, to, n]) => {
@@ -1603,7 +1658,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const t = totals(m), sum = t.h + t.m + t.s;
       return `<div class="ratio-row"><span class="label">Level ${m}</span>
         <div class="ratio-bar" role="img" aria-label="Level ${m}: Health ${t.h}, Magicka ${t.m}, Stamina ${t.s}"><span class="h" style="width:${t.h / sum * 100}%"></span><span class="m" style="width:${t.m / sum * 100}%"></span><span class="s" style="width:${t.s / sum * 100}%"></span></div>
-        <div class="ratio-nums"><span><span class="dot h"></span> Health <strong class="num">${t.h}</strong></span><span><span class="dot m"></span> Magicka <strong class="num">${t.m}</strong></span><span><span class="dot s"></span> Stamina <strong class="num">${t.s}</strong></span><span class="muted">Carry weight <span class="num">${t.carry}</span>${t.steed ? ' with the Steed Stone' : ''}</span></div></div>`;
+        <div class="ratio-nums"><span><span class="dot h"></span> Health <strong class="num">${t.h}</strong></span><span><span class="dot m"></span> Magicka <strong class="num">${t.m}</strong></span><span><span class="dot s"></span> Stamina <strong class="num">${t.s}</strong></span><span class="muted">Carry weight <span class="num">${t.carry}</span>${t.steed ? ' with the Steed Stone' : ''}${state.survival ? ' (Survival Mode)' : ''}</span></div></div>`;
     }).join('');
   }
   $('bands').addEventListener('click', e => {
@@ -1637,7 +1692,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }).join('');
     $('stoneList').innerHTML = ['skills', 'ability', 'power'].map(kind => fold(`stone-${kind}`, kindLabel[kind], `<div class="stones">${STONES.filter(s => s.kind === kind).map(s => {
       const used = MS.filter(m => state.stones[m] === s.id).map(m => STRETCH[m]);
-      return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}</span><span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
+      return `<div class="stone${used.length ? ' used' : ''}"><span class="sn">${esc(s.name)}${sx(s.name)}</span>${s.id === 'steed' ? svn('adds 50 carry weight instead of 100.') : s.id === 'lady' ? svn('Health only regenerates from effects like this one, at a reduced rate.') : ''}<span class="se">${esc(s.effect)}</span><span class="sl">${esc(s.location)}</span>${used.length ? `<span class="su">Active: ${used.join(', ')}</span>` : ''}</div>`;
     }).join('')}</div>`, { count: STONES.filter(s => s.kind === kind).length, chosen: STONES.filter(s => s.kind === kind && MS.some(m => state.stones[m] === s.id)).length })).join('');
     renderShouts();
     renderSpells();
@@ -1696,7 +1751,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         return `<li><label class="check"><input type="checkbox" data-shsrc="${s.id}" data-i="${x.i}" ${x.ok && used ? 'checked' : ''} ${x.ok ? '' : 'disabled'}> <span>${label}${!x.ok ? ` <span class="tagd warn">Left out</span> <span class="muted">${esc(x.why)}</span>` : inPlan ? ' <span class="tagd need">In quest plan</span>' : ''}</span></label></li>`;
       }).join('');
       return `<div class="perk${v ? ' taken' : ''}"><div>
-          <div class="pn">${esc(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc]}</span>` : ''}${s.questOnly ? '<span class="tagd q">Quest only</span>' : ''}</div>
+          <div class="pn">${esc(s.name)}${sx(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc]}</span>` : ''}${s.questOnly ? '<span class="tagd q">Quest only</span>' : ''}</div>
           <div class="pe">${esc(s.effect)}</div>
           <div class="words">${s.words.map((w, k) => `<b${v && k >= v.words ? ' class="muted"' : ''}>${esc(w.word)}</b> <span class="muted">${esc(w.meaning)}</span>`).join(' · ')}</div>
           <div class="pr">${v ? 'Word sources (untick any you won\'t use):' : 'Words at:'}</div><ul class="sh-src">${srcList}</ul>
@@ -1781,7 +1836,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       const v = state.gear[g.id], issues = gearIssues(g, v);
       const how = g.set === 'daedric' ? `${esc(g.prince)} · Quest: ${esc(g.quest)}` : (g.quest ? `Quest: ${esc(g.quest)}` : '');
       return `<div class="perk${v != null ? ' taken' : ''}"><div>
-          <div class="pn">${esc(g.name)}<span class="tagd">${g.set === 'specialty' ? esc(g.faction) : SET_TAG[g.set] || ''}</span>${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
+          <div class="pn">${esc(g.name)}${ux(g.source, g.name)}<span class="tagd">${g.set === 'specialty' ? esc(g.faction) : SET_TAG[g.set] || ''}</span>${g.dlc && g.dlc !== 'base' ? `<span class="tagd">${DLC[g.dlc] || g.dlc}</span>` : ''}${planned(g.skill) ? '<span class="tagd fit">Fits your build</span>' : ''}${g.minLevel > 1 ? `<span class="tagd">Level ${g.minLevel}+</span>` : ''}</div>
           <div class="pe">${esc(g.effect)}${g.note ? ' ' + esc(g.note) : ''}</div>
           ${g.where ? `<div class="pr">${esc(g.where)}</div>` : ''}
           <div class="pr">${esc(g.type)}${how ? ' · ' + how : ''}${g.choiceGroup ? ` · <span class="muted">${esc(GEARDATA.choiceGroups[g.choiceGroup])}</span>` : ''}${g.source ? ` · <a href="${g.source}" target="_blank" rel="noopener">UESP</a>` : ''}</div>
@@ -1964,7 +2019,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const item = (label, added, btn) => `<li>${label}${added ? ' <span class="tagd fit">In your plan</span>' : btn}</li>`;
     $('creatureRec').innerHTML = `<p style="margin:8px 0 0">${esc(C.how)}${becomeQuest(kind) && pickAlt([becomeQuest(kind)]) ? ` <strong>${esc(becomeQuest(kind))}</strong> goes into your quest plan, needed by level ${c.m}.` : kind === 'vampire' ? ' Choose a Dawnguard side on the Quest plan step to plan the quest route; otherwise it comes from catching the disease.' : ''}</p>
       <ul class="cr-facts">${C.facts.map(f => `<li>${esc(f)}</li>`).join('')}</ul>
-      ${creatureNotes().map(t => `<div class="pw">${esc(t)}</div>`).join('')}
+      ${creatureNotes().map(t => `<div class="pw">${esc(t)}</div>`).join('')}${svn(SURV.creature[kind])}
       <div class="cr-grid">
         <div><h4>Quests</h4><ul>${(() => { const { plan } = buildQuestPlan(); return [...new Set([becomeQuest(kind), ...C.quests].filter(Boolean))].map(n => { const q = findQuest(n); if (!q) return ''; const blocked = sideBlock(q);
           return blocked ? `<li class="muted">${esc(n)} <span class="tagd warn">Left out</span> <small>${esc(blocked)}</small></li>` : item(esc(n), plan[q.id], ` <button class="btn quiet" data-cr-quest="${q.id}">Add to Priority</button>`); }).join(''); })()}</ul></div>
@@ -2009,7 +2064,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const row = b => {
       const v = state.buffs[b.id], cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m, issues = buffIssues(b);
       return `<div class="perk${v ? ' taken' : ''}"><div>
-        <div class="pn">${esc(b.name)}<span class="tagd">${esc(b.kind)}</span>${b.dlc !== 'base' ? `<span class="tagd">${DLC[b.dlc] || b.dlc}</span>` : ''}${b.quests.length ? '<span class="tagd q">Quest</span>' : ''}</div>
+        <div class="pn">${esc(b.name)}${sx(b.name)}<span class="tagd">${esc(b.kind)}</span>${b.dlc !== 'base' ? `<span class="tagd">${DLC[b.dlc] || b.dlc}</span>` : ''}${b.quests.length ? '<span class="tagd q">Quest</span>' : ''}</div>
         <div class="pe">${esc(b.effect)}</div>
         ${b.notes ? `<div class="pr">${esc(b.notes)}</div>` : ''}
         ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
@@ -2070,7 +2125,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const row = s => {
       const v = state.spells[s.id], cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m, issues = spellIssues(s);
       return `<div class="perk${v ? ' taken' : ''}"><div>
-        <div class="pn">${esc(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc] || s.dlc}</span>` : ''}${s.quest ? '<span class="tagd q">Quest</span>' : ''}${planned(s.school) ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
+        <div class="pn">${esc(s.name)}${sx(s.name)}${s.dlc !== 'base' ? `<span class="tagd">${DLC[s.dlc] || s.dlc}</span>` : ''}${s.quest ? '<span class="tagd q">Quest</span>' : ''}${planned(s.school) ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
         <div class="pe">${esc(s.effect)}</div>
         <div class="pr">${esc(s.tier)} ${esc(SK[s.school].name)} · ${esc(s.cost)} Magicka${s.quest ? ` · Quest: ${esc(s.quest)}` : ''}</div>
         ${s.where.length ? `<div class="pr">${esc(s.where.slice(0, 2).join(' · '))}</div>` : ''}
@@ -2222,7 +2277,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('ingCount').textContent = INGR.length;
     $('ingTally').textContent = `${INGR.length} ingredients: ${by('base')} in the base game, ${by('dawnguard')} from Dawnguard, ${by('hearthfire')} from Hearthfire, ${by('dragonborn')} from Dragonborn and ${by('cc')} from Creation Club. That's every ingredient on UESP's list except seven one-off quest items, such as Jarrin Root. Choose an effect to start the potion maker with it.`;
     const list = INGR.filter(i => (!$('ingPlant').checked || i.plant)).filter(i => !q || i.name.toLowerCase().includes(q) || i.effects.some(e => EFF[e].name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
-    $('ingList').innerHTML = list.length ? list.map(i => `<div class="perk"><div><div class="pn">${ingName(i.id)}</div>
+    $('ingList').innerHTML = list.length ? list.map(i => `<div class="perk"><div><div class="pn">${ingName(i.id)}${sx(i.name.replace(/ \(Creation Club\)$/, ''))}</div>
         <div class="effs">${i.effects.map(e => `<button class="eff${EFF[e].positive ? '' : ' bad'}" data-brew="${e}" data-ing="${i.id}" aria-label="Brew ${esc(EFF[e].name)} with ${esc(i.name)}">${esc(EFF[e].name)}</button>`).join('')}</div>
         ${i.source ? `<div class="pr">${esc(i.source)}</div>` : ''}</div></div>`).join('') : `<p class="muted">Nothing matches "${esc(q)}".</p>`;
   }
@@ -2261,7 +2316,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const list = RECIPES.filter(r => (!$('foodPlant').checked || r.ingredients.some(canPlant)) && (foodFilter === 'all' || (foodFilter === 'wanted' ? state.food[r.id] != null : r.method === foodFilter))
       && (!q || [r.name, ...r.effects, ...r.ingredients].some(t => t.toLowerCase().includes(q))));
     const foodRow = r => `<div class="perk${state.food[r.id] != null ? ' taken' : ''}"><div>
-        <div class="pn">${esc(r.name)}${r.method !== 'cook' ? `<span class="tagd">${r.method === 'bake' ? 'Hearthfire' : 'Survival'}</span>` : ''}</div>
+        <div class="pn">${esc(r.name)}${sx(r.name)}${r.method !== 'cook' ? `<span class="tagd">${r.method === 'bake' ? 'Hearthfire' : 'Survival'}</span>` : ''}</div>
         <div class="pe">${esc(r.effects.join('; '))}</div>
         <div class="pr">${esc(METHOD[r.method])} · ${r.ingredients.map(n => esc(n) + (canPlant(n) ? ' <span class="plant" aria-label="can be planted">✿</span>' : '')).join(', ')}</div></div>
         <div class="ranks"><label class="check fav"><input type="checkbox" id="fd-${r.id}" data-food="${r.id}" ${state.food[r.id] ? 'checked' : ''}> Favorite</label></div></div>`;
@@ -2507,7 +2562,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function renderSuggestions(plan) {
     const inPlan = new Set(Object.keys(plan));
     const list = suggestQuests(inPlan);
-    $('questSuggest').innerHTML = list.length ? list.map(({ q, why }) => `<div class="perk"><div><div class="pn">${esc(q.name)}<span class="tagd">${esc(q.line)}</span>${q.reqLevel ? `<span class="tagd">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : ''}${questConflict(q) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+    $('questSuggest').innerHTML = list.length ? list.map(({ q, why }) => `<div class="perk"><div><div class="pn">${esc(q.name)}${ux(q.page, q.name)}<span class="tagd">${esc(q.line)}</span>${q.reqLevel ? `<span class="tagd">Level ${q.reqLevel}+</span>` : q.suggLevel ? `<span class="tagd">Suggested ${q.suggLevel}</span>` : ''}${questConflict(q) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
         <div class="why">${esc(why)}</div>${q.description ? `<div class="pe">${esc(q.description)}</div>` : ''}</div>
         <div class="ranks"><button class="btn ghost" data-prio="${q.id}" aria-label="Add ${esc(q.name)} to Priority">Add to Priority</button></div></div>`).join('')
       : `<p class="muted" style="margin:12px 0">${ALL_RANKS.some(r => takenBy(state.picks, r.key, 60)) ? 'Every quest that suits your perks is already in the plan.' : 'Plan some perks first and suggestions will appear here.'}</p>`;
@@ -2598,7 +2653,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const hits = all.slice(0, qbShown);
     $('qbCount').textContent = `${all.length} quest${all.length === 1 ? '' : 's'}${all.length > hits.length ? `, showing ${hits.length}` : ''}.`;
     $('qbMore').hidden = all.length <= hits.length;
-    $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.line)}</span>${x.dlc !== 'base' && !x.line.includes(DLC[x.dlc] || '~') ? `<span class="tagd">${DLC[x.dlc] || x.dlc}</span>` : ''}${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : x.suggLevel ? `<span class="tagd">Suggested ${x.suggLevel}</span>` : ''}${plan[x.id] && !state.quests[x.id] ? '<span class="tagd need">In plan</span>' : ''}${state.done[x.id] ? '<span class="tagd good">Done</span>' : ''}${questConflict(x) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+    $('questResults').innerHTML = hits.length ? hits.map(x => `<div class="perk${state.quests[x.id] != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}${ux(x.page, x.name)}<span class="tagd">${esc(x.line)}</span>${x.dlc !== 'base' && !x.line.includes(DLC[x.dlc] || '~') ? `<span class="tagd">${DLC[x.dlc] || x.dlc}</span>` : ''}${x.reqLevel ? `<span class="tagd">Level ${x.reqLevel}+</span>` : x.suggLevel ? `<span class="tagd">Suggested ${x.suggLevel}</span>` : ''}${plan[x.id] && !state.quests[x.id] ? '<span class="tagd need">In plan</span>' : ''}${state.done[x.id] ? '<span class="tagd good">Done</span>' : ''}${questConflict(x) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
         <div class="pe">${esc(x.description)}</div>
         <div class="pr">${[x.giver ? `Start: ${esc(x.giver)}` : '', x.loc ? esc(x.loc) : '', x.prev.length ? `After ${esc(x.prev.join(x.prevAny ? ' or ' : ', '))}` : ''].filter(Boolean).join(' · ')}</div>
         ${sideBlock(x) ? `<div class="pw">${esc(sideBlock(x))}</div>` : ''}</div>
@@ -2630,7 +2685,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       if (play ? !want : (collOnlyWanted && !want)) return '';
       if (collHideFound && got) return '';
       const id = `${play ? 'pf' : 'cw'}-${c.id}-${it.id}`;
-      return `<li class="coll-item${got ? ' done' : ''}"><input type="checkbox" id="${id}" ${play ? `data-found="${key}"${got ? ' checked' : ''}` : `data-want="${key}"${want ? ' checked' : ''}`}><div><label for="${id}"><strong>${esc(it.name)}</strong></label>${q ? `<span class="tagd q">${esc(q)}</span>` : ''}${!play && got ? '<span class="tagd good">Found</span>' : ''}${g && state.gear[g.id] != null ? '<span class="tagd fit">In your gear plan</span>' : ''}
+      return `<li class="coll-item${got ? ' done' : ''}"><input type="checkbox" id="${id}" ${play ? `data-found="${key}"${got ? ' checked' : ''}` : `data-want="${key}"${want ? ' checked' : ''}`}><div><label for="${id}"><strong>${esc(it.name)}</strong></label>${ux(g ? g.source : ['stones-of-barenziah', 'east-empire-pendants'].includes(c.id) ? c.source : 'Skyrim:' + it.name, it.name)}${q ? `<span class="tagd q">${esc(q)}</span>` : ''}${!play && got ? '<span class="tagd good">Found</span>' : ''}${g && state.gear[g.id] != null ? '<span class="tagd fit">In your gear plan</span>' : ''}
         ${it.where ? `<div class="pr">${esc(it.where)}</div>` : ''}</div></li>`;
     };
     const groups = [...new Set(c.items.map(i => i.group || ''))];
@@ -2761,7 +2816,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return '';
   };
   const folRow = (f, extra = '') => `<div class="perk${state.followers[f.id] != null ? ' taken' : ''}"><div>
-      <div class="pn">${esc(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${f.trainer ? `<span class="tagd">Trains ${esc(f.trainer)}</span>` : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+      <div class="pn">${esc(f.name)}${sx(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${f.trainer ? `<span class="tagd">Trains ${esc(f.trainer)}</span>` : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
       ${extra ? `<div class="why">${extra}</div>` : ''}
       <div class="pe">${esc(f.description)}</div>
       <div class="pr">Skills: ${esc(f.skillsText)} · Up to level ${esc(f.maxLevel || '?')} · ${esc(f.moral)}</div>
@@ -2801,7 +2856,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const spRow = (s, extra = '') => {
     const chosen = state.spouse && state.spouse.id === s.id;
     return `<div class="perk${chosen ? ' taken' : ''}"><div>
-      <div class="pn">${esc(s.name)}<span class="tagd">${esc(s.race)}</span>${s.follower ? '<span class="tagd good">Follower</span>' : ''}${s.trainer ? `<span class="tagd">Trains ${esc(s.trainer)}</span>` : ''}${s.merchant ? `<span class="tagd">${esc(s.merchant)}</span>` : ''}</div>
+      <div class="pn">${esc(s.name)}${sx(s.name)}<span class="tagd">${esc(s.race)}</span>${s.follower ? '<span class="tagd good">Follower</span>' : ''}${s.trainer ? `<span class="tagd">Trains ${esc(s.trainer)}</span>` : ''}${s.merchant ? `<span class="tagd">${esc(s.merchant)}</span>` : ''}</div>
       ${extra ? `<div class="why">${extra}</div>` : ''}
       <div class="pr">${esc(s.location)}${s.home ? ` · Home: ${esc(s.home)}` : ''}</div>
       ${s.condition ? `<div class="pr">To marry: ${esc(s.condition)}</div>` : ''}</div>
@@ -2829,7 +2884,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const groups = [...new Set(PETS.map(x => x.group))];
     $('petList').innerHTML = foldBar('petList') + groups.map(g => { const l = PETS.filter(x => x.group === g);
       return fold(`pet-${g}`, esc(g), `<div class="perks">${l.map(x => { const v = state.pets[x.id], blocked = x.quests.map(n => findQuest(n)).filter(q => q && sideBlock(q)).map(q => sideBlock(q));
-        return `<div class="perk${v != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}<span class="tagd">${esc(x.kind)}</span>${x.dlc !== 'base' ? `<span class="tagd">${DLC[x.dlc] || x.dlc}</span>` : ''}${x.quests.map(n => `<span class="tagd q">${esc(n)}</span>`).join('')}</div>
+        return `<div class="perk${v != null ? ' taken' : ''}"><div><div class="pn">${esc(x.name)}${ux(x.page || 'Skyrim:' + x.name, x.name)}<span class="tagd">${esc(x.kind)}</span>${x.dlc !== 'base' ? `<span class="tagd">${DLC[x.dlc] || x.dlc}</span>` : ''}${x.quests.map(n => `<span class="tagd q">${esc(n)}</span>`).join('')}</div>
           <div class="pr">${esc(x.where)}</div>${x.notes ? `<div class="pr">${esc(x.notes)}</div>` : ''}${blocked.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
           <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="pet-${x.id}" data-pet="${x.id}" aria-label="${esc(x.name)}: by milestone"><option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`; }).join('')}</div>`,
         { count: l.length, chosen: l.filter(x => state.pets[x.id] != null).length, open: false });
@@ -2857,7 +2912,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('homeList').innerHTML = foldBar('homeList') + groups.map(([label, list]) => fold(`home-${label}`, label, `<div class="perks">${list.map(hm => {
       const fit = homeFit(hm), blk = homeBlock(hm);
       return `<div class="perk${state.homes[hm.id] != null ? ' taken' : ''}"><div>
-        <div class="pn">${esc(hm.name)}${hm.faction ? `<span class="tagd">${esc(hm.faction)}</span>` : ''}${fit.length ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
+        <div class="pn">${esc(hm.name)}${sx(hm.name)}${hm.faction ? `<span class="tagd">${esc(hm.faction)}</span>` : ''}${fit.length ? '<span class="tagd fit">Fits your build</span>' : ''}</div>
         ${fit.length ? `<div class="why">${esc(fit.join('; ').replace(/^./, c => c.toUpperCase()))}.</div>` : ''}
         <div class="home-facts">${[hm.place, hm.price && `Price: ${hm.price}`, hm.totalCost && `With all upgrades: ${hm.totalCost}`, hm.housecarl && `Housecarl: ${hm.housecarl}`].filter(Boolean).map(esc).map(t => `<span>${t}</span>`).join('')}</div>
         ${hm.features ? `<div class="pr">Crafting: ${esc(hm.features.join(', '))}</div>` : ''}
@@ -2910,7 +2965,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function pack(s) {
     const byM = obj => { const o = {}; for (const [k, m] of Object.entries(obj || {})) (o[m] ||= []).push(k); return o; };
     return strip({
-      n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands,
+      n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands, gd: s.gender ? s.gender[0] : null, sv: s.survival ? 1 : null,
       p: Object.fromEntries(Object.entries(byM(s.picks)).map(([m, ks]) => [m, ks.map(k => toI('perk', k)).filter(x => x != null).join(',')])),
       sn: Object.fromEntries(Object.entries(s.stones || {}).map(([m, id]) => [m, id && toI('stone', id)])),
       g: Object.fromEntries(Object.entries(byM(s.gear)).map(([m, ks]) => [m, ks.map(k => toI('gear', k)).filter(x => x != null).join(',')])),
@@ -2943,7 +2998,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const fromM = (obj, kind) => { const out = {}; for (const [m, list] of Object.entries(obj || {})) String(list).split(',').filter(Boolean).forEach(t => { const id = fromI(kind, t); if (id) out[id] = +m; }); return out; };
     const list = (str, kind) => Object.fromEntries(String(str || '').split(',').filter(Boolean).map(t => [fromI(kind, t), 1]).filter(([k]) => k));
     return {
-      v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b,
+      v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b, gender: { m: 'male', f: 'female' }[o.gd] || '', survival: !!o.sv,
       picks: fromM(o.p, 'perk'), stones: Object.fromEntries(MS.map(m => [m, o.sn?.[m] != null ? fromI('stone', o.sn[m]) : null])),
       gear: fromM(o.g, 'gear'),
       mods: unKeys(o.md, 'gear', md => ({ how: md.h === 'c' ? 'crafted' : md.h === 'f' ? 'found' : undefined, ench: md.e ? md.e.map(t => t === '' ? '' : fromI('ench', t) || '') : undefined })),
@@ -2997,7 +3052,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
       return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Buffs</dt><dd>${buffBy(m).map(b => b.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px"><dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Class</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px">${state.gender ? `<dt>Gender</dt><dd>${state.gender === 'male' ? 'Male' : 'Female'}</dd>` : ''}<dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Class</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}${state.survival ? '<dt>Survival Mode</dt><dd>On</dd>' : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
     $('sumOnly').checked = only;
@@ -3060,7 +3115,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const unused = SKILLS.filter(s => !used.includes(s));
     const qn = t => order.filter(id => plan[id].tier === t);
     $('printSheet').innerHTML = `<div class="ps">
-      <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${r.name} ${ST[state.style].name}${state.creature ? ` · ${CREATURE[state.creature.kind].name} by level ${state.creature.m}` : ''} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}</div></div>
+      <div class="ps-head"><div><h1>${esc(state.name)}</h1><div class="sub">${state.gender ? (state.gender === 'male' ? 'Male ' : 'Female ') : ''}${r.name} ${ST[state.style].name}${state.creature ? ` · ${CREATURE[state.creature.kind].name} by level ${state.creature.m}` : ''} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : esc(state.alignment)} · ${side}${state.survival ? ' · Survival Mode' : ''}</div></div>
         <div class="meta">Skyrim Character Planner<br>${new Date().toLocaleDateString()}</div></div>
       <dl class="ps-ident">
         <div><dt>Followers</dt><dd>${list(Object.keys(state.followers).map(id => FOL[id].name))}</dd></div>
@@ -3242,7 +3297,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const takePerk = v => { if (v && v !== 'save' && $('pAddPlan')?.checked) state.picks[v] = nextMilestone(level()) || 60; };
   function levelUpDlg() {
     const n = level() + 1, adv = attrAdvice(n);
-    openDlg(`Level ${n}`, `<p style="margin:0">${esc(adv.text)}</p>
+    openDlg(`Level ${n}`, `${state.survival ? '<p class="svn" style="margin:0">Survival Mode: you level up when you sleep in a bed.</p>' : ''}<p style="margin:0">${esc(adv.text)}</p>
       <div class="row" role="radiogroup" aria-label="Attribute">${ATTR_NAMES.map((a, i) => `<label class="chip"><input type="radio" name="pAttr" value="${i}"${i === adv.pick ? ' checked' : ''}>${a}</label>`).join('')}</div>
       ${perkSelect(true)}${dateFields('pd', state.play.date)}
       <label class="pfield wide">Journal note (optional)<textarea id="pNote" placeholder="What happened on the way to this level"></textarea></label>`, 'Level up', () => {
@@ -3395,7 +3450,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   function journalText() {
     const r = RC[state.race], side = sidesText();
-    const L = [state.name, `${r.name} ${ST[state.style].name} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment} · ${side}`];
+    const L = [state.name, `${state.gender ? (state.gender === 'male' ? 'Male ' : 'Female ') : ''}${r.name} ${ST[state.style].name} · ${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment} · ${side}`];
     if (state.play.on) L.push(`Level ${level()} · ${fmtDate(state.play.date)}`);
     L.push(`Journal exported ${new Date().toLocaleDateString(undefined, { dateStyle: 'long' })} from the Skyrim Character Planner`, '');
     for (const e of jSort(state.journal)) L.push('* * *', '', fmtDate(e.g), ...(e.title ? [e.title] : []), '', ...(e.text ? [e.text, ''] : []));
@@ -3441,7 +3496,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     // some groups redraw when a choice changes: put focus back on the same choice
     if (!document.contains(items[i]) && group.id) { const g2 = $(group.id); const again = g2 && [...g2.querySelectorAll('[role="radio"], [role="tab"], button')].filter(b => b.offsetParent !== null)[i]; again?.focus(); }
   });
-  function renderAll() { renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); if (MODE === 'play') { renderPlay(); renderJournal(); } }
+  function renderAll() { renderSurvival(); renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); if (MODE === 'play') { renderPlay(); renderJournal(); } }
   renderAll();
   // a share link (#b=...) offers to open that build without overwriting this one silently
   async function checkShared() {
