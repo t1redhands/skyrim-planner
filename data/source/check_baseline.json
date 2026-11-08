@@ -45,20 +45,14 @@
   "studded",
   "vampire"
  ],
- "Skyrim_Clothing": [
-  "resist frost"
- ],
- "Skyrim_Jewelry": [
-  "resist frost"
- ],
+ "Skyrim_Clothing": [],
+ "Skyrim_Jewelry": [],
  "Skyrim_Followers": [
   "anska",
-  "arachnia",
   "armored frost troll",
   "armored troll",
   "avulstein gray-mane",
   "babette",
-  "barbas",
   "bilgemuck",
   "bone wolf",
   "bran",
@@ -77,12 +71,10 @@
   "dark brotherhood initiate",
   "dawnguard followers",
   "delphine",
-  "demented elytra nymph",
   "dragonborn",
   "dragonborn followers",
   "dungeon followers",
   "durian",
-  "dwarven armored mudcrab",
   "enchanted follower equipment",
   "enmon",
   "esbern",
@@ -94,7 +86,6 @@
   "gleda the goat",
   "gogh",
   "hadvar",
-  "hilda",
   "hirelings",
   "housecarls",
   "imperial soldiers",
@@ -102,9 +93,7 @@
   "karliah",
   "katria",
   "malborn",
-  "manic elytra nymph",
   "maurice jondrelle",
-  "meeko",
   "mercer frey",
   "miscellaneous followers",
   "morality",
@@ -119,23 +108,19 @@
   "riekling",
   "sceolang",
   "sinding",
-  "skritch",
   "steadfast dwarven sphere",
   "steadfast dwarven spider",
   "stormcloak soldier",
   "stormcloak soldiers",
   "stray dog",
-  "sweet roll",
   "tharstan",
-  "thistle",
   "thonnir",
   "thorald gray-mane",
   "tolfdir",
   "traveling bard",
   "valdr",
   "veezara",
-  "vidrald",
-  "vigilance"
+  "vidrald"
  ],
  "Skyrim_Marriage": [
   "apothecary merchandise",
@@ -167,13 +152,11 @@
   "bugs",
   "chaurus chitin",
   "firewood",
-  "gallery",
   "imperial soldier armor",
   "imperial soldier weapons",
   "iron ingot",
   "refined moonstone",
-  "steel ingot",
-  "tempering"
+  "steel ingot"
  ],
  "Skyrim_Vigil_Armor": [
   "female imperial",
@@ -242,21 +225,13 @@
   "wall of frost",
   "wall of storms"
  ],
- "Skyrim_Civil_War_Champions_Items": [
-  "tempering"
- ],
+ "Skyrim_Civil_War_Champions_Items": [],
  "Skyrim_Ghosts_of_the_Tribunal_Items": [
-  "enchantment",
-  "notes",
-  "tempering",
-  "unenchanted weapon",
-  "unique apparel",
-  "unique weapons"
+  "unenchanted weapon"
  ],
  "Skyrim_Vampire_Royal_Armor": [
   "female",
-  "male",
-  "tempering"
+  "male"
  ],
  "Skyrim_Ingredients": [],
  "Skyrim_Food": [
@@ -265,7 +240,6 @@
   "cabbage",
   "clam meat",
   "fruit/vegetables",
-  "hunger",
   "leeks",
   "mudcrab legs",
   "other raw food",
@@ -301,7 +275,6 @@
   "magic",
   "magicka",
   "magicka regen",
-  "notes",
   "one-handed",
   "pickpocket",
   "poison",
@@ -317,5 +290,89 @@
   "weapon effects",
   "weapons"
  ],
- "Skyrim_Spells": []
+ "Skyrim_Spells": [],
+ "Skyrim_Adventurer's_Backpack_Items": [],
+ "Skyrim_Alternative_Armors_-_Dragon_Plate_Items": [],
+ "Skyrim_Alternative_Armors_-_Ebony_Plate_Items": [],
+ "Skyrim_Alternative_Armors_-_Orcish_Plate_Items": [],
+ "Skyrim_Alternative_Armors_-_Steel_Soldier_Items": [],
+ "Skyrim_Arcane_Accessories_Items": [
+  "robes of conjuration & illusion",
+  "robes of destruction & alteration"
+ ],
+ "Skyrim_Arcane_Archer_Pack_Items": [],
+ "Skyrim_Arms_of_Chaos_Items": [],
+ "Skyrim_Bittercup_Items": [
+  "charred skeever hide",
+  "salt pile",
+  "spell tome: master transmute",
+  "sujamma"
+ ],
+ "Skyrim_Camping_Items": [],
+ "Skyrim_Chrysamere_Items": [],
+ "Skyrim_Creation_Club_Items": [],
+ "Skyrim_Dawnfang_&_Duskfang_Items": [],
+ "Skyrim_Dead_Man's_Dread_Items": [],
+ "Skyrim_Divine_Crusader_Items": [],
+ "Skyrim_Dwarven_Armored_Mudcrab_Items": [],
+ "Skyrim_Elite_Crossbows_Items": [],
+ "Skyrim_Expanded_Crossbow_Pack_Items": [],
+ "Skyrim_Fearsome_Fists_Items": [],
+ "Skyrim_Fishing_Items": [
+  "fire salts",
+  "garlic",
+  "potato",
+  "salt pile"
+ ],
+ "Skyrim_Forgotten_Seasons_Items": [],
+ "Skyrim_Gallows_Hall_Items": [],
+ "Skyrim_Goldbrand_Items": [],
+ "Skyrim_Lord's_Mail_Items": [],
+ "Skyrim_Necromantic_Grimoire_Items": [],
+ "Skyrim_Netch_Leather_Armor_Items": [],
+ "Skyrim_Nix-Hound_Items": [
+  "salt pile"
+ ],
+ "Skyrim_Nordic_Jewelry_Items": [
+  "nordic amulets of health",
+  "nordic circlets of magicka",
+  "nordic rings of stamina"
+ ],
+ "Skyrim_Pets_of_Skyrim_Items": [],
+ "Skyrim_Plague_of_the_Dead_Items": [],
+ "Skyrim_Rare_Curios_Items": [
+  "chokeberry"
+ ],
+ "Skyrim_Redguard_Elite_Armaments_Items": [],
+ "Skyrim_Ruin's_Edge_Items": [],
+ "Skyrim_Saints_&_Seducers_Items": [
+  "bliss bug in a jar",
+  "green butterfly in a jar",
+  "purple butterfly in a jar",
+  "sheogorath-shaped amber",
+  "spell tome: conjure dark seducer archer",
+  "spell tome: conjure dark seducer warrior",
+  "spell tome: conjure golden saint archer",
+  "spell tome: conjure golden saint warrior",
+  "spell tome: conjure staada"
+ ],
+ "Skyrim_Saturalia_Holiday_Pack_Items": [],
+ "Skyrim_Shadowrend_Items": [],
+ "Skyrim_Spell_Knight_Armor_Items": [],
+ "Skyrim_Staff_of_Hasedoki_Items": [],
+ "Skyrim_Staff_of_Sheogorath_Items": [],
+ "Skyrim_Stendarr's_Hammer_Items": [],
+ "Skyrim_Survival_Mode_Items": [
+  "ale",
+  "ash yam",
+  "butter",
+  "fire salts"
+ ],
+ "Skyrim_The_Cause_Items": [],
+ "Skyrim_The_Contest_Items": [],
+ "Skyrim_The_Gray_Cowl_Returns!_Items": [],
+ "Skyrim_Tundra_Homestead_Items": [],
+ "Skyrim_Umbra_Items": [],
+ "Skyrim_Vigil_Enforcer_Armor_Set_Items": [],
+ "Skyrim_Wild_Horses_Items": []
 }
