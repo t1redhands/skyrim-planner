@@ -469,6 +469,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
 .ps-notes-page h2 { margin-top: 0; }
 .ps-notes-page .ps-cols { font-size: 9.2pt; line-height: 1.42; column-gap: 18pt; }
 .ps-perks strong { color: #3d2c0b; }
+.ps-gear p { margin: 0 0 3pt; break-inside: avoid; }
 .ps-favs h3 { font-size: 9pt; margin: 4pt 0 2pt; font-family: var(--display); color: #3d2c0b; break-after: avoid; }
 .ps-favs ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 14pt; }
 .ps-favs li { break-inside: avoid; margin-bottom: 1.5pt; }
@@ -544,7 +545,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <ol class="steps-guide">
           <li><strong>Identity.</strong> Name, gender, race, alignment, class, whether the character becomes a werewolf or vampire, and the sides and factions they'll join. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
           <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need.</li>
-          <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Standard gear can be marked as found or crafted, and given one or two enchantments.</li>
+          <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Weapons and apparel are marked Main build, Collect or Incidental, and standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
           <li><strong>Collections.</strong> Checklists for things to collect, such as skill books, Daedric artifacts and Dragon Priest masks. Collections you take on add their quests to the plan.</li>
           <li><strong>Quest plan.</strong> Built from your choices: <em>Expedite</em> quests give something your build needs, <em>Priority</em> quests suit the character, and <em>Selected</em> are your own extras. Browse every quest by questline, place or add-on, and tick quests off as you play.</li>
@@ -926,6 +927,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <p class="muted">Take on collection challenges and tick items off as you find them. Collections you take on add the quests their items need to your quest plan.</p>
     </div>
     <div id="collTally" class="milestones"></div>
+    <div id="collGear"></div>
     <div class="gear-sets" id="collList"></div>
   </section>
 
@@ -1222,6 +1224,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const SPS = HOUSEDATA.spouses, SPO = Object.fromEntries(SPS.map(s => [s.id, s]));
   const HOMES = [...HOUSEDATA.homes, ...HOUSEDATA.factionHomes], HOM = Object.fromEntries(HOMES.map(x => [x.id, x]));
   const PETS = HOUSEDATA.pets || [], PET = Object.fromEntries(PETS.map(x => [x.id, x]));
+  // weapons and apparel are planned by role, not milestone: the end-game build, things to collect, and things used along the way
+  const GTIER = [['main', 'Main build'], ['collect', 'Collect'], ['incidental', 'Incidental']], GTN = Object.fromEntries(GTIER);
+  const gearOf = t => GEAR.filter(g => state.gear[g.id] === t);
   // factions you can join: each puts its whole questline into the plan as Priority
   const ALLY_JOIN = [['companions', 'Companions', 'Companions', 'cm'], ['college', 'College of Winterhold', 'College of Winterhold', 'cw'], ['thieves', 'Thieves Guild', 'Thieves Guild', 'tg'], ['bards', 'Bards College', 'Bards College', 'bc']];   // the last code is used in share links
   const DB_DESTROY_PATH = new Set(['Delayed Burial', 'Innocence Lost', 'With Friends Like These...', 'Destroy the Dark Brotherhood!']);
@@ -1361,7 +1366,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.name = 'Example: Nord paladin'; s.style = 'paladin'; s.alignment = 'Lawful Good'; s.example = true;
     s.picks = suggestPicks('nord', 'paladin');
     s.stones = suggestStones(s.picks, 'nord');
-    s.gear = { 'dawnbreaker': 20, 'spellbreaker': 20, 'mace-of-molag-bal': 40, 'volendrung': 40 };
+    s.gear = { 'dawnbreaker': 'main', 'spellbreaker': 'main', 'mace-of-molag-bal': 'incidental', 'volendrung': 'collect' };
     s.potions = [{ effects: ['restore-health'], ingredients: ['blue-mountain-flower', 'wheat'] }, { effects: ['fortify-smithing'], ingredients: ['glowing-mushroom', 'spriggan-sap'] }].filter(x => x.ingredients.every(i => INGR.some(g => g.id === i)));
     s.food = { 'vegetable-soup': 1, 'beef-stew': 1 };
     s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
@@ -1380,7 +1385,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const out = { v: 2, name: String(s.name || 'Unnamed build'), race: s.race, alignment: s.alignment || 'Neutral Neutral', style: s.style, bands: s.bands, picks: {}, stones: { 20: null, 40: null, 60: null }, example: false };
     if (s.stones) MS.forEach(m => { if (STN[s.stones[m]]) out.stones[m] = s.stones[m]; });
     out.gear = {};
-    if (s.gear && typeof s.gear === 'object') for (const [k, v] of Object.entries(s.gear)) if (GR[k] && MS.includes(v) && GR[k].group !== 'Other artifacts') out.gear[k] = v;
+    if (s.gear && typeof s.gear === 'object') for (const [k, v] of Object.entries(s.gear)) if (GR[k] && GR[k].group !== 'Other artifacts' && (GTN[v] || MS.includes(v))) out.gear[k] = GTN[v] ? v : 'main';   // builds from before tiers had milestones
     out.mods = {};
     if (s.mods && typeof s.mods === 'object') for (const [k, md] of Object.entries(s.mods)) {
       const g = GR[k]; if (!g || out.gear[k] == null || !md) continue;
@@ -1787,21 +1792,21 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const planned = skill => skill && perksIn(skill).some(p => state.picks[rankKey(p.id, 0)] != null);
   function gearIssues(g, v) {
     const out = [];
-    if (v != null && v < g.minLevel && state.mods[g.id]?.how !== 'crafted') out.push(g.quest ? `${g.quest} can't start until level ${g.minLevel}.` : `Usually turns up in shops and loot from about level ${g.minLevel}.`);
+
     const md = v != null && state.mods[g.id];
     if (md && md.how === 'crafted' && g.staffCraft) {
       const sp = SPELLS.find(s => s.name.toLowerCase() === g.staffCraft.spell.toLowerCase()), sv = sp && state.spells[sp.id];
-      if (sp && !(sv && (sv.tier === 'selected' || sv.m <= v))) out.push(`Crafting this needs the spell ${sp.name}${sv ? `, which your plan has by level ${sv.m}` : ', which isn\'t in your spells yet'}.`);
+      if (sp && !sv) out.push(`Crafting this needs the spell ${sp.name}, which isn't in your spells yet.`);
     }
     if (md && md.how === 'crafted') {
       const fp = forgePerk(g.forge);
-      if (fp && (!fp.m || fp.m > v)) out.push(`Forging this needs ${fp.name}, which isn't in your perk plan by level ${v}.`);
+      if (fp && !fp.m) out.push(`Forging this needs ${fp.name}, which isn't in your perk plan.`);
     }
     if (md && md.ench) {
       const ee = md.ench;
       if (ee.length === 2) {
         const xm = state.picks[rankKey('enchanting.extra-effect', 0)];
-        if (!xm || xm > v) out.push(`Two enchantments on one item need the Extra Effect perk (Enchanting), which isn't in your perk plan by level ${v}.`);
+        if (!xm) out.push(`Two enchantments on one item need the Extra Effect perk (Enchanting), which isn't in your perk plan.`);
         if (ee[0] && ee[0] === ee[1]) out.push('Both enchantments are the same; an item can only hold one of each.');
       }
       for (const e of ee) if (ENB[e]?.dlc === 'dawnguard' && state.dgSide === 'none') out.push(`${e} needs Dawnguard, which you chose not to play.`);
@@ -1831,21 +1836,22 @@ footer p { margin: 4px 0; max-width: 80ch; }
       $('gearTitle').textContent = slot === 'weapon' ? 'Weapons' : 'Apparel';
       $('gearSource').querySelector('[data-src="enchanted"]').hidden = slot === 'weapon';   // enchanted loot is robes only
       $('gearIntro').textContent = slot === 'weapon'
-        ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Choose the ones you want and the milestone you want each by. Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them. Once you choose a standard weapon, you can say whether you\'ll find or forge it and which enchantments it should carry.'
-        : 'Every piece of armor, shield, jewelry and clothing, unique and standard. Artifacts you carry rather than wear, such as Azura\'s Star and the White Phial, are on the Collections step. Choose the pieces you want and the milestone you want each by. Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it. Once you choose a piece with no enchantment of its own, you can say whether you\'ll find or craft it and which enchantments it should carry.';
+        ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Mark each one you want as Main build (your end-game gear), Collect (pieces to collect, printed as a checklist) or Incidental (used along the way). Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them. Once you choose a standard weapon, you can say whether you\'ll find or forge it and which enchantments it should carry.'
+        : 'Every piece of armor, shield, jewelry and clothing, unique and standard. Artifacts you carry rather than wear, such as Azura\'s Star and the White Phial, are on the Collections step. Mark each piece you want as Main build (your end-game gear), Collect (pieces to collect, printed as a checklist) or Incidental (used along the way). Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it. Once you choose a piece with no enchantment of its own, you can say whether you\'ll find or craft it and which enchantments it should carry.';
       $('gearSearchLabel').textContent = slot === 'weapon' ? 'Search weapons' : 'Search apparel';
       $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type or place, such as Chillrend or bow' : 'Name, type or place, such as Nightingale or ring';
       const groups = GEARDATA.groups[slot].filter(x => x !== 'Other artifacts');
       $('gearFilter').innerHTML = ['all', ...groups, 'fits', 'wanted'].map(f => `<button class="chip" data-f="${esc(f)}" aria-checked="${f === 'all'}">${f === 'all' ? 'All' : f === 'fits' ? 'Fits your build' : f === 'wanted' ? 'Chosen' : esc(f)}</button>`).join('');
     }
-    $('gearTally').innerHTML = MS.map(m => {
-      const by = mine.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m);
+    $('gearTally').innerHTML = GTIER.map(([t, tl]) => {
+      const by = mine.filter(g => state.gear[g.id] === t);
       const quests = [...new Set(by.map(g => g.quest).filter(Boolean))].sort();
-      const issues = by.filter(g => state.gear[g.id] === m && gearIssues(g, m).length).length;
-      return `<div class="ms${issues ? ' under' : ''}"><div class="ms-head"><span class="ms-level">By level ${m}</span>${issues ? '<span class="pill under">Needs fixing</span>' : ''}</div>
+      const issues = by.filter(g => gearIssues(g, t).length).length;
+      return `<div class="ms${issues ? ' under' : ''}"><div class="ms-head"><span class="ms-level">${tl}</span>${issues ? '<span class="pill under">Needs fixing</span>' : ''}</div>
+        <div class="ms-note">${{ main: 'Your end-game gear.', collect: 'Pieces to collect that no Collections list covers. They print as a checklist.', incidental: 'Picked up and used along the way.' }[t]}</div>
         <div class="ms-stats"><span><strong class="num">${by.length}</strong> ${slot === 'weapon' ? 'weapon' : 'piece'}${by.length === 1 ? '' : 's'}</span><span><strong class="num">${quests.length}</strong> quest${quests.length === 1 ? '' : 's'}</span></div>
-        ${issues ? `<div class="warn">${issues} item${issues === 1 ? '' : 's'} here can't be had by this level as planned.</div>` : ''}
-        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed for these.' : 'Nothing chosen for this milestone yet.'}</div>`}</div>`;
+        ${issues ? `<div class="warn">${issues} item${issues === 1 ? '' : 's'} here can't be had as planned.</div>` : ''}
+        ${quests.length ? `<ul>${quests.map(q => `<li>${esc(q)}</li>`).join('')}</ul>` : `<div class="ms-note">${by.length ? 'No quests needed for these.' : 'Nothing chosen here yet.'}</div>`}</div>`;
     }).join('');
     const q = ($('gearSearch').value || '').trim().toLowerCase();
     const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
@@ -1863,8 +1869,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
           ${g.forge && g.forge.perk && !/^(n\/a|cannot)/i.test(g.forge.perk) ? (() => { const fp = forgePerk(g.forge); return `<div class="pr">Forge: ${esc(/no perk/i.test(g.forge.perk) ? 'no perk needed' : g.forge.perk)}${g.forge.temper && !/n\/a/i.test(g.forge.temper) ? ` · improve with ${esc(g.forge.temper)}` : ''}${fp ? (fp.m ? ` · <span class="why">${esc(fp.name)} is in your plan by level ${fp.m}</span>` : ` · <span class="muted">${esc(fp.name)} isn't in your perk plan</span>`) : ''}</div>`; })() : ''}
           ${v != null && (canCraft(g) || canEnchant(g)) ? modControls(g) : ''}
           ${issues.map(t => `<div class="pw">${esc(t)}</div>`).join('')}</div>
-        <div class="ranks"><label class="rank"><span class="rl">Want it</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: milestone">
-          <option value="">Not chosen</option>${MS.map(m => `<option value="${m}"${v === m ? ' selected' : ''}>By ${m}</option>`).join('')}</select></label></div></div>`;
+        <div class="ranks"><label class="rank"><span class="rl">Plan</span><select class="${v != null ? 'on' : ''}" id="gr-${g.id}" data-gear="${g.id}" aria-label="${esc(g.name)}: plan">
+          <option value="">Not chosen</option>${GTIER.map(([t, tl]) => `<option value="${t}"${v === t ? ' selected' : ''}>${tl}</option>`).join('')}</select></label></div></div>`;
     };
     const groups = GEARDATA.groups[slot].filter(x => x !== 'Other artifacts').map(gr => [gr, list.filter(g => g.group === gr)]).filter(([, items]) => items.length);
     const forceOpen = !!q || gearFilter !== 'all' || gearSource !== 'all';
@@ -1900,7 +1906,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       touch(); renderGear(); $(mel.id)?.focus(); return;
     }
     const el = e.target.closest('select[data-gear]'); if (!el) return;
-    if (el.value === '') { delete state.gear[el.dataset.gear]; delete state.mods[el.dataset.gear]; } else state.gear[el.dataset.gear] = +el.value;
+    if (el.value === '') { delete state.gear[el.dataset.gear]; delete state.mods[el.dataset.gear]; } else state.gear[el.dataset.gear] = el.value;
     touch(); renderGear(); renderSubtabs(); $(el.id)?.focus();
   });
   $('gearSearch').addEventListener('input', () => renderGear());
@@ -2042,7 +2048,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="cr-grid">
         <div><h4>Quests</h4><ul>${(() => { const { plan } = buildQuestPlan(); return [...new Set([becomeQuest(kind), ...C.quests].filter(Boolean))].map(n => { const q = findQuest(n); if (!q) return ''; const blocked = sideBlock(q);
           return blocked ? `<li class="muted">${esc(n)} <span class="tagd warn">Left out</span> <small>${esc(blocked)}</small></li>` : item(esc(n), plan[q.id], ` <button class="btn quiet" data-cr-quest="${q.id}">Add to Priority</button>`); }).join(''); })()}</ul></div>
-        <div><h4>Gear</h4><ul>${C.gear.filter(id => GR[id]).map(id => item(esc(GR[id].name), has(state.gear, id), ` <button class="btn quiet" data-cr-gear="${id}">Add by ${c.m}</button>`)).join('')}</ul></div>
+        <div><h4>Gear</h4><ul>${C.gear.filter(id => GR[id]).map(id => item(esc(GR[id].name), has(state.gear, id), ` <button class="btn quiet" data-cr-gear="${id}">Add to main build</button>`)).join('')}</ul></div>
         <div><h4>Buffs</h4><ul>${C.buffs.filter(id => BF[id]).map(id => item(esc(BF[id].name), state.buffs[id], ` <button class="btn quiet" data-cr-buff="${id}">Add</button>`)).join('')}</ul></div>
         <div><h4>Standing Stone</h4><ul>${item(`${esc(STN[C.stone[0]].name)} <span class="muted">· ${esc(C.stone[1])}</span>`, MS.some(m => state.stones[m] === C.stone[0]), ` <button class="btn quiet" data-cr-stone="${C.stone[0]}">Use from level ${c.m}</button>`)}</ul></div>
       </div>`;
@@ -2057,7 +2063,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const b = e.target.closest('button'); if (!b || !state.creature) return;
     const m = state.creature.m, d = b.dataset;
     if (d.crQuest) state.quests[d.crQuest] = 'priority';
-    if (d.crGear) state.gear[d.crGear] = m;
+    if (d.crGear) state.gear[d.crGear] = 'main';
     if (d.crBuff) state.buffs[d.crBuff] = { tier: 'selected' };
     if (d.crStone) MS.filter(x => x >= m).forEach(x => state.stones[x] = d.crStone);
     touch(); renderCreature(); renderSubtabs();
@@ -2429,16 +2435,17 @@ footer p { margin: 4px 0; max-width: 80ch; }
     // what the build asks for, with the quest each one needs
     const out = [], problems = [];
     for (const g of GEAR) {
-      const m = state.gear[g.id]; if (m == null) continue;
+      const t = state.gear[g.id]; if (t == null) continue;
+      const m = Infinity, tier = t === 'main' ? 1 : 2;
       if (g.staffCraft && state.mods[g.id]?.how === 'crafted') {   // crafted staves need Neloth's Staff Enchanter, not the staff's own quest
         const q = pickAlt(['Reluctant Steward']);
-        if (q) out.push({ q, m, label: `${g.name} (Staff Enchanter)` }); else problems.push(`${g.name}: crafting needs Reluctant Steward, which your plan leaves out.`);
+        if (q) out.push({ q, m, tier, label: `${g.name} (Staff Enchanter)` }); else problems.push(`${g.name}: crafting needs Reluctant Steward, which your plan leaves out.`);
         continue;
       }
       const cands = g.quest ? [g.quest] : (QREWARD[g.name.toLowerCase()] || []).map(q => q.name);
       if (!cands.length) continue;
       const q = pickAlt(cands);
-      if (q) out.push({ q, m, label: g.name }); else {
+      if (q) out.push({ q, m, tier, label: `${g.name} (${GTN[t].toLowerCase()})` }); else {
         const any = findQuest(cands[0]);
         problems.push(`${g.name} needs ${cands[0]}${any ? `, which is left out: ${sideBlock(any) || questConflict(any)}` : ', which isn\'t in the quest data yet.'}`);
       }
@@ -2712,6 +2719,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   function renderCollections() {
     collTally('collTally');
+    const cg = gearOf('collect');
+    $('collGear').innerHTML = cg.length ? fold('coll-gear', `Gear to collect <span class="tagd fit">${cg.length} wanted</span>`, `<p class="muted" style="margin:0">Weapons and apparel you marked Collect on the Loadout step. Change them there.</p><ul class="coll-list">${cg.map(g => `<li class="coll-item${state.has.gear[g.id] ? ' done' : ''}"><span class="box-glyph" aria-hidden="true">${state.has.gear[g.id] ? '☑' : '☐'}</span><div><strong>${esc(g.name)}</strong>${ux(g.source, g.name)}${g.quest ? `<span class="tagd q">${esc(g.quest)}</span>` : ''}${g.where ? `<div class="pr">${esc(g.where.slice(0, 140))}</div>` : ''}</div></li>`).join('')}</ul>`, { count: `${cg.filter(g => state.has.gear[g.id]).length} of ${cg.length}`, open: false }) : '';
     $('collList').innerHTML = `<div class="row"><label class="check"><input type="checkbox" id="collWanted" ${collOnlyWanted ? 'checked' : ''}> Show only items I want</label><label class="check"><input type="checkbox" id="collHide" ${collHideFound ? 'checked' : ''}> Hide items I've found</label></div>` + foldBar('collList') + COLLS.map(c => {
       const v = state.collections[c.id], cur = !v ? '' : v.tier === 'selected' ? 'sel' : 'e' + v.m, [g, n] = collProgress(c), w = wantedIn(c), all = c.items.filter(i => !i.ref);
       const qs = [...new Set([w.length ? c.quest : null, ...w.filter(i => !state.got[ckey(c, i)]).map(itemQuest)].filter(Boolean))];
@@ -2742,13 +2751,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
   // Play mode: tick off what you've found
   function renderPlayColl() {
     collTally('pcollTally');
-    const on = COLLS.filter(c => wantedIn(c).length);
-    $('pcollList').innerHTML = on.length ? `<div class="row"><label class="check"><input type="checkbox" id="pcollHide" ${collHideFound ? 'checked' : ''}> Hide items I've found</label></div>` + foldBar('pcollList') + on.map(c => { const [g, n] = collProgress(c);
-      return fold(`pcoll-${c.id}`, esc(c.name), `<p class="muted" style="margin:0">${esc(c.blurb)}</p>${collBody(c, true) || '<p class="muted" style="margin:0">Everything here is found.</p>'}`, { count: `${g} of ${n}`, open: true }); }).join('') : '';
+    const on = COLLS.filter(c => wantedIn(c).length), cg = gearOf('collect');
+    $('pcollList').innerHTML = on.length || cg.length ? `<div class="row"><label class="check"><input type="checkbox" id="pcollHide" ${collHideFound ? 'checked' : ''}> Hide items I've found</label></div>` + foldBar('pcollList') + on.map(c => { const [g, n] = collProgress(c);
+      return fold(`pcoll-${c.id}`, esc(c.name), `<p class="muted" style="margin:0">${esc(c.blurb)}</p>${collBody(c, true) || '<p class="muted" style="margin:0">Everything here is found.</p>'}`, { count: `${g} of ${n}`, open: true }); }).join('')
+      + (cg.length ? fold('pcoll-gear', 'Gear to collect', `<ul class="coll-list">${cg.filter(g => !(collHideFound && state.has.gear[g.id])).map(g => `<li class="coll-item${state.has.gear[g.id] ? ' done' : ''}"><input type="checkbox" id="pcg-${g.id}" data-hasg="${g.id}"${state.has.gear[g.id] ? ' checked' : ''}><div><label for="pcg-${g.id}"><strong>${esc(g.name)}</strong></label>${g.quest ? `<span class="tagd q">${esc(g.quest)}</span>` : ''}${g.where ? `<div class="pr">${esc(g.where.slice(0, 140))}</div>` : ''}</div></li>`).join('')}</ul>`, { count: `${cg.filter(g => state.has.gear[g.id]).length} of ${cg.length}`, open: true }) : '') : '';
   }
   $('pcollList').addEventListener('change', e => {
     const t = e.target;
     if (t.id === 'pcollHide') { collHideFound = t.checked; renderPlayColl(); $('pcollHide')?.focus(); return; }
+    if (t.dataset.hasg) { if (t.checked) state.has.gear[t.dataset.hasg] = 1; else delete state.has.gear[t.dataset.hasg]; autoLog('item', 'g:' + t.dataset.hasg, t.checked, `Got ${GR[t.dataset.hasg].name}`); touch(); renderPlayColl(); $(t.id)?.focus(); return; }
     if (!t.dataset.found) return;
     if (t.checked) state.got[t.dataset.found] = true; else delete state.got[t.dataset.found];
     autoLog('item', 'c:' + t.dataset.found, t.checked, foundTitle(t.dataset.found)); touch(); renderPlayColl(); $(t.id)?.focus();
@@ -2987,7 +2998,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands, gd: s.gender ? s.gender[0] : null, sv: s.survival ? 1 : null,
       p: Object.fromEntries(Object.entries(byM(s.picks)).map(([m, ks]) => [m, ks.map(k => toI('perk', k)).filter(x => x != null).join(',')])),
       sn: Object.fromEntries(Object.entries(s.stones || {}).map(([m, id]) => [m, id && toI('stone', id)])),
-      g: Object.fromEntries(Object.entries(byM(s.gear)).map(([m, ks]) => [m, ks.map(k => toI('gear', k)).filter(x => x != null).join(',')])),
+      g: Object.fromEntries(Object.entries(byM(s.gear)).map(([t, ks]) => [String(t)[0], ks.map(k => toI('gear', k)).filter(x => x != null).join(',')])),
       md: mapKeys(s.mods, 'gear', md => strip({ h: md.how?.[0], e: (md.ench || []).map(e => e ? toI('ench', e) ?? '' : '') })),
       sh: mapKeys(s.shouts, 'shout', v => strip({ t: tierPack(v), w: v.words === 3 ? null : v.words, k: v.skip })),
       sp: mapKeys(s.spells, 'spell', tierPack), bf: mapKeys(s.buffs, 'buff', tierPack),
@@ -3019,7 +3030,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return {
       v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b, gender: { m: 'male', f: 'female' }[o.gd] || '', survival: !!o.sv,
       picks: fromM(o.p, 'perk'), stones: Object.fromEntries(MS.map(m => [m, o.sn?.[m] != null ? fromI('stone', o.sn[m]) : null])),
-      gear: fromM(o.g, 'gear'),
+      gear: (() => { const out = {}; for (const [k, l] of Object.entries(o.g || {})) String(l).split(',').filter(Boolean).forEach(t => { const id = fromI('gear', t); if (id) out[id] = { m: 'main', c: 'collect', i: 'incidental' }[k] || 'main'; }); return out; })(),
       mods: unKeys(o.md, 'gear', md => ({ how: md.h === 'c' ? 'crafted' : md.h === 'f' ? 'found' : undefined, ench: md.e ? md.e.map(t => t === '' ? '' : fromI('ench', t) || '') : undefined })),
       shouts: unKeys(o.sh, 'shout', v => ({ ...tierUnpack(v.t), words: v.w || 3, skip: v.k })),
       spells: unKeys(o.sp, 'spell', tierUnpack), buffs: unKeys(o.bf, 'buff', tierUnpack),
@@ -3070,8 +3081,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const r = RC[state.race];
     const rows = MS.map(m => { const i = milestoneInfo(m), t = totals(m);
       const top = SKILLS.filter(s => i.lv[s.id] > startOf(state.race, s.id)).sort((a, b) => i.lv[b.id] - i.lv[a.id]).slice(0, 4).map(s => `${s.name} ${i.lv[s.id]}`).join(', ') || 'No perks planned yet';
-      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Buffs</dt><dd>${buffBy(m).map(b => b.name).join(', ') || 'None chosen'}</dd><dt>Gear</dt><dd>${GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
-    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px">${state.gender ? `<dt>Gender</dt><dd>${state.gender === 'male' ? 'Male' : 'Female'}</dd>` : ''}<dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Class</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}${state.survival ? '<dt>Survival Mode</dt><dd>On</dd>' : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd><dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
+      return `<div><h3>Level ${m}</h3><dl><dt>Perks</dt><dd><span class="num">${i.used} of ${i.budget}</span> <span class="pill ${i.status}">${{ ok:'On track', over:'Ahead', under:'Needs fixing' }[i.status]}</span></dd><dt>Top skills</dt><dd>${top}</dd><dt>Attributes</dt><dd class="num">H ${t.h} · M ${t.m} · S ${t.s}</dd><dt>Stone</dt><dd>${STN[state.stones[m]]?.name || 'None chosen'} <span class="muted">(${STRETCH[m].toLowerCase()})</span></dd><dt>Shouts</dt><dd>${shoutBy(m).map(shoutLabel).join(', ') || 'None chosen'}</dd><dt>Spells</dt><dd>${spellBy(m).map(s => s.name).join(', ') || 'None chosen'}</dd><dt>Buffs</dt><dd>${buffBy(m).map(b => b.name).join(', ') || 'None chosen'}</dd></dl></div>`; }).join('');
+    $('sheet').innerHTML = `<div><h3>${esc(state.name)}</h3><dl style="margin-top:8px">${state.gender ? `<dt>Gender</dt><dd>${state.gender === 'male' ? 'Male' : 'Female'}</dd>` : ''}<dt>Race</dt><dd>${r.name}</dd><dt>Alignment</dt><dd>${state.alignment === 'Neutral Neutral' ? 'True Neutral' : state.alignment}</dd><dt>Class</dt><dd>${ST[state.style].name}</dd>${state.creature ? `<dt>Curse</dt><dd>${CREATURE[state.creature.kind].name}, by level ${state.creature.m}</dd>` : ''}${state.survival ? '<dt>Survival Mode</dt><dd>On</dd>' : ''}<dt>Scroll use</dt><dd>${USE[state.scrollUse]}</dd><dt>Spider scrolls</dt><dd>${SPUSE[state.spiderUse]}</dd><dt>Sides</dt><dd>${esc(sidesText())}</dd>${GTIER.map(([t, tl]) => `<dt>${t === 'collect' ? 'Gear to collect' : tl + ' gear'}</dt><dd>${gearOf(t).map(g => esc(g.name) + (modText(g.id) ? ` (${esc(modText(g.id))})` : '')).join(', ') || 'None chosen'}</dd>`).join('')}<dt>Followers</dt><dd>${Object.keys(state.followers).map(id => FOL[id].name).join(', ') || 'None chosen'}</dd><dt>Spouse</dt><dd>${state.spouse ? `${SPO[state.spouse.id].name}, by level ${state.spouse.m}` : 'None chosen'}</dd><dt>Homes</dt><dd>${Object.keys(state.homes).map(id => HOM[id].name).join(', ') || 'None chosen'}</dd>${Object.keys(state.pets).length ? `<dt>Pets</dt><dd>${Object.keys(state.pets).map(id => PET[id].name).join(', ')}</dd>` : ''}<dt>Favorite potions</dt><dd>${state.potions.map(x => potionName(x.effects)).join('; ') || 'None chosen'}</dd><dt>Favorite food</dt><dd>${RECIPES.filter(r => state.food[r.id]).map(r => r.name).join(', ') || 'None chosen'}</dd>${state.scrollUse !== 'none' || state.spiderUse !== 'none' ? `<dt>Favorite scrolls</dt><dd>${[...SCROLLS.filter(s => state.scrolls[s.id]).map(s => 'Scroll of ' + s.name), ...SPIDERS.filter(s => state.spiders[s.id]).map(s => s.name)].join(', ') || 'None chosen'}</dd>` : ''}<dt>Quests</dt><dd>${(() => { const { plan } = buildQuestPlan(); const ids = Object.keys(plan); if (!ids.length) return 'None yet'; const n = t => ids.filter(id => plan[id].tier === t).length; return `${n(0)} to expedite, ${n(1)} priority, ${n(2)} selected; ${ids.filter(id => state.done[id]).length} done`; })()}</dd></dl></div>${rows}`;
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     let only = false; try { only = localStorage.getItem('skp.sumOnly') === '1'; } catch {}
     $('sumOnly').checked = only;
@@ -3166,8 +3177,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ${row('New shouts', MS.map(m => list(SHOUTS.filter(s => state.shouts[s.id]?.tier === 'expedite' && state.shouts[s.id].m === m).map(shoutLabel))))}
         ${row('New spells', MS.map(m => list(SPELLS.filter(s => state.spells[s.id]?.tier === 'expedite' && state.spells[s.id].m === m).map(s => s.name))))}
         ${row('New buffs', MS.map(m => list(BUFFS.filter(b => state.buffs[b.id]?.tier === 'expedite' && state.buffs[b.id].m === m).map(b => b.name))))}
-        ${row('New gear', MS.map(m => list(GEAR.filter(g => state.gear[g.id] === m).map(g => g.name + (modText(g.id) ? ` (${modText(g.id)})` : '')))))}
       </tbody></table>
+      ${gearOf('main').length || gearOf('incidental').length ? `<div class="ps-gear"><h2>Gear</h2><div class="ps-cols">${['main', 'incidental'].map(t => gearOf(t).length ? `<p><strong>${GTN[t]}:</strong> ${gearOf(t).map(g => esc(g.name) + (modText(g.id) ? ` <span class="muted">(${esc(modText(g.id))})</span>` : '')).join(', ')}</p>` : '').join('')}</div></div>` : ''}
       <div class="ps-two">
         <div><h2>Skills</h2>
           <table class="ps-skills"><thead><tr><th>Skill</th><th>Start</th>${MS.map(m => `<th>${m}</th>`).join('')}</tr></thead><tbody>
@@ -3189,8 +3200,8 @@ footer p { margin: 4px 0; max-width: 80ch; }
           return `<h3>${tier.title} (${ids.length})</h3><ol>${ids.map(id => { const { q, m } = plan[id], giver = short(q.giver);
             return `<li class="${state.done[id] ? 'done' : ''}">${state.done[id] ? '☑' : '☐'} ${esc(q.name)} <span class="muted">· ${esc(q.line)}${t === 0 && m !== Infinity ? ` · by ${m}` : ''}${giver ? ` · ${esc(giver)}` : ''}</span></li>`; }).join('')}</ol>`; }).join('') : '<p class="none">No quests in the plan yet.</p>'}
       </div>
-      ${(() => { const tk = COLLS.filter(c => state.collections[c.id]); if (!tk.length) return '';
-        return `<div class="ps-coll"><h2>Collections</h2>${tk.map(c => { const [g, n] = collProgress(c), v = state.collections[c.id], groups = [...new Set(c.items.map(i => i.group || ''))], many = c.items.filter(i => i.ref || state.want[ckey(c, i)]).length > 20;
+      ${(() => { const tk = COLLS.filter(c => state.collections[c.id]), cg = gearOf('collect'); if (!tk.length && !cg.length) return '';
+        return `<div class="ps-coll"><h2>Collections</h2>${cg.length ? `<h3>Gear to collect <span class="muted">· ${cg.filter(g => state.has.gear[g.id]).length} of ${cg.length} found</span></h3><ul class="${cg.length > 20 ? 'many' : ''}">${cg.map(g => `<li>${state.has.gear[g.id] ? '☑' : '☐'} ${esc(g.name)} <span class="muted">· ${esc(g.quest || short(g.where) || g.type || '')}</span></li>`).join('')}</ul>` : ''}${tk.map(c => { const [g, n] = collProgress(c), v = state.collections[c.id], groups = [...new Set(c.items.map(i => i.group || ''))], many = c.items.filter(i => i.ref || state.want[ckey(c, i)]).length > 20;
           return `<h3>${esc(c.name)} <span class="muted">· ${g} of ${n} found${v.tier === 'expedite' ? ` · by level ${v.m}` : ''}${c.home ? ` · displays in ${esc(c.home)}` : ''}</span></h3><ul class="${many ? 'many' : ''}">${groups.map(gn => { const its = c.items.filter(i => (i.group || '') === gn && (i.ref || state.want[ckey(c, i)])); return its.length ? (gn && groups.length > 1 ? `<li class="grp">${esc(gn)}</li>` : '') + its.map(it => {
             const got = it.ref ? (CL[it.ref] && collProgress(CL[it.ref])[0] === collProgress(CL[it.ref])[1]) : state.got[`${c.id}/${it.id}`], q = it.ref ? '' : itemQuest(it);
             const bare = it.name.replace(/^Stone \d+: /, ''), placeOnly = gn && bare === gn;   // stones are named by town; print where in town instead
@@ -3398,7 +3409,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const { plan, order } = buildQuestPlan();
     const perksDue = ALL_RANKS.filter(r => state.picks[r.key] != null && state.picks[r.key] <= by && !tk.has(r.key)).sort((a, b) => state.picks[a.key] - state.picks[b.key]);
     const qDue = order.filter(id => plan[id].tier === 0 && plan[id].m <= by && !state.done[id]);
-    const gDue = GEAR.filter(g => state.gear[g.id] != null && state.gear[g.id] <= by && !state.has.gear[g.id]);
+    const gDue = gearOf('main').filter(g => !state.has.gear[g.id]);
     const sDue = MS.filter(m => m <= by && state.stones[m] && !state.has.stone[state.stones[m]]);
     const cDue = COLLS.filter(c => state.collections[c.id]?.tier === 'expedite' && state.collections[c.id].m <= by);   // only the items you want
     const li = (input, label, sub) => `<li class="coll-item">${input}<div>${label}${sub ? `<div class="pr">${sub}</div>` : ''}</div></li>`;
@@ -3406,7 +3417,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const due = [
       sec(`Perks (${perksDue.length})`, perksDue.slice(0, 24).map(r => li('<span class="box-glyph" aria-hidden="true">◇</span>', esc(rankText(r)) + flag(state.picks[r.key]), `By level ${state.picks[r.key]}${r.req > 15 ? ` · needs skill ${r.req}` : ''}`)).join('') + (perksDue.length > 24 ? `<li class="muted">and ${perksDue.length - 24} more</li>` : '')),
       sec(`Quests to expedite (${qDue.length})`, qDue.map(id => { const { q, m } = plan[id]; return li(`<input type="checkbox" id="pq-${id}" data-pdone="${id}">`, `<label for="pq-${id}"><strong>${esc(q.name)}</strong></label>${flag(m)}`, `${esc(q.line)} · by level ${m}${q.giver ? ` · ${esc(firstSentence(q.giver).slice(0, 80))}` : ''}`); }).join('')),
-      sec(`Gear (${gDue.length})`, gDue.map(g => li(`<input type="checkbox" id="pg-${g.id}" data-hasg="${g.id}">`, `<label for="pg-${g.id}"><strong>${esc(g.name)}</strong></label>${flag(state.gear[g.id])}`, `By level ${state.gear[g.id]}${g.where ? ` · ${esc(firstSentence(g.where).slice(0, 90))}` : ''}`)).join('')),
+      sec(`Main build gear still to get (${gDue.length})`, gDue.map(g => li(`<input type="checkbox" id="pg-${g.id}" data-hasg="${g.id}">`, `<label for="pg-${g.id}"><strong>${esc(g.name)}</strong></label>`, `${g.quest ? `${esc(g.quest)} · ` : ''}${g.where ? esc(firstSentence(g.where).slice(0, 90)) : ''}`)).join('')),
       sec('Standing Stones', sDue.map(m => { const s = STN[state.stones[m]]; return li(`<input type="checkbox" id="ps-${s.id}" data-hass="${s.id}">`, `<label for="ps-${s.id}"><strong>${esc(s.name)}</strong></label>${flag(m)}`, `For levels up to ${m}${s.place ? ` · ${esc(s.place)}` : ''}`); }).join('')),
       ...cDue.map(c => { const left = wantedIn(c).filter(i => !state.got[ckey(c, i)]); if (!left.length) return '';
         return sec(`${esc(c.name)} (${left.length} to find by level ${state.collections[c.id].m})${flag(state.collections[c.id].m)}`, left.slice(0, 8).map(it => li(`<input type="checkbox" id="pc-${c.id}-${it.id}" data-pgot="${c.id}/${it.id}">`, `<label for="pc-${c.id}-${it.id}"><strong>${esc(it.name)}</strong></label>`, it.where ? esc(it.where.slice(0, 110)) : '')).join('') + (left.length > 8 ? `<li class="muted">and ${left.length - 8} more on the Collections page</li>` : '')); }),
