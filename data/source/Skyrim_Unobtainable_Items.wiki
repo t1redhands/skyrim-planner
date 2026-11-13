@@ -1,0 +1,2055 @@
+{{Trail|Items}}{{TOCright}} [[Category:Skyrim-Clothing| ]] [[Category:Skyrim-Armor| ]] [[Category:Skyrim-Jewelry| ]] [[Category:Skyrim-Weapons| ]]
+
+This page contains items which either cannot be seen or equipped by the player or which exist only in the [[Skyrim Mod:Creation Kit|Creation Kit]] and cannot be obtained without the use of the [[Skyrim:Console|console]]. For information on unused content in general, please see the [[Skyrim:Unused Content|related page]].
+
+==Unobtainable Weapons==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+| {{Icon|w|ForswornAxe}}
+| {{Anchor|Briarheart Geis}}<br/>{{ID|000ae087|par=1}} || War Axe
+| [[Skyrim:Steel Ingot|Steel Ingot]];<br/>perk:&nbsp;[[Skyrim:Steel Smithing|Steel]]
+| 12 || 300 || 12
+| ''5 points of extra damage to Nords:''
+* [[Skyrim:Briarheart Geis (effect)|Briarheart Geis]], 5 pts
+* Disenchant: Yes
+|
+* Cannot be found in-game
+* Based on its editor ID of <code>dunLostValleyRedoubtAxe</code>, this was intended to be carried by the boss Briarheart of [[Skyrim:Lost Valley Redoubt|Lost Valley Redoubt]].
+|-
+|
+| {{Anchor|Dwarven Sphere Centurion Arrow}}<br/>{{ID|0007b932|par=1}} || Arrow
+|Not Possible
+| 0 || 0 || 20
+|None
+|
+*Fired from [[Skyrim:Dwarven Sphere|Dwarven Spheres]]; not obtainable by the player. An arrow can be found in a display case in the [[Skyrim:Dwemer Museum|Dwemer Museum]] of [[Skyrim:Understone Keep|Understone Keep]].
+|-
+| {{Icon|w|Dwemer Bolt}}
+| {{Anchor|Dwemer Bolt}}<br/>{{ID|0007b935|par=1}} || Arrow
+| Not possible
+| 0 || 0 || 10
+| None
+|
+* These Dwemer Bolts are not available to the player; they are used by traps.
+|-
+| [[File:SR-icon-weapon-FalmerBow.png|48px]]
+| {{Anchor|Falmer Supple Bow}}<br/>{{ID|00083167|par=1}} || Bow
+| Not possible
+| 20 || 410 || 15
+| None
+| 
+* Cannot be obtained
+* Draw speed 0.75
+|-
+|rowspan=4|[[File:SR-icon-weapon-Giant Club.png|48px]]
+| {{Anchor|Frost Giant Club}}&nbsp;{{DG}}<br/>{{ID|xx012d14|par=1}} || Warhammer
+| Not possible
+| 18 || 598 || 80 ||
+''Target takes 20 points of frost damage to Health and Stamina:''
+* [[Skyrim:Frost Damage|Frost Damage]], 20 pts
+* [[Skyrim:Slow|Slow]], 50 pts for 3 secs
+*Charge/Cost=Uses: 3000/29=103
+|
+* Club used by [[Skyrim:Frost Giant|Frost Giant]]s.
+* Can only be equipped by player using the console.
+|-
+| {{Anchor|Giant Club}}<br/>{{ID|000cdec9|par=1}} || Warhammer
+| Not possible
+| 18 || 1 || 5
+| None
+|
+* Club used by the giant at [[Skyrim:Pelagia Farm|Pelagia Farm]].
+* Also found at [[Skyrim:Steamcrag Camp|Steamcrag Camp]]. When highlighted, shows the stats of the club like any other generic item, but can be picked up and equipped by followers only; can only be removed by use of the [[Skyrim:Console|console]].
+|-
+| {{Anchor|Giant Club}}<br/>{{ID|000461da|par=1}} || Warhammer
+| Not possible
+| 18 || 1 || 60
+| None
+|
+* Club used by regular [[Skyrim:Giant|Giant]]s.
+* Also found at [[Skyrim:Tumble Arch Pass|Tumble Arch Pass]]. When highlighted, shows the stats of the club like any other generic item, but can be picked up and equipped by followers only; can only be removed by use of the [[Skyrim:Console|console]].
+|-
+| {{Anchor|Giant Club}}<br/>{{ID|000c334f|par=1}} || Warhammer
+| Not possible
+| 18 || 800 || 40
+|
+''Absorb 15 points of stamina:''
+*[[Skyrim:Absorb Stamina|Absorb Stamina]], 15 pts for 1 sec
+*Charge/Cost=Uses: 2000/34=58
+* Disenchant: No
+|
+* Not found in the game.
+* Based on its editor ID of <code>DA06GiantClub</code>, this was intended for use by a giant during [[Skyrim:The Cursed Tribe|The Cursed Tribe]], presumably the final boss Giant you face off against with Yamarz.
+|-
+| {{Icon|w|Karliah's Bow}}
+| {{Anchor|Karliah's Bow}}<br/>{{ID|000deed8|par=1}} || Bow
+| Not possible
+| 9 || 5 || 25
+|None
+|
+*Carried by [[Skyrim:Karliah|Karliah]] and [[Skyrim:Nightingale Sentinel|Nightingale Sentinel]]s
+*Draw Speed 0.6250
+*Cannot be obtained by the player and unplayable even if added with the console.
+|-
+| {{Icon|w|NordHeroArrows}}
+| {{Anchor|Nord Hero Arrow}}<br/>{{ID|000eafdf|par=1}} || Arrow
+|Not Possible
+| 0 || 5 || 24
+|None
+|
+*Not found in the game.
+|-
+| {{Icon|w|ElvenMace}}
+| {{Anchor|Prelate's Mace}} {{DG}}<br/>{{ID|xx01681e|par=1}} || Mace
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br/>perk:&nbsp;[[Skyrim:Elven Smithing|Elven]]
+| 17 || 330 || 13
+| None
+|
+*Wielded by [[Skyrim:Knight-Paladin Gelebor|Knight-Paladin Gelebor]]
+*Cannot be equipped by player
+|-
+| {{Icon|w|Pickaxe}}
+| {{Anchor|[[Skyrim:Rocksplinter|Rocksplinter]]}}<br/>{{ID|0006a707|par=1}} || Pickaxe
+| Not possible
+| 10 || 5 || 1
+| None
+|
+{{Bug|Cannot be obtained. Was probably supposed to be carried by [[Skyrim:Odfel|Odfel]].|USKP|1.2.7}}
+*Rocksplinter can be used to [[Skyrim:Mining|mine ores]] in place of a regular pickaxe.  However, it is not classified as a War Axe, meaning its combat damage is not affected by [[Skyrim:One-handed|One-handed]] skill level, perks, or fortify effects.
+|-
+|{{Icon|w|Spear of Bitter Mercy}}
+| {{Anchor|[[Skyrim:Spear of Bitter Mercy|Spear of Bitter Mercy]]}}{{CC|Goblins}}<br/>{{ID|FExxx810|par=1}} || Greatsword
+| Not possible
+| 20 || 1120 || 15
+|
+* [[Skyrim:Turn Undead (effect)|Turn Undead]], 0 pts
+* Dummy Spear Effect, 1 pt for 1 sec
+|
+* Carried by [[Skyrim:Gogh|Gogh]]
+|-
+| {{Icon|w|AncientNordBattleAxe}}
+| [[Skyrim:Tsun's Battle Axe|Tsun's Battle Axe]]<br/>{{ID|0005bf18|par=1}} || Battleaxe
+| Not possible
+| 36 || 1000 || 27
+| None
+|
+* Cannot be obtained by the player and unplayable even if added with the console.
+* This item is a leveled item, see its page for the full leveled list
+* All displayed statistics are for level 23+ version
+|-
+| 
+| {{Anchor||Undying Ghost's Sword}}[[Skyrim:Undying Ghost|Undying Ghost]]'s Sword{{CC|Necromantic Grimoire}}<br/>{{ID|FExxx89A|par=1}} || Sword
+| Not possible
+| 3 || 50 || 11
+| Sword FX 1 sec
+* Disenchant: Yes
+|
+* Can be obtained via a [[Skyrim:Wabbajack#Fatal Transmog|glitch]].
+|-
+| {{Icon|w|DaedricSword}}
+| {{Anchor|Zahkrii Do Dovahkiin }}{{DB}}<br/>{{ID|xx01bfef|par=1}} || 1 Hand Sword
+|[[Skyrim:Ebony Ingot|Ebony Ingot]];<br/>perk:&nbsp;[[Skyrim:Daedric Smithing|Daedric]]
+| 16 || 1250 || 14
+| ''The {{sic|swords|sword's|description=missing apostrophe}} true power can only be unlocked by the {{sic|Thuum|Thu'um|description=missing apostrophe}} of the {{sic|Dohvakiin|Dovahkiin}}''
+* Disenchant: No
+|
+* Cannot be found in-game.
+* Name means "Sword of Dragonborn" in the [[Lore:Dragon Language|Dragon Language]].
+* Despite its description, it is neither enchanted nor has any special scripts attached, and is in all other ways identical to a normal [[Skyrim:Daedric Sword|Daedric sword]].
+|}
+
+==Unobtainable Staves==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Damage Icon}}
+!Charge/Cost = Uses<br/>(controlling skill)
+!Enchantment
+!Notes
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Broken Staff}}<br>{{ID|0001cb30|par=1}}
+| 10 || 5 || 17
+|
+|
+|
+* Cannot be obtained
+* Carried by [[Skyrim:Sam Guevenne|Sam Guevenne]] during '''[[Skyrim:A Night To Remember|A Night To Remember]]'''
+|-
+| [[File:SR-icon-weapon-DestructionStaff.png|48px]]
+| {{Anchor|Necromantic Staff}}<br>{{ID|000284f5|par=1}}
+| 8 || 5 || 17
+|
+|
+|
+* Cannot be obtained
+* Was intended to appear in [[Skyrim:The Wolf Queen Awakened|The Wolf Queen Awakened]]
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+| {{Anchor|Sild's Staff}}<br>{{ID|000a88c9|par=1}}
+| 8 || 245 || 17 || 1000/15=66<br/>([[Skyrim:Conjuration|Conjuration]])
+| ''Summons a Frost Atronach for 10 seconds wherever the caster is pointing:''
+* [[Skyrim:Conjure Frost Atronach|Conjure Frost Atronach]], for 10 secs
+|
+* Not used in-game
+* The intended enchantment at one time was ''Summon [[Skyrim:Subjugated Ghost|Subjugated Ghost]]''. 
+|-
+|| 
+|{{Anchor|Karstangz-Odus}}{{CC|Forgotten Seasons}}<br/>{{ID|xx0008DF|par=1}} 
+| 8 || 1250|| 0 <br/>
+|
+| ''Does 45 points of ice damage. Target is 50% weaker to frost damage for 10 seconds.''
+|
+* Cannot be obtained
+|-
+|| 
+|{{Anchor|Karstangz-Gravuun}}{{CC|Forgotten Seasons}}<br/>{{ID|xx0008DE|par=1}} 
+| 8 || 1250|| 0 <br/>
+|
+| ''Does 45 points of shock damage. Target is 50% weaker to shock spells for 10 seconds.''
+|
+* Cannot be obtained
+|-
+|| 
+|{{Anchor|Karstangz-Koor}}{{CC|Forgotten Seasons}}<br/>{{ID|xx0008DD|par=1}} 
+| 8 || 1250|| 0 <br/>
+|
+| ''Does 45 points of fire damage. Target is 50% weaker to fire for 10 seconds.''
+|
+* Cannot be obtained
+|-
+|| 
+|{{Anchor|Karstangz-Vah}}{{CC|Forgotten Seasons}}<br/>{{ID|xx0008E2|par=1}} 
+| 8 || 1250|| 0 <br/>
+|
+| ''Does 45 points of poison damage. Target is 50% weaker to poison for 10 seconds.''
+|
+* Cannot be obtained
+|-
+| [[File:SR-icon-weapon-ConjurationStaff.png|48px]]
+|{{Anchor|Staff of Ancient Lich}}{{CC|Necromantic Grimoire}}<br>{{ID|FExxx899|par=1}}
+| 8 || 0|| 0 <br/>
+| 
+| Used by the [[Skyrim:Ancient Deathpriest|Ancient Deathpriest]]. It possesses a unique reanimation enchantment similar to the [[Skyrim:Soul Tear|Soul Tear]] shout, immediately resurrecting enemies killed by its magical damage.
+|
+*Cannot be obtained 
+|}
+
+==Unobtainable Armor==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+![[Skyrim:Workbench|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=22|{{Armor Rating Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+|{{AL|C}}| {{Icon|a|Ancient Falmer Crown}}
+| {{Anchor|Ancient Falmer Crown}}{{DG}}<br/>{{ID|xx00c814|par=1}} || Circlet/<br/>Light Helmet
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br>perk:&nbsp;None/[[Skyrim:Elven#Elven_Smithing|Elven]]
+| 2 || 350 || 0/16
+| None
+|
+{{Bug|Although it suits the other pieces of [[Skyrim:Falmer Armor|Ancient Falmer Armor]], it cannot be found in game.|UDGP|2.0.2| It is made to count as light armor, receive the appropriate perk bonuses and drop from [[Skyrim:Arch-Curate_Vyrthur|Arch-Curate Vyrthur]] along with the other Ancient Falmer gear.}}
+|-
+|{{AL|C}}| {{Icon|a|Ancient Falmer Cuirass}}
+| {{Anchor|Ancient Falmer Cuirass}}{{DG}}<br/>{{ID|xx00cad3|par=1}} || Light Armor
+| Not possible
+| 7 || 50 || 38
+| None
+| 
+*Worn by [[Skyrim:Knight-Paladin Gelebor|Knight-Paladin Gelebor]] and can only be equipped using the console. For males this version has no shoulder pads. For females it is identical to the first version.
+|-
+|{{AL|C}}| {{Icon|a|AncientNordArmor}}
+| {{Anchor|Ancient Nord Armor}}{{CC|Necromantic Grimoire}}<br/>{{ID|FExxx883|par=1}} || Heavy Armor
+| Not possible
+| 28 || 125 || 25
+| None
+| 
+*Worn by the [[Skyrim:Undying Ghost|Undying Ghost]].
+* Can be obtained via a [[Skyrim:Wabbajack#Fatal Transmog|glitch]].
+|-
+|{{AL|C}}| {{Icon|a|AncientNordGauntlets}}
+| {{Anchor|Ancient Nord Gauntlets}}{{CC|Necromantic Grimoire}}<br/>{{ID|FExxx882|par=1}} || Heavy Armor
+| Not possible
+| 4 || 25 || 10
+| None
+| 
+*Worn by the [[Skyrim:Undying Ghost|Undying Ghost]].
+* Can be obtained via a [[Skyrim:Wabbajack#Fatal Transmog|glitch]].
+|-
+|rowspan=3| {{nowrap|{{Icon|a|AncientNordHelmet(m)}}{{Icon|a|AncientNordHelmet(f)}}}}
+| {{Anchor|Ancient Nord Helmet}}<br/>{{ID|001019ca|par=1}} || Heavy Helmet
+| Not possible
+| 9 || 320 || 23
+| None
+|rowspan=3|
+*Only equippable through the [[Skyrim:Console|console]]. The first is worn by [[Skyrim:Kvenel the Tongue|Kvenel the Tongue]].
+|-
+| {{Anchor|Ancient Nord Helmet}}<br/>{{ID|0001fd7c|par=1}} || Heavy Helmet
+| Not possible
+| 1 || 1 || 1
+| None
+|-
+| {{Anchor|Ancient Nord Helmet}}<br/>{{ID|0001fd7b|par=1}}<br/>{{ID|0001fd77|par=1}} || Light Helmet
+| Not possible
+| 1 || 1 || 1
+| None
+|-
+|{{AL|C}}| {{Icon|a|AncientNordGauntlets}}
+| {{Anchor|Ancient Nord Gauntlets}}<br/>{{ID|001019cb|par=1}} || Heavy Gauntlets
+| Not possible
+| 9 || 125 || 18
+| None
+|rowspan=3|
+*Only equippable through the [[Skyrim:Console|console]]. Worn by [[Skyrim:Kvenel the Tongue|Kvenel the Tongue]].
+|-
+|{{AL|C}}| {{Icon|a|AncientNordArmor}}
+| {{Anchor|Ancient Nord Armor}}<br/>{{ID|001019cc|par=1}} || Heavy Armor
+| Not possible
+| 38 || 640 || 49
+| None
+|-
+|{{AL|C}}| {{Icon|a|AncientNordBoots}}
+| {{Anchor|Ancient Nord Boots}}<br/>{{ID|001019cd|par=1}} || Heavy Boots
+| Not possible
+| 9 || 125 || 18
+| None
+|-
+|{{AL|C}}| {{Icon|a|Chitin Heavy Boots}}
+| {{Anchor|Chitin Boots of Muffling}}{{DB}}<br/>{{ID|xx029156|par=1}} || Heavy Boots
+| Not possible
+| 6 || 230 || 14
+| ''Wearer is muffled and moves silently.''
+*[[Skyrim:Muffle (effect)|Muffle]], 0.5 pts
+|
+|-
+|{{AL|C}}| {{Icon|a|Chitin Heavy Helmet}}
+| {{Anchor|Chitin Helmet of Waterbreathing}}{{DB}}<br/>{{ID|xx02919f|par=1}} || Heavy Helmet
+| Not possible
+| 5 || 400 || 19
+| ''Can swim underwater without drowning.''
+*[[Skyrim:Waterbreathing (effect)|Waterbreathing]], 1 pt
+|
+|-
+|{{AL|C}}| {{Icon|a|DaedricArmor}}
+| {{Anchor|Daedric Armor}}<br/>{{ID|000f1abe|par=1}} || Heavy Armor
+| Not possible
+| 38 || 640 || 49
+| None
+|rowspan=4|
+*These varieties of Daedric Armor are specifically worn by Dremora, and are different from the standard [[Skyrim:Daedric Armor|Daedric Armor]], [[Skyrim:Daedric Boots|Daedric Boots]], [[Skyrim:Daedric Gauntlets|Daedric Gauntlets]], and [[Skyrim:Daedric Helmet|Daedric Helmet]].
+|-
+|{{AL|C}}| {{Icon|a|DaedricBoots}}
+| {{Anchor|Daedric Boots}}<br/>{{ID|000f1abd|par=1}} || Heavy Boots
+| Not possible
+| 9 || 125 || 18
+| None
+|-
+|{{AL|C}}| {{Icon|a|DaedricGauntlets}}
+| {{Anchor|Daedric Gauntlets}}<br/>{{ID|000f1ac0|par=1}} || Heavy Gauntlets
+| Not possible
+| 9 || 125 || 18
+| None
+|-
+|{{AL|C}}| {{Icon|a|DaedricHelmet}}
+| {{Anchor|Daedric Helmet}}<br/>{{ID|0010f75f|par=1}} || Heavy Helmet
+| Not possible
+| 15 || 1600 || 23
+| None
+|-
+|{{AL|C}}| {{Icon|a|DwarvenHelmet}}
+| {{Anchor|Dwarven Helmet of Eminent Alteration}}<br/>{{ID|0001b76d|par=1}} || Heavy Helmet
+| Not possible
+| 12 || 659 || 18
+| ''Created potions are 20% more powerful.''
+*[[Skyrim:Fortify Alchemy|Fortify Alchemy]], 20 pts
+|
+{{Bug|The name doesn't match the item's enchantment.|USKP|1.0}}
+|-
+|{{AL|C}}| {{Icon|a|StormcloakHelmet}}
+| {{Anchor|Eastmarch Guard Helmet}}<br/>{{ID|0010559d|par=1}} || Light Helmet
+| Not possible
+| 2 || 12 || 12
+| None
+|
+*Cannot be obtained.
+|-
+|
+| {{Anchor|Helmet}}{{CC|Necromantic Grimoire}}<br/>{{ID|FExxx886|par=1}} || Heavy Armor
+| Not possible
+| 8 || 0 || 21
+| None
+| 
+*Worn by the [[Skyrim:Undying Ghost|Undying Ghost]].
+* Can be obtained via a [[Skyrim:Wabbajack#Fatal Transmog|glitch]].
+|-
+|{{AL|C}}| {{Icon|a|ImperialArmor}}
+| {{Hover|Imperial Armor|{{Anchor|Falx Cuirass}}}}{{DB}}<br/>{{ID|xx01a574|par=1}} || Heavy Armor
+| Not possible
+| 35 || 100 || 25
+| None
+|
+*Not found anywhere in game. Instead, [[Skyrim:General Falx Carius|General Falx Carius]] wears the unique [[Skyrim:General_Carius'_Armor|General Carius' Armor]].
+*The full name for this item is "Imperial Armor". However, the Editor ID is <code>DLC2RR01FalxCuirass</code> in game data. It uses the same model as standard [[Skyrim:Imperial_Armor|Imperial armor]].
+|-
+|{{AL|C}}| {{Icon|a|ImperialBoots}}
+| {{Hover|Imperial Boots|{{Anchor|Falx Boots}}}}{{DB}}<br/>{{ID|xx01a573|par=1}} || Heavy Boots
+| Not possible
+| 8 || 20 || 10
+| None
+|rowspan=3|
+*This unique armor is worn by [[Skyrim:General Falx Carius|General Falx Carius]].
+*The full name for these items are "Imperial Boots", "Imperial Bracers", and "Imperial Helmet", respectively. However, the Editor IDs are <code>DLC2RR01FalxBoots</code> , <code>DLC2RR01FalxGauntlets</code> , and <code>DLC2RR01FalxHelmet</code> in game data. They use the same models as standard [[Skyrim:Imperial_Boots|Imperial boots]], [[Skyrim:Imperial_Bracers|Imperial bracers]], and [[Skyrim:Imperial_Helmet|Imperial helmet]].
+|-
+|{{AL|C}}| {{Icon|a|ImperialBracers}}
+| {{Hover|Imperial Bracers|{{Anchor|Falx Gauntlets}}}}{{DB}}<br/>{{ID|xx01a575|par=1}} || Heavy Gauntlets
+| Not possible
+| 4 || 15 || 10
+| None
+|-
+|{{AL|C}}| {{Icon|a|ImperialHelmet(open)}}
+| {{Hover|Imperial Helmet|{{Anchor|Falx Helmet}}}}{{DB}}<br/>{{ID|xx01a576|par=1}} || Light Helmet
+| Not possible
+| 5 || 50 || 15
+| None
+|-
+|{{AL|C}}|
+| {{Anchor|Forsworn Armor}}<br/>{{ID|0005d009|par=1}}<br/>{{ID|0007eaf1|par=1}} || Clothing
+| N/A
+| 1 || 2 || 5
+| None
+|
+*{{ID|0005d009|par=1}} is worn by [[Skyrim:Forsworn Briarheart|Briarhearts]], and is only equippable through the [[Skyrim:Console|console]]. It has the body of a male Briarheart even when worn by a female.
+*{{ID|0007eaf1|par=1}} is the burnt body of [[Skyrim:Astrid|Astrid]], and is only equippable through the console. When worn by a male only your head is visible.
+|-
+|{{AL|C}}| {{Icon|a|GeneralTullius'Armor}}
+| {{Anchor|General Carius' Armor}}{{DB}}<br/>{{ID|xx0376f1|par=1}} || Clothing (Heavy Armor)
+| Not possible
+| 18 || 65 || 31
+| None
+|
+*This unique armor is worn by [[Skyrim:General Falx Carius|General Falx Carius]]. It uses an edited, darker model of [[Skyrim:General_Tullius'_Armor|General Tullius' Armor]].
+*This item is classified as clothing, but is also considered to be heavy armor.  
+|-
+|{{AL|C}}| {{Icon|a|Guild Master's Armor}}
+| {{Anchor|Guild Master's Armor}}<br/>{{ID|001092b5|par=1}} || Light Armor
+| Not possible
+| 10 || 300 || 50
+| None
+|rowspan=3|
+*All of this Thieves Guild Equipment is only equippable through the [[Skyrim:Console|console]]. The player-specific versions of all Guild Master's armor and all Thieves Guild armor are listed at [[Skyrim:Unique Items|Unique Items]].
+|-
+|{{AL|C}}| {{Icon|a|Guild Master's Boots}}
+| {{Anchor|Guild Master's Boots}}<br/>{{ID|001092b4|par=1}} || Light Boots
+| Not possible
+| 2 || 100 || 15
+| None
+|-
+|{{AL|C}}| {{Icon|a|Guild Master's Gloves}}
+| {{Anchor|Guild Master's Gloves}}<br/>{{ID|001092b6|par=1}} || Light Gauntlets
+| Not possible
+| 2 || 100 || 15
+| None
+|-
+|{{AL|C}}| {{Icon|j|GoldNecklace}}
+| {{Hover|Gold Necklace|{{Anchor|Heartstone Necklace}}}}{{DB}}<br/>{{ID|xx0376ef|par=1}} || Necklace || N/A || 0.5 || 120 || N/A
+| None
+|
+*This necklace is worn by [[Skyrim:General Falx Carius|General Falx Carius]] and [[Skyrim:Ildari Sarothril|Ildari Sarothril]].
+*The full name for this item is "Gold Necklace". However, the Editor ID is <code>DLC2HeartstoneNecklace</code> in game data. It uses the same model as a standard [[Skyrim:Gold_Necklace|gold necklace]].
+*When equipped, it appears as a [[Skyrim:Heart Stone|Heart Stone]] in the player's chest. However, it will be inside the clothes unless the player wears General Carius' Armor, or [[Skyrim: Telvanni Robes|Telvanni Robes]] (on females), which have an appropriate hole for it to be visible.
+|-
+|{{AL|C}}| {{Icon|a|Imperial Dragon Cloak}}
+| {{Anchor|Imperial Dragon Cloak}}{{CC|Civil War Champions}}<br/>{{ID|FExxx84B|par=1}} || Heavy (Slot 46)
+| [[SR:Leather|Leather]];<br>perk: None
+| 5 || 500 || 0
+|
+|
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Armor}}
+| {{Anchor|Karliah's Armor}}<br/>{{ID|000e35e8|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29
+| None
+|rowspan=4|
+*Worn by [[Skyrim:Karliah|Karliah]].
+*None of Karliah's equipment can be equipped by the player.
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Boots}}
+| {{Anchor|Karliah's Boots}}<br/>{{ID|000e35e7|par=1}} || Light Boots
+| Not possible
+| 0 || 0 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Gloves}}
+| {{Anchor|Karliah's Gloves}}<br/>{{ID|000e35e9|par=1}} || Light Gauntlets
+| Not possible
+| 1 || 0 || 5
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Hood}}
+| {{Anchor|Karliah's Hood}}<br/>{{ID|000e35ea|par=1}} || Light Helmet
+| Not possible
+| 0 || 0 || 13
+| None
+|-
+|{{AL|C}}| <!--{{Icon|a|Nightingale Armor}}-->
+| {{Anchor|Nightingale Armor}}<br/>{{ID|000483c2|par=1}} || Light Armor
+| Not Possible
+| 0 || 0 || 46
+| None
+|rowspan=4|
+*Worn by the [[Skyrim:Nightingale Sentinel|Nightingale Sentinel]]s.
+*None of the Nightingale Sentinels' equipment can be equipped by the player.
+|-
+|{{AL|C}}| <!--{{Icon|a|Nightingale Boots}}-->
+| {{Anchor|Nightingale Boots}}<br/>{{ID|000483c1|par=1}} || Light Boots
+| Not Possible
+| 0 || 0 || 20
+| None
+|-
+|{{AL|C}}| {{Icon|a|Nightingale Gloves}}
+| {{Anchor|Nightingale Gloves}}<br/>{{ID|000487d1|par=1}} || Light Gauntlets
+| Not Possible
+| 0 || 0 || 17
+| None
+|-
+|{{AL|C}}| <!--{{Icon|a|Nightingale Hood}}-->
+| {{Anchor|Nightingale Hood}}<br/>{{ID|000487d8|par=1}} || Light Helmet
+| Not Possible
+| 0 || 0 || 22
+| None
+|-
+|{{AL|C}}| {{Icon|a|Nordic Carved Boots}}
+| {{Anchor|Nordic Boots of Muffling}}{{DB}}<br/>{{ID|xx0291a3|par=1}} || Heavy Boots
+| Not possible
+| 6 || 305 || 15
+| ''Wearer is muffled and moves silently.''
+*[[Skyrim:Muffle (effect)|Muffle]], 0.5 pts
+|
+|-
+|{{AL|C}}| {{Icon|a|Nordic Carved Helmet}}
+| {{Anchor|Nordic Helmet of Waterbreathing}}{{DB}}<br/>{{ID|xx0291ec|par=1}} || Heavy Helmet
+| Not possible
+| 7 || 600 || 20
+| ''Can swim underwater without drowning.''
+*[[Skyrim:Waterbreathing (effect)|Waterbreathing]], 1 pt
+|
+|-
+|{{AL|C}}| {{Icon|a|ScaledBracers}}
+| {{Anchor|Reaper Bracers}}{{DG}}<br/>{{ID|xx01a755|par=1}} || Light Gauntlets
+| Not possible
+| 2 || 70 || 9
+| None
+| 
+*Worn by the [[Skyrim:Reaper|Reaper]]{{DG}}
+*Cannot be obtained by the player and unplayable even if added with the console.
+|-
+|{{AL|C}}| {{Icon|a|Short Sleeved Shrouded Armor}}
+| {{Anchor|Shrouded Armor}}<br/>{{ID|0005abc3|par=1}} || Light Armor
+| Not possible
+| 32 || 448 || 43
+| ''Increases Poison Resistance by 50%.''
+*[[Skyrim:Resist Poison|Resist Poison]], 50 pts
+*Disenchant: No
+|
+*A short-sleeved version which is only equippable through the [[Skyrim:Console|console]]. Not short-sleeved on females.
+|-
+|{{AL|C}}| {{Icon|a|Stalhrim Light Boots}}
+| {{Anchor|Stalhrim Boots of Muffling}}{{DB}}<br/>{{ID|xx029100|par=1}} || Light Boots
+| Not possible
+| 2 || 295 || 11.5
+| ''Wearer is muffled and moves silently.''
+*[[Skyrim:Muffle (effect)|Muffle]], 0.5 pts
+|
+|-
+|{{AL|C}}| {{Icon|a|Stalhrim Heavy Boots}}
+| Stalhrim Boots of Muffling{{DB}}<br/>{{ID|xx0291ff|par=1}} || Heavy Boots
+| Not possible
+| 7 || 530 || 17
+| ''Wearer is muffled and moves silently.''
+*[[Skyrim:Muffle (effect)|Muffle]], 0.5 pts
+|
+|-
+|{{AL|C}}| {{Icon|a|Stalhrim Light Helmet}}
+| {{Anchor|Stalhrim Helmet of Waterbreathing}}{{DB}}<br/>{{ID|xx0290ff|par=1}} || Light Helmet
+| Not possible
+| 2 || 550 || 16.5
+| ''Can swim underwater without drowning.''
+*[[Skyrim:Waterbreathing (effect)|Waterbreathing]], 1 pt
+|
+|-
+|{{AL|C}}| {{Icon|a|Stalhrim Heavy Helmet}}
+| Stalhrim Helmet of Waterbreathing{{DB}}<br/>{{ID|xx029251|par=1}} || Heavy Helmet
+| Not possible
+| 7 || 1150 || 22
+| ''Can swim underwater without drowning.''
+*[[Skyrim:Waterbreathing (effect)|Waterbreathing]], 1 pt
+|
+|-
+|{{AL|C}}| {{Icon|a|SteelPlateArmor}}
+| {{Anchor|Steel Plate Armor}}<br/>{{ID|0010b2fd|par=1}} || Heavy Armor
+| Not possible
+| 35 || 625 || 40
+| None
+|rowspan=3|
+*These armor pieces are worn by the [[Skyrim:Headless Horseman|Headless Horseman]] and can only be equipped through the [[Skyrim:Console|console]].
+*The cuirass also fills the head, hair, circlet and earsslot, which means the head will turn invisible when worn and cannot be used with any type of headwear.
+|-
+|{{AL|C}}| {{Icon|a|SteelPlateBoots}}
+| {{Anchor|Steel Plate Boots}}<br/>{{ID|0010b2ff|par=1}} || Heavy Boots
+| Not possible
+| 9 || 125 || 14
+| None
+|-
+|{{AL|C}}| {{Icon|a|SteelPlateGauntlets}}
+| {{Anchor|Steel Plate Gauntlets}}<br/>{{ID|0010b300|par=1}} || Heavy Gauntlets
+| Not possible
+| 6 || 125 || 14
+| None
+|-
+|{{AL|C}}| {{Icon|a|Storm-Bear Cloak}}
+| {{Anchor|Storm-Bear Cloak}}{{CC|Civil War Champions}}<br/>{{ID|FExxx825|par=1}} || Heavy (Slot 46)
+| [[SR:Leather|Leather]];<br>perk: None
+| 5 || 500 || 0
+|
+|
+|-
+|{{AL|C}}| {{Icon|a|StormcloakCuirass}}
+| {{Anchor|Stormcloak Cuirass}}<br/>{{ID|000ad5a0|par=1}} || Light Armor
+| [[Skyrim:Leather|Leather]];<br>perk:&nbsp;none
+| 8 || 25 || 21
+| None
+|
+*This version has sleeves and cannot be obtained.
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Armor}}
+| {{Anchor|Summerset Shadows Armor}}<br/>{{ID|00108540|par=1}} || Light Armor
+| Not possible
+| 7 || 125 || 29
+| None
+|rowspan=4|
+*None of the Summerset Shadows armor can be equipped by the player.
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Boots}}
+| {{Anchor|Summerset Shadows Boots}}<br/>{{ID|0010853f|par=1}} || Light Boots
+| Not possible
+| 1.5 || 25 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Gloves}}
+| {{Anchor|Summerset Shadows Gloves}}<br/>{{ID|00108541|par=1}} || Light Gauntlets
+| Not possible
+| 1.5 || 25 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Hood}}
+| {{Anchor|SummersetShadowsHood}}{{sic}}<br/>{{ID|00108542|par=1}} || Light Helmet
+| Not possible
+| 2 || 60 || 13
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Armor}}
+| {{Anchor|Thieves Guild Armor}}<br/>{{ID|00036584|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29
+| None
+|rowspan=9|
+*All of this Thieves Guild Equipment is only equippable through the [[Skyrim:Console|console]]. The player-specific versions of all Guild Master's armor and all Thieves Guild armor are listed at [[Skyrim:Unique Items|Unique Items]].
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Boots}}
+| {{Anchor|Thieves Guild Boots}}<br/>{{ID|00036583|par=1}} || Light Boots
+| Not possible
+| 0 || 25 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Gloves}}
+| {{Anchor|Thieves Guild Gloves}}<br/>{{ID|00042be9|par=1}} || Light Gauntlets
+| Not possible
+| 1.5 || 0 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Hood}}
+| {{Anchor|Thieves Guild Hood}}<br/>{{ID|00036585|par=1}} || Light Helmet
+| Not possible
+| 1 || 0 || 13
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Hood Alt}}
+| {{Anchor|Thieves Guild Hood Alt}}<br/>{{ID|000e35df|par=1}} || Light Helmet
+| Not possible
+| 0 || 0 || 13
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Variant Armor}}
+| {{Anchor|Thieves Guild Variant Armor}}<br/>{{ID|000e35db|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Variant Boots}}
+| {{Anchor|Thieves Guild Variant Boots}}<br/>{{ID|000e35da|par=1}} || Light Boots
+| Not possible
+| 0 || 0 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Variant Gloves}}
+| {{Anchor|Thieves Guild Variant Gloves}}<br/>{{ID|000e35dc|par=1}} || Light Gauntlets
+| Not possible
+| 1 || 0 || 5
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Variant Hood}}
+| {{Anchor|Thieves Guild Variant Hood}}<br/>{{ID|000e35dd|par=1}} || Light Helmet
+| Not possible
+| 0 || 0 || 13
+| None
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Hood}}
+| {{Anchor|[[Skyrim:Torturer's_Hood|Torturer's Hood]]}}<br/>{{ID|000ee5c0|par=1}} || Light Helmet
+| Not possible
+| 1 || 10 || 13
+| None
+|
+*Cannot be equipped.
+*Can be obtained and equipped in [[SR:Special Edition|Special Edition]] and on [[SR:Switch|Switch]].
+|-
+|{{AL|C}}| {{Icon|a|Thieves Guild Armor}}
+| {{Anchor|Tsun's Armor}}<br/>{{ID|000c0165|par=1}} || Light Armor
+| Not possible
+| 0 || 0 || 29 
+| None
+|
+*Appears as [[Skyrim:Thieves_Guild_Armor|Thieves Guild Armor]] if equipped by females.
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{AL|C}}|
+| {{Anchor|Tsun's Boots}}<br/>{{ID|000c0166|par=1}} || Light Boots
+| Not possible
+| 0 || 0 || 8 
+| None
+|
+*Cannot be equipped by the player.
+|-
+|[[File:SR-icon-armor-Vampire Royal Armor (m).png|48px]][[File:SR-icon-armor-Vampire Royal Armor xx0194c5 (f).png|48px]]
+| {{Anchor|Vampire Royal Armor}}{{DG}}<br/>{{ID|xx011a85|par=1}}|| Light Armor
+| Not possible
+| 9 || 655 || 30
+|''Magicka regenerates 125% faster.''
+*[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 125 pts
+|
+*Cannot be equipped by the player.
+|-
+|{{AL|C}}| {{Icon|a|FurArmor4}}
+| {{Anchor|Word Chest}}{{DB}}<br/>{{ID|xx0323ef|par=1}}<br/>{{ID|xx0398cc|par=1}}<br/>{{ID|xx03be38|par=1}} || Light Armor
+| Not possible
+| 6 || 50 || 23
+| None
+|
+*{{ID|xx0398cc|par=1}} is equipped by [[Skyrim:Storn Crag-Strider|Storn Crag-Strider]] upon being killed by Hermaeus Mora.
+*It has a big bloodstain on the chest area where Hermaeus Mora's tentacles impaled the coat.
+|-
+|{{AL|C}}| {{Icon|a|WornShroudedArmor}}
+| {{Anchor|Worn Shrouded Armor}}<br/>{{ID|00105966|par=1}} || Light Armor
+| Not possible
+| 6 || 80 || 20
+| None
+|rowspan=4|
+* Cannot be equipped by the player.
+|-
+|{{AL|C}}| {{Icon|a|WornShroudedBoots}}
+| {{Anchor|Worn Shrouded Boots}}<br/>{{ID|00105967|par=1}} || Light Boots
+| Not possible
+| 2 || 45 || 3
+| None
+|-
+|{{AL|C}}| {{Icon|a|WornShroudedCowl}}
+| {{Anchor|Worn Shrouded Cowl}}<br/>{{ID|00105969|par=1}} || Light Helmet
+| Not possible
+| 2 || 50 || 8
+| None
+|-
+|{{AL|C}}| {{Icon|a|WornShroudedGloves}}
+| {{Anchor|Worn Shrouded Gloves}}<br/>{{ID|00105968|par=1}} || Light Gauntlets
+| Not possible
+| 2 || 50 || 4
+|''Backstab does double damage.''
+*Disenchant: No
+|}
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Shrouded Armor Male 02.jpg|Shrouded Armor (short-sleeved)
+File:SR-item-Thieves Guild Alternate Armor Male.jpg|Thieves Guild Hood Alt
+File:SR-item-Thieves Guild Variant Armor Male.jpg|Thieves Guild Variant Armor
+File:SR-item-Tsun's Armor.jpg|Tsun's Armor
+</gallery>
+;Female
+<gallery>
+File:SR-item-Karliah's Armor.jpg|Karliah's Armor
+File:SR-item-Thieves Guild Alternate Armor Female.jpg|Thieves Guild Hood Alt
+File:SR-item-Thieves Guild Variant Armor Female.jpg|Thieves Guild Variant Armor
+</gallery>
+
+==Unobtainable Clothing==
+{| class="wikitable sortable"
+!class=unsortable width=130|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+|{{HE|0004f006}} {{AL|C}}| {{Icon|c|Arm Bandages|60}}
+| {{Anchor|Arm Bandages}}<br>{{ID|0004F006|par=1}} || Gloves
+| 0.5 || 1
+|None
+| 
+*Only equippable through the [[Skyrim:console|console]]
+|-
+|{{HE|xx000b71}} {{AL|C}}| {{Icon|c|Ayleid Crown of Rielle|60}}
+| {{Anchor|Ayleid Crown of Rielle}}<br>{{CC|The Cause}}<br>{{ID|xx000B71|par=1}} || Circlet
+| 2 || 2250
+| Unenchantable
+| 
+*Unobtainable.
+*Added by [[Skyrim:The Cause|The Cause]]
+|-
+|{{AL|C}}| {{Icon|c|Black Mage Hood|60}}
+| {{Anchor|Black Mage Hood}}<br>{{ID|000C5D10|par=1}}<br>{{ID|xx017e9B|par=1}}{{DG}} || Clothing
+| 0.5 || 214
+|[[Skyrim:Fortify Magicka|Fortify Magicka]], 20 pts
+|
+*Worn by [[Skyrim:Skeleton|skeleton]] mages, and [[Skyrim:Draugr|draugr]] at [[Skyrim:Forelhost|Forelhost]].
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{AL|C}} rowspan=2| {{Icon|c|BlackRobes}}
+| {{Anchor|Black Robes}}<br/>{{ID|00016ffe|par=1}} || rowspan=2|Robes
+|rowspan=2| 1 ||rowspan=2| 5 ||rowspan=2| None
+|rowspan=4|
+* These are specifically worn by Dremora, unlike standard [[Skyrim:Black Robes|Black Robes]] or [[Skyrim:Boots|Boots]].
+* The second robe and boots variants are worn by the [[Skyrim:Dremora Merchant|Dremora merchant]].
+|-
+| {{Anchor|Black Robes|xx0376da}}&nbsp;{{DB}}<br>{{ID|xx0376da|par=1}}
+|-
+|{{AL|C}} rowspan=2|  {{Icon|c|Boots9}}
+| {{Anchor|Boots}}<br/>{{ID|00016fff|par=1}} ||rowspan=2| Boots
+|rowspan=2| 1 ||rowspan=2| 4
+|rowspan=2| None
+|-
+| {{Anchor|Boots|xx0376d9}}&nbsp;{{DB}}<br>{{ID|xx0376d9|par=1}}
+|-
+|{{HE|xx01570b}} {{AL|C}}| {{icon|c|Boots11|60}}
+| {{Anchor|Boots}}{{DG}}<br>{{ID|xx01570b|par=1}} || Boots
+| 1 || 3
+| None
+|Worn by the prelates in the [[Skyrim:Forgotten Vale|Forgotten Vale]].
+*These add one to your weight, but are invisible in the inventory and cannot be viewed on your character even if equipped by the console.
+|-
+|{{AL|C}}| {{Icon|c|Moth Priest Blindfold}}
+| {{Anchor|Blindfold}}{{CC|Alternative Armors - Ebony Plate}}<br/>{{ID|FExxx84B|par=1}} ||Clothing
+| 1 || 1
+| None
+|
+*Unobtainable.
+*Cannot be worn by the player.
+|-
+|{{HE|000cf8b0}} {{AL|C}}| {{Icon|c|Executioner's Boots|60}}
+| {{Anchor|Boots}}<br>{{ID|000CF8B0|par=1}} || Clothing
+| 1 || 4
+| None
+| 
+* Executioner's Boots. Only equippable through the [[Skyrim:Console|console]].
+* Appears as a transparent gap when worn by a female.
+|-
+|{{HE|0010cfef}} {{AL|C}}| {{Icon|c|BrownRobes|60}}
+| {{Anchor|Brown Robes}}<br>{{ID|0010CFEF|par=1}} || Robes
+| 1 || 5
+| None
+| 
+*Not found in the game.
+|-
+|{{HE|000467c0}}| {{Icon|m|Girl%27s_Green_Dress|60}}{{Icon|m|Girl%27s_Blue_Dress|60}}{{Icon|m|Girl%27s_Red_Dress|60}}{{Icon|m|Girl%27s_Grey_Dress|60}}{{Icon|m|Girl%27s_Yellow_Dress|60}}
+| {{Anchor|Child's Clothes}}<br>{{ID|000467BF|par=1}}<br>{{ID|000467C0|par=1}}<br>{{ID|0006D92C|par=1}}<br>{{ID|xx00c73E|par=1}}{{HF}}<br>{{ID|xx00c740|par=1}}{{HF}}<br>{{ID|xx03c819|par=1}}{{DB}} || Clothing
+| 1 || 4
+| None
+|
+* Not to be confused with [[Skyrim:Miscellaneous_Items#Children's ItemsHF|children's tunics and dresses]].
+*Unobtainable.
+*Cannot be worn by the player.
+|-
+|{{HE|0010e2ce}} {{AL|C}}| {{icon|c|College Boots|60}}
+| {{Anchor|College Boots}}<br>{{ID|0010E2CE|par=1}} ||rowspan=2| Boots
+|rowspan=2| 2 ||rowspan=2| 0 ||rowspan=2| None
+|rowspan=2|
+* Invisible in inventory and only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|0010e2dc}} {{AL|C}}| {{icon|c|Boots6|60}}
+| {{Anchor|College Boots}}<br>{{ID|0010E2DC|par=1}}
+|-
+|{{HE|0010d6a5}}| {{Icon|c|CollegeRobes2(m)|60}}{{Icon|c|CollegeRobes2(f)|60}}
+| {{Anchor|College Robes}}<br>{{ID|0010D6A5|par=1}}
+|| Robes
+| 1 || 10
+| None
+|
+*Not found in the game.
+|-
+| {{AL|C}}|{{Icon|c|Cultist Robes}}
+| {{Anchor|Cultist Robes}}{{DB}}<br>{{ID|xx01cda6|par=1}} || Robes
+| 2 || 75 ||''Magicka regenerates 75% faster:''
+*[[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+|
+* Unused version of the regular [[Skyrim:Cultist Robes|Cultist Robes]]
+|-
+| {{AL|C}}|{{Icon|c|HammerfellGarb}}
+| {{Anchor|Cyrus' Outfit}}{{CC|Dead Man's Dread}}<br>{{ID|xx000807|par=1}} || Clothes
+| 1 || 500
+|None
+|
+* May have been an earlier version of [[Skyrim:Cyrus' Clothes|Cyrus' Clothes]]{{CC|Dead Man's Dread}}
+|-
+| {{AL|C}}|{{Icon|c|Dunmer Outfit (Yellow)}}
+| {{Anchor|Dunmer Outfit}}{{DB}}<br>{{IDs|xx03706a|par=1}} || Robes
+| 2 || 75 ||''Magicka regenerates 75% faster:''
+* [[Skyrim:Regenerate Magicka|Regenerate Magicka]], 75 pts
+|
+* Unused version of the regular [[Skyrim:Dunmer Outfit|Dunmer Outfit]]
+|-
+|{{HE|000e84c4}}| {{Icon|c|EmbellishedRobes(m)|60}}{{Icon|c|NobleClothes|60}}
+| {{Anchor|Embellished Robes}}<br>{{ID|000E84C4|par=1}} || Robes
+| 3 || 100
+| None
+| 
+*Worn by [[Skyrim:Igmund|Jarl Igmund]] of Markarth.
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{HE|000ead49}} {{AL|C}}| {{Icon|c|EmbroideredGarment|60}}
+| {{Anchor|Embroidered Garment}}<br>{{ID|000EAD49|par=1}} || Clothing
+| 1 || 100
+| None
+|
+*Worn by [[Skyrim:High King Torygg|High King Torygg]].
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{AL|C}}| {{Icon|c|ExecutionHood1}}
+| {{Anchor|Execution Hood}}<br/>{{ID|0005a9df|par=1}}|| Heavy Helmet
+| 0.5 || 5
+| None
+|
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]] in the [[Skyrim:Redguard Elite Armaments|Redguard Elite Armaments]] Creation Club quest line.
+|-
+|{{AL|C}}| {{Icon|c|Executioner's Hood}}
+| {{Anchor|Executioner's Hood}}<br/>{{ID|000cf8b2|par=1}} || Hood
+| 1 || 430
+|
+* [[Skyrim:Fortify Magicka|Fortify Magicka]], 40 pts
+* Disenchant: Yes
+| 
+*Cannot be equipped.
+|-
+|{{HE|000cf8b3}} {{AL|C}}| {{Icon|c|Executioner's Robes|60}}
+| {{Anchor|Executioner's Robes}}<br>{{ID|000CF8B3|par=1}} || Robes
+| 1 || 100
+| None
+|
+* Only equippable through the [[Skyrim:Console|console]]
+* Appears as [[Skyrim:Shrouded Robes|Shrouded Robes]] when worn by a female.
+|-
+|{{HE|000cf8b1}} {{AL|C}}| {{Icon|c|Executioner's Gloves|60}}
+| {{Anchor|Gloves}}<br>{{ID|000CF8B1|par=1}} || Clothing
+| 0.5 || 1
+| None
+| 
+* Executioner's Gloves. Only equippable through the [[Skyrim:Console|console]],
+* Appears as [[Skyrim:Forsworn Gauntlets|Forsworn Gauntlets]] when worn by a female.
+|-
+|{{HE|000cee76}} {{AL|C}}| {{Icon|c|FineRaiment|60}}
+| {{Anchor|Fine Raiment}}<br>{{ID|000CEE76|par=1}} || Clothing
+| 1 || 100
+| None
+|
+*Worn by [[Skyrim:Elisif the Fair|Jarl Elisif the Fair]] and [[Skyrim:Queen Potema#Potema's Remains|Potema's Remains]].
+*Can be obtained from Elisif via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+*Or from Potema via a different [[Skyrim:Queen Potema#Notes|glitch]].
+|-
+|{{HE|0010cff1}} {{AL|C}}| {{Icon|c|GreyRobes|60}}
+| {{Anchor|Grey Robes}}<br>{{ID|0010CFF1|par=1}} || Hood
+| 1 || 5
+|None
+|
+*Not found in the game.
+|-
+|{{HE|00036a46}} {{AL|C}}| {{Icon|c|Greybeard's Boots|60}}
+| {{Anchor|Greybeard's Boots}}<br>{{ID|00036A46|par=1}} || Boots
+| 0 || 5
+|None
+|
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|00036a45}} {{AL|C}}| {{Icon|c|Greybeard's Hood|60}}
+| {{Anchor|Greybeard's Hood}}<br>{{ID|00036A45|par=1}} || Clothes
+| 0 || 5
+|None
+|
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|00036a44}} {{AL|C}}| {{Icon|c|Greybeard's Robes|60}}
+| {{Anchor|Greybeard's Robes}}<br>{{ID|00036A44|par=1}} || Robes
+| 0 || 5
+|None
+|
+*Worn by the [[Skyrim:Greybeards|Greybeards]]
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|FExxx884}} {{AL|C}}| {{Icon|c|Vampire Hood|60}}
+| {{Anchor|Haunting Spirit Hood}}{{CC|Necromantic Grimoire}}<br>{{ID|FExxx884|par=1}} || Hood
+| 0.5 || 1
+|None
+|
+*Worn by the [[Skyrim:Haunting Spirit|Haunting Spirit]].
+*Can be obtained via a [[Skyrim:Wabbajack#Fatal Transmog|glitch]].
+|-
+|{{HE|0004f000}} {{AL|C}}| {{Icon|c|Greybeard's Hood|60}}
+| {{Anchor|Head bandages}}<br>{{ID|0004F000|par=1}} || Hood
+| 0 || 0
+|None
+|
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|0010cfe4}} {{AL|C}}| {{Icon|c|BrownRobes|60}}
+| {{Anchor|Hooded Brown Robes}}<br>{{ID|0010CFE4|par=1}} || Robes
+| 1 || 5
+|None
+|
+*Not found in the game.
+|-
+|{{HE|0010cfec}} {{AL|C}}| {{Icon|c|GreenRobes|60}}
+| {{Anchor|Hooded Green Robes}}<br>{{ID|0010CFEC|par=1}} || Robes
+| 1 || 5
+|None
+|
+*Not found in the game.
+|-
+|{{HE|0010cfea}} {{AL|C}}| {{Icon|c|GreyRobes|60}}
+| {{Anchor|Hooded Grey Robes}}<br>{{ID|0010CFEA|par=1}} || Robes
+| 1 || 5
+|None
+|
+*Not found in the game.
+|-
+|{{HE|0010cfeb}} {{AL|C}}| {{Icon|c|RedRobes|60}}
+| {{Anchor|Hooded Red Robes}}<br>{{ID|0010CFEB|par=1}} || Robes
+| 1 || 5
+|None
+|
+*Worn by [[Skyrim:Galathil|Galathil]]{{DG}}.
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{HE|00047cbe}} {{AL|C}}| {{Icon|a|Thieves Guild Hood|60}}
+| {{Anchor|Leather Hood}}<br>{{ID|00047CBE|par=1}} || Hood
+| 1 || 10
+|None
+|
+*Cannot be obtained.
+|-
+|{{HE|000d3de9}}| {{Icon|c|NoviceRobes(m)|60}}{{Icon|c|NoviceRobes(f)|60}}
+| {{Anchor|Mantled College Robes}}<br>{{ID|000D3DE9|par=1}}
+|rowspan=3| Robes
+|rowspan=3| 1 ||rowspan=3| 5
+|rowspan=3| None
+|rowspan=3|
+*Not found in the game.
+|-
+|{{HE|0010d691}}| {{Icon|c|NoviceRobes(m)|60}}{{Icon|c|MantledCollegeRobes(f)|60}}
+| {{Anchor|Mantled College Robes}}<br>{{ID|0010D691|par=1}}
+|-
+|{{HE|0010d6a4}}| {{Icon|c|AdeptRobes(m)|60}}{{Icon|c|AdeptRobes(f)|60}}
+| {{Anchor|Mantled College Robes}}<br>{{ID|0010D6A4|par=1}}
+|-
+|{{HE|xx01570c}} {{AL|C}}| {{icon|c|MonkRobes|60}}
+| {{Anchor|Monk Robes}}{{DG}}<br>{{ID|xx01570c|par=1}}
+| Robes
+| 1 || 5
+| None
+|Worn by the prelates in the [[Skyrim:Forgotten Vale|Forgotten Vale]].
+*These are invisible in your inventory, add to your weight by one, and cannot be viewed on your character even if equipped by the console.
+|-
+|{{HE|xx0047da}} {{AL|C}}| {{Icon|c|Moth Priest Blindfold|60}}
+| {{Anchor|Moth Priest Blindfold}}{{DG}}<br>{{ID|xx0047DA|par=1}} || Hood
+| 1 || 1
+|None
+|
+*Worn by [[Skyrim:Dexion Evicus|Dexion Evicus]] after [[Skyrim:Seeking Disclosure|Seeking Disclosure]].<br/>
+*Only equippable through the [[Skyrim:console|console]].
+|-
+|{{HE|xx0047d7}} {{AL|C}}| {{Icon|c|Moth Priest Robes|60}}
+| {{Anchor|Moth Priest Robes}}{{DG}}<br>{{ID|xx0047D7|par=1}} || Robes
+| 1 || 5
+|None
+|
+*Worn by [[Skyrim:Dexion Evicus|Dexion Evicus]].
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{HE|xx0047d9}} {{AL|C}}| {{Icon|c|Moth Priest Sandals|60}}
+| {{Anchor|Moth Priest Sandals}}{{DG}}<br>{{ID|xx0047D9|par=1}} || Shoes
+| 1 || 5
+|None
+|
+*Worn by [[Skyrim:Dexion Evicus|Dexion Evicus]].
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+{{Bug|The sandals can only be enchanted with "body" enchantments, due to having the wrong keyword (ClothingBody instead of ClothingFeet).|confirmed=1}}
+|-
+|{{HE|00088952}} {{AL|C}}|
+| {{Anchor|Nocturnal's Clothes}}<br>{{ID|00088952|par=1}} || Robes
+| 0 || 0
+|None
+|
+*Worn by [[Skyrim:Nocturnal|Nocturnal]].
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|-
+|{{HE|00088954}} {{AL|C}}| {{Icon|c|Greybeard's Hood|60}}
+| {{Anchor|Nocturnal's Hat}}<br>{{ID|00088954|par=1}} || Hood
+| 0 || 0
+|None
+|
+*Worn by [[Skyrim:Nocturnal|Nocturnal]].
+*Only equippable through the [[Skyrim:Console|console]].
+|-
+|{{HE|0010cee5}} {{AL|C}}| {{Icon|c|BlueRobes|60}}
+|{{Anchor|Novice Robes}}<br>{{ID|0010CEE5|par=1}} || Robes
+| 1 || 5 
+| None
+|
+*Not found in the game.
+|-
+| {{HE|0010e2d8}} {{AL|C}}| {{Icon|c|Gloves}}
+| {{Anchor|[[Skyrim:Prisoner's Cuffs|Prisoner's Cuffs]]}}<br/>{{ID|0010e2d8|par=1}}<br/>{{ID|00103941|par=1}}<br/>{{ID|0010e039|par=1}} || Gloves
+| 0 || 0
+| None
+| 
+*Worn during the beginning stages of [[Skyrim:Unbound|Unbound]] before the inventory is enabled and on [[Skyrim:Roggvir|Roggvir]] during his execution
+*Only the last of set of cuffs {{ID|0010e039|par=1}} can be equipped.
+**Can be obtained via a [[SR:Glitches|glitch]].
+|-
+|{{HE|00065b9b}} {{AL|C}}| {{Icon|c|PsiijicBoots|60}}
+| {{Anchor|Psiijic Boots}}<br>{{ID|00065B9B|par=1}} || Boots
+| 0 || 25
+|None
+|
+*Worn by [[Skyrim:Gelebros|Gelebros]], [[Skyrim:Nerien|Nerien]], [[Skyrim:Quaranir|Quaranir]] and [[Skyrim:Tandil|Tandil]].
+**Can be obtained via a [[SR:Glitches|glitch]].
+|-
+|-
+|{{HE|00065b9d}} {{AL|C}}| {{Icon|c|PsiijicGloves|60}}
+| {{Anchor|Psiijic Gloves}}<br>{{ID|00065B9D|par=1}} || Gloves
+| 0 || 0
+|None
+|
+*Worn by [[Skyrim:Gelebros|Gelebros]], [[Skyrim:Nerien|Nerien]], [[Skyrim:Quaranir|Quaranir]] and [[Skyrim:Tandil|Tandil]].
+**Can be obtained via a [[SR:Glitches|glitch]].
+|-
+|{{HE|00065b99}} {{AL|C}}| {{Icon|c|PsiijicHood|60}}
+| {{Anchor|Psiijic Hood}}<br>{{ID|00065B99|par=1}} || Hood
+| 0 || 0
+|None
+| 
+*Worn by [[Skyrim:Gelebros|Gelebros]], [[Skyrim:Nerien|Nerien]], [[Skyrim:Quaranir|Quaranir]] and [[Skyrim:Tandil|Tandil]].
+**Can be obtained via a [[SR:Glitches|glitch]].
+|-
+|{{HE|00065b94}} {{AL|C}}| {{Icon|c|PsiijicRobes|60}}
+| {{Anchor|Psiijic Robes}}<br>{{ID|00065B94|par=1}} || Robes
+| 5 || 100
+|None
+|
+*Worn by [[Skyrim:Gelebros|Gelebros]], [[Skyrim:Nerien|Nerien]], [[Skyrim:Quaranir|Quaranir]] and [[Skyrim:Tandil|Tandil]].
+**Can be obtained via a [[SR:Glitches|glitch]].
+|-
+|{{AL|C}}| {{Icon|c|Executioner's Hood}}
+| {{sic|{{Anchor|Reaperr's Hood|Reaper's Hood}}|Reaper's Hood}}{{DG}}<br/>{{ID|xx01a73f|par=1}} || Hood
+| 1 || 1349
+| 
+''[[Skyrim:Fortify Two-Handed|Fortify Two-Handed]], 35 pts''
+| rowspan = 2 |
+*Worn by the [[Skyrim:Reaper|Reaper]]{{DG}}
+*Unobtainable.
+|-
+|{{AL|C}}| {{Icon|c|Executioner's Robes}}
+| {{Anchor|Reaper's Robes}}{{DG}}<br/>{{ID|xx01a752|par=1}} || Robes
+| 1 || 100
+| None
+|-
+|-
+|{{HE|0005db7b}} {{AL|C}}| {{icon|c|NobleClothes|60}}
+| {{Anchor|Refined Tunic}}<br>{{ID|000E84C6|par=1}} || Clothing
+| 3 || 100 || 54
+|
+*Worn by [[Skyrim:Siddgeir|Siddgeir]] of Falkreath. 
+*Can only be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{AL|C}}| {{Icon|c|MageHood1(m)}}{{Icon|c|MageHood1(f)}}
+| {{Anchor|Serana Hood}}{{DG}}<br/>{{ID|xx00e6a0|par=1}} || Hood
+| 1 || 1
+| None
+| 
+*Worn by [[Skyrim:Serana|Serana]]{{DG}} when she is in an exterior location
+|-
+|{{AL|C}}| {{Icon|c|FineBoots}}
+| {{Anchor|Sheogorath Boots}}<br/>{{ID|000c7cbd|par=1}} || Shoes
+| 0 || 25
+|None
+|rowspan=2|Worn by Sheogorath during the quest [[Skyrim:The Mind of Madness|The Mind of Madness]]. As he is essential with a ghost state, these items are unobtainable without console commands.
+|-
+|{{AL|C}}| {{Icon|c|FineClothes2}}
+| {{Anchor|Sheogorath Outfit}}<br/>{{ID|000c7cbb|par=1}} || Clothing
+| 1 || 25
+|None 
+|-
+|{{AL|C}}| {{icon|c|Shoes1|60}} 
+| {{Anchor|Shoes}}&nbsp;{{DB}}<br>{{ID|xx03c81a|par=1}} || Shoes
+| 0 || 2
+|None
+|
+* These are worn by [[Skyrim:Aeta|Aeta]].
+|-
+|{{AL|C}}| {{Icon|c|Telvanni Robes}}
+| {{Anchor|Telvanni Robes}}{{DB}}<br>{{ID|xx01cda8|par=1}} || Robes
+| 2 || 175||
+*''[[Skyrim:Regenerate Magicka|Regenerate Magicka]]'', 150 pts
+|
+*These are worn by [[Skyrim:Neloth|Neloth]].
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|-
+|{{AL|C}}| {{Icon|j|GoldAndRubyCirclet}}
+| {{Anchor|Ulfric's Gag}}<br/>{{ID|000f9670|par=1}} || Circlet
+| 0 || 0
+| None
+|
+* Worn by [[Skyrim:Ulfric Stormcloak|Ulfric Stormcloak]] during [[Skyrim:Unbound|Unbound]].
+* Unobtainable.
+|}
+
+====Gallery====
+;Male
+<gallery>
+File:SR-item-Executioner's Robes.jpg|Executioner's Robes
+File:SR-item-Sheogorath Outfit.jpg|Sheogorath Outfit
+</gallery>
+
+==Unobtainable Jewelry==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!Type
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+| {{Icon|j|Amulet of the Elder Council}}
+| {{Anchor|Amulet of the Elder Council}}<br/>{{ID|000c8913|par=1}} || Amulet
+| 0 ||1000
+|
+|The [[Skyrim:Jeweled Amulet|Jeweled Amulet]] is the version actually found in the game
+|-
+| {{Icon|j|Amulet of Bats}}
+| {{Anchor|Amulet of Bats}}{{DG}}<br/>{{ID|xx00a2a7|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Night Power while in Vampire Lord Form will be Bats.''
+| Not found in-game
+|-
+| {{Icon|j|Amulet of Drain Magicka}}
+| {{Anchor|Amulet of Drain Magicka}}{{DG}}<br/>{{ID|xx00f4d7|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Drain Life spell will drain more Magicka''
+| Not found in-game
+|-
+| {{Icon|j|Amulet of Draining Grip}}
+| {{Anchor|Amulet of Draining Grip}}{{DG}}<br/>{{ID|xx00e803|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Blood Grip will gradually drain life from the victim''
+| Not found in-game
+|-
+| {{Icon|j|Amulet of Draining Grip}}
+| {{Anchor|Amulet of Mist Form}}{{DG}}<br/>{{ID|xx00a2a6|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Night Power while in Vampire Lord Form will be Mistform''
+| Not found in-game
+|-
+| {{Icon|j|Amulet of Drain Magicka}}
+| {{Anchor|Amulet of Supernatural Reflexes}}{{DG}}<br/>{{ID|xx00a2a8|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Night Power while in Vampire Lord Form will be Supernatural Reflexes''
+| Not found in-game
+|-
+| {{Icon|j|Amulet of the Empath}}
+| {{Anchor|Amulet of the Empath}}{{DG}}<br/>{{ID|xx00a2a5|par=1}} || Amulet
+| 0.5 || 1000
+| ''While wearing this amulet, your Night Power while in Vampire Lord Form will be Empath''
+| Not found in-game
+|-
+|{{icon|j|East Empire Pendant}}
+| {{Anchor|East Empire Company Amulet}}&nbsp;{{DB}}<br>{{ID|xx026735|par=1}} || Amulet
+| 0.5 || 100
+| 
+| Not found in-game. It looks exactly like [[SR:East Empire Pendant|East Empire Pendant]], only difference is the higher price.
+|-
+| {{Icon|j|Ring of Corpse Curse}}
+| {{Anchor|Ring of Corpse Curse}}{{DG}}<br/>{{ID|xx00a2a4|par=1}} || Ring
+| 0.25 || 1000
+| ''While wearing this ring, your Blood Magic while in Vampire Lord Form will be Rigor Mortis''
+| Not found in-game
+|-
+| {{Icon|j|Ring of Draining Claws}}
+| {{Anchor|Ring of Draining Claws}}{{DG}}<br/>{{ID|xx00e7eb|par=1}} || Ring
+| 0.25 || 1000
+| ''While wearing this ring, your Blood Magic while in Vampire Lord Form will be Reanimate Corpse''
+| Not found in-game
+|-
+| {{Icon|j|Ring of Draining Claws}}
+| {{Anchor|Ring of Reanimate Corpse}}{{DG}}<br/>{{ID|xx00a2a1|par=1}} || Ring
+| 0.25 || 1000
+| ''While wearing this ring, your Blood Magic while in Vampire Lord Form will be Reanimate Corpse''
+| Not found in-game
+|-
+| {{Icon|j|Ring of Vampiric Grip}}
+| {{Anchor|Ring of Vampiric Grip}}{{DG}}<br/>{{ID|xx00a2a2|par=1}} || Ring
+| 0.25 || 1000
+| ''While wearing this ring, your Blood Magic while in Vampire Lord Form will be Vampiric Grip''
+| Not found in-game
+|-
+| {{Icon|j|Ring of the Erudite}}
+| {{Anchor|Ring of the Gargoyle}}{{DG}}<br/>{{ID|xx00a2a3|par=1}} || Ring
+| 0.25 || 1000
+| ''While wearing this ring, your Blood Magic while in Vampire Lord Form will be Conjure Gargoyle.''
+| Not found in-game
+|-
+| {{Icon|j|Skaal Amulet}}
+| {{Anchor|[[SR:Skaal Amulet|Skaal Amulet]]}}{{DB}}<br/>{{ID|xx039d4a|par=1}} || Amulet
+| 0 || 1000
+|
+| Worn by [[SR:Frea|Frea]], while in her inventory remains hidden even when not equipped. Only obtainable through the console.
+*Can be obtained via a [[SR:Glitches#Mind Control Spider Pickpocketing|glitch]].
+|}
+
+==Unobtainable Books & Notes==
+
+{{#define:showloc|yes}}{{#define:showicon|yes}}{{#define:showid|yes}}{| class="wikitable sortable collapsible"
+! class=unsortable| !! Title ([[Skyrim:Form ID|ID]]) !! Author !!class=unsortable|Description !!class=unsortable|Location
+{{Book Normal|Anonymous Letter (Imperial)|Anonymous Letter}}
+{{Book Normal|Anonymous Letter (Stormcloaks)|Anonymous Letter}}
+{{Book Normal|Faralda's Notes}}
+{{Book Normal|Gallus's Journal}}
+{{Book Normal|Habd's Death Letter}}
+{{Book Normal|Imperial Order}}
+{{Book Normal|Incriminating Letter (Jarl)|Incriminating Letter}}
+{{Book Normal|Letter from Harkon}}
+{{Book Normal|Letter from Jon}}
+{{Book Normal|Letter to Vals Veran}}
+{{Book Normal|Mzinchaleft Guard's Note}}
+{{Book Normal|Note (DB)}}
+{{Book Normal|Scribbled Note}}
+{{Book Normal|Sergius's Note}}
+{{Book Normal|The Secrets of Ragnvald}}
+{{Book Normal|Tolfdir's Book}}
+{{Book Normal|Unsent Afflicted Letter}}
+{{Book Normal|Windstad Manor Charter}}
+{{Book Normal|123 Abc Def Ghijklmnop Qrstu VWXYZ 123456789}}
+{{Book Normal|À â é è ê ë ù û ü î ï ô ç}}
+{{Book Normal|À é è è ì ó ò ù É È Ì Ó Ò Á Ù}}
+{{Book Normal|Á é í ó ú ñ ü ç ¿ ¡ ª º Á É Í Ó Ú Ñ Ü Ç}}
+{{Book Normal|Ä ö ü ß Ä Ö Ü}}
+|}
+
+==Unobtainable Quest Items==
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!class=sort_str|Type
+![[Skyrim:Grindstone|Tempering]]
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!width=52|{{Damage Icon}}/ {{Armor Rating Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+| [[File:SR-icon-armor-IronShield.png|48px]] || {{Anchor|Family Shield}}<br/>{{ID|0003521f|par=1}} || Heavy Shield
+| Not possible
+| 10 || 12 || 20 || None
+|
+*Cannot be obtained.
+|-
+| [[File:SR-icon-clothing-MysticTuningGloves.png|48px]] || {{Anchor|Focusing Gloves}}<br/>{{ID|00092dbe|par=1}} || Gloves
+| N/A
+| 0 || 0 || 0 || None
+|
+*Can be obtained via a glitch.
+|-
+{{Item Data|icon=SR-icon-weapon-Iron War Axe.png|name=Ghorbash's Ancestral Axe|id=0006a8fd|type=1 Hand War Axe|temp=Iron Ingot|weight=11|value=30|damage=8|enchantment=None}}
+|
+*A permanently disabled copy exists in [[Skyrim:Burguk's Longhouse|Burguk's Longhouse]]
+|-
+| [[File:SR-icon-jewelry-SilverNecklace.png|48px]] || {{Anchor|Grosta's Necklace}}<br/>{{ID|0006bbb5|par=1}} || Amulet
+| N/A
+| 0.5 || 30 || 0 || None
+|
+*Cannot be obtained.
+|-
+{{Item Data|icon=SR-icon-weapon-ElvenSword.png|name=Herebane's Courage|id=000f9648|type=1 Hand Sword|temp=Refined Moonstone|perk=Elven Smithing|weight=13|value=639|damage=11|enchantment=''Burns the target for 25 points. Targets on fire take extra damage:''
+* [[Skyrim:Fire Damage|Fire Damage]], 25 pts
+* Charge/Cost = Uses: 1300/41=31
+* Disenchant: Yes}}
+|
+*Cannot be obtained.
+|-
+| [[File:SR-icon-armor-ElvenShield.png|48px]] || {{Anchor|Herebane's Fortress}}<br/>{{ID|000f9649|par=1}} || Light Shield
+| [[Skyrim:Refined Moonstone|Refined Moonstone]];<br/>perk:&nbsp;[[Skyrim:Elven Smithing|Elven]]
+| 4 || 817 || 21
+|
+* ''Increases Frost Resistance by 50%:''
+* [[Skyrim:Resist Frost|Resist Frost]], 50 pts
+* Disenchant: Yes
+| 
+*Cannot be obtained
+|-
+{{Item Data|icon=SR-icon-weapon-AncientNordWarAxe.png|name=Illusory War Axe|id=000e7a31|temp=N/A|type=1 Hand War Axe|weight=14|value=15|damage=1|enchantment=None}}
+|
+*Cannot be obtained.
+|-
+| || {{Anchor|Manakin}}<br/>{{ID|00107611|par=1}} || Clothing
+| N/A
+| 1 || 2 || 5 || None
+|
+* Cannot be equipped by the player.
+|}
+
+==Other Unobtainable Items==
+===Ingredients===
+{| class="wikitable sortable striped"
+|-
+!colspan=2|Ingredient Name ([[Skyrim:Form ID|ID]])
+!Primary Effect
+!Secondary Effect
+!Tertiary Effect
+!Quaternary Effect
+!width=22|{{Value Icon}}
+!width=22|{{Weight Icon}}
+!Garden{{HF}}
+{{Ingredient Entry|ing=Healing Salts|mod={{CC|Bittercup}}|description=Presumably originally intended as a quest item for [[Skyrim:A Dying Wish|A Dying Wish]] but replaced by [[Skyrim:Ironwood Fruit|Ironwood Fruit]]. Its properties are identical to a [[Skyrim:Salt Pile|salt pile]].}}
+{{Ingredient Entry|ing=Rot Scale|mod=([[Skyrim:Special_Edition_Patch#Version_1.5.97|SSE 1.5.97]])|description=With [[Skyrim:Saints & Seducers|Saints & Seducers]], can be obtained from Rot Scale plants in [[Skyrim:Solitude Sewers|Solitude Sewers]]{{CC|Saints & Seducers}}.}}
+{{Ingredient Entry|ing=Salt Pile|id=00074a19|value=1|description=This version can be found in the  [[Skyrim:Black-Briar Manor|Black-Briar Manor]], but is in perpetual fall outside the accessible cell area. Its effects are all identical to standard [[Skyrim:Salt Pile|salt pile]]. It's obtainable with glitch by [[SR:Glitches#Clipping|clipping]] through the wall next to the balcony door and using [[SR:Dragon_Shouts#Available_Dragon_Shouts|Slow Time]] to catch it midair.}}
+{{Ingredient Entry|ing=Screaming Maw|mod=([[Skyrim:Special_Edition_Patch#Version_1.5.97|SSE 1.5.97]])|description=With [[Skyrim:Saints & Seducers|Saints & Seducers]], can be obtained from Screaming Maw plants in [[Skyrim:Solitude Sewers|Solitude Sewers]]{{CC|Saints & Seducers}}.}}
+{{Ingredient Entry|ing=Thorn Hook|mod=([[Skyrim:Special_Edition_Patch#Version_1.5.97|SSE 1.5.97]])|description=With [[Skyrim:Saints & Seducers|Saints & Seducers]], can be obtained from Thorn Hook plants in [[Skyrim:Solitude Sewers|Solitude Sewers]]{{CC|Saints & Seducers}}.}}
+|}
+
+===Miscellaneous Items===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!class=unsortable width=250| Notes
+{{Item Data
+ |icon=SR-icon-misc-Arvak's Skull.png
+ |name=Arvak's Skull
+ |displayname=Arvak's Skull{{DG}}
+ |id=xx0191cb|weight=4|value=0}}
+|For the version that is actually used see [[Skyrim:Arvak's Skull|Arvak's Skull]].
+{{Item Data
+ |icon=SR-icon-misc-Barenziah'sCrown.png
+ |name=Barenziahs Crown
+ |id=000da74d|weight=0|value=0}}
+|Found in [[SR:The Ragged Flagon - Cistern|The Ragged Flagon - Cistern]] after [[SR:No Stone Unturned|No Stone Unturned]]'s completion. It is not interactable. For the incomplete quest item, [[Skyrim:Crown of Barenziah|Crown of Barenziah]].
+{{Item Data
+ |icon=SR-icon-ingredient-Briar Heart.png
+ |name=Briar Heart
+ |id=0002c260|weight=1|value=0}}
+|For the ingredient see [[Skyrim:Briar Heart|Briar Heart]]. Based on its editor ID of <code>MS12BriarHeart</code>, the quest [[Skyrim:The White Phial (quest)|The White Phial]] originally featured a unique copy of a Briar Heart to collect. In the final game it's a generic one.
+{{Item Data
+ |icon=SR-icon-misc-Broken Iron Mace Handle.png
+ |name=Broken Iron Mace Handle
+ |id=000e72aa|weight=5|value=5}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Iron Mace Head.png
+ |name=Broken Iron Mace Head
+ |id=000e72ac|weight=8|value=5}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Steel Greatsword Blade.png
+ |name=Broken Steel Greatsword Blade
+ |id=000e729a|weight=10|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Steel Greatsword Handle.png
+ |name=Broken Steel Greatsword Handle
+ |id=000e729c|weight=7|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Steel Sword Blade.png
+ |name=Broken Steel Sword Blade
+ |id=000e7296|weight=6|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Steel Warhammer Handle.png
+ |name=Broken Steel Warhammer Handle
+ |id=000e72a4|weight=10|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Broken Steel Warhammer Head.png
+ |name=Broken Steel Warhammer Head
+ |id=000e72a2|weight=15|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-BurialUrn.png
+ |name=Burial Urn
+ |id=00062f5a|weight=1|value=0}}
+|Checked for by a trigger associated with the unfinished quest [[Skyrim:A Bad Trade|A Bad Trade]].
+{{Item Data
+ |icon=SR-icon-misc-Bucket1.png
+ |name=Colovian Brandy TEMP
+ |id=0003e4ad|weight=2|value=0}}
+|A placeholder version, denoted by the "TEMP" (short for temporary), of the [[Skyrim:Colovian Brandy|Colovian Brandy]] as seen during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]].
+{{Item Data
+ |icon=SR-icon-construction-Chest.png
+ |name=Do Not Delete
+ |displayname=[[Skyrim:Do Not Delete|Do Not Delete]]
+ |id=000c7316,0010c762,00103370,000ea5c5|idsep=<br>|weight=0.5|value=200<br>500<br>500<br>200}}
+|The first instance appears in most shops, out of bounds. Has no physics. Really useful for platforming.
+{{Item Data
+ |icon=SR-icon-misc-Dragonstone.png
+ |name=Dragonstone
+ |id=000ad06f|weight=25|value=0}}
+ |This version was used in the [[Skyrim:Unfinished_Quests#e3demo|E3 demo]]. For the version used in the game see [[Skyrim:Dragonstone|Dragonstone]].
+{{Item Data
+|icon=SR-icon-misc-Elven Dagger.png
+|name=Elven Dagger
+|displayname=Elven Dagger{{CC|Vigil Enforcer Armor Set}}
+|id=FExxx97C|weight=0|value=3
+}}
+|
+{{Item Data
+ |icon=
+ |name=Empty Wine Bottle
+ |displayname=Empty Wine Bottle{{DG}}
+ |id=xx0093f5,xx0093f6|idsep=<br>|weight=0.5|value=1
+}}
+|Other versions of [[Skyrim:Empty Wine Bottle|empty wine bottles]] are obtainable.
+{{Item Data
+ |icon=SR-icon-misc-Flag2.png
+ |name=Flag
+ |id=00070bc3|weight=4|value=0}}
+|The red version of the [[Skyrim:flag|flag]] can be obtained if [[Skyrim:Hearthfire|Hearthfire]] is installed.
+|-
+|{{AL|C}}| {{Icon|m|Firewood}}
+|{{Anchor|Firewood}}{{DB}}<br>{{ID|xx03cf16|par=1}}
+|0||5
+|
+{{Item Data
+ |icon=SR-icon-misc-Sapling.png
+ |name=Gildergreen Sapling
+ |id=0005c09e|weight=8|value=0
+}}
+|For the quest item actually used see [[Skyrim:Eldergleam Sapling|Eldergleam Sapling]].
+{{Item Data
+ |icon=SR-icon-misc-GoldenClaw.png
+ |name=Golden Claw
+ |id=000999e7|weight=0.5|value=100}}
+|This version was used in the [[Skyrim:Unfinished_Quests#e3demo|E3 demo]]. For the version used in the game see [[Skyrim:Golden Claw|Golden Claw]].
+{{Item Data
+ |icon=SR-icon-misc-Basket 000abd30.png
+ |name=Heart of Winter
+ |id=0004fdb0|weight=0.5|value=100}}
+|A placeholder item using a basket model. Its editor ID of <code>DB11PaymentItem</code> ties it to the quest [[Skyrim:Hail Sithis!|Hail Sithis!]]. However, said quest does not reward you with an item, but does so in gold instead. It's possible that this was different originally. What exactly the Heart of Winter would've been, is unknown.
+{{Item Data
+ |icon=SR-icon-food-Honey.png
+ |name=Honey Jar
+ |id=0005421b|weight=1|value=0}}
+| This is different from the food item [[Skyrim:Honey|Honey]]. Its editor ID of <code>TG02HoneyJar</code> ties it to the quest [[Skyrim:Loud and Clear|Loud and Clear]], but what exactly its purpose would've been, is unknown.
+{{Item Data
+ |icon=SR-icon-misc-Basket 000abd30.png
+ |name=Jeweled Amulet
+ |id=00035073|weight=0.5|value=100}}
+|A placeholder version of the [[Skyrim:Jeweled Amulet|Jeweled Amulet]] seen in the final game, using a basket as model.
+{{Item Data
+ |icon=SR-icon-misc-Basket 000abd30.png
+ |name=Jeweled Pendant
+ |id=00023df8|weight=0.5|value=200}}
+|A placeholder item using a basket as model. Its editor ID of <code>DB03JeweledPendant</code> ties it to the quest [[Skyrim:Mourning Never Comes|Mourning Never Comes]]. It's possible that instead of a [[Skyrim:Muiri's Ring|ring]], [[Skyrim:Muiri|Muiri]] originally gave a pendant as a sign of her affection.
+{{Item Data
+|icon=SR-icon-misc-Kothyr'sHead.png
+|name=Kothyr's Head
+|id=0001be15|weight=4|value=0}}
+|A placeholder item using a kettle as model. Its editor ID is <code>TestBanditBossHead</code>. Presumably Kothyr was a bandit boss related to a testing quest that was removed from the files, as no other traces related to him or his head exist in the files.
+{{Item Data
+ |icon=SR-icon-misc-BlackSoulGem.png
+ |name=Malyn's Black Soul Gem
+ |id=00028ad9|weight=0.5|value=0}}
+|
+{{Item Data
+ |icon=SR-icon-misc-ShardsOfMehrunes'Razor.png
+ |name=Mehrune's Razor Blade
+ |id=000eafdd|weight=3|value=5
+}}
+|rowspan=4|These items are not found in the game. For the items used in the quest '''[[Skyrim:Pieces of the Past|Pieces of the Past]]''' see [[Skyrim:Mehrunes' Razor|Mehrunes' Razor]].
+{{Item Data
+ |icon=SR-icon-misc-PommelStoneOfMehrunes'Razor.png
+ |name=Mehrune's Razor Gem
+ |id=000eafdb|weight=3|value=5
+}}
+{{Item Data
+ |icon=SR-icon-misc-HiltOfMehrunes'Razor.png
+ |name=Mehrune's Razor Hilt
+ |id=000eafdc|weight=3|value=5
+}}
+{{Item Data
+ |icon=SR-icon-misc-ScabbardOfMehrunes'Razor.png
+ |name=Mehrune's Razor Scabbard
+ |id=000eafd7|weight=3|value=5
+}}
+{{Item Data
+ |icon=SR-icon-misc-Nord War Horn.png
+ |name=Nord War Horn
+ |id=000200b6|weight=5|value=70}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Basket 00012fec.png
+ |name=Package for Grelka
+ |id=0006a712|weight=2|value=0}}
+|rowspan=2|Referenced but not used by the quest <code>DialogueShorsStone</code>. Presumably using the basket model as a placeholder.
+{{Item Data
+ |icon=SR-icon-misc-Basket 00012fec.png
+ |name=Package for Verner
+ |id=0006a711|weight=2|value=0}}
+{{Item Data
+ |icon=SR-icon-misc-PettySoulGem.png
+ |name=Petty Soul Gem
+ |id=0001fe9b|weight=0.5|value=0}}
+ |This is a different from a standard [[Skyrim:Petty Soul Gem|Petty Soul Gem]], and not a soul gem at all, but a miscellaneous item.
+{{Item Data
+ |icon=SR-icon-misc-Basket 000abd30.png
+ |name=Sealed Letter
+ |id=00035074|weight=0.5|value=100}}
+|A placeholder version of the [[Skyrim:Amaund Motierre's Sealed Letter|Amaund Motierre's Sealed Letter]] seen in the final game, using a basket as model.
+{{Item Data
+ |icon=
+ |name=Silver Platter
+ |displayname={{Anchor|Silver Platter}}{{DG}}
+ |id=000f5839,000f583a|idsep=<br>|weight=1|value=15}}
+|These items had no name in the original game, that was added with Dawnguard.
+{{Item Data
+ |icon=SR-icon-misc-Skeleton Horse Leg.png
+ |name=Skeleton Horse Leg
+ |displayname={{Anchor|Skeleton Horse Leg}}{{DG}}
+ |id=xx01a87f|weight=4|value=0}}
+|
+{{Item Data
+ |icon=SR-icon-misc-Meridia'sBeacon.png
+ |name=strange crystal
+ |id=0006f3aa|weight=1|value=10}}
+|
+{{Item Data
+ |icon=SR-icon-misc-CommonSoulGem.png
+ |name=Strange Gem
+ |id=0004055f|weight=0.5|value=0}}
+|Checked for by the activator <code>dunVolskyggePuzzleHolder01</code> which does not appear in the game.
+{{Item Data
+ |icon=SR-icon-misc-Tankard.png
+ |name=TestJeffLTankard
+ |id=00056189|weight=1|value=0}}
+|As its name implies, this is a test-related item, presumably for checking the basic script attached to it; <code>TestJeffLScript</code>.
+{{Item Data
+ |icon=SR-icon-misc-Amethyst.png
+ |name=Torpor Ingredient 1
+ |id=000e1fbb|weight=0.5|value=20}}
+|rowspan=3| These were probably intended to be used in [[Skyrim:Waking Nightmare|Waking Nightmare]] to create [[Skyrim:Vaermina's Torpor|Vaermina's Torpor]].
+{{Item Data
+ |icon=SR-icon-misc-Amethyst.png
+ |name=Torpor Ingredient 2
+ |id=000e1fbc|weight=0.5|value=20}}
+{{Item Data
+ |icon=SR-icon-misc-Amethyst.png
+ |name=Torpor Ingredient 3
+ |id=000e1fbd|weight=0.5|value=20}}
+|}
+
+===Potions and Poisons===
+{| class="wikitable sortable"
+!width=48 class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Enchantment
+!class="unsortable"|Notes
+|-
+| {{icon|pot|EnhancedStaminaPhilter}}
+| {{Anchor|Elixir of Enhanced Stamina}}<br>{{ID|000ffa01|par=1}}
+| 0.5 || 341
+| ''Stamina is increased by 100 points for 60 seconds:''
+* [[Skyrim:Fortify Stamina|Fortify Stamina]], 100 pts for 60 secs
+| No guaranteed bottles or other confirmed sources {{vn|Probably a HF gift. <!-- I have an old save with one bottle. 99% sure I didn't spawn it in with the console -->}}
+|-
+| {{icon|pot|ResistMagicElixir}}
+| {{Anchor|Elixir of Resist Magic}}<br>{{ID|00039e55|par=1}}
+| 0.5 || 247
+| ''Resist 25% of magic for 60 seconds:''
+* [[Skyrim:Resist Magic|Resist Magic]], 25 pts for 60 secs
+| No guaranteed bottles or other known sources {{vn|Possibly a HF gift?}}
+|-
+| {{icon|pot|Skooma}}
+| {{sic|{{Anchor|Kordir's Skooma}}|Kodrir's Skooma}}<br>{{ID|00057a7b|par=1}}
+| 0.5 || 20
+| ''Restore 25 Stamina:''
+* [[Skyrim:Restore Stamina|Restore Stamina]], 25 pts
+| Cannot be obtained
+|-
+| {{icon|pot|HealingMinor}}
+| {{Anchor|Unknown Potion}}<br>{{ID|0005661f|par=1}}
+| 0.5 || 0
+| Unknown Effect
+| This is the potion that appears while you are mixing potions and you don't know what effect it will have yet. It cannot be acquired in-game.
+|-
+|{{AL|C}}|{{Icon|poi|FrostbiteVenom}}
+|{{Anchor|Netch Poison}}{{DB}}<br>{{ID|xx01cd7d|par=1}}
+|0.5||21
+|''A blood-freezing poison that does 5 points damage to Health and Stamina for 4 seconds:''
+* [[Skyrim:Frostbite Venom|Frostbite Venom]], 5 pts for 4 secs
+| Not found in the game. Identical to [[SR:Frostbite Venom|Frostbite Venom]]
+|-
+| {{icon|poi|Recovery}}
+| {{Anchor|Magicka Recovery Poison}}<br>{{ID|00073f91|par=1}}
+| 0.5 || 169
+| ''Decrease the target's Magicka regeneration by 100% for 20 seconds:''
+* [[Skyrim:Damage Magicka Regen|Damage Magicka Regen]], 100 pts for 20 secs
+| No known sources
+|-
+| {{icon|poi|RecoveryPotent}}
+| {{Anchor|Potent Recovery Poison}}<br>{{ID|00073f92|par=1}}
+| 0.5 || 265
+| ''Decrease the target's Magicka regeneration by 100% for 30 seconds:''
+* [[Skyrim:Damage Magicka Regen|Damage Magicka Regen]], 100 pts for 30 secs
+| No known sources
+|-
+| {{icon|poi|RecoveryMalign}}
+| {{Anchor|Malign Recovery Poison}}<br>{{ID|00073f93|par=1}}
+| 0.5 || 414
+| ''Decrease the target's Magicka regeneration by 100% for 45 seconds:''
+* [[Skyrim:Damage Magicka Regen|Damage Magicka Regen]], 100 pts for 45 secs
+| No known sources
+|-
+| {{icon|poi|RecoveryDeadly}}
+| {{Anchor|Deadly Recovery Poison}}<br>{{ID|00073f94|par=1}}
+| 0.5 || 568
+| ''Decrease the target's Magicka regeneration by 100% for 60 seconds:''
+* [[Skyrim:Damage Magicka Regen|Damage Magicka Regen]], 100 pts for 60 secs
+| Only obtainable with [[Skyrim:Myrwatch|Myrwatch]] creation.
+|-
+| {{icon|poi|VigorPotent}}
+| {{Anchor|Potent Vigor Poison}}<br>{{ID|00073f8d|par=1}}
+| 0.5 || 248
+| ''Decrease the target's Stamina regeneration by 100% for 45 seconds:''
+* [[Skyrim:Damage Stamina Regen|Damage Stamina Regen]], 100 pts for 45 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+|-
+| {{icon|poi|VigorMalign}}
+| {{Anchor|Malign Vigor Poison}}<br>{{ID|00073f8e|par=1}}
+| 0.5 || 341
+| ''Decrease the target's Stamina regeneration by 100% for 60 seconds:''
+* [[Skyrim:Damage Stamina Regen|Damage Stamina Regen]], 100 pts for 60 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+
+|-
+| {{icon|poi|SlowMagickaEnduring}}
+| {{Anchor|Enduring Magicka Poison}}<br>{{ID|00073f3d|par=1}}
+| 0.5 || 15
+| ''Drains the target's Magicka by 1 points per second for 15 seconds:''
+* [[Skyrim:Lingering Damage Magicka|Lingering Damage Magicka]], 1 pt for 15 secs
+| No known sources
+|-
+| {{icon|poi|SlowMagickaLasting}}
+| {{Anchor|Lasting Magicka Poison}}<br>{{ID|00073f3e|par=1}}
+| 0.5 || 33
+| ''Drains the target's Magicka by 2 points per second for 15 seconds:''
+* [[Skyrim:Lingering Damage Magicka|Lingering Damage Magicka]], 2 pts for 15 secs
+| No known sources
+|-
+| {{icon|poi|SlowMagickaPersisting}}
+| {{Anchor|Persisting Magicka Poison}}<br>{{ID|00073f3f|par=1}}
+| 0.5 || 45
+| ''Drains the target's Magicka by 2 points per second for 20 seconds:''
+* [[Skyrim:Lingering Damage Magicka|Lingering Damage Magicka]], 2 pts for 20 secs
+| No known sources
+|-
+| {{icon|poi|SlowMagickaUnceasing}}
+| {{Anchor|Unceasing Magicka Poison}}<br>{{ID|00073f40|par=1}}
+| 0.5 || 71
+| ''Drains the target's Magicka by 3 points per second for 20 seconds:''
+* [[Skyrim:Lingering Damage Magicka|Lingering Damage Magicka]], 3 pts for 20 secs
+| No known sources
+|-
+| {{icon|poi|SlowStaminaEnduring}}
+| {{Anchor|Enduring Stamina Poison}}<br>{{ID|00073f45|par=1}}
+| 0.5 || 12
+| ''Drain the target's Stamina by 2 points per second for 30 seconds:''
+* [[Skyrim:Lingering Damage Stamina|Lingering Damage Stamina]], 2 pts for 30 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+
+|-
+| {{icon|poi|SlowStaminaLasting}}
+| {{Anchor|Lasting Stamina Poison}}<br>{{ID|00073f46|par=1}}
+| 0.5 || 20
+| ''Drain the target's Stamina by 3 points per second for 30 seconds:''
+* [[Skyrim:Lingering Damage Stamina|Lingering Damage Stamina]], 3 pts for 30 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+
+|-
+| {{icon|poi|SlowStaminaPersisting}}
+| {{Anchor|Persisting Stamina Poison}}<br>{{ID|00073f47|par=1}}
+| 0.5 || 27
+| ''Drain the target's Stamina by 4 points per second for 30 seconds:''
+* [[Skyrim:Lingering Damage Stamina|Lingering Damage Stamina]], 4 pts for 30 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+
+|-
+| {{icon|poi|SlowStaminaUnceasing}}
+| {{Anchor|Unceasing Stamina Poison}}<br>{{ID|00073f48|par=1}}
+| 0.5 || 35
+| ''Drain the target's Stamina by 5 points per second for 30 seconds:''
+* [[Skyrim:Lingering Damage Stamina|Lingering Damage Stamina]], 5 pts for 30 secs
+| Can be pickpocketed from [[Skyrim:Gissur|Gissur]] during [[Skyrim:Diplomatic Immunity|Diplomatic Immunity]]
+
+|}
+
+===Scrolls===
+
+{| class="wikitable sortable"
+|-{{ALT}}
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Description and Effects
+!Notes
+|-
+| [[File:SR-icon-Scroll-05.png|48px]]
+| {{Anchor|Scroll of Command Daedra}}<br>{{ID|000a44a4|par=1}}
+| 0.5 || 250
+| ''Powerful summoned and raised creatures are put under your control:''
+* [[Skyrim:Command|Command]], 10 pts
+* [[Skyrim:Command|Banish/Command Daedra Push]], 100 pts
+|
+|-
+| [[File:SR-icon-Scroll-05.png|48px]]
+| {{Anchor|Scroll of Dragonhide}}<br>{{ID|000e0cd6|par=1}}
+| 0.5 || 250
+| ''Caster ignores {{sic|90%|80%|description=wrong value}} of all physical damage for 30 seconds:''
+* [[Skyrim:Armor (effect)|Armor - Dragonhide]], for 3600 secs
+|
+|-
+| [[File:SR-icon-Scroll-01.png|48px]]
+| {{Anchor|Scroll of Expel Daedra}}<br>{{ID|000a44a6|par=1}}
+| 0.5 || 250
+| ''Powerful summoned daedra creatures {{sic|are are|are|description=duplicate word}} sent back to Oblivion:''
+* [[Skyrim:Banish|Banish]], 10 pts
+* [[Skyrim:Command|Banish/Command Daedra Push]], 100 pts
+|
+|-
+| [[File:SR-icon-Scroll-01.png|48px]]
+| {{Anchor|Scroll of Fire Rune}}<br>{{ID|000965a8|par=1}}
+| 0.5 || 50
+| ''Cast on a nearby surface, it explodes for 40 points of fire damage when enemies come near:''
+* Fire Rune, 40 pts
+|
+|-
+| [[File:SR-icon-Scroll-03.png|48px]]
+| {{Anchor|Scroll of Flame Cloak}}<br>{{ID|000a44ab|par=1}}
+| 0.5 || 100
+| ''For 60 seconds, opponents in melee range take 8 points fire damage per second. Targets on fire take extra damage:''
+* Flame Cloak, 5 pts for 60 secs
+|
+|-
+| [[File:SR-icon-Scroll-02.png|48px]]
+| {{Anchor|Scroll of Flame Thrall}}<br>{{ID|000a44a8|par=1}}
+| 0.5 || 500
+| ''Summons a Flame Atronach permanently:''
+* [[Skyrim:Conjure|Conjure]] Flame Thrall, for 86313600 secs
+|
+|-
+| [[File:SR-icon-Scroll-02.png|48px]]
+| {{Anchor|Scroll of Frost Cloak}}<br>{{ID|000a44ac|par=1}}
+| 0.5 || 100
+| ''For 60 seconds, opponents in melee range take 8 points frost damage and Stamina damage per second:''
+* Frost Cloak, 5 pts for 60 secs
+|
+|-
+| [[File:SR-icon-Scroll-04.png|48px]]
+| {{Anchor|Scroll of Frost Rune}}<br>{{ID|000965a9|par=1}}
+| 0.5 || 50
+| ''Cast on a nearby surface, it explodes for 40 points of frost damage when enemies come near:''
+* Frost Rune, 40 pts
+|
+|-
+| [[File:SR-icon-Scroll-03.png|48px]]
+| {{Anchor|Scroll of Lightning Bolt}}<br>{{ID|0009659a|par=1}}
+| 0.5 || 50
+| ''A bolt of lightning that does 15 points of shock damage to Health and half that to Magicka:''
+* Lightning Bolt, 15 pts
+|
+|-
+| [[File:SR-icon-Scroll-02.png|48px]]
+| {{Anchor|Scroll of Lightning Cloak}}<br>{{ID|000a44ad|par=1}}
+| 0.5 || 100
+| ''For 60 seconds nearby opponents take 8 points of shock damage and half magicka damage:''
+* Shock Cloak, 5 pts for 60 secs
+|
+|-
+| [[File:SR-icon-Scroll-03.png|48px]]
+| {{Anchor|Scroll of Lightning Rune}}<br>{{ID|000965aa|par=1}}
+| 0.5 || 50
+| ''Cast on a nearby surface, it explodes for 40 points of shock damage when enemies come near:''
+* Shock Rune, 40 pts
+|
+|-
+| [[File:SR-icon-Scroll-01.png|48px]]
+| {{Anchor|Scroll of Pacify}}<br>{{ID|000a44b9|par=1}}
+| 0.5 || 250
+| ''Creatures and people up to level 12 won't fight for 30 seconds:''
+* [[Skyrim:Pacify (effect)|Pacify]], 12 pts for 30 secs in 15 ft
+|
+|-
+| [[File:SR-icon-Scroll-03.png|48px]]
+| {{Anchor|Scroll of Rally}}<br>{{ID|000a44b5|par=1}}
+| 0.5 || 100
+| ''Targets won't flee for 60 seconds and get extra health and stamina:''
+* [[Skyrim:Rally (effect)|Rally]], 10 pts for 60 secs in 15 ft
+|
+|-
+| [[File:SR-icon-Scroll-06.png|48px]]
+| {{Anchor|Scroll of Reanimate Corpse}}<br>{{ID|000965a4|par=1}}
+| 0.5 || 50
+| ''Reanimate a weak dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 6 pts for 60 secs
+|
+|-
+| [[File:SR-icon-Scroll-02.png|48px]]
+| {{Anchor|Scroll of Repel Lesser Undead}}<br>{{ID|000a44c2|par=1}}
+| 0.5 || 100
+| ''All affected undead up to level 4 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Repel Lesser Undead]], 4 pts for 30 secs
+* [[Skyrim:Stagger|Turn Undead Push]], 100 pts
+|
+|-
+| [[File:SR-icon-Scroll-04.png|48px]]
+| {{Anchor|Scroll of Repel Undead}}<br>{{ID|000a44c5|par=1}}
+| 0.5 || 250
+| ''All affected undead up to level 8 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Repel Undead]], 8 pts for 30 secs
+* [[Skyrim:Stagger|Turn Undead Push]], 100 pts
+|
+|-
+| [[File:SR-icon-Scroll-05.png|48px]]
+| {{Anchor|Scroll of Revanant}}<br>{{ID|000a44a3|par=1}}
+| 0.5 || 100
+| ''Reanimate a weak dead body to fight for you for 60 seconds:''
+* [[Skyrim:Reanimate|Reanimate]], 9 pts for 60 secs
+|
+|-
+| [[File:SR-icon-Scroll-01.png|48px]]
+| {{Anchor|Scroll of Rout}}<br>{{ID|000a44ba|par=1}}
+| 0.5 || 250
+| ''Creatures and people up to level 12 flee from combat for 30 seconds:''
+* [[Skyrim:Fear (effect)|Rout]], 12 pts for 30 secs in 15 ft
+|
+|-
+| [[File:SR-icon-Scroll-05.png|48px]]
+| {{Anchor|Scroll of Telekinesis}}{{DG}}<br>{{ID|xx014042|par=1}}
+| 0.5 || 250
+| ''Can pull an object to you from a distance. Add it to your inventory or throw it:''
+* [[Skyrim:Telekinesis Effect|Telekinesis]], for 0 secs
+| 
+*Was intended to be related to [[Skyrim:Redwater Den|Redwater Den]]
+*Does not actually work, as scrolls cannot use Concentration spells
+|-
+| [[File:SR-icon-Scroll-04.png|48px]]
+| {{Anchor|Scroll of Turn Greater Undead}}<br>{{ID|000a44c6|par=1}}
+| 0.5 || 250
+| ''Undead up to level 12 flee for 30 seconds:''
+* [[Skyrim:Turn Undead (effect)|Turn Greater Undead]], 12 pts for 30 secs
+* [[Skyrim:Stagger|Turn Undead Push]], 100 pts
+|
+|-
+| [[File:SR-icon-Scroll-01.png|48px]]
+| {{Anchor|Scroll of Waterbreathing}}<br>{{ID|000a449c|par=1}}
+| 0.5 || 100
+| ''Can breathe water for 60 seconds:''
+* [[Skyrim:Waterbreathing (effect)|Waterbreathing]], for 60 secs
+|
+|}
+
+===Spell Tomes===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Spell Learned
+!Notes
+|-
+|[[File:SR-icon-book-BasicBook6.png|48px]]
+|{{Anchor|Spell Tome: Spectral Arrow}}<br/>{{ID|000b3165|par=1}}
+|1.0
+|250
+|[[Skyrim:Spectral Arrow|Spectral Arrow]]
+|
+*Was apparently intended to be the reward for completing the quest [[Skyrim:Infiltration|Infiltration]], but was replaced by Detect Life
+|}
+
+===Soul Gems===
+{| class="wikitable sortable"
+!class=unsortable|
+!Name ([[Skyrim:Form ID|ID]])
+!width=22|{{Weight Icon}}
+!width=22|{{Value Icon}}
+!Capacity
+|-
+|[[File:SR-icon-misc-LesserSoulGem.png|48px]]
+|{{Anchor|Treated Soul Gem}}<br/>{{ID|00094e40|par=1}}
+|0.2
+|25
+|500 (Lesser)
+|}
+
+==BSA-only Items==
+Models, textures, and icons for these items are present in a [[Skyrim Mod:Archive File Format|BSA (Bethesda Softworks Archive)]], but the items themselves haven't been created in the game files. Names are assigned based on the filenames.
+
+{|class=wikitable
+!
+!Name
+!Notes
+|-
+|[[File:SR-item-Ring of Khajiit.jpg|75px]]
+|[[SR:Ring of Khajiit|{{Anchor|Ring of Khajiit}}]]
+|
+*The asset files misspell the name as "Khajit"; the item has been spelled "Ring of Khajiit" or "Ring of Khajiiti" in the past.
+*A Daedric Artifact associated with two Daedric Princes, [[Skyrim:Meridia|Meridia]] and [[Skyrim:Mephala|Mephala]]. For historical information, please see the [[Lore:Ring of Khajiiti|lore page]].
+*This ring is [[SR:Ring of Khajiit|added to the game]] by the [[SR:Fishing|Fishing]] [[SR:Creation Club|Creation]].
+|}
+
+{{Skyrim Cut Content}}

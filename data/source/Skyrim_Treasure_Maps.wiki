@@ -1,0 +1,104 @@
+{{Trail2|Items|Books|cat2=}}
+[[File:SR-book-Treasure Map IV.png|thumb|right|Treasure Map IV]]
+The following table lists the various '''map notes''' found within the game. Most maps provide hints of a location where a chest with valuable items can be found. The chest will not be available until you have picked up the corresponding treasure map.
+
+=== Treasure Maps ===
+{| class="wikitable sortable"
+! [[Skyrim:Form ID|ID]] !! Title !!class=unsortable| Map Location !!class=unsortable|Chest Area
+|-
+|{{ID|000EF07A}}
+|[[Skyrim:Treasure Map I|Treasure Map I]]
+|
+{{Show Named Value|Skyrim:Treasure Map I|loc}}
+|[[Skyrim:Riverwood|Riverwood]] {{Map Link|Treasure Chest I}}
+|-
+|{{ID|000F33CE}}
+|[[Skyrim:Treasure Map II|Treasure Map II]]
+|
+{{Show Named Value|Skyrim:Treasure Map II|loc}}
+|[[Skyrim:Valtheim Towers|Valtheim Towers]]  {{Map Link|Treasure Chest II}}
+|-
+|{{ID|000F33CF}}
+|[[Skyrim:Treasure Map III|Treasure Map III]]
+|
+{{Show Named Value|Skyrim:Treasure Map III|loc}}
+|[[Skyrim:Solitude Lighthouse|Solitude Lighthouse]] {{Map Link|Treasure Chest III}}
+|-
+|{{ID|000F33D1}}
+|[[Skyrim:Treasure Map IV|Treasure Map IV]]
+|
+{{Show Named Value|Skyrim:Treasure Map IV|loc}}
+|[[Skyrim:Pelagia Farm|Pelagia Farm]] {{Map Link|Treasure Chest IV}}
+|-
+|{{ID|000F33D4}}
+|[[Skyrim:Treasure Map V|Treasure Map V]]
+|
+{{Show Named Value|Skyrim:Treasure Map V|loc}}
+|[[Skyrim:Lost Valley Redoubt|Lost Valley Redoubt]] {{Map Link|Treasure Chest V}}
+|-
+|{{ID|000F33D0}}
+|
+[[Skyrim:Treasure Map VI|Treasure Map VI]]
+|
+{{Show Named Value|Skyrim:Treasure Map VI|loc}}
+|[[Skyrim:Korvanjund|Korvanjund]] {{Map Link|Treasure Chest VI}}
+|-
+|{{ID|000F33D5}}
+|[[Skyrim:Treasure Map VII|Treasure Map VII]]
+|
+{{Show Named Value|Skyrim:Treasure Map VII|loc}}
+|[[Skyrim:Gallows Rock|Gallows Rock]] {{Map Link|Treasure Chest VII}}
+|-
+|{{ID|000F33D3}}
+|[[Skyrim:Treasure Map VIII|Treasure Map VIII]]
+|
+{{Show Named Value|Skyrim:Treasure Map VIII|loc}}
+|[[Skyrim:Dragon Bridge|Dragon Bridge]] (map: {{Map Link|Treasure Chest VIII|chest}}, {{Map Link|Treasure Chest VIII Key|key}})
+|-
+|{{ID|000F33CD}}
+|[[Skyrim:Treasure Map IX|Treasure Map IX]]
+|
+{{Show Named Value|Skyrim:Treasure Map IX|loc}}
+|[[Skyrim:Broken Helm Hollow|Broken Helm Hollow]] {{Map Link|Treasure Chest IX}}
+|-
+|{{ID|000F33E0}}
+|[[Skyrim:Treasure Map X|Treasure Map X]]
+|
+{{Show Named Value|Skyrim:Treasure Map X|loc}}
+|[[Skyrim:The Lady Stone|The Lady Stone]] {{Map Link|Treasure Chest X}}
+|-
+|{{ID|000F33D2}}
+|[[Skyrim:Fort Neugrad Treasure Map|Fort Neugrad Treasure Map]]
+|
+{{Show Named Value|Skyrim:Fort Neugrad Treasure Map|loc}}
+|[[Skyrim:Fort Neugrad|Fort Neugrad]] {{Map Link|Fort Neugrad Treasure Chest}}
+|-
+|{{ID|000DDEFB}}
+|[[Skyrim:Velehk Sain's Treasure Map|Velehk Sain's Treasure Map]] 
+|
+{{Show Named Value|Skyrim:Velehk Sain's Treasure Map|loc}}
+|[[Skyrim:Pilgrim's Trench|Pilgrim's Trench]] {{Map Link|Velehk Sain's Locker}}
+|-
+|{{ID|xx02BAAE}}
+|[[Skyrim:Deathbrand Treasure Map|Deathbrand Treasure Map]] {{DB}}
+|[[Skyrim:Haknir's Shoal|Haknir's Shoal]] {{DB}} {{Map Link|Haknir's Shoal}}
+|[[Skyrim:Solstheim|Solstheim]] {{DB}} {{Map Link|Solstheim}}
+|}
+
+=={{Anchor|Fishing Maps}}{{CC|Fishing}}==
+These maps show the locations of certain [[SR:Fishing Supplies|Fishing Supplies]] within a given region, but are not required in order to fish there. They can usually be bought from [[Skyrim:Merchants|general merchants]].
+*[[SR:Fishing Map - Eastmarch|Fishing Map - Eastmarch]]
+*[[SR:Fishing Map - Falkreath|Fishing Map - Falkreath]]
+*[[SR:Fishing Map - Haafingar|Fishing Map - Haafingar]]
+*[[SR:Fishing Map - Hjaalmarch|Fishing Map - Hjaalmarch]]
+*[[SR:Fishing Map - The Pale|Fishing Map - The Pale]]
+*[[SR:Fishing Map - The Reach|Fishing Map - The Reach]]
+*[[SR:Fishing Map - The Rift|Fishing Map - The Rift]]
+*[[SR:Fishing Map - Whiterun|Fishing Map - Whiterun]]
+*[[SR:Fishing Map - Winterhold|Fishing Map - Winterhold]]
+*[[SR:Fishing Map - Solstheim|Fishing Map - Solstheim]]
+
+==Bugs==
+{{Bug|The treasure chest associated with Treasure Map III is facing the wrong way.|USKP|2.0.8}}
+
+[[Category:Skyrim-Treasure Maps| ]]
