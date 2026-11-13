@@ -1814,7 +1814,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (v != null && g.cw && state.cwSide !== 'none' && state.cwSide !== g.cw) out.push(`This is the ${g.cw === 'imperial' ? 'Imperial' : 'Stormcloak'} champion's gear; you chose the ${state.cwSide === 'imperial' ? 'Imperial Legion' : 'Stormcloaks'}.`);
     if (v != null && g.side === 'volkihar' && state.dgSide !== 'volkihar') out.push(state.dgSide === 'dawnguard' ? 'Only Volkihar vampires can get this (a reward from Garan Marethi); you chose the Dawnguard side.' : 'Only Volkihar vampires can get this (a reward from Garan Marethi). Set your Dawnguard side to Volkihar on the Quest plan step.');
     if (v != null && g.choiceGroup) {
-      const rival = GEAR.find(o => o.choiceGroup === g.choiceGroup && o.id !== g.id && state.gear[o.id] != null);
+      const rival = GEAR.find(o => o.choiceGroup === g.choiceGroup && o.id !== g.id && state.gear[o.id] != null && !(g.choiceSet && o.choiceSet === g.choiceSet));   // pieces of the same version of a set don't clash
       if (rival) out.push(`You can't have both this and ${rival.name}. ${GEARDATA.choiceGroups[g.choiceGroup]}`);
     }
     return out;
@@ -1839,7 +1839,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         ? 'Every weapon in the game, unique and standard: swords, axes, maces, daggers, bows, crossbows and staves. Mark each one you want as Main build (your end-game gear), Collect (pieces to collect, printed as a checklist) or Incidental (used along the way). Weapons marked "Fits your build" use a skill you have perks in, and standard weapons show the Smithing perk that forges them. Once you choose a standard weapon, you can say whether you\'ll find or forge it and which enchantments it should carry.'
         : 'Every piece of armor, shield, jewelry and clothing, unique and standard. Artifacts you carry rather than wear, such as Azura\'s Star and the White Phial, are on the Collections step. Mark each piece you want as Main build (your end-game gear), Collect (pieces to collect, printed as a checklist) or Incidental (used along the way). Pieces marked "Fits your build" use a skill you have perks in, and standard armor shows the Smithing perk that forges it. Once you choose a piece with no enchantment of its own, you can say whether you\'ll find or craft it and which enchantments it should carry.';
       $('gearSearchLabel').textContent = slot === 'weapon' ? 'Search weapons' : 'Search apparel';
-      $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type or place, such as Chillrend or bow' : 'Name, type or place, such as Nightingale or ring';
+      $('gearSearch').placeholder = slot === 'weapon' ? 'Name, type, place or effect, such as Chillrend, bow or frost damage' : 'Name, type, place or effect, such as Nightingale, ring or Fortify Destruction';
       const groups = GEARDATA.groups[slot].filter(x => x !== 'Other artifacts');
       $('gearFilter').innerHTML = ['all', ...groups, 'fits', 'wanted'].map(f => `<button class="chip" data-f="${esc(f)}" aria-checked="${f === 'all'}">${f === 'all' ? 'All' : f === 'fits' ? 'Fits your build' : f === 'wanted' ? 'Chosen' : esc(f)}</button>`).join('');
     }
@@ -1856,7 +1856,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const q = ($('gearSearch').value || '').trim().toLowerCase();
     const list = mine.filter(g => (gearFilter === 'all' || (gearFilter === 'wanted' ? state.gear[g.id] != null : gearFilter === 'fits' ? planned(g.skill) : g.group === gearFilter))
       && (gearSource === 'all' || gearSource === srcOf(g))
-      && (!q || [g.name, g.type, g.where, g.quest, g.prince, g.faction].some(t => t && t.toLowerCase().includes(q))));
+      && (!q || [g.name, g.type, g.where, g.quest, g.prince, g.faction, g.effect, g.note, g.sub].some(t => t && t.toLowerCase().includes(q))));
     const row = g => {
       const v = state.gear[g.id], issues = gearIssues(g, v);
       const how = g.set === 'daedric' ? `${esc(g.prince)} · Quest: ${esc(g.quest)}` : (g.quest ? `Quest: ${esc(g.quest)}` : '');
@@ -2301,7 +2301,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const by = d => INGR.filter(i => i.dlc === d).length;
     $('ingCount').textContent = INGR.length;
     $('ingTally').textContent = `${INGR.length} ingredients: ${by('base')} in the base game, ${by('dawnguard')} from Dawnguard, ${by('hearthfire')} from Hearthfire, ${by('dragonborn')} from Dragonborn and ${by('cc')} from Creation Club. That's every ingredient on UESP's list except seven one-off quest items, such as Jarrin Root. Choose an effect to start the potion maker with it.`;
-    const list = INGR.filter(i => (!$('ingPlant').checked || i.plant)).filter(i => !q || i.name.toLowerCase().includes(q) || i.effects.some(e => EFF[e].name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
+    const list = INGR.filter(i => (!$('ingPlant').checked || i.plant)).filter(i => !q || i.name.toLowerCase().includes(q) || (i.source || '').toLowerCase().includes(q) || i.effects.some(e => EFF[e].name.toLowerCase().includes(q))).sort((a, b) => a.name.localeCompare(b.name));
     $('ingList').innerHTML = list.length ? list.map(i => `<div class="perk"><div><div class="pn">${ingName(i.id)}${sx(i.name.replace(/ \(Creation Club\)$/, ''))}</div>
         <div class="effs">${i.effects.map(e => `<button class="eff${EFF[e].positive ? '' : ' bad'}" data-brew="${e}" data-ing="${i.id}" aria-label="Brew ${esc(EFF[e].name)} with ${esc(i.name)}">${esc(EFF[e].name)}</button>`).join('')}</div>
         ${i.source ? `<div class="pr">${esc(i.source)}</div>` : ''}</div></div>`).join('') : `<p class="muted">Nothing matches "${esc(q)}".</p>`;
@@ -2668,7 +2668,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }
     const q = ($('questSearch').value || '').trim().toLowerCase(), t = $('qbType').value, pl = $('qbPlace').value, dlc = $('qbDlc').value, st = $('qbStatus').value, lv = +$('qbLevel').value || 0;
     const { plan } = buildQuestPlan();
-    const all = QUESTS.filter(x => (!q || [x.name, x.line, x.loc, x.giver, x.description].some(s => s && s.toLowerCase().includes(q)))
+    const all = QUESTS.filter(x => (!q || [x.name, x.line, x.loc, x.giver, x.description, x.reward].some(s => s && s.toLowerCase().includes(q)))
       && typeMatch(x, t) && (!pl || placesOf(x).includes(pl)) && (!dlc || x.dlc === dlc)
       && (!st || (st === 'done' ? state.done[x.id] : st === 'in' ? plan[x.id] : !plan[x.id]))
       && (!lv || (x.reqLevel || 0) <= lv)
@@ -2903,7 +2903,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('spRec').innerHTML = !planned ? '<p class="muted" style="margin:12px 0">Plan some perks first.</p>' : trade.length ? trade.map(x => spRow(x.s, why(x))).join('') : '<p class="muted" style="margin:12px 0">No candidate trains your skills or runs a shop you\'d use.</p>';
     const q = ($('spSearch').value || '').trim().toLowerCase();
     const list = SPS.filter(s => (spFilter === 'all' || (spFilter === 'husband' || spFilter === 'wife' ? s.role === spFilter : spFilter === 'follower' ? s.follower : spFilter === 'trainer' ? !!s.trainer : !!s.merchant))
-      && (!q || [s.name, s.race, s.location, s.home].some(t => t && t.toLowerCase().includes(q))));
+      && (!q || [s.name, s.race, s.location, s.home, s.condition, s.trainer, s.merchant].some(t => t && t.toLowerCase().includes(q))));
     const sgs = [['husband', 'Husbands'], ['wife', 'Wives']].map(([r, label]) => [label, list.filter(s => s.role === r)]).filter(([, l]) => l.length);
     $('spList').innerHTML = sgs.length ? (sgs.length > 1 ? foldBar('spList') : '') + sgs.map(([label, l]) => fold(`sp-${label}`, label, `<div class="perks">${l.map(s => spRow(s)).join('')}</div>`, { count: l.length, chosen: l.filter(s => state.spouse && state.spouse.id === s.id).length, open: false, force: !!q || spFilter !== 'all' })).join('')
       : `<div class="box"><p class="muted" style="margin:0">Nothing matches "${esc(q)}".</p></div>`;
