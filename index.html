@@ -778,7 +778,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="potions" hidden>
       <div class="intro">
         <h2>Potions and poisons</h2>
-        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them, with the fewest unwanted side effects first. Mark the ones you like as favorites.</p>
+        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them. Once you pick one effect, the other lists narrow to the effects that can be brewed with it. Combinations come with the fewest unwanted side effects first. Mark the ones you like as favorites.</p>
       </div>
       <div class="box">
         <h3>Potion maker</h3>
@@ -2343,12 +2343,25 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const ingName = id => `${esc(ING[id].name)}${ING[id].plant ? ' <span class="plant" title="Can be planted in a Hearthfire garden" aria-label="can be planted">✿</span>' : ''}${ING[id].dlc !== 'base' ? `<span class="tagd">${DLC[ING[id].dlc] || ING[id].dlc}</span>` : ''}`;
   let pmWant = ['', '', ''], pmIng = '', pmAll = false;
   function renderPotions() {
-    if (!$('pe-0').options.length) {
-      const pos = ALCHDATA.effects.filter(e => e.positive), neg = ALCHDATA.effects.filter(e => !e.positive);
-      const opts = `<option value="">Choose an effect</option><optgroup label="Beneficial (potions)">${pos.map(e => `<option value="${e.id}">${esc(e.name)}</option>`).join('')}</optgroup><optgroup label="Harmful (poisons)">${neg.map(e => `<option value="${e.id}">${esc(e.name)}</option>`).join('')}</optgroup>`;
-      [0, 1, 2].forEach(i => { $('pe-' + i).innerHTML = opts; });
-    }
-    [0, 1, 2].forEach(i => { $('pe-' + i).value = pmWant[i]; });
+    // each list only offers effects that can still be brewed together with the other chosen effects
+    const pmPool = INGR.filter(i => ($('pmCC').checked || i.dlc !== 'cc') && (!$('pmPlant').checked || i.plant));
+    if (pmIng && !pmPool.some(i => i.id === pmIng)) pmIng = '';
+    const brewable = set => {
+      const c = pmPool.filter(i => i.effects.some(e => set.includes(e))), ok = g => (!pmIng || g.some(x => x.id === pmIng)) && set.every(w => g.filter(x => x.effects.includes(w)).length >= 2);
+      for (let a = 0; a < c.length; a++) for (let b = a + 1; b < c.length; b++) {
+        if (ok([c[a], c[b]])) return true;
+        for (let d = b + 1; d < c.length; d++) if (ok([c[a], c[b], c[d]])) return true;
+      }
+      return false;
+    };
+    [0, 1, 2].forEach(i => {
+      const others = [...new Set(pmWant.filter((w, k) => k !== i && w))];
+      const fits = e => e.id === pmWant[i] || !others.length || (!others.includes(e.id) && brewable([...others, e.id]));
+      const grp = (label, pos) => { const l = ALCHDATA.effects.filter(e => e.positive === pos && fits(e)); return l.length ? `<optgroup label="${label}">${l.map(e => `<option value="${e.id}">${esc(e.name)}</option>`).join('')}</optgroup>` : ''; };
+      const body = grp('Beneficial (potions)', true) + grp('Harmful (poisons)', false);
+      $('pe-' + i).innerHTML = `<option value="">${others.length && !body ? 'Nothing else combines' : others.length ? 'Choose an effect that combines' : 'Choose an effect'}</option>${body}`;
+      $('pe-' + i).value = pmWant[i];
+    });
     const want = [...new Set(pmWant.filter(Boolean))];
     // ingredient choice: only ones that carry a chosen effect can be in a combination
     const ingOpts = INGR.filter(i => ($('pmCC').checked || i.dlc !== 'cc') && (!$('pmPlant').checked || i.plant) && (!want.length || i.effects.some(e => want.includes(e)))).sort((a, b) => a.name.localeCompare(b.name));
