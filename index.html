@@ -999,7 +999,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <p class="muted" style="margin:0;font-size:.9rem">Every quest in the data. Narrow it down, then add quests to your Priority or Selected tiers. Places are matched from where each quest starts and takes place, so a city filter also catches quests in that city's hold landmarks.</p>
       <div class="qb-filters">
         <div class="field"><label class="label" for="questSearch">Search</label><input type="search" id="questSearch" class="search" placeholder="Quest, giver or place" autocomplete="off"></div>
-        <div class="field"><label class="label" for="qbType">Questline or type</label><select id="qbType"></select><label class="check" style="margin-top:6px;font-size:.9rem"><input type="checkbox" id="qbMinor"> Include small tasks and favors</label></div>
+        <div class="field"><label class="label" for="qbType">Questline or type</label><select id="qbType"></select></div>
         <div class="field"><label class="label" for="qbPlace">Place</label><select id="qbPlace"></select></div>
         <div class="field"><label class="label" for="qbDlc">Game or add-on</label><select id="qbDlc"><option value="">All</option><option value="base">Base game</option><option value="dawnguard">Dawnguard</option><option value="hearthfire">Hearthfire</option><option value="dragonborn">Dragonborn</option><option value="cc">Creation Club</option></select></div>
         <div class="field"><label class="label" for="qbStatus">Status</label><select id="qbStatus"><option value="">Any</option><option value="out">Not in my plan</option><option value="in">In my plan</option><option value="done">Done</option></select></div>
@@ -1008,6 +1008,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="row">
         <label class="check"><input type="checkbox" id="qbFits" checked> Hide quests my sides leave out</label>
         <label class="check"><input type="checkbox" id="qbAlign"> Hide quests that clash with my alignment</label>
+        <label class="check"><input type="checkbox" id="qbMinor"> Include small tasks and favors</label>
       </div>
       <div class="muted" id="qbCount" style="font-size:.9rem" aria-live="polite"></div>
       <div class="perks" id="questResults"></div>
@@ -2756,9 +2757,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
     ['Main quest', 'Main quest'], ['Dawnguard main quest', 'Dawnguard main quest'], ['Dragonborn main quest', 'Dragonborn main quest'],
     ['Companions', 'Companions'], ['College of Winterhold', 'College of Winterhold'], ['Thieves Guild', 'Thieves Guild'], ['Dark Brotherhood', 'Dark Brotherhood'], ['Bards College', 'Bards College'],
     ['Imperial Legion', 'Imperial Legion'], ['Stormcloaks', 'Stormcloaks'], ['Dawnguard', 'Dawnguard'], ['Volkihar Vampire Clan', 'Volkihar Vampire Clan'],
-    ['Daedric quest', 'Daedric quests'], ['Divine quest', 'Divine quests'], ['side', 'Side quests (all)'], ['Dungeon quest', 'Dungeon quests'], ['Hearthfire', 'Hearthfire'], ['Creation Club', 'Creation Club'], ['Miscellaneous', 'Miscellaneous']];
+    ['Daedric quest', 'Daedric quests'], ['Divine quest', 'Divine quests'], ['side', 'Side quests (all)'], ['Dungeon quest', 'Dungeon quests'], ['Hearthfire', 'Hearthfire'], ['Creation Club', 'Creation Club'], ['Miscellaneous', 'Miscellaneous'], ['minor', 'Small tasks and favors']];
   const FACTION_LINES = ['Companions', 'College of Winterhold', 'Thieves Guild', 'Dark Brotherhood', 'Bards College', 'Imperial Legion', 'Stormcloaks', 'Dawnguard', 'Volkihar Vampire Clan'];
-  const typeMatch = (x, t) => !t || (t === 'faction' ? FACTION_LINES.includes(x.line) : t === 'story' ? /main quest$/i.test(x.line) : t === 'side' ? /side (quest|task)/i.test(x.line) : x.line === t);
+  const typeMatch = (x, t) => !t || (t === 'minor' ? !!x.minor : t === 'faction' ? FACTION_LINES.includes(x.line) : t === 'story' ? /main quest$/i.test(x.line) : t === 'side' ? /side (quest|task)/i.test(x.line) : x.line === t);
   let qbShown = 30;
   function renderQuestSearch() {
     if (!$('qbType').options.length) {
@@ -2772,7 +2773,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       && (!st || (st === 'done' ? state.done[x.id] : st === 'in' ? plan[x.id] : !plan[x.id]))
       && (!lv || (x.reqLevel || 0) <= lv)
       && (!$('qbFits').checked || !sideBlock(x)) && (!$('qbAlign').checked || !questConflict(x))
-      && ($('qbMinor').checked || !x.minor || q || t === 'Miscellaneous'))
+      && ($('qbMinor').checked || !x.minor || q || t === 'Miscellaneous' || t === 'minor'))
       .map(x => ({ x, r: (q && x.name.toLowerCase().includes(q) ? 0 : 2) + (x.minor ? 1 : 0) + (x.dlc === 'cc' ? 0.5 : 0) }))
       .sort((a, b) => a.r - b.r || a.x.line.localeCompare(b.x.line) || (a.x.prev.length ? 1 : 0) - (b.x.prev.length ? 1 : 0) || a.x.name.localeCompare(b.x.name)).map(o => o.x);
     const hits = all.slice(0, qbShown);
