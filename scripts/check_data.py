@@ -62,6 +62,7 @@ def known():
     k = {'gear': set(), 'household': set(), 'alchemy': set(), 'enchantments': set(), 'spells': set()}
     sp = DATA / 'spells.json'
     if sp.exists(): k['spells'] = {norm(s['name']) for s in json.load(open(sp, encoding='utf-8'))['spells']}
+    k['spells'] |= {norm(n) for n in ('Spectral Arrow', 'Conjure Dragon Priest')}   # left out on purpose: not in game / Konahrik's passive
     gear = json.load(open(DATA / 'gear.json', encoding='utf-8'))
     k['gear'] = {norm(i['name']) for i in gear['items']}
     k['enchantments'] = {norm(e['name']) for e in gear.get('enchantments', {}).get('list', [])}

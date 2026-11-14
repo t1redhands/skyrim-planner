@@ -543,7 +543,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="fold-body">
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
-          <li><strong>Identity.</strong> Name, gender, race, alignment, class, whether the character becomes a werewolf or vampire, and the sides and factions they'll join. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
+          <li><strong>Identity.</strong> Name, gender, race, alignment, class, whether the character becomes a werewolf or vampire, and the sides and factions they'll join. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from. The Craft Leveling preset adds the 22 perks of a crafting speed-level route.</li>
           <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need.</li>
           <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Weapons and apparel are marked Main build, Collect or Incidental, and standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
@@ -589,6 +589,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
           <button class="btn quiet" id="suggestNo">Keep current plan</button>
         </div>
       </div>
+    </div>
+    <div class="box" id="craftBox">
+      <h3>Preset: Craft Leveling</h3>
+      <p class="muted" style="margin:0;font-size:.95rem">The speed-leveling route from Fevvy's crafting guide: Alchemy, Speech and Enchanting first, then Smithing. It adds the guide's 22 perks to your plan, in the guide's order, at the earliest milestone that has room. Perks you've already planned stay. Your armor choice decides which side of the Smithing tree you take. <a class="uesp" href="https://youtu.be/op39b4qLymE" target="_blank" rel="noopener">Video ↗</a></p>
+      <div class="row">
+        <div class="styles" id="craftArmor" role="radiogroup" aria-label="Armor for Craft Leveling"><button class="chip" role="radio" data-v="heavy">Heavy armor (Dwarven → Orcish → Ebony)</button><button class="chip" role="radio" data-v="light">Light armor (Elven → Advanced Armors → Glass)</button></div>
+      </div>
+      <div class="row"><button class="btn" id="craftBtn">Add Craft Leveling perks</button><button class="btn quiet" id="craftGo" hidden>Open the perk plan</button></div>
+      <p class="muted" id="craftMsg" role="status" style="margin:0;font-size:.95rem"></p>
     </div>
     <div class="box">
       <h3>Werewolf or vampire</h3>
@@ -1577,6 +1586,45 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const firstStyleSkill = Object.keys(ST[state.style].w)[0]; if (firstStyleSkill) shownTree = firstStyleSkill;
     $('suggestConfirm').hidden = true; touch(); showStep('skills');
   });
+
+  // ---------- Craft Leveling preset (Fevvy, https://youtu.be/op39b4qLymE; AE order) ----------
+  const CRAFT_SMITH = { heavy: ['dwarven-smithing', 'orcish-smithing', 'ebony-smithing'], light: ['elven-smithing', 'advanced-armors', 'glass-smithing'] };
+  const craftKeys = armor => [
+    'alchemy.alchemist#0', 'alchemy.alchemist#1', 'alchemy.physician#0', 'alchemy.benefactor#0', 'alchemy.alchemist#2',
+    'speech.haggling#0', 'speech.allure#0', 'speech.merchant#0', 'alchemy.alchemist#3',
+    'enchanting.enchanter#0', 'enchanting.enchanter#1', 'enchanting.enchanter#2', 'enchanting.enchanter#3', 'enchanting.insightful-enchanter#0',
+    'alchemy.alchemist#4', 'smithing.steel-smithing#0', ...CRAFT_SMITH[armor].map(id => `smithing.${id}#0`),
+    'enchanting.corpus-enchanter#0', 'enchanting.enchanter#4', 'enchanting.extra-effect#0'];
+  let craftArmor = 'heavy';
+  const planLevel = (picks, m) => { const lv = skillLevels(picks, state.race, m); return levelFromXp(SKILLS.reduce((t, s) => t + xpForSkill(startOf(state.race, s.id), lv[s.id]), 0)); };
+  const planUsed = (picks, m) => ALL_RANKS.filter(r => takenBy(picks, r.key, m)).length;
+  function applyCraft(armor) {
+    const picks = { ...state.picks };
+    let mi = 0, added = 0;
+    for (const key of craftKeys(armor)) {
+      if (picks[key] != null) continue;
+      added++;
+      while (mi < MS.length - 1) {
+        const m = MS[mi], before = planLevel({ ...picks, [key]: undefined }, m);
+        picks[key] = m;
+        if (planUsed(picks, m) <= m - 1 && (planLevel(picks, m) <= m + 2 || before > m + 2)) break;
+        mi++;
+      }
+      picks[key] = MS[mi];
+    }
+    for (const k in picks) if (picks[k] == null) delete picks[k];
+    state.picks = picks;
+    return added;
+  }
+  $('craftArmor').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; craftArmor = b.dataset.v; renderCraft(); });
+  $('craftBtn').addEventListener('click', () => {
+    const added = applyCraft(craftArmor);
+    shownTree = 'alchemy'; touch(); $('craftGo').hidden = false;
+    $('craftMsg').textContent = added ? `Added ${added} perk${added === 1 ? '' : 's'} to your plan. Tip from the guide: Thief Stone while brewing, Mage Stone while enchanting, Warrior Stone while smithing.` : 'Your plan already has all 22 Craft Leveling perks.';
+  });
+  $('craftGo').addEventListener('click', () => showStep('skills'));
+  function renderCraft() { $('craftArmor').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === craftArmor))); }
+  renderCraft();
 
   // ---------- Perk plan ----------
   let shownTree = 'oneHanded';
@@ -2846,7 +2894,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return '';
   };
   const folRow = (f, extra = '') => `<div class="perk${state.followers[f.id] != null ? ' taken' : ''}"><div>
-      <div class="pn">${esc(f.name)}${sx(f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${f.trainer ? `<span class="tagd">Trains ${esc(f.trainer)}</span>` : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
+      <div class="pn">${esc(f.name)}${ux('Skyrim:' + (f.page || f.name), f.name)}<span class="tagd">${esc(f.group)}</span>${f.dlc !== 'base' && f.group !== DLC[f.dlc] ? `<span class="tagd">${DLC[f.dlc] || f.dlc}</span>` : ''}${f.marry ? '<span class="tagd good">Can marry</span>' : ''}${f.trainer ? `<span class="tagd">Trains ${esc(f.trainer)}</span>` : ''}${moralFit(f) ? `<span class="tagd fit">${esc(moralFit(f))}</span>` : ''}${folClash(f) ? '<span class="tagd warn">Alignment</span>' : ''}</div>
       ${extra ? `<div class="why">${extra}</div>` : ''}
       <div class="pe">${esc(f.description)}</div>
       <div class="pr">Skills: ${esc(f.skillsText)} · Up to level ${esc(f.maxLevel || '?')} · ${esc(f.moral)}</div>
