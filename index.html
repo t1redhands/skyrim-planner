@@ -239,6 +239,11 @@ textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px soli
 .coll-item { display: flex; gap: 8px; align-items: flex-start; font-size: .92rem; }
 .coll-item input { margin-top: 4px; width: 16px; height: 16px; accent-color: var(--accent); }
 .coll-item.done strong { text-decoration: line-through; color: var(--ink-2); }
+.speed-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.speed-list .coll-item { font-size: .95rem; }
+.speed-list .coll-item > div { min-width: 0; }
+.speed-list .coll-item.cp { border-top: 1px dashed var(--rule); padding-top: 8px; }
+.speed-list .coll-item.next { background: var(--accent-soft); border-radius: 8px; padding: 8px; margin: -4px -8px; }
 .cr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 20px; margin-top: 6px; }
 .cr-grid h4 { margin: 0 0 4px; font-family: var(--display); font-weight: 400; color: var(--accent); }
 .cr-grid ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .92rem; }
@@ -523,6 +528,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <nav class="steps" id="playNav" role="tablist" aria-label="Play-through" hidden>
       <button role="tab" id="tab-play" aria-controls="p-play" aria-selected="false" data-step="play">Now</button>
       <button role="tab" id="tab-pcoll" aria-controls="p-pcoll" aria-selected="false" data-step="pcoll">Collections</button>
+      <button role="tab" id="tab-pspeed" aria-controls="p-pspeed" aria-selected="false" data-step="pspeed">Speed leveling</button>
       <button role="tab" id="tab-journal" aria-controls="p-journal" aria-selected="false" data-step="journal">Journal</button>
     </nav>
   </div>
@@ -920,6 +926,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div id="pcollTally" class="milestones"></div>
     <div class="gear-sets" id="pcollList"></div>
   </section>
+  <section class="panel" id="p-pspeed" role="tabpanel" aria-labelledby="tab-pspeed" hidden>
+    <div class="intro">
+      <h2>Speed leveling</h2>
+      <p class="muted">The Craft Leveling route as a step-by-step checklist: Alchemy, Speech and Enchanting first, then Smithing, with each perk shown where you take it. It's written for Anniversary Edition. Steps the pathways share stay ticked when you switch. <a class="uesp" href="https://youtu.be/op39b4qLymE" target="_blank" rel="noopener">Fevvy's video ↗</a></p>
+    </div>
+    <div class="box craft-box">
+      <div class="styles" id="speedPath" role="radiogroup" aria-label="Speed leveling pathway"></div>
+      <div class="xpbar" aria-hidden="true"><i id="speedBar"></i></div>
+      <p id="speedTally" role="status" style="margin:0"></p>
+    </div>
+    <div class="gear-sets" id="speedList"></div>
+  </section>
   <section class="panel" id="p-journal" role="tabpanel" aria-labelledby="tab-journal" hidden>
     <div class="intro">
       <h2>Journal</h2>
@@ -1213,12 +1231,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
 
   // ---------- Perk data (data/perks.json) ----------
-  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA;
+  let PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA, SPEEDDATA;
   try {
     const get = async f => { const res = await fetch('data/' + f, { cache: 'no-cache' }); if (!res.ok) throw new Error(f); return res.json(); };
-    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household', 'spells', 'buffs', 'ids', 'collections'].map(n => get(n + '.json')));
+    [PERKDATA, STONEDATA, SHOUTDATA, GEARDATA, ALCHDATA, SCROLLDATA, QUESTDATA, HOUSEDATA, SPELLDATA, BUFFDATA, IDDATA, COLLDATA, SPEEDDATA] = await Promise.all(['perks', 'stones', 'shouts', 'gear', 'alchemy', 'scrolls', 'quests', 'household', 'spells', 'buffs', 'ids', 'collections', 'speedrun'].map(n => get(n + '.json')));
   } catch (e) {
-    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads eight files from the <code>data</code> folder next to this page: <code>perks.json</code>, <code>stones.json</code>, <code>shouts.json</code>, <code>gear.json</code>, <code>alchemy.json</code>, <code>scrolls.json</code>, <code>quests.json</code> and <code>household.json</code>. Check that all eight are there and reload the page.</p></div>`;
+    document.querySelector('main').innerHTML = `<div class="box"><h2>The game data didn't load</h2><p>The planner reads its game data from the <code>data</code> folder next to this page, and <code>${esc(e.message)}</code> didn't load. Check that every file from the download is in that folder and reload the page.</p></div>`;
     return;
   }
   const STONES = STONEDATA.stones, STN = Object.fromEntries(STONES.map(s => [s.id, s]));
@@ -1226,6 +1244,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const SPELLS = SPELLDATA.spells, SPL = Object.fromEntries(SPELLS.map(s => [s.id, s]));
   const BUFFS = BUFFDATA.buffs, BF = Object.fromEntries(BUFFS.map(b => [b.id, b]));
   const COLLS = COLLDATA.collections, CL = Object.fromEntries(COLLS.map(c => [c.id, c]));
+  const SPEED = SPEEDDATA.plans, SPDP = Object.fromEntries(SPEED.map(p => [p.id, p])), SPEED_IDS = new Set(SPEED.flatMap(p => p.rows.map(r => r.id)));
   const MOVE_KINDS = [['shout', 'Shout'], ['spell', 'Spell'], ['potion', 'Potion'], ['poison', 'Poison'], ['enchant', 'Enchantment'], ['power', 'Power'], ['scroll', 'Scroll'], ['gear', 'Weapon or gear'], ['other', 'Other']];
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   // enchanting and crafting plans for chosen gear
@@ -1382,7 +1401,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const J_KINDS = { start: 'Beginning', level: 'Level-up', perk: 'Perk', quest: 'Quest', item: 'Find', note: 'Entry' };
   const blankPlay = () => ({ on: false, start: 1, ups: [], date: { ...START_DATE } });
   function blankState(race = 'nord') {
-    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, want: {}, allies: {}, pets: {}, play: blankPlay(), journal: [], has: { gear: {}, stone: {} }, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
+    return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, want: {}, allies: {}, pets: {}, play: blankPlay(), journal: [], speed: { path: '', done: {} }, craft: { path: '', added: {} }, has: { gear: {}, stone: {} }, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
       bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
   }
   function exampleState() {
@@ -1447,6 +1466,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.play = pl && pl.on ? { on: true, start: Math.min(Math.max(parseInt(pl.start) || 1, 1), 81),
       ups: (Array.isArray(pl.ups) ? pl.ups : []).slice(0, 300).map(u => ({ a: [0, 1, 2].includes(u?.a) ? u.a : null, p: u?.p === 'save' || RANK[u?.p] ? u.p : null })),
       date: okDate(pl.date) || { ...START_DATE } } : blankPlay();
+    out.speed = { path: SPDP[s.speed?.path] ? s.speed.path : '', done: Object.fromEntries(Object.keys(s.speed?.done && typeof s.speed.done === 'object' ? s.speed.done : {}).filter(k => SPEED_IDS.has(k)).map(k => [k, 1])) };
     out.journal = (Array.isArray(s.journal) ? s.journal : []).slice(-3000).filter(e => e && typeof e === 'object').map(e => ({
       id: String(e.id || Math.random().toString(36).slice(2)).slice(0, 24), k: J_KINDS[e.k] ? e.k : 'note', at: typeof e.at === 'string' ? e.at.slice(0, 30) : new Date().toISOString(),
       g: okDate(e.g) || { ...START_DATE }, title: String(e.title || '').slice(0, 160), text: String(e.text || '').slice(0, 20000), ref: e.ref ? String(e.ref).slice(0, 80) : undefined }));
@@ -1519,9 +1539,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function showStep(step) {
     document.querySelectorAll('nav.steps button').forEach(b => b.setAttribute('aria-selected', String(b.dataset.step === step)));
     if (step === 'attributes') { step = 'skills'; psTab = 'attrs'; }   // attributes now live on the perk step
-    ['identity','skills','loadout','household','collections','quests','summary','play','pcoll','journal'].forEach(p => $('p-' + p).hidden = p !== step);
-    const playing = step === 'play' || step === 'journal' || step === 'pcoll';
+    ['identity','skills','loadout','household','collections','quests','summary','play','pcoll','pspeed','journal'].forEach(p => $('p-' + p).hidden = p !== step);
+    const playing = step === 'play' || step === 'journal' || step === 'pcoll' || step === 'pspeed';
     if (step === 'pcoll') renderPlayColl();
+    if (step === 'pspeed') renderSpeed();
     if (playing !== (MODE === 'play')) setMode(playing ? 'play' : 'plan', false);
     if (step === 'play') renderPlay();
     if (step === 'journal') renderJournal();
@@ -1541,7 +1562,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     $('planNav').hidden = m === 'play'; $('playNav').hidden = m !== 'play';
     $('modeBtn').textContent = m === 'play' ? 'Back to plan' : 'Play mode';
     document.body.dataset.mode = m;
-    if (go) { let s = null; try { s = localStorage.getItem(m === 'play' ? 'skp.pstep' : 'skp.step'); } catch {} showStep(m === 'play' ? (['journal', 'pcoll'].includes(s) ? s : 'play') : (s && !['play', 'journal', 'pcoll'].includes(s) ? s : 'identity')); }
+    if (go) { let s = null; try { s = localStorage.getItem(m === 'play' ? 'skp.pstep' : 'skp.step'); } catch {} showStep(m === 'play' ? (['journal', 'pcoll', 'pspeed'].includes(s) ? s : 'play') : (s && !['play', 'journal', 'pcoll', 'pspeed'].includes(s) ? s : 'identity')); }
   }
   $('modeBtn').addEventListener('click', () => setMode(MODE === 'play' ? 'plan' : 'play'));
 
@@ -2830,6 +2851,39 @@ footer p { margin: 4px 0; max-width: 80ch; }
     if (t.checked) state.got[t.dataset.found] = true; else delete state.got[t.dataset.found];
     autoLog('item', 'c:' + t.dataset.found, t.checked, foundTitle(t.dataset.found)); touch(); renderPlayColl(); $(t.id)?.focus();
   });
+  // ---------- Speed leveling checklist (play mode) ----------
+  let speedHide = false;
+  const speedPlan = () => SPDP[state.speed.path] || SPDP[state.craft?.path] || SPEED[0];
+  const SPEED_TAG = { perk: 'Perk', checkpoint: 'Checkpoint', optional: 'Optional' };
+  function renderSpeed() {
+    const plan = speedPlan(), done = state.speed.done;
+    $('speedPath').innerHTML = SPEED.map(p => `<button class="chip" role="radio" data-v="${p.id}" aria-checked="${p.id === plan.id}">${esc(p.name)}</button>`).join('');
+    const todo = plan.rows.filter(r => r.type !== 'checkpoint' && r.type !== 'optional'), n = todo.filter(r => done[r.id]).length;
+    const next = plan.rows.find(r => r.type !== 'optional' && !done[r.id]);
+    $('speedBar').style.width = (todo.length ? n / todo.length * 100 : 0).toFixed(1) + '%';
+    $('speedTally').innerHTML = `<strong class="num">${n}</strong> of <span class="num">${todo.length}</span> steps done${next ? ` · Next: <strong>${esc(next.step)}</strong>` : ' · Route complete.'}${state.craft?.path && state.craft.path !== plan.id ? ` <span class="muted">Your perk plan uses the ${esc(CRAFT_PATHS[state.craft.path])} pathway.</span>` : ''}`;
+    const stages = [...new Set(plan.rows.map(r => r.stage))];
+    $('speedList').innerHTML = `<div class="row"><label class="check"><input type="checkbox" id="speedHide" ${speedHide ? 'checked' : ''}> Hide steps I've done</label><button class="btn quiet" id="speedReset">Untick every step</button></div>` + foldBar('speedList') + stages.map((st, si) => {
+      const rows = plan.rows.filter(r => r.stage === st), shown = rows.filter(r => !(speedHide && done[r.id]));
+      const body = shown.length ? `<ul class="speed-list">${shown.map(r => `<li class="coll-item${done[r.id] ? ' done' : ''}${r.type === 'checkpoint' ? ' cp' : ''}${next && r.id === next.id ? ' next' : ''}"><input type="checkbox" id="spd-${r.id}" data-spd="${r.id}"${done[r.id] ? ' checked' : ''}><div><label for="spd-${r.id}"><strong>${r.type === 'perk' ? 'Take ' : ''}${esc(r.step)}</strong></label>${SPEED_TAG[r.type] ? `<span class="tagd${r.type === 'checkpoint' ? ' good' : ''}">${SPEED_TAG[r.type]}</span>` : ''}${r.requires ? `<span class="tagd">${esc(r.requires)}</span>` : ''}${r.notes ? `<div class="pr">${esc(r.notes)}</div>` : ''}</div></li>`).join('')}</ul>` : '<p class="muted" style="margin:0">Every step here is done.</p>';
+      return fold(`spd-${plan.id}-${si}`, `${si + 1}. ${esc(st)}`, body, { count: `${rows.filter(r => done[r.id]).length} of ${rows.length}`, open: !rows.every(r => done[r.id]) });
+    }).join('');
+  }
+  $('speedPath').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.speed.path = b.dataset.v; touch(); renderSpeed(); $('speedPath').querySelector(`[data-v="${b.dataset.v}"]`)?.focus(); });
+  $('speedList').addEventListener('change', e => {
+    const t = e.target;
+    if (t.id === 'speedHide') { speedHide = t.checked; renderSpeed(); $('speedHide')?.focus(); return; }
+    if (!t.dataset.spd) return;
+    const r = speedPlan().rows.find(x => x.id === t.dataset.spd);
+    if (t.checked) state.speed.done[r.id] = 1; else delete state.speed.done[r.id];
+    if (r.type === 'checkpoint') autoLog('note', 'spd:' + r.id, t.checked, `Speed leveling checkpoint: ${r.step}`);
+    touch(); renderSpeed(); $(t.id)?.focus();
+  });
+  $('speedList').addEventListener('click', e => {
+    const b = e.target.closest('#speedReset'); if (!b) return;
+    if (!b.dataset.armed) { b.dataset.armed = '1'; b.textContent = 'Confirm: untick every step'; return; }
+    state.speed.done = {}; touch(); renderSpeed();
+  });
   // ---------- Whole questlines ----------
   const LINE_GROUPS = [['Main stories', ['Main quest', 'Dawnguard main quest', 'Dragonborn main quest']], ['Factions', FACTION_LINES], ['Other questlines', ['Daedric quest', 'Divine quest', 'Dawnguard side quest', 'Dragonborn side quest', 'Side quest', 'Dungeon quest', 'Hearthfire']]];
   const lineQuests = line => QUESTS.filter(x => x.line === line && !x.minor && !sideBlock(x));
@@ -3604,7 +3658,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     // some groups redraw when a choice changes: put focus back on the same choice
     if (!document.contains(items[i]) && group.id) { const g2 = $(group.id); const again = g2 && [...g2.querySelectorAll('[role="radio"], [role="tab"], button')].filter(b => b.offsetParent !== null)[i]; again?.focus(); }
   });
-  function renderAll() { renderSurvival(); renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); if (MODE === 'play') { renderPlay(); renderJournal(); } }
+  function renderAll() { renderSurvival(); renderHeader(); renderIdentity(); renderSkills(); renderAttributes(); renderLoadout(); renderHousehold(); renderQuests(); renderSummary(); if (MODE === 'play') { renderPlay(); renderJournal(); renderSpeed(); } }
   renderAll();
   // a share link (#b=...) offers to open that build without overwriting this one silently
   async function checkShared() {

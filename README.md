@@ -27,10 +27,11 @@ When the character is ready, **Play mode** in the header turns the planner into 
 - **Now** shows your level, your attributes and perks so far, and the in-game date. It lists what's due before your next milestone: perks, quests to expedite, gear, Standing Stones and collection items. Overdue items are flagged, and the next quests in your plan come after.
 - **Level up** asks which attribute you raised (suggesting the one your plan needs next) and which perk you took. The perk list starts with your plan's perks, and a perk you take that isn't in the plan can be added to it. You can also save a perk for later and record it when you spend it.
 - **Collections** lists the items you want, to tick off as you find them.
+- **Speed leveling** is the Craft Leveling route as a step-by-step checklist, with Heavy armor, Light armor and Mage pathways (Anniversary Edition). It shows your progress and the next step, and steps the pathways share stay ticked when you switch. Finished checkpoints go into the journal.
 - **Journal** keeps a dated log. Level-ups, finished quests and finds are written in as you mark them, and you can add your own entries and edit any of them. Each entry has an in-game date (day, month, year and time); the weekday fills in from the date, counting from the game's start on Sundas, 17th of Last Seed, 4E 201.
 - **Download as text** saves the journal as a plain text file to edit in a word processor. **Export journal file** saves the whole character, plan and journal as a `.json` file that **Import a journal file** loads on another device.
 
-Share links and build codes carry your progress (level, perks and attributes taken, quests done, items found, the in-game date) but not the journal.
+Share links and build codes carry your progress (level, perks and attributes taken, quests done, items found, the in-game date) but not the journal or the Speed leveling ticks. The journal file carries both.
 
 **Survival Mode** can be switched on in the Identity step. The planner then uses Survival's carry weight (150 to start; the Steed Stone and Extra Pockets add 50) and adds notes wherever it changes things: race bonuses, healing, warmth, food, potions, shrines, travel and leveling. Most items, quests, perks, people and places link to their UESP page.
 
