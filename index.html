@@ -250,7 +250,7 @@ textarea.notes { width: 100%; min-height: 140px; padding: 10px; border: 1px soli
 .cr-grid .btn { padding: 2px 8px; font-size: .8rem; margin-left: 4px; }
 .cr-facts { margin: 6px 0 0; padding-left: 18px; font-size: .92rem; display: grid; gap: 3px; }
 .ql-head { margin: 10px 0 2px; font-family: var(--display); font-weight: 400; color: var(--accent); }
-.qb-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 14px; }
+.qb-filters { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 14px; align-items: start; }
 .qb-filters select, .qb-filters .search { width: 100%; max-width: none; padding: 7px 8px; border: 1px solid var(--field); border-radius: 6px; background: var(--bg); }
 .plant { color: var(--good); }
 ul.shop { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; font-size: .92rem; }
@@ -999,7 +999,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <p class="muted" style="margin:0;font-size:.9rem">Every quest in the data. Narrow it down, then add quests to your Priority or Selected tiers. Places are matched from where each quest starts and takes place, so a city filter also catches quests in that city's hold landmarks.</p>
       <div class="qb-filters">
         <div class="field"><label class="label" for="questSearch">Search</label><input type="search" id="questSearch" class="search" placeholder="Quest, giver or place" autocomplete="off"></div>
-        <div class="field"><label class="label" for="qbType">Questline or type</label><select id="qbType"></select></div>
+        <div class="field"><label class="label" for="qbType">Questline or type</label><select id="qbType"></select><label class="check" style="margin-top:6px;font-size:.9rem"><input type="checkbox" id="qbMinor"> Include small tasks and favors</label></div>
         <div class="field"><label class="label" for="qbPlace">Place</label><select id="qbPlace"></select></div>
         <div class="field"><label class="label" for="qbDlc">Game or add-on</label><select id="qbDlc"><option value="">All</option><option value="base">Base game</option><option value="dawnguard">Dawnguard</option><option value="hearthfire">Hearthfire</option><option value="dragonborn">Dragonborn</option><option value="cc">Creation Club</option></select></div>
         <div class="field"><label class="label" for="qbStatus">Status</label><select id="qbStatus"><option value="">Any</option><option value="out">Not in my plan</option><option value="in">In my plan</option><option value="done">Done</option></select></div>
@@ -1008,7 +1008,6 @@ footer p { margin: 4px 0; max-width: 80ch; }
       <div class="row">
         <label class="check"><input type="checkbox" id="qbFits" checked> Hide quests my sides leave out</label>
         <label class="check"><input type="checkbox" id="qbAlign"> Hide quests that clash with my alignment</label>
-        <label class="check"><input type="checkbox" id="qbMinor"> Include small tasks and favors</label>
       </div>
       <div class="muted" id="qbCount" style="font-size:.9rem" aria-live="polite"></div>
       <div class="perks" id="questResults"></div>
