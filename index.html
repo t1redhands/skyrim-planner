@@ -395,6 +395,9 @@ details.fold > summary:focus-visible { outline: 2px solid var(--accent); outline
 .sb { width: 30px; height: 30px; border: 1px solid var(--rule); background: var(--bg); border-radius: 6px; cursor: pointer; font-family: var(--mono); }
 .sv { min-width: 2.2rem; text-align: center; font-family: var(--mono); }
 .remain { font-size: .88rem; }
+.stepper { grid-template-columns: 1fr auto auto auto 6.5em; }
+.stepper .lu { font-size: .85rem; color: var(--ink-2); text-align: right; }
+.ratio-big { font-size: 1.25rem; letter-spacing: .04em; }
 .remain.done { color: var(--good); } .remain.left { color: var(--warn); }
 .ratio { display: grid; gap: 10px; }
 .ratio-row { display: grid; grid-template-columns: 70px 1fr; gap: 12px; align-items: center; }
@@ -552,7 +555,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <p style="margin:0">Plan a character from creation to level 60, in three milestones: <strong>by level 20</strong>, <strong>by level 40</strong> and <strong>by level 60</strong>. Everything you choose is tied to the milestone you want it by, and the planner checks whether it's realistic.</p>
         <ol class="steps-guide">
           <li><strong>Identity.</strong> Name, gender, race, alignment, class, whether the character becomes a werewolf or vampire, and the sides and factions they'll join. Alignment decides which questlines the quest plan suggests. "Suggest a plan" fills in perks, stones and attributes to start from.</li>
-          <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then split your level-ups between Health, Magicka and Stamina. You get one perk per level, and the planner works out the skill levels you'll need. The Craft Leveling preset adds a crafting speed-level route's perks (Heavy armor, Light armor or Mage pathway) and shows how they spread across your milestones.</li>
+          <li><strong>Perks and attributes.</strong> Pick perks in each skill tree and the milestone for each, then set a Health : Magicka : Stamina ratio for your level-ups. You get one perk per level, and the planner works out the skill levels you'll need. The Craft Leveling preset adds a crafting speed-level route's perks (Heavy armor, Light armor or Mage pathway) and shows how they spread across your milestones.</li>
           <li><strong>Loadout.</strong> Standing Stones, shouts, spells, buffs, weapons, apparel, potions, food, scrolls and signature moves. Weapons and apparel are marked Main build, Collect or Incidental, and standard gear can be marked as found or crafted, and given one or two enchantments.</li>
           <li><strong>Household.</strong> Followers, a spouse and homes, with the ones that suit your build marked.</li>
           <li><strong>Collections.</strong> Checklists for things to collect, such as skill books, Daedric artifacts and Dragon Priest masks. Collections you take on add their quests to the plan.</li>
@@ -659,6 +662,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
         <button class="chip" role="radio" data-v="light">Light armor <span class="muted">· 22 perks, Elven → Advanced Armors → Glass</span></button>
         <button class="chip" role="radio" data-v="mage">Mage <span class="muted">· 18 perks, no Smithing perks</span></button>
       </div>
+      <div class="row" id="craftLegend" style="margin:0" hidden><span class="label" style="margin:0">Make legendary afterward</span>
+        <label class="check"><input type="checkbox" data-leg="alchemy"> Alchemy</label>
+        <label class="check"><input type="checkbox" data-leg="smithing"> Smithing</label>
+        <label class="check"><input type="checkbox" data-leg="enchanting"> Enchanting</label></div>
       <p class="muted" id="craftMsg" role="status" style="margin:0;font-size:.95rem"></p>
     </div>
     <div class="milestones" id="milestones"></div>
@@ -683,7 +690,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="ps-sec" data-ps="attrs" hidden>
     <div class="intro" id="attrs">
       <h2>Health, Magicka and Stamina</h2>
-      <p class="muted">Every level-up adds 10 to one attribute. Split the level-ups in each stretch of play; each point of Stamina also adds 5 carry weight.</p>
+      <p class="muted">Every level-up adds 10 to one attribute. Set a Health : Magicka : Stamina ratio for each stretch of play, and the planner works out how many level-ups go to each. A ratio of 1 : 0 : 2 puts a third into Health and two thirds into Stamina. Each Stamina level-up also adds 5 carry weight.</p>
     </div>
     <div class="row">
       <button class="btn ghost" id="applyRatio">Use the class's split</button>
@@ -778,7 +785,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="potions" hidden>
       <div class="intro">
         <h2>Potions and poisons</h2>
-        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them. Once you pick one effect, the other lists narrow to the effects that can be brewed with it. Combinations come with the fewest unwanted side effects first. Mark the ones you like as favorites.</p>
+        <p class="muted">Pick up to three effects and the planner finds the ingredient combinations that brew them. Once you pick an effect or an ingredient you must use, the effect lists narrow to what can be brewed with it. Combinations come with the fewest unwanted side effects first. Mark the ones you like as favorites.</p>
       </div>
       <div class="box">
         <h3>Potion maker</h3>
@@ -849,7 +856,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     <div class="sub" data-sub="moves" hidden>
       <div class="intro">
         <h2>Signature moves</h2>
-        <p class="muted">Name the combinations this character relies on and list the steps in order: a shout, a spell, a potion, an enchantment, a power. Type anything, or pick from the suggestions, which come from the game data with your own choices listed first. Steps that use something you haven't added to your plan are noted, so you know what to go and get.</p>
+        <p class="muted">Name the combinations this character relies on and list the steps in order: a shout, a spell, a potion, an enchantment, a power. Each step offers only what you've chosen for this character: your shouts, spells, favorite potions and poisons, gear, enchantments on that gear, powers and scrolls. Use "Other" for anything else, such as sneaking up first.</p>
       </div>
       <div class="moves" id="moveList"></div>
       <div class="row"><button class="btn" id="addMove">Add a signature move</button></div>
@@ -933,6 +940,10 @@ footer p { margin: 4px 0; max-width: 80ch; }
     </div>
     <div class="box craft-box">
       <div class="styles" id="speedPath" role="radiogroup" aria-label="Speed leveling pathway"></div>
+      <div class="row" id="speedLegend" style="margin:0"><span class="label" style="margin:0">Make legendary afterward</span>
+        <label class="check"><input type="checkbox" data-leg="alchemy"> Alchemy</label>
+        <label class="check"><input type="checkbox" data-leg="smithing"> Smithing</label>
+        <label class="check"><input type="checkbox" data-leg="enchanting"> Enchanting</label></div>
       <div class="xpbar" aria-hidden="true"><i id="speedBar"></i></div>
       <p id="speedTally" role="status" style="margin:0"></p>
     </div>
@@ -1119,14 +1130,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const RACES = [
     { id:'argonian', name:'Argonian', p10:'lockpicking', p5:['alteration','lightArmor','pickpocket','restoration','sneak'], magicka:100, power:'Histskin: recover health 10x faster for 60 seconds, once a day', page:'Skyrim:Argonian', verified:true },
     { id:'breton', name:'Breton', p10:'conjuration', p5:['alchemy','alteration','illusion','restoration','speech'], magicka:100, power:'Dragonskin: absorb 50% of the magicka from hostile spells for 60 seconds, once a day. Constant 25% magic resistance.', page:'Skyrim:Breton', verified:true },
-    { id:'darkElf', name:'Dark Elf', p10:'destruction', p5:['alchemy','alteration','illusion','lightArmor','sneak'], magicka:100, power:"Ancestor's Wrath: nearby opponents take 8 fire damage per second for 60 seconds, once a day", page:'Skyrim:Dark_Elf', verified:true },
-    { id:'highElf', name:'High Elf', p10:'illusion', p5:['alteration','conjuration','destruction','enchanting','restoration'], magicka:150, power:'Highborn: regenerate magicka 25x faster for 60 seconds, once a day. Starts with 50 extra Magicka.', page:'Skyrim:High_Elf', verified:true },
+    { id:'darkElf', name:'Dunmer', p10:'destruction', p5:['alchemy','alteration','illusion','lightArmor','sneak'], magicka:100, power:"Ancestor's Wrath: nearby opponents take 8 fire damage per second for 60 seconds, once a day", page:'Skyrim:Dark_Elf', verified:true },
+    { id:'highElf', name:'Altmer', p10:'illusion', p5:['alteration','conjuration','destruction','enchanting','restoration'], magicka:150, power:'Highborn: regenerate magicka 25x faster for 60 seconds, once a day. Starts with 50 extra Magicka.', page:'Skyrim:High_Elf', verified:true },
     { id:'imperial', name:'Imperial', p10:'restoration', p5:['block','destruction','enchanting','heavyArmor','oneHanded'], magicka:100, power:'Voice of the Emperor: calms nearby people for 60 seconds, once a day. Imperial Luck finds extra gold.', page:'Skyrim:Imperial', verified:true },
     { id:'khajiit', name:'Khajiit', p10:'sneak', p5:['alchemy','archery','lockpicking','oneHanded','pickpocket'], magicka:100, power:'Night Eye: improved night vision for 60 seconds, usable any number of times. Claws do 12 damage.', page:'Skyrim:Khajiit', verified:true },
     { id:'nord', name:'Nord', p10:'twoHanded', p5:['block','lightArmor','oneHanded','smithing','speech'], magicka:100, power:'Battle Cry: targets flee for 30 seconds, once a day', page:'Skyrim:Nord', verified:true },
     { id:'orc', name:'Orc', p10:'heavyArmor', p5:['block','enchanting','oneHanded','smithing','twoHanded'], magicka:100, power:'Berserker Rage: take half damage and deal double damage for 60 seconds, once a day', page:'Skyrim:Orc', verified:true },
     { id:'redguard', name:'Redguard', p10:'oneHanded', p5:['alteration','archery','block','destruction','smithing'], magicka:100, power:'Adrenaline Rush: Stamina regenerates 10x faster for 60 seconds, once a day', page:'Skyrim:Redguard', verified:true },
-    { id:'woodElf', name:'Wood Elf', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:true }
+    { id:'woodElf', name:'Bosmer', p10:'archery', p5:['alchemy','lightArmor','lockpicking','pickpocket','sneak'], magicka:100, power:'Command Animal: make an animal an ally for 60 seconds, once a day', page:'Skyrim:Wood_Elf', verified:true }
   ];
   const RC = Object.fromEntries(RACES.map(r => [r.id, r]));
   // links out to UESP: a page title (such as "Skyrim:Chillrend") or a full URL
@@ -1244,7 +1255,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const SPELLS = SPELLDATA.spells, SPL = Object.fromEntries(SPELLS.map(s => [s.id, s]));
   const BUFFS = BUFFDATA.buffs, BF = Object.fromEntries(BUFFS.map(b => [b.id, b]));
   const COLLS = COLLDATA.collections, CL = Object.fromEntries(COLLS.map(c => [c.id, c]));
-  const SPEED = SPEEDDATA.plans, SPDP = Object.fromEntries(SPEED.map(p => [p.id, p])), SPEED_IDS = new Set(SPEED.flatMap(p => p.rows.map(r => r.id)));
+  const SPEED = SPEEDDATA.plans, SPDP = Object.fromEntries(SPEED.map(p => [p.id, p])), SPEED_IDS = new Set([...SPEED.flatMap(p => p.rows.map(r => r.id)), 'leg-alchemy', 'leg-smithing', 'leg-enchanting']);
   const MOVE_KINDS = [['shout', 'Shout'], ['spell', 'Spell'], ['potion', 'Potion'], ['poison', 'Poison'], ['enchant', 'Enchantment'], ['power', 'Power'], ['scroll', 'Scroll'], ['gear', 'Weapon or gear'], ['other', 'Other']];
   const GEAR = GEARDATA.items, GR = Object.fromEntries(GEAR.map(g => [g.id, g]));
   // enchanting and crafting plans for chosen gear
@@ -1290,9 +1301,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const xpToReach = n => 12.5 * n * n + 62.5 * n - 75;             // total XP from level 1 to level n
   const levelFromXp = xp => Math.floor(-2.5 + Math.sqrt(8 * xp + 1225) / 10);
 
-  const takenBy = (picks, key, m) => picks[key] != null && picks[key] <= m;
+  // Legendary crafting skills (Craft Leveling preset): LEG[skill] is the milestone by which the skill is made legendary.
+  // From then on its earlier perks are refunded and it starts again at 15, but the XP it earned on the way to 100 still counts.
+  const LEGEND_SKILLS = ['alchemy', 'smithing', 'enchanting'];
+  let LEG = {};
+  const refunded = (picks, key, m) => { const L = LEG[key.slice(0, key.indexOf('.'))]; return L != null && m >= L && picks[key] <= L; };
+  const takenBy = (picks, key, m) => picks[key] != null && picks[key] <= m && !refunded(picks, key, m);
+  const skillXp = (race, id, lv, m) => LEG[id] != null && m >= LEG[id] ? xpForSkill(startOf(race, id), 100) + xpForSkill(15, lv) : xpForSkill(startOf(race, id), lv);
   function skillLevels(picks, race, m) {
-    const lv = Object.fromEntries(SKILLS.map(s => [s.id, startOf(race, s.id)]));
+    const lv = Object.fromEntries(SKILLS.map(s => [s.id, LEG[s.id] != null && m >= LEG[s.id] ? 15 : startOf(race, s.id)]));
     for (const r of ALL_RANKS) if (takenBy(picks, r.key, m) && r.req > lv[r.perk.skill]) lv[r.perk.skill] = r.req;
     return lv;
   }
@@ -1304,7 +1321,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function milestoneInfo(m) {
     const picks = state.picks;
     const lv = skillLevels(picks, state.race, m);
-    const xp = SKILLS.reduce((sum, s) => sum + xpForSkill(startOf(state.race, s.id), lv[s.id]), 0);
+    const xp = SKILLS.reduce((sum, s) => sum + skillXp(state.race, s.id, lv[s.id], m), 0);
     const lvl = levelFromXp(xp), need = xpToReach(m);
     const used = ALL_RANKS.filter(r => takenBy(picks, r.key, m)).length;
     const budget = m - 1;
@@ -1358,6 +1375,19 @@ footer p { margin: 4px 0; max-width: 80ch; }
     return picks;
   }
 
+  // attributes are planned as a Health : Magicka : Stamina ratio per stretch; the level-up counts follow from it
+  const RATIO_MAX = 10;
+  const gcd = (a, b) => b ? gcd(b, a % b) : a;
+  const simplify = r => { const g = r.reduce((a, b) => gcd(a, b), 0) || 1; return r.map(x => x / g); };
+  function ratioFrom(counts) {   // the smallest whole ratio that gives these counts, or the nearest one within 0–10
+    const r = simplify(counts.map(x => Math.max(0, Math.round(x))));
+    if (Math.max(...r) <= RATIO_MAX) return r.every(x => x === 0) ? [1, 1, 1] : r;
+    const k = RATIO_MAX / Math.max(...counts); return counts.map(x => Math.round(x * k));
+  }
+  function setRatios(st, ratio, only) {
+    st.ratios = st.ratios || {};
+    BANDS.forEach(([m, , , n]) => { if (only && only !== m) return; st.ratios[m] = simplify(ratio.slice()); st.bands[m] = splitByRatio(n, st.ratios[m]); });
+  }
   function splitByRatio(n, ratio) {
     const r = ratio.every(x => x === 0) ? [1,1,1] : ratio, tot = r.reduce((a, b) => a + b, 0);
     const raw = r.map(x => n * x / tot), out = raw.map(Math.floor);
@@ -1372,7 +1402,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const prevM = MS[MS.indexOf(m) - 1];
     const now = skillLevels(picks, race, m);
     const before = prevM ? skillLevels(picks, race, prevM) : Object.fromEntries(SKILLS.map(s => [s.id, startOf(race, s.id)]));
-    return Object.fromEntries(SKILLS.map(s => [s.id, now[s.id] - before[s.id]]));
+    return Object.fromEntries(SKILLS.map(s => { const L = LEG[s.id]; return [s.id, L != null && L <= m && (!prevM || L > prevM) ? (100 - before[s.id]) + (now[s.id] - 15) : now[s.id] - before[s.id]]; }));
   }
   function stoneSpeed(stoneId, inc) {
     const st = STN[stoneId], total = Object.values(inc).reduce((a, b) => a + b, 0);
@@ -1402,7 +1432,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   const blankPlay = () => ({ on: false, start: 1, ups: [], date: { ...START_DATE } });
   function blankState(race = 'nord') {
     return { v: 2, name: 'New character', race, alignment: 'Neutral Neutral', style: 'warrior', picks: {}, stones: { 20: null, 40: null, 60: null }, shouts: {}, spells: {}, buffs: {}, gear: {}, mods: {}, notes: '', moves: [], creature: null, collections: {}, got: {}, want: {}, allies: {}, pets: {}, play: blankPlay(), journal: [], speed: { path: '', done: {} }, craft: { path: '', added: {} }, has: { gear: {}, stone: {} }, potions: [], food: {}, scrolls: {}, spiders: {}, scrollUse: 'none', spiderUse: 'none', cwSide: 'none', dgSide: 'none', skipConflicts: false, quests: {}, done: {}, followers: {}, spouse: null, homes: {},
-      bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, example: false };
+      bands: { 20: [7, 6, 6], 40: [7, 7, 6], 60: [7, 7, 6] }, ratios: { 20: [1, 1, 1], 40: [1, 1, 1], 60: [1, 1, 1] }, example: false };
   }
   function exampleState() {
     const s = blankState('nord');
@@ -1415,7 +1445,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     s.dgSide = 'dawnguard'; s.cwSide = 'imperial';
     s.homes = { 'breezehome': 20 };
     s.shouts = { 'unrelenting-force': { tier: 'expedite', m: 20, words: 3 }, 'whirlwind-sprint': { tier: 'expedite', m: 20, words: 2 }, 'become-ethereal': { tier: 'expedite', m: 40, words: 3 }, 'dragonrend': { tier: 'expedite', m: 40, words: 3 }, 'call-of-valor': { tier: 'selected', words: 3 } };
-    BANDS.forEach(([m, , , n]) => s.bands[m] = splitByRatio(n, ST.paladin.ratio));
+    setRatios(s, ST.paladin.ratio);
     return s;
   }
   const store = {
@@ -1473,11 +1503,18 @@ footer p { margin: 4px 0; max-width: 80ch; }
     out.has = { gear: favs(s.has?.gear, GR), stone: favs(s.has?.stone, STN) };
     out.gender = ['male', 'female'].includes(s.gender) ? s.gender : '';
     out.survival = !!s.survival;
+    out.bands = {}; out.ratios = {};
+    BANDS.forEach(([m, , , n]) => {
+      const r = s.ratios?.[m];
+      out.ratios[m] = Array.isArray(r) && r.length === 3 && r.every(x => Number.isInteger(x) && x >= 0 && x <= RATIO_MAX) && r.some(x => x > 0) ? r.slice() : ratioFrom(s.bands[m]);
+      out.bands[m] = splitByRatio(n, out.ratios[m]);
+    });
     out.craft = { path: '', added: {} };
     if (s.craft && CRAFT_PATHS[s.craft.path]) {
       const a = s.craft.added && typeof s.craft.added === 'object' ? s.craft.added : Object.fromEntries(craftKeys(s.craft.path).map(k => [k, s.picks?.[k]]));
       out.craft = { path: s.craft.path, added: Object.fromEntries(Object.entries(a).filter(([k, m]) => MS.includes(m) && s.picks?.[k] === m)) };
     }
+    out.craft.legendary = Object.fromEntries(LEGEND_SKILLS.filter(k => s.craft?.legendary?.[k] && !(k === 'smithing' && out.craft.path === 'mage')).map(k => [k, 1]));
     out.creature = s.creature && ['werewolf', 'vampire'].includes(s.creature.kind) && MS.includes(s.creature.m) ? { kind: s.creature.kind, m: s.creature.m } : null;
     // signature moves: [{ name, steps: [{ kind, text }] }]
     out.moves = Array.isArray(s.moves) ? s.moves.slice(0, 20).filter(x => x && typeof x === 'object').map(x => ({
@@ -1527,8 +1564,9 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   let state = normalize(store.get('skp.current'));
   if (!state) state = exampleState(); else if (store.get('skp.current')?.example) state.example = true;
+  updateLegend();
 
-  function touch() { state.example = false; store.set('skp.current', state); renderHeader(); }
+  function touch() { updateLegend(); state.example = false; store.set('skp.current', state); renderHeader(); }
 
   // ---------- Header & steps ----------
   function renderHeader() {
@@ -1621,17 +1659,26 @@ footer p { margin: 4px 0; max-width: 80ch; }
   $('suggestBtn').addEventListener('click', () => { $('suggestConfirm').hidden = false; $('suggestYes').focus(); });
   $('suggestNo').addEventListener('click', () => { $('suggestConfirm').hidden = true; });
   $('suggestYes').addEventListener('click', () => {
-    state.picks = suggestPicks(state.race, state.style); state.craft = { path: '', added: {} };
+    state.craft = { path: '', added: {}, legendary: {} }; LEG = {}; state.picks = suggestPicks(state.race, state.style);
     state.stones = suggestStones(state.picks, state.race);
-    BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio));
+    setRatios(state, ST[state.style].ratio);
     const firstStyleSkill = Object.keys(ST[state.style].w)[0]; if (firstStyleSkill) shownTree = firstStyleSkill;
     $('suggestConfirm').hidden = true; touch(); showStep('skills');
   });
 
   // ---------- Craft Leveling preset ----------
-  const planLevel = (picks, m) => { const lv = skillLevels(picks, state.race, m); return levelFromXp(SKILLS.reduce((t, s) => t + xpForSkill(startOf(state.race, s.id), lv[s.id]), 0)); };
+  const planLevel = (picks, m) => { const lv = skillLevels(picks, state.race, m); return levelFromXp(SKILLS.reduce((t, s) => t + skillXp(state.race, s.id, lv[s.id], m), 0)); };
   const planUsed = (picks, m) => ALL_RANKS.filter(r => takenBy(picks, r.key, m)).length;
+  function updateLegend() {
+    const c = state.craft || {}; LEG = {};
+    if (!c.path) return;
+    for (const sk of LEGEND_SKILLS) if (c.legendary?.[sk]) {
+      const ms = craftKeys(c.path).filter(k => k.startsWith(sk + '.')).map(k => state.picks[k]).filter(v => v != null);
+      if (ms.length) LEG[sk] = Math.max(...ms);
+    }
+  }
   function setCraft(path) {
+    LEG = {};   // place the perks as if nothing were refunded; the legendary resets apply afterwards
     const picks = { ...state.picks }, old = state.craft || { path: '', added: {} };
     for (const [k, m] of Object.entries(old.added || {})) if (picks[k] === m) delete picks[k];   // take back what the last pathway added, unless you've moved it
     const added = {};
@@ -1647,15 +1694,29 @@ footer p { margin: 4px 0; max-width: 80ch; }
       picks[key] = MS[mi]; added[key] = MS[mi];
     }
     state.picks = picks;
-    state.craft = { path: CRAFT_PATHS[path] ? path : '', added };
+    const legendary = { ...(old.legendary || {}) }; if (path === 'mage') delete legendary.smithing;
+    state.craft = { path: CRAFT_PATHS[path] ? path : '', added, legendary };
+    updateLegend();
   }
+  const legendText = () => {
+    const ls = LEGEND_SKILLS.filter(k => LEG[k] != null); if (!ls.length) return '';
+    return ' ' + ls.map(k => `${SK[k].name} goes legendary by level ${LEG[k]}: its perks are refunded and it drops to 15, but the XP it earned still counts toward your level.`).join(' ');
+  };
+  $('craftLegend').addEventListener('change', e => {
+    const x = e.target.closest('[data-leg]'); if (!x) return;
+    state.craft.legendary = state.craft.legendary || {};
+    if (x.checked) state.craft.legendary[x.dataset.leg] = 1; else delete state.craft.legendary[x.dataset.leg];
+    touch(); renderSkills(); renderPsTabs(); $('craftLegend').querySelector(`[data-leg="${x.dataset.leg}"]`)?.focus();
+  });
   function renderCraft() {
     const c = state.craft || { path: '' };
     $('craftPath').querySelectorAll('[data-v]').forEach(b => b.setAttribute('aria-checked', String(b.dataset.v === c.path)));
+    $('craftLegend').hidden = !c.path;
+    $('craftLegend').querySelectorAll('[data-leg]').forEach(x => { x.checked = !!c.legendary?.[x.dataset.leg]; x.closest('label').hidden = x.dataset.leg === 'smithing' && c.path === 'mage'; });
     if (!c.path) { $('craftMsg').textContent = ''; return; }
     const keys = craftKeys(c.path), byM = MS.map(m => [m, keys.filter(k => state.picks[k] === m).length]).filter(([, n]) => n);
     const added = Object.keys(c.added || {}).length, had = keys.length - added;
-    $('craftMsg').textContent = `${CRAFT_PATHS[c.path]} pathway: ${keys.length} perks, ${byM.map(([m, n]) => `${n} by level ${m}`).join(', ')}.${had ? ` ${had} of them were already in your plan.` : ''} ${c.path === 'mage' ? 'Smithing still rises from forging jewelry, but no Smithing perks are taken; spend the 4 spare points on your main school.' : ''} Stones: Thief while brewing, Mage while enchanting${c.path === 'mage' ? '' : ', Warrior while smithing'}.`;
+    $('craftMsg').textContent = `${CRAFT_PATHS[c.path]} pathway: ${keys.length} perks, ${byM.map(([m, n]) => `${n} by level ${m}`).join(', ')}.${had ? ` ${had} of them were already in your plan.` : ''} ${c.path === 'mage' ? 'Smithing still rises from forging jewelry, but no Smithing perks are taken; spend the 4 spare points on your main school.' : ''} Stones: Thief while brewing, Mage while enchanting${c.path === 'mage' ? '' : ', Warrior while smithing'}.${legendText()}`;
   }
   $('craftPath').addEventListener('click', e => {
     const b = e.target.closest('[data-v]'); if (!b || b.dataset.v === (state.craft?.path || '')) return;
@@ -1692,13 +1753,14 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function renderTreeView() {
     const s = SK[shownTree], tree = TREES[shownTree], start = startOf(state.race, shownTree);
     const lvls = MS.map(m => skillLevels(state.picks, state.race, m)[shownTree]);
-    let html = `<div class="tree-head"><h3>${s.name}</h3><div class="lv"><span class="muted">Starts at <span class="num">${start}</span></span>${MS.map((m, k) => `<span>By ${m}: <strong class="num">${lvls[k]}</strong></span>`).join('')}</div></div>`;
+    let html = `<div class="tree-head"><h3>${s.name}</h3><div class="lv"><span class="muted">Starts at <span class="num">${start}</span></span>${MS.map((m, k) => `<span>By ${m}: <strong class="num">${lvls[k]}</strong>${LEG[shownTree] === m ? ' <span class="muted">(legendary)</span>' : ''}</span>`).join('')}</div></div>`;
     if (!tree.verified) html += `<p class="flag">This tree was entered by hand and is being checked against <a href="${tree.source}" target="_blank" rel="noopener">UESP</a>.</p>`;
     html += '<div class="perks">';
     for (const p of perksIn(shownTree)) {
       const first = state.picks[rankKey(p.id, 0)];
       const pre = p.prereq.map(id => PERKS[id].name).join(' or ');
-      const warn = first != null && prereqMissing(state.picks, p, first) ? `<div class="pw">Needs ${esc(pre)} by level ${first}.</div>` : '';
+      const warn = (first != null && prereqMissing(state.picks, p, first) ? `<div class="pw">Needs ${esc(pre)} by level ${first}.</div>` : '')
+        + (first != null && LEG[shownTree] != null && first <= LEG[shownTree] ? `<div class="pr">Refunded when ${esc(s.name)} goes legendary by level ${LEG[shownTree]}.</div>` : '');
       html += `<div class="perk${first != null ? ' taken' : ''}"><div><div class="pn">${esc(p.name)}${sx(p.name)}</div><div class="pe">${esc(p.effect)}</div>${p.id === 'pickpocket.extra-pockets' ? svn('adds 50 carry weight instead of 100.') : (p.id === 'lightArmor.unhindered' || p.id === 'heavyArmor.conditioning') ? svn('worn armor of this type weighs nothing, which helps with the lower carry weight.') : ''}<div class="pr">${pre ? `Requires ${esc(pre)}` : 'Starting perk'}</div>${warn}</div><div class="ranks">`;
       p.ranks.forEach((req, i) => {
         const v = state.picks[rankKey(p.id, i)];
@@ -1714,7 +1776,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const lv = MS.map(m => skillLevels(state.picks, state.race, m));
     $('skillBody').innerHTML = GROUPS.map(g => `<tr class="grp"><th colspan="5">${g}</th></tr>` + SKILLS.filter(s => s.group === g).map(s => {
       const st = startOf(state.race, s.id);
-      return `<tr><td>${s.name}</td><td class="c num">${st}</td>${lv.map(l => `<td class="c num">${l[s.id] > st ? `<strong>${l[s.id]}</strong>` : l[s.id]}</td>`).join('')}</tr>`;
+      return `<tr><td>${s.name}</td><td class="c num">${st}</td>${lv.map((l, k) => `<td class="c num">${l[s.id] > st ? `<strong>${l[s.id]}</strong>` : l[s.id]}${LEG[s.id] === MS[k] ? ' <span class="muted" title="Made legendary after reaching 100">legendary</span>' : ''}</td>`).join('')}</tr>`;
     }).join('')).join('');
   }
   function renderSkills() { renderCraft(); renderMilestones(); renderTrees(); renderTreeView(); renderSkillTable(); }
@@ -1744,7 +1806,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   clearBtn.addEventListener('click', () => {
     if (!clearBtn.dataset.armed) { clearBtn.dataset.armed = '1'; clearBtn.textContent = 'Confirm: clear every perk'; return; }
     delete clearBtn.dataset.armed; clearBtn.textContent = 'Clear all perks';
-    state.picks = {}; state.craft = { path: '', added: {} }; touch(); renderSkills();
+    state.picks = {}; state.craft = { path: '', added: {}, legendary: {} }; touch(); renderSkills();
   });
 
   // ---------- Attributes ----------
@@ -1757,13 +1819,15 @@ footer p { margin: 4px 0; max-width: 80ch; }
   }
   function renderAttributes() {
     $('bands').innerHTML = BANDS.map(([m, from, to, n]) => {
-      const b = state.bands[m], used = b.reduce((x, y) => x + y, 0), left = n - used;
+      const r = state.ratios[m], b = state.bands[m], tot = r.reduce((x, y) => x + y, 0);
       return `<div class="band"><div class="band-head"><h3>Levels ${from === 1 ? 2 : from}–${to}</h3><span class="label">${n} level-ups</span></div>
+        <div class="ratio-big num" aria-hidden="true">${r.join(' : ')}</div>
         ${ATTR.map(([k, name], i) => `<div class="stepper"><span class="an"><span class="dot ${k}"></span>${name}</span>
-          <button class="sb" data-b="${m}" data-i="${i}" data-d="-1" aria-label="One fewer ${name} level-up, levels ${from}–${to}" ${b[i] <= 0 ? 'disabled' : ''}>−</button>
-          <span class="sv" aria-live="polite">${b[i]}</span>
-          <button class="sb" data-b="${m}" data-i="${i}" data-d="1" aria-label="One more ${name} level-up, levels ${from}–${to}" ${left <= 0 ? 'disabled' : ''}>+</button></div>`).join('')}
-        <div class="remain ${left === 0 ? 'done' : 'left'}">${left === 0 ? 'All level-ups assigned' : `${left} level-up${left === 1 ? '' : 's'} left to assign`}</div></div>`;
+          <button class="sb" data-b="${m}" data-i="${i}" data-d="-1" aria-label="Less ${name}, levels ${from}–${to}" ${r[i] <= 0 || tot - r[i] === 0 ? 'disabled' : ''}>−</button>
+          <span class="sv" aria-live="polite" aria-label="${name} share ${r[i]} of ${tot}">${r[i]}</span>
+          <button class="sb" data-b="${m}" data-i="${i}" data-d="1" aria-label="More ${name}, levels ${from}–${to}" ${r[i] >= RATIO_MAX ? 'disabled' : ''}>+</button>
+          <span class="lu">${b[i]} level-up${b[i] === 1 ? '' : 's'}</span></div>`).join('')}
+        <div class="row" style="margin:0"><button class="btn quiet" data-copy="${m}" ${m === 20 ? 'hidden' : ''}>Same as levels ${m === 40 ? '2–20' : '21–40'}</button></div></div>`;
     }).join('');
     $('ratio').innerHTML = MS.map(m => {
       const t = totals(m), sum = t.h + t.m + t.s;
@@ -1773,15 +1837,17 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }).join('');
   }
   $('bands').addEventListener('click', e => {
+    const c = e.target.closest('[data-copy]');
+    if (c) { const m = +c.dataset.copy, prev = MS[MS.indexOf(m) - 1]; setRatios(state, state.ratios[prev], m); touch(); renderAttributes(); return; }
     const b = e.target.closest('[data-b]'); if (!b || b.disabled) return;
-    const m = +b.dataset.b, i = +b.dataset.i, d = +b.dataset.d, n = BANDS.find(x => x[0] === m)[3];
-    const arr = state.bands[m], used = arr.reduce((x, y) => x + y, 0);
-    if (d > 0 && used >= n) return; if (d < 0 && arr[i] <= 0) return;
-    arr[i] += d; touch(); renderAttributes();
+    const m = +b.dataset.b, i = +b.dataset.i, d = +b.dataset.d, r = state.ratios[m].slice();
+    r[i] = Math.min(RATIO_MAX, Math.max(0, r[i] + d)); if (r.every(x => x === 0)) return;
+    state.ratios[m] = r; state.bands[m] = splitByRatio(BANDS.find(x => x[0] === m)[3], r);   // keep the ratio as typed (2 : 2 : 4 stays 2 : 2 : 4 while you adjust)
+    touch(); renderAttributes();
     const again = document.querySelector(`[data-b="${m}"][data-i="${i}"][data-d="${d}"]`); if (again && !again.disabled) again.focus();
   });
-  $('applyRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, ST[state.style].ratio)); touch(); renderAttributes(); });
-  $('evenRatio').addEventListener('click', () => { BANDS.forEach(([m, , , n]) => state.bands[m] = splitByRatio(n, [1,1,1])); touch(); renderAttributes(); });
+  $('applyRatio').addEventListener('click', () => { setRatios(state, ST[state.style].ratio); touch(); renderAttributes(); });
+  $('evenRatio').addEventListener('click', () => { setRatios(state, [1, 1, 1]); touch(); renderAttributes(); });
 
   // ---------- Loadout: Standing Stones ----------
   const kindLabel = { skills: 'Faster skills', ability: 'Lasting ability', power: 'Once-a-day power' };
@@ -2024,39 +2090,45 @@ footer p { margin: 4px 0; max-width: 80ch; }
     touch(); renderShouts(); renderSubtabs(); $(el.id)?.focus();
   });
   // ---------- Loadout: signature moves ----------
+  // a move's steps only offer what this build has chosen elsewhere in the plan
   function moveOptions(kind) {
-    // the build's own choices first, then everything else in the game data
-    const mine = [], all = [];
-    const add = (arr, own, name) => arr.forEach(x => (own(x) ? mine : all).push(name(x)));
-    if (kind === 'shout') add(SHOUTS, s => state.shouts[s.id], s => s.name);
-    if (kind === 'spell') add(SPELLS, s => state.spells[s.id], s => s.name);
-    if (kind === 'potion' || kind === 'poison') {
-      state.potions.filter(x => EFF[x.effects[0]].positive === (kind === 'potion')).forEach(x => mine.push(potionName(x.effects)));
-      ALCHDATA.effects.filter(e => e.positive === (kind === 'potion')).forEach(e => all.push((kind === 'potion' ? 'Potion of ' : 'Poison of ') + e.name));
+    const mine = [];
+    if (kind === 'shout') SHOUTS.filter(x => state.shouts[x.id]).forEach(x => mine.push(x.name));
+    if (kind === 'spell') SPELLS.filter(x => state.spells[x.id]).forEach(x => mine.push(x.name));
+    if (kind === 'potion' || kind === 'poison') state.potions.filter(x => EFF[x.effects[0]].positive === (kind === 'potion')).forEach(x => mine.push(potionName(x.effects)));
+    if (kind === 'enchant') Object.values(state.mods).forEach(md => (md.ench || []).forEach(e => e && mine.push(e)));
+    if (kind === 'power') {
+      mine.push(RC[state.race].power.split(':')[0]);
+      STONES.filter(x => x.kind === 'power' && MS.some(m => state.stones[m] === x.id)).forEach(x => mine.push(x.name));
+      BUFFS.filter(b => state.buffs[b.id] && /power/i.test(b.kind)).forEach(b => mine.push(b.name));
     }
-    if (kind === 'enchant') ENCH.forEach(e => all.push(e.name));
-    if (kind === 'power') { mine.push(RC[state.race].power.split(':')[0]); STONES.filter(s => s.kind === 'power').forEach(s => (MS.some(m => state.stones[m] === s.id) ? mine : all).push(s.name)); }
-    if (kind === 'scroll') { add(SCROLLS, s => state.scrolls[s.id], s => s.name); add(SPIDERS, s => state.spiders[s.id], s => s.name); }
-    if (kind === 'gear') add(GEAR, g => state.gear[g.id] != null, g => g.name);
-    return [...new Set([...mine, ...all])];
+    if (kind === 'scroll') { SCROLLS.filter(x => state.scrolls[x.id]).forEach(x => mine.push(x.name)); SPIDERS.filter(x => state.spiders[x.id]).forEach(x => mine.push(x.name)); }
+    if (kind === 'gear') GEAR.filter(g => state.gear[g.id] != null).forEach(g => mine.push(g.name));
+    return [...new Set(mine)];
   }
-  // whether a step names something the plan already has
+  const MOVE_WHERE = { shout: 'Shouts', spell: 'Spells', potion: 'Potions (save a favorite)', poison: 'Potions (save a favorite poison)', enchant: 'Weapons or Apparel (enchant a piece)', power: 'Buffs or Stones', scroll: 'Scrolls', gear: 'Weapons or Apparel' };
+  const MOVE_NOUN = { shout: 'shout', spell: 'spell', potion: 'potion', poison: 'poison', enchant: 'enchantment', power: 'power', scroll: 'scroll', gear: 'weapon or piece of gear' };
+  // whether a step still names something the plan has
   function stepHint(st) {
-    const t = st.text.trim().toLowerCase(); if (!t) return '';
-    const inPlan = { shout: SHOUTS.find(s => s.name.toLowerCase() === t), spell: SPELLS.find(s => s.name.toLowerCase() === t), gear: GEAR.find(g => g.name.toLowerCase() === t) }[st.kind];
-    if (!inPlan) return '';
-    const chosen = st.kind === 'shout' ? state.shouts[inPlan.id] : st.kind === 'spell' ? state.spells[inPlan.id] : state.gear[inPlan.id] != null;
-    return chosen ? '' : `${inPlan.name} isn't in your ${st.kind === 'gear' ? 'gear' : st.kind + 's'} yet.`;
+    if (st.kind === 'other') return '';
+    const opts = moveOptions(st.kind);
+    if (!opts.length) return `Nothing chosen yet. Add a ${MOVE_NOUN[st.kind]} in ${MOVE_WHERE[st.kind]} first.`;
+    return st.text && !opts.includes(st.text) ? `${st.text} isn't in your plan any more.` : '';
   }
+  const stepField = (st, i, j) => {
+    const ph = { shout: 'Whirlwind Sprint', spell: 'Flame Cloak', other: 'Sneak behind the target' };
+    if (st.kind === 'other') return `<input id="mvt-${i}-${j}" data-mv-text="${i}.${j}" value="${esc(st.text)}" placeholder="${ph.other}" maxlength="80" aria-label="Step ${j + 1}">`;
+    const opts = moveOptions(st.kind), stale = st.text && !opts.includes(st.text);
+    return `<select id="mvt-${i}-${j}" data-mv-text="${i}.${j}" aria-label="Step ${j + 1}"${!opts.length && !stale ? ' disabled' : ''}><option value="">${opts.length ? `Choose a ${MOVE_NOUN[st.kind]}` : `No ${MOVE_NOUN[st.kind]}s chosen`}</option>${opts.map(o => `<option${o === st.text ? ' selected' : ''}>${esc(o)}</option>`).join('')}${stale ? `<option selected>${esc(st.text)}</option>` : ''}</select>`;
+  };
   function renderMoves() {
-    $('moveLists').innerHTML = MOVE_KINDS.filter(([k]) => k !== 'other').map(([k]) => `<datalist id="dl-${k}">${moveOptions(k).map(o => `<option value="${esc(o)}">`).join('')}</datalist>`).join('');
     $('moveList').innerHTML = state.moves.length ? state.moves.map((mv, i) => `<div class="box" data-move-i="${i}">
       <div class="move-head"><label class="sr-only" for="mvn-${i}">Name of signature move ${i + 1}</label><input id="mvn-${i}" data-mv-name="${i}" value="${esc(mv.name)}" placeholder="Name it, such as Aspect of Elements" maxlength="60">
         <button class="btn quiet" data-mv-del="${i}">${'Delete move'}</button></div>
       <label class="sr-only" for="mvd-${i}">Description of ${esc(mv.name || 'this move')}</label><textarea class="move-desc" id="mvd-${i}" data-mv-desc="${i}" maxlength="400" placeholder="What it's for and when to use it, such as: opener against a group of melee enemies">${esc(mv.desc || '')}</textarea>
       <ol class="move-steps">${mv.steps.map((st, j) => { const hint = stepHint(st); return `<li class="move-step">
         <select id="mvk-${i}-${j}" data-mv-kind="${i}.${j}" aria-label="Step ${j + 1}: kind">${MOVE_KINDS.map(([k, l]) => `<option value="${k}"${st.kind === k ? ' selected' : ''}>${l}</option>`).join('')}</select>
-        <input id="mvt-${i}-${j}" data-mv-text="${i}.${j}" value="${esc(st.text)}" ${st.kind !== 'other' ? `list="dl-${st.kind}"` : ''} placeholder="${{ shout: 'Whirlwind Sprint', spell: 'Flame Cloak', potion: 'Potion of Fortify Illusion', poison: 'Poison of Paralysis', enchant: 'Fortify Destruction', power: 'Highborn', scroll: 'Scroll of Fireball', gear: 'Chillrend', other: 'Sneak behind the target' }[st.kind]}" maxlength="80" aria-label="Step ${j + 1}">
+        ${stepField(st, i, j)}
         <span class="tools"><button data-mv-up="${i}.${j}" aria-label="Move step ${j + 1} up"${j === 0 ? ' disabled' : ''}>↑</button><button data-mv-down="${i}.${j}" aria-label="Move step ${j + 1} down"${j === mv.steps.length - 1 ? ' disabled' : ''}>↓</button><button data-mv-rm="${i}.${j}" aria-label="Remove step ${j + 1}">×</button></span>
         <span class="hint" id="mvh-${i}-${j}" aria-live="polite">${esc(hint)}</span></li>`; }).join('')}</ol>
       <div class="row"><button class="btn quiet" data-mv-add="${i}"${mv.steps.length >= 12 ? ' disabled' : ''}>Add a step</button></div></div>`).join('')
@@ -2073,7 +2145,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
   $('moveList').addEventListener('change', e => {
     const t = e.target;
-    if (t.dataset.mvKind != null) { const [i, j] = mvAt(t.dataset.mvKind); state.moves[i].steps[j].kind = t.value; touch(); renderMoves(); $(t.id)?.focus(); }
+    if (t.dataset.mvKind != null) { const [i, j] = mvAt(t.dataset.mvKind), st = state.moves[i].steps[j]; st.kind = t.value; if (t.value !== 'other' && !moveOptions(t.value).includes(st.text)) st.text = ''; touch(); renderMoves(); $(t.id)?.focus(); }
   });
   $('moveList').addEventListener('click', e => {
     const b = e.target.closest('button'); if (!b) return;
@@ -2347,7 +2419,13 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const pmPool = INGR.filter(i => ($('pmCC').checked || i.dlc !== 'cc') && (!$('pmPlant').checked || i.plant));
     if (pmIng && !pmPool.some(i => i.id === pmIng)) pmIng = '';
     const brewable = set => {
-      const c = pmPool.filter(i => i.effects.some(e => set.includes(e))), ok = g => (!pmIng || g.some(x => x.id === pmIng)) && set.every(w => g.filter(x => x.effects.includes(w)).length >= 2);
+      const c = pmPool.filter(i => i.effects.some(e => set.includes(e))), ok = g => set.every(w => g.filter(x => x.effects.includes(w)).length >= 2);
+      if (pmIng) {   // the chosen ingredient has to be in the mix and add one of the effects
+        const P = ING[pmIng]; if (!P.effects.some(e => set.includes(e))) return false;
+        const r = c.filter(x => x.id !== pmIng);
+        for (let a = 0; a < r.length; a++) { if (ok([P, r[a]])) return true; for (let b = a + 1; b < r.length; b++) if (ok([P, r[a], r[b]])) return true; }
+        return false;
+      }
       for (let a = 0; a < c.length; a++) for (let b = a + 1; b < c.length; b++) {
         if (ok([c[a], c[b]])) return true;
         for (let d = b + 1; d < c.length; d++) if (ok([c[a], c[b], c[d]])) return true;
@@ -2356,10 +2434,11 @@ footer p { margin: 4px 0; max-width: 80ch; }
     };
     [0, 1, 2].forEach(i => {
       const others = [...new Set(pmWant.filter((w, k) => k !== i && w))];
-      const fits = e => e.id === pmWant[i] || !others.length || (!others.includes(e.id) && brewable([...others, e.id]));
+      const fits = e => e.id === pmWant[i] || (!others.length && !pmIng) || (!others.includes(e.id) && brewable([...others, e.id]));
       const grp = (label, pos) => { const l = ALCHDATA.effects.filter(e => e.positive === pos && fits(e)); return l.length ? `<optgroup label="${label}">${l.map(e => `<option value="${e.id}">${esc(e.name)}</option>`).join('')}</optgroup>` : ''; };
       const body = grp('Beneficial (potions)', true) + grp('Harmful (poisons)', false);
-      $('pe-' + i).innerHTML = `<option value="">${others.length && !body ? 'Nothing else combines' : others.length ? 'Choose an effect that combines' : 'Choose an effect'}</option>${body}`;
+      const narrowed = others.length || pmIng;
+      $('pe-' + i).innerHTML = `<option value="">${narrowed && !body ? 'Nothing else combines' : others.length ? 'Choose an effect that combines' : pmIng ? `Choose an effect ${esc(ING[pmIng].name)} can make` : 'Choose an effect'}</option>${body}`;
       $('pe-' + i).value = pmWant[i];
     });
     const want = [...new Set(pmWant.filter(Boolean))];
@@ -2866,10 +2945,17 @@ footer p { margin: 4px 0; max-width: 80ch; }
   });
   // ---------- Speed leveling checklist (play mode) ----------
   let speedHide = false;
-  const speedPlan = () => SPDP[state.speed.path] || SPDP[state.craft?.path] || SPEED[0];
+  const speedBase = () => SPDP[state.speed.path] || SPDP[state.craft?.path] || SPEED[0];
+  const LEGEND_STEPS = { alchemy: 'Alchemy', smithing: 'Smithing', enchanting: 'Enchanting' };
+  function speedPlan() {   // the chosen pathway, plus a step for each crafting skill you plan to make legendary
+    const base = speedBase(), lg = Object.keys(state.craft?.legendary || {}).filter(k => !(k === 'smithing' && base.id === 'mage'));
+    if (!lg.length) return base;
+    return { ...base, rows: [...base.rows, ...lg.map(k => ({ id: 'leg-' + k, stage: 'Legendary', type: 'step', step: `Make ${LEGEND_STEPS[k]} legendary`, notes: `At ${LEGEND_STEPS[k]} 100, open the skill in the Skills menu and press the Legendary button. Its perk points come back to spend elsewhere and the skill drops to 15; the XP you earned still counted toward your level.` }))] };
+  }
   const SPEED_TAG = { perk: 'Perk', checkpoint: 'Checkpoint', optional: 'Optional' };
   function renderSpeed() {
     const plan = speedPlan(), done = state.speed.done;
+    $('speedLegend').querySelectorAll('[data-leg]').forEach(x => { x.checked = !!state.craft?.legendary?.[x.dataset.leg]; x.closest('label').hidden = x.dataset.leg === 'smithing' && plan.id === 'mage'; });
     $('speedPath').innerHTML = SPEED.map(p => `<button class="chip" role="radio" data-v="${p.id}" aria-checked="${p.id === plan.id}">${esc(p.name)}</button>`).join('');
     const todo = plan.rows.filter(r => r.type !== 'checkpoint' && r.type !== 'optional'), n = todo.filter(r => done[r.id]).length;
     const next = plan.rows.find(r => r.type !== 'optional' && !done[r.id]);
@@ -2883,6 +2969,12 @@ footer p { margin: 4px 0; max-width: 80ch; }
     }).join('');
   }
   $('speedPath').addEventListener('click', e => { const b = e.target.closest('[data-v]'); if (!b) return; state.speed.path = b.dataset.v; touch(); renderSpeed(); $('speedPath').querySelector(`[data-v="${b.dataset.v}"]`)?.focus(); });
+  $('speedLegend').addEventListener('change', e => {
+    const x = e.target.closest('[data-leg]'); if (!x) return;
+    state.craft = state.craft || { path: '', added: {} }; state.craft.legendary = state.craft.legendary || {};
+    if (x.checked) state.craft.legendary[x.dataset.leg] = 1; else delete state.craft.legendary[x.dataset.leg];
+    touch(); renderSpeed(); $('speedLegend').querySelector(`[data-leg="${x.dataset.leg}"]`)?.focus();
+  });
   $('speedList').addEventListener('change', e => {
     const t = e.target;
     if (t.id === 'speedHide') { speedHide = t.checked; renderSpeed(); $('speedHide')?.focus(); return; }
@@ -3128,7 +3220,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
   function pack(s) {
     const byM = obj => { const o = {}; for (const [k, m] of Object.entries(obj || {})) (o[m] ||= []).push(k); return o; };
     return strip({
-      n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands, gd: s.gender ? s.gender[0] : null, sv: s.survival ? 1 : null, cf: s.craft?.path ? s.craft.path[0] : null,
+      n: s.name, r: s.race, a: s.alignment, st: s.style, b: s.bands, ra: s.ratios, gd: s.gender ? s.gender[0] : null, sv: s.survival ? 1 : null, cf: s.craft?.path || Object.keys(s.craft?.legendary || {}).length ? (s.craft.path ? s.craft.path[0] : '-') + Object.keys(s.craft.legendary || {}).map(k => k[0]).join('') : null,
       p: Object.fromEntries(Object.entries(byM(s.picks)).map(([m, ks]) => [m, ks.map(k => toI('perk', k)).filter(x => x != null).join(',')])),
       sn: Object.fromEntries(Object.entries(s.stones || {}).map(([m, id]) => [m, id && toI('stone', id)])),
       g: Object.fromEntries(Object.entries(byM(s.gear)).map(([t, ks]) => [String(t)[0], ks.map(k => toI('gear', k)).filter(x => x != null).join(',')])),
@@ -3161,7 +3253,7 @@ footer p { margin: 4px 0; max-width: 80ch; }
     const fromM = (obj, kind) => { const out = {}; for (const [m, list] of Object.entries(obj || {})) String(list).split(',').filter(Boolean).forEach(t => { const id = fromI(kind, t); if (id) out[id] = +m; }); return out; };
     const list = (str, kind) => Object.fromEntries(String(str || '').split(',').filter(Boolean).map(t => [fromI(kind, t), 1]).filter(([k]) => k));
     return {
-      v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b, gender: { m: 'male', f: 'female' }[o.gd] || '', survival: !!o.sv, craft: { path: { h: 'heavy', l: 'light', m: 'mage' }[o.cf] || '' },
+      v: 2, name: o.n, race: o.r, alignment: o.a, style: o.st, bands: o.b, ratios: o.ra, gender: { m: 'male', f: 'female' }[o.gd] || '', survival: !!o.sv, craft: { path: { h: 'heavy', l: 'light', m: 'mage' }[String(o.cf || '')[0]] || '', legendary: Object.fromEntries([...String(o.cf || '').slice(1)].map(c => ({ a: 'alchemy', s: 'smithing', e: 'enchanting' })[c]).filter(Boolean).map(k => [k, 1])) },
       picks: fromM(o.p, 'perk'), stones: Object.fromEntries(MS.map(m => [m, o.sn?.[m] != null ? fromI('stone', o.sn[m]) : null])),
       gear: (() => { const out = {}; for (const [k, l] of Object.entries(o.g || {})) String(l).split(',').filter(Boolean).forEach(t => { const id = fromI('gear', t); if (id) out[id] = { m: 'main', c: 'collect', i: 'incidental' }[k] || 'main'; }); return out; })(),
       mods: unKeys(o.md, 'gear', md => ({ how: md.h === 'c' ? 'crafted' : md.h === 'f' ? 'found' : undefined, ench: md.e ? md.e.map(t => t === '' ? '' : fromI('ench', t) || '') : undefined })),
